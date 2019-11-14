@@ -1,0 +1,11 @@
+Os comentamos un par de cosas a tener en cuenta sobre el uso de Protege y la exportacion de ontologias a CLIPS:
+
+1) Versión de Protégé
+
+La versión de Protégé que necesitais para la práctica es la 3.5, que es el enlace que teneis desde la página de la asignatura. Las versiones  4.x/5.x  os darán problemas cuando intenteis exportar la ontología a CLIPS.
+
+ Si alguien ya ha empezado la ontología en la versión 4.x  puede exportarla en OWL, importarla en la versión 3.5 y grabarla en el formato por defecto de la 3.5.
+
+2) Uso de carácteres especiales en Protégé/CLIPS
+
+No es recomendable usar acentos, diéresis, letras especiales (ç, ñ) u otros caracteres no ASCII  en los nombres de clases/slots/instancias en Protégé, ya que generalmente da problemas al importar los ficheros resultantes  en CLIPS, en especial si trabajáis multiplataforma (windows/linux/Mac OS).
