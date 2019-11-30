@@ -1,4 +1,4 @@
-; Sat Nov 30 09:05:07 CET 2019
+; Sat Nov 30 11:12:23 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,9 +21,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ontology_ProjectKB_Class10087]
-		[ontology_ProjectKB_Class10088]
-		[ontology_ProjectKB_Class10089]))
+		[ontology_ProjectKB_Class10160]
+		[ontology_ProjectKB_Class10161]
+		[ontology_ProjectKB_Class10162]
+		[ontology_ProjectKB_Class10163]
+		[ontology_ProjectKB_Class10164]
+		[ontology_ProjectKB_Class10165]
+		[ontology_ProjectKB_Class10166]))
 
 ([CLSES_TAB] of  Widget
 
@@ -72,8 +76,8 @@
 
 ([KB_591460_Class1] of  Map
 
-	(entries [ontology_ProjectKB_Class10091])
-	(referenced_maps [ontology_ProjectKB_Class10090]))
+	(entries [ontology_ProjectKB_Class10168])
+	(referenced_maps [ontology_ProjectKB_Class10167]))
 
 ([KB_591460_Class100] of  String
 
@@ -167,7 +171,7 @@
 	(name "classes_file_name")
 	(string_value "ontology.pont"))
 
-([KB_872053_Class2] of  Map
+([KB_631613_Class2] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -178,34 +182,54 @@
 ([ontology_ProjectKB_Class10] of  Property_List
 )
 
-([ontology_ProjectKB_Class10087] of  String
+([ontology_ProjectKB_Class101] of  String
+
+	(name "SearchTab_Query"))
+
+([ontology_ProjectKB_Class10160] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([ontology_ProjectKB_Class10088] of  String
+([ontology_ProjectKB_Class10161] of  String
 
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
+	(name "Author")
+	(string_value "name"))
 
-([ontology_ProjectKB_Class10089] of  String
+([ontology_ProjectKB_Class10162] of  String
+
+	(name "Reader")
+	(string_value "name"))
+
+([ontology_ProjectKB_Class10163] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([ontology_ProjectKB_Class10090] of  Map
+([ontology_ProjectKB_Class10164] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([ontology_ProjectKB_Class10165] of  String
+
+	(name "Genre")
+	(string_value "type"))
+
+([ontology_ProjectKB_Class10166] of  String
+
+	(name "Book")
+	(string_value "title"))
+
+([ontology_ProjectKB_Class10167] of  Map
 )
 
-([ontology_ProjectKB_Class10091] of  Map_Entry
+([ontology_ProjectKB_Class10168] of  Map_Entry
 
 	(key "InstanceDisplay.yellow_stickies")
 	(key_class "java.lang.String")
-	(value "ontology_ProjectKB_Class10090")
+	(value "ontology_ProjectKB_Class10167")
 	(value_class "java.util.Map"))
-
-([ontology_ProjectKB_Class101] of  String
-
-	(name "SearchTab_Query"))
 
 ([ontology_ProjectKB_Class11] of  Widget
 
@@ -220,7 +244,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class14])
-	(widget_class_name "ezpal.EZPalTab"))
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
 ([ontology_ProjectKB_Class14] of  Property_List
 )
@@ -229,7 +253,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class16])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+	(widget_class_name "ezpal.EZPalTab"))
 
 ([ontology_ProjectKB_Class16] of  Property_List
 )
@@ -238,7 +262,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class18])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
 ([ontology_ProjectKB_Class18] of  Property_List
 )
@@ -247,7 +271,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class20])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
 ([ontology_ProjectKB_Class20] of  Property_List
 )
@@ -256,7 +280,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class22])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
 ([ontology_ProjectKB_Class22] of  Property_List
 )
@@ -621,11 +645,11 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
-		[STANDARD_CLASS_FORM_WIDGET])
+		[STANDARD_CLASS_FORM_WIDGET]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")

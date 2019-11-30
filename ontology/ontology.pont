@@ -1,4 +1,4 @@
-; Sat Nov 30 09:05:07 CET 2019
+; Sat Nov 30 11:12:23 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,18 +21,22 @@
 		(allowed-values Daily Occasionally Few_times)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot ontology_Class2
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot place
 		(type SYMBOL)
 		(allowed-values Public_transport Home Bed)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot complexity
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot foreign_authors
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot complexity
-		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot genre
@@ -42,7 +46,7 @@
 		(create-accessor read-write))
 	(single-slot gender
 		(type SYMBOL)
-		(allowed-values Man Woman)
+		(allowed-values Male Female)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot popularity
@@ -62,6 +66,11 @@
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot type
+		(type SYMBOL)
+		(allowed-values Classical Contemporary Detective Fantasy Historical Horror Romance ScienceFiction Western)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(multislot books
 		(type INSTANCE)
 ;+		(allowed-classes Book)
@@ -69,6 +78,10 @@
 	(single-slot age
 		(type INTEGER)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot author
 		(type INSTANCE)
@@ -83,7 +96,12 @@
 
 (defclass Genre
 	(is-a USER)
-	(role abstract))
+	(role abstract)
+	(single-slot type
+		(type SYMBOL)
+		(allowed-values Classical Contemporary Detective Fantasy Historical Horror Romance ScienceFiction Western)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
 
 (defclass Classical
 	(is-a Genre)
@@ -126,7 +144,7 @@
 	(role concrete)
 	(single-slot gender
 		(type SYMBOL)
-		(allowed-values Man Woman)
+		(allowed-values Male Female)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot popularity
@@ -136,6 +154,10 @@
 	(multislot books
 		(type INSTANCE)
 ;+		(allowed-classes Book)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot complexity
 		(type INTEGER)
@@ -164,15 +186,19 @@
 		(allowed-values Public_transport Home Bed)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot available_time
+		(type SYMBOL)
+		(allowed-values Little Medium Much)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot foreign_authors
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot available_time
-		(type SYMBOL)
-		(allowed-values Little Medium Much)
-;+		(cardinality 0 1)
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot frequency
 		(type SYMBOL)
@@ -208,15 +234,15 @@
 		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot author
-		(type INSTANCE)
-;+		(allowed-classes Author)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot genre
 		(type INSTANCE)
 ;+		(allowed-classes Genre)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot author
+		(type INSTANCE)
+;+		(allowed-classes Author)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot pages
 		(type INTEGER)
