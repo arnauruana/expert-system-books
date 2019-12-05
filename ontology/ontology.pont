@@ -1,4 +1,4 @@
-; Sat Nov 30 11:19:34 CET 2019
+; Thu Dec 05 15:15:01 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -10,7 +10,7 @@
 	(single-slot day_moment
 		(type SYMBOL)
 		(allowed-values Morning Afternoon Night)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot title
 		(type STRING)
@@ -30,13 +30,14 @@
 		(allowed-values Public_transport Home Bed)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot complexity
+		(type SYMBOL)
+		(allowed-values Easy Normal Hard)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot foreign_authors
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot complexity
-		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot genre
@@ -50,8 +51,9 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot popularity
-		(type INTEGER)
-;+		(cardinality 0 1)
+		(type SYMBOL)
+		(allowed-values Low Medium High)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot available_time
 		(type SYMBOL)
@@ -77,21 +79,25 @@
 		(create-accessor read-write))
 	(single-slot age
 		(type INTEGER)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot name_
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot author
+	(multislot author
 		(type INSTANCE)
 ;+		(allowed-classes Author)
-;+		(cardinality 0 1)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(single-slot best_seller
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot country
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Genre
@@ -148,19 +154,29 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot popularity
-		(type INTEGER)
-;+		(cardinality 0 1)
+		(type SYMBOL)
+		(allowed-values Low Medium High)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot books
 		(type INSTANCE)
 ;+		(allowed-classes Book)
 		(create-accessor read-write))
-	(single-slot complexity
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot name_
 		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot complexity
+		(type SYMBOL)
+		(allowed-values Easy Normal Hard)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot country
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot age
+		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -170,12 +186,12 @@
 	(single-slot day_moment
 		(type SYMBOL)
 		(allowed-values Morning Afternoon Night)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot best_seller
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(multislot books
 		(type INSTANCE)
@@ -186,19 +202,23 @@
 		(allowed-values Public_transport Home Bed)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
+	(single-slot available_time
+		(type SYMBOL)
+		(allowed-values Little Medium Much)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot foreign_authors
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot available_time
-		(type SYMBOL)
-		(allowed-values Little Medium Much)
-;+		(cardinality 0 1)
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot country
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot frequency
 		(type SYMBOL)
@@ -207,15 +227,16 @@
 		(create-accessor read-write))
 	(single-slot age
 		(type INTEGER)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass Book
 	(is-a USER)
 	(role concrete)
 	(single-slot popularity
-		(type INTEGER)
-;+		(cardinality 0 1)
+		(type SYMBOL)
+		(allowed-values Low Medium High)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot title
 		(type STRING)
@@ -228,21 +249,22 @@
 	(single-slot best_seller
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot complexity
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot author
-		(type INSTANCE)
-;+		(allowed-classes Author)
-;+		(cardinality 0 1)
+		(type SYMBOL)
+		(allowed-values Easy Normal Hard)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot genre
 		(type INSTANCE)
 ;+		(allowed-classes Genre)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot author
+		(type INSTANCE)
+;+		(allowed-classes Author)
+		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(single-slot pages
 		(type INTEGER)
