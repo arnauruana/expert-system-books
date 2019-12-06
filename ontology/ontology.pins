@@ -1,4 +1,4 @@
-; Thu Dec 05 15:15:01 CET 2019
+; Fri Dec 06 18:25:18 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -51,7 +51,6 @@
 ([ontology_Class4] of  Book
 
 	(author [ontology_Class3])
-	(best_seller TRUE)
 	(genre [ontology_Class10004])
 	(pages 613)
 	(title "The name of the wind")
