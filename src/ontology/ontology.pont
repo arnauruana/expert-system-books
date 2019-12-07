@@ -1,4 +1,4 @@
-; Fri Dec 06 19:45:56 CET 2019
+; Sat Dec 07 14:35:46 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -127,19 +127,19 @@
 		(allowed-values Public_transport Home Bed)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
+	(single-slot available_time
+		(type SYMBOL)
+		(allowed-values Little Medium Much)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot foreign_authors
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot available_time
-		(type SYMBOL)
-		(allowed-values Little Medium Much)
-;+		(cardinality 0 1)
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot country
 		(type STRING)
@@ -171,14 +171,14 @@
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot genre
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(multislot author
 		(type INSTANCE)
 ;+		(allowed-classes Author)
 		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot genre
+		(type STRING)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot pages
 		(type INTEGER)
