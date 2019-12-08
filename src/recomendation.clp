@@ -254,6 +254,12 @@
 ; Main utility module
 (defmodule MAIN (export ?ALL))
 
+; User recopilation data module
+(defmodule DATA
+	(import MAIN ?ALL)
+	(export ?ALL)
+)
+
 ; ============================================================================ ;
 ; ================================= MESSAGES ================================= ;
 ; ============================================================================ ;
@@ -264,7 +270,20 @@
 ; ================================ TEMPLATES ================================= ;
 ; ============================================================================ ;
 
-; ¿TODO?
+; Template para los datos socio-demograficos del usuario
+(deftemplate MAIN::User
+	(slot name
+		(type STRING)
+	)
+	(slot age
+		(type INTEGER)
+		(default -1)
+	)
+	(slot gender
+		(type SYMBOL)
+		(default undefined)
+	)
+)
 
 ; ============================================================================ ;
 ; ================================ FUNCTIONS ================================= ;
@@ -276,19 +295,19 @@
 (deffunction question-general(?question)
 	(format t "%s " ?question)
 	(bind ?answer (read))
-	(while (not (lexemp ?answer)) do
-		(format t "%s " ?answer)
+	(while (not (lexemep ?answer)) do
+		(format t "%s " ?question)
 		(bind ?answer (read))
 	)
 	?answer
 )
 
 ; Funcion para hacer una pregunta con respuesta numerica unica
-(deffunction question-number(?question ?rangeI ?rangeF)
+(deffunction question-range(?question ?rangeI ?rangeF)
 	(format t "%s [%d, %d] " ?question ?rangeI ?rangeF)
 	(bind ?answer (read))
 	(while (not (and (>= ?answer ?rangeI) (<= ?answer ?rangeF))) do
-		(format t "%s [%d, %d] " ?answer ?rangeI ?rangeF)
+		(format t "%s [%d, %d] " ?question ?rangeI ?rangeF)
 		(bind ?answer (read))
 	)
 	?answer
@@ -322,7 +341,7 @@
 ; Funcion para hacer una pregunta de tipo si/no
 (deffunction question-yes-no(?question)
 	(bind ?answer (question-options ?question yes no))
-	(if (or (eq ?answer yes) (eq ?response y))
+	(if (or (eq ?answer yes) (eq ?answer y))
 		then TRUE
 		else FALSE
 	)
@@ -336,7 +355,7 @@
 		(bind ?line (format nil "  %d. %s" ?var-index ?var))
 		(printout t ?line crlf)
 	)
-	(bind ?answer (question-number "Choose and option:" 1 (length$ ?valores-posibles)))
+	(bind ?answer (question-range "Choose and option:" 1 (length$ ?possible-values)))
 	?answer
 )
 
@@ -356,7 +375,7 @@
 		(if (and (integerp ?var) (and (>= ?var 1) (<= ?var (length$ ?possible-values))))
 			then
 				(if (not (member$ ?var ?list))
-					then (bind ?list (insert$ ?lista (+ (length$ ?lista) 1) ?var))
+					then (bind ?list (insert$ ?list (+ (length$ ?list) 1) ?var))
 				)
 		)
 	)
@@ -364,13 +383,50 @@
 
 ; ---------------------------------------------------------------------------- ;
 
+(deffunction MAIN::print-welcome()
+	(printout t crlf)
+	(printout t "=========================================================" crlf)
+	(printout t "=============== Book recomendation system ===============" crlf)
+	(printout t "=========================================================" crlf)
+	(printout t crlf)
+	(printout t "Please introduce the following information:" crlf)
+)
+
 ; ============================================================================ ;
 ; ============================== RULES & FACTS =============================== ;
 ; ============================================================================ ;
 
-; WARNING: prova
-(defrule initialRule "Welcome"
+; Starts the execution
+(defrule MAIN::welcome
 	(declare (salience 10))
 	=>
-	(printout t "===== WELCOME =====")
+	(print-welcome)
+	(focus DATA)
+)
+
+; -------------------------------- User data --------------------------------- ;
+
+; Obtains the name of the user
+(defrule DATA::get-name
+	(not (User))
+	=>
+	(bind ?name (question-general "  - Name:"))
+	(assert (User (name ?name)))
+)
+
+; Obtains the age of the user
+(defrule DATA::get-age
+	?u <- (User (age ?a))
+	(test (< ?a 0))
+	=>
+	(bind ?a (question-range "  - Age:" 0 150))
+	(modify ?u (age ?a))
+)
+
+; Obtains the gender of the user
+(defrule DATA::get-gender
+	?u <- (User (gender undefined))
+	=>
+	(bind ?g (question-options "  - Gender:" male famele))
+	(modify ?u (gender ?g))
 )
