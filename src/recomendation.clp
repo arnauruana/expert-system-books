@@ -252,7 +252,9 @@
 ; ============================================================================ ;
 
 ; Main utility module
-(defmodule MAIN (export ?ALL))
+(defmodule MAIN
+	(export ?ALL)
+)
 
 ; User data module
 (defmodule DATA
@@ -277,7 +279,7 @@
 ; ================================ TEMPLATES ================================= ;
 ; ============================================================================ ;
 
-; Template for the actual user that is interacting with the system
+; Actual user data template
 (deftemplate MAIN::User
 	(slot name
 		(type STRING)
@@ -297,23 +299,64 @@
 	)
 )
 
+; Actual user preferences template
+(deftemplate MAIN::Prefs
+	(slot book
+		(type STRING)
+		(default "NONE")
+	)
+	(slot genre
+		(type SYMBOL)
+		(default NONE)
+	)
+	(slot time
+		(type SYMBOL)
+		(default NONE)
+	)
+	(slot freq
+		(type SYMBOL)
+		(default NONE)
+	)
+)
+
 ; ============================================================================ ;
 ; ================================ FUNCTIONS ================================= ;
 ; ============================================================================ ;
 
+; ------------------------------ MAIN functions ------------------------------ ;
+
+(deffunction MAIN::print(?msg)
+	(printout t ?msg)
+)
+
+(deffunction MAIN::println(?msg)
+	(print ?msg)
+	(printout t crlf)
+)
+
+(deffunction MAIN::welcome()
+	(println "")
+	(println "=================================================================")
+	(println "=================== Book recomendation system ===================")
+	(println "=================================================================")
+	(println "")
+)
+
+; ------------------------------ DATA functions ------------------------------ ;
+
 ; Funcion para hacer una pregunta con respuesta cualquiera
-(deffunction question-general(?question)
-	(format t "%s " ?question)
+(deffunction DATA::question-general(?question)
+	(format t "%s" ?question)
 	(bind ?answer (read))
 	(while (not (lexemep ?answer)) do
-		(format t "%s " ?question)
+		(format t "%s" ?question)
 		(bind ?answer (read))
 	)
 	?answer
 )
 
 ; Funcion para hacer una pregunta con respuesta numerica unica
-(deffunction question-range(?question ?rangeI ?rangeF)
+(deffunction DATA::question-range(?question ?rangeI ?rangeF)
 	(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
 	(bind ?answer (read))
 	(while (not (and (>= ?answer ?rangeI) (<= ?answer ?rangeF))) do
@@ -324,8 +367,8 @@
 )
 
 ; Funcion para hacer una pregunta general con una serie de respuestas admitidas
-(deffunction question-options(?question $?allowed-values)
-	(format t "%s " ?question)
+(deffunction DATA::question-options(?question $?allowed-values)
+	(format t "%s" ?question)
 	(progn$ (?curr-value $?allowed-values)
 		(format t "[%s]" ?curr-value)
  	)
@@ -335,7 +378,7 @@
 		then (bind ?answer (lowcase ?answer))
 	)
 	(while (not (member ?answer ?allowed-values)) do
-		(format t "%s " ?question)
+		(format t "%s" ?question)
 	 	(progn$ (?curr-value $?allowed-values)
 	 		(format t "[%s]" ?curr-value)
 	 	)
@@ -347,6 +390,8 @@
 	)
 	?answer
 )
+
+; ---------------------------------------------------------------------------- ;
 
 ; Funcion para hacer una pregunta de tipo si/no
 (deffunction question-yes-no(?question)
@@ -391,98 +436,108 @@
 	)
 )
 
-; ---------------------------------------------------------------------------- ;
-
-(deffunction MAIN::print(?msg)
-	(printout t ?msg)
-)
-
-(deffunction MAIN::println(?msg)
-	(print ?msg)
-	(printout t crlf)
-)
-
-(deffunction MAIN::welcome()
-	(println "")
-	(println "=================================================================")
-	(println "=================== Book recomendation system ===================")
-	(println "=================================================================")
-	(println "")
-)
-
 ; ============================================================================ ;
 ; ============================== RULES & FACTS =============================== ;
 ; ============================================================================ ;
 
-; ---------------------------- MAIN module rules ----------------------------- ;
+; -------------------------------- MAIN rules -------------------------------- ;
 
 ; Starts the execution
 (defrule MAIN::initial
+	(initial-fact)
 	=>
 	(welcome)
 	(focus DATA)
 )
 
-; ---------------------------- DATA module rules ----------------------------- ;
+; -------------------------------- DATA rules -------------------------------- ;
 
-; Obtains the user
+; Obtains the user's personal data
 (defrule DATA::get-user
 	(not (User))
 	=>
 	(assert (User))
-	(println "Introduce the following information:")
-	(assert (get-user))
+	(println "Introduce the following personal information:")
 )
 
-; Obtains the name of the user
+; Obtains the user's name
 (defrule DATA::get-name
-	(get-user)
 	?u <- (User (name "NONE"))
 	=>
-	(bind ?n (question-general "  - Name:"))
+	(bind ?n (question-general "  - Name: "))
 	(modify ?u (name ?n))
 )
 
-; Obtains the age of the user
+; Obtains the user's age
 (defrule DATA::get-age
-	(get-user)
 	?u <- (User (age -1))
 	=>
 	(bind ?a (question-range "  - Age" 0 150))
 	(modify ?u (age ?a))
 )
 
-; Obtains the gender of the user
+; Obtains the user's gender
 (defrule DATA::get-gender
-	(get-user)
 	?u <- (User (gender NONE))
 	=>
-	(bind ?g (question-options "  - Gender" male famele))
+	(bind ?g (question-options "  - Gender " male famele))
 	(modify ?u (gender ?g))
 )
 
-; Obtains the country of the user
+; Obtains the user's country
 (defrule DATA::get-country
-	(get-user)
 	?u <- (User (country "NONE"))
 	=>
-	(bind ?c (question-general "  - Country:"))
+	(bind ?c (question-general "  - Country: "))
 	(modify ?u (country ?c))
 )
 
-; Changes from DATA to PREFS module
+; Changes from DATA module to PREFS module
 (defrule DATA::get-user-prefs
 	(User (name ~"NONE") (age ~-1) (gender ~NONE) (country ~"NONE"))
 	=>
 	(focus PREFS)
 )
 
-; ---------------------------- PREFS module rules ---------------------------- ;
+; ------------------------------- PREFS rules -------------------------------- ;
 
-; Obtains the user prefereneces
+; Obtains the user's preferenece data
 (defrule PREFS::get-prefs
+	(not (Prefs))
 	=>
+	(assert (Prefs))
 	(println "")
-	(println "Introduce your preferences:")
-	(assert (get-prefs))
+	(println "Introduce the following preference information:")
+)
+
+; Obtains the user's book preference
+(defrule PREFS::get-book
+	?p <- (Prefs (book "NONE"))
+	=>
+	(bind ?b (question-general "  - Book: "))
+	(modify ?p (book ?b))
+)
+
+; Obtains the user's genre preference
+(defrule PREFS::get-genre
+	?p <- (Prefs (genre NONE))
+	=>
+	(bind ?g (question-options "  - Genre " history romance western))
+	(modify ?p (genre ?g))
+)
+
+; Obtains the user's available time
+(defrule PREFS::get-time
+	?p <- (Prefs (time NONE))
+	=>
+	(bind ?t (question-options "  - Available time " little medium much))
+	(modify ?p (time ?t))
+)
+
+; Obtains the user's read frequency
+(defrule PREFS::get-freq
+	?p <- (Prefs (freq NONE))
+	=>
+	(bind ?f (question-options "  - Read frequency " daily occasionally few_times))
+	(modify ?p (freq ?f))
 )
