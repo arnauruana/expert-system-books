@@ -118,6 +118,7 @@ data['genre_1'] = data['genre_1'].replace({'Fiction':'Uncategorized',
     'Love'              : 'Romance'})
 
 drop_list = ['author_genres',
+    'birthplace',
     'author_id',
     'author_page_url',
     'author_rating_count',
@@ -129,5 +130,13 @@ drop_list = ['author_genres',
     'num_reviews']
 
 data = data.drop(drop_list, axis = 1)
+
+auxiliary_date = []
+for date in data['publish_date']:
+    aux = str(date)
+    aux = aux.split(" ")
+    auxiliary_date.append(aux[-1])
+
+data['publish_date'] = auxiliary_date
 
 data.to_csv('../booksDB.csv')
