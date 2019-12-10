@@ -262,6 +262,13 @@
 	(export ?ALL)
 )
 
+; User information module
+(defmodule INFO
+	(import MAIN ?ALL)
+	(import DATA ?ALL)
+	(export ?ALL)
+)
+
 ; User preferences module
 (defmodule PREFS
 	(import MAIN ?ALL)
@@ -293,22 +300,10 @@
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot country
-		(type STRING)
-		(default "NONE")
-	)
 )
 
 ; Actual user preferences template
 (deftemplate MAIN::Prefs
-	(slot book
-		(type STRING)
-		(default "NONE")
-	)
-	(slot genre
-		(type SYMBOL)
-		(default NONE)
-	)
 	(slot time
 		(type SYMBOL)
 		(default NONE)
@@ -325,15 +320,18 @@
 
 ; ------------------------------ MAIN functions ------------------------------ ;
 
+; Prints a message
 (deffunction MAIN::print(?msg)
 	(printout t ?msg)
 )
 
+; Prints a message followed by a line break
 (deffunction MAIN::println(?msg)
 	(print ?msg)
 	(printout t crlf)
 )
 
+; Prints the welcome header
 (deffunction MAIN::welcome()
 	(println "")
 	(println "=================================================================")
@@ -452,16 +450,30 @@
 
 ; -------------------------------- DATA rules -------------------------------- ;
 
-; Obtains the user's personal data
+; Obtains the user's personal information
 (defrule DATA::get-user
 	(not (User))
 	=>
 	(assert (User))
 	(println "Introduce the following personal information:")
+	(focus INFO)
 )
 
+; Obtains the user's prefereneces
+(defrule DATA::get-prefs
+	(User)
+	(not (Prefs))
+	=>
+	(assert (Prefs))
+	(println "")
+	(println "Introduce the following preference information:")
+	(focus PREFS)
+)
+
+; -------------------------------- INFO rules -------------------------------- ;
+
 ; Obtains the user's name
-(defrule DATA::get-name
+(defrule INFO::get-name
 	?u <- (User (name "NONE"))
 	=>
 	(bind ?n (question-general "  - Name: "))
@@ -469,7 +481,7 @@
 )
 
 ; Obtains the user's age
-(defrule DATA::get-age
+(defrule INFO::get-age
 	?u <- (User (age -1))
 	=>
 	(bind ?a (question-range "  - Age" 0 150))
@@ -477,54 +489,14 @@
 )
 
 ; Obtains the user's gender
-(defrule DATA::get-gender
+(defrule INFO::get-gender
 	?u <- (User (gender NONE))
 	=>
 	(bind ?g (question-options "  - Gender " male female))
 	(modify ?u (gender ?g))
 )
 
-; Obtains the user's country
-(defrule DATA::get-country
-	?u <- (User (country "NONE"))
-	=>
-	(bind ?c (question-general "  - Country: "))
-	(modify ?u (country ?c))
-)
-
-; Changes from DATA module to PREFS module
-(defrule DATA::get-user-prefs
-	(User (name ~"NONE") (age ~-1) (gender ~NONE) (country ~"NONE"))
-	=>
-	(focus PREFS)
-)
-
 ; ------------------------------- PREFS rules -------------------------------- ;
-
-; Obtains the user's preferenece data
-(defrule PREFS::get-prefs
-	(not (Prefs))
-	=>
-	(assert (Prefs))
-	(println "")
-	(println "Introduce the following preference information:")
-)
-
-; Obtains the user's book preference
-(defrule PREFS::get-book
-	?p <- (Prefs (book "NONE"))
-	=>
-	(bind ?b (question-general "  - Book: "))
-	(modify ?p (book ?b))
-)
-
-; Obtains the user's genre preference
-(defrule PREFS::get-genre
-	?p <- (Prefs (genre NONE))
-	=>
-	(bind ?g (question-options "  - Genre " history romance western))
-	(modify ?p (genre ?g))
-)
 
 ; Obtains the user's available time
 (defrule PREFS::get-time
