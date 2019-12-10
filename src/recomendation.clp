@@ -2,173 +2,13 @@
 ; ================================= ONTOLOGY ================================= ;
 ; ============================================================================ ;
 
-(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
-	(is-a USER)
-	(role abstract)
-	(single-slot title
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot year
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot pages
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot books
-		(type INSTANCE)
-;+		(allowed-classes Book)
-		(create-accessor read-write))
-	(single-slot frequency
-		(type SYMBOL)
-		(allowed-values rarely occasionaly normaly frequently)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot age
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot rating
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot author
-		(type INSTANCE)
-;+		(allowed-classes Author)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot genre
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot gender
-		(type SYMBOL)
-		(allowed-values male female)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot popularity
-		(type SYMBOL)
-		(allowed-values low medium high)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot available_time
-		(type SYMBOL)
-		(allowed-values little medium much)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass Author
-	(is-a USER)
-	(role concrete)
-	(single-slot gender
-		(type SYMBOL)
-		(allowed-values male female)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot popularity
-		(type SYMBOL)
-		(allowed-values low medium high)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot rating
-		(type FLOAT)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot books
-		(type INSTANCE)
-;+		(allowed-classes Book)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass Reader
-	(is-a USER)
-	(role concrete)
-	(multislot books
-		(type INSTANCE)
-;+		(allowed-classes Book)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot available_time
-		(type SYMBOL)
-		(allowed-values little medium much)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot frequency
-		(type SYMBOL)
-		(allowed-values rarely occasionaly normaly frequently)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot age
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass Book
-	(is-a USER)
-	(role concrete)
-	(single-slot popularity
-		(type SYMBOL)
-		(allowed-values low medium high)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot title
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot year
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot genre
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot author
-		(type INSTANCE)
-;+		(allowed-classes Author)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot pages
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
+; TODO add ontology TODO
 
 ; ============================================================================ ;
 ; ================================ INSTANCES ================================= ;
 ; ============================================================================ ;
 
-; Instances declaration
-(definstances instances
-	([ontology_Class10001] of  Book
-
-		(author [ontology_Class10002])
-		(genre "Infantil")
-		(pages 23)
-		(popularity high)
-		(title "Caperucita roja")
-		(year 1980))
-
-	([ontology_Class10002] of  Author
-
-		(books [ontology_Class10001])
-		(gender male)
-		(name "Paco")
-		(popularity medium)
-		(rating 8.0))
-
-)
+; TODO add instances TODO
 
 ; ============================================================================ ;
 ; ================================= MODULES ================================== ;
@@ -202,6 +42,13 @@
 ; User recomendation module
 (defmodule RECOM
 	(import MAIN ?ALL)
+	(export ?ALL)
+)
+
+; User genre recomendation module
+(defmodule GENRE
+	(import MAIN ?ALL)
+	(import RECOM ?ALL)
 	(export ?ALL)
 )
 
@@ -245,8 +92,9 @@
 
 ; Actual user recomendation template
 (deftemplate MAIN::Recom
-	(multislot books
-		(type INSTANCE)
+	(slot genre
+		(type SYMBOL)
+		(default NONE)
 	)
 )
 
@@ -276,9 +124,11 @@
 	(println "")
 )
 
+; ---------------------------------------------------------------------------- ;
+
 ; General question with a set of allowed answers
 (deffunction MAIN::question-options(?question $?allowed-values)
-	(format t "%s" ?question)
+	(format t "%s " ?question)
 	(progn$ (?curr-value $?allowed-values)
 		(format t "[%s]" ?curr-value)
  	)
@@ -288,7 +138,7 @@
 		then (bind ?answer (lowcase ?answer))
 	)
 	(while (not (member ?answer ?allowed-values)) do
-		(format t "%s" ?question)
+		(format t "%s " ?question)
 	 	(progn$ (?curr-value $?allowed-values)
 	 		(format t "[%s]" ?curr-value)
 	 	)
@@ -312,10 +162,10 @@
 
 ; Funcion para hacer una pregunta con respuesta cualquiera
 (deffunction MAIN::question-general(?question)
-	(format t "%s" ?question)
+	(format t "%s " ?question)
 	(bind ?answer (read))
 	(while (not (lexemep ?answer)) do
-		(format t "%s" ?question)
+		(format t "%s " ?question)
 		(bind ?answer (read))
 	)
 	?answer
@@ -426,7 +276,7 @@
 (defrule INFO::get-name
 	?u <- (User (name "NONE"))
 	=>
-	(bind ?n (question-general "  - Name: "))
+	(bind ?n (question-general "  - Name:"))
 	(modify ?u (name ?n))
 )
 
@@ -442,7 +292,7 @@
 (defrule INFO::get-gender
 	?u <- (User (gender NONE))
 	=>
-	(bind ?g (question-options "  - Gender " male female))
+	(bind ?g (question-options "  - Gender" male female))
 	(modify ?u (gender ?g))
 )
 
@@ -452,7 +302,7 @@
 (defrule PREFS::get-time
 	?p <- (Prefs (time NONE))
 	=>
-	(bind ?t (question-options "  - Available time " little medium much))
+	(bind ?t (question-options "  - Available time" little medium much))
 	(modify ?p (time ?t))
 )
 
@@ -460,7 +310,7 @@
 (defrule PREFS::get-freq
 	?p <- (Prefs (freq NONE))
 	=>
-	(bind ?f (question-options "  - Reading frequency " rarely occasionally normally frequently))
+	(bind ?f (question-options "  - Reading frequency" rarely occasionally normally frequently))
 	(modify ?p (freq ?f))
 )
 
@@ -473,4 +323,45 @@
 	(assert (Recom))
 	(println "")
 	(println "Answer the following questions as honestly as you can:")
+	(focus GENRE)
+)
+
+; ---------------------------------- GENRE ----------------------------------- ;
+
+(defrule GENRE::children
+	?r <- (Recom (genre NONE))
+	?u <- (User (age ?a&:(< ?a 12)))
+	=>
+	(bind ?g (question-options "  - Which one do you prefer?" young classics none))
+	(if (neq ?g none)
+		then
+			(modify ?r (genre ?g))
+		else
+			(bind ?ans (question-yes-no "  - Do you prefer fantasy?"))
+			(if (eq ?ans TRUE)
+				then
+					(modify ?r (genre fantasy))
+				else
+					(modify ?u (age 12))
+			)
+	)
+)
+
+(defrule GENRE::teenager
+	?r <- (Recom (genre NONE))
+	?u <- (User (age ?a&:(and (>= ?a 12) (<= ?a 18))))
+	=>
+	(bind ?g (question-options "  - Which one do you prefer?" young classics fantasy thrilers adventure none))
+	(if (neq ?g none)
+		then
+			(modify ?r (genre ?g))
+		else
+			(bind ?ans (question-yes-no "  - Do you prefer horror?"))
+			(if (eq ?ans TRUE)
+				then
+					(modify ?r (genre horror))
+				else
+					(modify ?u (age 20))
+			)
+	)
 )
