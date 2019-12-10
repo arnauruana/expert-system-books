@@ -2,39 +2,39 @@
 ; ================================= ONTOLOGY ================================= ;
 ; ============================================================================ ;
 
-; Author class
-(defclass Author
-	; TODO add ontology TODO
-)
-
-; Book class
-(defclass Book
-	; TODO add ontology TODO
-)
-
-; Reader class
-(defclass Reader
-	; TODO add ontology TODO
-)
+; ; Author class
+; (defclass Author
+; 	; TODO add ontology TODO
+; )
+;
+; ; Book class
+; (defclass Book
+; 	; TODO add ontology TODO
+; )
+;
+; ; Reader class
+; (defclass Reader
+; 	; TODO add ontology TODO
+; )
 
 ; ============================================================================ ;
 ; ================================ INSTANCES ================================= ;
 ; ============================================================================ ;
 
-; Author instances
-(definstances authors
-	; TODO add instances TODO
-)
-
-; Book instances
-(definstances books
-	; TODO add instances TODO
-)
-
-; Reader instances
-(definstances readers
-	; TODO add instances TODO
-)
+; ; Author instances
+; (definstances authors
+; 	; TODO add instances TODO
+; )
+;
+; ; Book instances
+; (definstances books
+; 	; TODO add instances TODO
+; )
+;
+; ; Reader instances
+; (definstances readers
+; 	; TODO add instances TODO
+; )
 
 ; ============================================================================ ;
 ; ================================= MODULES ================================== ;
