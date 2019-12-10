@@ -300,10 +300,6 @@
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot country
-		(type STRING)
-		(default "NONE")
-	)
 )
 
 ; Actual user preferences template
@@ -498,14 +494,6 @@
 	=>
 	(bind ?g (question-options "  - Gender " male female))
 	(modify ?u (gender ?g))
-)
-
-; Obtains the user's country
-(defrule INFO::get-country
-	?u <- (User (country "NONE"))
-	=>
-	(bind ?c (question-general "  - Country: "))
-	(modify ?u (country ?c))
 )
 
 ; ------------------------------- PREFS rules -------------------------------- ;
