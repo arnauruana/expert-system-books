@@ -1,4 +1,4 @@
-; Fri Dec 06 19:45:56 CET 2019
+; Tue Dec 10 09:45:51 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,12 +21,12 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ontology_ProjectKB_Class20162]
-		[ontology_ProjectKB_Class20163]
-		[ontology_ProjectKB_Class20164]
-		[ontology_ProjectKB_Class20165]
-		[ontology_ProjectKB_Class20166]
-		[ontology_ProjectKB_Class20167]))
+		[ontology_ProjectKB_Class20085]
+		[ontology_ProjectKB_Class20086]
+		[ontology_ProjectKB_Class20087]
+		[ontology_ProjectKB_Class20088]
+		[ontology_ProjectKB_Class20089]
+		[ontology_ProjectKB_Class20090]))
 
 ([CLSES_TAB] of  Widget
 
@@ -68,7 +68,7 @@
 
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_550340_Class2] of  Map
+([KB_371093_Class2] of  Map
 )
 
 ([KB_591460_Class0] of  String
@@ -78,8 +78,8 @@
 
 ([KB_591460_Class1] of  Map
 
-	(entries [ontology_ProjectKB_Class20169])
-	(referenced_maps [ontology_ProjectKB_Class20168]))
+	(entries [ontology_ProjectKB_Class20092])
+	(referenced_maps [ontology_ProjectKB_Class20091]))
 
 ([KB_591460_Class100] of  String
 
@@ -219,7 +219,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class16])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
 ([ontology_ProjectKB_Class16] of  Property_List
 )
@@ -228,7 +228,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class18])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
 ([ontology_ProjectKB_Class18] of  Property_List
 )
@@ -237,206 +237,56 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class20])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
 ([ontology_ProjectKB_Class20] of  Property_List
 )
 
-([ontology_ProjectKB_Class20100] of  Widget
-
-	(is_hidden FALSE)
-	(name "Genre")
-	(property_list [ontology_ProjectKB_Class20101])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20101] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20102]))
-
-([ontology_ProjectKB_Class20102] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20119] of  Widget
-
-	(is_hidden FALSE)
-	(name "Classical")
-	(property_list [ontology_ProjectKB_Class20120])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20120] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20121]))
-
-([ontology_ProjectKB_Class20121] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20122] of  Widget
-
-	(is_hidden FALSE)
-	(name "Contemporary")
-	(property_list [ontology_ProjectKB_Class20123])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20123] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20124]))
-
-([ontology_ProjectKB_Class20124] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20125] of  Widget
-
-	(is_hidden FALSE)
-	(name "Detective")
-	(property_list [ontology_ProjectKB_Class20126])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20126] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20127]))
-
-([ontology_ProjectKB_Class20127] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20128] of  Widget
-
-	(is_hidden FALSE)
-	(name "Fantasy")
-	(property_list [ontology_ProjectKB_Class20129])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20129] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20130]))
-
-([ontology_ProjectKB_Class20130] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20131] of  Widget
-
-	(is_hidden FALSE)
-	(name "Historical")
-	(property_list [ontology_ProjectKB_Class20132])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20132] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20133]))
-
-([ontology_ProjectKB_Class20133] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20134] of  Widget
-
-	(is_hidden FALSE)
-	(name "Horror")
-	(property_list [ontology_ProjectKB_Class20135])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20135] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20136]))
-
-([ontology_ProjectKB_Class20136] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20137] of  Widget
-
-	(is_hidden FALSE)
-	(name "Romance")
-	(property_list [ontology_ProjectKB_Class20138])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20138] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20139]))
-
-([ontology_ProjectKB_Class20139] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20140] of  Widget
-
-	(is_hidden FALSE)
-	(name "ScienceFiction")
-	(property_list [ontology_ProjectKB_Class20141])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20141] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20142]))
-
-([ontology_ProjectKB_Class20142] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20143] of  Widget
-
-	(is_hidden FALSE)
-	(name "Western")
-	(property_list [ontology_ProjectKB_Class20144])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
-
-([ontology_ProjectKB_Class20144] of  Property_List
-
-	(properties [ontology_ProjectKB_Class20145]))
-
-([ontology_ProjectKB_Class20145] of  Property_List
-
-	(name "layout properties"))
-
-([ontology_ProjectKB_Class20162] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([ontology_ProjectKB_Class20163] of  String
+([ontology_ProjectKB_Class20085] of  String
 
 	(name "Author")
 	(string_value "name"))
 
-([ontology_ProjectKB_Class20164] of  String
+([ontology_ProjectKB_Class20086] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ontology_ProjectKB_Class20087] of  String
 
 	(name "Reader")
 	(string_value "name"))
 
-([ontology_ProjectKB_Class20165] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([ontology_ProjectKB_Class20166] of  String
+([ontology_ProjectKB_Class20088] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([ontology_ProjectKB_Class20167] of  String
+([ontology_ProjectKB_Class20089] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([ontology_ProjectKB_Class20090] of  String
 
 	(name "Book")
 	(string_value "title"))
 
-([ontology_ProjectKB_Class20168] of  Map
+([ontology_ProjectKB_Class20091] of  Map
 )
 
-([ontology_ProjectKB_Class20169] of  Map_Entry
+([ontology_ProjectKB_Class20092] of  Map_Entry
 
 	(key "InstanceDisplay.yellow_stickies")
 	(key_class "java.lang.String")
-	(value "ontology_ProjectKB_Class20168")
+	(value "ontology_ProjectKB_Class20091")
 	(value_class "java.util.Map"))
 
 ([ontology_ProjectKB_Class21] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class22])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
 ([ontology_ProjectKB_Class22] of  Property_List
 )
@@ -810,11 +660,11 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
-		[STANDARD_CLASS_FORM_WIDGET]
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET])
+		[STANDARD_CLASS_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
