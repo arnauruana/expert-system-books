@@ -65,10 +65,9 @@
 	(export ?ALL)
 )
 
-; User choices module
-(defmodule CHOICES
+; User recomendation module
+(defmodule RECOM
 	(import MAIN ?ALL)
-	(import DATA ?ALL)
 	(export ?ALL)
 )
 
@@ -110,6 +109,14 @@
 	)
 )
 
+; Actual user recomendation template
+(deftemplate MAIN::Recom
+	(multislot hola
+		(type SYMBOL)
+		(default NONE)
+	)
+)
+
 ; ============================================================================ ;
 ; ================================ FUNCTIONS ================================= ;
 ; ============================================================================ ;
@@ -136,32 +143,8 @@
 	(println "")
 )
 
-; ----------------------------------- DATA ----------------------------------- ;
-
-; Funcion para hacer una pregunta con respuesta cualquiera
-(deffunction DATA::question-general(?question)
-	(format t "%s" ?question)
-	(bind ?answer (read))
-	(while (not (lexemep ?answer)) do
-		(format t "%s" ?question)
-		(bind ?answer (read))
-	)
-	?answer
-)
-
-; Funcion para hacer una pregunta con respuesta numerica unica
-(deffunction DATA::question-range(?question ?rangeI ?rangeF)
-	(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
-	(bind ?answer (read))
-	(while (not (and (>= ?answer ?rangeI) (<= ?answer ?rangeF))) do
-		(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
-		(bind ?answer (read))
-	)
-	?answer
-)
-
-; Funcion para hacer una pregunta general con una serie de respuestas admitidas
-(deffunction DATA::question-options(?question $?allowed-values)
+; General question with a set of allowed answers
+(deffunction MAIN::question-options(?question $?allowed-values)
 	(format t "%s" ?question)
 	(progn$ (?curr-value $?allowed-values)
 		(format t "[%s]" ?curr-value)
@@ -185,10 +168,8 @@
 	?answer
 )
 
-; ---------------------------------------------------------------------------- ;
-
-; Funcion para hacer una pregunta de tipo si/no
-(deffunction question-yes-no(?question)
+; General question with yes/no answers.
+(deffunction MAIN::question-yes-no(?question)
 	(bind ?answer (question-options ?question yes no))
 	(if (or (eq ?answer yes) (eq ?answer y))
 		then TRUE
@@ -196,8 +177,30 @@
 	)
 )
 
+; Funcion para hacer una pregunta con respuesta cualquiera
+(deffunction MAIN::question-general(?question)
+	(format t "%s" ?question)
+	(bind ?answer (read))
+	(while (not (lexemep ?answer)) do
+		(format t "%s" ?question)
+		(bind ?answer (read))
+	)
+	?answer
+)
+
+; Funcion para hacer una pregunta con respuesta numerica unica
+(deffunction MAIN::question-range(?question ?rangeI ?rangeF)
+	(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
+	(bind ?answer (read))
+	(while (not (and (>= ?answer ?rangeI) (<= ?answer ?rangeF))) do
+		(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
+		(bind ?answer (read))
+	)
+	?answer
+)
+
 ; Funcion para hacer pregunta con indice de respuestas posibles
-(deffunction question-index(?question $?possible-values)
+(deffunction MAIN::question-index(?question $?possible-values)
 	(bind ?line (format nil "%s" ?question))
 	(printout t ?line crlf)
 	(progn$ (?var ?possible-values)
@@ -209,7 +212,7 @@
 )
 
 ; Funcion para hacer una pregunta multi-respuesta con indices
-(deffunction question-multi(?question $?possible-values)
+(deffunction MAIN::question-multi(?question $?possible-values)
 	(bind ?line (format nil "%s" ?question))
 	(printout t ?line crlf)
 	(progn$ (?var ?possible-values)
@@ -236,17 +239,35 @@
 
 ; ----------------------------------- MAIN ----------------------------------- ;
 
-; Starts the execution
+; Starts the execution printing a welcome messsage
 (defrule MAIN::initial
-	(initial-fact)
+	?fact <- (initial-fact)
 	=>
 	(welcome)
+	(retract ?fact)
+)
+
+; Obtains user's data changing from MAIN to DATA
+(defrule MAIN::get-data
+	(not (initial-fact))
+	(not (User))
+	(not (Prefs))
+	=>
 	(focus DATA)
+)
+
+; Recommends a book to the user changing from MAIN to RECOM
+(defrule MAIN::recommend
+	(User)
+	(Prefs)
+	(not (Recom))
+	=>
+	(focus RECOM)
 )
 
 ; ----------------------------------- DATA ----------------------------------- ;
 
-; Obtains the user's personal information
+; Obtains the user's personal information changing from DATA to INFO
 (defrule DATA::get-user
 	(not (User))
 	=>
@@ -255,7 +276,7 @@
 	(focus INFO)
 )
 
-; Obtains the user's prefereneces
+; Obtains the user's prefereneces changing from DATA to PREFS
 (defrule DATA::get-prefs
 	(User)
 	(not (Prefs))
@@ -264,17 +285,6 @@
 	(println "")
 	(println "Introduce the following preference information:")
 	(focus PREFS)
-)
-
-; Obtains the user's choices
-(defrule DATA::get-choices
-	(User)
-	(Prefs)
-	=>
-	(assert (CHOICES))
-	(println "")
-	(println "Answer the following questions as honestly as you can:")
-	(focus CHOICES)
 )
 
 ; ----------------------------------- INFO ----------------------------------- ;
@@ -321,4 +331,13 @@
 	(modify ?p (freq ?f))
 )
 
-; --------------------------------- CHOICES ---------------------------------- ;
+; ---------------------------------- RECOM ----------------------------------- ;
+
+; Creates a recomendation template for the user
+(defrule RECOM::create
+	(not (Recom))
+	=>
+	(assert (Recom))
+	(println "")
+	(println "Answer the following questions as honestly as you can:")
+)
