@@ -276,6 +276,13 @@
 	(export ?ALL)
 )
 
+; User choices module
+(defmodule CHOICES
+	(import MAIN ?ALL)
+	(import DATA ?ALL)
+	(export ?ALL)
+)
+
 ; ============================================================================ ;
 ; ================================= MESSAGES ================================= ;
 ; ============================================================================ ;
@@ -318,7 +325,7 @@
 ; ================================ FUNCTIONS ================================= ;
 ; ============================================================================ ;
 
-; ------------------------------ MAIN functions ------------------------------ ;
+; ----------------------------------- MAIN ----------------------------------- ;
 
 ; Prints a message
 (deffunction MAIN::print(?msg)
@@ -340,7 +347,7 @@
 	(println "")
 )
 
-; ------------------------------ DATA functions ------------------------------ ;
+; ----------------------------------- DATA ----------------------------------- ;
 
 ; Funcion para hacer una pregunta con respuesta cualquiera
 (deffunction DATA::question-general(?question)
@@ -438,7 +445,7 @@
 ; ============================== RULES & FACTS =============================== ;
 ; ============================================================================ ;
 
-; -------------------------------- MAIN rules -------------------------------- ;
+; ----------------------------------- MAIN ----------------------------------- ;
 
 ; Starts the execution
 (defrule MAIN::initial
@@ -448,7 +455,7 @@
 	(focus DATA)
 )
 
-; -------------------------------- DATA rules -------------------------------- ;
+; ----------------------------------- DATA ----------------------------------- ;
 
 ; Obtains the user's personal information
 (defrule DATA::get-user
@@ -470,7 +477,18 @@
 	(focus PREFS)
 )
 
-; -------------------------------- INFO rules -------------------------------- ;
+; Obtains the user's choices
+(defrule DATA::get-choices
+	(User)
+	(Prefs)
+	=>
+	(assert (CHOICES))
+	(println "")
+	(println "Answer the following questions as honestly as you can:")
+	(focus CHOICES)
+)
+
+; ----------------------------------- INFO ----------------------------------- ;
 
 ; Obtains the user's name
 (defrule INFO::get-name
@@ -496,7 +514,7 @@
 	(modify ?u (gender ?g))
 )
 
-; ------------------------------- PREFS rules -------------------------------- ;
+; ---------------------------------- PREFS ----------------------------------- ;
 
 ; Obtains the user's available time
 (defrule PREFS::get-time
@@ -513,3 +531,5 @@
 	(bind ?f (question-options "  - Reading frequency " rarely occasionally normally frequently))
 	(modify ?p (freq ?f))
 )
+
+; --------------------------------- CHOICES ---------------------------------- ;
