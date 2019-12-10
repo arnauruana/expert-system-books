@@ -480,7 +480,7 @@
 (defrule DATA::get-gender
 	?u <- (User (gender NONE))
 	=>
-	(bind ?g (question-options "  - Gender " male famele))
+	(bind ?g (question-options "  - Gender " male female))
 	(modify ?u (gender ?g))
 )
 
@@ -538,6 +538,6 @@
 (defrule PREFS::get-freq
 	?p <- (Prefs (freq NONE))
 	=>
-	(bind ?f (question-options "  - Read frequency " daily occasionally few_times))
+	(bind ?f (question-options "  - Reading frequency " rarely occasionally normally frequently))
 	(modify ?p (freq ?f))
 )
