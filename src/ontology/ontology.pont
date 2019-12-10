@@ -1,4 +1,4 @@
-; Tue Dec 10 11:56:45 CET 2019
+; Tue Dec 10 12:39:39 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -124,6 +124,10 @@
 		(type SYMBOL)
 		(allowed-values low medium high)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot rating
+		(type FLOAT)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot title
 		(type STRING)

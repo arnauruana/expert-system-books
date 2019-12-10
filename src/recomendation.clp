@@ -2,39 +2,173 @@
 ; ================================= ONTOLOGY ================================= ;
 ; ============================================================================ ;
 
-; ; Author class
-; (defclass Author
-; 	; TODO add ontology TODO
-; )
-;
-; ; Book class
-; (defclass Book
-; 	; TODO add ontology TODO
-; )
-;
-; ; Reader class
-; (defclass Reader
-; 	; TODO add ontology TODO
-; )
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot title
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot year
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot pages
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot books
+		(type INSTANCE)
+;+		(allowed-classes Book)
+		(create-accessor read-write))
+	(single-slot frequency
+		(type SYMBOL)
+		(allowed-values rarely occasionaly normaly frequently)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot age
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot rating
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot author
+		(type INSTANCE)
+;+		(allowed-classes Author)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot genre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot gender
+		(type SYMBOL)
+		(allowed-values male female)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot popularity
+		(type SYMBOL)
+		(allowed-values low medium high)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot available_time
+		(type SYMBOL)
+		(allowed-values little medium much)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Author
+	(is-a USER)
+	(role concrete)
+	(single-slot gender
+		(type SYMBOL)
+		(allowed-values male female)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot popularity
+		(type SYMBOL)
+		(allowed-values low medium high)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot rating
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot books
+		(type INSTANCE)
+;+		(allowed-classes Book)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Reader
+	(is-a USER)
+	(role concrete)
+	(multislot books
+		(type INSTANCE)
+;+		(allowed-classes Book)
+		(create-accessor read-write))
+	(single-slot name_
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot available_time
+		(type SYMBOL)
+		(allowed-values little medium much)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot frequency
+		(type SYMBOL)
+		(allowed-values rarely occasionaly normaly frequently)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot age
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Book
+	(is-a USER)
+	(role concrete)
+	(single-slot popularity
+		(type SYMBOL)
+		(allowed-values low medium high)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot title
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot year
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot genre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot author
+		(type INSTANCE)
+;+		(allowed-classes Author)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot pages
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
 
 ; ============================================================================ ;
 ; ================================ INSTANCES ================================= ;
 ; ============================================================================ ;
 
-; ; Author instances
-; (definstances authors
-; 	; TODO add instances TODO
-; )
-;
-; ; Book instances
-; (definstances books
-; 	; TODO add instances TODO
-; )
-;
-; ; Reader instances
-; (definstances readers
-; 	; TODO add instances TODO
-; )
+; Instances declaration
+(definstances instances
+	([ontology_Class10001] of  Book
+
+		(author [ontology_Class10002])
+		(genre "Infantil")
+		(pages 23)
+		(popularity high)
+		(title "Caperucita roja")
+		(year 1980))
+
+	([ontology_Class10002] of  Author
+
+		(books [ontology_Class10001])
+		(gender male)
+		(name "Paco")
+		(popularity medium)
+		(rating 8.0))
+
+)
 
 ; ============================================================================ ;
 ; ================================= MODULES ================================== ;
@@ -111,9 +245,8 @@
 
 ; Actual user recomendation template
 (deftemplate MAIN::Recom
-	(multislot hola
-		(type SYMBOL)
-		(default NONE)
+	(multislot books
+		(type INSTANCE)
 	)
 )
 
@@ -138,7 +271,7 @@
 (deffunction MAIN::welcome()
 	(println "")
 	(println "=================================================================")
-	(println "=================== Book recomendation system ===================")
+	(println "=                   BOOK RECOMENDATION SYSTEM                   =")
 	(println "=================================================================")
 	(println "")
 )
@@ -333,7 +466,7 @@
 
 ; ---------------------------------- RECOM ----------------------------------- ;
 
-; Creates a recomendation template for the user
+; Creates the recomendation template for the user
 (defrule RECOM::create
 	(not (Recom))
 	=>
