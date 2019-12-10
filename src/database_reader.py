@@ -3,6 +3,18 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+def isEnglish(s):
+    try:
+        s.encode(encoding='utf-8').decode('ascii')
+    except UnicodeDecodeError:
+        return False
+    else:
+        return True
+
+def isYear(y):
+    aux = str(y)
+    return len(aux) == 4
+
 data = pd.read_csv('../good_reads_final.csv')
 
 remove_genres = {
@@ -138,5 +150,17 @@ for date in data['publish_date']:
     auxiliary_date.append(aux[-1])
 
 data['publish_date'] = auxiliary_date
+
+for date in data['publish_date']:
+    if (not isYear(date)):
+        data = data[~data.publish_date.str.contains(date)]
+
+for author in data['author_name']:
+    if (not isEnglish(author)):
+        data = data[~data.author_name.str.contains(author)]
+
+for title in data['book_title']:
+    if (not isEnglish(title)):
+        data = data[~data.book_title.str.contains(title)]
 
 data.to_csv('../booksDB.csv')
