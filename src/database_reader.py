@@ -133,12 +133,10 @@ drop_list = ['author_genres',
     'birthplace',
     'author_id',
     'author_page_url',
-    'author_rating_count',
     'author_review_count',
     'book_fullurl',
     'book_id',
     'genre_2',
-    'num_ratings',
     'num_reviews']
 
 data = data.drop(drop_list, axis = 1)
