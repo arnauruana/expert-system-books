@@ -2154,7 +2154,7 @@
 
 ([ontology_Class11077] of Book (author [ontology_Class10263]) (genre Historical) (pages 2875) (popularity low) (title RiflesforWatie) (year 1957) (rating 352))
 
-([ontology_Class11078] of Book (author [ontology_Class10264]) (genre Young) (pages 2932) (popularity medium) (title MissingMay(ScholasticGold)) (year 1992) (rating 89))
+([ontology_Class11078] of Book (author [ontology_Class10264]) (genre Young) (pages 2932) (popularity medium) (title MissingMayScholasticGold) (year 1992) (rating 89))
 
 ([ontology_Class11079] of Book (author [ontology_Class10265]) (genre Young) (pages 4266) (popularity medium) (title Tangerine) (year 1997) (rating 312))
 
@@ -2536,7 +2536,7 @@
 
 ([ontology_Class11268] of Book (author [ontology_Class10190]) (genre Uncategorized) (pages 1560) (popularity high) (title TheGodfather) (year 1969) (rating 448))
 
-([ontology_Class11269] of Book (author [ontology_Class10176]) (genre Thriller) (pages 1748) (popularity medium) (title WhereAretheChildren?) (year 1975) (rating 304))
+([ontology_Class11269] of Book (author [ontology_Class10176]) (genre Thriller) (pages 1748) (popularity medium) (title WhereAretheChildren) (year 1975) (rating 304))
 
 ([ontology_Class11270] of Book (author [ontology_Class10183]) (genre Thriller) (pages 2143) (popularity medium) (title ThePoet) (year 1996) (rating 510))
 
@@ -2744,7 +2744,7 @@
 
 ([ontology_Class11372] of Book (author [ontology_Class10115]) (genre Historical) (pages 2921) (popularity medium) (title WarandRemembrance) (year 1978) (rating 1042))
 
-([ontology_Class11373] of Book (author [ontology_Class10320]) (genre Young) (pages 6633) (popularity medium) (title KissedbyanAngel/ThePowerofLove/Soulmates) (year 1995) (rating 690))
+([ontology_Class11373] of Book (author [ontology_Class10320]) (genre Young) (pages 6633) (popularity medium) (title KissedbyanAngelThePowerofLoveSoulmates) (year 1995) (rating 690))
 
 ([ontology_Class11374] of Book (author [ontology_Class10071]) (genre Classics) (pages 3875) (popularity high) (title TheCatcherintheRye) (year 1951) (rating 277))
 
@@ -3506,8 +3506,6 @@
 
 ([ontology_Class11753] of Book (author [ontology_Class10030]) (genre Fantasy) (pages 937) (popularity medium) (title WildMagic) (year 1992) (rating 362))
 
-([ontology_Class11754] of Book (author [ontology_Class10427]) (genre Classics) (pages 1073) (popularity medium) (title البؤساء(abridged)) (year 1862) (rating 487))
-
 ([ontology_Class11755] of Book (author [ontology_Class10422]) (genre Classics) (pages 1168) (popularity medium) (title LeMorted'Arthur:KingArthurandtheLegendsoftheRoundTable) (year 1485) (rating 512))
 
 ([ontology_Class11756] of Book (author [ontology_Class10040]) (genre Fantasy) (pages 1178) (popularity medium) (title ASwiftlyTiltingPlanet) (year 1978) (rating 278))
@@ -3740,7 +3738,7 @@
 
 ([ontology_Class11870] of Book (author [ontology_Class10583]) (genre Historical) (pages 1180) (popularity low) (title Penmarric) (year 1971) (rating 704))
 
-([ontology_Class11871] of Book (author [ontology_Class10320]) (genre Young) (pages 470) (popularity medium) (title KissedbyanAngel/ThePowerofLove/Soulmates) (year 1995) (rating 698))
+([ontology_Class11871] of Book (author [ontology_Class10320]) (genre Young) (pages 470) (popularity medium) (title KissedbyanAngelThePowerofLoveSoulmates) (year 1995) (rating 698))
 
 ([ontology_Class11872] of Book (author [ontology_Class10584]) (genre Historical) (pages 1333) (popularity medium) (title RossPoldark) (year 1945) (rating 455))
 
@@ -4188,7 +4186,7 @@
 
 ([ontology_Class12094] of Book (author [ontology_Class10106]) (genre Classics) (pages 475) (popularity low) (title TheRoadBack) (year 1931) (rating 352))
 
-([ontology_Class12095] of Book (author [ontology_Class10178]) (genre Thriller) (pages 1787) (popularity medium) (title WhoseBody?) (year 1923) (rating 212))
+([ontology_Class12095] of Book (author [ontology_Class10178]) (genre Thriller) (pages 1787) (popularity medium) (title WhoseBody) (year 1923) (rating 212))
 
 ([ontology_Class12096] of Book (author [ontology_Class10463]) (genre Thriller) (pages 1824) (popularity low) (title DeathatWentwaterCourt) (year 1994) (rating 252))
 
@@ -4364,7 +4362,7 @@
 
 ([ontology_Class12182] of Book (author [ontology_Class10213]) (genre Classics) (pages 4192) (popularity high) (title TheCompleteGrimm'sFairyTales) (year 1812) (rating 880))
 
-([ontology_Class12183] of Book (author [ontology_Class10320]) (genre Young) (pages 937) (popularity medium) (title KissedbyanAngel/ThePowerofLove/Soulmates) (year 1995) (rating 690))
+([ontology_Class12183] of Book (author [ontology_Class10320]) (genre Young) (pages 937) (popularity medium) (title KissedbyanAngelThePowerofLoveSoulmates) (year 1995) (rating 690))
 
 ([ontology_Class12184] of Book (author [ontology_Class10105]) (genre Classics) (pages 1514) (popularity high) (title UncleTom'sCabin) (year 1852) (rating 438))
 
