@@ -15,7 +15,7 @@ def isYear(y):
     aux = str(y)
     return len(aux) == 4
 
-data = pd.read_csv('../good_reads_final.csv')
+data = pd.read_csv('./good_reads_final.csv')
 
 remove_genres = {
  'Language',

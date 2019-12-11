@@ -3,7 +3,7 @@ from collections import defaultdict
 
 data = pd.read_csv('../booksDB.csv')
 
-file = open("./ontology/instances.pins","w")
+file = open("./instances.pins","w")
 
 def getPopularity(p):
     if (p > 100000):
