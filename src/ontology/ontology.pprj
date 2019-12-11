@@ -1,4 +1,4 @@
-; Tue Dec 10 12:39:39 CET 2019
+; Wed Dec 11 16:58:24 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,12 +21,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ontology_ProjectKB_Class30127]
-		[ontology_ProjectKB_Class30128]
-		[ontology_ProjectKB_Class30129]
-		[ontology_ProjectKB_Class30130]
-		[ontology_ProjectKB_Class30131]
-		[ontology_ProjectKB_Class30132]))
+		[ontology_ProjectKB_Class20125]
+		[ontology_ProjectKB_Class20126]
+		[ontology_ProjectKB_Class20127]
+		[ontology_ProjectKB_Class20128]
+		[ontology_ProjectKB_Class20129]))
 
 ([CLSES_TAB] of  Widget
 
@@ -75,8 +74,8 @@
 
 ([KB_591460_Class1] of  Map
 
-	(entries [ontology_ProjectKB_Class30134])
-	(referenced_maps [ontology_ProjectKB_Class30133]))
+	(entries [ontology_ProjectKB_Class20131])
+	(referenced_maps [ontology_ProjectKB_Class20130]))
 
 ([KB_591460_Class100] of  String
 
@@ -170,7 +169,7 @@
 	(name "classes_file_name")
 	(string_value "ontology.pont"))
 
-([KB_816876_Class2] of  Map
+([KB_741879_Class2] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -242,6 +241,68 @@
 ([ontology_ProjectKB_Class20] of  Property_List
 )
 
+([ontology_ProjectKB_Class20086] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(name "books")
+	(property_list [ontology_ProjectKB_Class20087])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([ontology_ProjectKB_Class20087] of  Property_List
+
+	(properties
+		[ontology_ProjectKB_Class20088]
+		[ontology_ProjectKB_Class20089]))
+
+([ontology_ProjectKB_Class20088] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([ontology_ProjectKB_Class20089] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([ontology_ProjectKB_Class20125] of  String
+
+	(name "Author")
+	(string_value "name"))
+
+([ontology_ProjectKB_Class20126] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ontology_ProjectKB_Class20127] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([ontology_ProjectKB_Class20128] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([ontology_ProjectKB_Class20129] of  String
+
+	(name "Book")
+	(string_value "title"))
+
+([ontology_ProjectKB_Class20130] of  Map
+)
+
+([ontology_ProjectKB_Class20131] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "ontology_ProjectKB_Class20130")
+	(value_class "java.util.Map"))
+
 ([ontology_ProjectKB_Class21] of  Widget
 
 	(is_hidden TRUE)
@@ -292,46 +353,6 @@
 
 ([ontology_ProjectKB_Class30] of  Property_List
 )
-
-([ontology_ProjectKB_Class30127] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([ontology_ProjectKB_Class30128] of  String
-
-	(name "Author")
-	(string_value "name"))
-
-([ontology_ProjectKB_Class30129] of  String
-
-	(name "Reader")
-	(string_value "name"))
-
-([ontology_ProjectKB_Class30130] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([ontology_ProjectKB_Class30131] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([ontology_ProjectKB_Class30132] of  String
-
-	(name "Book")
-	(string_value "title"))
-
-([ontology_ProjectKB_Class30133] of  Map
-)
-
-([ontology_ProjectKB_Class30134] of  Map_Entry
-
-	(key "InstanceDisplay.yellow_stickies")
-	(key_class "java.lang.String")
-	(value "ontology_ProjectKB_Class30133")
-	(value_class "java.util.Map"))
 
 ([ontology_ProjectKB_Class31] of  Widget
 
@@ -661,8 +682,8 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_FACET_FORM_WIDGET]
 		[STANDARD_SLOT_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")
