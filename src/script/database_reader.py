@@ -44,7 +44,6 @@ remove_genres = {
  'Manga',
  'Lgbt',
  'Travel',
- 'Mythology',
  'Glbt',
  'Family',
  'Couture',
@@ -92,13 +91,11 @@ remove_genres = {
  'Teaching',
  'Social Science',
  'Leadership',
- 'Fairy Tales',
  'Reference',
  'Military History',
  'Dungeons and Dragons',
  'Economics',
- 'Politics',
- 'Magical Realism'}
+ 'Politics'}
 
 for rm in remove_genres:
     data = data[~data.genre_1.str.contains(rm)]
@@ -121,12 +118,15 @@ data['genre_1'] = data['genre_1'].replace({'Fiction':'Uncategorized',
     'Paranormal'        : 'Horror',
     'Speculative Fiction':'Thriller',
     'Womens Fiction'    : 'Romance',
+    'Mythology'         : 'Religious'
     'Christian Fiction' : 'Religious',
     'Biblical Fiction'  : 'Religious',
     'Christian'         : 'Religious',
     'Realistic Fiction' : 'Realistic',
     'History'           : 'Historical',
     'Dark Fantasy'      : 'Fantasy',
+    'Fairy Tales'       : 'Fantasy',
+    'Magical Realism'   : 'Fantasy',
     'Love'              : 'Romance'})
 
 drop_list = ['author_genres',

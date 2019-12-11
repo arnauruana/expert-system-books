@@ -80,10 +80,6 @@
 
 ; Actual user preferences template
 (deftemplate MAIN::Prefs
-	(slot time
-		(type SYMBOL)
-		(default NONE)
-	)
 	(slot freq
 		(type SYMBOL)
 		(default NONE)
@@ -130,7 +126,8 @@
 (deffunction MAIN::question-options(?question $?allowed-values)
 	(format t "%s " ?question)
 	(progn$ (?curr-value $?allowed-values)
-		(format t "[%s]" ?curr-value)
+    (println "")
+		(format t "      [%s]" ?curr-value)
  	)
 	(printout t ": ")
 	(bind ?answer (read))
@@ -140,7 +137,8 @@
 	(while (not (member ?answer ?allowed-values)) do
 		(format t "%s " ?question)
 	 	(progn$ (?curr-value $?allowed-values)
-	 		(format t "[%s]" ?curr-value)
+      (println "")
+	 		(format t "      [%s]" ?curr-value)
 	 	)
 	 	(printout t ": ")
 		(bind ?answer (read))
@@ -297,14 +295,6 @@
 )
 
 ; ---------------------------------- PREFS ----------------------------------- ;
-
-; Obtains the user's available time
-(defrule PREFS::get-time
-	?p <- (Prefs (time NONE))
-	=>
-	(bind ?t (question-options "  - Available time" little medium much))
-	(modify ?p (time ?t))
-)
 
 ; Obtains the user's read frequency
 (defrule PREFS::get-freq
