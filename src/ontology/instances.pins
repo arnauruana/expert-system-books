@@ -1800,7 +1800,7 @@
 
 ([ontology_Class10900] of Book (author [ontology_Class10089]) (genre Historical) (pages 19694) (popularity medium) (title TheFarPavilions) (year 1978) (rating 958))
 
-([ontology_Class10901] of Book (author [ontology_Class10090]) (genre Historical) (pages 21766) (popularity low) (title TheCompleteAubrey/MaturinNovels(5Volumes)) (year 1994) (rating 6576))
+([ontology_Class10901] of Book (author [ontology_Class10090]) (genre Historical) (pages 21766) (popularity low) (title TheCompleteAubrey/MaturinNovels) (year 1994) (rating 6576))
 
 ([ontology_Class10902] of Book (author [ontology_Class10091]) (genre Historical) (pages 21859) (popularity medium) (title London) (year 1997) (rating 1152))
 
@@ -1840,7 +1840,7 @@
 
 ([ontology_Class10920] of Book (author [ontology_Class10109]) (genre Classics) (pages 242647) (popularity high) (title Catch-22) (year 1961) (rating 453))
 
-([ontology_Class10921] of Book (author [ontology_Class10110]) (genre Classics) (pages 489613) (popularity high) (title Alice'sAdventuresinWonderland&ThroughtheLooking-Glass) (year 1872) (rating 239))
+([ontology_Class10921] of Book (author [ontology_Class10110]) (genre Classics) (pages 489613) (popularity high) (title Alice'sAdventuresinWonderlandAndThroughtheLooking-Glass) (year 1872) (rating 239))
 
 ([ontology_Class10922] of Book (author [ontology_Class10111]) (genre Fantasy) (pages 160113) (popularity high) (title ThePhantomTollbooth) (year 1961) (rating 256))
 
@@ -2352,7 +2352,7 @@
 
 ([ontology_Class11176] of Book (author [ontology_Class10303]) (genre Classics) (pages 11822) (popularity high) (title BreakfastatTiffany's) (year 1958) (rating 142))
 
-([ontology_Class11177] of Book (author [ontology_Class10110]) (genre Classics) (pages 12960) (popularity high) (title Alice'sAdventuresinWonderland&ThroughtheLooking-Glass) (year 1872) (rating 239))
+([ontology_Class11177] of Book (author [ontology_Class10110]) (genre Classics) (pages 12960) (popularity high) (title Alice'sAdventuresinWonderlandAndThroughtheLooking-Glass) (year 1872) (rating 239))
 
 ([ontology_Class11178] of Book (author [ontology_Class10068]) (genre Classics) (pages 23054) (popularity high) (title Frankenstein) (year 1818) (rating 273))
 
@@ -2628,7 +2628,7 @@
 
 ([ontology_Class11314] of Book (author [ontology_Class10362]) (genre Uncategorized) (pages 1497) (popularity low) (title Lizard) (year 1993) (rating 180))
 
-([ontology_Class11315] of Book (author [ontology_Class10363]) (genre Horror) (pages 1740) (popularity low) (title JapaneseTalesofMystery&Imagination) (year 1956) (rating 222))
+([ontology_Class11315] of Book (author [ontology_Class10363]) (genre Horror) (pages 1740) (popularity low) (title JapaneseTalesofMysteryAndImagination) (year 1956) (rating 222))
 
 ([ontology_Class11316] of Book (author [ontology_Class10364]) (genre Uncategorized) (pages 1935) (popularity medium) (title TheSamurai'sGarden) (year 1994) (rating 211))
 
@@ -2844,7 +2844,7 @@
 
 ([ontology_Class11422] of Book (author [ontology_Class10064]) (genre Fantasy) (pages 4127) (popularity high) (title TheGoldenCompass) (year 1995) (rating 399))
 
-([ontology_Class11423] of Book (author [ontology_Class10399]) (genre Romance) (pages 375) (popularity low) (title Moonlight&Whiskey) (year 12th) (rating 291))
+([ontology_Class11423] of Book (author [ontology_Class10399]) (genre Romance) (pages 375) (popularity low) (title MoonlightAndWhiskey) (year 12th) (rating 291))
 
 ([ontology_Class11424] of Book (author [ontology_Class10049]) (genre Young) (pages 7273) (popularity high) (title WalkTwoMoons) (year 1994) (rating 280))
 
@@ -2902,7 +2902,7 @@
 
 ([ontology_Class11451] of Book (author [ontology_Class10213]) (genre Classics) (pages 12073) (popularity high) (title TheCompleteGrimm'sFairyTales) (year 1812) (rating 880))
 
-([ontology_Class11452] of Book (author [ontology_Class10110]) (genre Classics) (pages 15449) (popularity high) (title Alice'sAdventuresinWonderland&ThroughtheLooking-Glass) (year 1872) (rating 239))
+([ontology_Class11452] of Book (author [ontology_Class10110]) (genre Classics) (pages 15449) (popularity high) (title Alice'sAdventuresinWonderlandAndThroughtheLooking-Glass) (year 1872) (rating 239))
 
 ([ontology_Class11453] of Book (author [ontology_Class10412]) (genre Uncategorized) (pages 766) (popularity low) (title Holiday) (year 1974) (rating 239))
 
@@ -3744,7 +3744,7 @@
 
 ([ontology_Class11872] of Book (author [ontology_Class10584]) (genre Historical) (pages 1333) (popularity medium) (title RossPoldark) (year 1945) (rating 455))
 
-([ontology_Class11873] of Book (author [ontology_Class10585]) (genre Historical) (pages 1380) (popularity medium) (title TheManyLives&SecretSorrowsofJosephineB.) (year 1995) (rating 448))
+([ontology_Class11873] of Book (author [ontology_Class10585]) (genre Historical) (pages 1380) (popularity medium) (title TheManyLivesAndSecretSorrowsofJosephineB.) (year 1995) (rating 448))
 
 ([ontology_Class11874] of Book (author [ontology_Class10201]) (genre Classics) (pages 1884) (popularity high) (title NorthandSouth) (year 1855) (rating 521))
 
@@ -3792,7 +3792,7 @@
 
 ([ontology_Class11896] of Book (author [ontology_Class10159]) (genre Classics) (pages 3109) (popularity high) (title TheGoodEarth) (year 1931) (rating 418))
 
-([ontology_Class11897] of Book (author [ontology_Class10110]) (genre Classics) (pages 3128) (popularity high) (title Alice'sAdventuresinWonderland&ThroughtheLooking-Glass) (year 1872) (rating 239))
+([ontology_Class11897] of Book (author [ontology_Class10110]) (genre Classics) (pages 3128) (popularity high) (title Alice'sAdventuresinWonderlandAndThroughtheLooking-Glass) (year 1872) (rating 239))
 
 ([ontology_Class11898] of Book (author [ontology_Class10032]) (genre Fantasy) (pages 3222) (popularity high) (title TuckEverlasting) (year 1975) (rating 139))
 
@@ -3920,7 +3920,7 @@
 
 ([ontology_Class11960] of Book (author [ontology_Class10014]) (genre Uncategorized) (pages 1922) (popularity high) (title MemoirsofaGeisha) (year 1997) (rating 434))
 
-([ontology_Class11961] of Book (author [ontology_Class10110]) (genre Classics) (pages 6401) (popularity high) (title Alice'sAdventuresinWonderland&ThroughtheLooking-Glass) (year 1872) (rating 239))
+([ontology_Class11961] of Book (author [ontology_Class10110]) (genre Classics) (pages 6401) (popularity high) (title Alice'sAdventuresinWonderlandAndThroughtheLooking-Glass) (year 1872) (rating 239))
 
 ([ontology_Class11962] of Book (author [ontology_Class10292]) (genre Uncategorized) (pages 1402) (popularity high) (title TheThornBirds) (year 1977) (rating 692))
 
@@ -3956,7 +3956,7 @@
 
 ([ontology_Class11978] of Book (author [ontology_Class10411]) (genre Romance) (pages 881) (popularity medium) (title PrinceCharming) (year 1994) (rating 533))
 
-([ontology_Class11979] of Book (author [ontology_Class10597]) (genre Romance) (pages 992) (popularity low) (title Thunder&Roses) (year 1993) (rating 382))
+([ontology_Class11979] of Book (author [ontology_Class10597]) (genre Romance) (pages 992) (popularity low) (title ThunderAndRoses) (year 1993) (rating 382))
 
 ([ontology_Class11980] of Book (author [ontology_Class10598]) (genre Romance) (pages 1100) (popularity medium) (title DreamingofYou) (year 1994) (rating 400))
 
@@ -4492,7 +4492,7 @@
 
 ([ontology_Class12246] of Book (author [ontology_Class10688]) (genre Fantasy) (pages 994) (popularity low) (title Titanshade) (year 12th) (rating 416))
 
-([ontology_Class12247] of Book (author [ontology_Class10399]) (genre Romance) (pages 1004) (popularity low) (title Moonlight&Whiskey) (year 12th) (rating 291))
+([ontology_Class12247] of Book (author [ontology_Class10399]) (genre Romance) (pages 1004) (popularity low) (title MoonlightAndWhiskey) (year 12th) (rating 291))
 
 ([ontology_Class12248] of Book (author [ontology_Class10689]) (genre Fantasy) (pages 263) (popularity low) (title SwordWoman) (year 1977) (rating 169))
 
@@ -4742,7 +4742,7 @@
 
 ([ontology_Class12371] of Book (author [ontology_Class10093]) (genre Historical) (pages 500) (popularity medium) (title ForeverAmber) (year 1944) (rating 972))
 
-([ontology_Class12372] of Book (author [ontology_Class10767]) (genre Uncategorized) (pages 1376) (popularity low) (title ThePursuitofLove&LoveinaColdClimate) (year 1974) (rating 468))
+([ontology_Class12372] of Book (author [ontology_Class10767]) (genre Uncategorized) (pages 1376) (popularity low) (title ThePursuitofLoveAndLoveinaColdClimate) (year 1974) (rating 468))
 
 ([ontology_Class12373] of Book (author [ontology_Class10768]) (genre Uncategorized) (pages 1608) (popularity medium) (title MissPettigrewLivesforaDay) (year 1938) (rating 234))
 
@@ -4889,4 +4889,3 @@
 ([ontology_Class12444] of Book (author [ontology_Class10809]) (genre Thriller) (pages 614) (popularity low) (title What'saGirlGottaDo?) (year 1994) (rating 288))
 
 ([ontology_Class12445] of Book (author [ontology_Class10810]) (genre Uncategorized) (pages 1424) (popularity low) (title WinnetouI) (year 1892) (rating 0))
-
