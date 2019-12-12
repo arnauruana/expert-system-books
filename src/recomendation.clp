@@ -22451,7 +22451,7 @@
 
 ; Actual user recomendation template
 (deftemplate MAIN::Reco
-	(slot genre
+	(slot size
 		(type SYMBOL)
 		(default NONE)
 	)
