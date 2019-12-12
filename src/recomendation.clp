@@ -2,7 +2,7 @@
 ; ================================= ONTOLOGY ================================= ;
 ; ============================================================================ ;
 
-; Default created class
+; Default created class (copied from ontology/ontology.pont)
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
@@ -65,7 +65,7 @@
 		(create-accessor read-write))
 )
 
-; Author class declaration
+; Author class declaration (copied from ontology/ontology.pont)
 (defclass Author
 	(is-a USER)
 	(role concrete)
@@ -89,7 +89,7 @@
 		(create-accessor read-write))
 )
 
-; Book class declaration
+; Book class declaration (copied from ontology/ontology.pont)
 (defclass Book
 	(is-a USER)
 	(role concrete)
@@ -129,7 +129,7 @@
 ; ================================ INSTANCES ================================= ;
 ; ============================================================================ ;
 
-; Instances declaration
+; Instances declaration (copied from ontology/ontology.pins)
 (definstances instances
 
 	([ontology_Class10000] of  Author
@@ -4320,1566 +4320,1545 @@
 
 	([ontology_Class10598] of  Author
 
-		(gender male)
-		(name "PaulZindel")
-		(popularity medium)
-		(rating 3.64))
-
-	([ontology_Class10599] of  Author
-
 		(gender female)
 		(name "AnnaQuindlen")
 		(popularity high)
 		(rating 4.19))
 
-	([ontology_Class10600] of  Author
+	([ontology_Class10599] of  Author
 
 		(gender male)
 		(name "PatConroy")
 		(popularity high)
 		(rating 4.15))
 
-	([ontology_Class10601] of  Author
+	([ontology_Class10600] of  Author
 
 		(gender male)
 		(name "JamesPatterson")
 		(popularity high)
 		(rating 3.97))
 
-	([ontology_Class10602] of  Author
+	([ontology_Class10601] of  Author
 
 		(gender male)
 		(name "TomSavage")
 		(popularity low)
 		(rating 3.91))
 
-	([ontology_Class10603] of  Author
+	([ontology_Class10602] of  Author
 
 		(gender female)
 		(name "MaryJoPutney")
 		(popularity medium)
 		(rating 3.82))
 
-	([ontology_Class10604] of  Author
+	([ontology_Class10603] of  Author
 
 		(gender female)
 		(name "LisaKleypas")
 		(popularity high)
 		(rating 4.03))
 
-	([ontology_Class10605] of  Author
+	([ontology_Class10604] of  Author
 
 		(gender male)
 		(name "LoisLowry")
 		(popularity high)
 		(rating 4.08))
 
-	([ontology_Class10606] of  Author
+	([ontology_Class10605] of  Author
 
 		(gender male)
 		(name "NormanMaclean")
 		(popularity medium)
 		(rating 4.16))
 
-	([ontology_Class10607] of  Author
+	([ontology_Class10606] of  Author
 
 		(gender female)
 		(name "MavisGallant")
 		(popularity low)
 		(rating 3.91))
 
-	([ontology_Class10608] of  Author
+	([ontology_Class10607] of  Author
 
 		(gender male)
 		(name "ElmoreLeonard")
 		(popularity high)
 		(rating 3.76))
 
-	([ontology_Class10609] of  Author
+	([ontology_Class10608] of  Author
 
 		(gender female)
 		(name "SuzanneEnoch")
 		(popularity high)
 		(rating 3.91))
 
-	([ontology_Class10610] of  Author
+	([ontology_Class10609] of  Author
 
 		(gender male)
 		(name "ShermanAlexie")
 		(popularity high)
 		(rating 4.07))
 
-	([ontology_Class10611] of  Author
+	([ontology_Class10610] of  Author
 
 		(gender male)
 		(name "ForrestCarter")
 		(popularity medium)
 		(rating 4.11))
 
-	([ontology_Class10612] of  Author
+	([ontology_Class10611] of  Author
 
 		(gender male)
 		(name "W.MichaelGear")
 		(popularity medium)
 		(rating 4.11))
 
-	([ontology_Class10613] of  Author
+	([ontology_Class10612] of  Author
 
 		(gender male)
 		(name "KathleenO'NealGear")
 		(popularity medium)
 		(rating 4.11))
 
-	([ontology_Class10614] of  Author
+	([ontology_Class10613] of  Author
 
 		(gender male)
 		(name "ScottO'Dell")
 		(popularity high)
 		(rating 3.8))
 
-	([ontology_Class10615] of  Author
+	([ontology_Class10614] of  Author
 
 		(gender male)
 		(name "OliverLaFarge")
 		(popularity low)
 		(rating 3.75))
 
-	([ontology_Class10616] of  Author
+	([ontology_Class10615] of  Author
 
 		(gender female)
 		(name "LindaHogan")
 		(popularity low)
 		(rating 4.02))
 
-	([ontology_Class10617] of  Author
+	([ontology_Class10616] of  Author
 
 		(gender male)
 		(name "JamesWelch")
 		(popularity medium)
 		(rating 3.94))
 
-	([ontology_Class10618] of  Author
+	([ontology_Class10617] of  Author
 
 		(gender female)
 		(name "VelmaWallis")
 		(popularity low)
 		(rating 3.98))
 
-	([ontology_Class10619] of  Author
+	([ontology_Class10618] of  Author
 
 		(gender female)
 		(name "SusanPower")
 		(popularity low)
 		(rating 3.96))
 
-	([ontology_Class10620] of  Author
+	([ontology_Class10619] of  Author
 
 		(gender male)
 		(name "ThomasBerger")
 		(popularity medium)
 		(rating 3.95))
 
-	([ontology_Class10621] of  Author
+	([ontology_Class10620] of  Author
 
 		(gender male)
 		(name "N.ScottMomaday")
 		(popularity medium)
 		(rating 3.76))
 
-	([ontology_Class10622] of  Author
+	([ontology_Class10621] of  Author
 
 		(gender male)
 		(name "JohnBellairs")
 		(popularity medium)
 		(rating 3.9))
 
-	([ontology_Class10623] of  Author
+	([ontology_Class10622] of  Author
 
 		(gender male)
 		(name "DeanKoontz")
 		(popularity high)
 		(rating 3.92))
 
-	([ontology_Class10624] of  Author
+	([ontology_Class10623] of  Author
 
 		(gender male)
 		(name "CliveBarker")
 		(popularity high)
 		(rating 4.09))
 
-	([ontology_Class10625] of  Author
+	([ontology_Class10624] of  Author
 
 		(gender female)
 		(name "DianaPalmer")
 		(popularity high)
 		(rating 3.96))
 
-	([ontology_Class10626] of  Author
+	([ontology_Class10625] of  Author
 
 		(gender male)
 		(name "CathleenSchine")
 		(popularity medium)
 		(rating 3.26))
 
-	([ontology_Class10627] of  Author
+	([ontology_Class10626] of  Author
 
 		(gender female)
 		(name "L.J.Smith")
 		(popularity high)
 		(rating 3.89))
 
-	([ontology_Class10628] of  Author
+	([ontology_Class10627] of  Author
 
 		(gender female)
 		(name "LizaMarklund")
 		(popularity medium)
 		(rating 3.64))
 
-	([ontology_Class10629] of  Author
+	([ontology_Class10628] of  Author
 
 		(gender female)
 		(name "SandraScoppettone")
 		(popularity low)
 		(rating 3.76))
 
-	([ontology_Class10630] of  Author
+	([ontology_Class10629] of  Author
 
 		(gender female)
 		(name "KerstinEkman")
 		(popularity low)
 		(rating 3.62))
 
-	([ontology_Class10631] of  Author
+	([ontology_Class10630] of  Author
 
 		(gender male)
 		(name "KarlEdwardWagner")
 		(popularity medium)
 		(rating 4.02))
 
-	([ontology_Class10632] of  Author
+	([ontology_Class10631] of  Author
 
 		(gender female)
 		(name "CharlotteMacLeod")
 		(popularity medium)
 		(rating 3.87))
 
-	([ontology_Class10633] of  Author
+	([ontology_Class10632] of  Author
 
 		(gender female)
 		(name "SarahGraves")
 		(popularity medium)
 		(rating 3.7))
 
-	([ontology_Class10634] of  Author
+	([ontology_Class10633] of  Author
 
 		(gender female)
 		(name "MarciaMuller")
 		(popularity medium)
 		(rating 3.82))
 
-	([ontology_Class10635] of  Author
+	([ontology_Class10634] of  Author
 
 		(gender female)
 		(name "MaryDaheim")
 		(popularity medium)
 		(rating 3.78))
 
-	([ontology_Class10636] of  Author
+	([ontology_Class10635] of  Author
 
 		(gender female)
 		(name "TamarMyers")
 		(popularity medium)
 		(rating 3.64))
 
-	([ontology_Class10637] of  Author
+	([ontology_Class10636] of  Author
 
 		(gender male)
 		(name "MichaelMoorcock")
 		(popularity high)
 		(rating 3.94))
 
-	([ontology_Class10638] of  Author
+	([ontology_Class10637] of  Author
 
 		(gender male)
 		(name "JohnWhite")
 		(popularity low)
 		(rating 3.94))
 
-	([ontology_Class10639] of  Author
+	([ontology_Class10638] of  Author
 
 		(gender male)
 		(name "TimothyFindley")
 		(popularity medium)
 		(rating 3.86))
 
-	([ontology_Class10640] of  Author
+	([ontology_Class10639] of  Author
 
 		(gender male)
 		(name "JohnBuchan")
 		(popularity medium)
 		(rating 3.66))
 
-	([ontology_Class10641] of  Author
+	([ontology_Class10640] of  Author
 
 		(gender male)
 		(name "FrankE.Peretti")
 		(popularity high)
 		(rating 4.07))
 
-	([ontology_Class10642] of  Author
+	([ontology_Class10641] of  Author
 
 		(gender male)
 		(name "JohnDosPassos")
 		(popularity medium)
 		(rating 3.88))
 
-	([ontology_Class10643] of  Author
+	([ontology_Class10642] of  Author
 
 		(gender female)
 		(name "RebeccaWest")
 		(popularity medium)
 		(rating 3.88))
 
-	([ontology_Class10644] of  Author
+	([ontology_Class10643] of  Author
 
 		(gender male)
 		(name "R.F.Delderfield")
 		(popularity medium)
 		(rating 4.15))
 
-	([ontology_Class10645] of  Author
+	([ontology_Class10644] of  Author
 
 		(gender male)
 		(name "JosephRoth")
 		(popularity medium)
 		(rating 3.89))
 
-	([ontology_Class10646] of  Author
+	([ontology_Class10645] of  Author
 
 		(gender male)
 		(name "KateFenton")
 		(popularity low)
 		(rating 3.27))
 
-	([ontology_Class10647] of  Author
+	([ontology_Class10646] of  Author
 
 		(gender female)
 		(name "JanetAylmer")
 		(popularity low)
 		(rating 3.4))
 
-	([ontology_Class10648] of  Author
+	([ontology_Class10647] of  Author
 
 		(gender male)
 		(name "DouglasCoupland")
 		(popularity high)
 		(rating 3.67))
 
-	([ontology_Class10649] of  Author
+	([ontology_Class10648] of  Author
 
 		(gender female)
 		(name "PamelaMorsi")
 		(popularity medium)
 		(rating 3.78))
 
-	([ontology_Class10650] of  Author
+	([ontology_Class10649] of  Author
 
 		(gender female)
 		(name "SamanthaJames")
 		(popularity medium)
 		(rating 3.81))
 
-	([ontology_Class10651] of  Author
+	([ontology_Class10650] of  Author
 
 		(gender female)
 		(name "MargaretCavendish")
 		(popularity low)
 		(rating 3.24))
 
-	([ontology_Class10652] of  Author
+	([ontology_Class10651] of  Author
 
 		(gender female)
 		(name "AphraBehn")
 		(popularity medium)
 		(rating 3.14))
 
-	([ontology_Class10653] of  Author
+	([ontology_Class10652] of  Author
 
 		(gender female)
 		(name "ElswythThane")
 		(popularity low)
 		(rating 4.26))
 
-	([ontology_Class10654] of  Author
+	([ontology_Class10653] of  Author
 
 		(gender female)
 		(name "PatriciaCornwell")
 		(popularity high)
 		(rating 3.88))
 
-	([ontology_Class10655] of  Author
+	([ontology_Class10654] of  Author
 
 		(gender male)
 		(name "JohnLescroart")
 		(popularity medium)
 		(rating 3.9))
 
-	([ontology_Class10656] of  Author
+	([ontology_Class10655] of  Author
 
 		(gender male)
 		(name "TimVicary")
 		(popularity low)
 		(rating 3.7))
 
-	([ontology_Class10657] of  Author
+	([ontology_Class10656] of  Author
 
 		(gender male)
 		(name "EdMcBain")
 		(popularity medium)
 		(rating 3.8))
 
-	([ontology_Class10658] of  Author
+	([ontology_Class10657] of  Author
 
 		(gender male)
 		(name "RennieAirth")
 		(popularity medium)
 		(rating 3.94))
 
-	([ontology_Class10659] of  Author
+	([ontology_Class10658] of  Author
 
 		(gender male)
 		(name "PaulAnthony")
 		(popularity low)
 		(rating 4.41))
 
-	([ontology_Class10660] of  Author
+	([ontology_Class10659] of  Author
 
 		(gender male)
 		(name "ThomasKeneally")
 		(popularity high)
 		(rating 4.27))
 
-	([ontology_Class10661] of  Author
+	([ontology_Class10660] of  Author
 
 		(gender male)
 		(name "MacKinlayKantor")
 		(popularity low)
 		(rating 4.06))
 
-	([ontology_Class10662] of  Author
+	([ontology_Class10661] of  Author
 
 		(gender female)
 		(name "AnnetteCurtisKlause")
 		(popularity medium)
 		(rating 3.75))
 
-	([ontology_Class10663] of  Author
+	([ontology_Class10662] of  Author
 
 		(gender male)
 		(name "IvanaTrump")
 		(popularity low)
 		(rating 3.48))
 
-	([ontology_Class10664] of  Author
+	([ontology_Class10663] of  Author
 
 		(gender female)
 		(name "JillianMedoff")
 		(popularity low)
 		(rating 3.5))
 
-	([ontology_Class10665] of  Author
+	([ontology_Class10664] of  Author
 
 		(gender male)
 		(name "RickMoody")
 		(popularity medium)
 		(rating 3.61))
 
-	([ontology_Class10666] of  Author
+	([ontology_Class10665] of  Author
 
 		(gender female)
 		(name "BarbaraTaylorBradford")
 		(popularity medium)
 		(rating 3.91))
 
-	([ontology_Class10667] of  Author
+	([ontology_Class10666] of  Author
 
 		(gender male)
 		(name "LouisL'Amour")
 		(popularity high)
 		(rating 4.02))
 
-	([ontology_Class10668] of  Author
+	([ontology_Class10667] of  Author
 
 		(gender female)
 		(name "ReginaDoman")
 		(popularity low)
 		(rating 4.2))
 
-	([ontology_Class10669] of  Author
+	([ontology_Class10668] of  Author
 
 		(gender female)
 		(name "ChristaWolf")
 		(popularity low)
 		(rating 3.75))
 
-	([ontology_Class10670] of  Author
+	([ontology_Class10669] of  Author
 
 		(gender female)
 		(name "JenniferRoberson")
 		(popularity medium)
 		(rating 3.93))
 
-	([ontology_Class10671] of  Author
+	([ontology_Class10670] of  Author
 
 		(gender male)
 		(name "H.RiderHaggard")
 		(popularity medium)
 		(rating 3.78))
 
-	([ontology_Class10672] of  Author
+	([ontology_Class10671] of  Author
 
 		(gender male)
 		(name "ThomasLigotti")
 		(popularity medium)
 		(rating 4.0))
 
-	([ontology_Class10673] of  Author
+	([ontology_Class10672] of  Author
 
 		(gender male)
 		(name "ArthurMachen")
 		(popularity medium)
 		(rating 3.9))
 
-	([ontology_Class10674] of  Author
+	([ontology_Class10673] of  Author
 
 		(gender male)
 		(name "SuzanneBarclay")
 		(popularity low)
 		(rating 3.75))
 
-	([ontology_Class10675] of  Author
+	([ontology_Class10674] of  Author
 
 		(gender male)
 		(name "DavidGemmell")
 		(popularity high)
 		(rating 4.22))
 
-	([ontology_Class10676] of  Author
+	([ontology_Class10675] of  Author
 
 		(gender male)
 		(name "J.V.Jones")
 		(popularity medium)
 		(rating 3.91))
 
-	([ontology_Class10677] of  Author
+	([ontology_Class10676] of  Author
 
 		(gender female)
 		(name "JannyWurts")
 		(popularity high)
 		(rating 4.18))
 
-	([ontology_Class10678] of  Author
+	([ontology_Class10677] of  Author
 
 		(gender male)
 		(name "PaulBowles")
 		(popularity medium)
 		(rating 3.95))
 
-	([ontology_Class10679] of  Author
+	([ontology_Class10678] of  Author
 
 		(gender male)
 		(name "ChingizAitmatov")
 		(popularity medium)
 		(rating 4.12))
 
-	([ontology_Class10680] of  Author
+	([ontology_Class10679] of  Author
 
 		(gender male)
 		(name "PaulGallico")
 		(popularity medium)
 		(rating 3.99))
 
-	([ontology_Class10681] of  Author
+	([ontology_Class10680] of  Author
 
 		(gender male)
 		(name "MariusGabriel")
 		(popularity medium)
 		(rating 4.07))
 
-	([ontology_Class10682] of  Author
+	([ontology_Class10681] of  Author
 
 		(gender female)
 		(name "CijiWare")
 		(popularity low)
 		(rating 3.7))
 
-	([ontology_Class10683] of  Author
+	([ontology_Class10682] of  Author
 
 		(gender male)
 		(name "CharlesPortis")
 		(popularity medium)
 		(rating 4.08))
 
-	([ontology_Class10684] of  Author
+	([ontology_Class10683] of  Author
 
 		(gender male)
 		(name "HansKeilson")
 		(popularity low)
 		(rating 3.66))
 
-	([ontology_Class10685] of  Author
+	([ontology_Class10684] of  Author
 
 		(gender male)
 		(name "ClareDarcy")
 		(popularity low)
 		(rating 3.71))
 
-	([ontology_Class10686] of  Author
+	([ontology_Class10685] of  Author
 
 		(gender male)
 		(name "EdwardLee")
 		(popularity medium)
 		(rating 3.76))
 
-	([ontology_Class10687] of  Author
+	([ontology_Class10686] of  Author
 
 		(gender female)
 		(name "KatheKoja")
 		(popularity medium)
 		(rating 3.72))
 
-	([ontology_Class10688] of  Author
+	([ontology_Class10687] of  Author
 
 		(gender male)
 		(name "GrahamMasterton")
 		(popularity medium)
 		(rating 3.78))
 
-	([ontology_Class10689] of  Author
+	([ontology_Class10688] of  Author
 
 		(gender male)
 		(name "JackKetchum")
 		(popularity medium)
 		(rating 3.84))
 
-	([ontology_Class10690] of  Author
+	([ontology_Class10689] of  Author
 
 		(gender male)
 		(name "MendalW.Johnson")
 		(popularity low)
 		(rating 3.63))
 
-	([ontology_Class10691] of  Author
+	([ontology_Class10690] of  Author
 
 		(gender male)
 		(name "ElizabethBright")
 		(popularity low)
 		(rating 4.03))
 
-	([ontology_Class10692] of  Author
+	([ontology_Class10691] of  Author
 
 		(gender male)
 		(name "DanaStabenow")
 		(popularity high)
 		(rating 4.01))
 
-	([ontology_Class10693] of  Author
+	([ontology_Class10692] of  Author
 
 		(gender female)
 		(name "AminahMaeSafi")
 		(popularity low)
 		(rating 3.72))
 
-	([ontology_Class10694] of  Author
+	([ontology_Class10693] of  Author
 
 		(gender male)
 		(name "DanStout")
 		(popularity low)
 		(rating 4.31))
 
-	([ontology_Class10695] of  Author
+	([ontology_Class10694] of  Author
 
 		(gender male)
 		(name "RobertE.Howard")
 		(popularity high)
 		(rating 4.09))
 
-	([ontology_Class10696] of  Author
+	([ontology_Class10695] of  Author
 
 		(gender male)
 		(name "C.L.Moore")
 		(popularity medium)
 		(rating 4.02))
 
-	([ontology_Class10697] of  Author
+	([ontology_Class10696] of  Author
 
 		(gender male)
 		(name "NelsonDeMille")
 		(popularity high)
 		(rating 4.02))
 
-	([ontology_Class10698] of  Author
+	([ontology_Class10697] of  Author
 
 		(gender female)
 		(name "AnnaFienberg")
 		(popularity low)
 		(rating 3.89))
 
-	([ontology_Class10699] of  Author
+	([ontology_Class10698] of  Author
 
 		(gender male)
 		(name "AnnHead")
 		(popularity low)
 		(rating 3.79))
 
-	([ontology_Class10700] of  Author
+	([ontology_Class10699] of  Author
 
 		(gender female)
 		(name "ConnieRosePorter")
 		(popularity medium)
 		(rating 4.04))
 
-	([ontology_Class10701] of  Author
+	([ontology_Class10700] of  Author
 
 		(gender female)
 		(name "BerlieDoherty")
 		(popularity low)
 		(rating 3.7))
 
-	([ontology_Class10702] of  Author
+	([ontology_Class10701] of  Author
 
 		(gender male)
 		(name "ThorneSmith")
 		(popularity low)
 		(rating 3.78))
 
-	([ontology_Class10703] of  Author
+	([ontology_Class10702] of  Author
 
 		(gender female)
 		(name "RosemarySutcliff")
 		(popularity medium)
 		(rating 3.93))
 
-	([ontology_Class10704] of  Author
+	([ontology_Class10703] of  Author
 
 		(gender male)
 		(name "PoulAnderson")
 		(popularity high)
 		(rating 3.84))
 
-	([ontology_Class10705] of  Author
+	([ontology_Class10704] of  Author
 
 		(gender male)
 		(name "FrankO'Connor")
 		(popularity low)
 		(rating 4.05))
 
-	([ontology_Class10706] of  Author
+	([ontology_Class10705] of  Author
 
 		(gender male)
 		(name "J.P.Donleavy")
 		(popularity medium)
 		(rating 3.71))
 
-	([ontology_Class10707] of  Author
+	([ontology_Class10706] of  Author
 
 		(gender male)
 		(name "RobertR.McCammon")
 		(popularity high)
 		(rating 4.1))
 
-	([ontology_Class10708] of  Author
+	([ontology_Class10707] of  Author
 
 		(gender male)
 		(name "MarthaR.Carr")
 		(popularity medium)
 		(rating 4.41))
 
-	([ontology_Class10709] of  Author
+	([ontology_Class10708] of  Author
 
 		(gender male)
 		(name "BrunoSchulz")
 		(popularity medium)
 		(rating 4.14))
 
-	([ontology_Class10710] of  Author
+	([ontology_Class10709] of  Author
 
 		(gender male)
 		(name "CharlesG.Finney")
 		(popularity low)
 		(rating 3.85))
 
-	([ontology_Class10711] of  Author
+	([ontology_Class10710] of  Author
 
 		(gender male)
 		(name "E.R.Eddison")
 		(popularity low)
 		(rating 3.7))
 
-	([ontology_Class10712] of  Author
+	([ontology_Class10711] of  Author
 
 		(gender male)
 		(name "BarryHughart")
 		(popularity medium)
 		(rating 4.24))
 
-	([ontology_Class10713] of  Author
+	([ontology_Class10712] of  Author
 
 		(gender male)
 		(name "ColinDexter")
 		(popularity medium)
 		(rating 3.99))
 
-	([ontology_Class10714] of  Author
+	([ontology_Class10713] of  Author
 
 		(gender male)
 		(name "JamesHilton")
 		(popularity medium)
 		(rating 3.93))
 
-	([ontology_Class10715] of  Author
+	([ontology_Class10714] of  Author
 
 		(gender male)
 		(name "JosephWambaugh")
 		(popularity medium)
 		(rating 3.95))
 
-	([ontology_Class10716] of  Author
+	([ontology_Class10715] of  Author
 
 		(gender female)
 		(name "ElizabethGoudge")
 		(popularity medium)
 		(rating 4.12))
 
-	([ontology_Class10717] of  Author
+	([ontology_Class10716] of  Author
 
 		(gender male)
 		(name "EnidBagnold")
 		(popularity medium)
 		(rating 4.09))
 
-	([ontology_Class10718] of  Author
+	([ontology_Class10717] of  Author
 
 		(gender female)
 		(name "NorahLofts")
 		(popularity medium)
 		(rating 3.94))
 
-	([ontology_Class10719] of  Author
+	([ontology_Class10718] of  Author
 
 		(gender female)
 		(name "EstherHautzig")
 		(popularity low)
 		(rating 3.96))
 
-	([ontology_Class10720] of  Author
+	([ontology_Class10719] of  Author
 
 		(gender male)
 		(name "AngelaHuth")
 		(popularity low)
 		(rating 3.63))
 
-	([ontology_Class10721] of  Author
+	([ontology_Class10720] of  Author
 
 		(gender male)
 		(name "SinclairLewis")
 		(popularity medium)
 		(rating 3.75))
 
-	([ontology_Class10722] of  Author
+	([ontology_Class10721] of  Author
 
 		(gender female)
 		(name "MaudHartLovelace")
 		(popularity medium)
 		(rating 4.18))
 
-	([ontology_Class10723] of  Author
+	([ontology_Class10722] of  Author
 
 		(gender female)
 		(name "EleanorH.Porter")
 		(popularity medium)
 		(rating 3.94))
 
-	([ontology_Class10724] of  Author
+	([ontology_Class10723] of  Author
 
 		(gender male)
 		(name "SaulBellow")
 		(popularity medium)
 		(rating 3.77))
 
-	([ontology_Class10725] of  Author
+	([ontology_Class10724] of  Author
 
 		(gender male)
 		(name "SteveNeilJohnson")
 		(popularity low)
 		(rating 4.26))
 
-	([ontology_Class10726] of  Author
+	([ontology_Class10725] of  Author
 
 		(gender male)
 		(name "StefanR.Dziemianowicz")
 		(popularity low)
 		(rating 3.75))
 
-	([ontology_Class10727] of  Author
+	([ontology_Class10726] of  Author
 
 		(gender male)
 		(name "MichaelCox")
 		(popularity medium)
 		(rating 3.87))
 
-	([ontology_Class10728] of  Author
+	([ontology_Class10727] of  Author
 
 		(gender male)
 		(name "PaulM.Sammon")
 		(popularity low)
 		(rating 4.1))
 
-	([ontology_Class10729] of  Author
+	([ontology_Class10728] of  Author
 
 		(gender male)
 		(name "JeffGelb")
 		(popularity low)
 		(rating 3.76))
 
-	([ontology_Class10730] of  Author
+	([ontology_Class10729] of  Author
 
 		(gender male)
 		(name "DavidClement-Davies")
 		(popularity medium)
 		(rating 4.14))
 
-	([ontology_Class10731] of  Author
+	([ontology_Class10730] of  Author
 
 		(gender male)
 		(name "WalterR.Brooks")
 		(popularity low)
 		(rating 4.16))
 
-	([ontology_Class10732] of  Author
+	([ontology_Class10731] of  Author
 
 		(gender male)
 		(name "RobertTressell")
 		(popularity low)
 		(rating 3.97))
 
-	([ontology_Class10733] of  Author
+	([ontology_Class10732] of  Author
 
 		(gender male)
 		(name "MaxBeerbohm")
 		(popularity low)
 		(rating 3.67))
 
-	([ontology_Class10734] of  Author
+	([ontology_Class10733] of  Author
 
 		(gender male)
 		(name "ZaneGrey")
 		(popularity medium)
 		(rating 3.81))
 
-	([ontology_Class10735] of  Author
+	([ontology_Class10734] of  Author
 
 		(gender female)
 		(name "DorothyCanfieldFisher")
 		(popularity medium)
 		(rating 4.11))
 
-	([ontology_Class10736] of  Author
+	([ontology_Class10735] of  Author
 
 		(gender male)
 		(name "BenMarcus")
 		(popularity medium)
 		(rating 4.07))
 
-	([ontology_Class10737] of  Author
+	([ontology_Class10736] of  Author
 
 		(gender female)
 		(name "TerriWindling")
 		(popularity medium)
 		(rating 3.9))
 
-	([ontology_Class10738] of  Author
+	([ontology_Class10737] of  Author
 
 		(gender male)
 		(name "EmilioSalgari")
 		(popularity medium)
 		(rating 3.85))
 
-	([ontology_Class10739] of  Author
+	([ontology_Class10738] of  Author
 
 		(gender female)
 		(name "KimSmejkal")
 		(popularity low)
 		(rating 4.86))
 
-	([ontology_Class10740] of  Author
+	([ontology_Class10739] of  Author
 
 		(gender female)
 		(name "MichelleRuizKeil")
 		(popularity low)
 		(rating 4.78))
 
-	([ontology_Class10741] of  Author
+	([ontology_Class10740] of  Author
 
 		(gender female)
 		(name "CatherineTinker")
 		(popularity low)
 		(rating 4.54))
 
-	([ontology_Class10742] of  Author
+	([ontology_Class10741] of  Author
 
 		(gender female)
 		(name "SarahCarlson")
 		(popularity low)
 		(rating 4.63))
 
-	([ontology_Class10743] of  Author
+	([ontology_Class10742] of  Author
 
 		(gender female)
 		(name "JodieLynnZdrok")
 		(popularity low)
 		(rating 3.99))
 
-	([ontology_Class10744] of  Author
+	([ontology_Class10743] of  Author
 
 		(gender male)
 		(name "HerbieBrennan")
 		(popularity medium)
 		(rating 3.74))
 
-	([ontology_Class10745] of  Author
+	([ontology_Class10744] of  Author
 
 		(gender female)
 		(name "IsabelSterling")
 		(popularity low)
 		(rating 4.34))
 
-	([ontology_Class10746] of  Author
+	([ontology_Class10745] of  Author
 
 		(gender female)
 		(name "CatherineCookson")
 		(popularity medium)
 		(rating 3.94))
 
-	([ontology_Class10747] of  Author
+	([ontology_Class10746] of  Author
 
 		(gender female)
 		(name "ElizabethTaylor")
 		(popularity low)
 		(rating 3.9))
 
-	([ontology_Class10748] of  Author
+	([ontology_Class10747] of  Author
 
 		(gender female)
 		(name "DorothyB.Hughes")
 		(popularity low)
 		(rating 3.99))
 
-	([ontology_Class10749] of  Author
+	([ontology_Class10748] of  Author
 
 		(gender female)
 		(name "BarbaraComyns")
 		(popularity low)
 		(rating 3.91))
 
-	([ontology_Class10750] of  Author
+	([ontology_Class10749] of  Author
 
 		(gender male)
 		(name "HaroldRobbins")
 		(popularity medium)
 		(rating 3.69))
 
-	([ontology_Class10751] of  Author
+	([ontology_Class10750] of  Author
 
 		(gender male)
 		(name "StefanZweig")
 		(popularity high)
 		(rating 4.17))
 
-	([ontology_Class10752] of  Author
+	([ontology_Class10751] of  Author
 
 		(gender male)
 		(name "CarolineBlackwood")
 		(popularity low)
 		(rating 3.63))
 
-	([ontology_Class10753] of  Author
+	([ontology_Class10752] of  Author
 
 		(gender male)
 		(name "GeorgesSimenon")
 		(popularity medium)
 		(rating 3.72))
 
-	([ontology_Class10754] of  Author
+	([ontology_Class10753] of  Author
 
 		(gender female)
 		(name "ElizabethHardwick")
 		(popularity low)
 		(rating 3.86))
 
-	([ontology_Class10755] of  Author
+	([ontology_Class10754] of  Author
 
 		(gender male)
 		(name "ElliottChaze")
 		(popularity low)
 		(rating 4.15))
 
-	([ontology_Class10756] of  Author
+	([ontology_Class10755] of  Author
 
 		(gender male)
 		(name "SigizmundKrzhizhanovsky")
 		(popularity low)
 		(rating 3.9))
 
-	([ontology_Class10757] of  Author
+	([ontology_Class10756] of  Author
 
 		(gender male)
 		(name "AdalbertStifter")
 		(popularity low)
 		(rating 3.76))
 
-	([ontology_Class10758] of  Author
+	([ontology_Class10757] of  Author
 
 		(gender male)
 		(name "JohnWilliams")
 		(popularity medium)
 		(rating 4.26))
 
-	([ontology_Class10759] of  Author
+	([ontology_Class10758] of  Author
 
 		(gender male)
 		(name "GeoffreyHousehold")
 		(popularity low)
 		(rating 3.96))
 
-	([ontology_Class10760] of  Author
+	([ontology_Class10759] of  Author
 
 		(gender male)
 		(name "PatrickHamilton")
 		(popularity low)
 		(rating 4.12))
 
-	([ontology_Class10761] of  Author
+	([ontology_Class10760] of  Author
 
 		(gender male)
 		(name "CarloCollodi")
 		(popularity medium)
 		(rating 3.86))
 
-	([ontology_Class10762] of  Author
+	([ontology_Class10761] of  Author
 
 		(gender female)
 		(name "DorothyBaker")
 		(popularity low)
 		(rating 3.92))
 
-	([ontology_Class10763] of  Author
+	([ontology_Class10762] of  Author
 
 		(gender male)
 		(name "OakleyHall")
 		(popularity low)
 		(rating 4.11))
 
-	([ontology_Class10764] of  Author
+	([ontology_Class10763] of  Author
 
 		(gender male)
 		(name "SylviaTownsendWarner")
 		(popularity medium)
 		(rating 3.88))
 
-	([ontology_Class10765] of  Author
+	([ontology_Class10764] of  Author
 
 		(gender female)
 		(name "ElaineDundy")
 		(popularity low)
 		(rating 3.61))
 
-	([ontology_Class10766] of  Author
+	([ontology_Class10765] of  Author
 
 		(gender male)
 		(name "FransG.Bengtsson")
 		(popularity low)
 		(rating 4.25))
 
-	([ontology_Class10767] of  Author
+	([ontology_Class10766] of  Author
 
 		(gender female)
 		(name "JuliaAlvarez")
 		(popularity medium)
 		(rating 3.92))
 
-	([ontology_Class10768] of  Author
+	([ontology_Class10767] of  Author
 
 		(gender male)
 		(name "GeorgeGrossmith")
 		(popularity medium)
 		(rating 3.72))
 
-	([ontology_Class10769] of  Author
+	([ontology_Class10768] of  Author
 
 		(gender male)
 		(name "IanSerraillier")
 		(popularity low)
 		(rating 3.98))
 
-	([ontology_Class10770] of  Author
+	([ontology_Class10769] of  Author
 
 		(gender female)
 		(name "ConstanceSavery")
 		(popularity low)
 		(rating 4.04))
 
-	([ontology_Class10771] of  Author
+	([ontology_Class10770] of  Author
 
 		(gender female)
 		(name "HildavanStockum")
 		(popularity low)
 		(rating 4.16))
 
-	([ontology_Class10772] of  Author
+	([ontology_Class10771] of  Author
 
 		(gender female)
 		(name "LynneGraham")
 		(popularity medium)
 		(rating 3.61))
 
-	([ontology_Class10773] of  Author
+	([ontology_Class10772] of  Author
 
 		(gender female)
 		(name "NancyMitford")
 		(popularity medium)
 		(rating 3.87))
 
-	([ontology_Class10774] of  Author
+	([ontology_Class10773] of  Author
 
 		(gender female)
 		(name "WinifredWatson")
 		(popularity medium)
 		(rating 3.97))
 
-	([ontology_Class10775] of  Author
+	([ontology_Class10774] of  Author
 
 		(gender male)
 		(name "EugeneBurdick")
 		(popularity low)
 		(rating 4.09))
 
-	([ontology_Class10776] of  Author
+	([ontology_Class10775] of  Author
 
 		(gender female)
 		(name "KamalaMarkandaya")
 		(popularity low)
 		(rating 3.63))
 
-	([ontology_Class10777] of  Author
+	([ontology_Class10776] of  Author
 
 		(gender male)
 		(name "RichardDenney")
 		(popularity low)
 		(rating 3.7))
 
-	([ontology_Class10778] of  Author
+	([ontology_Class10777] of  Author
 
 		(gender male)
 		(name "ScottSpencer")
 		(popularity medium)
 		(rating 3.31))
 
-	([ontology_Class10779] of  Author
+	([ontology_Class10778] of  Author
 
 		(gender male)
 		(name "IsmailKadare")
 		(popularity medium)
 		(rating 3.82))
 
-	([ontology_Class10780] of  Author
+	([ontology_Class10779] of  Author
 
 		(gender female)
 		(name "MarianneFredriksson")
 		(popularity medium)
 		(rating 3.66))
 
-	([ontology_Class10781] of  Author
+	([ontology_Class10780] of  Author
 
 		(gender female)
 		(name "TaylorCaldwell")
 		(popularity medium)
 		(rating 4.12))
 
-	([ontology_Class10782] of  Author
+	([ontology_Class10781] of  Author
 
 		(gender male)
 		(name "MarySpencer")
 		(popularity low)
 		(rating 3.53))
 
-	([ontology_Class10783] of  Author
+	([ontology_Class10782] of  Author
 
 		(gender female)
 		(name "BelvaPlain")
 		(popularity medium)
 		(rating 3.9))
 
-	([ontology_Class10784] of  Author
+	([ontology_Class10783] of  Author
 
 		(gender male)
 		(name "MichelleReid")
 		(popularity medium)
 		(rating 3.64))
 
-	([ontology_Class10785] of  Author
+	([ontology_Class10784] of  Author
 
 		(gender male)
 		(name "RossMacdonald")
 		(popularity medium)
 		(rating 3.98))
 
-	([ontology_Class10786] of  Author
+	([ontology_Class10785] of  Author
 
 		(gender male)
 		(name "CornellWoolrich")
 		(popularity medium)
 		(rating 3.93))
 
-	([ontology_Class10787] of  Author
+	([ontology_Class10786] of  Author
 
 		(gender male)
 		(name "RichardBausch")
 		(popularity low)
 		(rating 3.87))
 
-	([ontology_Class10788] of  Author
+	([ontology_Class10787] of  Author
 
 		(gender female)
 		(name "SiminDaneshvar")
 		(popularity medium)
 		(rating 3.75))
 
-	([ontology_Class10789] of  Author
+	([ontology_Class10788] of  Author
 
 		(gender male)
 		(name "DavidGoodis")
 		(popularity low)
 		(rating 3.94))
 
-	([ontology_Class10790] of  Author
+	([ontology_Class10789] of  Author
 
 		(gender female)
 		(name "SenaJeterNaslund")
 		(popularity medium)
 		(rating 3.93))
 
-	([ontology_Class10791] of  Author
+	([ontology_Class10790] of  Author
 
 		(gender male)
 		(name "AlfredHitchcock")
 		(popularity medium)
 		(rating 3.96))
 
-	([ontology_Class10792] of  Author
+	([ontology_Class10791] of  Author
 
 		(gender male)
 		(name "JamesCrumley")
 		(popularity medium)
 		(rating 3.96))
 
-	([ontology_Class10793] of  Author
+	([ontology_Class10792] of  Author
 
 		(gender male)
 		(name "MickeySpillane")
 		(popularity medium)
 		(rating 3.68))
 
-	([ontology_Class10794] of  Author
+	([ontology_Class10793] of  Author
 
 		(gender male)
 		(name "HoraceMcCoy")
 		(popularity low)
 		(rating 3.89))
 
-	([ontology_Class10795] of  Author
+	([ontology_Class10794] of  Author
 
 		(gender female)
 		(name "MaryMapesDodge")
 		(popularity medium)
 		(rating 3.89))
 
-	([ontology_Class10796] of  Author
+	([ontology_Class10795] of  Author
 
 		(gender female)
 		(name "LoisLenski")
 		(popularity medium)
 		(rating 4.04))
 
-	([ontology_Class10797] of  Author
+	([ontology_Class10796] of  Author
 
 		(gender female)
 		(name "DorotheaBentonFrank")
 		(popularity high)
 		(rating 3.81))
 
-	([ontology_Class10798] of  Author
+	([ontology_Class10797] of  Author
 
 		(gender male)
 		(name "HarryCrews")
 		(popularity medium)
 		(rating 4.0))
 
-	([ontology_Class10799] of  Author
+	([ontology_Class10798] of  Author
 
 		(gender female)
 		(name "KatherineAnnePorter")
 		(popularity medium)
 		(rating 3.93))
 
-	([ontology_Class10800] of  Author
+	([ontology_Class10799] of  Author
 
 		(gender female)
 		(name "ClariceLispector")
 		(popularity medium)
 		(rating 4.06))
 
-	([ontology_Class10801] of  Author
+	([ontology_Class10800] of  Author
 
 		(gender female)
 		(name "VeraChapman")
 		(popularity low)
 		(rating 3.59))
 
-	([ontology_Class10802] of  Author
-
-		(gender female)
-		(name "CatherineChristian")
-		(popularity low)
-		(rating 3.96))
-
-	([ontology_Class10803] of  Author
+	([ontology_Class10801] of  Author
 
 		(gender female)
 		(name "NancyMcKenzie")
 		(popularity low)
 		(rating 3.96))
 
-	([ontology_Class10804] of  Author
+	([ontology_Class10802] of  Author
 
 		(gender female)
 		(name "MollyCochran")
 		(popularity low)
 		(rating 3.86))
 
-	([ontology_Class10805] of  Author
+	([ontology_Class10803] of  Author
 
 		(gender male)
 		(name "RogerLancelynGreen")
 		(popularity medium)
 		(rating 4.0))
 
-	([ontology_Class10806] of  Author
+	([ontology_Class10804] of  Author
 
 		(gender male)
 		(name "GeoffreyofMonmouth")
 		(popularity low)
 		(rating 3.73))
 
-	([ontology_Class10807] of  Author
+	([ontology_Class10805] of  Author
 
 		(gender male)
 		(name "AlessandroBaricco")
 		(popularity medium)
 		(rating 3.88))
 
-	([ontology_Class10808] of  Author
+	([ontology_Class10806] of  Author
 
 		(gender male)
 		(name "WilmaDykeman")
 		(popularity low)
 		(rating 4.09))
 
-	([ontology_Class10809] of  Author
+	([ontology_Class10807] of  Author
 
 		(gender male)
 		(name "DeniseGiardina")
 		(popularity low)
 		(rating 4.0))
 
-	([ontology_Class10810] of  Author
+	([ontology_Class10808] of  Author
 
 		(gender male)
 		(name "JamesAgee")
 		(popularity medium)
 		(rating 3.95))
 
-	([ontology_Class10811] of  Author
+	([ontology_Class10809] of  Author
 
 		(gender female)
 		(name "VeraCleaver")
 		(popularity low)
 		(rating 3.77))
 
-	([ontology_Class10812] of  Author
+	([ontology_Class10810] of  Author
 
 		(gender female)
 		(name "MeaganMcKinney")
 		(popularity low)
 		(rating 3.75))
 
-	([ontology_Class10813] of  Author
+	([ontology_Class10811] of  Author
 
 		(gender female)
 		(name "ElizabethLowell")
 		(popularity high)
 		(rating 3.86))
 
-	([ontology_Class10814] of  Author
+	([ontology_Class10812] of  Author
 
 		(gender female)
 		(name "E.M.Hull")
 		(popularity low)
 		(rating 3.43))
 
-	([ontology_Class10815] of  Author
+	([ontology_Class10813] of  Author
 
 		(gender female)
 		(name "RosemaryRogers")
 		(popularity medium)
 		(rating 3.81))
 
-	([ontology_Class10816] of  Author
+	([ontology_Class10814] of  Author
 
 		(gender female)
 		(name "VirginiaHenley")
 		(popularity medium)
 		(rating 3.89))
 
-	([ontology_Class10817] of  Author
+	([ontology_Class10815] of  Author
 
 		(gender male)
 		(name "DinahLampitt")
 		(popularity low)
 		(rating 3.99))
 
-	([ontology_Class10818] of  Author
+	([ontology_Class10816] of  Author
 
 		(gender female)
 		(name "JeanPlaidy")
 		(popularity medium)
 		(rating 3.86))
 
-	([ontology_Class10819] of  Author
+	([ontology_Class10817] of  Author
 
 		(gender female)
 		(name "SparkleHayter")
 		(popularity low)
 		(rating 3.58))
 
-	([ontology_Class10820] of  Author
-
-		(gender male)
-		(name "KarlMay")
-		(popularity medium)
-		(rating 4.01))
-
-	([ontology_Class10821] of  Book
+	([ontology_Class10818] of  Book
 
 		(author [ontology_Class10000])
 		(genre "Horror")
@@ -5889,7 +5868,7 @@
 		(title "KissoftheVampire")
 		(year 1993))
 
-	([ontology_Class10822] of  Book
+	([ontology_Class10819] of  Book
 
 		(author [ontology_Class10001])
 		(genre "Uncategorized")
@@ -5899,7 +5878,7 @@
 		(title "Island")
 		(year 1962))
 
-	([ontology_Class10823] of  Book
+	([ontology_Class10820] of  Book
 
 		(author [ontology_Class10002])
 		(genre "Classics")
@@ -5909,7 +5888,7 @@
 		(title "TheTrial")
 		(year 1925))
 
-	([ontology_Class10824] of  Book
+	([ontology_Class10821] of  Book
 
 		(author [ontology_Class10003])
 		(genre "Uncategorized")
@@ -5919,7 +5898,7 @@
 		(title "AtlasShrugged")
 		(year 1957))
 
-	([ontology_Class10825] of  Book
+	([ontology_Class10822] of  Book
 
 		(author [ontology_Class10004])
 		(genre "Fantasy")
@@ -5929,7 +5908,7 @@
 		(title "DragonRider")
 		(year 1997))
 
-	([ontology_Class10826] of  Book
+	([ontology_Class10823] of  Book
 
 		(author [ontology_Class10005])
 		(genre "Classics")
@@ -5939,7 +5918,7 @@
 		(title "Rebecca")
 		(year 1938))
 
-	([ontology_Class10827] of  Book
+	([ontology_Class10824] of  Book
 
 		(author [ontology_Class10006])
 		(genre "Romance")
@@ -5949,7 +5928,7 @@
 		(title "TheCompleteNovels")
 		(year 1813))
 
-	([ontology_Class10828] of  Book
+	([ontology_Class10825] of  Book
 
 		(author [ontology_Class10007])
 		(genre "Classics")
@@ -5959,7 +5938,7 @@
 		(title "LittleWomen")
 		(year 1868))
 
-	([ontology_Class10829] of  Book
+	([ontology_Class10826] of  Book
 
 		(author [ontology_Class10008])
 		(genre "Classics")
@@ -5969,7 +5948,7 @@
 		(title "ATreeGrowsinBrooklyn")
 		(year 1943))
 
-	([ontology_Class10830] of  Book
+	([ontology_Class10827] of  Book
 
 		(author [ontology_Class10009])
 		(genre "Classics")
@@ -5979,7 +5958,7 @@
 		(title "TheBellJar")
 		(year 1963))
 
-	([ontology_Class10831] of  Book
+	([ontology_Class10828] of  Book
 
 		(author [ontology_Class10010])
 		(genre "Uncategorized")
@@ -5989,7 +5968,7 @@
 		(title "TheReader")
 		(year 1995))
 
-	([ontology_Class10832] of  Book
+	([ontology_Class10829] of  Book
 
 		(author [ontology_Class10011])
 		(genre "Fantasy")
@@ -5999,7 +5978,7 @@
 		(title "TheReturnoftheKing")
 		(year 1955))
 
-	([ontology_Class10833] of  Book
+	([ontology_Class10830] of  Book
 
 		(author [ontology_Class10012])
 		(genre "Romance")
@@ -6009,7 +5988,7 @@
 		(title "BridgetJones'sDiary")
 		(year 1995))
 
-	([ontology_Class10834] of  Book
+	([ontology_Class10831] of  Book
 
 		(author [ontology_Class10013])
 		(genre "Thriller")
@@ -6019,7 +5998,7 @@
 		(title "NakedinDeath")
 		(year 1995))
 
-	([ontology_Class10835] of  Book
+	([ontology_Class10832] of  Book
 
 		(author [ontology_Class10014])
 		(genre "Uncategorized")
@@ -6029,7 +6008,7 @@
 		(title "MemoirsofaGeisha")
 		(year 1997))
 
-	([ontology_Class10836] of  Book
+	([ontology_Class10833] of  Book
 
 		(author [ontology_Class10015])
 		(genre "Romance")
@@ -6039,7 +6018,7 @@
 		(title "AWalktoRemember")
 		(year 1999))
 
-	([ontology_Class10837] of  Book
+	([ontology_Class10834] of  Book
 
 		(author [ontology_Class10016])
 		(genre "Classics")
@@ -6049,7 +6028,7 @@
 		(title "GonewiththeWind")
 		(year 1936))
 
-	([ontology_Class10838] of  Book
+	([ontology_Class10835] of  Book
 
 		(author [ontology_Class10017])
 		(genre "Fantasy")
@@ -6059,7 +6038,7 @@
 		(title "TheMagician'sNephew")
 		(year 1955))
 
-	([ontology_Class10839] of  Book
+	([ontology_Class10836] of  Book
 
 		(author [ontology_Class10018])
 		(genre "Fantasy")
@@ -6069,7 +6048,7 @@
 		(title "EllaEnchanted")
 		(year 1997))
 
-	([ontology_Class10840] of  Book
+	([ontology_Class10837] of  Book
 
 		(author [ontology_Class10019])
 		(genre "Horror")
@@ -6079,7 +6058,7 @@
 		(title "SomeofYourBlood")
 		(year 1961))
 
-	([ontology_Class10841] of  Book
+	([ontology_Class10838] of  Book
 
 		(author [ontology_Class10020])
 		(genre "Fantasy")
@@ -6089,7 +6068,7 @@
 		(title "CircusoftheDamned")
 		(year 1995))
 
-	([ontology_Class10842] of  Book
+	([ontology_Class10839] of  Book
 
 		(author [ontology_Class10021])
 		(genre "Horror")
@@ -6099,7 +6078,7 @@
 		(title "TheDraculaTape")
 		(year 1975))
 
-	([ontology_Class10843] of  Book
+	([ontology_Class10840] of  Book
 
 		(author [ontology_Class10022])
 		(genre "Horror")
@@ -6109,7 +6088,7 @@
 		(title "DarkDance")
 		(year 1992))
 
-	([ontology_Class10844] of  Book
+	([ontology_Class10841] of  Book
 
 		(author [ontology_Class10023])
 		(genre "Horror")
@@ -6119,7 +6098,7 @@
 		(title "ChildrenoftheNight")
 		(year 1992))
 
-	([ontology_Class10845] of  Book
+	([ontology_Class10842] of  Book
 
 		(author [ontology_Class10024])
 		(genre "Horror")
@@ -6129,7 +6108,7 @@
 		(title "CovenantwiththeVampire")
 		(year 1994))
 
-	([ontology_Class10846] of  Book
+	([ontology_Class10843] of  Book
 
 		(author [ontology_Class10025])
 		(genre "Horror")
@@ -6139,7 +6118,7 @@
 		(title "AnnoDracula")
 		(year 1992))
 
-	([ontology_Class10847] of  Book
+	([ontology_Class10844] of  Book
 
 		(author [ontology_Class10026])
 		(genre "Horror")
@@ -6149,7 +6128,7 @@
 		(title "LostSouls")
 		(year 1992))
 
-	([ontology_Class10848] of  Book
+	([ontology_Class10845] of  Book
 
 		(author [ontology_Class10027])
 		(genre "Horror")
@@ -6159,7 +6138,7 @@
 		(title "Carmilla")
 		(year 1872))
 
-	([ontology_Class10849] of  Book
+	([ontology_Class10846] of  Book
 
 		(author [ontology_Class10028])
 		(genre "Classics")
@@ -6169,7 +6148,7 @@
 		(title "Dracula")
 		(year 1897))
 
-	([ontology_Class10850] of  Book
+	([ontology_Class10847] of  Book
 
 		(author [ontology_Class10029])
 		(genre "Fantasy")
@@ -6179,7 +6158,7 @@
 		(title "TheLastUnicorn")
 		(year 1968))
 
-	([ontology_Class10851] of  Book
+	([ontology_Class10848] of  Book
 
 		(author [ontology_Class10030])
 		(genre "Fantasy")
@@ -6189,7 +6168,7 @@
 		(title "Sandry'sBook")
 		(year 1997))
 
-	([ontology_Class10852] of  Book
+	([ontology_Class10849] of  Book
 
 		(author [ontology_Class10031])
 		(genre "Young")
@@ -6199,7 +6178,7 @@
 		(title "TheLostYearsofMerlin")
 		(year 1996))
 
-	([ontology_Class10853] of  Book
+	([ontology_Class10850] of  Book
 
 		(author [ontology_Class10032])
 		(genre "Fantasy")
@@ -6209,7 +6188,7 @@
 		(title "TuckEverlasting")
 		(year 1975))
 
-	([ontology_Class10854] of  Book
+	([ontology_Class10851] of  Book
 
 		(author [ontology_Class10033])
 		(genre "Fantasy")
@@ -6219,7 +6198,7 @@
 		(title "TheSwordintheStone")
 		(year 1938))
 
-	([ontology_Class10855] of  Book
+	([ontology_Class10852] of  Book
 
 		(author [ontology_Class10034])
 		(genre "Uncategorized")
@@ -6229,7 +6208,7 @@
 		(title "TheBadBeginning")
 		(year 1999))
 
-	([ontology_Class10856] of  Book
+	([ontology_Class10853] of  Book
 
 		(author [ontology_Class10035])
 		(genre "Fantasy")
@@ -6239,7 +6218,7 @@
 		(title "TheThief")
 		(year 1996))
 
-	([ontology_Class10857] of  Book
+	([ontology_Class10854] of  Book
 
 		(author [ontology_Class10036])
 		(genre "Fantasy")
@@ -6249,7 +6228,7 @@
 		(title "TheNeverendingStory")
 		(year 1979))
 
-	([ontology_Class10858] of  Book
+	([ontology_Class10855] of  Book
 
 		(author [ontology_Class10037])
 		(genre "Fantasy")
@@ -6259,7 +6238,7 @@
 		(title "TheBookofThree")
 		(year 1964))
 
-	([ontology_Class10859] of  Book
+	([ontology_Class10856] of  Book
 
 		(author [ontology_Class10038])
 		(genre "Fantasy")
@@ -6269,7 +6248,7 @@
 		(title "ThePrincessBride")
 		(year 1973))
 
-	([ontology_Class10860] of  Book
+	([ontology_Class10857] of  Book
 
 		(author [ontology_Class10039])
 		(genre "Young")
@@ -6279,7 +6258,7 @@
 		(title "BridgetoTerabithia")
 		(year 1977))
 
-	([ontology_Class10861] of  Book
+	([ontology_Class10858] of  Book
 
 		(author [ontology_Class10040])
 		(genre "Fantasy")
@@ -6289,7 +6268,7 @@
 		(title "AWrinkleinTime")
 		(year 1962))
 
-	([ontology_Class10862] of  Book
+	([ontology_Class10859] of  Book
 
 		(author [ontology_Class10041])
 		(genre "Young")
@@ -6299,7 +6278,7 @@
 		(title "HardLove")
 		(year 1999))
 
-	([ontology_Class10863] of  Book
+	([ontology_Class10860] of  Book
 
 		(author [ontology_Class10042])
 		(genre "Uncategorized")
@@ -6309,7 +6288,7 @@
 		(title "HereonEarth")
 		(year 1997))
 
-	([ontology_Class10864] of  Book
+	([ontology_Class10861] of  Book
 
 		(author [ontology_Class10043])
 		(genre "Uncategorized")
@@ -6319,7 +6298,7 @@
 		(title "TheMagicToyshop")
 		(year 1967))
 
-	([ontology_Class10865] of  Book
+	([ontology_Class10862] of  Book
 
 		(author [ontology_Class10044])
 		(genre "Uncategorized")
@@ -6329,7 +6308,7 @@
 		(title "TheMistressofSpices")
 		(year 1997))
 
-	([ontology_Class10866] of  Book
+	([ontology_Class10863] of  Book
 
 		(author [ontology_Class10045])
 		(genre "Uncategorized")
@@ -6339,7 +6318,7 @@
 		(title "Steppenwolf")
 		(year 1927))
 
-	([ontology_Class10867] of  Book
+	([ontology_Class10864] of  Book
 
 		(author [ontology_Class10046])
 		(genre "Uncategorized")
@@ -6349,7 +6328,7 @@
 		(title "DonaFlorandHerTwoHusbands")
 		(year 1966))
 
-	([ontology_Class10868] of  Book
+	([ontology_Class10865] of  Book
 
 		(author [ontology_Class10047])
 		(genre "Uncategorized")
@@ -6359,7 +6338,7 @@
 		(title "TheMilagroBeanfieldWar")
 		(year 1974))
 
-	([ontology_Class10869] of  Book
+	([ontology_Class10866] of  Book
 
 		(author [ontology_Class10048])
 		(genre "Uncategorized")
@@ -6369,7 +6348,7 @@
 		(title "BlessMe,Ultima")
 		(year 1972))
 
-	([ontology_Class10870] of  Book
+	([ontology_Class10867] of  Book
 
 		(author [ontology_Class10049])
 		(genre "Uncategorized")
@@ -6379,7 +6358,7 @@
 		(title "IfonaWinter'sNightaTraveler")
 		(year 1979))
 
-	([ontology_Class10871] of  Book
+	([ontology_Class10868] of  Book
 
 		(author [ontology_Class10050])
 		(genre "Uncategorized")
@@ -6389,7 +6368,7 @@
 		(title "Ficciones")
 		(year 1944))
 
-	([ontology_Class10872] of  Book
+	([ontology_Class10869] of  Book
 
 		(author [ontology_Class10051])
 		(genre "Uncategorized")
@@ -6399,7 +6378,7 @@
 		(title "TheMasterandMargarita")
 		(year 1967))
 
-	([ontology_Class10873] of  Book
+	([ontology_Class10870] of  Book
 
 		(author [ontology_Class10052])
 		(genre "Young")
@@ -6409,7 +6388,7 @@
 		(title "WalkTwoMoons")
 		(year 1994))
 
-	([ontology_Class10874] of  Book
+	([ontology_Class10871] of  Book
 
 		(author [ontology_Class10053])
 		(genre "Classics")
@@ -6419,7 +6398,7 @@
 		(title "AClockworkOrange")
 		(year 1962))
 
-	([ontology_Class10875] of  Book
+	([ontology_Class10872] of  Book
 
 		(author [ontology_Class10054])
 		(genre "Classics")
@@ -6429,7 +6408,7 @@
 		(title "TessoftheD'Urbervilles")
 		(year 1891))
 
-	([ontology_Class10876] of  Book
+	([ontology_Class10873] of  Book
 
 		(author [ontology_Class10055])
 		(genre "Classics")
@@ -6439,7 +6418,7 @@
 		(title "ATaleofTwoCities")
 		(year 1859))
 
-	([ontology_Class10877] of  Book
+	([ontology_Class10874] of  Book
 
 		(author [ontology_Class10056])
 		(genre "Classics")
@@ -6449,7 +6428,7 @@
 		(title "InvisibleMan")
 		(year 1952))
 
-	([ontology_Class10878] of  Book
+	([ontology_Class10875] of  Book
 
 		(author [ontology_Class10057])
 		(genre "Thriller")
@@ -6459,7 +6438,7 @@
 		(title "TheWestingGame")
 		(year 1978))
 
-	([ontology_Class10879] of  Book
+	([ontology_Class10876] of  Book
 
 		(author [ontology_Class10058])
 		(genre "Classics")
@@ -6469,7 +6448,7 @@
 		(title "TheirEyesWereWatchingGod")
 		(year 1937))
 
-	([ontology_Class10880] of  Book
+	([ontology_Class10877] of  Book
 
 		(author [ontology_Class10059])
 		(genre "Classics")
@@ -6479,7 +6458,7 @@
 		(title "MadameBovary")
 		(year 1856))
 
-	([ontology_Class10881] of  Book
+	([ontology_Class10878] of  Book
 
 		(author [ontology_Class10060])
 		(genre "Classics")
@@ -6489,7 +6468,7 @@
 		(title "TheGrapesofWrath")
 		(year 1939))
 
-	([ontology_Class10882] of  Book
+	([ontology_Class10879] of  Book
 
 		(author [ontology_Class10061])
 		(genre "Classics")
@@ -6499,7 +6478,7 @@
 		(title "TheAdventuresofTomSawyer")
 		(year 1876))
 
-	([ontology_Class10883] of  Book
+	([ontology_Class10880] of  Book
 
 		(author [ontology_Class10062])
 		(genre "Classics")
@@ -6509,7 +6488,7 @@
 		(title "HeartofDarkness")
 		(year 1899))
 
-	([ontology_Class10884] of  Book
+	([ontology_Class10881] of  Book
 
 		(author [ontology_Class10063])
 		(genre "Historical")
@@ -6519,7 +6498,7 @@
 		(title "Outlander")
 		(year 1991))
 
-	([ontology_Class10885] of  Book
+	([ontology_Class10882] of  Book
 
 		(author [ontology_Class10064])
 		(genre "Uncategorized")
@@ -6529,7 +6508,7 @@
 		(title "ThingsFallApart")
 		(year 1958))
 
-	([ontology_Class10886] of  Book
+	([ontology_Class10883] of  Book
 
 		(author [ontology_Class10065])
 		(genre "Classics")
@@ -6539,7 +6518,7 @@
 		(title "OneFlewOvertheCuckoo'sNest")
 		(year 1962))
 
-	([ontology_Class10887] of  Book
+	([ontology_Class10884] of  Book
 
 		(author [ontology_Class10066])
 		(genre "Classics")
@@ -6549,7 +6528,7 @@
 		(title "TheOldManandtheSea")
 		(year 1952))
 
-	([ontology_Class10888] of  Book
+	([ontology_Class10885] of  Book
 
 		(author [ontology_Class10067])
 		(genre "Fantasy")
@@ -6559,7 +6538,7 @@
 		(title "TheGoldenCompass")
 		(year 1995))
 
-	([ontology_Class10889] of  Book
+	([ontology_Class10886] of  Book
 
 		(author [ontology_Class10068])
 		(genre "Classics")
@@ -6569,7 +6548,7 @@
 		(title "WatershipDown")
 		(year 1972))
 
-	([ontology_Class10890] of  Book
+	([ontology_Class10887] of  Book
 
 		(author [ontology_Class10069])
 		(genre "Classics")
@@ -6579,7 +6558,7 @@
 		(title "CrimeandPunishment")
 		(year 1866))
 
-	([ontology_Class10891] of  Book
+	([ontology_Class10888] of  Book
 
 		(author [ontology_Class10070])
 		(genre "Classics")
@@ -6589,7 +6568,7 @@
 		(title "TheStranger")
 		(year 1942))
 
-	([ontology_Class10892] of  Book
+	([ontology_Class10889] of  Book
 
 		(author [ontology_Class10071])
 		(genre "Classics")
@@ -6599,7 +6578,7 @@
 		(title "Frankenstein")
 		(year 1818))
 
-	([ontology_Class10893] of  Book
+	([ontology_Class10890] of  Book
 
 		(author [ontology_Class10072])
 		(genre "Uncategorized")
@@ -6609,7 +6588,7 @@
 		(title "FlowersforAlgernon")
 		(year 1966))
 
-	([ontology_Class10894] of  Book
+	([ontology_Class10891] of  Book
 
 		(author [ontology_Class10073])
 		(genre "Classics")
@@ -6619,7 +6598,7 @@
 		(title "AnimalFarm")
 		(year 1945))
 
-	([ontology_Class10895] of  Book
+	([ontology_Class10892] of  Book
 
 		(author [ontology_Class10074])
 		(genre "Classics")
@@ -6629,7 +6608,7 @@
 		(title "TheCatcherintheRye")
 		(year 1951))
 
-	([ontology_Class10896] of  Book
+	([ontology_Class10893] of  Book
 
 		(author [ontology_Class10075])
 		(genre "Classics")
@@ -6639,7 +6618,7 @@
 		(title "LordoftheFlies")
 		(year 1954))
 
-	([ontology_Class10897] of  Book
+	([ontology_Class10894] of  Book
 
 		(author [ontology_Class10076])
 		(genre "Classics")
@@ -6649,7 +6628,7 @@
 		(title "TheOutsiders")
 		(year 1967))
 
-	([ontology_Class10898] of  Book
+	([ontology_Class10895] of  Book
 
 		(author [ontology_Class10077])
 		(genre "Classics")
@@ -6659,7 +6638,7 @@
 		(title "TheGreatGatsby")
 		(year 1925))
 
-	([ontology_Class10899] of  Book
+	([ontology_Class10896] of  Book
 
 		(author [ontology_Class10078])
 		(genre "Classics")
@@ -6669,7 +6648,7 @@
 		(title "TheWomaninWhite")
 		(year 1859))
 
-	([ontology_Class10900] of  Book
+	([ontology_Class10897] of  Book
 
 		(author [ontology_Class10079])
 		(genre "Thriller")
@@ -6679,7 +6658,7 @@
 		(title "AbsolutionbyMurder")
 		(year 1994))
 
-	([ontology_Class10901] of  Book
+	([ontology_Class10898] of  Book
 
 		(author [ontology_Class10080])
 		(genre "Thriller")
@@ -6689,7 +6668,7 @@
 		(title "TheNovice'sTale")
 		(year 1992))
 
-	([ontology_Class10902] of  Book
+	([ontology_Class10899] of  Book
 
 		(author [ontology_Class10081])
 		(genre "Historical")
@@ -6699,7 +6678,7 @@
 		(title "TheGameofKings")
 		(year 1961))
 
-	([ontology_Class10903] of  Book
+	([ontology_Class10900] of  Book
 
 		(author [ontology_Class10082])
 		(genre "Thriller")
@@ -6709,7 +6688,7 @@
 		(title "BlindJustice")
 		(year 1994))
 
-	([ontology_Class10904] of  Book
+	([ontology_Class10901] of  Book
 
 		(author [ontology_Class10083])
 		(genre "Thriller")
@@ -6719,7 +6698,7 @@
 		(title "CuttotheQuick")
 		(year 1993))
 
-	([ontology_Class10905] of  Book
+	([ontology_Class10902] of  Book
 
 		(author [ontology_Class10084])
 		(genre "Historical")
@@ -6729,7 +6708,7 @@
 		(title "TheQueen'sMan")
 		(year 1996))
 
-	([ontology_Class10906] of  Book
+	([ontology_Class10903] of  Book
 
 		(author [ontology_Class10085])
 		(genre "Historical")
@@ -6739,7 +6718,7 @@
 		(title "RomanBlood")
 		(year 1991))
 
-	([ontology_Class10907] of  Book
+	([ontology_Class10904] of  Book
 
 		(author [ontology_Class10086])
 		(genre "Thriller")
@@ -6749,7 +6728,7 @@
 		(title "ATestofWills")
 		(year 1994))
 
-	([ontology_Class10908] of  Book
+	([ontology_Class10905] of  Book
 
 		(author [ontology_Class10087])
 		(genre "Historical")
@@ -6759,7 +6738,7 @@
 		(title "AnInstanceoftheFingerpost")
 		(year 1997))
 
-	([ontology_Class10909] of  Book
+	([ontology_Class10906] of  Book
 
 		(author [ontology_Class10088])
 		(genre "Thriller")
@@ -6769,7 +6748,7 @@
 		(title "TheDaughterofTime")
 		(year 1949))
 
-	([ontology_Class10910] of  Book
+	([ontology_Class10907] of  Book
 
 		(author [ontology_Class10089])
 		(genre "Uncategorized")
@@ -6779,7 +6758,7 @@
 		(title "OrdinaryPeople")
 		(year 1976))
 
-	([ontology_Class10911] of  Book
+	([ontology_Class10908] of  Book
 
 		(author [ontology_Class10090])
 		(genre "Uncategorized")
@@ -6789,7 +6768,7 @@
 		(title "RabbitRedux")
 		(year 1971))
 
-	([ontology_Class10912] of  Book
+	([ontology_Class10909] of  Book
 
 		(author [ontology_Class10091])
 		(genre "Historical")
@@ -6799,7 +6778,7 @@
 		(title "TheSource")
 		(year 1965))
 
-	([ontology_Class10913] of  Book
+	([ontology_Class10910] of  Book
 
 		(author [ontology_Class10092])
 		(genre "Historical")
@@ -6809,7 +6788,7 @@
 		(title "TheFarPavilions")
 		(year 1978))
 
-	([ontology_Class10914] of  Book
+	([ontology_Class10911] of  Book
 
 		(author [ontology_Class10093])
 		(genre "Historical")
@@ -6819,7 +6798,7 @@
 		(title "TheCompleteAubrey/MaturinNovels5Volumes")
 		(year 1994))
 
-	([ontology_Class10915] of  Book
+	([ontology_Class10912] of  Book
 
 		(author [ontology_Class10094])
 		(genre "Historical")
@@ -6829,7 +6808,7 @@
 		(title "London")
 		(year 1997))
 
-	([ontology_Class10916] of  Book
+	([ontology_Class10913] of  Book
 
 		(author [ontology_Class10095])
 		(genre "Uncategorized")
@@ -6839,7 +6818,7 @@
 		(title "TheFrenchLieutenant'sWoman")
 		(year 1969))
 
-	([ontology_Class10917] of  Book
+	([ontology_Class10914] of  Book
 
 		(author [ontology_Class10096])
 		(genre "Historical")
@@ -6849,7 +6828,7 @@
 		(title "ForeverAmber")
 		(year 1944))
 
-	([ontology_Class10918] of  Book
+	([ontology_Class10915] of  Book
 
 		(author [ontology_Class10097])
 		(genre "Historical")
@@ -6859,7 +6838,7 @@
 		(title "Tai-Pan")
 		(year 1966))
 
-	([ontology_Class10919] of  Book
+	([ontology_Class10916] of  Book
 
 		(author [ontology_Class10098])
 		(genre "Classics")
@@ -6869,7 +6848,7 @@
 		(title "Ivanhoe")
 		(year 1819))
 
-	([ontology_Class10920] of  Book
+	([ontology_Class10917] of  Book
 
 		(author [ontology_Class10099])
 		(genre "Historical")
@@ -6879,7 +6858,7 @@
 		(title "TheAgonyandtheEcstasy")
 		(year 1958))
 
-	([ontology_Class10921] of  Book
+	([ontology_Class10918] of  Book
 
 		(author [ontology_Class10100])
 		(genre "Historical")
@@ -6889,7 +6868,7 @@
 		(title "PopeJoan")
 		(year 1996))
 
-	([ontology_Class10922] of  Book
+	([ontology_Class10919] of  Book
 
 		(author [ontology_Class10101])
 		(genre "Historical")
@@ -6899,7 +6878,7 @@
 		(title "Exodus")
 		(year 1958))
 
-	([ontology_Class10923] of  Book
+	([ontology_Class10920] of  Book
 
 		(author [ontology_Class10102])
 		(genre "Historical")
@@ -6909,7 +6888,7 @@
 		(title "Katherine")
 		(year 1954))
 
-	([ontology_Class10924] of  Book
+	([ontology_Class10921] of  Book
 
 		(author [ontology_Class10103])
 		(genre "Uncategorized")
@@ -6919,7 +6898,7 @@
 		(title "TheEnglishPatient")
 		(year 1992))
 
-	([ontology_Class10925] of  Book
+	([ontology_Class10922] of  Book
 
 		(author [ontology_Class10104])
 		(genre "Historical")
@@ -6929,7 +6908,7 @@
 		(title "I,Claudius")
 		(year 1934))
 
-	([ontology_Class10926] of  Book
+	([ontology_Class10923] of  Book
 
 		(author [ontology_Class10105])
 		(genre "Classics")
@@ -6939,7 +6918,7 @@
 		(title "TheThreeMusketeers")
 		(year 1844))
 
-	([ontology_Class10927] of  Book
+	([ontology_Class10924] of  Book
 
 		(author [ontology_Class10106])
 		(genre "Historical")
@@ -6949,7 +6928,7 @@
 		(title "ColdMountain")
 		(year 1997))
 
-	([ontology_Class10928] of  Book
+	([ontology_Class10925] of  Book
 
 		(author [ontology_Class10107])
 		(genre "Historical")
@@ -6959,7 +6938,7 @@
 		(title "TheRedTent")
 		(year 1997))
 
-	([ontology_Class10929] of  Book
+	([ontology_Class10926] of  Book
 
 		(author [ontology_Class10108])
 		(genre "Classics")
@@ -6969,7 +6948,7 @@
 		(title "UncleTom'sCabin")
 		(year 1852))
 
-	([ontology_Class10930] of  Book
+	([ontology_Class10927] of  Book
 
 		(author [ontology_Class10109])
 		(genre "Classics")
@@ -6979,7 +6958,7 @@
 		(title "AllQuietontheWesternFront")
 		(year 1929))
 
-	([ontology_Class10931] of  Book
+	([ontology_Class10928] of  Book
 
 		(author [ontology_Class10110])
 		(genre "Classics")
@@ -6989,7 +6968,7 @@
 		(title "WarandPeace")
 		(year 1867))
 
-	([ontology_Class10932] of  Book
+	([ontology_Class10929] of  Book
 
 		(author [ontology_Class10111])
 		(genre "Classics")
@@ -6999,7 +6978,7 @@
 		(title "Lolita")
 		(year 1955))
 
-	([ontology_Class10933] of  Book
+	([ontology_Class10930] of  Book
 
 		(author [ontology_Class10112])
 		(genre "Classics")
@@ -7009,7 +6988,7 @@
 		(title "Catch-22")
 		(year 1961))
 
-	([ontology_Class10934] of  Book
+	([ontology_Class10931] of  Book
 
 		(author [ontology_Class10113])
 		(genre "Classics")
@@ -7019,7 +6998,7 @@
 		(title "Alice'sAdventuresinWonderlandThroughtheLooking-Glass")
 		(year 1872))
 
-	([ontology_Class10935] of  Book
+	([ontology_Class10932] of  Book
 
 		(author [ontology_Class10114])
 		(genre "Fantasy")
@@ -7029,7 +7008,7 @@
 		(title "ThePhantomTollbooth")
 		(year 1961))
 
-	([ontology_Class10936] of  Book
+	([ontology_Class10933] of  Book
 
 		(author [ontology_Class10115])
 		(genre "Horror")
@@ -7039,7 +7018,7 @@
 		(title "GhostStory")
 		(year 1979))
 
-	([ontology_Class10937] of  Book
+	([ontology_Class10934] of  Book
 
 		(author [ontology_Class10116])
 		(genre "Historical")
@@ -7049,7 +7028,7 @@
 		(title "RollofThunder,HearMyCry")
 		(year 1976))
 
-	([ontology_Class10938] of  Book
+	([ontology_Class10935] of  Book
 
 		(author [ontology_Class10117])
 		(genre "Uncategorized")
@@ -7059,7 +7038,7 @@
 		(title "TheOtherSideofMidnight")
 		(year 1973))
 
-	([ontology_Class10939] of  Book
+	([ontology_Class10936] of  Book
 
 		(author [ontology_Class10118])
 		(genre "Historical")
@@ -7069,7 +7048,7 @@
 		(title "WarandRemembrance")
 		(year 1978))
 
-	([ontology_Class10940] of  Book
+	([ontology_Class10937] of  Book
 
 		(author [ontology_Class10119])
 		(genre "Uncategorized")
@@ -7079,7 +7058,7 @@
 		(title "MyNameIsAsherLev")
 		(year 1972))
 
-	([ontology_Class10941] of  Book
+	([ontology_Class10938] of  Book
 
 		(author [ontology_Class10120])
 		(genre "Fantasy")
@@ -7089,7 +7068,7 @@
 		(title "TheSwordofShannara")
 		(year 1977))
 
-	([ontology_Class10942] of  Book
+	([ontology_Class10939] of  Book
 
 		(author [ontology_Class10121])
 		(genre "Uncategorized")
@@ -7099,7 +7078,7 @@
 		(title "AngleofRepose")
 		(year 1971))
 
-	([ontology_Class10943] of  Book
+	([ontology_Class10940] of  Book
 
 		(author [ontology_Class10122])
 		(genre "Young")
@@ -7109,7 +7088,7 @@
 		(title "TheDarkIsRising")
 		(year 1973))
 
-	([ontology_Class10944] of  Book
+	([ontology_Class10941] of  Book
 
 		(author [ontology_Class10123])
 		(genre "Uncategorized")
@@ -7119,7 +7098,7 @@
 		(title "KaneandAbel")
 		(year 1979))
 
-	([ontology_Class10945] of  Book
+	([ontology_Class10942] of  Book
 
 		(author [ontology_Class10124])
 		(genre "Uncategorized")
@@ -7129,7 +7108,7 @@
 		(title "Gravity'sRainbow")
 		(year 1973))
 
-	([ontology_Class10946] of  Book
+	([ontology_Class10943] of  Book
 
 		(author [ontology_Class10125])
 		(genre "Uncategorized")
@@ -7139,7 +7118,7 @@
 		(title "TheDayoftheJackal")
 		(year 1971))
 
-	([ontology_Class10947] of  Book
+	([ontology_Class10944] of  Book
 
 		(author [ontology_Class10126])
 		(genre "Historical")
@@ -7149,7 +7128,7 @@
 		(title "TheKillerAngels")
 		(year 1974))
 
-	([ontology_Class10948] of  Book
+	([ontology_Class10945] of  Book
 
 		(author [ontology_Class10127])
 		(genre "Uncategorized")
@@ -7159,7 +7138,7 @@
 		(title "Ragtime")
 		(year 1975))
 
-	([ontology_Class10949] of  Book
+	([ontology_Class10946] of  Book
 
 		(author [ontology_Class10128])
 		(genre "Uncategorized")
@@ -7169,7 +7148,7 @@
 		(title "TheBlackPrince")
 		(year 1973))
 
-	([ontology_Class10950] of  Book
+	([ontology_Class10947] of  Book
 
 		(author [ontology_Class10129])
 		(genre "Horror")
@@ -7179,7 +7158,7 @@
 		(title "TheExorcist")
 		(year 1971))
 
-	([ontology_Class10951] of  Book
+	([ontology_Class10948] of  Book
 
 		(author [ontology_Class10130])
 		(genre "Uncategorized")
@@ -7189,7 +7168,7 @@
 		(title "FearandLoathinginLasVegas")
 		(year 1971))
 
-	([ontology_Class10952] of  Book
+	([ontology_Class10949] of  Book
 
 		(author [ontology_Class10131])
 		(genre "Fantasy")
@@ -7199,7 +7178,7 @@
 		(title "Riddle-Master")
 		(year 1976))
 
-	([ontology_Class10953] of  Book
+	([ontology_Class10950] of  Book
 
 		(author [ontology_Class10132])
 		(genre "Fantasy")
@@ -7209,7 +7188,7 @@
 		(title "TheMystReader:ThreeBooksinOneVolume")
 		(year 1995))
 
-	([ontology_Class10954] of  Book
+	([ontology_Class10951] of  Book
 
 		(author [ontology_Class10133])
 		(genre "Fantasy")
@@ -7219,7 +7198,7 @@
 		(title "TheGormenghastNovels")
 		(year 1959))
 
-	([ontology_Class10955] of  Book
+	([ontology_Class10952] of  Book
 
 		(author [ontology_Class10134])
 		(genre "Uncategorized")
@@ -7229,7 +7208,7 @@
 		(title "TheBourneTrilogy")
 		(year 1991))
 
-	([ontology_Class10956] of  Book
+	([ontology_Class10953] of  Book
 
 		(author [ontology_Class10135])
 		(genre "Classics")
@@ -7239,7 +7218,7 @@
 		(title "TheForsyteSaga")
 		(year 1921))
 
-	([ontology_Class10957] of  Book
+	([ontology_Class10954] of  Book
 
 		(author [ontology_Class10136])
 		(genre "Classics")
@@ -7249,7 +7228,7 @@
 		(title "TheCompleteSherlockHolmes")
 		(year 1927))
 
-	([ontology_Class10958] of  Book
+	([ontology_Class10955] of  Book
 
 		(author [ontology_Class10137])
 		(genre "Young")
@@ -7259,7 +7238,7 @@
 		(title "Brian'sWinter")
 		(year 1996))
 
-	([ontology_Class10959] of  Book
+	([ontology_Class10956] of  Book
 
 		(author [ontology_Class10138])
 		(genre "Historical")
@@ -7269,7 +7248,7 @@
 		(title "Roots:TheSagaofanAmericanFamily")
 		(year 1976))
 
-	([ontology_Class10960] of  Book
+	([ontology_Class10957] of  Book
 
 		(author [ontology_Class10139])
 		(genre "Classics")
@@ -7279,7 +7258,7 @@
 		(title "Moby-Dick,or,theWhale")
 		(year 1851))
 
-	([ontology_Class10961] of  Book
+	([ontology_Class10958] of  Book
 
 		(author [ontology_Class10140])
 		(genre "Classics")
@@ -7289,7 +7268,7 @@
 		(title "BlackBeauty")
 		(year 1877))
 
-	([ontology_Class10962] of  Book
+	([ontology_Class10959] of  Book
 
 		(author [ontology_Class10141])
 		(genre "Uncategorized")
@@ -7299,7 +7278,7 @@
 		(title "JohnnyGotHisGun")
 		(year 1939))
 
-	([ontology_Class10963] of  Book
+	([ontology_Class10960] of  Book
 
 		(author [ontology_Class10142])
 		(genre "Classics")
@@ -7309,7 +7288,7 @@
 		(title "TheSwissFamilyRobinson")
 		(year 1812))
 
-	([ontology_Class10964] of  Book
+	([ontology_Class10961] of  Book
 
 		(author [ontology_Class10143])
 		(genre "Uncategorized")
@@ -7319,7 +7298,7 @@
 		(title "Sophie'sChoice")
 		(year 1979))
 
-	([ontology_Class10965] of  Book
+	([ontology_Class10962] of  Book
 
 		(author [ontology_Class10144])
 		(genre "Uncategorized")
@@ -7329,7 +7308,7 @@
 		(title "MySideoftheMountain")
 		(year 1959))
 
-	([ontology_Class10966] of  Book
+	([ontology_Class10963] of  Book
 
 		(author [ontology_Class10145])
 		(genre "Romance")
@@ -7339,7 +7318,7 @@
 		(title "BabyLove")
 		(year 1999))
 
-	([ontology_Class10967] of  Book
+	([ontology_Class10964] of  Book
 
 		(author [ontology_Class10146])
 		(genre "Uncategorized")
@@ -7349,7 +7328,7 @@
 		(title "Sounder")
 		(year 1969))
 
-	([ontology_Class10968] of  Book
+	([ontology_Class10965] of  Book
 
 		(author [ontology_Class10147])
 		(genre "Classics")
@@ -7359,7 +7338,7 @@
 		(title "TheYearling")
 		(year 1938))
 
-	([ontology_Class10969] of  Book
+	([ontology_Class10966] of  Book
 
 		(author [ontology_Class10148])
 		(genre "Classics")
@@ -7369,7 +7348,7 @@
 		(title "OldYeller")
 		(year 1956))
 
-	([ontology_Class10970] of  Book
+	([ontology_Class10967] of  Book
 
 		(author [ontology_Class10149])
 		(genre "Classics")
@@ -7379,7 +7358,7 @@
 		(title "WheretheRedFernGrows")
 		(year 1961))
 
-	([ontology_Class10971] of  Book
+	([ontology_Class10968] of  Book
 
 		(author [ontology_Class10150])
 		(genre "Fantasy")
@@ -7389,7 +7368,7 @@
 		(title "TheLastWish")
 		(year 1993))
 
-	([ontology_Class10972] of  Book
+	([ontology_Class10969] of  Book
 
 		(author [ontology_Class10151])
 		(genre "Fantasy")
@@ -7399,7 +7378,7 @@
 		(title "TheMagicofRecluce")
 		(year 1991))
 
-	([ontology_Class10973] of  Book
+	([ontology_Class10970] of  Book
 
 		(author [ontology_Class10152])
 		(genre "Fantasy")
@@ -7409,7 +7388,7 @@
 		(title "BytheSword")
 		(year 1991))
 
-	([ontology_Class10974] of  Book
+	([ontology_Class10971] of  Book
 
 		(author [ontology_Class10153])
 		(genre "Fantasy")
@@ -7419,7 +7398,7 @@
 		(title "CrownDuel")
 		(year 1997))
 
-	([ontology_Class10975] of  Book
+	([ontology_Class10972] of  Book
 
 		(author [ontology_Class10154])
 		(genre "Uncategorized")
@@ -7429,7 +7408,7 @@
 		(title "HouseofSandandFog")
 		(year 1999))
 
-	([ontology_Class10976] of  Book
+	([ontology_Class10973] of  Book
 
 		(author [ontology_Class10155])
 		(genre "Uncategorized")
@@ -7439,7 +7418,7 @@
 		(title "TheShippingNews")
 		(year 1993))
 
-	([ontology_Class10977] of  Book
+	([ontology_Class10974] of  Book
 
 		(author [ontology_Class10156])
 		(genre "Fantasy")
@@ -7449,7 +7428,7 @@
 		(title "Wicked:TheLifeandTimesoftheWickedWitchoftheWest")
 		(year 1995))
 
-	([ontology_Class10978] of  Book
+	([ontology_Class10975] of  Book
 
 		(author [ontology_Class10157])
 		(genre "Classics")
@@ -7459,7 +7438,7 @@
 		(title "TheRedBadgeofCourage")
 		(year 1895))
 
-	([ontology_Class10979] of  Book
+	([ontology_Class10976] of  Book
 
 		(author [ontology_Class10158])
 		(genre "Romance")
@@ -7469,7 +7448,7 @@
 		(title "SexandtheCity")
 		(year 1996))
 
-	([ontology_Class10980] of  Book
+	([ontology_Class10977] of  Book
 
 		(author [ontology_Class10159])
 		(genre "Classics")
@@ -7479,7 +7458,7 @@
 		(title "TotheLighthouse")
 		(year 1927))
 
-	([ontology_Class10981] of  Book
+	([ontology_Class10978] of  Book
 
 		(author [ontology_Class10160])
 		(genre "Classics")
@@ -7489,7 +7468,7 @@
 		(title "APortraitoftheArtistasaYoungMan")
 		(year 1916))
 
-	([ontology_Class10982] of  Book
+	([ontology_Class10979] of  Book
 
 		(author [ontology_Class10161])
 		(genre "Classics")
@@ -7499,7 +7478,7 @@
 		(title "TheSoundandtheFury")
 		(year 1929))
 
-	([ontology_Class10983] of  Book
+	([ontology_Class10980] of  Book
 
 		(author [ontology_Class10162])
 		(genre "Classics")
@@ -7509,7 +7488,7 @@
 		(title "TheGoodEarth")
 		(year 1931))
 
-	([ontology_Class10984] of  Book
+	([ontology_Class10981] of  Book
 
 		(author [ontology_Class10163])
 		(genre "Classics")
@@ -7519,7 +7498,7 @@
 		(title "OntheRoad")
 		(year 1955))
 
-	([ontology_Class10985] of  Book
+	([ontology_Class10982] of  Book
 
 		(author [ontology_Class10164])
 		(genre "Fantasy")
@@ -7529,7 +7508,7 @@
 		(title "TheLionsofAl-Rassan")
 		(year 1995))
 
-	([ontology_Class10986] of  Book
+	([ontology_Class10983] of  Book
 
 		(author [ontology_Class10165])
 		(genre "Fantasy")
@@ -7539,7 +7518,7 @@
 		(title "Rhapsody:ChildofBlood")
 		(year 1999))
 
-	([ontology_Class10987] of  Book
+	([ontology_Class10984] of  Book
 
 		(author [ontology_Class10166])
 		(genre "Fantasy")
@@ -7549,7 +7528,7 @@
 		(title "TheDeedofPaksenarrion")
 		(year 1992))
 
-	([ontology_Class10988] of  Book
+	([ontology_Class10985] of  Book
 
 		(author [ontology_Class10167])
 		(genre "Fantasy")
@@ -7559,7 +7538,7 @@
 		(title "TheChroniclesofThomasCovenant,theUnbeliever")
 		(year 1977))
 
-	([ontology_Class10989] of  Book
+	([ontology_Class10986] of  Book
 
 		(author [ontology_Class10168])
 		(genre "Fantasy")
@@ -7569,7 +7548,7 @@
 		(title "GardensoftheMoon")
 		(year 1999))
 
-	([ontology_Class10990] of  Book
+	([ontology_Class10987] of  Book
 
 		(author [ontology_Class10169])
 		(genre "Uncategorized")
@@ -7579,7 +7558,7 @@
 		(title "TheKillerInsideMe")
 		(year 1952))
 
-	([ontology_Class10991] of  Book
+	([ontology_Class10988] of  Book
 
 		(author [ontology_Class10170])
 		(genre "Uncategorized")
@@ -7589,7 +7568,7 @@
 		(title "Trainspotting")
 		(year 1993))
 
-	([ontology_Class10992] of  Book
+	([ontology_Class10989] of  Book
 
 		(author [ontology_Class10171])
 		(genre "Classics")
@@ -7599,7 +7578,7 @@
 		(title "ThePaintedVeil")
 		(year 1925))
 
-	([ontology_Class10993] of  Book
+	([ontology_Class10990] of  Book
 
 		(author [ontology_Class10172])
 		(genre "Uncategorized")
@@ -7609,7 +7588,7 @@
 		(title "ThePrestige")
 		(year 1995))
 
-	([ontology_Class10994] of  Book
+	([ontology_Class10991] of  Book
 
 		(author [ontology_Class10173])
 		(genre "Uncategorized")
@@ -7619,7 +7598,7 @@
 		(title "TheBridgesofMadisonCounty")
 		(year 1992))
 
-	([ontology_Class10995] of  Book
+	([ontology_Class10992] of  Book
 
 		(author [ontology_Class10174])
 		(genre "Uncategorized")
@@ -7629,7 +7608,7 @@
 		(title "CasinoRoyale")
 		(year 1953))
 
-	([ontology_Class10996] of  Book
+	([ontology_Class10993] of  Book
 
 		(author [ontology_Class10175])
 		(genre "Classics")
@@ -7639,7 +7618,7 @@
 		(title "MaryPoppins")
 		(year 1934))
 
-	([ontology_Class10997] of  Book
+	([ontology_Class10994] of  Book
 
 		(author [ontology_Class10176])
 		(genre "Classics")
@@ -7649,7 +7628,7 @@
 		(title "TheLastoftheMohicans")
 		(year 1826))
 
-	([ontology_Class10998] of  Book
+	([ontology_Class10995] of  Book
 
 		(author [ontology_Class10177])
 		(genre "Horror")
@@ -7659,7 +7638,7 @@
 		(title "Jaws")
 		(year 1973))
 
-	([ontology_Class10999] of  Book
+	([ontology_Class10996] of  Book
 
 		(author [ontology_Class10178])
 		(genre "Thriller")
@@ -7669,7 +7648,7 @@
 		(title "APlaceofExecution")
 		(year 1999))
 
-	([ontology_Class11000] of  Book
+	([ontology_Class10997] of  Book
 
 		(author [ontology_Class10179])
 		(genre "Thriller")
@@ -7679,7 +7658,7 @@
 		(title "WhereAretheChildren?")
 		(year 1975))
 
-	([ontology_Class11001] of  Book
+	([ontology_Class10998] of  Book
 
 		(author [ontology_Class10180])
 		(genre "Thriller")
@@ -7689,7 +7668,7 @@
 		(title "FacelessKillers")
 		(year 1991))
 
-	([ontology_Class11002] of  Book
+	([ontology_Class10999] of  Book
 
 		(author [ontology_Class10181])
 		(genre "Thriller")
@@ -7699,7 +7678,7 @@
 		(title "WhoseBody?")
 		(year 1923))
 
-	([ontology_Class11003] of  Book
+	([ontology_Class11000] of  Book
 
 		(author [ontology_Class10182])
 		(genre "Thriller")
@@ -7709,7 +7688,7 @@
 		(title "WitnessfortheProsecutionandSelectedPlays")
 		(year 1995))
 
-	([ontology_Class11004] of  Book
+	([ontology_Class11001] of  Book
 
 		(author [ontology_Class10183])
 		(genre "Uncategorized")
@@ -7719,7 +7698,7 @@
 		(title "ThePostmanAlwaysRingsTwice")
 		(year 1934))
 
-	([ontology_Class11005] of  Book
+	([ontology_Class11002] of  Book
 
 		(author [ontology_Class10184])
 		(genre "Uncategorized")
@@ -7729,7 +7708,7 @@
 		(title "TheSecretHistory")
 		(year 1992))
 
-	([ontology_Class11006] of  Book
+	([ontology_Class11003] of  Book
 
 		(author [ontology_Class10185])
 		(genre "Uncategorized")
@@ -7739,7 +7718,7 @@
 		(title "SnowFallingonCedars")
 		(year 1994))
 
-	([ontology_Class11007] of  Book
+	([ontology_Class11004] of  Book
 
 		(author [ontology_Class10186])
 		(genre "Thriller")
@@ -7749,7 +7728,7 @@
 		(title "TheBlackEcho")
 		(year 1992))
 
-	([ontology_Class11008] of  Book
+	([ontology_Class11005] of  Book
 
 		(author [ontology_Class10187])
 		(genre "Thriller")
@@ -7759,7 +7738,7 @@
 		(title "TheThinMan")
 		(year 1934))
 
-	([ontology_Class11009] of  Book
+	([ontology_Class11006] of  Book
 
 		(author [ontology_Class10188])
 		(genre "Uncategorized")
@@ -7769,7 +7748,7 @@
 		(title "TheTalentedMr.Ripley")
 		(year 1955))
 
-	([ontology_Class11010] of  Book
+	([ontology_Class11007] of  Book
 
 		(author [ontology_Class10189])
 		(genre "Thriller")
@@ -7779,7 +7758,7 @@
 		(title "KillingFloor")
 		(year 1997))
 
-	([ontology_Class11011] of  Book
+	([ontology_Class11008] of  Book
 
 		(author [ontology_Class10190])
 		(genre "Uncategorized")
@@ -7789,7 +7768,7 @@
 		(title "ThePelicanBrief")
 		(year 1992))
 
-	([ontology_Class11012] of  Book
+	([ontology_Class11009] of  Book
 
 		(author [ontology_Class10191])
 		(genre "Classics")
@@ -7799,7 +7778,7 @@
 		(title "TheStrangeCaseofDr.JekyllandMr.Hyde")
 		(year 1886))
 
-	([ontology_Class11013] of  Book
+	([ontology_Class11010] of  Book
 
 		(author [ontology_Class10192])
 		(genre "Thriller")
@@ -7809,7 +7788,7 @@
 		(title "TheBigSleep")
 		(year 1939))
 
-	([ontology_Class11014] of  Book
+	([ontology_Class11011] of  Book
 
 		(author [ontology_Class10193])
 		(genre "Uncategorized")
@@ -7819,7 +7798,7 @@
 		(title "TheGodfather")
 		(year 1969))
 
-	([ontology_Class11015] of  Book
+	([ontology_Class11012] of  Book
 
 		(author [ontology_Class10194])
 		(genre "Classics")
@@ -7829,7 +7808,7 @@
 		(title "LadyChatterley'sLover")
 		(year 1928))
 
-	([ontology_Class11016] of  Book
+	([ontology_Class11013] of  Book
 
 		(author [ontology_Class10195])
 		(genre "Classics")
@@ -7839,7 +7818,7 @@
 		(title "Swann'sWay")
 		(year 1913))
 
-	([ontology_Class11017] of  Book
+	([ontology_Class11014] of  Book
 
 		(author [ontology_Class10196])
 		(genre "Classics")
@@ -7849,7 +7828,7 @@
 		(title "VanityFair")
 		(year 1848))
 
-	([ontology_Class11018] of  Book
+	([ontology_Class11015] of  Book
 
 		(author [ontology_Class10197])
 		(genre "Uncategorized")
@@ -7859,7 +7838,7 @@
 		(title "NakedLunch")
 		(year 1959))
 
-	([ontology_Class11019] of  Book
+	([ontology_Class11016] of  Book
 
 		(author [ontology_Class10198])
 		(genre "Uncategorized")
@@ -7869,7 +7848,7 @@
 		(title "InfiniteJest")
 		(year 1996))
 
-	([ontology_Class11020] of  Book
+	([ontology_Class11017] of  Book
 
 		(author [ontology_Class10199])
 		(genre "Uncategorized")
@@ -7879,7 +7858,7 @@
 		(title "LeftBehind")
 		(year 1995))
 
-	([ontology_Class11021] of  Book
+	([ontology_Class11018] of  Book
 
 		(author [ontology_Class10200])
 		(genre "Uncategorized")
@@ -7889,7 +7868,7 @@
 		(title "WheretheHeartIs")
 		(year 1995))
 
-	([ontology_Class11022] of  Book
+	([ontology_Class11019] of  Book
 
 		(author [ontology_Class10201])
 		(genre "Uncategorized")
@@ -7899,7 +7878,7 @@
 		(title "DivineSecretsoftheYa-YaSisterhood")
 		(year 1996))
 
-	([ontology_Class11023] of  Book
+	([ontology_Class11020] of  Book
 
 		(author [ontology_Class10202])
 		(genre "Classics")
@@ -7909,7 +7888,7 @@
 		(title "DoctorZhivago")
 		(year 1957))
 
-	([ontology_Class11024] of  Book
+	([ontology_Class11021] of  Book
 
 		(author [ontology_Class10203])
 		(genre "Religious")
@@ -7919,7 +7898,7 @@
 		(title "RedeemingLove")
 		(year 1991))
 
-	([ontology_Class11025] of  Book
+	([ontology_Class11022] of  Book
 
 		(author [ontology_Class10204])
 		(genre "Classics")
@@ -7929,7 +7908,7 @@
 		(title "NorthandSouth")
 		(year 1855))
 
-	([ontology_Class11026] of  Book
+	([ontology_Class11023] of  Book
 
 		(author [ontology_Class10205])
 		(genre "Young")
@@ -7939,7 +7918,7 @@
 		(title "Tomorrow,WhentheWarBegan")
 		(year 1993))
 
-	([ontology_Class11027] of  Book
+	([ontology_Class11024] of  Book
 
 		(author [ontology_Class10206])
 		(genre "Fantasy")
@@ -7949,7 +7928,7 @@
 		(title "ThePrincessandtheGoblin")
 		(year 1872))
 
-	([ontology_Class11028] of  Book
+	([ontology_Class11025] of  Book
 
 		(author [ontology_Class10207])
 		(genre "Uncategorized")
@@ -7959,7 +7938,7 @@
 		(title "StoryoftheEye")
 		(year 1928))
 
-	([ontology_Class11029] of  Book
+	([ontology_Class11026] of  Book
 
 		(author [ontology_Class10208])
 		(genre "Uncategorized")
@@ -7969,7 +7948,7 @@
 		(title "BastardOutofCarolina")
 		(year 1992))
 
-	([ontology_Class11030] of  Book
+	([ontology_Class11027] of  Book
 
 		(author [ontology_Class10209])
 		(genre "Uncategorized")
@@ -7979,7 +7958,7 @@
 		(title "LastExittoBrooklyn")
 		(year 1964))
 
-	([ontology_Class11031] of  Book
+	([ontology_Class11028] of  Book
 
 		(author [ontology_Class10210])
 		(genre "Horror")
@@ -7989,7 +7968,7 @@
 		(title "TheAmityvilleHorror")
 		(year 1977))
 
-	([ontology_Class11032] of  Book
+	([ontology_Class11029] of  Book
 
 		(author [ontology_Class10211])
 		(genre "Uncategorized")
@@ -7999,7 +7978,7 @@
 		(title "TheEndofAlice")
 		(year 1996))
 
-	([ontology_Class11033] of  Book
+	([ontology_Class11030] of  Book
 
 		(author [ontology_Class10212])
 		(genre "Classics")
@@ -8009,7 +7988,7 @@
 		(title "TheYellowWallpaperandOtherStories")
 		(year 1892))
 
-	([ontology_Class11034] of  Book
+	([ontology_Class11031] of  Book
 
 		(author [ontology_Class10213])
 		(genre "Classics")
@@ -8019,7 +7998,7 @@
 		(title "TheCompleteFairyTales")
 		(year 1835))
 
-	([ontology_Class11035] of  Book
+	([ontology_Class11032] of  Book
 
 		(author [ontology_Class10214])
 		(genre "Fantasy")
@@ -8029,7 +8008,7 @@
 		(title "ThePerilousGard")
 		(year 1974))
 
-	([ontology_Class11036] of  Book
+	([ontology_Class11033] of  Book
 
 		(author [ontology_Class10215])
 		(genre "Fantasy")
@@ -8039,7 +8018,7 @@
 		(title "TamLin")
 		(year 1991))
 
-	([ontology_Class11037] of  Book
+	([ontology_Class11034] of  Book
 
 		(author [ontology_Class10216])
 		(genre "Classics")
@@ -8049,7 +8028,7 @@
 		(title "TheCompleteGrimm'sFairyTales")
 		(year 1812))
 
-	([ontology_Class11038] of  Book
+	([ontology_Class11035] of  Book
 
 		(author [ontology_Class10217])
 		(genre "Uncategorized")
@@ -8059,7 +8038,7 @@
 		(title "LuckyJim")
 		(year 1954))
 
-	([ontology_Class11039] of  Book
+	([ontology_Class11036] of  Book
 
 		(author [ontology_Class10218])
 		(genre "Uncategorized")
@@ -8069,7 +8048,7 @@
 		(title "ColdComfortFarm")
 		(year 1932))
 
-	([ontology_Class11040] of  Book
+	([ontology_Class11037] of  Book
 
 		(author [ontology_Class10219])
 		(genre "Classics")
@@ -8079,7 +8058,7 @@
 		(title "ThreeMeninaBoat")
 		(year 1889))
 
-	([ontology_Class11041] of  Book
+	([ontology_Class11038] of  Book
 
 		(author [ontology_Class10220])
 		(genre "Uncategorized")
@@ -8089,7 +8068,7 @@
 		(title "TheMagicMountain")
 		(year 1924))
 
-	([ontology_Class11042] of  Book
+	([ontology_Class11039] of  Book
 
 		(author [ontology_Class10221])
 		(genre "Classics")
@@ -8099,7 +8078,7 @@
 		(title "Middlemarch")
 		(year 1871))
 
-	([ontology_Class11043] of  Book
+	([ontology_Class11040] of  Book
 
 		(author [ontology_Class10222])
 		(genre "Romance")
@@ -8109,7 +8088,7 @@
 		(title "Ravished")
 		(year 1992))
 
-	([ontology_Class11044] of  Book
+	([ontology_Class11041] of  Book
 
 		(author [ontology_Class10223])
 		(genre "Romance")
@@ -8119,7 +8098,7 @@
 		(title "Devil'sCub")
 		(year 1932))
 
-	([ontology_Class11045] of  Book
+	([ontology_Class11042] of  Book
 
 		(author [ontology_Class10224])
 		(genre "Romance")
@@ -8129,7 +8108,7 @@
 		(title "AshesintheWind")
 		(year 1979))
 
-	([ontology_Class11046] of  Book
+	([ontology_Class11043] of  Book
 
 		(author [ontology_Class10225])
 		(genre "Romance")
@@ -8139,7 +8118,7 @@
 		(title "FlowersfromtheStorm")
 		(year 1992))
 
-	([ontology_Class11047] of  Book
+	([ontology_Class11044] of  Book
 
 		(author [ontology_Class10226])
 		(genre "Classics")
@@ -8149,7 +8128,7 @@
 		(title "FathersandSons")
 		(year 1862))
 
-	([ontology_Class11048] of  Book
+	([ontology_Class11045] of  Book
 
 		(author [ontology_Class10227])
 		(genre "Classics")
@@ -8159,7 +8138,7 @@
 		(title "ThePortraitofaLady")
 		(year 1881))
 
-	([ontology_Class11049] of  Book
+	([ontology_Class11046] of  Book
 
 		(author [ontology_Class10228])
 		(genre "Classics")
@@ -8169,7 +8148,7 @@
 		(title "DeadSouls")
 		(year 1842))
 
-	([ontology_Class11050] of  Book
+	([ontology_Class11047] of  Book
 
 		(author [ontology_Class10229])
 		(genre "Classics")
@@ -8179,7 +8158,7 @@
 		(title "TheAwakening")
 		(year 1899))
 
-	([ontology_Class11051] of  Book
+	([ontology_Class11048] of  Book
 
 		(author [ontology_Class10230])
 		(genre "Uncategorized")
@@ -8189,7 +8168,7 @@
 		(title "LegendsoftheFall")
 		(year 1979))
 
-	([ontology_Class11052] of  Book
+	([ontology_Class11049] of  Book
 
 		(author [ontology_Class10231])
 		(genre "Uncategorized")
@@ -8199,7 +8178,7 @@
 		(title "PayItForward")
 		(year 1999))
 
-	([ontology_Class11053] of  Book
+	([ontology_Class11050] of  Book
 
 		(author [ontology_Class10232])
 		(genre "Horror")
@@ -8209,7 +8188,7 @@
 		(title "Psycho")
 		(year 1959))
 
-	([ontology_Class11054] of  Book
+	([ontology_Class11051] of  Book
 
 		(author [ontology_Class10233])
 		(genre "Classics")
@@ -8219,7 +8198,7 @@
 		(title "Bambi")
 		(year 1923))
 
-	([ontology_Class11055] of  Book
+	([ontology_Class11052] of  Book
 
 		(author [ontology_Class10234])
 		(genre "Uncategorized")
@@ -8229,7 +8208,7 @@
 		(title "GentlemenPreferBlondes")
 		(year 1925))
 
-	([ontology_Class11056] of  Book
+	([ontology_Class11053] of  Book
 
 		(author [ontology_Class10235])
 		(genre "Horror")
@@ -8239,7 +8218,7 @@
 		(title "TheRats")
 		(year 1974))
 
-	([ontology_Class11057] of  Book
+	([ontology_Class11054] of  Book
 
 		(author [ontology_Class10236])
 		(genre "Horror")
@@ -8249,7 +8228,7 @@
 		(title "HarvestHome")
 		(year 1973))
 
-	([ontology_Class11058] of  Book
+	([ontology_Class11055] of  Book
 
 		(author [ontology_Class10237])
 		(genre "Horror")
@@ -8259,7 +8238,7 @@
 		(title "Relic")
 		(year 1995))
 
-	([ontology_Class11059] of  Book
+	([ontology_Class11056] of  Book
 
 		(author [ontology_Class10238])
 		(genre "Horror")
@@ -8269,7 +8248,7 @@
 		(title "TheStepfordWives")
 		(year 1972))
 
-	([ontology_Class11060] of  Book
+	([ontology_Class11057] of  Book
 
 		(author [ontology_Class10239])
 		(genre "Horror")
@@ -8279,7 +8258,7 @@
 		(title "TheOmen")
 		(year 1976))
 
-	([ontology_Class11061] of  Book
+	([ontology_Class11058] of  Book
 
 		(author [ontology_Class10240])
 		(genre "Horror")
@@ -8289,7 +8268,7 @@
 		(title "WeHaveAlwaysLivedintheCastle")
 		(year 1962))
 
-	([ontology_Class11062] of  Book
+	([ontology_Class11059] of  Book
 
 		(author [ontology_Class10241])
 		(genre "Uncategorized")
@@ -8299,7 +8278,7 @@
 		(title "ICapturetheCastle")
 		(year 1948))
 
-	([ontology_Class11063] of  Book
+	([ontology_Class11060] of  Book
 
 		(author [ontology_Class10242])
 		(genre "Romance")
@@ -8309,7 +8288,7 @@
 		(title "Mr.Maybe")
 		(year 1999))
 
-	([ontology_Class11064] of  Book
+	([ontology_Class11061] of  Book
 
 		(author [ontology_Class10243])
 		(genre "Fantasy")
@@ -8319,7 +8298,7 @@
 		(title "Dragon'sBait")
 		(year 1992))
 
-	([ontology_Class11065] of  Book
+	([ontology_Class11062] of  Book
 
 		(author [ontology_Class10244])
 		(genre "Uncategorized")
@@ -8329,7 +8308,7 @@
 		(title "Einstein'sDreams")
 		(year 1992))
 
-	([ontology_Class11066] of  Book
+	([ontology_Class11063] of  Book
 
 		(author [ontology_Class10245])
 		(genre "Historical")
@@ -8339,7 +8318,7 @@
 		(title "Scarlett")
 		(year 1991))
 
-	([ontology_Class11067] of  Book
+	([ontology_Class11064] of  Book
 
 		(author [ontology_Class10246])
 		(genre "Young")
@@ -8349,7 +8328,7 @@
 		(title "LookforMebyMoonlight")
 		(year 1995))
 
-	([ontology_Class11068] of  Book
+	([ontology_Class11065] of  Book
 
 		(author [ontology_Class10247])
 		(genre "Thriller")
@@ -8359,7 +8338,7 @@
 		(title "PrimalFear")
 		(year 1992))
 
-	([ontology_Class11069] of  Book
+	([ontology_Class11066] of  Book
 
 		(author [ontology_Class10248])
 		(genre "Short Stories")
@@ -8369,7 +8348,7 @@
 		(title "AGoodManisHardtoFindandOtherStories")
 		(year 1953))
 
-	([ontology_Class11070] of  Book
+	([ontology_Class11067] of  Book
 
 		(author [ontology_Class10249])
 		(genre "Fantasy")
@@ -8379,7 +8358,7 @@
 		(title "WinterofFire")
 		(year 1992))
 
-	([ontology_Class11071] of  Book
+	([ontology_Class11068] of  Book
 
 		(author [ontology_Class10250])
 		(genre "Fantasy")
@@ -8389,7 +8368,7 @@
 		(title "TheFolkKeeper")
 		(year 1999))
 
-	([ontology_Class11072] of  Book
+	([ontology_Class11069] of  Book
 
 		(author [ontology_Class10251])
 		(genre "Fantasy")
@@ -8399,7 +8378,7 @@
 		(title "ACollegeofMagics")
 		(year 1994))
 
-	([ontology_Class11073] of  Book
+	([ontology_Class11070] of  Book
 
 		(author [ontology_Class10252])
 		(genre "Uncategorized")
@@ -8409,7 +8388,7 @@
 		(title "Shibumi")
 		(year 1979))
 
-	([ontology_Class11074] of  Book
+	([ontology_Class11071] of  Book
 
 		(author [ontology_Class10253])
 		(genre "Horror")
@@ -8419,7 +8398,7 @@
 		(title "DawnoftheDead")
 		(year 1978))
 
-	([ontology_Class11075] of  Book
+	([ontology_Class11072] of  Book
 
 		(author [ontology_Class10091])
 		(genre "Historical")
@@ -8429,7 +8408,7 @@
 		(title "Hawaii")
 		(year 1959))
 
-	([ontology_Class11076] of  Book
+	([ontology_Class11073] of  Book
 
 		(author [ontology_Class10011])
 		(genre "Fantasy")
@@ -8439,7 +8418,7 @@
 		(title "TheHobbit")
 		(year 1937))
 
-	([ontology_Class11077] of  Book
+	([ontology_Class11074] of  Book
 
 		(author [ontology_Class10254])
 		(genre "Historical")
@@ -8449,7 +8428,7 @@
 		(title "AGatheringofDays:ANewEnglandGirl'sJournal,1830-32")
 		(year 1979))
 
-	([ontology_Class11078] of  Book
+	([ontology_Class11075] of  Book
 
 		(author [ontology_Class10255])
 		(genre "Historical")
@@ -8459,7 +8438,7 @@
 		(title "Gay-Neck:TheStoryofaPigeon")
 		(year 1927))
 
-	([ontology_Class11079] of  Book
+	([ontology_Class11076] of  Book
 
 		(author [ontology_Class10256])
 		(genre "Uncategorized")
@@ -8469,7 +8448,7 @@
 		(title "OnionJohn")
 		(year 1959))
 
-	([ontology_Class11080] of  Book
+	([ontology_Class11077] of  Book
 
 		(author [ontology_Class10257])
 		(genre "Historical")
@@ -8479,7 +8458,7 @@
 		(title "YoungFuoftheUpperYangtze")
 		(year 1932))
 
-	([ontology_Class11081] of  Book
+	([ontology_Class11078] of  Book
 
 		(author [ontology_Class10258])
 		(genre "Uncategorized")
@@ -8489,7 +8468,7 @@
 		(title "It'sLikeThis,Cat")
 		(year 1963))
 
-	([ontology_Class11082] of  Book
+	([ontology_Class11079] of  Book
 
 		(author [ontology_Class10259])
 		(genre "Historical")
@@ -8499,7 +8478,7 @@
 		(title "ShadowofaBull")
 		(year 1964))
 
-	([ontology_Class11083] of  Book
+	([ontology_Class11080] of  Book
 
 		(author [ontology_Class10260])
 		(genre "Historical")
@@ -8509,7 +8488,7 @@
 		(title "TheWhiteStag")
 		(year 1937))
 
-	([ontology_Class11084] of  Book
+	([ontology_Class11081] of  Book
 
 		(author [ontology_Class10073])
 		(genre "Classics")
@@ -8519,7 +8498,7 @@
 		(title "AnimalFarm")
 		(year 1945))
 
-	([ontology_Class11085] of  Book
+	([ontology_Class11082] of  Book
 
 		(author [ontology_Class10261])
 		(genre "Classics")
@@ -8529,7 +8508,7 @@
 		(title "Fahrenheit451")
 		(year 1953))
 
-	([ontology_Class11086] of  Book
+	([ontology_Class11083] of  Book
 
 		(author [ontology_Class10262])
 		(genre "Historical")
@@ -8539,7 +8518,7 @@
 		(title "AdamoftheRoad")
 		(year 1942))
 
-	([ontology_Class11087] of  Book
+	([ontology_Class11084] of  Book
 
 		(author [ontology_Class10263])
 		(genre "Historical")
@@ -8549,7 +8528,7 @@
 		(title "TheTrumpeterofKrakow")
 		(year 1928))
 
-	([ontology_Class11088] of  Book
+	([ontology_Class11085] of  Book
 
 		(author [ontology_Class10264])
 		(genre "Historical")
@@ -8559,7 +8538,7 @@
 		(title "TheSlaveDancer")
 		(year 1973))
 
-	([ontology_Class11089] of  Book
+	([ontology_Class11086] of  Book
 
 		(author [ontology_Class10265])
 		(genre "Classics")
@@ -8569,7 +8548,7 @@
 		(title "TheSecretGarden")
 		(year 1911))
 
-	([ontology_Class11090] of  Book
+	([ontology_Class11087] of  Book
 
 		(author [ontology_Class10266])
 		(genre "Historical")
@@ -8579,7 +8558,7 @@
 		(title "RiflesforWatie")
 		(year 1957))
 
-	([ontology_Class11091] of  Book
+	([ontology_Class11088] of  Book
 
 		(author [ontology_Class10267])
 		(genre "Young")
@@ -8589,7 +8568,7 @@
 		(title "MissingMayScholasticGold")
 		(year 1992))
 
-	([ontology_Class11092] of  Book
+	([ontology_Class11089] of  Book
 
 		(author [ontology_Class10268])
 		(genre "Young")
@@ -8599,7 +8578,7 @@
 		(title "Tangerine")
 		(year 1997))
 
-	([ontology_Class11093] of  Book
+	([ontology_Class11090] of  Book
 
 		(author [ontology_Class10269])
 		(genre "Historical")
@@ -8609,7 +8588,7 @@
 		(title "Hitty,HerFirstHundredYears")
 		(year 1929))
 
-	([ontology_Class11094] of  Book
+	([ontology_Class11091] of  Book
 
 		(author [ontology_Class10270])
 		(genre "Fantasy")
@@ -8619,7 +8598,7 @@
 		(title "TheVoyagesofDoctorDolittle")
 		(year 1922))
 
-	([ontology_Class11095] of  Book
+	([ontology_Class11092] of  Book
 
 		(author [ontology_Class10271])
 		(genre "Young")
@@ -8629,7 +8608,7 @@
 		(title "UpaRoadSlowly")
 		(year 1966))
 
-	([ontology_Class11096] of  Book
+	([ontology_Class11093] of  Book
 
 		(author [ontology_Class10272])
 		(genre "Historical")
@@ -8639,7 +8618,7 @@
 		(title "TheDoorintheWall")
 		(year 1949))
 
-	([ontology_Class11097] of  Book
+	([ontology_Class11094] of  Book
 
 		(author [ontology_Class10273])
 		(genre "Young")
@@ -8649,7 +8628,7 @@
 		(title "FreaktheMighty")
 		(year 1993))
 
-	([ontology_Class11098] of  Book
+	([ontology_Class11095] of  Book
 
 		(author [ontology_Class10274])
 		(genre "Historical")
@@ -8659,7 +8638,7 @@
 		(title "CarryOn,Mr.Bowditch")
 		(year 1955))
 
-	([ontology_Class11099] of  Book
+	([ontology_Class11096] of  Book
 
 		(author [ontology_Class10146])
 		(genre "Uncategorized")
@@ -8669,7 +8648,7 @@
 		(title "Sounder")
 		(year 1969))
 
-	([ontology_Class11100] of  Book
+	([ontology_Class11097] of  Book
 
 		(author [ontology_Class10122])
 		(genre "Fantasy")
@@ -8679,7 +8658,7 @@
 		(title "TheGreyKing")
 		(year 1975))
 
-	([ontology_Class11101] of  Book
+	([ontology_Class11098] of  Book
 
 		(author [ontology_Class10040])
 		(genre "Fantasy")
@@ -8689,7 +8668,7 @@
 		(title "TheTimeTrilogy")
 		(year 1963))
 
-	([ontology_Class11102] of  Book
+	([ontology_Class11099] of  Book
 
 		(author [ontology_Class10037])
 		(genre "Fantasy")
@@ -8699,7 +8678,7 @@
 		(title "TheHighKing")
 		(year 1968))
 
-	([ontology_Class11103] of  Book
+	([ontology_Class11100] of  Book
 
 		(author [ontology_Class10018])
 		(genre "Fantasy")
@@ -8709,7 +8688,7 @@
 		(title "EllaEnchanted")
 		(year 1997))
 
-	([ontology_Class11104] of  Book
+	([ontology_Class11101] of  Book
 
 		(author [ontology_Class10017])
 		(genre "Fantasy")
@@ -8719,7 +8698,7 @@
 		(title "TheChroniclesofNarnia")
 		(year 1956))
 
-	([ontology_Class11105] of  Book
+	([ontology_Class11102] of  Book
 
 		(author [ontology_Class10068])
 		(genre "Classics")
@@ -8729,7 +8708,7 @@
 		(title "WatershipDown")
 		(year 1972))
 
-	([ontology_Class11106] of  Book
+	([ontology_Class11103] of  Book
 
 		(author [ontology_Class10144])
 		(genre "Young")
@@ -8739,7 +8718,7 @@
 		(title "JulieoftheWolves")
 		(year 1972))
 
-	([ontology_Class11107] of  Book
+	([ontology_Class11104] of  Book
 
 		(author [ontology_Class10275])
 		(genre "Historical")
@@ -8749,7 +8728,7 @@
 		(title "TheMidwife'sApprentice")
 		(year 1995))
 
-	([ontology_Class11108] of  Book
+	([ontology_Class11105] of  Book
 
 		(author [ontology_Class10007])
 		(genre "Classics")
@@ -8759,7 +8738,7 @@
 		(title "LittleWomen")
 		(year 1868))
 
-	([ontology_Class11109] of  Book
+	([ontology_Class11106] of  Book
 
 		(author [ontology_Class10276])
 		(genre "Historical")
@@ -8769,7 +8748,7 @@
 		(title "JohnnyTremain")
 		(year 1943))
 
-	([ontology_Class11110] of  Book
+	([ontology_Class11107] of  Book
 
 		(author [ontology_Class10277])
 		(genre "Young")
@@ -8779,7 +8758,7 @@
 		(title "TheViewfromSaturday")
 		(year 1996))
 
-	([ontology_Class11111] of  Book
+	([ontology_Class11108] of  Book
 
 		(author [ontology_Class10278])
 		(genre "Historical")
@@ -8789,7 +8768,7 @@
 		(title "OutoftheDust")
 		(year 1997))
 
-	([ontology_Class11112] of  Book
+	([ontology_Class11109] of  Book
 
 		(author [ontology_Class10034])
 		(genre "Uncategorized")
@@ -8799,7 +8778,7 @@
 		(title "TheBadBeginning")
 		(year 1999))
 
-	([ontology_Class11113] of  Book
+	([ontology_Class11110] of  Book
 
 		(author [ontology_Class10032])
 		(genre "Fantasy")
@@ -8809,7 +8788,7 @@
 		(title "TuckEverlasting")
 		(year 1975))
 
-	([ontology_Class11114] of  Book
+	([ontology_Class11111] of  Book
 
 		(author [ontology_Class10279])
 		(genre "Historical")
@@ -8819,7 +8798,7 @@
 		(title "Bud,NotBuddy")
 		(year 1999))
 
-	([ontology_Class11115] of  Book
+	([ontology_Class11112] of  Book
 
 		(author [ontology_Class10116])
 		(genre "Historical")
@@ -8829,7 +8808,7 @@
 		(title "RollofThunder,HearMyCry")
 		(year 1976))
 
-	([ontology_Class11116] of  Book
+	([ontology_Class11113] of  Book
 
 		(author [ontology_Class10038])
 		(genre "Fantasy")
@@ -8839,7 +8818,7 @@
 		(title "ThePrincessBride")
 		(year 1973))
 
-	([ontology_Class11117] of  Book
+	([ontology_Class11114] of  Book
 
 		(author [ontology_Class10052])
 		(genre "Young")
@@ -8849,7 +8828,7 @@
 		(title "WalkTwoMoons")
 		(year 1994))
 
-	([ontology_Class11118] of  Book
+	([ontology_Class11115] of  Book
 
 		(author [ontology_Class10149])
 		(genre "Classics")
@@ -8859,7 +8838,7 @@
 		(title "WheretheRedFernGrows")
 		(year 1961))
 
-	([ontology_Class11119] of  Book
+	([ontology_Class11116] of  Book
 
 		(author [ontology_Class10057])
 		(genre "Thriller")
@@ -8869,7 +8848,7 @@
 		(title "TheWestingGame")
 		(year 1978))
 
-	([ontology_Class11120] of  Book
+	([ontology_Class11117] of  Book
 
 		(author [ontology_Class10280])
 		(genre "Fantasy")
@@ -8879,7 +8858,7 @@
 		(title "HarryPotterandthePrisonerofAzkaban")
 		(year 1999))
 
-	([ontology_Class11121] of  Book
+	([ontology_Class11118] of  Book
 
 		(author [ontology_Class10076])
 		(genre "Classics")
@@ -8889,7 +8868,7 @@
 		(title "TheOutsiders")
 		(year 1967))
 
-	([ontology_Class11122] of  Book
+	([ontology_Class11119] of  Book
 
 		(author [ontology_Class10281])
 		(genre "Uncategorized")
@@ -8899,7 +8878,7 @@
 		(title "PigsinHeaven")
 		(year 1993))
 
-	([ontology_Class11123] of  Book
+	([ontology_Class11120] of  Book
 
 		(author [ontology_Class10200])
 		(genre "Uncategorized")
@@ -8909,7 +8888,7 @@
 		(title "WheretheHeartIs")
 		(year 1995))
 
-	([ontology_Class11124] of  Book
+	([ontology_Class11121] of  Book
 
 		(author [ontology_Class10282])
 		(genre "Uncategorized")
@@ -8919,7 +8898,7 @@
 		(title "Chocolat")
 		(year 1999))
 
-	([ontology_Class11125] of  Book
+	([ontology_Class11122] of  Book
 
 		(author [ontology_Class10283])
 		(genre "Uncategorized")
@@ -8929,7 +8908,7 @@
 		(title "AThousandAcres")
 		(year 1991))
 
-	([ontology_Class11126] of  Book
+	([ontology_Class11123] of  Book
 
 		(author [ontology_Class10284])
 		(genre "Uncategorized")
@@ -8939,7 +8918,7 @@
 		(title "SoFarfromGod")
 		(year 1993))
 
-	([ontology_Class11127] of  Book
+	([ontology_Class11124] of  Book
 
 		(author [ontology_Class10285])
 		(genre "Fantasy")
@@ -8949,7 +8928,7 @@
 		(title "DaughteroftheForest")
 		(year 1999))
 
-	([ontology_Class11128] of  Book
+	([ontology_Class11125] of  Book
 
 		(author [ontology_Class10194])
 		(genre "Classics")
@@ -8959,7 +8938,7 @@
 		(title "LadyChatterley'sLover")
 		(year 1928))
 
-	([ontology_Class11129] of  Book
+	([ontology_Class11126] of  Book
 
 		(author [ontology_Class10106])
 		(genre "Historical")
@@ -8969,7 +8948,7 @@
 		(title "ColdMountain")
 		(year 1997))
 
-	([ontology_Class11130] of  Book
+	([ontology_Class11127] of  Book
 
 		(author [ontology_Class10286])
 		(genre "Uncategorized")
@@ -8979,7 +8958,7 @@
 		(title "RevolutionaryRoad")
 		(year 1961))
 
-	([ontology_Class11131] of  Book
+	([ontology_Class11128] of  Book
 
 		(author [ontology_Class10006])
 		(genre "Classics")
@@ -8989,7 +8968,7 @@
 		(title "PrideandPrejudice")
 		(year 1813))
 
-	([ontology_Class11132] of  Book
+	([ontology_Class11129] of  Book
 
 		(author [ontology_Class10287])
 		(genre "Uncategorized")
@@ -8999,7 +8978,7 @@
 		(title "Paradise")
 		(year 1997))
 
-	([ontology_Class11133] of  Book
+	([ontology_Class11130] of  Book
 
 		(author [ontology_Class10208])
 		(genre "Uncategorized")
@@ -9009,7 +8988,7 @@
 		(title "BastardOutofCarolina")
 		(year 1992))
 
-	([ontology_Class11134] of  Book
+	([ontology_Class11131] of  Book
 
 		(author [ontology_Class10229])
 		(genre "Short Stories")
@@ -9019,7 +8998,7 @@
 		(title "TheStoryofanHour")
 		(year 1894))
 
-	([ontology_Class11135] of  Book
+	([ontology_Class11132] of  Book
 
 		(author [ontology_Class10204])
 		(genre "Classics")
@@ -9029,7 +9008,7 @@
 		(title "NorthandSouth")
 		(year 1855))
 
-	([ontology_Class11136] of  Book
+	([ontology_Class11133] of  Book
 
 		(author [ontology_Class10288])
 		(genre "Uncategorized")
@@ -9039,7 +9018,7 @@
 		(title "TheKitchenGod'sWife")
 		(year 1991))
 
-	([ontology_Class11137] of  Book
+	([ontology_Class11134] of  Book
 
 		(author [ontology_Class10043])
 		(genre "Short Stories")
@@ -9049,7 +9028,7 @@
 		(title "TheBloodyChamberandOtherStories")
 		(year 1979))
 
-	([ontology_Class11138] of  Book
+	([ontology_Class11135] of  Book
 
 		(author [ontology_Class10289])
 		(genre "Uncategorized")
@@ -9059,7 +9038,7 @@
 		(title "TheGoldenNotebook")
 		(year 1962))
 
-	([ontology_Class11139] of  Book
+	([ontology_Class11136] of  Book
 
 		(author [ontology_Class10159])
 		(genre "Classics")
@@ -9069,7 +9048,7 @@
 		(title "TotheLighthouse")
 		(year 1927))
 
-	([ontology_Class11140] of  Book
+	([ontology_Class11137] of  Book
 
 		(author [ontology_Class10290])
 		(genre "Uncategorized")
@@ -9079,7 +9058,7 @@
 		(title "WideSargassoSea")
 		(year 1966))
 
-	([ontology_Class11141] of  Book
+	([ontology_Class11138] of  Book
 
 		(author [ontology_Class10107])
 		(genre "Historical")
@@ -9089,7 +9068,7 @@
 		(title "TheRedTent")
 		(year 1997))
 
-	([ontology_Class11142] of  Book
+	([ontology_Class11139] of  Book
 
 		(author [ontology_Class10058])
 		(genre "Classics")
@@ -9099,7 +9078,7 @@
 		(title "TheirEyesWereWatchingGod")
 		(year 1937))
 
-	([ontology_Class11143] of  Book
+	([ontology_Class11140] of  Book
 
 		(author [ontology_Class10009])
 		(genre "Classics")
@@ -9109,7 +9088,7 @@
 		(title "TheBellJar")
 		(year 1963))
 
-	([ontology_Class11144] of  Book
+	([ontology_Class11141] of  Book
 
 		(author [ontology_Class10291])
 		(genre "Fantasy")
@@ -9119,7 +9098,7 @@
 		(title "StoneofTears")
 		(year 1995))
 
-	([ontology_Class11145] of  Book
+	([ontology_Class11142] of  Book
 
 		(author [ontology_Class10292])
 		(genre "Horror")
@@ -9129,7 +9108,7 @@
 		(title "NeedfulThings")
 		(year 1991))
 
-	([ontology_Class11146] of  Book
+	([ontology_Class11143] of  Book
 
 		(author [ontology_Class10293])
 		(genre "Historical")
@@ -9139,7 +9118,7 @@
 		(title "Sacajawea")
 		(year 1978))
 
-	([ontology_Class11147] of  Book
+	([ontology_Class11144] of  Book
 
 		(author [ontology_Class10054])
 		(genre "Classics")
@@ -9149,7 +9128,7 @@
 		(title "TessoftheD'Urbervilles")
 		(year 1891))
 
-	([ontology_Class11148] of  Book
+	([ontology_Class11145] of  Book
 
 		(author [ontology_Class10294])
 		(genre "Fantasy")
@@ -9159,7 +9138,7 @@
 		(title "LordofChaos")
 		(year 1994))
 
-	([ontology_Class11149] of  Book
+	([ontology_Class11146] of  Book
 
 		(author [ontology_Class10124])
 		(genre "Uncategorized")
@@ -9169,7 +9148,7 @@
 		(title "Gravity'sRainbow")
 		(year 1973))
 
-	([ontology_Class11150] of  Book
+	([ontology_Class11147] of  Book
 
 		(author [ontology_Class10118])
 		(genre "Historical")
@@ -9179,7 +9158,7 @@
 		(title "TheWindsofWar")
 		(year 1971))
 
-	([ontology_Class11151] of  Book
+	([ontology_Class11148] of  Book
 
 		(author [ontology_Class10063])
 		(genre "Historical")
@@ -9189,7 +9168,7 @@
 		(title "Voyager")
 		(year 1993))
 
-	([ontology_Class11152] of  Book
+	([ontology_Class11149] of  Book
 
 		(author [ontology_Class10069])
 		(genre "Classics")
@@ -9199,7 +9178,7 @@
 		(title "TheIdiot")
 		(year 1869))
 
-	([ontology_Class11153] of  Book
+	([ontology_Class11150] of  Book
 
 		(author [ontology_Class10220])
 		(genre "Uncategorized")
@@ -9209,7 +9188,7 @@
 		(title "DoktorFaustus")
 		(year 1947))
 
-	([ontology_Class11154] of  Book
+	([ontology_Class11151] of  Book
 
 		(author [ontology_Class10033])
 		(genre "Fantasy")
@@ -9219,7 +9198,7 @@
 		(title "TheOnceandFutureKing")
 		(year 1958))
 
-	([ontology_Class11155] of  Book
+	([ontology_Class11152] of  Book
 
 		(author [ontology_Class10295])
 		(genre "Uncategorized")
@@ -9229,7 +9208,7 @@
 		(title "FugitivePieces")
 		(year 1996))
 
-	([ontology_Class11156] of  Book
+	([ontology_Class11153] of  Book
 
 		(author [ontology_Class10105])
 		(genre "Classics")
@@ -9239,7 +9218,7 @@
 		(title "TheThreeMusketeers")
 		(year 1844))
 
-	([ontology_Class11157] of  Book
+	([ontology_Class11154] of  Book
 
 		(author [ontology_Class10195])
 		(genre "Classics")
@@ -9249,7 +9228,7 @@
 		(title "InSearchofLostTime")
 		(year 1927))
 
-	([ontology_Class11158] of  Book
+	([ontology_Class11155] of  Book
 
 		(author [ontology_Class10055])
 		(genre "Classics")
@@ -9259,7 +9238,7 @@
 		(title "DavidCopperfield")
 		(year 1849))
 
-	([ontology_Class11159] of  Book
+	([ontology_Class11156] of  Book
 
 		(author [ontology_Class10296])
 		(genre "Uncategorized")
@@ -9269,7 +9248,7 @@
 		(title "TheThornBirds")
 		(year 1977))
 
-	([ontology_Class11160] of  Book
+	([ontology_Class11157] of  Book
 
 		(author [ontology_Class10138])
 		(genre "Historical")
@@ -9279,7 +9258,7 @@
 		(title "Roots:TheSagaofanAmericanFamily")
 		(year 1976))
 
-	([ontology_Class11161] of  Book
+	([ontology_Class11158] of  Book
 
 		(author [ontology_Class10221])
 		(genre "Classics")
@@ -9289,7 +9268,7 @@
 		(title "Middlemarch")
 		(year 1871))
 
-	([ontology_Class11162] of  Book
+	([ontology_Class11159] of  Book
 
 		(author [ontology_Class10297])
 		(genre "Historical")
@@ -9299,7 +9278,7 @@
 		(title "SummerofMyGermanSoldier")
 		(year 1973))
 
-	([ontology_Class11163] of  Book
+	([ontology_Class11160] of  Book
 
 		(author [ontology_Class10060])
 		(genre "Classics")
@@ -9309,7 +9288,7 @@
 		(title "EastofEden")
 		(year 1952))
 
-	([ontology_Class11164] of  Book
+	([ontology_Class11161] of  Book
 
 		(author [ontology_Class10298])
 		(genre "Historical")
@@ -9319,7 +9298,7 @@
 		(title "IfIShouldDieBeforeIWake")
 		(year 1994))
 
-	([ontology_Class11165] of  Book
+	([ontology_Class11162] of  Book
 
 		(author [ontology_Class10003])
 		(genre "Uncategorized")
@@ -9329,7 +9308,7 @@
 		(title "TheFountainhead")
 		(year 1943))
 
-	([ontology_Class11166] of  Book
+	([ontology_Class11163] of  Book
 
 		(author [ontology_Class10299])
 		(genre "Historical")
@@ -9339,7 +9318,7 @@
 		(title "TheUpstairsRoom")
 		(year 1972))
 
-	([ontology_Class11167] of  Book
+	([ontology_Class11164] of  Book
 
 		(author [ontology_Class10300])
 		(genre "Uncategorized")
@@ -9349,7 +9328,7 @@
 		(title "EveryManDiesAlone")
 		(year 1947))
 
-	([ontology_Class11168] of  Book
+	([ontology_Class11165] of  Book
 
 		(author [ontology_Class10196])
 		(genre "Classics")
@@ -9359,7 +9338,7 @@
 		(title "VanityFair")
 		(year 1848))
 
-	([ontology_Class11169] of  Book
+	([ontology_Class11166] of  Book
 
 		(author [ontology_Class10301])
 		(genre "Historical")
@@ -9369,7 +9348,7 @@
 		(title "StonesfromtheRiver")
 		(year 1994))
 
-	([ontology_Class11170] of  Book
+	([ontology_Class11167] of  Book
 
 		(author [ontology_Class10302])
 		(genre "Historical")
@@ -9379,7 +9358,7 @@
 		(title "WhenHitlerStolePinkRabbit")
 		(year 1971))
 
-	([ontology_Class11171] of  Book
+	([ontology_Class11168] of  Book
 
 		(author [ontology_Class10160])
 		(genre "Classics")
@@ -9389,7 +9368,7 @@
 		(title "Ulysses")
 		(year 1922))
 
-	([ontology_Class11172] of  Book
+	([ontology_Class11169] of  Book
 
 		(author [ontology_Class10110])
 		(genre "Classics")
@@ -9399,7 +9378,7 @@
 		(title "AnnaKarenina")
 		(year 1877))
 
-	([ontology_Class11173] of  Book
+	([ontology_Class11170] of  Book
 
 		(author [ontology_Class10198])
 		(genre "Uncategorized")
@@ -9409,7 +9388,7 @@
 		(title "InfiniteJest")
 		(year 1996))
 
-	([ontology_Class11174] of  Book
+	([ontology_Class11171] of  Book
 
 		(author [ontology_Class10139])
 		(genre "Classics")
@@ -9419,7 +9398,7 @@
 		(title "Moby-Dick,or,theWhale")
 		(year 1851))
 
-	([ontology_Class11175] of  Book
+	([ontology_Class11172] of  Book
 
 		(author [ontology_Class10016])
 		(genre "Classics")
@@ -9429,7 +9408,7 @@
 		(title "GonewiththeWind")
 		(year 1936))
 
-	([ontology_Class11176] of  Book
+	([ontology_Class11173] of  Book
 
 		(author [ontology_Class10143])
 		(genre "Uncategorized")
@@ -9439,7 +9418,7 @@
 		(title "Sophie'sChoice")
 		(year 1979))
 
-	([ontology_Class11177] of  Book
+	([ontology_Class11174] of  Book
 
 		(author [ontology_Class10010])
 		(genre "Uncategorized")
@@ -9449,7 +9428,7 @@
 		(title "TheReader")
 		(year 1995))
 
-	([ontology_Class11178] of  Book
+	([ontology_Class11175] of  Book
 
 		(author [ontology_Class10092])
 		(genre "Historical")
@@ -9459,7 +9438,7 @@
 		(title "TheFarPavilions")
 		(year 1978))
 
-	([ontology_Class11179] of  Book
+	([ontology_Class11176] of  Book
 
 		(author [ontology_Class10303])
 		(genre "Uncategorized")
@@ -9469,7 +9448,7 @@
 		(title "TheHomeandtheWorld")
 		(year 1916))
 
-	([ontology_Class11180] of  Book
+	([ontology_Class11177] of  Book
 
 		(author [ontology_Class10304])
 		(genre "Uncategorized")
@@ -9479,7 +9458,7 @@
 		(title "TheSiegeofKrishnapur")
 		(year 1973))
 
-	([ontology_Class11181] of  Book
+	([ontology_Class11178] of  Book
 
 		(author [ontology_Class10045])
 		(genre "Classics")
@@ -9489,7 +9468,7 @@
 		(title "Siddhartha")
 		(year 1922))
 
-	([ontology_Class11182] of  Book
+	([ontology_Class11179] of  Book
 
 		(author [ontology_Class10044])
 		(genre "Uncategorized")
@@ -9499,7 +9478,7 @@
 		(title "TheMistressofSpices")
 		(year 1997))
 
-	([ontology_Class11183] of  Book
+	([ontology_Class11180] of  Book
 
 		(author [ontology_Class10305])
 		(genre "Uncategorized")
@@ -9509,7 +9488,7 @@
 		(title "AHouseforMrBiswas")
 		(year 1961))
 
-	([ontology_Class11184] of  Book
+	([ontology_Class11181] of  Book
 
 		(author [ontology_Class10059])
 		(genre "Classics")
@@ -9519,7 +9498,7 @@
 		(title "MadameBovary")
 		(year 1856))
 
-	([ontology_Class11185] of  Book
+	([ontology_Class11182] of  Book
 
 		(author [ontology_Class10306])
 		(genre "Uncategorized")
@@ -9529,7 +9508,7 @@
 		(title "BreakfastofChampions")
 		(year 1973))
 
-	([ontology_Class11186] of  Book
+	([ontology_Class11183] of  Book
 
 		(author [ontology_Class10072])
 		(genre "Uncategorized")
@@ -9539,7 +9518,7 @@
 		(title "FlowersforAlgernon")
 		(year 1966))
 
-	([ontology_Class11187] of  Book
+	([ontology_Class11184] of  Book
 
 		(author [ontology_Class10066])
 		(genre "Classics")
@@ -9549,7 +9528,7 @@
 		(title "TheSunAlsoRises")
 		(year 1926))
 
-	([ontology_Class11188] of  Book
+	([ontology_Class11185] of  Book
 
 		(author [ontology_Class10065])
 		(genre "Classics")
@@ -9559,7 +9538,7 @@
 		(title "OneFlewOvertheCuckoo'sNest")
 		(year 1962))
 
-	([ontology_Class11189] of  Book
+	([ontology_Class11186] of  Book
 
 		(author [ontology_Class10109])
 		(genre "Classics")
@@ -9569,7 +9548,7 @@
 		(title "AllQuietontheWesternFront")
 		(year 1929))
 
-	([ontology_Class11190] of  Book
+	([ontology_Class11187] of  Book
 
 		(author [ontology_Class10070])
 		(genre "Classics")
@@ -9579,7 +9558,7 @@
 		(title "TheStranger")
 		(year 1942))
 
-	([ontology_Class11191] of  Book
+	([ontology_Class11188] of  Book
 
 		(author [ontology_Class10307])
 		(genre "Classics")
@@ -9589,7 +9568,7 @@
 		(title "BreakfastatTiffany's")
 		(year 1958))
 
-	([ontology_Class11192] of  Book
+	([ontology_Class11189] of  Book
 
 		(author [ontology_Class10113])
 		(genre "Classics")
@@ -9599,7 +9578,7 @@
 		(title "Alice'sAdventuresinWonderlandThroughtheLooking-Glass")
 		(year 1872))
 
-	([ontology_Class11193] of  Book
+	([ontology_Class11190] of  Book
 
 		(author [ontology_Class10071])
 		(genre "Classics")
@@ -9609,7 +9588,7 @@
 		(title "Frankenstein")
 		(year 1818))
 
-	([ontology_Class11194] of  Book
+	([ontology_Class11191] of  Book
 
 		(author [ontology_Class10075])
 		(genre "Classics")
@@ -9619,7 +9598,7 @@
 		(title "LordoftheFlies")
 		(year 1954))
 
-	([ontology_Class11195] of  Book
+	([ontology_Class11192] of  Book
 
 		(author [ontology_Class10111])
 		(genre "Classics")
@@ -9629,7 +9608,7 @@
 		(title "Lolita")
 		(year 1955))
 
-	([ontology_Class11196] of  Book
+	([ontology_Class11193] of  Book
 
 		(author [ontology_Class10308])
 		(genre "Thriller")
@@ -9639,7 +9618,7 @@
 		(title "BookedToDie")
 		(year 1992))
 
-	([ontology_Class11197] of  Book
+	([ontology_Class11194] of  Book
 
 		(author [ontology_Class10103])
 		(genre "Uncategorized")
@@ -9649,7 +9628,7 @@
 		(title "TheEnglishPatient")
 		(year 1992))
 
-	([ontology_Class11198] of  Book
+	([ontology_Class11195] of  Book
 
 		(author [ontology_Class10001])
 		(genre "Classics")
@@ -9659,7 +9638,7 @@
 		(title "BraveNewWorld")
 		(year 1932))
 
-	([ontology_Class11199] of  Book
+	([ontology_Class11196] of  Book
 
 		(author [ontology_Class10114])
 		(genre "Fantasy")
@@ -9669,7 +9648,7 @@
 		(title "ThePhantomTollbooth")
 		(year 1961))
 
-	([ontology_Class11200] of  Book
+	([ontology_Class11197] of  Book
 
 		(author [ontology_Class10049])
 		(genre "Uncategorized")
@@ -9679,7 +9658,7 @@
 		(title "IfonaWinter'sNightaTraveler")
 		(year 1979))
 
-	([ontology_Class11201] of  Book
+	([ontology_Class11198] of  Book
 
 		(author [ontology_Class10309])
 		(genre "Uncategorized")
@@ -9689,7 +9668,7 @@
 		(title "TheWorldAccordingtoGarp")
 		(year 1978))
 
-	([ontology_Class11202] of  Book
+	([ontology_Class11199] of  Book
 
 		(author [ontology_Class10241])
 		(genre "Uncategorized")
@@ -9699,7 +9678,7 @@
 		(title "ICapturetheCastle")
 		(year 1948))
 
-	([ontology_Class11203] of  Book
+	([ontology_Class11200] of  Book
 
 		(author [ontology_Class10074])
 		(genre "Classics")
@@ -9709,7 +9688,7 @@
 		(title "TheCatcherintheRye")
 		(year 1951))
 
-	([ontology_Class11204] of  Book
+	([ontology_Class11201] of  Book
 
 		(author [ontology_Class10036])
 		(genre "Fantasy")
@@ -9719,7 +9698,7 @@
 		(title "TheNeverendingStory")
 		(year 1979))
 
-	([ontology_Class11205] of  Book
+	([ontology_Class11202] of  Book
 
 		(author [ontology_Class10008])
 		(genre "Classics")
@@ -9729,7 +9708,7 @@
 		(title "ATreeGrowsinBrooklyn")
 		(year 1943))
 
-	([ontology_Class11206] of  Book
+	([ontology_Class11203] of  Book
 
 		(author [ontology_Class10028])
 		(genre "Classics")
@@ -9739,7 +9718,7 @@
 		(title "Dracula")
 		(year 1897))
 
-	([ontology_Class11207] of  Book
+	([ontology_Class11204] of  Book
 
 		(author [ontology_Class10014])
 		(genre "Uncategorized")
@@ -9749,7 +9728,7 @@
 		(title "MemoirsofaGeisha")
 		(year 1997))
 
-	([ontology_Class11208] of  Book
+	([ontology_Class11205] of  Book
 
 		(author [ontology_Class10310])
 		(genre "Romance")
@@ -9759,7 +9738,7 @@
 		(title "Paradise")
 		(year 1991))
 
-	([ontology_Class11209] of  Book
+	([ontology_Class11206] of  Book
 
 		(author [ontology_Class10112])
 		(genre "Classics")
@@ -9769,7 +9748,7 @@
 		(title "Catch-22")
 		(year 1961))
 
-	([ontology_Class11210] of  Book
+	([ontology_Class11207] of  Book
 
 		(author [ontology_Class10184])
 		(genre "Uncategorized")
@@ -9779,7 +9758,7 @@
 		(title "TheSecretHistory")
 		(year 1992))
 
-	([ontology_Class11211] of  Book
+	([ontology_Class11208] of  Book
 
 		(author [ontology_Class10005])
 		(genre "Classics")
@@ -9789,7 +9768,7 @@
 		(title "Rebecca")
 		(year 1938))
 
-	([ontology_Class11212] of  Book
+	([ontology_Class11209] of  Book
 
 		(author [ontology_Class10077])
 		(genre "Classics")
@@ -9799,7 +9778,7 @@
 		(title "TheGreatGatsby")
 		(year 1925))
 
-	([ontology_Class11213] of  Book
+	([ontology_Class11210] of  Book
 
 		(author [ontology_Class10155])
 		(genre "Uncategorized")
@@ -9809,7 +9788,7 @@
 		(title "BrokebackMountain")
 		(year 1997))
 
-	([ontology_Class11214] of  Book
+	([ontology_Class11211] of  Book
 
 		(author [ontology_Class10311])
 		(genre "Thriller")
@@ -9819,7 +9798,7 @@
 		(title "OnefortheMoney")
 		(year 1994))
 
-	([ontology_Class11215] of  Book
+	([ontology_Class11212] of  Book
 
 		(author [ontology_Class10156])
 		(genre "Fantasy")
@@ -9829,7 +9808,7 @@
 		(title "Wicked:TheLifeandTimesoftheWickedWitchoftheWest")
 		(year 1995))
 
-	([ontology_Class11216] of  Book
+	([ontology_Class11213] of  Book
 
 		(author [ontology_Class10154])
 		(genre "Uncategorized")
@@ -9839,7 +9818,7 @@
 		(title "HouseofSandandFog")
 		(year 1999))
 
-	([ontology_Class11217] of  Book
+	([ontology_Class11214] of  Book
 
 		(author [ontology_Class10312])
 		(genre "Uncategorized")
@@ -9849,7 +9828,7 @@
 		(title "MotherlessBrooklyn")
 		(year 1999))
 
-	([ontology_Class11218] of  Book
+	([ontology_Class11215] of  Book
 
 		(author [ontology_Class10173])
 		(genre "Uncategorized")
@@ -9859,7 +9838,7 @@
 		(title "TheBridgesofMadisonCounty")
 		(year 1992))
 
-	([ontology_Class11219] of  Book
+	([ontology_Class11216] of  Book
 
 		(author [ontology_Class10157])
 		(genre "Classics")
@@ -9869,7 +9848,7 @@
 		(title "TheRedBadgeofCourage")
 		(year 1895))
 
-	([ontology_Class11220] of  Book
+	([ontology_Class11217] of  Book
 
 		(author [ontology_Class10199])
 		(genre "Uncategorized")
@@ -9879,7 +9858,7 @@
 		(title "LeftBehind")
 		(year 1995))
 
-	([ontology_Class11221] of  Book
+	([ontology_Class11218] of  Book
 
 		(author [ontology_Class10062])
 		(genre "Classics")
@@ -9889,7 +9868,7 @@
 		(title "HeartofDarkness")
 		(year 1899))
 
-	([ontology_Class11222] of  Book
+	([ontology_Class11219] of  Book
 
 		(author [ontology_Class10313])
 		(genre "Horror")
@@ -9899,7 +9878,7 @@
 		(title "Hannibal")
 		(year 1999))
 
-	([ontology_Class11223] of  Book
+	([ontology_Class11220] of  Book
 
 		(author [ontology_Class10190])
 		(genre "Uncategorized")
@@ -9909,7 +9888,7 @@
 		(title "TheClient")
 		(year 1993))
 
-	([ontology_Class11224] of  Book
+	([ontology_Class11221] of  Book
 
 		(author [ontology_Class10314])
 		(genre "Uncategorized")
@@ -9919,7 +9898,7 @@
 		(title "WeWeretheMulvaneys")
 		(year 1996))
 
-	([ontology_Class11225] of  Book
+	([ontology_Class11222] of  Book
 
 		(author [ontology_Class10315])
 		(genre "Historical")
@@ -9929,7 +9908,7 @@
 		(title "Regeneration")
 		(year 1991))
 
-	([ontology_Class11226] of  Book
+	([ontology_Class11223] of  Book
 
 		(author [ontology_Class10012])
 		(genre "Romance")
@@ -9939,7 +9918,7 @@
 		(title "BridgetJones:TheEdgeofReason")
 		(year 1999))
 
-	([ontology_Class11227] of  Book
+	([ontology_Class11224] of  Book
 
 		(author [ontology_Class10316])
 		(genre "Uncategorized")
@@ -9949,7 +9928,7 @@
 		(title "AmericanPastoral")
 		(year 1997))
 
-	([ontology_Class11228] of  Book
+	([ontology_Class11225] of  Book
 
 		(author [ontology_Class10317])
 		(genre "Fantasy")
@@ -9959,7 +9938,7 @@
 		(title "Sabriel")
 		(year 1995))
 
-	([ontology_Class11229] of  Book
+	([ontology_Class11226] of  Book
 
 		(author [ontology_Class10170])
 		(genre "Uncategorized")
@@ -9969,7 +9948,7 @@
 		(title "Trainspotting")
 		(year 1993))
 
-	([ontology_Class11230] of  Book
+	([ontology_Class11227] of  Book
 
 		(author [ontology_Class10318])
 		(genre "Uncategorized")
@@ -9979,7 +9958,7 @@
 		(title "TheWind-UpBirdChronicle")
 		(year 1994))
 
-	([ontology_Class11231] of  Book
+	([ontology_Class11228] of  Book
 
 		(author [ontology_Class10185])
 		(genre "Uncategorized")
@@ -9989,7 +9968,7 @@
 		(title "SnowFallingonCedars")
 		(year 1994))
 
-	([ontology_Class11232] of  Book
+	([ontology_Class11229] of  Book
 
 		(author [ontology_Class10319])
 		(genre "Uncategorized")
@@ -9999,7 +9978,7 @@
 		(title "FightClub")
 		(year 1996))
 
-	([ontology_Class11233] of  Book
+	([ontology_Class11230] of  Book
 
 		(author [ontology_Class10320])
 		(genre "Romance")
@@ -10009,7 +9988,7 @@
 		(title "AftertheNight")
 		(year 1995))
 
-	([ontology_Class11234] of  Book
+	([ontology_Class11231] of  Book
 
 		(author [ontology_Class10321])
 		(genre "Fantasy")
@@ -10019,7 +9998,7 @@
 		(title "Assassin'sApprentice")
 		(year 1995))
 
-	([ontology_Class11235] of  Book
+	([ontology_Class11232] of  Book
 
 		(author [ontology_Class10162])
 		(genre "Classics")
@@ -10029,7 +10008,7 @@
 		(title "TheGoodEarth")
 		(year 1931))
 
-	([ontology_Class11236] of  Book
+	([ontology_Class11233] of  Book
 
 		(author [ontology_Class10322])
 		(genre "Uncategorized")
@@ -10039,7 +10018,7 @@
 		(title "OneDayintheLifeofIvanDenisovich")
 		(year 1962))
 
-	([ontology_Class11237] of  Book
+	([ontology_Class11234] of  Book
 
 		(author [ontology_Class10064])
 		(genre "Uncategorized")
@@ -10049,7 +10028,7 @@
 		(title "ThingsFallApart")
 		(year 1958))
 
-	([ontology_Class11238] of  Book
+	([ontology_Class11235] of  Book
 
 		(author [ontology_Class10323])
 		(genre "Classics")
@@ -10059,7 +10038,7 @@
 		(title "ASeparatePeace")
 		(year 1959))
 
-	([ontology_Class11239] of  Book
+	([ontology_Class11236] of  Book
 
 		(author [ontology_Class10053])
 		(genre "Classics")
@@ -10069,7 +10048,7 @@
 		(title "AClockworkOrange")
 		(year 1962))
 
-	([ontology_Class11240] of  Book
+	([ontology_Class11237] of  Book
 
 		(author [ontology_Class10148])
 		(genre "Classics")
@@ -10079,7 +10058,7 @@
 		(title "OldYeller")
 		(year 1956))
 
-	([ontology_Class11241] of  Book
+	([ontology_Class11238] of  Book
 
 		(author [ontology_Class10182])
 		(genre "Thriller")
@@ -10089,7 +10068,7 @@
 		(title "AndThenThereWereNone")
 		(year 1939))
 
-	([ontology_Class11242] of  Book
+	([ontology_Class11239] of  Book
 
 		(author [ontology_Class10061])
 		(genre "Classics")
@@ -10099,7 +10078,7 @@
 		(title "TheAdventuresofHuckleberryFinn")
 		(year 1884))
 
-	([ontology_Class11243] of  Book
+	([ontology_Class11240] of  Book
 
 		(author [ontology_Class10324])
 		(genre "Uncategorized")
@@ -10109,7 +10088,7 @@
 		(title "TheFifthSacredThing")
 		(year 1993))
 
-	([ontology_Class11244] of  Book
+	([ontology_Class11241] of  Book
 
 		(author [ontology_Class10325])
 		(genre "Young")
@@ -10119,7 +10098,7 @@
 		(title "KissedbyanAngel/ThePowerofLove/Soulmates")
 		(year 1995))
 
-	([ontology_Class11245] of  Book
+	([ontology_Class11242] of  Book
 
 		(author [ontology_Class10326])
 		(genre "Uncategorized")
@@ -10129,7 +10108,7 @@
 		(title "IntotheForest")
 		(year 1996))
 
-	([ontology_Class11246] of  Book
+	([ontology_Class11243] of  Book
 
 		(author [ontology_Class10140])
 		(genre "Classics")
@@ -10139,7 +10118,7 @@
 		(title "BlackBeauty")
 		(year 1877))
 
-	([ontology_Class11247] of  Book
+	([ontology_Class11244] of  Book
 
 		(author [ontology_Class10108])
 		(genre "Classics")
@@ -10149,7 +10128,7 @@
 		(title "UncleTom'sCabin")
 		(year 1852))
 
-	([ontology_Class11248] of  Book
+	([ontology_Class11245] of  Book
 
 		(author [ontology_Class10327])
 		(genre "Historical")
@@ -10159,7 +10138,7 @@
 		(title "TheRobe")
 		(year 1942))
 
-	([ontology_Class11249] of  Book
+	([ontology_Class11246] of  Book
 
 		(author [ontology_Class10328])
 		(genre "Religious")
@@ -10169,7 +10148,7 @@
 		(title "InHisSteps")
 		(year 1896))
 
-	([ontology_Class11250] of  Book
+	([ontology_Class11247] of  Book
 
 		(author [ontology_Class10203])
 		(genre "Religious")
@@ -10179,7 +10158,7 @@
 		(title "AVoiceintheWind")
 		(year 1993))
 
-	([ontology_Class11251] of  Book
+	([ontology_Class11248] of  Book
 
 		(author [ontology_Class10329])
 		(genre "Religious")
@@ -10189,7 +10168,7 @@
 		(title "Hinds'FeetonHighPlaces")
 		(year 1955))
 
-	([ontology_Class11252] of  Book
+	([ontology_Class11249] of  Book
 
 		(author [ontology_Class10330])
 		(genre "Classics")
@@ -10199,7 +10178,7 @@
 		(title "ThePilgrim'sProgress")
 		(year 1678))
 
-	([ontology_Class11253] of  Book
+	([ontology_Class11250] of  Book
 
 		(author [ontology_Class10191])
 		(genre "Classics")
@@ -10209,7 +10188,7 @@
 		(title "TreasureIsland")
 		(year 1882))
 
-	([ontology_Class11254] of  Book
+	([ontology_Class11251] of  Book
 
 		(author [ontology_Class10175])
 		(genre "Classics")
@@ -10219,7 +10198,7 @@
 		(title "MaryPoppins")
 		(year 1934))
 
-	([ontology_Class11255] of  Book
+	([ontology_Class11252] of  Book
 
 		(author [ontology_Class10216])
 		(genre "Classics")
@@ -10229,7 +10208,7 @@
 		(title "TheCompleteGrimm'sFairyTales")
 		(year 1812))
 
-	([ontology_Class11256] of  Book
+	([ontology_Class11253] of  Book
 
 		(author [ontology_Class10331])
 		(genre "Thriller")
@@ -10239,7 +10218,7 @@
 		(title "ARageinHarlem")
 		(year 1957))
 
-	([ontology_Class11257] of  Book
+	([ontology_Class11254] of  Book
 
 		(author [ontology_Class10192])
 		(genre "Thriller")
@@ -10249,7 +10228,7 @@
 		(title "TheBigSleep")
 		(year 1939))
 
-	([ontology_Class11258] of  Book
+	([ontology_Class11255] of  Book
 
 		(author [ontology_Class10096])
 		(genre "Historical")
@@ -10259,7 +10238,7 @@
 		(title "ForeverAmber")
 		(year 1944))
 
-	([ontology_Class11259] of  Book
+	([ontology_Class11256] of  Book
 
 		(author [ontology_Class10332])
 		(genre "Uncategorized")
@@ -10269,7 +10248,7 @@
 		(title "TheBridgeofSanLuisRey")
 		(year 1927))
 
-	([ontology_Class11260] of  Book
+	([ontology_Class11257] of  Book
 
 		(author [ontology_Class10081])
 		(genre "Historical")
@@ -10279,7 +10258,7 @@
 		(title "Queens'Play")
 		(year 1964))
 
-	([ontology_Class11261] of  Book
+	([ontology_Class11258] of  Book
 
 		(author [ontology_Class10333])
 		(genre "Historical")
@@ -10289,7 +10268,7 @@
 		(title "TheKingMustDie")
 		(year 1958))
 
-	([ontology_Class11262] of  Book
+	([ontology_Class11259] of  Book
 
 		(author [ontology_Class10334])
 		(genre "Classics")
@@ -10299,7 +10278,7 @@
 		(title "QuoVadis")
 		(year 1894))
 
-	([ontology_Class11263] of  Book
+	([ontology_Class11260] of  Book
 
 		(author [ontology_Class10095])
 		(genre "Uncategorized")
@@ -10309,7 +10288,7 @@
 		(title "TheFrenchLieutenant'sWoman")
 		(year 1969))
 
-	([ontology_Class11264] of  Book
+	([ontology_Class11261] of  Book
 
 		(author [ontology_Class10087])
 		(genre "Historical")
@@ -10319,7 +10298,7 @@
 		(title "AnInstanceoftheFingerpost")
 		(year 1997))
 
-	([ontology_Class11265] of  Book
+	([ontology_Class11262] of  Book
 
 		(author [ontology_Class10104])
 		(genre "Historical")
@@ -10329,7 +10308,7 @@
 		(title "ClaudiustheGodandHisWifeMessalina")
 		(year 1934))
 
-	([ontology_Class11266] of  Book
+	([ontology_Class11263] of  Book
 
 		(author [ontology_Class10335])
 		(genre "Thriller")
@@ -10339,7 +10318,7 @@
 		(title "AMorbidTasteforBones")
 		(year 1977))
 
-	([ontology_Class11267] of  Book
+	([ontology_Class11264] of  Book
 
 		(author [ontology_Class10336])
 		(genre "Historical")
@@ -10349,7 +10328,7 @@
 		(title "Armada")
 		(year 1996))
 
-	([ontology_Class11268] of  Book
+	([ontology_Class11265] of  Book
 
 		(author [ontology_Class10337])
 		(genre "Classics")
@@ -10359,7 +10338,7 @@
 		(title "MutinyontheBounty")
 		(year 1932))
 
-	([ontology_Class11269] of  Book
+	([ontology_Class11266] of  Book
 
 		(author [ontology_Class10127])
 		(genre "Uncategorized")
@@ -10369,7 +10348,7 @@
 		(title "Ragtime")
 		(year 1975))
 
-	([ontology_Class11270] of  Book
+	([ontology_Class11267] of  Book
 
 		(author [ontology_Class10338])
 		(genre "Thriller")
@@ -10379,7 +10358,7 @@
 		(title "TheBeekeeper'sApprentice")
 		(year 1994))
 
-	([ontology_Class11271] of  Book
+	([ontology_Class11268] of  Book
 
 		(author [ontology_Class10099])
 		(genre "Historical")
@@ -10389,7 +10368,7 @@
 		(title "TheAgonyandtheEcstasy")
 		(year 1958))
 
-	([ontology_Class11272] of  Book
+	([ontology_Class11269] of  Book
 
 		(author [ontology_Class10098])
 		(genre "Classics")
@@ -10399,7 +10378,7 @@
 		(title "Ivanhoe")
 		(year 1819))
 
-	([ontology_Class11273] of  Book
+	([ontology_Class11270] of  Book
 
 		(author [ontology_Class10093])
 		(genre "Historical")
@@ -10409,7 +10388,7 @@
 		(title "MasterandCommander")
 		(year 1969))
 
-	([ontology_Class11274] of  Book
+	([ontology_Class11271] of  Book
 
 		(author [ontology_Class10102])
 		(genre "Historical")
@@ -10419,7 +10398,7 @@
 		(title "Katherine")
 		(year 1954))
 
-	([ontology_Class11275] of  Book
+	([ontology_Class11272] of  Book
 
 		(author [ontology_Class10126])
 		(genre "Historical")
@@ -10429,7 +10408,7 @@
 		(title "TheKillerAngels")
 		(year 1974))
 
-	([ontology_Class11276] of  Book
+	([ontology_Class11273] of  Book
 
 		(author [ontology_Class10176])
 		(genre "Classics")
@@ -10439,7 +10418,7 @@
 		(title "TheLastoftheMohicans")
 		(year 1826))
 
-	([ontology_Class11277] of  Book
+	([ontology_Class11274] of  Book
 
 		(author [ontology_Class10339])
 		(genre "Historical")
@@ -10449,7 +10428,7 @@
 		(title "TheRoadHome")
 		(year 1995))
 
-	([ontology_Class11278] of  Book
+	([ontology_Class11275] of  Book
 
 		(author [ontology_Class10050])
 		(genre "Uncategorized")
@@ -10459,7 +10438,7 @@
 		(title "CollectedFictions")
 		(year 1975))
 
-	([ontology_Class11279] of  Book
+	([ontology_Class11276] of  Book
 
 		(author [ontology_Class10340])
 		(genre "Thriller")
@@ -10469,7 +10448,7 @@
 		(title "ACoffinforDimitrios")
 		(year 1939))
 
-	([ontology_Class11280] of  Book
+	([ontology_Class11277] of  Book
 
 		(author [ontology_Class10181])
 		(genre "Thriller")
@@ -10479,7 +10458,7 @@
 		(title "GaudyNight")
 		(year 1935))
 
-	([ontology_Class11281] of  Book
+	([ontology_Class11278] of  Book
 
 		(author [ontology_Class10183])
 		(genre "Uncategorized")
@@ -10489,7 +10468,7 @@
 		(title "ThePostmanAlwaysRingsTwice")
 		(year 1934))
 
-	([ontology_Class11282] of  Book
+	([ontology_Class11279] of  Book
 
 		(author [ontology_Class10341])
 		(genre "Thriller")
@@ -10499,7 +10478,7 @@
 		(title "DanceHalloftheDead")
 		(year 1973))
 
-	([ontology_Class11283] of  Book
+	([ontology_Class11280] of  Book
 
 		(author [ontology_Class10342])
 		(genre "Uncategorized")
@@ -10509,7 +10488,7 @@
 		(title "TheQuietAmerican")
 		(year 1955))
 
-	([ontology_Class11284] of  Book
+	([ontology_Class11281] of  Book
 
 		(author [ontology_Class10193])
 		(genre "Uncategorized")
@@ -10519,7 +10498,7 @@
 		(title "TheGodfather")
 		(year 1969))
 
-	([ontology_Class11285] of  Book
+	([ontology_Class11282] of  Book
 
 		(author [ontology_Class10179])
 		(genre "Thriller")
@@ -10529,7 +10508,7 @@
 		(title "WhereAretheChildren?")
 		(year 1975))
 
-	([ontology_Class11286] of  Book
+	([ontology_Class11283] of  Book
 
 		(author [ontology_Class10186])
 		(genre "Thriller")
@@ -10539,7 +10518,7 @@
 		(title "ThePoet")
 		(year 1996))
 
-	([ontology_Class11287] of  Book
+	([ontology_Class11284] of  Book
 
 		(author [ontology_Class10343])
 		(genre "Classics")
@@ -10549,7 +10528,7 @@
 		(title "TheGold-BugandOtherTales")
 		(year 1843))
 
-	([ontology_Class11288] of  Book
+	([ontology_Class11285] of  Book
 
 		(author [ontology_Class10125])
 		(genre "Uncategorized")
@@ -10559,7 +10538,7 @@
 		(title "TheDayoftheJackal")
 		(year 1971))
 
-	([ontology_Class11289] of  Book
+	([ontology_Class11286] of  Book
 
 		(author [ontology_Class10344])
 		(genre "Thriller")
@@ -10569,7 +10548,7 @@
 		(title "Fer-de-Lance")
 		(year 1934))
 
-	([ontology_Class11290] of  Book
+	([ontology_Class11287] of  Book
 
 		(author [ontology_Class10174])
 		(genre "Uncategorized")
@@ -10579,7 +10558,7 @@
 		(title "FromRussiaWithLove")
 		(year 1957))
 
-	([ontology_Class11291] of  Book
+	([ontology_Class11288] of  Book
 
 		(author [ontology_Class10237])
 		(genre "Horror")
@@ -10589,7 +10568,7 @@
 		(title "Relic")
 		(year 1995))
 
-	([ontology_Class11292] of  Book
+	([ontology_Class11289] of  Book
 
 		(author [ontology_Class10188])
 		(genre "Uncategorized")
@@ -10599,7 +10578,7 @@
 		(title "TheTalentedMr.Ripley")
 		(year 1955))
 
-	([ontology_Class11293] of  Book
+	([ontology_Class11290] of  Book
 
 		(author [ontology_Class10088])
 		(genre "Thriller")
@@ -10609,7 +10588,7 @@
 		(title "TheDaughterofTime")
 		(year 1949))
 
-	([ontology_Class11294] of  Book
+	([ontology_Class11291] of  Book
 
 		(author [ontology_Class10078])
 		(genre "Classics")
@@ -10619,7 +10598,7 @@
 		(title "TheWomaninWhite")
 		(year 1859))
 
-	([ontology_Class11295] of  Book
+	([ontology_Class11292] of  Book
 
 		(author [ontology_Class10345])
 		(genre "Historical")
@@ -10629,7 +10608,7 @@
 		(title "TheAlienist")
 		(year 1994))
 
-	([ontology_Class11296] of  Book
+	([ontology_Class11293] of  Book
 
 		(author [ontology_Class10189])
 		(genre "Thriller")
@@ -10639,7 +10618,7 @@
 		(title "KillingFloor")
 		(year 1997))
 
-	([ontology_Class11297] of  Book
+	([ontology_Class11294] of  Book
 
 		(author [ontology_Class10346])
 		(genre "Thriller")
@@ -10649,7 +10628,7 @@
 		(title "TheBoneCollector")
 		(year 1997))
 
-	([ontology_Class11298] of  Book
+	([ontology_Class11295] of  Book
 
 		(author [ontology_Class10347])
 		(genre "Historical")
@@ -10659,7 +10638,7 @@
 		(title "TheFifthofMarch:AStoryoftheBostonMassacre")
 		(year 1993))
 
-	([ontology_Class11299] of  Book
+	([ontology_Class11296] of  Book
 
 		(author [ontology_Class10244])
 		(genre "Uncategorized")
@@ -10669,7 +10648,7 @@
 		(title "Einstein'sDreams")
 		(year 1992))
 
-	([ontology_Class11300] of  Book
+	([ontology_Class11297] of  Book
 
 		(author [ontology_Class10348])
 		(genre "Romance")
@@ -10679,7 +10658,7 @@
 		(title "WelcometoTemptation")
 		(year 1996))
 
-	([ontology_Class11301] of  Book
+	([ontology_Class11298] of  Book
 
 		(author [ontology_Class10349])
 		(genre "Romance")
@@ -10689,7 +10668,7 @@
 		(title "BumMagnet")
 		(year 1999))
 
-	([ontology_Class11302] of  Book
+	([ontology_Class11299] of  Book
 
 		(author [ontology_Class10238])
 		(genre "Horror")
@@ -10699,7 +10678,7 @@
 		(title "TheStepfordWives")
 		(year 1972))
 
-	([ontology_Class11303] of  Book
+	([ontology_Class11300] of  Book
 
 		(author [ontology_Class10051])
 		(genre "Uncategorized")
@@ -10709,7 +10688,7 @@
 		(title "TheMasterandMargarita")
 		(year 1967))
 
-	([ontology_Class11304] of  Book
+	([ontology_Class11301] of  Book
 
 		(author [ontology_Class10163])
 		(genre "Classics")
@@ -10719,7 +10698,7 @@
 		(title "OntheRoad")
 		(year 1955))
 
-	([ontology_Class11305] of  Book
+	([ontology_Class11302] of  Book
 
 		(author [ontology_Class10056])
 		(genre "Classics")
@@ -10729,7 +10708,7 @@
 		(title "InvisibleMan")
 		(year 1952))
 
-	([ontology_Class11306] of  Book
+	([ontology_Class11303] of  Book
 
 		(author [ontology_Class10350])
 		(genre "Uncategorized")
@@ -10739,7 +10718,7 @@
 		(title "ZorbatheGreek")
 		(year 1946))
 
-	([ontology_Class11307] of  Book
+	([ontology_Class11304] of  Book
 
 		(author [ontology_Class10351])
 		(genre "Historical")
@@ -10749,7 +10728,7 @@
 		(title "AnnaofByzantium")
 		(year 1999))
 
-	([ontology_Class11308] of  Book
+	([ontology_Class11305] of  Book
 
 		(author [ontology_Class10352])
 		(genre "Historical")
@@ -10759,7 +10738,7 @@
 		(title "MyBrotherSamIsDead")
 		(year 1974))
 
-	([ontology_Class11309] of  Book
+	([ontology_Class11306] of  Book
 
 		(author [ontology_Class10353])
 		(genre "Historical")
@@ -10769,7 +10748,7 @@
 		(title "ASongforSummer")
 		(year 1997))
 
-	([ontology_Class11310] of  Book
+	([ontology_Class11307] of  Book
 
 		(author [ontology_Class10354])
 		(genre "Historical")
@@ -10779,7 +10758,7 @@
 		(title "ElizabethI:RedRoseoftheHouseofTudor,England,1544")
 		(year 1999))
 
-	([ontology_Class11311] of  Book
+	([ontology_Class11308] of  Book
 
 		(author [ontology_Class10355])
 		(genre "Historical")
@@ -10789,7 +10768,7 @@
 		(title "Mara,DaughteroftheNile")
 		(year 1953))
 
-	([ontology_Class11312] of  Book
+	([ontology_Class11309] of  Book
 
 		(author [ontology_Class10150])
 		(genre "Fantasy")
@@ -10799,7 +10778,7 @@
 		(title "BloodofElves")
 		(year 1994))
 
-	([ontology_Class11313] of  Book
+	([ontology_Class11310] of  Book
 
 		(author [ontology_Class10130])
 		(genre "Uncategorized")
@@ -10809,7 +10788,7 @@
 		(title "FearandLoathinginLasVegas")
 		(year 1971))
 
-	([ontology_Class11314] of  Book
+	([ontology_Class11311] of  Book
 
 		(author [ontology_Class10356])
 		(genre "Thriller")
@@ -10819,7 +10798,7 @@
 		(title "IStillMissMyManButMyAimIsGettingBetter")
 		(year 1996))
 
-	([ontology_Class11315] of  Book
+	([ontology_Class11312] of  Book
 
 		(author [ontology_Class10357])
 		(genre "Thriller")
@@ -10829,7 +10808,7 @@
 		(title "TheIceHouse")
 		(year 1992))
 
-	([ontology_Class11316] of  Book
+	([ontology_Class11313] of  Book
 
 		(author [ontology_Class10358])
 		(genre "Thriller")
@@ -10839,7 +10818,7 @@
 		(title "CrocodileontheSandbank")
 		(year 1975))
 
-	([ontology_Class11317] of  Book
+	([ontology_Class11314] of  Book
 
 		(author [ontology_Class10178])
 		(genre "Thriller")
@@ -10849,7 +10828,7 @@
 		(title "APlaceofExecution")
 		(year 1999))
 
-	([ontology_Class11318] of  Book
+	([ontology_Class11315] of  Book
 
 		(author [ontology_Class10359])
 		(genre "Romance")
@@ -10859,7 +10838,7 @@
 		(title "KirklandRevels")
 		(year 1962))
 
-	([ontology_Class11319] of  Book
+	([ontology_Class11316] of  Book
 
 		(author [ontology_Class10360])
 		(genre "Classics")
@@ -10869,7 +10848,7 @@
 		(title "TheMostDangerousGame")
 		(year 1924))
 
-	([ontology_Class11320] of  Book
+	([ontology_Class11317] of  Book
 
 		(author [ontology_Class10361])
 		(genre "Horror")
@@ -10879,7 +10858,7 @@
 		(title "TheVampyreandOtherTalesoftheMacabre")
 		(year 1819))
 
-	([ontology_Class11321] of  Book
+	([ontology_Class11318] of  Book
 
 		(author [ontology_Class10362])
 		(genre "Uncategorized")
@@ -10889,7 +10868,7 @@
 		(title "Asylum")
 		(year 1996))
 
-	([ontology_Class11322] of  Book
+	([ontology_Class11319] of  Book
 
 		(author [ontology_Class10026])
 		(genre "Horror")
@@ -10899,7 +10878,7 @@
 		(title "LostSouls")
 		(year 1992))
 
-	([ontology_Class11323] of  Book
+	([ontology_Class11320] of  Book
 
 		(author [ontology_Class10027])
 		(genre "Horror")
@@ -10909,7 +10888,7 @@
 		(title "InaGlassDarkly")
 		(year 1872))
 
-	([ontology_Class11324] of  Book
+	([ontology_Class11321] of  Book
 
 		(author [ontology_Class10363])
 		(genre "Classics")
@@ -10919,7 +10898,7 @@
 		(title "ThePrivateMemoirsandConfessionsofaJustifiedSinner")
 		(year 1824))
 
-	([ontology_Class11325] of  Book
+	([ontology_Class11322] of  Book
 
 		(author [ontology_Class10364])
 		(genre "Classics")
@@ -10929,7 +10908,7 @@
 		(title "LadyAudley'sSecret")
 		(year 1862))
 
-	([ontology_Class11326] of  Book
+	([ontology_Class11323] of  Book
 
 		(author [ontology_Class10240])
 		(genre "Short Stories")
@@ -10939,7 +10918,7 @@
 		(title "TheLotteryandOtherStories")
 		(year 1949))
 
-	([ontology_Class11327] of  Book
+	([ontology_Class11324] of  Book
 
 		(author [ontology_Class10365])
 		(genre "Horror")
@@ -10949,7 +10928,7 @@
 		(title "CollectedGhostStories")
 		(year 1931))
 
-	([ontology_Class11328] of  Book
+	([ontology_Class11325] of  Book
 
 		(author [ontology_Class10133])
 		(genre "Fantasy")
@@ -10959,7 +10938,7 @@
 		(title "TheGormenghastNovels")
 		(year 1959))
 
-	([ontology_Class11329] of  Book
+	([ontology_Class11326] of  Book
 
 		(author [ontology_Class10366])
 		(genre "Romance")
@@ -10969,7 +10948,7 @@
 		(title "Tremetrisoprailcielo")
 		(year 1992))
 
-	([ontology_Class11330] of  Book
+	([ontology_Class11327] of  Book
 
 		(author [ontology_Class10367])
 		(genre "Uncategorized")
@@ -10979,7 +10958,7 @@
 		(title "Lizard")
 		(year 1993))
 
-	([ontology_Class11331] of  Book
+	([ontology_Class11328] of  Book
 
 		(author [ontology_Class10368])
 		(genre "Horror")
@@ -10989,7 +10968,7 @@
 		(title "JapaneseTalesofMysteryImagination")
 		(year 1956))
 
-	([ontology_Class11332] of  Book
+	([ontology_Class11329] of  Book
 
 		(author [ontology_Class10369])
 		(genre "Uncategorized")
@@ -10999,7 +10978,7 @@
 		(title "TheSamurai'sGarden")
 		(year 1994))
 
-	([ontology_Class11333] of  Book
+	([ontology_Class11330] of  Book
 
 		(author [ontology_Class10370])
 		(genre "Uncategorized")
@@ -11009,7 +10988,7 @@
 		(title "Musashi")
 		(year 1935))
 
-	([ontology_Class11334] of  Book
+	([ontology_Class11331] of  Book
 
 		(author [ontology_Class10371])
 		(genre "Romance")
@@ -11019,7 +10998,7 @@
 		(title "TheLady'sTutor")
 		(year 1999))
 
-	([ontology_Class11335] of  Book
+	([ontology_Class11332] of  Book
 
 		(author [ontology_Class10372])
 		(genre "Uncategorized")
@@ -11029,7 +11008,7 @@
 		(title "AnotherCountry")
 		(year 1962))
 
-	([ontology_Class11336] of  Book
+	([ontology_Class11333] of  Book
 
 		(author [ontology_Class10373])
 		(genre "Historical")
@@ -11039,7 +11018,7 @@
 		(title "MemoirsofHadrian")
 		(year 1951))
 
-	([ontology_Class11337] of  Book
+	([ontology_Class11334] of  Book
 
 		(author [ontology_Class10374])
 		(genre "Classics")
@@ -11049,7 +11028,7 @@
 		(title "BridesheadRevisited:TheSacredandProfaneMemoriesofCaptainCharlesRyder")
 		(year 1945))
 
-	([ontology_Class11338] of  Book
+	([ontology_Class11335] of  Book
 
 		(author [ontology_Class10128])
 		(genre "Uncategorized")
@@ -11059,7 +11038,7 @@
 		(title "TheBell")
 		(year 1958))
 
-	([ontology_Class11339] of  Book
+	([ontology_Class11336] of  Book
 
 		(author [ontology_Class10375])
 		(genre "Thriller")
@@ -11069,7 +11048,7 @@
 		(title "SheWalksTheseHills")
 		(year 1994))
 
-	([ontology_Class11340] of  Book
+	([ontology_Class11337] of  Book
 
 		(author [ontology_Class10376])
 		(genre "Fantasy")
@@ -11079,7 +11058,7 @@
 		(title "TheOwlService")
 		(year 1967))
 
-	([ontology_Class11341] of  Book
+	([ontology_Class11338] of  Book
 
 		(author [ontology_Class10202])
 		(genre "Classics")
@@ -11089,7 +11068,7 @@
 		(title "DoctorZhivago")
 		(year 1957))
 
-	([ontology_Class11342] of  Book
+	([ontology_Class11339] of  Book
 
 		(author [ontology_Class10377])
 		(genre "Uncategorized")
@@ -11099,7 +11078,7 @@
 		(title "TheMagnificentAmbersons")
 		(year 1918))
 
-	([ontology_Class11343] of  Book
+	([ontology_Class11340] of  Book
 
 		(author [ontology_Class10378])
 		(genre "Fantasy")
@@ -11109,7 +11088,7 @@
 		(title "Silverlock")
 		(year 1949))
 
-	([ontology_Class11344] of  Book
+	([ontology_Class11341] of  Book
 
 		(author [ontology_Class10379])
 		(genre "Uncategorized")
@@ -11119,7 +11098,7 @@
 		(title "AliandNino")
 		(year 1937))
 
-	([ontology_Class11345] of  Book
+	([ontology_Class11342] of  Book
 
 		(author [ontology_Class10380])
 		(genre "Uncategorized")
@@ -11129,7 +11108,7 @@
 		(title "TheEnchantedApril")
 		(year 1922))
 
-	([ontology_Class11346] of  Book
+	([ontology_Class11343] of  Book
 
 		(author [ontology_Class10381])
 		(genre "Fantasy")
@@ -11139,7 +11118,7 @@
 		(title "FreedomandNecessity")
 		(year 1997))
 
-	([ontology_Class11347] of  Book
+	([ontology_Class11344] of  Book
 
 		(author [ontology_Class10382])
 		(genre "Fantasy")
@@ -11149,7 +11128,7 @@
 		(title "Islandia")
 		(year 1942))
 
-	([ontology_Class11348] of  Book
+	([ontology_Class11345] of  Book
 
 		(author [ontology_Class10383])
 		(genre "Historical")
@@ -11159,7 +11138,7 @@
 		(title "Q")
 		(year 1999))
 
-	([ontology_Class11349] of  Book
+	([ontology_Class11346] of  Book
 
 		(author [ontology_Class10384])
 		(genre "Classics")
@@ -11169,7 +11148,7 @@
 		(title "PicnicatHangingRock")
 		(year 1967))
 
-	([ontology_Class11350] of  Book
+	([ontology_Class11347] of  Book
 
 		(author [ontology_Class10385])
 		(genre "Classics")
@@ -11179,7 +11158,7 @@
 		(title "Scaramouche")
 		(year 1921))
 
-	([ontology_Class11351] of  Book
+	([ontology_Class11348] of  Book
 
 		(author [ontology_Class10386])
 		(genre "Historical")
@@ -11189,7 +11168,7 @@
 		(title "HistoryofthePeloponnesianWar")
 		(year -411))
 
-	([ontology_Class11352] of  Book
+	([ontology_Class11349] of  Book
 
 		(author [ontology_Class10387])
 		(genre "Religious")
@@ -11199,7 +11178,7 @@
 		(title "Sophie'sHeart")
 		(year 1995))
 
-	([ontology_Class11353] of  Book
+	([ontology_Class11350] of  Book
 
 		(author [ontology_Class10388])
 		(genre "Uncategorized")
@@ -11209,7 +11188,7 @@
 		(title "AtHomeinMitford")
 		(year 1994))
 
-	([ontology_Class11354] of  Book
+	([ontology_Class11351] of  Book
 
 		(author [ontology_Class10389])
 		(genre "Uncategorized")
@@ -11219,7 +11198,7 @@
 		(title "Christy")
 		(year 1967))
 
-	([ontology_Class11355] of  Book
+	([ontology_Class11352] of  Book
 
 		(author [ontology_Class10390])
 		(genre "Uncategorized")
@@ -11229,7 +11208,7 @@
 		(title "TheOptimist'sDaughter")
 		(year 1972))
 
-	([ontology_Class11356] of  Book
+	([ontology_Class11353] of  Book
 
 		(author [ontology_Class10245])
 		(genre "Historical")
@@ -11239,7 +11218,7 @@
 		(title "Scarlett")
 		(year 1991))
 
-	([ontology_Class11357] of  Book
+	([ontology_Class11354] of  Book
 
 		(author [ontology_Class10391])
 		(genre "Uncategorized")
@@ -11249,7 +11228,7 @@
 		(title "TobaccoRoad")
 		(year 1932))
 
-	([ontology_Class11358] of  Book
+	([ontology_Class11355] of  Book
 
 		(author [ontology_Class10392])
 		(genre "Uncategorized")
@@ -11259,7 +11238,7 @@
 		(title "CharmsfortheEasyLife")
 		(year 1993))
 
-	([ontology_Class11359] of  Book
+	([ontology_Class11356] of  Book
 
 		(author [ontology_Class10393])
 		(genre "Uncategorized")
@@ -11269,7 +11248,7 @@
 		(title "TheMoviegoer")
 		(year 1961))
 
-	([ontology_Class11360] of  Book
+	([ontology_Class11357] of  Book
 
 		(author [ontology_Class10394])
 		(genre "Uncategorized")
@@ -11279,7 +11258,7 @@
 		(title "ALessonBeforeDying")
 		(year 1993))
 
-	([ontology_Class11361] of  Book
+	([ontology_Class11358] of  Book
 
 		(author [ontology_Class10395])
 		(genre "Uncategorized")
@@ -11289,7 +11268,7 @@
 		(title "LookHomeward,Angel")
 		(year 1929))
 
-	([ontology_Class11362] of  Book
+	([ontology_Class11359] of  Book
 
 		(author [ontology_Class10396])
 		(genre "Uncategorized")
@@ -11299,7 +11278,7 @@
 		(title "AlltheKing'sMen")
 		(year 1946))
 
-	([ontology_Class11363] of  Book
+	([ontology_Class11360] of  Book
 
 		(author [ontology_Class10201])
 		(genre "Uncategorized")
@@ -11309,7 +11288,7 @@
 		(title "DivineSecretsoftheYa-YaSisterhood")
 		(year 1996))
 
-	([ontology_Class11364] of  Book
+	([ontology_Class11361] of  Book
 
 		(author [ontology_Class10224])
 		(genre "Romance")
@@ -11319,7 +11298,7 @@
 		(title "TheFlameandtheFlower")
 		(year 1972))
 
-	([ontology_Class11365] of  Book
+	([ontology_Class11362] of  Book
 
 		(author [ontology_Class10219])
 		(genre "Classics")
@@ -11329,7 +11308,7 @@
 		(title "ThreeMeninaBoat")
 		(year 1889))
 
-	([ontology_Class11366] of  Book
+	([ontology_Class11363] of  Book
 
 		(author [ontology_Class10040])
 		(genre "Fantasy")
@@ -11339,7 +11318,7 @@
 		(title "AWrinkleinTime")
 		(year 1962))
 
-	([ontology_Class11367] of  Book
+	([ontology_Class11364] of  Book
 
 		(author [ontology_Class10397])
 		(genre "Fantasy")
@@ -11349,7 +11328,7 @@
 		(title "TheHollowHills")
 		(year 1973))
 
-	([ontology_Class11368] of  Book
+	([ontology_Class11365] of  Book
 
 		(author [ontology_Class10119])
 		(genre "Uncategorized")
@@ -11359,7 +11338,7 @@
 		(title "MyNameIsAsherLev")
 		(year 1972))
 
-	([ontology_Class11369] of  Book
+	([ontology_Class11366] of  Book
 
 		(author [ontology_Class10173])
 		(genre "Uncategorized")
@@ -11369,7 +11348,7 @@
 		(title "TheBridgesofMadisonCounty")
 		(year 1992))
 
-	([ontology_Class11370] of  Book
+	([ontology_Class11367] of  Book
 
 		(author [ontology_Class10060])
 		(genre "Classics")
@@ -11379,7 +11358,7 @@
 		(title "OfMiceandMen")
 		(year 1937))
 
-	([ontology_Class11371] of  Book
+	([ontology_Class11368] of  Book
 
 		(author [ontology_Class10154])
 		(genre "Uncategorized")
@@ -11389,7 +11368,7 @@
 		(title "HouseofSandandFog")
 		(year 1999))
 
-	([ontology_Class11372] of  Book
+	([ontology_Class11369] of  Book
 
 		(author [ontology_Class10140])
 		(genre "Classics")
@@ -11399,7 +11378,7 @@
 		(title "BlackBeauty")
 		(year 1877))
 
-	([ontology_Class11373] of  Book
+	([ontology_Class11370] of  Book
 
 		(author [ontology_Class10006])
 		(genre "Classics")
@@ -11409,7 +11388,7 @@
 		(title "SenseandSensibility")
 		(year 1811))
 
-	([ontology_Class11374] of  Book
+	([ontology_Class11371] of  Book
 
 		(author [ontology_Class10071])
 		(genre "Classics")
@@ -11419,7 +11398,7 @@
 		(title "Frankenstein")
 		(year 1818))
 
-	([ontology_Class11375] of  Book
+	([ontology_Class11372] of  Book
 
 		(author [ontology_Class10011])
 		(genre "Fantasy")
@@ -11429,7 +11408,7 @@
 		(title "TheHobbit")
 		(year 1937))
 
-	([ontology_Class11376] of  Book
+	([ontology_Class11373] of  Book
 
 		(author [ontology_Class10005])
 		(genre "Classics")
@@ -11439,7 +11418,7 @@
 		(title "Rebecca")
 		(year 1938))
 
-	([ontology_Class11377] of  Book
+	([ontology_Class11374] of  Book
 
 		(author [ontology_Class10306])
 		(genre "Classics")
@@ -11449,7 +11428,7 @@
 		(title "Slaughterhouse-Five")
 		(year 1969))
 
-	([ontology_Class11378] of  Book
+	([ontology_Class11375] of  Book
 
 		(author [ontology_Class10090])
 		(genre "Uncategorized")
@@ -11459,7 +11438,7 @@
 		(title "RabbitRedux")
 		(year 1971))
 
-	([ontology_Class11379] of  Book
+	([ontology_Class11376] of  Book
 
 		(author [ontology_Class10089])
 		(genre "Uncategorized")
@@ -11469,7 +11448,7 @@
 		(title "OrdinaryPeople")
 		(year 1976))
 
-	([ontology_Class11380] of  Book
+	([ontology_Class11377] of  Book
 
 		(author [ontology_Class10075])
 		(genre "Classics")
@@ -11479,7 +11458,7 @@
 		(title "LordoftheFlies")
 		(year 1954))
 
-	([ontology_Class11381] of  Book
+	([ontology_Class11378] of  Book
 
 		(author [ontology_Class10398])
 		(genre "Uncategorized")
@@ -11489,7 +11468,7 @@
 		(title "She'sComeUndone")
 		(year 1992))
 
-	([ontology_Class11382] of  Book
+	([ontology_Class11379] of  Book
 
 		(author [ontology_Class10265])
 		(genre "Classics")
@@ -11499,7 +11478,7 @@
 		(title "TheSecretGarden")
 		(year 1911))
 
-	([ontology_Class11383] of  Book
+	([ontology_Class11380] of  Book
 
 		(author [ontology_Class10287])
 		(genre "Uncategorized")
@@ -11509,7 +11488,7 @@
 		(title "Sula")
 		(year 1973))
 
-	([ontology_Class11384] of  Book
+	([ontology_Class11381] of  Book
 
 		(author [ontology_Class10115])
 		(genre "Horror")
@@ -11519,7 +11498,7 @@
 		(title "GhostStory")
 		(year 1979))
 
-	([ontology_Class11385] of  Book
+	([ontology_Class11382] of  Book
 
 		(author [ontology_Class10107])
 		(genre "Historical")
@@ -11529,7 +11508,7 @@
 		(title "TheRedTent")
 		(year 1997))
 
-	([ontology_Class11386] of  Book
+	([ontology_Class11383] of  Book
 
 		(author [ontology_Class10116])
 		(genre "Historical")
@@ -11539,7 +11518,7 @@
 		(title "RollofThunder,HearMyCry")
 		(year 1976))
 
-	([ontology_Class11387] of  Book
+	([ontology_Class11384] of  Book
 
 		(author [ontology_Class10117])
 		(genre "Uncategorized")
@@ -11549,7 +11528,7 @@
 		(title "TheOtherSideofMidnight")
 		(year 1973))
 
-	([ontology_Class11388] of  Book
+	([ontology_Class11385] of  Book
 
 		(author [ontology_Class10118])
 		(genre "Historical")
@@ -11559,7 +11538,7 @@
 		(title "WarandRemembrance")
 		(year 1978))
 
-	([ontology_Class11389] of  Book
+	([ontology_Class11386] of  Book
 
 		(author [ontology_Class10325])
 		(genre "Young")
@@ -11569,7 +11548,7 @@
 		(title "KissedbyanAngel/ThePowerofLove/Soulmates")
 		(year 1995))
 
-	([ontology_Class11390] of  Book
+	([ontology_Class11387] of  Book
 
 		(author [ontology_Class10074])
 		(genre "Classics")
@@ -11579,7 +11558,7 @@
 		(title "TheCatcherintheRye")
 		(year 1951))
 
-	([ontology_Class11391] of  Book
+	([ontology_Class11388] of  Book
 
 		(author [ontology_Class10072])
 		(genre "Uncategorized")
@@ -11589,7 +11568,7 @@
 		(title "FlowersforAlgernon")
 		(year 1966))
 
-	([ontology_Class11392] of  Book
+	([ontology_Class11389] of  Book
 
 		(author [ontology_Class10261])
 		(genre "Classics")
@@ -11599,7 +11578,7 @@
 		(title "Fahrenheit451")
 		(year 1953))
 
-	([ontology_Class11393] of  Book
+	([ontology_Class11390] of  Book
 
 		(author [ontology_Class10121])
 		(genre "Uncategorized")
@@ -11609,7 +11588,7 @@
 		(title "AngleofRepose")
 		(year 1971))
 
-	([ontology_Class11394] of  Book
+	([ontology_Class11391] of  Book
 
 		(author [ontology_Class10317])
 		(genre "Fantasy")
@@ -11619,7 +11598,7 @@
 		(title "Sabriel")
 		(year 1995))
 
-	([ontology_Class11395] of  Book
+	([ontology_Class11392] of  Book
 
 		(author [ontology_Class10399])
 		(genre "Fantasy")
@@ -11629,7 +11608,7 @@
 		(title "Beauty:ARetellingoftheStoryofBeautyandtheBeast")
 		(year 1978))
 
-	([ontology_Class11396] of  Book
+	([ontology_Class11393] of  Book
 
 		(author [ontology_Class10122])
 		(genre "Young")
@@ -11639,7 +11618,7 @@
 		(title "TheDarkIsRising")
 		(year 1973))
 
-	([ontology_Class11397] of  Book
+	([ontology_Class11394] of  Book
 
 		(author [ontology_Class10149])
 		(genre "Classics")
@@ -11649,7 +11628,7 @@
 		(title "WheretheRedFernGrows")
 		(year 1961))
 
-	([ontology_Class11398] of  Book
+	([ontology_Class11395] of  Book
 
 		(author [ontology_Class10335])
 		(genre "Thriller")
@@ -11659,7 +11638,7 @@
 		(title "AMorbidTasteforBones")
 		(year 1977))
 
-	([ontology_Class11399] of  Book
+	([ontology_Class11396] of  Book
 
 		(author [ontology_Class10008])
 		(genre "Classics")
@@ -11669,7 +11648,7 @@
 		(title "ATreeGrowsinBrooklyn")
 		(year 1943))
 
-	([ontology_Class11400] of  Book
+	([ontology_Class11397] of  Book
 
 		(author [ontology_Class10076])
 		(genre "Classics")
@@ -11679,7 +11658,7 @@
 		(title "TheOutsiders")
 		(year 1967))
 
-	([ontology_Class11401] of  Book
+	([ontology_Class11398] of  Book
 
 		(author [ontology_Class10123])
 		(genre "Uncategorized")
@@ -11689,7 +11668,7 @@
 		(title "KaneandAbel")
 		(year 1979))
 
-	([ontology_Class11402] of  Book
+	([ontology_Class11399] of  Book
 
 		(author [ontology_Class10120])
 		(genre "Fantasy")
@@ -11699,7 +11678,7 @@
 		(title "TheSwordofShannara")
 		(year 1977))
 
-	([ontology_Class11403] of  Book
+	([ontology_Class11400] of  Book
 
 		(author [ontology_Class10167])
 		(genre "Fantasy")
@@ -11709,7 +11688,7 @@
 		(title "LordFoul'sBane")
 		(year 1977))
 
-	([ontology_Class11404] of  Book
+	([ontology_Class11401] of  Book
 
 		(author [ontology_Class10007])
 		(genre "Classics")
@@ -11719,7 +11698,7 @@
 		(title "LittleWomen")
 		(year 1868))
 
-	([ontology_Class11405] of  Book
+	([ontology_Class11402] of  Book
 
 		(author [ontology_Class10014])
 		(genre "Uncategorized")
@@ -11729,7 +11708,7 @@
 		(title "MemoirsofaGeisha")
 		(year 1997))
 
-	([ontology_Class11406] of  Book
+	([ontology_Class11403] of  Book
 
 		(author [ontology_Class10049])
 		(genre "Uncategorized")
@@ -11739,7 +11718,7 @@
 		(title "InvisibleCities")
 		(year 1972))
 
-	([ontology_Class11407] of  Book
+	([ontology_Class11404] of  Book
 
 		(author [ontology_Class10124])
 		(genre "Uncategorized")
@@ -11749,7 +11728,7 @@
 		(title "Gravity'sRainbow")
 		(year 1973))
 
-	([ontology_Class11408] of  Book
+	([ontology_Class11405] of  Book
 
 		(author [ontology_Class10057])
 		(genre "Thriller")
@@ -11759,7 +11738,7 @@
 		(title "TheWestingGame")
 		(year 1978))
 
-	([ontology_Class11409] of  Book
+	([ontology_Class11406] of  Book
 
 		(author [ontology_Class10292])
 		(genre "Horror")
@@ -11769,7 +11748,7 @@
 		(title "TheDeadZone")
 		(year 1979))
 
-	([ontology_Class11410] of  Book
+	([ontology_Class11407] of  Book
 
 		(author [ontology_Class10400])
 		(genre "Uncategorized")
@@ -11779,7 +11758,7 @@
 		(title "EyeoftheNeedle")
 		(year 1978))
 
-	([ontology_Class11411] of  Book
+	([ontology_Class11408] of  Book
 
 		(author [ontology_Class10125])
 		(genre "Uncategorized")
@@ -11789,7 +11768,7 @@
 		(title "TheDayoftheJackal")
 		(year 1971))
 
-	([ontology_Class11412] of  Book
+	([ontology_Class11409] of  Book
 
 		(author [ontology_Class10311])
 		(genre "Thriller")
@@ -11799,7 +11778,7 @@
 		(title "OnefortheMoney")
 		(year 1994))
 
-	([ontology_Class11413] of  Book
+	([ontology_Class11410] of  Book
 
 		(author [ontology_Class10032])
 		(genre "Fantasy")
@@ -11809,7 +11788,7 @@
 		(title "TuckEverlasting")
 		(year 1975))
 
-	([ontology_Class11414] of  Book
+	([ontology_Class11411] of  Book
 
 		(author [ontology_Class10126])
 		(genre "Historical")
@@ -11819,7 +11798,7 @@
 		(title "TheKillerAngels")
 		(year 1974))
 
-	([ontology_Class11415] of  Book
+	([ontology_Class11412] of  Book
 
 		(author [ontology_Class10291])
 		(genre "Fantasy")
@@ -11829,7 +11808,7 @@
 		(title "Wizard'sFirstRule")
 		(year 1994))
 
-	([ontology_Class11416] of  Book
+	([ontology_Class11413] of  Book
 
 		(author [ontology_Class10127])
 		(genre "Uncategorized")
@@ -11839,7 +11818,7 @@
 		(title "Ragtime")
 		(year 1975))
 
-	([ontology_Class11417] of  Book
+	([ontology_Class11414] of  Book
 
 		(author [ontology_Class10401])
 		(genre "Fantasy")
@@ -11849,7 +11828,7 @@
 		(title "AGameofThrones")
 		(year 1996))
 
-	([ontology_Class11418] of  Book
+	([ontology_Class11415] of  Book
 
 		(author [ontology_Class10128])
 		(genre "Uncategorized")
@@ -11859,7 +11838,7 @@
 		(title "TheBlackPrince")
 		(year 1973))
 
-	([ontology_Class11419] of  Book
+	([ontology_Class11416] of  Book
 
 		(author [ontology_Class10129])
 		(genre "Horror")
@@ -11869,7 +11848,7 @@
 		(title "TheExorcist")
 		(year 1971))
 
-	([ontology_Class11420] of  Book
+	([ontology_Class11417] of  Book
 
 		(author [ontology_Class10039])
 		(genre "Young")
@@ -11879,7 +11858,7 @@
 		(title "BridgetoTerabithia")
 		(year 1977))
 
-	([ontology_Class11421] of  Book
+	([ontology_Class11418] of  Book
 
 		(author [ontology_Class10073])
 		(genre "Classics")
@@ -11889,7 +11868,7 @@
 		(title "AnimalFarm")
 		(year 1945))
 
-	([ontology_Class11422] of  Book
+	([ontology_Class11419] of  Book
 
 		(author [ontology_Class10143])
 		(genre "Uncategorized")
@@ -11899,7 +11878,7 @@
 		(title "Sophie'sChoice")
 		(year 1979))
 
-	([ontology_Class11423] of  Book
+	([ontology_Class11420] of  Book
 
 		(author [ontology_Class10130])
 		(genre "Uncategorized")
@@ -11909,7 +11888,7 @@
 		(title "FearandLoathinginLasVegas")
 		(year 1971))
 
-	([ontology_Class11424] of  Book
+	([ontology_Class11421] of  Book
 
 		(author [ontology_Class10034])
 		(genre "Uncategorized")
@@ -11919,7 +11898,7 @@
 		(title "TheBadBeginning")
 		(year 1999))
 
-	([ontology_Class11425] of  Book
+	([ontology_Class11422] of  Book
 
 		(author [ontology_Class10063])
 		(genre "Historical")
@@ -11929,7 +11908,7 @@
 		(title "Outlander")
 		(year 1991))
 
-	([ontology_Class11426] of  Book
+	([ontology_Class11423] of  Book
 
 		(author [ontology_Class10138])
 		(genre "Historical")
@@ -11939,7 +11918,7 @@
 		(title "Roots:TheSagaofanAmericanFamily")
 		(year 1976))
 
-	([ontology_Class11427] of  Book
+	([ontology_Class11424] of  Book
 
 		(author [ontology_Class10296])
 		(genre "Uncategorized")
@@ -11949,7 +11928,7 @@
 		(title "TheThornBirds")
 		(year 1977))
 
-	([ontology_Class11428] of  Book
+	([ontology_Class11425] of  Book
 
 		(author [ontology_Class10309])
 		(genre "Uncategorized")
@@ -11959,7 +11938,7 @@
 		(title "TheWorldAccordingtoGarp")
 		(year 1978))
 
-	([ontology_Class11429] of  Book
+	([ontology_Class11426] of  Book
 
 		(author [ontology_Class10036])
 		(genre "Fantasy")
@@ -11969,7 +11948,7 @@
 		(title "TheNeverendingStory")
 		(year 1979))
 
-	([ontology_Class11430] of  Book
+	([ontology_Class11427] of  Book
 
 		(author [ontology_Class10402])
 		(genre "Horror")
@@ -11979,7 +11958,7 @@
 		(title "InterviewwiththeVampire")
 		(year 1976))
 
-	([ontology_Class11431] of  Book
+	([ontology_Class11428] of  Book
 
 		(author [ontology_Class10038])
 		(genre "Fantasy")
@@ -11989,7 +11968,7 @@
 		(title "ThePrincessBride")
 		(year 1973))
 
-	([ontology_Class11432] of  Book
+	([ontology_Class11429] of  Book
 
 		(author [ontology_Class10077])
 		(genre "Classics")
@@ -11999,7 +11978,7 @@
 		(title "TheGreatGatsby")
 		(year 1925))
 
-	([ontology_Class11433] of  Book
+	([ontology_Class11430] of  Book
 
 		(author [ontology_Class10068])
 		(genre "Classics")
@@ -12009,7 +11988,7 @@
 		(title "WatershipDown")
 		(year 1972))
 
-	([ontology_Class11434] of  Book
+	([ontology_Class11431] of  Book
 
 		(author [ontology_Class10016])
 		(genre "Classics")
@@ -12019,7 +11998,7 @@
 		(title "GonewiththeWind")
 		(year 1936))
 
-	([ontology_Class11435] of  Book
+	([ontology_Class11432] of  Book
 
 		(author [ontology_Class10156])
 		(genre "Fantasy")
@@ -12029,7 +12008,7 @@
 		(title "Wicked:TheLifeandTimesoftheWickedWitchoftheWest")
 		(year 1995))
 
-	([ontology_Class11436] of  Book
+	([ontology_Class11433] of  Book
 
 		(author [ontology_Class10191])
 		(genre "Classics")
@@ -12039,7 +12018,7 @@
 		(title "TreasureIsland")
 		(year 1882))
 
-	([ontology_Class11437] of  Book
+	([ontology_Class11434] of  Book
 
 		(author [ontology_Class10403])
 		(genre "Young")
@@ -12049,7 +12028,7 @@
 		(title "GuitarHighwayRose")
 		(year 1997))
 
-	([ontology_Class11438] of  Book
+	([ontology_Class11435] of  Book
 
 		(author [ontology_Class10067])
 		(genre "Fantasy")
@@ -12059,7 +12038,7 @@
 		(title "TheGoldenCompass")
 		(year 1995))
 
-	([ontology_Class11439] of  Book
+	([ontology_Class11436] of  Book
 
 		(author [ontology_Class10404])
 		(genre "Romance")
@@ -12068,7 +12047,7 @@
 		(rating 291.0)
 		(title "MoonlightWhiskey"))
 
-	([ontology_Class11440] of  Book
+	([ontology_Class11437] of  Book
 
 		(author [ontology_Class10052])
 		(genre "Young")
@@ -12078,7 +12057,7 @@
 		(title "WalkTwoMoons")
 		(year 1994))
 
-	([ontology_Class11441] of  Book
+	([ontology_Class11438] of  Book
 
 		(author [ontology_Class10405])
 		(genre "Romance")
@@ -12088,7 +12067,7 @@
 		(title "APirate'sLove")
 		(year 1978))
 
-	([ontology_Class11442] of  Book
+	([ontology_Class11439] of  Book
 
 		(author [ontology_Class10406])
 		(genre "Romance")
@@ -12098,7 +12077,7 @@
 		(title "APlacetoCallHome")
 		(year 1997))
 
-	([ontology_Class11443] of  Book
+	([ontology_Class11440] of  Book
 
 		(author [ontology_Class10241])
 		(genre "Uncategorized")
@@ -12108,7 +12087,7 @@
 		(title "ICapturetheCastle")
 		(year 1948))
 
-	([ontology_Class11444] of  Book
+	([ontology_Class11441] of  Book
 
 		(author [ontology_Class10245])
 		(genre "Historical")
@@ -12118,7 +12097,7 @@
 		(title "Scarlett")
 		(year 1991))
 
-	([ontology_Class11445] of  Book
+	([ontology_Class11442] of  Book
 
 		(author [ontology_Class10407])
 		(genre "Romance")
@@ -12128,7 +12107,7 @@
 		(title "EverythingandtheMoon")
 		(year 1997))
 
-	([ontology_Class11446] of  Book
+	([ontology_Class11443] of  Book
 
 		(author [ontology_Class10408])
 		(genre "Romance")
@@ -12138,7 +12117,7 @@
 		(title "Rachel'sHoliday")
 		(year 1997))
 
-	([ontology_Class11447] of  Book
+	([ontology_Class11444] of  Book
 
 		(author [ontology_Class10200])
 		(genre "Uncategorized")
@@ -12148,7 +12127,7 @@
 		(title "WheretheHeartIs")
 		(year 1995))
 
-	([ontology_Class11448] of  Book
+	([ontology_Class11445] of  Book
 
 		(author [ontology_Class10409])
 		(genre "Uncategorized")
@@ -12158,7 +12137,7 @@
 		(title "TheGroundBeneathHerFeet")
 		(year 1999))
 
-	([ontology_Class11449] of  Book
+	([ontology_Class11446] of  Book
 
 		(author [ontology_Class10410])
 		(genre "Young")
@@ -12168,7 +12147,7 @@
 		(title "WhenJeffComesHome")
 		(year 1999))
 
-	([ontology_Class11450] of  Book
+	([ontology_Class11447] of  Book
 
 		(author [ontology_Class10411])
 		(genre "Historical")
@@ -12178,7 +12157,7 @@
 		(title "TheJewelintheCrown")
 		(year 1966))
 
-	([ontology_Class11451] of  Book
+	([ontology_Class11448] of  Book
 
 		(author [ontology_Class10412])
 		(genre "Uncategorized")
@@ -12188,7 +12167,7 @@
 		(title "TheDeepEndoftheOcean")
 		(year 1996))
 
-	([ontology_Class11452] of  Book
+	([ontology_Class11449] of  Book
 
 		(author [ontology_Class10413])
 		(genre "Classics")
@@ -12198,7 +12177,7 @@
 		(title "TheJungleBooks")
 		(year 1894))
 
-	([ontology_Class11453] of  Book
+	([ontology_Class11450] of  Book
 
 		(author [ontology_Class10321])
 		(genre "Fantasy")
@@ -12208,7 +12187,7 @@
 		(title "Assassin'sApprentice")
 		(year 1995))
 
-	([ontology_Class11454] of  Book
+	([ontology_Class11451] of  Book
 
 		(author [ontology_Class10017])
 		(genre "Fantasy")
@@ -12218,7 +12197,7 @@
 		(title "TheMagician'sNephew")
 		(year 1955))
 
-	([ontology_Class11455] of  Book
+	([ontology_Class11452] of  Book
 
 		(author [ontology_Class10012])
 		(genre "Romance")
@@ -12228,7 +12207,7 @@
 		(title "BridgetJones:TheEdgeofReason")
 		(year 1999))
 
-	([ontology_Class11456] of  Book
+	([ontology_Class11453] of  Book
 
 		(author [ontology_Class10029])
 		(genre "Fantasy")
@@ -12238,7 +12217,7 @@
 		(title "TheLastUnicorn")
 		(year 1968))
 
-	([ontology_Class11457] of  Book
+	([ontology_Class11454] of  Book
 
 		(author [ontology_Class10414])
 		(genre "Horror")
@@ -12248,7 +12227,7 @@
 		(title "TheCompleteWorksofH.P.Lovecraft")
 		(year 1978))
 
-	([ontology_Class11458] of  Book
+	([ontology_Class11455] of  Book
 
 		(author [ontology_Class10092])
 		(genre "Historical")
@@ -12258,7 +12237,7 @@
 		(title "TheFarPavilions")
 		(year 1978))
 
-	([ontology_Class11459] of  Book
+	([ontology_Class11456] of  Book
 
 		(author [ontology_Class10415])
 		(genre "Classics")
@@ -12268,7 +12247,7 @@
 		(title "APassagetoIndia")
 		(year 1924))
 
-	([ontology_Class11460] of  Book
+	([ontology_Class11457] of  Book
 
 		(author [ontology_Class10095])
 		(genre "Uncategorized")
@@ -12278,7 +12257,7 @@
 		(title "TheCollector")
 		(year 1963))
 
-	([ontology_Class11461] of  Book
+	([ontology_Class11458] of  Book
 
 		(author [ontology_Class10416])
 		(genre "Romance")
@@ -12288,7 +12267,7 @@
 		(title "TheSilverDevil")
 		(year 1978))
 
-	([ontology_Class11462] of  Book
+	([ontology_Class11459] of  Book
 
 		(author [ontology_Class10028])
 		(genre "Classics")
@@ -12298,7 +12277,7 @@
 		(title "Dracula")
 		(year 1897))
 
-	([ontology_Class11463] of  Book
+	([ontology_Class11460] of  Book
 
 		(author [ontology_Class10013])
 		(genre "Thriller")
@@ -12308,7 +12287,7 @@
 		(title "NakedinDeath")
 		(year 1995))
 
-	([ontology_Class11464] of  Book
+	([ontology_Class11461] of  Book
 
 		(author [ontology_Class10001])
 		(genre "Classics")
@@ -12318,7 +12297,7 @@
 		(title "BraveNewWorld")
 		(year 1932))
 
-	([ontology_Class11465] of  Book
+	([ontology_Class11462] of  Book
 
 		(author [ontology_Class10417])
 		(genre "Romance")
@@ -12328,7 +12307,7 @@
 		(title "TheSecret")
 		(year 1992))
 
-	([ontology_Class11466] of  Book
+	([ontology_Class11463] of  Book
 
 		(author [ontology_Class10114])
 		(genre "Fantasy")
@@ -12338,7 +12317,7 @@
 		(title "ThePhantomTollbooth")
 		(year 1961))
 
-	([ontology_Class11467] of  Book
+	([ontology_Class11464] of  Book
 
 		(author [ontology_Class10061])
 		(genre "Classics")
@@ -12348,7 +12327,7 @@
 		(title "TheAdventuresofHuckleberryFinn")
 		(year 1884))
 
-	([ontology_Class11468] of  Book
+	([ontology_Class11465] of  Book
 
 		(author [ontology_Class10216])
 		(genre "Classics")
@@ -12358,7 +12337,7 @@
 		(title "TheCompleteGrimm'sFairyTales")
 		(year 1812))
 
-	([ontology_Class11469] of  Book
+	([ontology_Class11466] of  Book
 
 		(author [ontology_Class10113])
 		(genre "Classics")
@@ -12368,7 +12347,7 @@
 		(title "Alice'sAdventuresinWonderlandThroughtheLooking-Glass")
 		(year 1872))
 
-	([ontology_Class11470] of  Book
+	([ontology_Class11467] of  Book
 
 		(author [ontology_Class10418])
 		(genre "Uncategorized")
@@ -12378,7 +12357,7 @@
 		(title "Holiday")
 		(year 1974))
 
-	([ontology_Class11471] of  Book
+	([ontology_Class11468] of  Book
 
 		(author [ontology_Class10419])
 		(genre "Uncategorized")
@@ -12388,7 +12367,7 @@
 		(title "Saville")
 		(year 1976))
 
-	([ontology_Class11472] of  Book
+	([ontology_Class11469] of  Book
 
 		(author [ontology_Class10420])
 		(genre "Uncategorized")
@@ -12398,7 +12377,7 @@
 		(title "TheElectedMember")
 		(year 1969))
 
-	([ontology_Class11473] of  Book
+	([ontology_Class11470] of  Book
 
 		(author [ontology_Class10421])
 		(genre "Uncategorized")
@@ -12408,7 +12387,7 @@
 		(title "G.")
 		(year 1972))
 
-	([ontology_Class11474] of  Book
+	([ontology_Class11471] of  Book
 
 		(author [ontology_Class10422])
 		(genre "Uncategorized")
@@ -12418,7 +12397,7 @@
 		(title "HowLateitWas,HowLate")
 		(year 1994))
 
-	([ontology_Class11475] of  Book
+	([ontology_Class11472] of  Book
 
 		(author [ontology_Class10423])
 		(genre "Historical")
@@ -12428,7 +12407,7 @@
 		(title "SacredHunger")
 		(year 1992))
 
-	([ontology_Class11476] of  Book
+	([ontology_Class11473] of  Book
 
 		(author [ontology_Class10315])
 		(genre "Uncategorized")
@@ -12438,7 +12417,7 @@
 		(title "TheGhostRoad")
 		(year 1995))
 
-	([ontology_Class11477] of  Book
+	([ontology_Class11474] of  Book
 
 		(author [ontology_Class10058])
 		(genre "Classics")
@@ -12448,7 +12427,7 @@
 		(title "TheirEyesWereWatchingGod")
 		(year 1937))
 
-	([ontology_Class11478] of  Book
+	([ontology_Class11475] of  Book
 
 		(author [ontology_Class10235])
 		(genre "Horror")
@@ -12458,7 +12437,7 @@
 		(title "TheSurvivor")
 		(year 1976))
 
-	([ontology_Class11479] of  Book
+	([ontology_Class11476] of  Book
 
 		(author [ontology_Class10424])
 		(genre "Thriller")
@@ -12468,7 +12447,7 @@
 		(title "HouseofManyShadows")
 		(year 1974))
 
-	([ontology_Class11480] of  Book
+	([ontology_Class11477] of  Book
 
 		(author [ontology_Class10375])
 		(genre "Thriller")
@@ -12478,7 +12457,7 @@
 		(title "SheWalksTheseHills")
 		(year 1994))
 
-	([ontology_Class11481] of  Book
+	([ontology_Class11478] of  Book
 
 		(author [ontology_Class10425])
 		(genre "Young")
@@ -12488,7 +12467,7 @@
 		(title "DownaDarkHall")
 		(year 1974))
 
-	([ontology_Class11482] of  Book
+	([ontology_Class11479] of  Book
 
 		(author [ontology_Class10027])
 		(genre "Horror")
@@ -12498,7 +12477,7 @@
 		(title "Carmilla")
 		(year 1872))
 
-	([ontology_Class11483] of  Book
+	([ontology_Class11480] of  Book
 
 		(author [ontology_Class10037])
 		(genre "Fantasy")
@@ -12508,7 +12487,7 @@
 		(title "TheHighKing")
 		(year 1968))
 
-	([ontology_Class11484] of  Book
+	([ontology_Class11481] of  Book
 
 		(author [ontology_Class10426])
 		(genre "Young")
@@ -12518,7 +12497,7 @@
 		(title "GhostsIHaveBeen")
 		(year 1977))
 
-	([ontology_Class11485] of  Book
+	([ontology_Class11482] of  Book
 
 		(author [ontology_Class10214])
 		(genre "Fantasy")
@@ -12528,7 +12507,7 @@
 		(title "ThePerilousGard")
 		(year 1974))
 
-	([ontology_Class11486] of  Book
+	([ontology_Class11483] of  Book
 
 		(author [ontology_Class10043])
 		(genre "Short Stories")
@@ -12538,7 +12517,7 @@
 		(title "TheBloodyChamberandOtherStories")
 		(year 1979))
 
-	([ontology_Class11487] of  Book
+	([ontology_Class11484] of  Book
 
 		(author [ontology_Class10160])
 		(genre "Uncategorized")
@@ -12548,7 +12527,7 @@
 		(title "FinnegansWake")
 		(year 1939))
 
-	([ontology_Class11488] of  Book
+	([ontology_Class11485] of  Book
 
 		(author [ontology_Class10427])
 		(genre "Classics")
@@ -12558,7 +12537,7 @@
 		(title "TheDecameron")
 		(year 1353))
 
-	([ontology_Class11489] of  Book
+	([ontology_Class11486] of  Book
 
 		(author [ontology_Class10236])
 		(genre "Horror")
@@ -12568,7 +12547,7 @@
 		(title "TheOther")
 		(year 1971))
 
-	([ontology_Class11490] of  Book
+	([ontology_Class11487] of  Book
 
 		(author [ontology_Class10055])
 		(genre "Classics")
@@ -12578,7 +12557,7 @@
 		(title "BarnabyRudge")
 		(year 1841))
 
-	([ontology_Class11491] of  Book
+	([ontology_Class11488] of  Book
 
 		(author [ontology_Class10358])
 		(genre "Thriller")
@@ -12588,7 +12567,7 @@
 		(title "CrocodileontheSandbank")
 		(year 1975))
 
-	([ontology_Class11492] of  Book
+	([ontology_Class11489] of  Book
 
 		(author [ontology_Class10428])
 		(genre "Classics")
@@ -12598,7 +12577,7 @@
 		(title "LeMorted'Arthur:KingArthurandtheLegendsoftheRoundTable")
 		(year 1485))
 
-	([ontology_Class11493] of  Book
+	([ontology_Class11490] of  Book
 
 		(author [ontology_Class10429])
 		(genre "Fantasy")
@@ -12608,7 +12587,7 @@
 		(title "PolgaratheSorceress")
 		(year 1997))
 
-	([ontology_Class11494] of  Book
+	([ontology_Class11491] of  Book
 
 		(author [ontology_Class10066])
 		(genre "Classics")
@@ -12618,7 +12597,7 @@
 		(title "TheSunAlsoRises")
 		(year 1926))
 
-	([ontology_Class11495] of  Book
+	([ontology_Class11492] of  Book
 
 		(author [ontology_Class10161])
 		(genre "Classics")
@@ -12628,7 +12607,7 @@
 		(title "Absalom,Absalom!")
 		(year 1936))
 
-	([ontology_Class11496] of  Book
+	([ontology_Class11493] of  Book
 
 		(author [ontology_Class10226])
 		(genre "Classics")
@@ -12638,7 +12617,7 @@
 		(title "FathersandSons")
 		(year 1862))
 
-	([ontology_Class11497] of  Book
+	([ontology_Class11494] of  Book
 
 		(author [ontology_Class10131])
 		(genre "Fantasy")
@@ -12648,7 +12627,7 @@
 		(title "TheForgottenBeastsofEld")
 		(year 1974))
 
-	([ontology_Class11498] of  Book
+	([ontology_Class11495] of  Book
 
 		(author [ontology_Class10109])
 		(genre "Classics")
@@ -12658,7 +12637,7 @@
 		(title "AllQuietontheWesternFront")
 		(year 1929))
 
-	([ontology_Class11499] of  Book
+	([ontology_Class11496] of  Book
 
 		(author [ontology_Class10430])
 		(genre "Horror")
@@ -12668,7 +12647,7 @@
 		(title "AudreyRose")
 		(year 1975))
 
-	([ontology_Class11500] of  Book
+	([ontology_Class11497] of  Book
 
 		(author [ontology_Class10431])
 		(genre "Short Stories")
@@ -12678,7 +12657,7 @@
 		(title "TheGhostStoriesofEdithWharton")
 		(year 1937))
 
-	([ontology_Class11501] of  Book
+	([ontology_Class11498] of  Book
 
 		(author [ontology_Class10051])
 		(genre "Uncategorized")
@@ -12688,7 +12667,7 @@
 		(title "TheMasterandMargarita")
 		(year 1967))
 
-	([ontology_Class11502] of  Book
+	([ontology_Class11499] of  Book
 
 		(author [ontology_Class10053])
 		(genre "Classics")
@@ -12698,7 +12677,7 @@
 		(title "AClockworkOrange")
 		(year 1962))
 
-	([ontology_Class11503] of  Book
+	([ontology_Class11500] of  Book
 
 		(author [ontology_Class10194])
 		(genre "Classics")
@@ -12708,7 +12687,7 @@
 		(title "LadyChatterley'sLover")
 		(year 1928))
 
-	([ontology_Class11504] of  Book
+	([ontology_Class11501] of  Book
 
 		(author [ontology_Class10153])
 		(genre "Fantasy")
@@ -12718,7 +12697,7 @@
 		(title "CrownDuel")
 		(year 1997))
 
-	([ontology_Class11505] of  Book
+	([ontology_Class11502] of  Book
 
 		(author [ontology_Class10432])
 		(genre "Horror")
@@ -12728,7 +12707,7 @@
 		(title "AStirofEchoes")
 		(year 1958))
 
-	([ontology_Class11506] of  Book
+	([ontology_Class11503] of  Book
 
 		(author [ontology_Class10166])
 		(genre "Fantasy")
@@ -12738,7 +12717,7 @@
 		(title "TheDeedofPaksenarrion")
 		(year 1992))
 
-	([ontology_Class11507] of  Book
+	([ontology_Class11504] of  Book
 
 		(author [ontology_Class10069])
 		(genre "Classics")
@@ -12748,7 +12727,7 @@
 		(title "NotesfromUnderground,WhiteNights,TheDreamofaRidiculousMan,andSelectionsfromTheHouseoftheDead")
 		(year 1864))
 
-	([ontology_Class11508] of  Book
+	([ontology_Class11505] of  Book
 
 		(author [ontology_Class10433])
 		(genre "Classics")
@@ -12758,7 +12737,7 @@
 		(title "TheHunchbackofNotre-Dame")
 		(year 1831))
 
-	([ontology_Class11509] of  Book
+	([ontology_Class11506] of  Book
 
 		(author [ontology_Class10159])
 		(genre "Classics")
@@ -12768,7 +12747,7 @@
 		(title "TotheLighthouse")
 		(year 1927))
 
-	([ontology_Class11510] of  Book
+	([ontology_Class11507] of  Book
 
 		(author [ontology_Class10434])
 		(genre "Classics")
@@ -12778,7 +12757,7 @@
 		(title "TheCantervilleGhost")
 		(year 1887))
 
-	([ontology_Class11511] of  Book
+	([ontology_Class11508] of  Book
 
 		(author [ontology_Class10078])
 		(genre "Classics")
@@ -12788,7 +12767,7 @@
 		(title "TheWomaninWhite")
 		(year 1859))
 
-	([ontology_Class11512] of  Book
+	([ontology_Class11509] of  Book
 
 		(author [ontology_Class10228])
 		(genre "Classics")
@@ -12798,7 +12777,7 @@
 		(title "DeadSouls")
 		(year 1842))
 
-	([ontology_Class11513] of  Book
+	([ontology_Class11510] of  Book
 
 		(author [ontology_Class10195])
 		(genre "Classics")
@@ -12808,7 +12787,7 @@
 		(title "InSearchofLostTime")
 		(year 1927))
 
-	([ontology_Class11514] of  Book
+	([ontology_Class11511] of  Book
 
 		(author [ontology_Class10054])
 		(genre "Classics")
@@ -12818,7 +12797,7 @@
 		(title "TessoftheD'Urbervilles")
 		(year 1891))
 
-	([ontology_Class11515] of  Book
+	([ontology_Class11512] of  Book
 
 		(author [ontology_Class10062])
 		(genre "Classics")
@@ -12828,7 +12807,7 @@
 		(title "HeartofDarkness")
 		(year 1899))
 
-	([ontology_Class11516] of  Book
+	([ontology_Class11513] of  Book
 
 		(author [ontology_Class10240])
 		(genre "Horror")
@@ -12838,7 +12817,7 @@
 		(title "TheHauntingofHillHouse")
 		(year 1959))
 
-	([ontology_Class11517] of  Book
+	([ontology_Class11514] of  Book
 
 		(author [ontology_Class10108])
 		(genre "Classics")
@@ -12848,7 +12827,7 @@
 		(title "UncleTom'sCabin")
 		(year 1852))
 
-	([ontology_Class11518] of  Book
+	([ontology_Class11515] of  Book
 
 		(author [ontology_Class10196])
 		(genre "Classics")
@@ -12858,7 +12837,7 @@
 		(title "VanityFair")
 		(year 1848))
 
-	([ontology_Class11519] of  Book
+	([ontology_Class11516] of  Book
 
 		(author [ontology_Class10111])
 		(genre "Classics")
@@ -12868,7 +12847,7 @@
 		(title "Lolita")
 		(year 1955))
 
-	([ontology_Class11520] of  Book
+	([ontology_Class11517] of  Book
 
 		(author [ontology_Class10105])
 		(genre "Classics")
@@ -12878,7 +12857,7 @@
 		(title "TheThreeMusketeers")
 		(year 1844))
 
-	([ontology_Class11521] of  Book
+	([ontology_Class11518] of  Book
 
 		(author [ontology_Class10059])
 		(genre "Classics")
@@ -12888,7 +12867,7 @@
 		(title "MadameBovary")
 		(year 1856))
 
-	([ontology_Class11522] of  Book
+	([ontology_Class11519] of  Book
 
 		(author [ontology_Class10221])
 		(genre "Classics")
@@ -12898,7 +12877,7 @@
 		(title "Middlemarch")
 		(year 1871))
 
-	([ontology_Class11523] of  Book
+	([ontology_Class11520] of  Book
 
 		(author [ontology_Class10139])
 		(genre "Classics")
@@ -12908,7 +12887,7 @@
 		(title "Moby-Dick,or,theWhale")
 		(year 1851))
 
-	([ontology_Class11524] of  Book
+	([ontology_Class11521] of  Book
 
 		(author [ontology_Class10110])
 		(genre "Classics")
@@ -12918,7 +12897,7 @@
 		(title "AnnaKarenina")
 		(year 1877))
 
-	([ontology_Class11525] of  Book
+	([ontology_Class11522] of  Book
 
 		(author [ontology_Class10193])
 		(genre "Uncategorized")
@@ -12928,7 +12907,7 @@
 		(title "TheGodfather")
 		(year 1969))
 
-	([ontology_Class11526] of  Book
+	([ontology_Class11523] of  Book
 
 		(author [ontology_Class10435])
 		(genre "Thriller")
@@ -12938,7 +12917,7 @@
 		(title "DeathofanExpertWitness")
 		(year 1977))
 
-	([ontology_Class11527] of  Book
+	([ontology_Class11524] of  Book
 
 		(author [ontology_Class10322])
 		(genre "Uncategorized")
@@ -12948,7 +12927,7 @@
 		(title "CancerWard")
 		(year 1968))
 
-	([ontology_Class11528] of  Book
+	([ontology_Class11525] of  Book
 
 		(author [ontology_Class10374])
 		(genre "Classics")
@@ -12958,7 +12937,7 @@
 		(title "BridesheadRevisited:TheSacredandProfaneMemoriesofCaptainCharlesRyder")
 		(year 1945))
 
-	([ontology_Class11529] of  Book
+	([ontology_Class11526] of  Book
 
 		(author [ontology_Class10182])
 		(genre "Thriller")
@@ -12968,7 +12947,7 @@
 		(title "TheMurderofRogerAckroyd")
 		(year 1926))
 
-	([ontology_Class11530] of  Book
+	([ontology_Class11527] of  Book
 
 		(author [ontology_Class10202])
 		(genre "Classics")
@@ -12978,7 +12957,7 @@
 		(title "DoctorZhivago")
 		(year 1957))
 
-	([ontology_Class11531] of  Book
+	([ontology_Class11528] of  Book
 
 		(author [ontology_Class10436])
 		(genre "Uncategorized")
@@ -12988,7 +12967,7 @@
 		(title "Coma")
 		(year 1977))
 
-	([ontology_Class11532] of  Book
+	([ontology_Class11529] of  Book
 
 		(author [ontology_Class10437])
 		(genre "Romance")
@@ -12997,7 +12976,7 @@
 		(rating 400.0)
 		(title "FixHerUp"))
 
-	([ontology_Class11533] of  Book
+	([ontology_Class11530] of  Book
 
 		(author [ontology_Class10438])
 		(genre "Romance")
@@ -13006,7 +12985,7 @@
 		(rating 200.0)
 		(title "Space"))
 
-	([ontology_Class11534] of  Book
+	([ontology_Class11531] of  Book
 
 		(author [ontology_Class10212])
 		(genre "Classics")
@@ -13016,7 +12995,7 @@
 		(title "TheYellowWallpaperandOtherStories")
 		(year 1892))
 
-	([ontology_Class11535] of  Book
+	([ontology_Class11532] of  Book
 
 		(author [ontology_Class10345])
 		(genre "Historical")
@@ -13026,7 +13005,7 @@
 		(title "TheAlienist")
 		(year 1994))
 
-	([ontology_Class11536] of  Book
+	([ontology_Class11533] of  Book
 
 		(author [ontology_Class10070])
 		(genre "Uncategorized")
@@ -13036,7 +13015,7 @@
 		(title "ThePlague")
 		(year 1947))
 
-	([ontology_Class11537] of  Book
+	([ontology_Class11534] of  Book
 
 		(author [ontology_Class10065])
 		(genre "Classics")
@@ -13046,7 +13025,7 @@
 		(title "OneFlewOvertheCuckoo'sNest")
 		(year 1962))
 
-	([ontology_Class11538] of  Book
+	([ontology_Class11535] of  Book
 
 		(author [ontology_Class10439])
 		(genre "Uncategorized")
@@ -13056,7 +13035,7 @@
 		(title "AlisonWonderland")
 		(year 1999))
 
-	([ontology_Class11539] of  Book
+	([ontology_Class11536] of  Book
 
 		(author [ontology_Class10440])
 		(genre "Romance")
@@ -13066,7 +13045,7 @@
 		(title "WiththisKiss")
 		(year 1999))
 
-	([ontology_Class11540] of  Book
+	([ontology_Class11537] of  Book
 
 		(author [ontology_Class10441])
 		(genre "Romance")
@@ -13076,7 +13055,7 @@
 		(title "Tapestry")
 		(year 1995))
 
-	([ontology_Class11541] of  Book
+	([ontology_Class11538] of  Book
 
 		(author [ontology_Class10442])
 		(genre "Romance")
@@ -13086,7 +13065,7 @@
 		(title "AWhisperofRoses")
 		(year 1993))
 
-	([ontology_Class11542] of  Book
+	([ontology_Class11539] of  Book
 
 		(author [ontology_Class10443])
 		(genre "Romance")
@@ -13096,7 +13075,7 @@
 		(title "LordCarew'sBride")
 		(year 1995))
 
-	([ontology_Class11543] of  Book
+	([ontology_Class11540] of  Book
 
 		(author [ontology_Class10444])
 		(genre "Romance")
@@ -13106,7 +13085,7 @@
 		(title "BeautyandtheBeast")
 		(year 1992))
 
-	([ontology_Class11544] of  Book
+	([ontology_Class11541] of  Book
 
 		(author [ontology_Class10445])
 		(genre "Fantasy")
@@ -13116,7 +13095,7 @@
 		(title "Beast")
 		(year 1999))
 
-	([ontology_Class11545] of  Book
+	([ontology_Class11542] of  Book
 
 		(author [ontology_Class10446])
 		(genre "Romance")
@@ -13126,7 +13105,7 @@
 		(title "Beast")
 		(year 1997))
 
-	([ontology_Class11546] of  Book
+	([ontology_Class11543] of  Book
 
 		(author [ontology_Class10447])
 		(genre "Romance")
@@ -13136,7 +13115,7 @@
 		(title "TexasDestiny")
 		(year 1997))
 
-	([ontology_Class11547] of  Book
+	([ontology_Class11544] of  Book
 
 		(author [ontology_Class10448])
 		(genre "Horror")
@@ -13146,7 +13125,7 @@
 		(title "IntheDark")
 		(year 1994))
 
-	([ontology_Class11548] of  Book
+	([ontology_Class11545] of  Book
 
 		(author [ontology_Class10449])
 		(genre "Horror")
@@ -13156,7 +13135,7 @@
 		(title "TheLongWalk")
 		(year 1979))
 
-	([ontology_Class11549] of  Book
+	([ontology_Class11546] of  Book
 
 		(author [ontology_Class10210])
 		(genre "Horror")
@@ -13166,7 +13145,7 @@
 		(title "TheAmityvilleHorror")
 		(year 1977))
 
-	([ontology_Class11550] of  Book
+	([ontology_Class11547] of  Book
 
 		(author [ontology_Class10232])
 		(genre "Horror")
@@ -13176,7 +13155,7 @@
 		(title "Psycho")
 		(year 1959))
 
-	([ontology_Class11551] of  Book
+	([ontology_Class11548] of  Book
 
 		(author [ontology_Class10177])
 		(genre "Horror")
@@ -13186,7 +13165,7 @@
 		(title "Jaws")
 		(year 1973))
 
-	([ontology_Class11552] of  Book
+	([ontology_Class11549] of  Book
 
 		(author [ontology_Class10338])
 		(genre "Thriller")
@@ -13196,7 +13175,7 @@
 		(title "TheBeekeeper'sApprentice")
 		(year 1994))
 
-	([ontology_Class11553] of  Book
+	([ontology_Class11550] of  Book
 
 		(author [ontology_Class10238])
 		(genre "Horror")
@@ -13206,7 +13185,7 @@
 		(title "Rosemary'sBaby")
 		(year 1967))
 
-	([ontology_Class11554] of  Book
+	([ontology_Class11551] of  Book
 
 		(author [ontology_Class10450])
 		(genre "Romance")
@@ -13216,7 +13195,7 @@
 		(title "OneSummer")
 		(year 1993))
 
-	([ontology_Class11555] of  Book
+	([ontology_Class11552] of  Book
 
 		(author [ontology_Class10451])
 		(genre "Romance")
@@ -13226,7 +13205,7 @@
 		(title "FlandersPoint")
 		(year 1997))
 
-	([ontology_Class11556] of  Book
+	([ontology_Class11553] of  Book
 
 		(author [ontology_Class10452])
 		(genre "Uncategorized")
@@ -13236,7 +13215,7 @@
 		(title "Zeno'sConscience")
 		(year 1923))
 
-	([ontology_Class11557] of  Book
+	([ontology_Class11554] of  Book
 
 		(author [ontology_Class10289])
 		(genre "Uncategorized")
@@ -13246,7 +13225,7 @@
 		(title "TheGoldenNotebook")
 		(year 1962))
 
-	([ontology_Class11558] of  Book
+	([ontology_Class11555] of  Book
 
 		(author [ontology_Class10373])
 		(genre "Historical")
@@ -13256,7 +13235,7 @@
 		(title "MemoirsofHadrian")
 		(year 1951))
 
-	([ontology_Class11559] of  Book
+	([ontology_Class11556] of  Book
 
 		(author [ontology_Class10056])
 		(genre "Classics")
@@ -13266,7 +13245,7 @@
 		(title "InvisibleMan")
 		(year 1952))
 
-	([ontology_Class11560] of  Book
+	([ontology_Class11557] of  Book
 
 		(author [ontology_Class10453])
 		(genre "Uncategorized")
@@ -13276,7 +13255,7 @@
 		(title "Molloy,MaloneDies,TheUnnamable")
 		(year 1958))
 
-	([ontology_Class11561] of  Book
+	([ontology_Class11558] of  Book
 
 		(author [ontology_Class10064])
 		(genre "Uncategorized")
@@ -13286,7 +13265,7 @@
 		(title "ThingsFallApart")
 		(year 1958))
 
-	([ontology_Class11562] of  Book
+	([ontology_Class11559] of  Book
 
 		(author [ontology_Class10050])
 		(genre "Uncategorized")
@@ -13296,7 +13275,7 @@
 		(title "Ficciones")
 		(year 1944))
 
-	([ontology_Class11563] of  Book
+	([ontology_Class11560] of  Book
 
 		(author [ontology_Class10350])
 		(genre "Uncategorized")
@@ -13306,7 +13285,7 @@
 		(title "ZorbatheGreek")
 		(year 1946))
 
-	([ontology_Class11564] of  Book
+	([ontology_Class11561] of  Book
 
 		(author [ontology_Class10010])
 		(genre "Uncategorized")
@@ -13316,7 +13295,7 @@
 		(title "TheReader")
 		(year 1995))
 
-	([ontology_Class11565] of  Book
+	([ontology_Class11562] of  Book
 
 		(author [ontology_Class10144])
 		(genre "Young")
@@ -13326,7 +13305,7 @@
 		(title "JulieoftheWolves")
 		(year 1972))
 
-	([ontology_Class11566] of  Book
+	([ontology_Class11563] of  Book
 
 		(author [ontology_Class10141])
 		(genre "Uncategorized")
@@ -13336,7 +13315,7 @@
 		(title "JohnnyGotHisGun")
 		(year 1939))
 
-	([ontology_Class11567] of  Book
+	([ontology_Class11564] of  Book
 
 		(author [ontology_Class10142])
 		(genre "Classics")
@@ -13346,7 +13325,7 @@
 		(title "TheSwissFamilyRobinson")
 		(year 1812))
 
-	([ontology_Class11568] of  Book
+	([ontology_Class11565] of  Book
 
 		(author [ontology_Class10155])
 		(genre "Uncategorized")
@@ -13356,7 +13335,7 @@
 		(title "BrokebackMountain")
 		(year 1997))
 
-	([ontology_Class11569] of  Book
+	([ontology_Class11566] of  Book
 
 		(author [ontology_Class10386])
 		(genre "Historical")
@@ -13366,7 +13345,7 @@
 		(title "HistoryofthePeloponnesianWar")
 		(year -411))
 
-	([ontology_Class11570] of  Book
+	([ontology_Class11567] of  Book
 
 		(author [ontology_Class10454])
 		(genre "Historical")
@@ -13376,7 +13355,7 @@
 		(title "CrossofIron")
 		(year 1955))
 
-	([ontology_Class11571] of  Book
+	([ontology_Class11568] of  Book
 
 		(author [ontology_Class10455])
 		(genre "Uncategorized")
@@ -13386,7 +13365,7 @@
 		(title "HMSUlysses")
 		(year 1955))
 
-	([ontology_Class11572] of  Book
+	([ontology_Class11569] of  Book
 
 		(author [ontology_Class10302])
 		(genre "Historical")
@@ -13396,7 +13375,7 @@
 		(title "WhenHitlerStolePinkRabbit")
 		(year 1971))
 
-	([ontology_Class11573] of  Book
+	([ontology_Class11570] of  Book
 
 		(author [ontology_Class10456])
 		(genre "Uncategorized")
@@ -13406,7 +13385,7 @@
 		(title "FromHeretoEternity")
 		(year 1951))
 
-	([ontology_Class11574] of  Book
+	([ontology_Class11571] of  Book
 
 		(author [ontology_Class10298])
 		(genre "Historical")
@@ -13416,7 +13395,7 @@
 		(title "IfIShouldDieBeforeIWake")
 		(year 1994))
 
-	([ontology_Class11575] of  Book
+	([ontology_Class11572] of  Book
 
 		(author [ontology_Class10457])
 		(genre "Uncategorized")
@@ -13426,7 +13405,7 @@
 		(title "TheYoungLions")
 		(year 1948))
 
-	([ontology_Class11576] of  Book
+	([ontology_Class11573] of  Book
 
 		(author [ontology_Class10101])
 		(genre "Historical")
@@ -13436,7 +13415,7 @@
 		(title "BattleCry")
 		(year 1953))
 
-	([ontology_Class11577] of  Book
+	([ontology_Class11574] of  Book
 
 		(author [ontology_Class10297])
 		(genre "Historical")
@@ -13446,7 +13425,7 @@
 		(title "SummerofMyGermanSoldier")
 		(year 1973))
 
-	([ontology_Class11578] of  Book
+	([ontology_Class11575] of  Book
 
 		(author [ontology_Class10458])
 		(genre "Uncategorized")
@@ -13456,7 +13435,7 @@
 		(title "RunSilentRunDeep")
 		(year 1955))
 
-	([ontology_Class11579] of  Book
+	([ontology_Class11576] of  Book
 
 		(author [ontology_Class10185])
 		(genre "Uncategorized")
@@ -13466,7 +13445,7 @@
 		(title "SnowFallingonCedars")
 		(year 1994))
 
-	([ontology_Class11580] of  Book
+	([ontology_Class11577] of  Book
 
 		(author [ontology_Class10459])
 		(genre "Uncategorized")
@@ -13476,7 +13455,7 @@
 		(title "TheCruelSea")
 		(year 1951))
 
-	([ontology_Class11581] of  Book
+	([ontology_Class11578] of  Book
 
 		(author [ontology_Class10460])
 		(genre "Historical")
@@ -13486,7 +13465,7 @@
 		(title "Enigma")
 		(year 1995))
 
-	([ontology_Class11582] of  Book
+	([ontology_Class11579] of  Book
 
 		(author [ontology_Class10342])
 		(genre "Uncategorized")
@@ -13496,7 +13475,7 @@
 		(title "TheEndoftheAffair")
 		(year 1951))
 
-	([ontology_Class11583] of  Book
+	([ontology_Class11580] of  Book
 
 		(author [ontology_Class10323])
 		(genre "Classics")
@@ -13506,7 +13485,7 @@
 		(title "ASeparatePeace")
 		(year 1959))
 
-	([ontology_Class11584] of  Book
+	([ontology_Class11581] of  Book
 
 		(author [ontology_Class10301])
 		(genre "Historical")
@@ -13516,7 +13495,7 @@
 		(title "StonesfromtheRiver")
 		(year 1994))
 
-	([ontology_Class11585] of  Book
+	([ontology_Class11582] of  Book
 
 		(author [ontology_Class10300])
 		(genre "Uncategorized")
@@ -13526,7 +13505,7 @@
 		(title "EveryManDiesAlone")
 		(year 1947))
 
-	([ontology_Class11586] of  Book
+	([ontology_Class11583] of  Book
 
 		(author [ontology_Class10461])
 		(genre "Uncategorized")
@@ -13536,7 +13515,7 @@
 		(title "TheEagleHasLanded")
 		(year 1975))
 
-	([ontology_Class11587] of  Book
+	([ontology_Class11584] of  Book
 
 		(author [ontology_Class10112])
 		(genre "Classics")
@@ -13546,7 +13525,7 @@
 		(title "Catch-22")
 		(year 1961))
 
-	([ontology_Class11588] of  Book
+	([ontology_Class11585] of  Book
 
 		(author [ontology_Class10133])
 		(genre "Fantasy")
@@ -13556,7 +13535,7 @@
 		(title "TheGormenghastNovels")
 		(year 1959))
 
-	([ontology_Class11589] of  Book
+	([ontology_Class11586] of  Book
 
 		(author [ontology_Class10134])
 		(genre "Uncategorized")
@@ -13566,7 +13545,7 @@
 		(title "TheBourneTrilogy")
 		(year 1991))
 
-	([ontology_Class11590] of  Book
+	([ontology_Class11587] of  Book
 
 		(author [ontology_Class10135])
 		(genre "Classics")
@@ -13576,7 +13555,7 @@
 		(title "TheForsyteSaga")
 		(year 1921))
 
-	([ontology_Class11591] of  Book
+	([ontology_Class11588] of  Book
 
 		(author [ontology_Class10146])
 		(genre "Uncategorized")
@@ -13586,7 +13565,7 @@
 		(title "Sounder")
 		(year 1969))
 
-	([ontology_Class11592] of  Book
+	([ontology_Class11589] of  Book
 
 		(author [ontology_Class10136])
 		(genre "Classics")
@@ -13596,7 +13575,7 @@
 		(title "TheCompleteSherlockHolmes")
 		(year 1927))
 
-	([ontology_Class11593] of  Book
+	([ontology_Class11590] of  Book
 
 		(author [ontology_Class10147])
 		(genre "Classics")
@@ -13606,7 +13585,7 @@
 		(title "TheYearling")
 		(year 1938))
 
-	([ontology_Class11594] of  Book
+	([ontology_Class11591] of  Book
 
 		(author [ontology_Class10148])
 		(genre "Classics")
@@ -13616,7 +13595,7 @@
 		(title "OldYeller")
 		(year 1956))
 
-	([ontology_Class11595] of  Book
+	([ontology_Class11592] of  Book
 
 		(author [ontology_Class10145])
 		(genre "Romance")
@@ -13626,7 +13605,7 @@
 		(title "BabyLove")
 		(year 1999))
 
-	([ontology_Class11596] of  Book
+	([ontology_Class11593] of  Book
 
 		(author [ontology_Class10462])
 		(genre "Thriller")
@@ -13636,7 +13615,7 @@
 		(title "TheCatWhoCouldReadBackwards")
 		(year 1966))
 
-	([ontology_Class11597] of  Book
+	([ontology_Class11594] of  Book
 
 		(author [ontology_Class10463])
 		(genre "Thriller")
@@ -13646,7 +13625,7 @@
 		(title "ThymeofDeath")
 		(year 1992))
 
-	([ontology_Class11598] of  Book
+	([ontology_Class11595] of  Book
 
 		(author [ontology_Class10464])
 		(genre "Thriller")
@@ -13656,7 +13635,7 @@
 		(title "MissZukasandtheLibraryMurders")
 		(year 1994))
 
-	([ontology_Class11599] of  Book
+	([ontology_Class11596] of  Book
 
 		(author [ontology_Class10465])
 		(genre "Thriller")
@@ -13666,7 +13645,7 @@
 		(title "CrewelWorld")
 		(year 1999))
 
-	([ontology_Class11600] of  Book
+	([ontology_Class11597] of  Book
 
 		(author [ontology_Class10466])
 		(genre "Thriller")
@@ -13676,7 +13655,7 @@
 		(title "TheCaseoftheGildedFly")
 		(year 1944))
 
-	([ontology_Class11601] of  Book
+	([ontology_Class11598] of  Book
 
 		(author [ontology_Class10467])
 		(genre "Thriller")
@@ -13686,7 +13665,7 @@
 		(title "JustDesserts")
 		(year 1995))
 
-	([ontology_Class11602] of  Book
+	([ontology_Class11599] of  Book
 
 		(author [ontology_Class10080])
 		(genre "Thriller")
@@ -13696,7 +13675,7 @@
 		(title "TheNovice'sTale")
 		(year 1992))
 
-	([ontology_Class11603] of  Book
+	([ontology_Class11600] of  Book
 
 		(author [ontology_Class10468])
 		(genre "Thriller")
@@ -13706,7 +13685,7 @@
 		(title "TheBodyInTheTransept")
 		(year 1995))
 
-	([ontology_Class11604] of  Book
+	([ontology_Class11601] of  Book
 
 		(author [ontology_Class10469])
 		(genre "Thriller")
@@ -13716,7 +13695,7 @@
 		(title "DeathatWentwaterCourt")
 		(year 1994))
 
-	([ontology_Class11605] of  Book
+	([ontology_Class11602] of  Book
 
 		(author [ontology_Class10470])
 		(genre "Thriller")
@@ -13726,7 +13705,7 @@
 		(title "BurglarsCan'tBeChoosers")
 		(year 1977))
 
-	([ontology_Class11606] of  Book
+	([ontology_Class11603] of  Book
 
 		(author [ontology_Class10471])
 		(genre "Thriller")
@@ -13736,7 +13715,7 @@
 		(title "MurderonAstorPlace")
 		(year 1999))
 
-	([ontology_Class11607] of  Book
+	([ontology_Class11604] of  Book
 
 		(author [ontology_Class10472])
 		(genre "Fantasy")
@@ -13746,7 +13725,7 @@
 		(title "TheKingofElfland'sDaughter")
 		(year 1924))
 
-	([ontology_Class11608] of  Book
+	([ontology_Class11605] of  Book
 
 		(author [ontology_Class10344])
 		(genre "Thriller")
@@ -13756,7 +13735,7 @@
 		(title "Fer-de-Lance")
 		(year 1934))
 
-	([ontology_Class11609] of  Book
+	([ontology_Class11606] of  Book
 
 		(author [ontology_Class10033])
 		(genre "Fantasy")
@@ -13766,7 +13745,7 @@
 		(title "TheOnceandFutureKing")
 		(year 1958))
 
-	([ontology_Class11610] of  Book
+	([ontology_Class11607] of  Book
 
 		(author [ontology_Class10215])
 		(genre "Fantasy")
@@ -13776,7 +13755,7 @@
 		(title "TamLin")
 		(year 1991))
 
-	([ontology_Class11611] of  Book
+	([ontology_Class11608] of  Book
 
 		(author [ontology_Class10473])
 		(genre "Thriller")
@@ -13786,7 +13765,7 @@
 		(title "DeathatBishop'sKeep")
 		(year 1994))
 
-	([ontology_Class11612] of  Book
+	([ontology_Class11609] of  Book
 
 		(author [ontology_Class10474])
 		(genre "Thriller")
@@ -13796,7 +13775,7 @@
 		(title "ThemBones")
 		(year 1999))
 
-	([ontology_Class11613] of  Book
+	([ontology_Class11610] of  Book
 
 		(author [ontology_Class10475])
 		(genre "Thriller")
@@ -13806,7 +13785,7 @@
 		(title "Fool'sPuzzle")
 		(year 1994))
 
-	([ontology_Class11614] of  Book
+	([ontology_Class11611] of  Book
 
 		(author [ontology_Class10476])
 		(genre "Thriller")
@@ -13816,7 +13795,7 @@
 		(title "DealBreaker")
 		(year 1995))
 
-	([ontology_Class11615] of  Book
+	([ontology_Class11612] of  Book
 
 		(author [ontology_Class10477])
 		(genre "Thriller")
@@ -13826,7 +13805,7 @@
 		(title "MurderonaGirls'NightOut")
 		(year 1996))
 
-	([ontology_Class11616] of  Book
+	([ontology_Class11613] of  Book
 
 		(author [ontology_Class10478])
 		(genre "Thriller")
@@ -13836,7 +13815,7 @@
 		(title "AuntDimity'sDeath")
 		(year 1992))
 
-	([ontology_Class11617] of  Book
+	([ontology_Class11614] of  Book
 
 		(author [ontology_Class10181])
 		(genre "Thriller")
@@ -13846,7 +13825,7 @@
 		(title "WhoseBody?")
 		(year 1923))
 
-	([ontology_Class11618] of  Book
+	([ontology_Class11615] of  Book
 
 		(author [ontology_Class10479])
 		(genre "Thriller")
@@ -13856,7 +13835,7 @@
 		(title "MurderWithPeacocks")
 		(year 1999))
 
-	([ontology_Class11619] of  Book
+	([ontology_Class11616] of  Book
 
 		(author [ontology_Class10480])
 		(genre "Thriller")
@@ -13866,7 +13845,7 @@
 		(title "TheUnexpectedMrs.Pollifax")
 		(year 1966))
 
-	([ontology_Class11620] of  Book
+	([ontology_Class11617] of  Book
 
 		(author [ontology_Class10481])
 		(genre "Uncategorized")
@@ -13876,7 +13855,7 @@
 		(title "Cry,theBelovedCountry")
 		(year 1948))
 
-	([ontology_Class11621] of  Book
+	([ontology_Class11618] of  Book
 
 		(author [ontology_Class10045])
 		(genre "Classics")
@@ -13886,7 +13865,7 @@
 		(title "Siddhartha")
 		(year 1922))
 
-	([ontology_Class11622] of  Book
+	([ontology_Class11619] of  Book
 
 		(author [ontology_Class10482])
 		(genre "Historical")
@@ -13896,7 +13875,7 @@
 		(title "AnnaandtheKingofSiam")
 		(year 1943))
 
-	([ontology_Class11623] of  Book
+	([ontology_Class11620] of  Book
 
 		(author [ontology_Class10162])
 		(genre "Classics")
@@ -13906,7 +13885,7 @@
 		(title "TheGoodEarth")
 		(year 1931))
 
-	([ontology_Class11624] of  Book
+	([ontology_Class11621] of  Book
 
 		(author [ontology_Class10319])
 		(genre "Uncategorized")
@@ -13916,7 +13895,7 @@
 		(title "FightClub")
 		(year 1996))
 
-	([ontology_Class11625] of  Book
+	([ontology_Class11622] of  Book
 
 		(author [ontology_Class10483])
 		(genre "Uncategorized")
@@ -13926,7 +13905,7 @@
 		(title "Factotum")
 		(year 1975))
 
-	([ontology_Class11626] of  Book
+	([ontology_Class11623] of  Book
 
 		(author [ontology_Class10209])
 		(genre "Uncategorized")
@@ -13936,7 +13915,7 @@
 		(title "RequiemforaDream")
 		(year 1978))
 
-	([ontology_Class11627] of  Book
+	([ontology_Class11624] of  Book
 
 		(author [ontology_Class10484])
 		(genre "Fantasy")
@@ -13946,7 +13925,7 @@
 		(title "MoribitoII:GuardianoftheDarkness")
 		(year 1999))
 
-	([ontology_Class11628] of  Book
+	([ontology_Class11625] of  Book
 
 		(author [ontology_Class10485])
 		(genre "Uncategorized")
@@ -13956,7 +13935,7 @@
 		(title "പാണ്ഡവപുരം[Pandavapuram]")
 		(year 1979))
 
-	([ontology_Class11629] of  Book
+	([ontology_Class11626] of  Book
 
 		(author [ontology_Class10003])
 		(genre "Uncategorized")
@@ -13966,7 +13945,7 @@
 		(title "AtlasShrugged")
 		(year 1957))
 
-	([ontology_Class11630] of  Book
+	([ontology_Class11627] of  Book
 
 		(author [ontology_Class10163])
 		(genre "Classics")
@@ -13976,7 +13955,7 @@
 		(title "OntheRoad")
 		(year 1955))
 
-	([ontology_Class11631] of  Book
+	([ontology_Class11628] of  Book
 
 		(author [ontology_Class10486])
 		(genre "Fantasy")
@@ -13986,7 +13965,7 @@
 		(title "SongintheSilence")
 		(year 1996))
 
-	([ontology_Class11632] of  Book
+	([ontology_Class11629] of  Book
 
 		(author [ontology_Class10487])
 		(genre "Uncategorized")
@@ -13996,7 +13975,7 @@
 		(title "Indulekha")
 		(year 1889))
 
-	([ontology_Class11633] of  Book
+	([ontology_Class11630] of  Book
 
 		(author [ontology_Class10488])
 		(genre "Uncategorized")
@@ -14006,7 +13985,7 @@
 		(title "സ്മാരകശിലകൾ[Smarakasilakal]")
 		(year 1977))
 
-	([ontology_Class11634] of  Book
+	([ontology_Class11631] of  Book
 
 		(author [ontology_Class10243])
 		(genre "Fantasy")
@@ -14016,7 +13995,7 @@
 		(title "Dragon'sBait")
 		(year 1992))
 
-	([ontology_Class11635] of  Book
+	([ontology_Class11632] of  Book
 
 		(author [ontology_Class10489])
 		(genre "Uncategorized")
@@ -14026,7 +14005,7 @@
 		(title "അഗ്നിസാക്ഷി[Agnisakshi]")
 		(year 1976))
 
-	([ontology_Class11636] of  Book
+	([ontology_Class11633] of  Book
 
 		(author [ontology_Class10490])
 		(genre "Fantasy")
@@ -14036,7 +14015,7 @@
 		(title "JeremyThatcher,DragonHatcher")
 		(year 1991))
 
-	([ontology_Class11637] of  Book
+	([ontology_Class11634] of  Book
 
 		(author [ontology_Class10491])
 		(genre "Fantasy")
@@ -14046,7 +14025,7 @@
 		(title "TheElvenbane")
 		(year 1991))
 
-	([ontology_Class11638] of  Book
+	([ontology_Class11635] of  Book
 
 		(author [ontology_Class10205])
 		(genre "Young")
@@ -14056,7 +14035,7 @@
 		(title "Tomorrow,WhentheWarBegan")
 		(year 1993))
 
-	([ontology_Class11639] of  Book
+	([ontology_Class11636] of  Book
 
 		(author [ontology_Class10492])
 		(genre "Fantasy")
@@ -14066,7 +14045,7 @@
 		(title "TheTwelveKingdoms:SeaofShadow")
 		(year 1992))
 
-	([ontology_Class11640] of  Book
+	([ontology_Class11637] of  Book
 
 		(author [ontology_Class10493])
 		(genre "Horror")
@@ -14076,7 +14055,7 @@
 		(title "MySoultoKeep")
 		(year 1997))
 
-	([ontology_Class11641] of  Book
+	([ontology_Class11638] of  Book
 
 		(author [ontology_Class10208])
 		(genre "Uncategorized")
@@ -14086,7 +14065,7 @@
 		(title "BastardOutofCarolina")
 		(year 1992))
 
-	([ontology_Class11642] of  Book
+	([ontology_Class11639] of  Book
 
 		(author [ontology_Class10494])
 		(genre "Uncategorized")
@@ -14096,7 +14075,7 @@
 		(title "WithoutRemorse")
 		(year 1993))
 
-	([ontology_Class11643] of  Book
+	([ontology_Class11640] of  Book
 
 		(author [ontology_Class10495])
 		(genre "Uncategorized")
@@ -14106,7 +14085,7 @@
 		(title "River,CrossMyHeart")
 		(year 1999))
 
-	([ontology_Class11644] of  Book
+	([ontology_Class11641] of  Book
 
 		(author [ontology_Class10496])
 		(genre "Uncategorized")
@@ -14116,7 +14095,7 @@
 		(title "MotherofPearl")
 		(year 1999))
 
-	([ontology_Class11645] of  Book
+	([ontology_Class11642] of  Book
 
 		(author [ontology_Class10497])
 		(genre "Uncategorized")
@@ -14126,7 +14105,7 @@
 		(title "SongsinOrdinaryTime")
 		(year 1995))
 
-	([ontology_Class11646] of  Book
+	([ontology_Class11643] of  Book
 
 		(author [ontology_Class10498])
 		(genre "Uncategorized")
@@ -14136,7 +14115,7 @@
 		(title "VinegarHill")
 		(year 1994))
 
-	([ontology_Class11647] of  Book
+	([ontology_Class11644] of  Book
 
 		(author [ontology_Class10499])
 		(genre "Uncategorized")
@@ -14146,7 +14125,7 @@
 		(title "Jewel")
 		(year 1991))
 
-	([ontology_Class11648] of  Book
+	([ontology_Class11645] of  Book
 
 		(author [ontology_Class10500])
 		(genre "Uncategorized")
@@ -14156,7 +14135,7 @@
 		(title "BackRoads")
 		(year 1999))
 
-	([ontology_Class11649] of  Book
+	([ontology_Class11646] of  Book
 
 		(author [ontology_Class10501])
 		(genre "Uncategorized")
@@ -14166,7 +14145,7 @@
 		(title "Breath,Eyes,Memory")
 		(year 1994))
 
-	([ontology_Class11650] of  Book
+	([ontology_Class11647] of  Book
 
 		(author [ontology_Class10502])
 		(genre "Uncategorized")
@@ -14176,7 +14155,7 @@
 		(title "WhileIWasGone")
 		(year 1999))
 
-	([ontology_Class11651] of  Book
+	([ontology_Class11648] of  Book
 
 		(author [ontology_Class10503])
 		(genre "Uncategorized")
@@ -14186,7 +14165,7 @@
 		(title "AMapoftheWorld")
 		(year 1992))
 
-	([ontology_Class11652] of  Book
+	([ontology_Class11649] of  Book
 
 		(author [ontology_Class10504])
 		(genre "Uncategorized")
@@ -14196,7 +14175,7 @@
 		(title "GapCreek")
 		(year 1999))
 
-	([ontology_Class11653] of  Book
+	([ontology_Class11650] of  Book
 
 		(author [ontology_Class10223])
 		(genre "Romance")
@@ -14206,7 +14185,7 @@
 		(title "RegencyBuck")
 		(year 1935))
 
-	([ontology_Class11654] of  Book
+	([ontology_Class11651] of  Book
 
 		(author [ontology_Class10394])
 		(genre "Uncategorized")
@@ -14216,7 +14195,7 @@
 		(title "ALessonBeforeDying")
 		(year 1993))
 
-	([ontology_Class11655] of  Book
+	([ontology_Class11652] of  Book
 
 		(author [ontology_Class10505])
 		(genre "Uncategorized")
@@ -14226,7 +14205,7 @@
 		(title "FallonYourKnees")
 		(year 1996))
 
-	([ontology_Class11656] of  Book
+	([ontology_Class11653] of  Book
 
 		(author [ontology_Class10314])
 		(genre "Uncategorized")
@@ -14236,7 +14215,7 @@
 		(title "WeWeretheMulvaneys")
 		(year 1996))
 
-	([ontology_Class11657] of  Book
+	([ontology_Class11654] of  Book
 
 		(author [ontology_Class10506])
 		(genre "Romance")
@@ -14246,7 +14225,7 @@
 		(title "Frisco'sKid")
 		(year 1997))
 
-	([ontology_Class11658] of  Book
+	([ontology_Class11655] of  Book
 
 		(author [ontology_Class10102])
 		(genre "Historical")
@@ -14256,7 +14235,7 @@
 		(title "Katherine")
 		(year 1954))
 
-	([ontology_Class11659] of  Book
+	([ontology_Class11656] of  Book
 
 		(author [ontology_Class10204])
 		(genre "Classics")
@@ -14266,7 +14245,7 @@
 		(title "NorthandSouth")
 		(year 1855))
 
-	([ontology_Class11660] of  Book
+	([ontology_Class11657] of  Book
 
 		(author [ontology_Class10098])
 		(genre "Classics")
@@ -14276,7 +14255,7 @@
 		(title "Ivanhoe")
 		(year 1819))
 
-	([ontology_Class11661] of  Book
+	([ontology_Class11658] of  Book
 
 		(author [ontology_Class10507])
 		(genre "Adventure")
@@ -14286,7 +14265,7 @@
 		(title "TheMediterraneanCaper")
 		(year 1973))
 
-	([ontology_Class11662] of  Book
+	([ontology_Class11659] of  Book
 
 		(author [ontology_Class10346])
 		(genre "Thriller")
@@ -14296,7 +14275,7 @@
 		(title "TheBoneCollector")
 		(year 1997))
 
-	([ontology_Class11663] of  Book
+	([ontology_Class11660] of  Book
 
 		(author [ontology_Class10189])
 		(genre "Thriller")
@@ -14306,7 +14285,7 @@
 		(title "KillingFloor")
 		(year 1997))
 
-	([ontology_Class11664] of  Book
+	([ontology_Class11661] of  Book
 
 		(author [ontology_Class10359])
 		(genre "Romance")
@@ -14316,7 +14295,7 @@
 		(title "OntheNightoftheSeventhMoon")
 		(year 1972))
 
-	([ontology_Class11665] of  Book
+	([ontology_Class11662] of  Book
 
 		(author [ontology_Class10353])
 		(genre "Historical")
@@ -14326,7 +14305,7 @@
 		(title "TheMorningGift")
 		(year 1993))
 
-	([ontology_Class11666] of  Book
+	([ontology_Class11663] of  Book
 
 		(author [ontology_Class10508])
 		(genre "Romance")
@@ -14336,7 +14315,7 @@
 		(title "OnceinaBlueMoon")
 		(year 1993))
 
-	([ontology_Class11667] of  Book
+	([ontology_Class11664] of  Book
 
 		(author [ontology_Class10509])
 		(genre "Horror")
@@ -14346,7 +14325,7 @@
 		(title "ConjureWife")
 		(year 1943))
 
-	([ontology_Class11668] of  Book
+	([ontology_Class11665] of  Book
 
 		(author [ontology_Class10510])
 		(genre "Historical")
@@ -14356,7 +14335,7 @@
 		(title "TheBrethren:InsidetheSupremeCourt")
 		(year 1979))
 
-	([ontology_Class11669] of  Book
+	([ontology_Class11666] of  Book
 
 		(author [ontology_Class10387])
 		(genre "Religious")
@@ -14366,7 +14345,7 @@
 		(title "ThePrincess")
 		(year 1999))
 
-	([ontology_Class11670] of  Book
+	([ontology_Class11667] of  Book
 
 		(author [ontology_Class10096])
 		(genre "Historical")
@@ -14376,7 +14355,7 @@
 		(title "ForeverAmber")
 		(year 1944))
 
-	([ontology_Class11671] of  Book
+	([ontology_Class11668] of  Book
 
 		(author [ontology_Class10511])
 		(genre "Fantasy")
@@ -14386,7 +14365,7 @@
 		(title "Nobody'sSon")
 		(year 1993))
 
-	([ontology_Class11672] of  Book
+	([ontology_Class11669] of  Book
 
 		(author [ontology_Class10512])
 		(genre "Fantasy")
@@ -14396,7 +14375,7 @@
 		(title "Lud-in-the-Mist")
 		(year 1926))
 
-	([ontology_Class11673] of  Book
+	([ontology_Class11670] of  Book
 
 		(author [ontology_Class10513])
 		(genre "Historical")
@@ -14406,7 +14385,7 @@
 		(title "Angelique")
 		(year 1956))
 
-	([ontology_Class11674] of  Book
+	([ontology_Class11671] of  Book
 
 		(author [ontology_Class10514])
 		(genre "Historical")
@@ -14416,7 +14395,7 @@
 		(title "MiracleatPhiladelphia:TheStoryoftheConstitutionalConvention,MaytoSeptember1787")
 		(year 1966))
 
-	([ontology_Class11675] of  Book
+	([ontology_Class11672] of  Book
 
 		(author [ontology_Class10389])
 		(genre "Uncategorized")
@@ -14426,7 +14405,7 @@
 		(title "Christy")
 		(year 1967))
 
-	([ontology_Class11676] of  Book
+	([ontology_Class11673] of  Book
 
 		(author [ontology_Class10515])
 		(genre "Fantasy")
@@ -14436,7 +14415,7 @@
 		(title "Aurian")
 		(year 1994))
 
-	([ontology_Class11677] of  Book
+	([ontology_Class11674] of  Book
 
 		(author [ontology_Class10516])
 		(genre "Fantasy")
@@ -14446,7 +14425,7 @@
 		(title "TheRuinsofAmbrai")
 		(year 1994))
 
-	([ontology_Class11678] of  Book
+	([ontology_Class11675] of  Book
 
 		(author [ontology_Class10203])
 		(genre "Religious")
@@ -14456,7 +14435,7 @@
 		(title "MarkoftheLionTrilogy")
 		(year 1993))
 
-	([ontology_Class11679] of  Book
+	([ontology_Class11676] of  Book
 
 		(author [ontology_Class10378])
 		(genre "Fantasy")
@@ -14466,7 +14445,7 @@
 		(title "Silverlock")
 		(year 1949))
 
-	([ontology_Class11680] of  Book
+	([ontology_Class11677] of  Book
 
 		(author [ontology_Class10517])
 		(genre "Fantasy")
@@ -14476,7 +14455,7 @@
 		(title "Illusion")
 		(year 1991))
 
-	([ontology_Class11681] of  Book
+	([ontology_Class11678] of  Book
 
 		(author [ontology_Class10518])
 		(genre "Young")
@@ -14486,7 +14465,7 @@
 		(title "RunningOutofTime")
 		(year 1995))
 
-	([ontology_Class11682] of  Book
+	([ontology_Class11679] of  Book
 
 		(author [ontology_Class10519])
 		(genre "Classics")
@@ -14496,7 +14475,7 @@
 		(title "TarzanoftheApes")
 		(year 1912))
 
-	([ontology_Class11683] of  Book
+	([ontology_Class11680] of  Book
 
 		(author [ontology_Class10520])
 		(genre "Young")
@@ -14506,7 +14485,7 @@
 		(title "TheChocolateWar")
 		(year 1974))
 
-	([ontology_Class11684] of  Book
+	([ontology_Class11681] of  Book
 
 		(author [ontology_Class10355])
 		(genre "Historical")
@@ -14516,7 +14495,7 @@
 		(title "Mara,DaughteroftheNile")
 		(year 1953))
 
-	([ontology_Class11685] of  Book
+	([ontology_Class11682] of  Book
 
 		(author [ontology_Class10192])
 		(genre "Thriller")
@@ -14526,7 +14505,7 @@
 		(title "TheLadyintheLake")
 		(year 1943))
 
-	([ontology_Class11686] of  Book
+	([ontology_Class11683] of  Book
 
 		(author [ontology_Class10336])
 		(genre "Historical")
@@ -14536,7 +14515,7 @@
 		(title "Talwar")
 		(year 1993))
 
-	([ontology_Class11687] of  Book
+	([ontology_Class11684] of  Book
 
 		(author [ontology_Class10521])
 		(genre "Thriller")
@@ -14546,7 +14525,7 @@
 		(title "InaDrySeason")
 		(year 1999))
 
-	([ontology_Class11688] of  Book
+	([ontology_Class11685] of  Book
 
 		(author [ontology_Class10084])
 		(genre "Historical")
@@ -14556,7 +14535,7 @@
 		(title "TheReckoning")
 		(year 1991))
 
-	([ontology_Class11689] of  Book
+	([ontology_Class11686] of  Book
 
 		(author [ontology_Class10180])
 		(genre "Thriller")
@@ -14566,7 +14545,7 @@
 		(title "FacelessKillers")
 		(year 1991))
 
-	([ontology_Class11690] of  Book
+	([ontology_Class11687] of  Book
 
 		(author [ontology_Class10522])
 		(genre "Thriller")
@@ -14576,7 +14555,7 @@
 		(title "BaltimoreBlues")
 		(year 1997))
 
-	([ontology_Class11691] of  Book
+	([ontology_Class11688] of  Book
 
 		(author [ontology_Class10523])
 		(genre "Thriller")
@@ -14586,7 +14565,7 @@
 		(title "TheQuietGame")
 		(year 1999))
 
-	([ontology_Class11692] of  Book
+	([ontology_Class11689] of  Book
 
 		(author [ontology_Class10524])
 		(genre "Thriller")
@@ -14596,7 +14575,7 @@
 		(title "HardTime")
 		(year 1999))
 
-	([ontology_Class11693] of  Book
+	([ontology_Class11690] of  Book
 
 		(author [ontology_Class10525])
 		(genre "Thriller")
@@ -14606,7 +14585,7 @@
 		(title "Mallory'sOracle")
 		(year 1994))
 
-	([ontology_Class11694] of  Book
+	([ontology_Class11691] of  Book
 
 		(author [ontology_Class10526])
 		(genre "Thriller")
@@ -14616,7 +14595,7 @@
 		(title "TheDeepBlueGood-By")
 		(year 1964))
 
-	([ontology_Class11695] of  Book
+	([ontology_Class11692] of  Book
 
 		(author [ontology_Class10186])
 		(genre "Thriller")
@@ -14626,7 +14605,7 @@
 		(title "AngelsFlight")
 		(year 1999))
 
-	([ontology_Class11696] of  Book
+	([ontology_Class11693] of  Book
 
 		(author [ontology_Class10527])
 		(genre "Thriller")
@@ -14636,7 +14615,7 @@
 		(title "TheGodwulfManuscript")
 		(year 1973))
 
-	([ontology_Class11697] of  Book
+	([ontology_Class11694] of  Book
 
 		(author [ontology_Class10528])
 		(genre "Thriller")
@@ -14646,7 +14625,7 @@
 		(title "DeathatLaFenice")
 		(year 1992))
 
-	([ontology_Class11698] of  Book
+	([ontology_Class11695] of  Book
 
 		(author [ontology_Class10201])
 		(genre "Uncategorized")
@@ -14656,7 +14635,7 @@
 		(title "DivineSecretsoftheYa-YaSisterhood")
 		(year 1996))
 
-	([ontology_Class11699] of  Book
+	([ontology_Class11696] of  Book
 
 		(author [ontology_Class10199])
 		(genre "Uncategorized")
@@ -14666,7 +14645,7 @@
 		(title "LeftBehind")
 		(year 1995))
 
-	([ontology_Class11700] of  Book
+	([ontology_Class11697] of  Book
 
 		(author [ontology_Class10529])
 		(genre "Historical")
@@ -14676,7 +14655,7 @@
 		(title "Burr")
 		(year 1973))
 
-	([ontology_Class11701] of  Book
+	([ontology_Class11698] of  Book
 
 		(author [ontology_Class10087])
 		(genre "Historical")
@@ -14686,7 +14665,7 @@
 		(title "AnInstanceoftheFingerpost")
 		(year 1997))
 
-	([ontology_Class11702] of  Book
+	([ontology_Class11699] of  Book
 
 		(author [ontology_Class10333])
 		(genre "Historical")
@@ -14696,7 +14675,7 @@
 		(title "TheBullfromtheSea")
 		(year 1962))
 
-	([ontology_Class11703] of  Book
+	([ontology_Class11700] of  Book
 
 		(author [ontology_Class10530])
 		(genre "Historical")
@@ -14706,7 +14685,7 @@
 		(title "RiverGod")
 		(year 1993))
 
-	([ontology_Class11704] of  Book
+	([ontology_Class11701] of  Book
 
 		(author [ontology_Class10091])
 		(genre "Historical")
@@ -14716,7 +14695,7 @@
 		(title "TheSource")
 		(year 1965))
 
-	([ontology_Class11705] of  Book
+	([ontology_Class11702] of  Book
 
 		(author [ontology_Class10531])
 		(genre "Historical")
@@ -14726,7 +14705,7 @@
 		(title "Flashman")
 		(year 1969))
 
-	([ontology_Class11706] of  Book
+	([ontology_Class11703] of  Book
 
 		(author [ontology_Class10081])
 		(genre "Historical")
@@ -14736,7 +14715,7 @@
 		(title "TheGameofKings")
 		(year 1961))
 
-	([ontology_Class11707] of  Book
+	([ontology_Class11704] of  Book
 
 		(author [ontology_Class10099])
 		(genre "Historical")
@@ -14746,7 +14725,7 @@
 		(title "TheAgonyandtheEcstasy")
 		(year 1958))
 
-	([ontology_Class11708] of  Book
+	([ontology_Class11705] of  Book
 
 		(author [ontology_Class10532])
 		(genre "Fantasy")
@@ -14756,7 +14735,7 @@
 		(title "SingtheFourQuarters")
 		(year 1994))
 
-	([ontology_Class11709] of  Book
+	([ontology_Class11706] of  Book
 
 		(author [ontology_Class10106])
 		(genre "Historical")
@@ -14766,7 +14745,7 @@
 		(title "ColdMountain")
 		(year 1997))
 
-	([ontology_Class11710] of  Book
+	([ontology_Class11707] of  Book
 
 		(author [ontology_Class10093])
 		(genre "Historical")
@@ -14776,7 +14755,7 @@
 		(title "MasterandCommander")
 		(year 1969))
 
-	([ontology_Class11711] of  Book
+	([ontology_Class11708] of  Book
 
 		(author [ontology_Class10026])
 		(genre "Horror")
@@ -14786,7 +14765,7 @@
 		(title "DrawingBlood")
 		(year 1993))
 
-	([ontology_Class11712] of  Book
+	([ontology_Class11709] of  Book
 
 		(author [ontology_Class10273])
 		(genre "Young")
@@ -14796,7 +14775,7 @@
 		(title "FreaktheMighty")
 		(year 1993))
 
-	([ontology_Class11713] of  Book
+	([ontology_Class11710] of  Book
 
 		(author [ontology_Class10316])
 		(genre "Uncategorized")
@@ -14806,7 +14785,7 @@
 		(title "Portnoy'sComplaint")
 		(year 1969))
 
-	([ontology_Class11714] of  Book
+	([ontology_Class11711] of  Book
 
 		(author [ontology_Class10218])
 		(genre "Uncategorized")
@@ -14816,7 +14795,7 @@
 		(title "ColdComfortFarm")
 		(year 1932))
 
-	([ontology_Class11715] of  Book
+	([ontology_Class11712] of  Book
 
 		(author [ontology_Class10533])
 		(genre "Classics")
@@ -14826,7 +14805,7 @@
 		(title "AndQuietFlowstheDon")
 		(year 1934))
 
-	([ontology_Class11716] of  Book
+	([ontology_Class11713] of  Book
 
 		(author [ontology_Class10534])
 		(genre "Classics")
@@ -14836,7 +14815,7 @@
 		(title "Oblomov")
 		(year 1859))
 
-	([ontology_Class11717] of  Book
+	([ontology_Class11714] of  Book
 
 		(author [ontology_Class10225])
 		(genre "Romance")
@@ -14846,7 +14825,7 @@
 		(title "FlowersfromtheStorm")
 		(year 1992))
 
-	([ontology_Class11718] of  Book
+	([ontology_Class11715] of  Book
 
 		(author [ontology_Class10535])
 		(genre "Fantasy")
@@ -14856,7 +14835,7 @@
 		(title "Mythology:TimelessTalesofGodsandHeroes")
 		(year 1942))
 
-	([ontology_Class11719] of  Book
+	([ontology_Class11716] of  Book
 
 		(author [ontology_Class10198])
 		(genre "Uncategorized")
@@ -14866,7 +14845,7 @@
 		(title "InfiniteJest")
 		(year 1996))
 
-	([ontology_Class11720] of  Book
+	([ontology_Class11717] of  Book
 
 		(author [ontology_Class10248])
 		(genre "Short Stories")
@@ -14876,7 +14855,7 @@
 		(title "EverythingThatRisesMustConverge:Stories")
 		(year 1965))
 
-	([ontology_Class11721] of  Book
+	([ontology_Class11718] of  Book
 
 		(author [ontology_Class10388])
 		(genre "Uncategorized")
@@ -14886,7 +14865,7 @@
 		(title "AtHomeinMitford")
 		(year 1994))
 
-	([ontology_Class11722] of  Book
+	([ontology_Class11719] of  Book
 
 		(author [ontology_Class10088])
 		(genre "Thriller")
@@ -14896,7 +14875,7 @@
 		(title "BratFarrar")
 		(year 1949))
 
-	([ontology_Class11723] of  Book
+	([ontology_Class11720] of  Book
 
 		(author [ontology_Class10536])
 		(genre "Uncategorized")
@@ -14906,7 +14885,7 @@
 		(title "JR")
 		(year 1975))
 
-	([ontology_Class11724] of  Book
+	([ontology_Class11721] of  Book
 
 		(author [ontology_Class10537])
 		(genre "Uncategorized")
@@ -14916,7 +14895,7 @@
 		(title "UndertheVolcano")
 		(year 1947))
 
-	([ontology_Class11725] of  Book
+	([ontology_Class11722] of  Book
 
 		(author [ontology_Class10229])
 		(genre "Classics")
@@ -14926,7 +14905,7 @@
 		(title "TheAwakening")
 		(year 1899))
 
-	([ontology_Class11726] of  Book
+	([ontology_Class11723] of  Book
 
 		(author [ontology_Class10538])
 		(genre "Uncategorized")
@@ -14936,7 +14915,7 @@
 		(title "TropicofCancer")
 		(year 1934))
 
-	([ontology_Class11727] of  Book
+	([ontology_Class11724] of  Book
 
 		(author [ontology_Class10197])
 		(genre "Uncategorized")
@@ -14946,7 +14925,7 @@
 		(title "NakedLunch")
 		(year 1959))
 
-	([ontology_Class11728] of  Book
+	([ontology_Class11725] of  Book
 
 		(author [ontology_Class10244])
 		(genre "Uncategorized")
@@ -14956,7 +14935,7 @@
 		(title "Einstein'sDreams")
 		(year 1992))
 
-	([ontology_Class11729] of  Book
+	([ontology_Class11726] of  Book
 
 		(author [ontology_Class10539])
 		(genre "Short Stories")
@@ -14966,7 +14945,7 @@
 		(title "TheGardenPartyandOtherStories")
 		(year 1922))
 
-	([ontology_Class11730] of  Book
+	([ontology_Class11727] of  Book
 
 		(author [ontology_Class10540])
 		(genre "Short Stories")
@@ -14976,7 +14955,7 @@
 		(title "TheCollectedStories")
 		(year 1992))
 
-	([ontology_Class11731] of  Book
+	([ontology_Class11728] of  Book
 
 		(author [ontology_Class10541])
 		(genre "Historical")
@@ -14986,7 +14965,7 @@
 		(title "ThePolishOfficer")
 		(year 1995))
 
-	([ontology_Class11732] of  Book
+	([ontology_Class11729] of  Book
 
 		(author [ontology_Class10542])
 		(genre "Classics")
@@ -14996,7 +14975,7 @@
 		(title "SelectedStories")
 		(year 1977))
 
-	([ontology_Class11733] of  Book
+	([ontology_Class11730] of  Book
 
 		(author [ontology_Class10340])
 		(genre "Thriller")
@@ -15006,7 +14985,7 @@
 		(title "ACoffinforDimitrios")
 		(year 1939))
 
-	([ontology_Class11734] of  Book
+	([ontology_Class11731] of  Book
 
 		(author [ontology_Class10543])
 		(genre "Short Stories")
@@ -15016,7 +14995,7 @@
 		(title "Jesus'Son")
 		(year 1992))
 
-	([ontology_Class11735] of  Book
+	([ontology_Class11732] of  Book
 
 		(author [ontology_Class10252])
 		(genre "Uncategorized")
@@ -15026,7 +15005,7 @@
 		(title "Shibumi")
 		(year 1979))
 
-	([ontology_Class11736] of  Book
+	([ontology_Class11733] of  Book
 
 		(author [ontology_Class10544])
 		(genre "Uncategorized")
@@ -15036,7 +15015,7 @@
 		(title "Winesburg,Ohio")
 		(year 1919))
 
-	([ontology_Class11737] of  Book
+	([ontology_Class11734] of  Book
 
 		(author [ontology_Class10545])
 		(genre "Short Stories")
@@ -15046,7 +15025,7 @@
 		(title "TheStoriesofJohnCheever")
 		(year 1978))
 
-	([ontology_Class11738] of  Book
+	([ontology_Class11735] of  Book
 
 		(author [ontology_Class10546])
 		(genre "Fantasy")
@@ -15056,7 +15035,7 @@
 		(title "D'Aulaires'BookofNorseMyths")
 		(year 1967))
 
-	([ontology_Class11739] of  Book
+	([ontology_Class11736] of  Book
 
 		(author [ontology_Class10547])
 		(genre "Classics")
@@ -15066,7 +15045,7 @@
 		(title "SaveMetheWaltz")
 		(year 1932))
 
-	([ontology_Class11740] of  Book
+	([ontology_Class11737] of  Book
 
 		(author [ontology_Class10290])
 		(genre "Uncategorized")
@@ -15076,7 +15055,7 @@
 		(title "WideSargassoSea")
 		(year 1966))
 
-	([ontology_Class11741] of  Book
+	([ontology_Class11738] of  Book
 
 		(author [ontology_Class10548])
 		(genre "Religious")
@@ -15086,7 +15065,7 @@
 		(title "DaughterofJoy")
 		(year 1999))
 
-	([ontology_Class11742] of  Book
+	([ontology_Class11739] of  Book
 
 		(author [ontology_Class10549])
 		(genre "Uncategorized")
@@ -15096,7 +15075,7 @@
 		(title "TheVirginSuicides")
 		(year 1993))
 
-	([ontology_Class11743] of  Book
+	([ontology_Class11740] of  Book
 
 		(author [ontology_Class10550])
 		(genre "Romance")
@@ -15106,7 +15085,7 @@
 		(title "ThePrideofJaredMacKade")
 		(year 1995))
 
-	([ontology_Class11744] of  Book
+	([ontology_Class11741] of  Book
 
 		(author [ontology_Class10013])
 		(genre "Thriller")
@@ -15116,7 +15095,7 @@
 		(title "NakedinDeath")
 		(year 1995))
 
-	([ontology_Class11745] of  Book
+	([ontology_Class11742] of  Book
 
 		(author [ontology_Class10034])
 		(genre "Uncategorized")
@@ -15126,7 +15105,7 @@
 		(title "TheBadBeginning")
 		(year 1999))
 
-	([ontology_Class11746] of  Book
+	([ontology_Class11743] of  Book
 
 		(author [ontology_Class10014])
 		(genre "Uncategorized")
@@ -15136,7 +15115,7 @@
 		(title "MemoirsofaGeisha")
 		(year 1997))
 
-	([ontology_Class11747] of  Book
+	([ontology_Class11744] of  Book
 
 		(author [ontology_Class10056])
 		(genre "Classics")
@@ -15146,7 +15125,7 @@
 		(title "InvisibleMan")
 		(year 1952))
 
-	([ontology_Class11748] of  Book
+	([ontology_Class11745] of  Book
 
 		(author [ontology_Class10060])
 		(genre "Classics")
@@ -15156,7 +15135,7 @@
 		(title "OfMiceandMen")
 		(year 1937))
 
-	([ontology_Class11749] of  Book
+	([ontology_Class11746] of  Book
 
 		(author [ontology_Class10074])
 		(genre "Classics")
@@ -15166,7 +15145,7 @@
 		(title "TheCatcherintheRye")
 		(year 1951))
 
-	([ontology_Class11750] of  Book
+	([ontology_Class11747] of  Book
 
 		(author [ontology_Class10107])
 		(genre "Historical")
@@ -15176,7 +15155,7 @@
 		(title "TheRedTent")
 		(year 1997))
 
-	([ontology_Class11751] of  Book
+	([ontology_Class11748] of  Book
 
 		(author [ontology_Class10070])
 		(genre "Classics")
@@ -15186,7 +15165,7 @@
 		(title "TheStranger")
 		(year 1942))
 
-	([ontology_Class11752] of  Book
+	([ontology_Class11749] of  Book
 
 		(author [ontology_Class10182])
 		(genre "Thriller")
@@ -15196,7 +15175,7 @@
 		(title "AndThenThereWereNone")
 		(year 1939))
 
-	([ontology_Class11753] of  Book
+	([ontology_Class11750] of  Book
 
 		(author [ontology_Class10551])
 		(genre "Short Stories")
@@ -15206,7 +15185,7 @@
 		(title "TheWaysofWhiteFolks")
 		(year 1934))
 
-	([ontology_Class11754] of  Book
+	([ontology_Class11751] of  Book
 
 		(author [ontology_Class10075])
 		(genre "Classics")
@@ -15216,7 +15195,7 @@
 		(title "LordoftheFlies")
 		(year 1954))
 
-	([ontology_Class11755] of  Book
+	([ontology_Class11752] of  Book
 
 		(author [ontology_Class10330])
 		(genre "Classics")
@@ -15226,7 +15205,7 @@
 		(title "ThePilgrim'sProgress")
 		(year 1678))
 
-	([ontology_Class11756] of  Book
+	([ontology_Class11753] of  Book
 
 		(author [ontology_Class10155])
 		(genre "Uncategorized")
@@ -15236,7 +15215,7 @@
 		(title "BrokebackMountain")
 		(year 1997))
 
-	([ontology_Class11757] of  Book
+	([ontology_Class11754] of  Book
 
 		(author [ontology_Class10552])
 		(genre "Classics")
@@ -15246,7 +15225,7 @@
 		(title "LittleHouseintheBigWoods")
 		(year 1932))
 
-	([ontology_Class11758] of  Book
+	([ontology_Class11755] of  Book
 
 		(author [ontology_Class10402])
 		(genre "Horror")
@@ -15256,7 +15235,7 @@
 		(title "InterviewwiththeVampire")
 		(year 1976))
 
-	([ontology_Class11759] of  Book
+	([ontology_Class11756] of  Book
 
 		(author [ontology_Class10387])
 		(genre "Religious")
@@ -15266,7 +15245,7 @@
 		(title "ThePrincess")
 		(year 1999))
 
-	([ontology_Class11760] of  Book
+	([ontology_Class11757] of  Book
 
 		(author [ontology_Class10077])
 		(genre "Classics")
@@ -15276,7 +15255,7 @@
 		(title "TheGreatGatsby")
 		(year 1925))
 
-	([ontology_Class11761] of  Book
+	([ontology_Class11758] of  Book
 
 		(author [ontology_Class10185])
 		(genre "Uncategorized")
@@ -15286,7 +15265,7 @@
 		(title "SnowFallingonCedars")
 		(year 1994))
 
-	([ontology_Class11762] of  Book
+	([ontology_Class11759] of  Book
 
 		(author [ontology_Class10028])
 		(genre "Classics")
@@ -15296,7 +15275,7 @@
 		(title "Dracula")
 		(year 1897))
 
-	([ontology_Class11763] of  Book
+	([ontology_Class11760] of  Book
 
 		(author [ontology_Class10110])
 		(genre "Classics")
@@ -15306,7 +15285,7 @@
 		(title "AnnaKarenina")
 		(year 1877))
 
-	([ontology_Class11764] of  Book
+	([ontology_Class11761] of  Book
 
 		(author [ontology_Class10401])
 		(genre "Fantasy")
@@ -15316,7 +15295,7 @@
 		(title "AGameofThrones")
 		(year 1996))
 
-	([ontology_Class11765] of  Book
+	([ontology_Class11762] of  Book
 
 		(author [ontology_Class10389])
 		(genre "Uncategorized")
@@ -15326,7 +15305,7 @@
 		(title "Christy")
 		(year 1967))
 
-	([ontology_Class11766] of  Book
+	([ontology_Class11763] of  Book
 
 		(author [ontology_Class10038])
 		(genre "Fantasy")
@@ -15336,7 +15315,7 @@
 		(title "ThePrincessBride")
 		(year 1973))
 
-	([ontology_Class11767] of  Book
+	([ontology_Class11764] of  Book
 
 		(author [ontology_Class10055])
 		(genre "Classics")
@@ -15346,7 +15325,7 @@
 		(title "ATaleofTwoCities")
 		(year 1859))
 
-	([ontology_Class11768] of  Book
+	([ontology_Class11765] of  Book
 
 		(author [ontology_Class10073])
 		(genre "Classics")
@@ -15356,7 +15335,7 @@
 		(title "1984")
 		(year 1949))
 
-	([ontology_Class11769] of  Book
+	([ontology_Class11766] of  Book
 
 		(author [ontology_Class10138])
 		(genre "Historical")
@@ -15366,7 +15345,7 @@
 		(title "Roots:TheSagaofanAmericanFamily")
 		(year 1976))
 
-	([ontology_Class11770] of  Book
+	([ontology_Class11767] of  Book
 
 		(author [ontology_Class10030])
 		(genre "Fantasy")
@@ -15376,7 +15355,7 @@
 		(title "WildMagic")
 		(year 1992))
 
-	([ontology_Class11771] of  Book
+	([ontology_Class11768] of  Book
 
 		(author [ontology_Class10428])
 		(genre "Classics")
@@ -15386,7 +15365,7 @@
 		(title "LeMorted'Arthur:KingArthurandtheLegendsoftheRoundTable")
 		(year 1485))
 
-	([ontology_Class11772] of  Book
+	([ontology_Class11769] of  Book
 
 		(author [ontology_Class10040])
 		(genre "Fantasy")
@@ -15396,7 +15375,7 @@
 		(title "ASwiftlyTiltingPlanet")
 		(year 1978))
 
-	([ontology_Class11773] of  Book
+	([ontology_Class11770] of  Book
 
 		(author [ontology_Class10036])
 		(genre "Fantasy")
@@ -15406,7 +15385,7 @@
 		(title "TheNeverendingStory")
 		(year 1979))
 
-	([ontology_Class11774] of  Book
+	([ontology_Class11771] of  Book
 
 		(author [ontology_Class10291])
 		(genre "Fantasy")
@@ -15416,7 +15395,7 @@
 		(title "Wizard'sFirstRule")
 		(year 1994))
 
-	([ontology_Class11775] of  Book
+	([ontology_Class11772] of  Book
 
 		(author [ontology_Class10120])
 		(genre "Fantasy")
@@ -15426,7 +15405,7 @@
 		(title "TheSwordofShannara")
 		(year 1977))
 
-	([ontology_Class11776] of  Book
+	([ontology_Class11773] of  Book
 
 		(author [ontology_Class10067])
 		(genre "Fantasy")
@@ -15436,7 +15415,7 @@
 		(title "TheGoldenCompass")
 		(year 1995))
 
-	([ontology_Class11777] of  Book
+	([ontology_Class11774] of  Book
 
 		(author [ontology_Class10222])
 		(genre "Romance")
@@ -15446,7 +15425,7 @@
 		(title "Dangerous")
 		(year 1993))
 
-	([ontology_Class11778] of  Book
+	([ontology_Class11775] of  Book
 
 		(author [ontology_Class10005])
 		(genre "Classics")
@@ -15456,7 +15435,7 @@
 		(title "Rebecca")
 		(year 1938))
 
-	([ontology_Class11779] of  Book
+	([ontology_Class11776] of  Book
 
 		(author [ontology_Class10029])
 		(genre "Fantasy")
@@ -15466,7 +15445,7 @@
 		(title "TheLastUnicorn")
 		(year 1968))
 
-	([ontology_Class11780] of  Book
+	([ontology_Class11777] of  Book
 
 		(author [ontology_Class10017])
 		(genre "Fantasy")
@@ -15476,7 +15455,7 @@
 		(title "PrinceCaspian")
 		(year 1951))
 
-	([ontology_Class11781] of  Book
+	([ontology_Class11778] of  Book
 
 		(author [ontology_Class10224])
 		(genre "Romance")
@@ -15486,7 +15465,7 @@
 		(title "TheFlameandtheFlower")
 		(year 1972))
 
-	([ontology_Class11782] of  Book
+	([ontology_Class11779] of  Book
 
 		(author [ontology_Class10033])
 		(genre "Fantasy")
@@ -15496,7 +15475,7 @@
 		(title "TheOnceandFutureKing")
 		(year 1958))
 
-	([ontology_Class11783] of  Book
+	([ontology_Class11780] of  Book
 
 		(author [ontology_Class10321])
 		(genre "Fantasy")
@@ -15506,7 +15485,7 @@
 		(title "Assassin'sApprentice")
 		(year 1995))
 
-	([ontology_Class11784] of  Book
+	([ontology_Class11781] of  Book
 
 		(author [ontology_Class10553])
 		(genre "Fantasy")
@@ -15516,7 +15495,7 @@
 		(title "IntotheDarkLands")
 		(year 1991))
 
-	([ontology_Class11785] of  Book
+	([ontology_Class11782] of  Book
 
 		(author [ontology_Class10223])
 		(genre "Romance")
@@ -15526,7 +15505,7 @@
 		(title "TheseOldShades")
 		(year 1926))
 
-	([ontology_Class11786] of  Book
+	([ontology_Class11783] of  Book
 
 		(author [ontology_Class10167])
 		(genre "Fantasy")
@@ -15536,7 +15515,7 @@
 		(title "LordFoul'sBane")
 		(year 1977))
 
-	([ontology_Class11787] of  Book
+	([ontology_Class11784] of  Book
 
 		(author [ontology_Class10011])
 		(genre "Fantasy")
@@ -15546,7 +15525,7 @@
 		(title "TheTwoTowers")
 		(year 1954))
 
-	([ontology_Class11788] of  Book
+	([ontology_Class11785] of  Book
 
 		(author [ontology_Class10068])
 		(genre "Classics")
@@ -15556,7 +15535,7 @@
 		(title "WatershipDown")
 		(year 1972))
 
-	([ontology_Class11789] of  Book
+	([ontology_Class11786] of  Book
 
 		(author [ontology_Class10469])
 		(genre "Thriller")
@@ -15566,7 +15545,7 @@
 		(title "DeathatWentwaterCourt")
 		(year 1994))
 
-	([ontology_Class11790] of  Book
+	([ontology_Class11787] of  Book
 
 		(author [ontology_Class10119])
 		(genre "Uncategorized")
@@ -15576,7 +15555,7 @@
 		(title "ThePromise")
 		(year 1969))
 
-	([ontology_Class11791] of  Book
+	([ontology_Class11788] of  Book
 
 		(author [ontology_Class10143])
 		(genre "Uncategorized")
@@ -15586,7 +15565,7 @@
 		(title "Sophie'sChoice")
 		(year 1979))
 
-	([ontology_Class11792] of  Book
+	([ontology_Class11789] of  Book
 
 		(author [ontology_Class10432])
 		(genre "Horror")
@@ -15596,7 +15575,7 @@
 		(title "IAmLegendandOtherStories")
 		(year 1954))
 
-	([ontology_Class11793] of  Book
+	([ontology_Class11790] of  Book
 
 		(author [ontology_Class10554])
 		(genre "Uncategorized")
@@ -15606,7 +15585,7 @@
 		(title "TheFuck-Up")
 		(year 1997))
 
-	([ontology_Class11794] of  Book
+	([ontology_Class11791] of  Book
 
 		(author [ontology_Class10002])
 		(genre "Uncategorized")
@@ -15616,7 +15595,7 @@
 		(title "Amerika")
 		(year 1927))
 
-	([ontology_Class11795] of  Book
+	([ontology_Class11792] of  Book
 
 		(author [ontology_Class10238])
 		(genre "Horror")
@@ -15626,7 +15605,7 @@
 		(title "Rosemary'sBaby")
 		(year 1967))
 
-	([ontology_Class11796] of  Book
+	([ontology_Class11793] of  Book
 
 		(author [ontology_Class10209])
 		(genre "Uncategorized")
@@ -15636,7 +15615,7 @@
 		(title "RequiemforaDream")
 		(year 1978))
 
-	([ontology_Class11797] of  Book
+	([ontology_Class11794] of  Book
 
 		(author [ontology_Class10555])
 		(genre "Short Stories")
@@ -15646,7 +15625,7 @@
 		(title "GuysandDollsandOtherWritings")
 		(year 1932))
 
-	([ontology_Class11798] of  Book
+	([ontology_Class11795] of  Book
 
 		(author [ontology_Class10187])
 		(genre "Thriller")
@@ -15656,7 +15635,7 @@
 		(title "TheThinMan")
 		(year 1934))
 
-	([ontology_Class11799] of  Book
+	([ontology_Class11796] of  Book
 
 		(author [ontology_Class10556])
 		(genre "Uncategorized")
@@ -15666,7 +15645,7 @@
 		(title "MissLonelyheartsandACoolMillion")
 		(year 1933))
 
-	([ontology_Class11800] of  Book
+	([ontology_Class11797] of  Book
 
 		(author [ontology_Class10076])
 		(genre "Classics")
@@ -15676,7 +15655,7 @@
 		(title "TheOutsiders")
 		(year 1967))
 
-	([ontology_Class11801] of  Book
+	([ontology_Class11798] of  Book
 
 		(author [ontology_Class10473])
 		(genre "Thriller")
@@ -15686,7 +15665,7 @@
 		(title "DeathatBishop'sKeep")
 		(year 1994))
 
-	([ontology_Class11802] of  Book
+	([ontology_Class11799] of  Book
 
 		(author [ontology_Class10557])
 		(genre "Historical")
@@ -15696,7 +15675,7 @@
 		(title "APlagueonBothYourHouses")
 		(year 1996))
 
-	([ontology_Class11803] of  Book
+	([ontology_Class11800] of  Book
 
 		(author [ontology_Class10338])
 		(genre "Thriller")
@@ -15706,7 +15685,7 @@
 		(title "AMonstrousRegimentofWomen")
 		(year 1995))
 
-	([ontology_Class11804] of  Book
+	([ontology_Class11801] of  Book
 
 		(author [ontology_Class10085])
 		(genre "Historical")
@@ -15716,7 +15695,7 @@
 		(title "Catilina'sRiddle")
 		(year 1993))
 
-	([ontology_Class11805] of  Book
+	([ontology_Class11802] of  Book
 
 		(author [ontology_Class10082])
 		(genre "Thriller")
@@ -15726,7 +15705,7 @@
 		(title "BlindJustice")
 		(year 1994))
 
-	([ontology_Class11806] of  Book
+	([ontology_Class11803] of  Book
 
 		(author [ontology_Class10558])
 		(genre "Romance")
@@ -15736,7 +15715,7 @@
 		(title "ChristmasAngel")
 		(year 1992))
 
-	([ontology_Class11807] of  Book
+	([ontology_Class11804] of  Book
 
 		(author [ontology_Class10127])
 		(genre "Uncategorized")
@@ -15746,7 +15725,7 @@
 		(title "Ragtime")
 		(year 1975))
 
-	([ontology_Class11808] of  Book
+	([ontology_Class11805] of  Book
 
 		(author [ontology_Class10559])
 		(genre "Thriller")
@@ -15756,7 +15735,7 @@
 		(title "TheApothecaryRose")
 		(year 1993))
 
-	([ontology_Class11809] of  Book
+	([ontology_Class11806] of  Book
 
 		(author [ontology_Class10084])
 		(genre "Historical")
@@ -15766,7 +15745,7 @@
 		(title "TheQueen'sMan")
 		(year 1996))
 
-	([ontology_Class11810] of  Book
+	([ontology_Class11807] of  Book
 
 		(author [ontology_Class10560])
 		(genre "Thriller")
@@ -15776,7 +15755,7 @@
 		(title "AFreeManofColor")
 		(year 1997))
 
-	([ontology_Class11811] of  Book
+	([ontology_Class11808] of  Book
 
 		(author [ontology_Class10008])
 		(genre "Classics")
@@ -15786,7 +15765,7 @@
 		(title "ATreeGrowsinBrooklyn")
 		(year 1943))
 
-	([ontology_Class11812] of  Book
+	([ontology_Class11809] of  Book
 
 		(author [ontology_Class10561])
 		(genre "Thriller")
@@ -15796,7 +15775,7 @@
 		(title "Shinju")
 		(year 1994))
 
-	([ontology_Class11813] of  Book
+	([ontology_Class11810] of  Book
 
 		(author [ontology_Class10088])
 		(genre "Thriller")
@@ -15806,7 +15785,7 @@
 		(title "TheDaughterofTime")
 		(year 1949))
 
-	([ontology_Class11814] of  Book
+	([ontology_Class11811] of  Book
 
 		(author [ontology_Class10345])
 		(genre "Historical")
@@ -15816,7 +15795,7 @@
 		(title "TheAlienist")
 		(year 1994))
 
-	([ontology_Class11815] of  Book
+	([ontology_Class11812] of  Book
 
 		(author [ontology_Class10181])
 		(genre "Thriller")
@@ -15826,7 +15805,7 @@
 		(title "WhoseBody?")
 		(year 1923))
 
-	([ontology_Class11816] of  Book
+	([ontology_Class11813] of  Book
 
 		(author [ontology_Class10471])
 		(genre "Thriller")
@@ -15836,7 +15815,7 @@
 		(title "MurderonAstorPlace")
 		(year 1999))
 
-	([ontology_Class11817] of  Book
+	([ontology_Class11814] of  Book
 
 		(author [ontology_Class10009])
 		(genre "Classics")
@@ -15846,7 +15825,7 @@
 		(title "TheBellJar")
 		(year 1963))
 
-	([ontology_Class11818] of  Book
+	([ontology_Class11815] of  Book
 
 		(author [ontology_Class10193])
 		(genre "Uncategorized")
@@ -15856,7 +15835,7 @@
 		(title "TheGodfather")
 		(year 1969))
 
-	([ontology_Class11819] of  Book
+	([ontology_Class11816] of  Book
 
 		(author [ontology_Class10307])
 		(genre "Classics")
@@ -15866,7 +15845,7 @@
 		(title "BreakfastatTiffany's")
 		(year 1958))
 
-	([ontology_Class11820] of  Book
+	([ontology_Class11817] of  Book
 
 		(author [ontology_Class10562])
 		(genre "Fantasy")
@@ -15876,7 +15855,7 @@
 		(title "ANightintheLonesomeOctober")
 		(year 1993))
 
-	([ontology_Class11821] of  Book
+	([ontology_Class11818] of  Book
 
 		(author [ontology_Class10025])
 		(genre "Horror")
@@ -15886,7 +15865,7 @@
 		(title "AnnoDracula")
 		(year 1992))
 
-	([ontology_Class11822] of  Book
+	([ontology_Class11819] of  Book
 
 		(author [ontology_Class10563])
 		(genre "Fantasy")
@@ -15896,7 +15875,7 @@
 		(title "Thieves'World")
 		(year 1979))
 
-	([ontology_Class11823] of  Book
+	([ontology_Class11820] of  Book
 
 		(author [ontology_Class10296])
 		(genre "Uncategorized")
@@ -15906,7 +15885,7 @@
 		(title "TheThornBirds")
 		(year 1977))
 
-	([ontology_Class11824] of  Book
+	([ontology_Class11821] of  Book
 
 		(author [ontology_Class10564])
 		(genre "Romance")
@@ -15916,7 +15895,7 @@
 		(title "LadyBeGood")
 		(year 1999))
 
-	([ontology_Class11825] of  Book
+	([ontology_Class11822] of  Book
 
 		(author [ontology_Class10565])
 		(genre "Uncategorized")
@@ -15926,7 +15905,7 @@
 		(title "PattyJane'sHouseofCurl")
 		(year 1995))
 
-	([ontology_Class11826] of  Book
+	([ontology_Class11823] of  Book
 
 		(author [ontology_Class10566])
 		(genre "Historical")
@@ -15936,7 +15915,7 @@
 		(title "Depraved:TheDefinitiveTrueStoryofH.H.Holmes,WhoseGrotesqueCrimesShatteredTurn-Of-The-CenturyChicago")
 		(year 1994))
 
-	([ontology_Class11827] of  Book
+	([ontology_Class11824] of  Book
 
 		(author [ontology_Class10288])
 		(genre "Uncategorized")
@@ -15946,7 +15925,7 @@
 		(title "TheKitchenGod'sWife")
 		(year 1991))
 
-	([ontology_Class11828] of  Book
+	([ontology_Class11825] of  Book
 
 		(author [ontology_Class10380])
 		(genre "Uncategorized")
@@ -15956,7 +15935,7 @@
 		(title "TheEnchantedApril")
 		(year 1922))
 
-	([ontology_Class11829] of  Book
+	([ontology_Class11826] of  Book
 
 		(author [ontology_Class10037])
 		(genre "Fantasy")
@@ -15966,7 +15945,7 @@
 		(title "TheBookofThree")
 		(year 1964))
 
-	([ontology_Class11830] of  Book
+	([ontology_Class11827] of  Book
 
 		(author [ontology_Class10567])
 		(genre "Uncategorized")
@@ -15976,7 +15955,7 @@
 		(title "TheGroup")
 		(year 1963))
 
-	([ontology_Class11831] of  Book
+	([ontology_Class11828] of  Book
 
 		(author [ontology_Class10170])
 		(genre "Uncategorized")
@@ -15986,7 +15965,7 @@
 		(title "Ecstasy")
 		(year 1996))
 
-	([ontology_Class11832] of  Book
+	([ontology_Class11829] of  Book
 
 		(author [ontology_Class10537])
 		(genre "Uncategorized")
@@ -15996,7 +15975,7 @@
 		(title "UndertheVolcano")
 		(year 1947))
 
-	([ontology_Class11833] of  Book
+	([ontology_Class11830] of  Book
 
 		(author [ontology_Class10156])
 		(genre "Fantasy")
@@ -16006,7 +15985,7 @@
 		(title "Wicked:TheLifeandTimesoftheWickedWitchoftheWest")
 		(year 1995))
 
-	([ontology_Class11834] of  Book
+	([ontology_Class11831] of  Book
 
 		(author [ontology_Class10317])
 		(genre "Fantasy")
@@ -16016,7 +15995,7 @@
 		(title "Sabriel")
 		(year 1995))
 
-	([ontology_Class11835] of  Book
+	([ontology_Class11832] of  Book
 
 		(author [ontology_Class10568])
 		(genre "Uncategorized")
@@ -16026,7 +16005,7 @@
 		(title "PeytonPlace")
 		(year 1956))
 
-	([ontology_Class11836] of  Book
+	([ontology_Class11833] of  Book
 
 		(author [ontology_Class10569])
 		(genre "Historical")
@@ -16036,7 +16015,7 @@
 		(title "Restoration")
 		(year 1994))
 
-	([ontology_Class11837] of  Book
+	([ontology_Class11834] of  Book
 
 		(author [ontology_Class10570])
 		(genre "Uncategorized")
@@ -16046,7 +16025,7 @@
 		(title "HowtoMakeanAmericanQuilt")
 		(year 1991))
 
-	([ontology_Class11838] of  Book
+	([ontology_Class11835] of  Book
 
 		(author [ontology_Class10198])
 		(genre "Uncategorized")
@@ -16056,7 +16035,7 @@
 		(title "InfiniteJest")
 		(year 1996))
 
-	([ontology_Class11839] of  Book
+	([ontology_Class11836] of  Book
 
 		(author [ontology_Class10483])
 		(genre "Uncategorized")
@@ -16066,7 +16045,7 @@
 		(title "PostOffice")
 		(year 1971))
 
-	([ontology_Class11840] of  Book
+	([ontology_Class11837] of  Book
 
 		(author [ontology_Class10414])
 		(genre "Horror")
@@ -16076,7 +16055,7 @@
 		(title "TheCallofCthulhuandOtherWeirdStories")
 		(year 1926))
 
-	([ontology_Class11841] of  Book
+	([ontology_Class11838] of  Book
 
 		(author [ontology_Class10065])
 		(genre "Classics")
@@ -16086,7 +16065,7 @@
 		(title "OneFlewOvertheCuckoo'sNest")
 		(year 1962))
 
-	([ontology_Class11842] of  Book
+	([ontology_Class11839] of  Book
 
 		(author [ontology_Class10204])
 		(genre "Classics")
@@ -16096,7 +16075,7 @@
 		(title "Cranford")
 		(year 1853))
 
-	([ontology_Class11843] of  Book
+	([ontology_Class11840] of  Book
 
 		(author [ontology_Class10168])
 		(genre "Fantasy")
@@ -16106,7 +16085,7 @@
 		(title "GardensoftheMoon")
 		(year 1999))
 
-	([ontology_Class11844] of  Book
+	([ontology_Class11841] of  Book
 
 		(author [ontology_Class10571])
 		(genre "Young")
@@ -16116,7 +16095,7 @@
 		(title "Smack")
 		(year 1996))
 
-	([ontology_Class11845] of  Book
+	([ontology_Class11842] of  Book
 
 		(author [ontology_Class10572])
 		(genre "Uncategorized")
@@ -16126,7 +16105,7 @@
 		(title "ValleyoftheDolls")
 		(year 1966))
 
-	([ontology_Class11846] of  Book
+	([ontology_Class11843] of  Book
 
 		(author [ontology_Class10573])
 		(genre "Uncategorized")
@@ -16136,7 +16115,7 @@
 		(title "TheFirstWivesClub")
 		(year 1992))
 
-	([ontology_Class11847] of  Book
+	([ontology_Class11844] of  Book
 
 		(author [ontology_Class10197])
 		(genre "Uncategorized")
@@ -16146,7 +16125,7 @@
 		(title "NakedLunch")
 		(year 1959))
 
-	([ontology_Class11848] of  Book
+	([ontology_Class11845] of  Book
 
 		(author [ontology_Class10574])
 		(genre "Uncategorized")
@@ -16156,7 +16135,7 @@
 		(title "TheSavingGraces")
 		(year 1999))
 
-	([ontology_Class11849] of  Book
+	([ontology_Class11846] of  Book
 
 		(author [ontology_Class10375])
 		(genre "Thriller")
@@ -16166,7 +16145,7 @@
 		(title "SheWalksTheseHills")
 		(year 1994))
 
-	([ontology_Class11850] of  Book
+	([ontology_Class11847] of  Book
 
 		(author [ontology_Class10199])
 		(genre "Uncategorized")
@@ -16176,7 +16155,7 @@
 		(title "TribulationForce")
 		(year 1996))
 
-	([ontology_Class11851] of  Book
+	([ontology_Class11848] of  Book
 
 		(author [ontology_Class10575])
 		(genre "Fantasy")
@@ -16186,7 +16165,7 @@
 		(title "AlvinJourneyman")
 		(year 1995))
 
-	([ontology_Class11852] of  Book
+	([ontology_Class11849] of  Book
 
 		(author [ontology_Class10025])
 		(genre "Horror")
@@ -16196,7 +16175,7 @@
 		(title "AnnoDracula")
 		(year 1992))
 
-	([ontology_Class11853] of  Book
+	([ontology_Class11850] of  Book
 
 		(author [ontology_Class10061])
 		(genre "Classics")
@@ -16206,7 +16185,7 @@
 		(title "AConnecticutYankeeinKingArthur'sCourt")
 		(year 1889))
 
-	([ontology_Class11854] of  Book
+	([ontology_Class11851] of  Book
 
 		(author [ontology_Class10460])
 		(genre "Uncategorized")
@@ -16216,7 +16195,7 @@
 		(title "Fatherland")
 		(year 1992))
 
-	([ontology_Class11855] of  Book
+	([ontology_Class11852] of  Book
 
 		(author [ontology_Class10203])
 		(genre "Religious")
@@ -16226,7 +16205,7 @@
 		(title "TheAtonementChild")
 		(year 1997))
 
-	([ontology_Class11856] of  Book
+	([ontology_Class11853] of  Book
 
 		(author [ontology_Class10576])
 		(genre "Uncategorized")
@@ -16236,7 +16215,7 @@
 		(title "CastingOff")
 		(year 1995))
 
-	([ontology_Class11857] of  Book
+	([ontology_Class11854] of  Book
 
 		(author [ontology_Class10577])
 		(genre "Historical")
@@ -16246,7 +16225,7 @@
 		(title "ThePassingBells")
 		(year 1978))
 
-	([ontology_Class11858] of  Book
+	([ontology_Class11855] of  Book
 
 		(author [ontology_Class10578])
 		(genre "Uncategorized")
@@ -16256,7 +16235,7 @@
 		(title "Loving")
 		(year 1945))
 
-	([ontology_Class11859] of  Book
+	([ontology_Class11856] of  Book
 
 		(author [ontology_Class10221])
 		(genre "Classics")
@@ -16266,7 +16245,7 @@
 		(title "Middlemarch")
 		(year 1871))
 
-	([ontology_Class11860] of  Book
+	([ontology_Class11857] of  Book
 
 		(author [ontology_Class10579])
 		(genre "Uncategorized")
@@ -16276,7 +16255,7 @@
 		(title "CompleteBarchesterChronicles")
 		(year 1857))
 
-	([ontology_Class11861] of  Book
+	([ontology_Class11858] of  Book
 
 		(author [ontology_Class10387])
 		(genre "Religious")
@@ -16286,7 +16265,7 @@
 		(title "Sophie'sHeart")
 		(year 1995))
 
-	([ontology_Class11862] of  Book
+	([ontology_Class11859] of  Book
 
 		(author [ontology_Class10415])
 		(genre "Classics")
@@ -16296,7 +16275,7 @@
 		(title "Maurice")
 		(year 1971))
 
-	([ontology_Class11863] of  Book
+	([ontology_Class11860] of  Book
 
 		(author [ontology_Class10181])
 		(genre "Thriller")
@@ -16306,7 +16285,7 @@
 		(title "CloudsofWitness")
 		(year 1926))
 
-	([ontology_Class11864] of  Book
+	([ontology_Class11861] of  Book
 
 		(author [ontology_Class10338])
 		(genre "Thriller")
@@ -16316,7 +16295,7 @@
 		(title "TheBeekeeper'sApprentice")
 		(year 1994))
 
-	([ontology_Class11865] of  Book
+	([ontology_Class11862] of  Book
 
 		(author [ontology_Class10580])
 		(genre "Young")
@@ -16326,7 +16305,7 @@
 		(title "Flambards")
 		(year 1967))
 
-	([ontology_Class11866] of  Book
+	([ontology_Class11863] of  Book
 
 		(author [ontology_Class10581])
 		(genre "Classics")
@@ -16336,7 +16315,7 @@
 		(title "TheGo-Between")
 		(year 1953))
 
-	([ontology_Class11867] of  Book
+	([ontology_Class11864] of  Book
 
 		(author [ontology_Class10582])
 		(genre "Historical")
@@ -16346,7 +16325,7 @@
 		(title "Birdsong")
 		(year 1993))
 
-	([ontology_Class11868] of  Book
+	([ontology_Class11865] of  Book
 
 		(author [ontology_Class10227])
 		(genre "Classics")
@@ -16356,7 +16335,7 @@
 		(title "ThePortraitofaLady")
 		(year 1881))
 
-	([ontology_Class11869] of  Book
+	([ontology_Class11866] of  Book
 
 		(author [ontology_Class10402])
 		(genre "Horror")
@@ -16366,7 +16345,7 @@
 		(title "MemnochtheDevil")
 		(year 1995))
 
-	([ontology_Class11870] of  Book
+	([ontology_Class11867] of  Book
 
 		(author [ontology_Class10583])
 		(genre "Fantasy")
@@ -16376,7 +16355,7 @@
 		(title "Archangel")
 		(year 1996))
 
-	([ontology_Class11871] of  Book
+	([ontology_Class11868] of  Book
 
 		(author [ontology_Class10135])
 		(genre "Classics")
@@ -16386,7 +16365,7 @@
 		(title "TheForsyteSaga")
 		(year 1921))
 
-	([ontology_Class11872] of  Book
+	([ontology_Class11869] of  Book
 
 		(author [ontology_Class10045])
 		(genre "Classics")
@@ -16396,7 +16375,7 @@
 		(title "Siddhartha")
 		(year 1922))
 
-	([ontology_Class11873] of  Book
+	([ontology_Class11870] of  Book
 
 		(author [ontology_Class10584])
 		(genre "Historical")
@@ -16406,7 +16385,7 @@
 		(title "TheLightBearer")
 		(year 1994))
 
-	([ontology_Class11874] of  Book
+	([ontology_Class11871] of  Book
 
 		(author [ontology_Class10397])
 		(genre "Fantasy")
@@ -16416,7 +16395,7 @@
 		(title "MaryStewart'sMerlinTrilogy")
 		(year 1978))
 
-	([ontology_Class11875] of  Book
+	([ontology_Class11872] of  Book
 
 		(author [ontology_Class10005])
 		(genre "Uncategorized")
@@ -16426,7 +16405,7 @@
 		(title "TheHouseontheStrand")
 		(year 1969))
 
-	([ontology_Class11876] of  Book
+	([ontology_Class11873] of  Book
 
 		(author [ontology_Class10102])
 		(genre "Historical")
@@ -16436,7 +16415,7 @@
 		(title "DevilWater")
 		(year 1961))
 
-	([ontology_Class11877] of  Book
+	([ontology_Class11874] of  Book
 
 		(author [ontology_Class10223])
 		(genre "Romance")
@@ -16446,7 +16425,7 @@
 		(title "TheUnknownAjax")
 		(year 1959))
 
-	([ontology_Class11878] of  Book
+	([ontology_Class11875] of  Book
 
 		(author [ontology_Class10585])
 		(genre "Historical")
@@ -16456,7 +16435,7 @@
 		(title "TheProudBreed")
 		(year 1978))
 
-	([ontology_Class11879] of  Book
+	([ontology_Class11876] of  Book
 
 		(author [ontology_Class10358])
 		(genre "Thriller")
@@ -16466,7 +16445,7 @@
 		(title "CrocodileontheSandbank")
 		(year 1975))
 
-	([ontology_Class11880] of  Book
+	([ontology_Class11877] of  Book
 
 		(author [ontology_Class10586])
 		(genre "Historical")
@@ -16476,7 +16455,7 @@
 		(title "CeliaGarth")
 		(year 1959))
 
-	([ontology_Class11881] of  Book
+	([ontology_Class11878] of  Book
 
 		(author [ontology_Class10587])
 		(genre "Historical")
@@ -16486,7 +16465,7 @@
 		(title "NowFacetoFace")
 		(year 1995))
 
-	([ontology_Class11882] of  Book
+	([ontology_Class11879] of  Book
 
 		(author [ontology_Class10588])
 		(genre "Romance")
@@ -16496,7 +16475,7 @@
 		(title "Alinor")
 		(year 1978))
 
-	([ontology_Class11883] of  Book
+	([ontology_Class11880] of  Book
 
 		(author [ontology_Class10224])
 		(genre "Romance")
@@ -16506,7 +16485,7 @@
 		(title "AshesintheWind")
 		(year 1979))
 
-	([ontology_Class11884] of  Book
+	([ontology_Class11881] of  Book
 
 		(author [ontology_Class10399])
 		(genre "Fantasy")
@@ -16516,7 +16495,7 @@
 		(title "Beauty:ARetellingoftheStoryofBeautyandtheBeast")
 		(year 1978))
 
-	([ontology_Class11885] of  Book
+	([ontology_Class11882] of  Book
 
 		(author [ontology_Class10092])
 		(genre "Historical")
@@ -16526,7 +16505,7 @@
 		(title "TradeWind")
 		(year 1963))
 
-	([ontology_Class11886] of  Book
+	([ontology_Class11883] of  Book
 
 		(author [ontology_Class10589])
 		(genre "Historical")
@@ -16536,7 +16515,7 @@
 		(title "Penmarric")
 		(year 1971))
 
-	([ontology_Class11887] of  Book
+	([ontology_Class11884] of  Book
 
 		(author [ontology_Class10325])
 		(genre "Young")
@@ -16546,7 +16525,7 @@
 		(title "KissedbyanAngel/ThePowerofLove/Soulmates")
 		(year 1995))
 
-	([ontology_Class11888] of  Book
+	([ontology_Class11885] of  Book
 
 		(author [ontology_Class10590])
 		(genre "Historical")
@@ -16556,7 +16535,7 @@
 		(title "RossPoldark")
 		(year 1945))
 
-	([ontology_Class11889] of  Book
+	([ontology_Class11886] of  Book
 
 		(author [ontology_Class10591])
 		(genre "Historical")
@@ -16566,7 +16545,7 @@
 		(title "TheManyLivesSecretSorrowsofJosephineB.")
 		(year 1995))
 
-	([ontology_Class11890] of  Book
+	([ontology_Class11887] of  Book
 
 		(author [ontology_Class10204])
 		(genre "Classics")
@@ -16576,7 +16555,7 @@
 		(title "NorthandSouth")
 		(year 1855))
 
-	([ontology_Class11891] of  Book
+	([ontology_Class11888] of  Book
 
 		(author [ontology_Class10202])
 		(genre "Classics")
@@ -16586,7 +16565,7 @@
 		(title "DoctorZhivago")
 		(year 1957))
 
-	([ontology_Class11892] of  Book
+	([ontology_Class11889] of  Book
 
 		(author [ontology_Class10096])
 		(genre "Historical")
@@ -16596,7 +16575,7 @@
 		(title "ForeverAmber")
 		(year 1944))
 
-	([ontology_Class11893] of  Book
+	([ontology_Class11890] of  Book
 
 		(author [ontology_Class10014])
 		(genre "Uncategorized")
@@ -16606,7 +16585,7 @@
 		(title "MemoirsofaGeisha")
 		(year 1997))
 
-	([ontology_Class11894] of  Book
+	([ontology_Class11891] of  Book
 
 		(author [ontology_Class10592])
 		(genre "Uncategorized")
@@ -16616,7 +16595,7 @@
 		(title "SoBig")
 		(year 1924))
 
-	([ontology_Class11895] of  Book
+	([ontology_Class11892] of  Book
 
 		(author [ontology_Class10519])
 		(genre "Classics")
@@ -16626,7 +16605,7 @@
 		(title "TarzanoftheApes")
 		(year 1912))
 
-	([ontology_Class11896] of  Book
+	([ontology_Class11893] of  Book
 
 		(author [ontology_Class10413])
 		(genre "Classics")
@@ -16636,7 +16615,7 @@
 		(title "TheJungleBook")
 		(year 1893))
 
-	([ontology_Class11897] of  Book
+	([ontology_Class11894] of  Book
 
 		(author [ontology_Class10552])
 		(genre "Classics")
@@ -16646,7 +16625,7 @@
 		(title "OntheBanksofPlumCreek")
 		(year 1937))
 
-	([ontology_Class11898] of  Book
+	([ontology_Class11895] of  Book
 
 		(author [ontology_Class10593])
 		(genre "Classics")
@@ -16656,7 +16635,7 @@
 		(title "Emily'sQuest")
 		(year 1927))
 
-	([ontology_Class11899] of  Book
+	([ontology_Class11896] of  Book
 
 		(author [ontology_Class10054])
 		(genre "Classics")
@@ -16666,7 +16645,7 @@
 		(title "TheReturnoftheNative")
 		(year 1878))
 
-	([ontology_Class11900] of  Book
+	([ontology_Class11897] of  Book
 
 		(author [ontology_Class10155])
 		(genre "Uncategorized")
@@ -16676,7 +16655,7 @@
 		(title "TheShippingNews")
 		(year 1993))
 
-	([ontology_Class11901] of  Book
+	([ontology_Class11898] of  Book
 
 		(author [ontology_Class10142])
 		(genre "Classics")
@@ -16686,7 +16665,7 @@
 		(title "TheSwissFamilyRobinson")
 		(year 1812))
 
-	([ontology_Class11902] of  Book
+	([ontology_Class11899] of  Book
 
 		(author [ontology_Class10055])
 		(genre "Classics")
@@ -16696,7 +16675,7 @@
 		(title "DavidCopperfield")
 		(year 1849))
 
-	([ontology_Class11903] of  Book
+	([ontology_Class11900] of  Book
 
 		(author [ontology_Class10374])
 		(genre "Classics")
@@ -16706,7 +16685,7 @@
 		(title "BridesheadRevisited:TheSacredandProfaneMemoriesofCaptainCharlesRyder")
 		(year 1945))
 
-	([ontology_Class11904] of  Book
+	([ontology_Class11901] of  Book
 
 		(author [ontology_Class10064])
 		(genre "Uncategorized")
@@ -16716,7 +16695,7 @@
 		(title "ThingsFallApart")
 		(year 1958))
 
-	([ontology_Class11905] of  Book
+	([ontology_Class11902] of  Book
 
 		(author [ontology_Class10594])
 		(genre "Classics")
@@ -16726,7 +16705,7 @@
 		(title "OPioneers!")
 		(year 1913))
 
-	([ontology_Class11906] of  Book
+	([ontology_Class11903] of  Book
 
 		(author [ontology_Class10296])
 		(genre "Uncategorized")
@@ -16736,7 +16715,7 @@
 		(title "TheThornBirds")
 		(year 1977))
 
-	([ontology_Class11907] of  Book
+	([ontology_Class11904] of  Book
 
 		(author [ontology_Class10149])
 		(genre "Classics")
@@ -16746,7 +16725,7 @@
 		(title "WheretheRedFernGrows")
 		(year 1961))
 
-	([ontology_Class11908] of  Book
+	([ontology_Class11905] of  Book
 
 		(author [ontology_Class10241])
 		(genre "Uncategorized")
@@ -16756,7 +16735,7 @@
 		(title "ICapturetheCastle")
 		(year 1948))
 
-	([ontology_Class11909] of  Book
+	([ontology_Class11906] of  Book
 
 		(author [ontology_Class10106])
 		(genre "Historical")
@@ -16766,7 +16745,7 @@
 		(title "ColdMountain")
 		(year 1997))
 
-	([ontology_Class11910] of  Book
+	([ontology_Class11907] of  Book
 
 		(author [ontology_Class10389])
 		(genre "Uncategorized")
@@ -16776,7 +16755,7 @@
 		(title "Christy")
 		(year 1967))
 
-	([ontology_Class11911] of  Book
+	([ontology_Class11908] of  Book
 
 		(author [ontology_Class10218])
 		(genre "Uncategorized")
@@ -16786,7 +16765,7 @@
 		(title "ColdComfortFarm")
 		(year 1932))
 
-	([ontology_Class11912] of  Book
+	([ontology_Class11909] of  Book
 
 		(author [ontology_Class10162])
 		(genre "Classics")
@@ -16796,7 +16775,7 @@
 		(title "TheGoodEarth")
 		(year 1931))
 
-	([ontology_Class11913] of  Book
+	([ontology_Class11910] of  Book
 
 		(author [ontology_Class10113])
 		(genre "Classics")
@@ -16806,7 +16785,7 @@
 		(title "Alice'sAdventuresinWonderlandThroughtheLooking-Glass")
 		(year 1872))
 
-	([ontology_Class11914] of  Book
+	([ontology_Class11911] of  Book
 
 		(author [ontology_Class10032])
 		(genre "Fantasy")
@@ -16816,7 +16795,7 @@
 		(title "TuckEverlasting")
 		(year 1975))
 
-	([ontology_Class11915] of  Book
+	([ontology_Class11912] of  Book
 
 		(author [ontology_Class10028])
 		(genre "Classics")
@@ -16826,7 +16805,7 @@
 		(title "Dracula")
 		(year 1897))
 
-	([ontology_Class11916] of  Book
+	([ontology_Class11913] of  Book
 
 		(author [ontology_Class10060])
 		(genre "Classics")
@@ -16836,7 +16815,7 @@
 		(title "EastofEden")
 		(year 1952))
 
-	([ontology_Class11917] of  Book
+	([ontology_Class11914] of  Book
 
 		(author [ontology_Class10068])
 		(genre "Classics")
@@ -16846,7 +16825,7 @@
 		(title "WatershipDown")
 		(year 1972))
 
-	([ontology_Class11918] of  Book
+	([ontology_Class11915] of  Book
 
 		(author [ontology_Class10073])
 		(genre "Classics")
@@ -16856,7 +16835,7 @@
 		(title "AnimalFarm")
 		(year 1945))
 
-	([ontology_Class11919] of  Book
+	([ontology_Class11916] of  Book
 
 		(author [ontology_Class10011])
 		(genre "Fantasy")
@@ -16866,7 +16845,7 @@
 		(title "TheHobbit")
 		(year 1937))
 
-	([ontology_Class11920] of  Book
+	([ontology_Class11917] of  Book
 
 		(author [ontology_Class10016])
 		(genre "Classics")
@@ -16876,7 +16855,7 @@
 		(title "GonewiththeWind")
 		(year 1936))
 
-	([ontology_Class11921] of  Book
+	([ontology_Class11918] of  Book
 
 		(author [ontology_Class10007])
 		(genre "Classics")
@@ -16886,7 +16865,7 @@
 		(title "LittleWomen")
 		(year 1868))
 
-	([ontology_Class11922] of  Book
+	([ontology_Class11919] of  Book
 
 		(author [ontology_Class10265])
 		(genre "Classics")
@@ -16896,7 +16875,7 @@
 		(title "TheSecretGarden")
 		(year 1911))
 
-	([ontology_Class11923] of  Book
+	([ontology_Class11920] of  Book
 
 		(author [ontology_Class10067])
 		(genre "Fantasy")
@@ -16906,7 +16885,7 @@
 		(title "TheGoldenCompass")
 		(year 1995))
 
-	([ontology_Class11924] of  Book
+	([ontology_Class11921] of  Book
 
 		(author [ontology_Class10595])
 		(genre "Young")
@@ -16916,7 +16895,7 @@
 		(title "KeepingtheMoon")
 		(year 1999))
 
-	([ontology_Class11925] of  Book
+	([ontology_Class11922] of  Book
 
 		(author [ontology_Class10057])
 		(genre "Thriller")
@@ -16926,7 +16905,7 @@
 		(title "TheWestingGame")
 		(year 1978))
 
-	([ontology_Class11926] of  Book
+	([ontology_Class11923] of  Book
 
 		(author [ontology_Class10034])
 		(genre "Uncategorized")
@@ -16936,7 +16915,7 @@
 		(title "TheBadBeginning")
 		(year 1999))
 
-	([ontology_Class11927] of  Book
+	([ontology_Class11924] of  Book
 
 		(author [ontology_Class10038])
 		(genre "Fantasy")
@@ -16946,7 +16925,7 @@
 		(title "ThePrincessBride")
 		(year 1973))
 
-	([ontology_Class11928] of  Book
+	([ontology_Class11925] of  Book
 
 		(author [ontology_Class10040])
 		(genre "Fantasy")
@@ -16956,7 +16935,7 @@
 		(title "AWrinkleinTime")
 		(year 1962))
 
-	([ontology_Class11929] of  Book
+	([ontology_Class11926] of  Book
 
 		(author [ontology_Class10076])
 		(genre "Classics")
@@ -16966,7 +16945,7 @@
 		(title "TheOutsiders")
 		(year 1967))
 
-	([ontology_Class11930] of  Book
+	([ontology_Class11927] of  Book
 
 		(author [ontology_Class10052])
 		(genre "Young")
@@ -16976,7 +16955,7 @@
 		(title "WalkTwoMoons")
 		(year 1994))
 
-	([ontology_Class11931] of  Book
+	([ontology_Class11928] of  Book
 
 		(author [ontology_Class10009])
 		(genre "Classics")
@@ -16986,7 +16965,7 @@
 		(title "TheBellJar")
 		(year 1963))
 
-	([ontology_Class11932] of  Book
+	([ontology_Class11929] of  Book
 
 		(author [ontology_Class10596])
 		(genre "Uncategorized")
@@ -16996,7 +16975,7 @@
 		(title "PicturePerfect")
 		(year 1995))
 
-	([ontology_Class11933] of  Book
+	([ontology_Class11930] of  Book
 
 		(author [ontology_Class10094])
 		(genre "Historical")
@@ -17006,7 +16985,7 @@
 		(title "London")
 		(year 1997))
 
-	([ontology_Class11934] of  Book
+	([ontology_Class11931] of  Book
 
 		(author [ontology_Class10415])
 		(genre "Classics")
@@ -17016,7 +16995,7 @@
 		(title "APassagetoIndia")
 		(year 1924))
 
-	([ontology_Class11935] of  Book
+	([ontology_Class11932] of  Book
 
 		(author [ontology_Class10333])
 		(genre "Historical")
@@ -17026,7 +17005,7 @@
 		(title "TheKingMustDie")
 		(year 1958))
 
-	([ontology_Class11936] of  Book
+	([ontology_Class11933] of  Book
 
 		(author [ontology_Class10030])
 		(genre "Fantasy")
@@ -17036,7 +17015,7 @@
 		(title "WildMagic")
 		(year 1992))
 
-	([ontology_Class11937] of  Book
+	([ontology_Class11934] of  Book
 
 		(author [ontology_Class10550])
 		(genre "Romance")
@@ -17046,7 +17025,7 @@
 		(title "CarnalInnocence")
 		(year 1991))
 
-	([ontology_Class11938] of  Book
+	([ontology_Class11935] of  Book
 
 		(author [ontology_Class10288])
 		(genre "Uncategorized")
@@ -17056,7 +17035,7 @@
 		(title "TheHundredSecretSenses")
 		(year 1995))
 
-	([ontology_Class11939] of  Book
+	([ontology_Class11936] of  Book
 
 		(author [ontology_Class10073])
 		(genre "Uncategorized")
@@ -17066,7 +17045,7 @@
 		(title "BurmeseDays")
 		(year 1934))
 
-	([ontology_Class11940] of  Book
+	([ontology_Class11937] of  Book
 
 		(author [ontology_Class10067])
 		(genre "Fantasy")
@@ -17076,7 +17055,7 @@
 		(title "TheSubtleKnife")
 		(year 1997))
 
-	([ontology_Class11941] of  Book
+	([ontology_Class11938] of  Book
 
 		(author [ontology_Class10051])
 		(genre "Uncategorized")
@@ -17086,7 +17065,7 @@
 		(title "TheMasterandMargarita")
 		(year 1967))
 
-	([ontology_Class11942] of  Book
+	([ontology_Class11939] of  Book
 
 		(author [ontology_Class10066])
 		(genre "Classics")
@@ -17096,7 +17075,7 @@
 		(title "AFarewelltoArms")
 		(year 1929))
 
-	([ontology_Class11943] of  Book
+	([ontology_Class11940] of  Book
 
 		(author [ontology_Class10111])
 		(genre "Classics")
@@ -17106,7 +17085,7 @@
 		(title "Lolita")
 		(year 1955))
 
-	([ontology_Class11944] of  Book
+	([ontology_Class11941] of  Book
 
 		(author [ontology_Class10097])
 		(genre "Historical")
@@ -17116,7 +17095,7 @@
 		(title "Tai-Pan")
 		(year 1966))
 
-	([ontology_Class11945] of  Book
+	([ontology_Class11942] of  Book
 
 		(author [ontology_Class10597])
 		(genre "Uncategorized")
@@ -17126,7 +17105,7 @@
 		(title "Midwives")
 		(year 1997))
 
-	([ontology_Class11946] of  Book
+	([ontology_Class11943] of  Book
 
 		(author [ontology_Class10182])
 		(genre "Thriller")
@@ -17136,17 +17115,7 @@
 		(title "MurderontheOrientExpress")
 		(year 1934))
 
-	([ontology_Class11947] of  Book
-
-		(author [ontology_Class10598])
-		(genre "Uncategorized")
-		(pages 300)
-		(popularity medium)
-		(rating 0.0)
-		(title "ThePigman")
-		(year 1968))
-
-	([ontology_Class11948] of  Book
+	([ontology_Class11944] of  Book
 
 		(author [ontology_Class10342])
 		(genre "Uncategorized")
@@ -17156,7 +17125,7 @@
 		(title "TravelswithMyAunt")
 		(year 1969))
 
-	([ontology_Class11949] of  Book
+	([ontology_Class11945] of  Book
 
 		(author [ontology_Class10010])
 		(genre "Uncategorized")
@@ -17166,7 +17135,7 @@
 		(title "TheReader")
 		(year 1995))
 
-	([ontology_Class11950] of  Book
+	([ontology_Class11946] of  Book
 
 		(author [ontology_Class10015])
 		(genre "Romance")
@@ -17176,7 +17145,7 @@
 		(title "AWalktoRemember")
 		(year 1999))
 
-	([ontology_Class11951] of  Book
+	([ontology_Class11947] of  Book
 
 		(author [ontology_Class10045])
 		(genre "Classics")
@@ -17186,7 +17155,7 @@
 		(title "Siddhartha")
 		(year 1922))
 
-	([ontology_Class11952] of  Book
+	([ontology_Class11948] of  Book
 
 		(author [ontology_Class10208])
 		(genre "Uncategorized")
@@ -17196,7 +17165,7 @@
 		(title "BastardOutofCarolina")
 		(year 1992))
 
-	([ontology_Class11953] of  Book
+	([ontology_Class11949] of  Book
 
 		(author [ontology_Class10240])
 		(genre "Horror")
@@ -17206,7 +17175,7 @@
 		(title "WeHaveAlwaysLivedintheCastle")
 		(year 1962))
 
-	([ontology_Class11954] of  Book
+	([ontology_Class11950] of  Book
 
 		(author [ontology_Class10335])
 		(genre "Thriller")
@@ -17216,7 +17185,7 @@
 		(title "AMorbidTasteforBones")
 		(year 1977))
 
-	([ontology_Class11955] of  Book
+	([ontology_Class11951] of  Book
 
 		(author [ontology_Class10265])
 		(genre "Classics")
@@ -17226,7 +17195,7 @@
 		(title "TheSecretGarden")
 		(year 1911))
 
-	([ontology_Class11956] of  Book
+	([ontology_Class11952] of  Book
 
 		(author [ontology_Class10223])
 		(genre "Romance")
@@ -17236,7 +17205,7 @@
 		(title "TheseOldShades")
 		(year 1926))
 
-	([ontology_Class11957] of  Book
+	([ontology_Class11953] of  Book
 
 		(author [ontology_Class10197])
 		(genre "Uncategorized")
@@ -17246,9 +17215,9 @@
 		(title "NakedLunch")
 		(year 1959))
 
-	([ontology_Class11958] of  Book
+	([ontology_Class11954] of  Book
 
-		(author [ontology_Class10599])
+		(author [ontology_Class10598])
 		(genre "Uncategorized")
 		(pages 1067)
 		(popularity medium)
@@ -17256,7 +17225,7 @@
 		(title "OneTrueThing")
 		(year 1994))
 
-	([ontology_Class11959] of  Book
+	([ontology_Class11955] of  Book
 
 		(author [ontology_Class10229])
 		(genre "Classics")
@@ -17266,7 +17235,7 @@
 		(title "TheAwakening")
 		(year 1899))
 
-	([ontology_Class11960] of  Book
+	([ontology_Class11956] of  Book
 
 		(author [ontology_Class10248])
 		(genre "Short Stories")
@@ -17276,7 +17245,7 @@
 		(title "AGoodManisHardtoFindandOtherStories")
 		(year 1953))
 
-	([ontology_Class11961] of  Book
+	([ontology_Class11957] of  Book
 
 		(author [ontology_Class10306])
 		(genre "Classics")
@@ -17286,7 +17255,7 @@
 		(title "Slaughterhouse-Five")
 		(year 1969))
 
-	([ontology_Class11962] of  Book
+	([ontology_Class11958] of  Book
 
 		(author [ontology_Class10201])
 		(genre "Uncategorized")
@@ -17296,9 +17265,9 @@
 		(title "DivineSecretsoftheYa-YaSisterhood")
 		(year 1996))
 
-	([ontology_Class11963] of  Book
+	([ontology_Class11959] of  Book
 
-		(author [ontology_Class10600])
+		(author [ontology_Class10599])
 		(genre "Uncategorized")
 		(pages 612)
 		(popularity medium)
@@ -17306,7 +17275,7 @@
 		(title "BeachMusic")
 		(year 1995))
 
-	([ontology_Class11964] of  Book
+	([ontology_Class11960] of  Book
 
 		(author [ontology_Class10099])
 		(genre "Historical")
@@ -17316,7 +17285,7 @@
 		(title "TheAgonyandtheEcstasy")
 		(year 1958))
 
-	([ontology_Class11965] of  Book
+	([ontology_Class11961] of  Book
 
 		(author [ontology_Class10110])
 		(genre "Classics")
@@ -17326,7 +17295,7 @@
 		(title "AnnaKarenina")
 		(year 1877))
 
-	([ontology_Class11966] of  Book
+	([ontology_Class11962] of  Book
 
 		(author [ontology_Class10040])
 		(genre "Fantasy")
@@ -17336,7 +17305,7 @@
 		(title "AWrinkleinTime")
 		(year 1962))
 
-	([ontology_Class11967] of  Book
+	([ontology_Class11963] of  Book
 
 		(author [ontology_Class10012])
 		(genre "Romance")
@@ -17346,7 +17315,7 @@
 		(title "BridgetJones:TheEdgeofReason")
 		(year 1999))
 
-	([ontology_Class11968] of  Book
+	([ontology_Class11964] of  Book
 
 		(author [ontology_Class10200])
 		(genre "Uncategorized")
@@ -17356,7 +17325,7 @@
 		(title "WheretheHeartIs")
 		(year 1995))
 
-	([ontology_Class11969] of  Book
+	([ontology_Class11965] of  Book
 
 		(author [ontology_Class10101])
 		(genre "Historical")
@@ -17366,7 +17335,7 @@
 		(title "Trinity")
 		(year 1976))
 
-	([ontology_Class11970] of  Book
+	([ontology_Class11966] of  Book
 
 		(author [ontology_Class10549])
 		(genre "Uncategorized")
@@ -17376,7 +17345,7 @@
 		(title "TheVirginSuicides")
 		(year 1993))
 
-	([ontology_Class11971] of  Book
+	([ontology_Class11967] of  Book
 
 		(author [ontology_Class10049])
 		(genre "Uncategorized")
@@ -17386,7 +17355,7 @@
 		(title "IfonaWinter'sNightaTraveler")
 		(year 1979))
 
-	([ontology_Class11972] of  Book
+	([ontology_Class11968] of  Book
 
 		(author [ontology_Class10107])
 		(genre "Historical")
@@ -17396,7 +17365,7 @@
 		(title "TheRedTent")
 		(year 1997))
 
-	([ontology_Class11973] of  Book
+	([ontology_Class11969] of  Book
 
 		(author [ontology_Class10520])
 		(genre "Young")
@@ -17406,7 +17375,7 @@
 		(title "IAmtheCheese")
 		(year 1977))
 
-	([ontology_Class11974] of  Book
+	([ontology_Class11970] of  Book
 
 		(author [ontology_Class10185])
 		(genre "Uncategorized")
@@ -17416,7 +17385,7 @@
 		(title "SnowFallingonCedars")
 		(year 1994))
 
-	([ontology_Class11975] of  Book
+	([ontology_Class11971] of  Book
 
 		(author [ontology_Class10163])
 		(genre "Classics")
@@ -17426,7 +17395,7 @@
 		(title "OntheRoad")
 		(year 1955))
 
-	([ontology_Class11976] of  Book
+	([ontology_Class11972] of  Book
 
 		(author [ontology_Class10014])
 		(genre "Uncategorized")
@@ -17436,7 +17405,7 @@
 		(title "MemoirsofaGeisha")
 		(year 1997))
 
-	([ontology_Class11977] of  Book
+	([ontology_Class11973] of  Book
 
 		(author [ontology_Class10113])
 		(genre "Classics")
@@ -17446,7 +17415,7 @@
 		(title "Alice'sAdventuresinWonderlandThroughtheLooking-Glass")
 		(year 1872))
 
-	([ontology_Class11978] of  Book
+	([ontology_Class11974] of  Book
 
 		(author [ontology_Class10296])
 		(genre "Uncategorized")
@@ -17456,7 +17425,7 @@
 		(title "TheThornBirds")
 		(year 1977))
 
-	([ontology_Class11979] of  Book
+	([ontology_Class11975] of  Book
 
 		(author [ontology_Class10006])
 		(genre "Classics")
@@ -17466,7 +17435,7 @@
 		(title "PrideandPrejudice")
 		(year 1813))
 
-	([ontology_Class11980] of  Book
+	([ontology_Class11976] of  Book
 
 		(author [ontology_Class10156])
 		(genre "Fantasy")
@@ -17476,7 +17445,7 @@
 		(title "Wicked:TheLifeandTimesoftheWickedWitchoftheWest")
 		(year 1995))
 
-	([ontology_Class11981] of  Book
+	([ontology_Class11977] of  Book
 
 		(author [ontology_Class10402])
 		(genre "Horror")
@@ -17486,7 +17455,7 @@
 		(title "InterviewwiththeVampire")
 		(year 1976))
 
-	([ontology_Class11982] of  Book
+	([ontology_Class11978] of  Book
 
 		(author [ontology_Class10008])
 		(genre "Classics")
@@ -17496,7 +17465,7 @@
 		(title "ATreeGrowsinBrooklyn")
 		(year 1943))
 
-	([ontology_Class11983] of  Book
+	([ontology_Class11979] of  Book
 
 		(author [ontology_Class10068])
 		(genre "Classics")
@@ -17506,7 +17475,7 @@
 		(title "WatershipDown")
 		(year 1972))
 
-	([ontology_Class11984] of  Book
+	([ontology_Class11980] of  Book
 
 		(author [ontology_Class10261])
 		(genre "Horror")
@@ -17516,7 +17485,7 @@
 		(title "SomethingWickedThisWayComes")
 		(year 1962))
 
-	([ontology_Class11985] of  Book
+	([ontology_Class11981] of  Book
 
 		(author [ontology_Class10112])
 		(genre "Classics")
@@ -17526,7 +17495,7 @@
 		(title "Catch-22")
 		(year 1961))
 
-	([ontology_Class11986] of  Book
+	([ontology_Class11982] of  Book
 
 		(author [ontology_Class10065])
 		(genre "Classics")
@@ -17536,7 +17505,7 @@
 		(title "OneFlewOvertheCuckoo'sNest")
 		(year 1962))
 
-	([ontology_Class11987] of  Book
+	([ontology_Class11983] of  Book
 
 		(author [ontology_Class10075])
 		(genre "Classics")
@@ -17546,9 +17515,9 @@
 		(title "LordoftheFlies")
 		(year 1954))
 
-	([ontology_Class11988] of  Book
+	([ontology_Class11984] of  Book
 
-		(author [ontology_Class10601])
+		(author [ontology_Class10600])
 		(genre "Thriller")
 		(pages 339)
 		(popularity high)
@@ -17556,7 +17525,7 @@
 		(title "AlongCameaSpider")
 		(year 1993))
 
-	([ontology_Class11989] of  Book
+	([ontology_Class11985] of  Book
 
 		(author [ontology_Class10038])
 		(genre "Uncategorized")
@@ -17566,7 +17535,7 @@
 		(title "MarathonMan")
 		(year 1974))
 
-	([ontology_Class11990] of  Book
+	([ontology_Class11986] of  Book
 
 		(author [ontology_Class10054])
 		(genre "Classics")
@@ -17576,9 +17545,9 @@
 		(title "TessoftheD'Urbervilles")
 		(year 1891))
 
-	([ontology_Class11991] of  Book
+	([ontology_Class11987] of  Book
 
-		(author [ontology_Class10602])
+		(author [ontology_Class10601])
 		(genre "Horror")
 		(pages 388)
 		(popularity low)
@@ -17586,7 +17555,7 @@
 		(title "Valentine")
 		(year 1996))
 
-	([ontology_Class11992] of  Book
+	([ontology_Class11988] of  Book
 
 		(author [ontology_Class10443])
 		(genre "Romance")
@@ -17596,7 +17565,7 @@
 		(title "TheTemporaryWife")
 		(year 1997))
 
-	([ontology_Class11993] of  Book
+	([ontology_Class11989] of  Book
 
 		(author [ontology_Class10292])
 		(genre "Horror")
@@ -17606,7 +17575,7 @@
 		(title "TheStand")
 		(year 1978))
 
-	([ontology_Class11994] of  Book
+	([ontology_Class11990] of  Book
 
 		(author [ontology_Class10417])
 		(genre "Romance")
@@ -17616,9 +17585,9 @@
 		(title "PrinceCharming")
 		(year 1994))
 
-	([ontology_Class11995] of  Book
+	([ontology_Class11991] of  Book
 
-		(author [ontology_Class10603])
+		(author [ontology_Class10602])
 		(genre "Romance")
 		(pages 992)
 		(popularity low)
@@ -17626,9 +17595,9 @@
 		(title "ThunderRoses")
 		(year 1993))
 
-	([ontology_Class11996] of  Book
+	([ontology_Class11992] of  Book
 
-		(author [ontology_Class10604])
+		(author [ontology_Class10603])
 		(genre "Romance")
 		(pages 1100)
 		(popularity medium)
@@ -17636,7 +17605,7 @@
 		(title "DreamingofYou")
 		(year 1994))
 
-	([ontology_Class11997] of  Book
+	([ontology_Class11993] of  Book
 
 		(author [ontology_Class10280])
 		(genre "Fantasy")
@@ -17646,7 +17615,7 @@
 		(title "HarryPotterandthePrisonerofAzkaban")
 		(year 1999))
 
-	([ontology_Class11998] of  Book
+	([ontology_Class11994] of  Book
 
 		(author [ontology_Class10064])
 		(genre "Uncategorized")
@@ -17656,7 +17625,7 @@
 		(title "ThingsFallApart")
 		(year 1958))
 
-	([ontology_Class11999] of  Book
+	([ontology_Class11995] of  Book
 
 		(author [ontology_Class10225])
 		(genre "Romance")
@@ -17666,7 +17635,7 @@
 		(title "FlowersfromtheStorm")
 		(year 1992))
 
-	([ontology_Class12000] of  Book
+	([ontology_Class11996] of  Book
 
 		(author [ontology_Class10442])
 		(genre "Romance")
@@ -17676,7 +17645,7 @@
 		(title "CharmingthePrince")
 		(year 1999))
 
-	([ontology_Class12001] of  Book
+	([ontology_Class11997] of  Book
 
 		(author [ontology_Class10035])
 		(genre "Fantasy")
@@ -17686,7 +17655,7 @@
 		(title "TheThief")
 		(year 1996))
 
-	([ontology_Class12002] of  Book
+	([ontology_Class11998] of  Book
 
 		(author [ontology_Class10162])
 		(genre "Classics")
@@ -17696,7 +17665,7 @@
 		(title "TheGoodEarth")
 		(year 1931))
 
-	([ontology_Class12003] of  Book
+	([ontology_Class11999] of  Book
 
 		(author [ontology_Class10224])
 		(genre "Romance")
@@ -17706,7 +17675,7 @@
 		(title "Shanna")
 		(year 1977))
 
-	([ontology_Class12004] of  Book
+	([ontology_Class12000] of  Book
 
 		(author [ontology_Class10193])
 		(genre "Uncategorized")
@@ -17716,7 +17685,7 @@
 		(title "TheGodfather")
 		(year 1969))
 
-	([ontology_Class12005] of  Book
+	([ontology_Class12001] of  Book
 
 		(author [ontology_Class10145])
 		(genre "Romance")
@@ -17726,7 +17695,7 @@
 		(title "ComancheMoon")
 		(year 1991))
 
-	([ontology_Class12006] of  Book
+	([ontology_Class12002] of  Book
 
 		(author [ontology_Class10238])
 		(genre "Horror")
@@ -17736,7 +17705,7 @@
 		(title "TheStepfordWives")
 		(year 1972))
 
-	([ontology_Class12007] of  Book
+	([ontology_Class12003] of  Book
 
 		(author [ontology_Class10077])
 		(genre "Classics")
@@ -17746,7 +17715,7 @@
 		(title "TheGreatGatsby")
 		(year 1925))
 
-	([ontology_Class12008] of  Book
+	([ontology_Class12004] of  Book
 
 		(author [ontology_Class10005])
 		(genre "Classics")
@@ -17756,7 +17725,7 @@
 		(title "Rebecca")
 		(year 1938))
 
-	([ontology_Class12009] of  Book
+	([ontology_Class12005] of  Book
 
 		(author [ontology_Class10317])
 		(genre "Fantasy")
@@ -17766,7 +17735,7 @@
 		(title "Sabriel")
 		(year 1995))
 
-	([ontology_Class12010] of  Book
+	([ontology_Class12006] of  Book
 
 		(author [ontology_Class10397])
 		(genre "Fantasy")
@@ -17776,7 +17745,7 @@
 		(title "TheLastEnchantment")
 		(year 1979))
 
-	([ontology_Class12011] of  Book
+	([ontology_Class12007] of  Book
 
 		(author [ontology_Class10134])
 		(genre "Uncategorized")
@@ -17786,7 +17755,7 @@
 		(title "TheBourneTrilogy")
 		(year 1991))
 
-	([ontology_Class12012] of  Book
+	([ontology_Class12008] of  Book
 
 		(author [ontology_Class10338])
 		(genre "Thriller")
@@ -17796,7 +17765,7 @@
 		(title "TheBeekeeper'sApprentice")
 		(year 1994))
 
-	([ontology_Class12013] of  Book
+	([ontology_Class12009] of  Book
 
 		(author [ontology_Class10246])
 		(genre "Historical")
@@ -17806,7 +17775,7 @@
 		(title "TheGentlemanOutlawandMe--Eli")
 		(year 1996))
 
-	([ontology_Class12014] of  Book
+	([ontology_Class12010] of  Book
 
 		(author [ontology_Class10016])
 		(genre "Classics")
@@ -17816,7 +17785,7 @@
 		(title "GonewiththeWind")
 		(year 1936))
 
-	([ontology_Class12015] of  Book
+	([ontology_Class12011] of  Book
 
 		(author [ontology_Class10011])
 		(genre "Fantasy")
@@ -17826,9 +17795,9 @@
 		(title "TheReturnoftheKing")
 		(year 1955))
 
-	([ontology_Class12016] of  Book
+	([ontology_Class12012] of  Book
 
-		(author [ontology_Class10605])
+		(author [ontology_Class10604])
 		(genre "Young")
 		(pages 2236)
 		(popularity high)
@@ -17836,9 +17805,9 @@
 		(title "TheGiver")
 		(year 1993))
 
-	([ontology_Class12017] of  Book
+	([ontology_Class12013] of  Book
 
-		(author [ontology_Class10606])
+		(author [ontology_Class10605])
 		(genre "Uncategorized")
 		(pages 458)
 		(popularity medium)
@@ -17846,9 +17815,9 @@
 		(title "ARiverRunsThroughitandOtherStories")
 		(year 1976))
 
-	([ontology_Class12018] of  Book
+	([ontology_Class12014] of  Book
 
-		(author [ontology_Class10607])
+		(author [ontology_Class10606])
 		(genre "Short Stories")
 		(pages 470)
 		(popularity low)
@@ -17856,7 +17825,7 @@
 		(title "ParisStories")
 		(year 1995))
 
-	([ontology_Class12019] of  Book
+	([ontology_Class12015] of  Book
 
 		(author [ontology_Class10399])
 		(genre "Fantasy")
@@ -17866,9 +17835,9 @@
 		(title "RoseDaughter")
 		(year 1997))
 
-	([ontology_Class12020] of  Book
+	([ontology_Class12016] of  Book
 
-		(author [ontology_Class10608])
+		(author [ontology_Class10607])
 		(genre "Westerns")
 		(pages 484)
 		(popularity low)
@@ -17876,7 +17845,7 @@
 		(title "TheCompleteWesternStoriesofElmoreLeonard")
 		(year 1975))
 
-	([ontology_Class12021] of  Book
+	([ontology_Class12017] of  Book
 
 		(author [ontology_Class10100])
 		(genre "Historical")
@@ -17886,7 +17855,7 @@
 		(title "PopeJoan")
 		(year 1996))
 
-	([ontology_Class12022] of  Book
+	([ontology_Class12018] of  Book
 
 		(author [ontology_Class10558])
 		(genre "Romance")
@@ -17896,9 +17865,9 @@
 		(title "MyLadyNotorious")
 		(year 1993))
 
-	([ontology_Class12023] of  Book
+	([ontology_Class12019] of  Book
 
-		(author [ontology_Class10609])
+		(author [ontology_Class10608])
 		(genre "Romance")
 		(pages 1427)
 		(popularity low)
@@ -17906,7 +17875,7 @@
 		(title "LadyRogue")
 		(year 1997))
 
-	([ontology_Class12024] of  Book
+	([ontology_Class12020] of  Book
 
 		(author [ontology_Class10220])
 		(genre "Uncategorized")
@@ -17916,7 +17885,7 @@
 		(title "DeathinVeniceandOtherTales")
 		(year 1911))
 
-	([ontology_Class12025] of  Book
+	([ontology_Class12021] of  Book
 
 		(author [ontology_Class10307])
 		(genre "Short Stories")
@@ -17926,7 +17895,7 @@
 		(title "TheCompleteStoriesofTrumanCapote")
 		(year 1993))
 
-	([ontology_Class12026] of  Book
+	([ontology_Class12022] of  Book
 
 		(author [ontology_Class10136])
 		(genre "Classics")
@@ -17936,7 +17905,7 @@
 		(title "TheAdventuresofSherlockHolmes")
 		(year 1892))
 
-	([ontology_Class12027] of  Book
+	([ontology_Class12023] of  Book
 
 		(author [ontology_Class10539])
 		(genre "Short Stories")
@@ -17946,9 +17915,9 @@
 		(title "TheGardenPartyandOtherStories")
 		(year 1922))
 
-	([ontology_Class12028] of  Book
+	([ontology_Class12024] of  Book
 
-		(author [ontology_Class10610])
+		(author [ontology_Class10609])
 		(genre "Uncategorized")
 		(pages 683)
 		(popularity medium)
@@ -17956,7 +17925,7 @@
 		(title "TheLoneRangerandTontoFistfightinHeaven")
 		(year 1993))
 
-	([ontology_Class12029] of  Book
+	([ontology_Class12025] of  Book
 
 		(author [ontology_Class10542])
 		(genre "Classics")
@@ -17966,7 +17935,7 @@
 		(title "TheCompleteWorksofO.Henry")
 		(year 1937))
 
-	([ontology_Class12030] of  Book
+	([ontology_Class12026] of  Book
 
 		(author [ontology_Class10212])
 		(genre "Classics")
@@ -17976,7 +17945,7 @@
 		(title "TheYellowWallpaperandOtherStories")
 		(year 1892))
 
-	([ontology_Class12031] of  Book
+	([ontology_Class12027] of  Book
 
 		(author [ontology_Class10061])
 		(genre "Classics")
@@ -17986,7 +17955,7 @@
 		(title "TheCompleteShortStoriesofMarkTwain")
 		(year 1957))
 
-	([ontology_Class12032] of  Book
+	([ontology_Class12028] of  Book
 
 		(author [ontology_Class10544])
 		(genre "Uncategorized")
@@ -17996,7 +17965,7 @@
 		(title "Winesburg,Ohio")
 		(year 1919))
 
-	([ontology_Class12033] of  Book
+	([ontology_Class12029] of  Book
 
 		(author [ontology_Class10228])
 		(genre "Classics")
@@ -18006,7 +17975,7 @@
 		(title "DiaryofaMadmanandOtherStories")
 		(year 1835))
 
-	([ontology_Class12034] of  Book
+	([ontology_Class12030] of  Book
 
 		(author [ontology_Class10153])
 		(genre "Fantasy")
@@ -18016,7 +17985,7 @@
 		(title "CrownDuel")
 		(year 1997))
 
-	([ontology_Class12035] of  Book
+	([ontology_Class12031] of  Book
 
 		(author [ontology_Class10155])
 		(genre "Short Stories")
@@ -18026,7 +17995,7 @@
 		(title "CloseRange")
 		(year 1999))
 
-	([ontology_Class12036] of  Book
+	([ontology_Class12032] of  Book
 
 		(author [ontology_Class10043])
 		(genre "Short Stories")
@@ -18036,7 +18005,7 @@
 		(title "TheBloodyChamber")
 		(year 1979))
 
-	([ontology_Class12037] of  Book
+	([ontology_Class12033] of  Book
 
 		(author [ontology_Class10540])
 		(genre "Short Stories")
@@ -18046,7 +18015,7 @@
 		(title "TheCollectedStories")
 		(year 1992))
 
-	([ontology_Class12038] of  Book
+	([ontology_Class12034] of  Book
 
 		(author [ontology_Class10543])
 		(genre "Short Stories")
@@ -18056,7 +18025,7 @@
 		(title "Jesus'Son")
 		(year 1992))
 
-	([ontology_Class12039] of  Book
+	([ontology_Class12035] of  Book
 
 		(author [ontology_Class10545])
 		(genre "Short Stories")
@@ -18066,7 +18035,7 @@
 		(title "TheStoriesofJohnCheever")
 		(year 1978))
 
-	([ontology_Class12040] of  Book
+	([ontology_Class12036] of  Book
 
 		(author [ontology_Class10050])
 		(genre "Uncategorized")
@@ -18076,7 +18045,7 @@
 		(title "CollectedFictions")
 		(year 1975))
 
-	([ontology_Class12041] of  Book
+	([ontology_Class12037] of  Book
 
 		(author [ontology_Class10002])
 		(genre "Uncategorized")
@@ -18086,7 +18055,7 @@
 		(title "TheCompleteStories")
 		(year 1946))
 
-	([ontology_Class12042] of  Book
+	([ontology_Class12038] of  Book
 
 		(author [ontology_Class10074])
 		(genre "Short Stories")
@@ -18096,7 +18065,7 @@
 		(title "NineStories")
 		(year 1953))
 
-	([ontology_Class12043] of  Book
+	([ontology_Class12039] of  Book
 
 		(author [ontology_Class10160])
 		(genre "Classics")
@@ -18106,7 +18075,7 @@
 		(title "Dubliners")
 		(year 1914))
 
-	([ontology_Class12044] of  Book
+	([ontology_Class12040] of  Book
 
 		(author [ontology_Class10159])
 		(genre "Classics")
@@ -18116,9 +18085,9 @@
 		(title "Mrs.Dalloway")
 		(year 1921))
 
-	([ontology_Class12045] of  Book
+	([ontology_Class12041] of  Book
 
-		(author [ontology_Class10611])
+		(author [ontology_Class10610])
 		(genre "Uncategorized")
 		(pages 1165)
 		(popularity medium)
@@ -18126,7 +18095,7 @@
 		(title "TheEducationofLittleTree")
 		(year 1976))
 
-	([ontology_Class12046] of  Book
+	([ontology_Class12042] of  Book
 
 		(author [ontology_Class10176])
 		(genre "Classics")
@@ -18136,7 +18105,7 @@
 		(title "TheDeerslayer")
 		(year 1841))
 
-	([ontology_Class12047] of  Book
+	([ontology_Class12043] of  Book
 
 		(author [ontology_Class10341])
 		(genre "Thriller")
@@ -18146,9 +18115,9 @@
 		(title "SacredClowns")
 		(year 1992))
 
-	([ontology_Class12048] of  Book
+	([ontology_Class12044] of  Book
 
-		(author [ontology_Class10612])
+		(author [ontology_Class10611])
 		(genre "Uncategorized")
 		(pages 527)
 		(popularity low)
@@ -18156,9 +18125,9 @@
 		(title "PeopleoftheFire")
 		(year 1991))
 
-	([ontology_Class12049] of  Book
+	([ontology_Class12045] of  Book
 
-		(author [ontology_Class10613])
+		(author [ontology_Class10612])
 		(genre "Historical")
 		(pages 537)
 		(popularity low)
@@ -18166,9 +18135,9 @@
 		(title "PeopleoftheLightning")
 		(year 1995))
 
-	([ontology_Class12050] of  Book
+	([ontology_Class12046] of  Book
 
-		(author [ontology_Class10614])
+		(author [ontology_Class10613])
 		(genre "Historical")
 		(pages 671)
 		(popularity low)
@@ -18176,9 +18145,9 @@
 		(title "Zia")
 		(year 1976))
 
-	([ontology_Class12051] of  Book
+	([ontology_Class12047] of  Book
 
-		(author [ontology_Class10615])
+		(author [ontology_Class10614])
 		(genre "Uncategorized")
 		(pages 673)
 		(popularity low)
@@ -18186,9 +18155,9 @@
 		(title "LaughingBoy:ANavajoLoveStory")
 		(year 1929))
 
-	([ontology_Class12052] of  Book
+	([ontology_Class12048] of  Book
 
-		(author [ontology_Class10616])
+		(author [ontology_Class10615])
 		(genre "Uncategorized")
 		(pages 810)
 		(popularity low)
@@ -18196,9 +18165,9 @@
 		(title "SolarStorms")
 		(year 1994))
 
-	([ontology_Class12053] of  Book
+	([ontology_Class12049] of  Book
 
-		(author [ontology_Class10617])
+		(author [ontology_Class10616])
 		(genre "Uncategorized")
 		(pages 1099)
 		(popularity low)
@@ -18206,7 +18175,7 @@
 		(title "WinterintheBlood")
 		(year 1974))
 
-	([ontology_Class12054] of  Book
+	([ontology_Class12050] of  Book
 
 		(author [ontology_Class10293])
 		(genre "Historical")
@@ -18216,9 +18185,9 @@
 		(title "Sacajawea")
 		(year 1978))
 
-	([ontology_Class12055] of  Book
+	([ontology_Class12051] of  Book
 
-		(author [ontology_Class10618])
+		(author [ontology_Class10617])
 		(genre "Uncategorized")
 		(pages 1430)
 		(popularity low)
@@ -18226,9 +18195,9 @@
 		(title "TwoOldWomen:AnAlaskanLegendofBetrayal,CourageandSurvival")
 		(year 1993))
 
-	([ontology_Class12056] of  Book
+	([ontology_Class12052] of  Book
 
-		(author [ontology_Class10619])
+		(author [ontology_Class10618])
 		(genre "Uncategorized")
 		(pages 1550)
 		(popularity low)
@@ -18236,19 +18205,9 @@
 		(title "TheGrassDancer")
 		(year 1994))
 
-	([ontology_Class12057] of  Book
+	([ontology_Class12053] of  Book
 
-		(author [ontology_Class10206])
-		(genre "Fantasy")
-		(pages 424)
-		(popularity low)
-		(rating 0.0)
-		(title "TheLightPrincess")
-		(year 1864))
-
-	([ontology_Class12058] of  Book
-
-		(author [ontology_Class10620])
+		(author [ontology_Class10619])
 		(genre "Uncategorized")
 		(pages 1923)
 		(popularity low)
@@ -18256,7 +18215,7 @@
 		(title "LittleBigMan")
 		(year 1964))
 
-	([ontology_Class12059] of  Book
+	([ontology_Class12054] of  Book
 
 		(author [ontology_Class10140])
 		(genre "Classics")
@@ -18266,7 +18225,7 @@
 		(title "BlackBeauty")
 		(year 1877))
 
-	([ontology_Class12060] of  Book
+	([ontology_Class12055] of  Book
 
 		(author [ontology_Class10115])
 		(genre "Horror")
@@ -18276,7 +18235,7 @@
 		(title "GhostStory")
 		(year 1979))
 
-	([ontology_Class12061] of  Book
+	([ontology_Class12056] of  Book
 
 		(author [ontology_Class10052])
 		(genre "Young")
@@ -18286,9 +18245,9 @@
 		(title "WalkTwoMoons")
 		(year 1994))
 
-	([ontology_Class12062] of  Book
+	([ontology_Class12057] of  Book
 
-		(author [ontology_Class10621])
+		(author [ontology_Class10620])
 		(genre "Uncategorized")
 		(pages 2699)
 		(popularity low)
@@ -18296,7 +18255,7 @@
 		(title "HouseMadeofDawn")
 		(year 1968))
 
-	([ontology_Class12063] of  Book
+	([ontology_Class12058] of  Book
 
 		(author [ontology_Class10270])
 		(genre "Fantasy")
@@ -18306,9 +18265,9 @@
 		(title "TheVoyagesofDoctorDolittle")
 		(year 1922))
 
-	([ontology_Class12064] of  Book
+	([ontology_Class12059] of  Book
 
-		(author [ontology_Class10622])
+		(author [ontology_Class10621])
 		(genre "Fantasy")
 		(pages 386)
 		(popularity medium)
@@ -18316,7 +18275,7 @@
 		(title "TheHousewithaClockinItsWalls")
 		(year 1973))
 
-	([ontology_Class12065] of  Book
+	([ontology_Class12060] of  Book
 
 		(author [ontology_Class10076])
 		(genre "Classics")
@@ -18326,7 +18285,7 @@
 		(title "TheOutsiders")
 		(year 1967))
 
-	([ontology_Class12066] of  Book
+	([ontology_Class12061] of  Book
 
 		(author [ontology_Class10210])
 		(genre "Horror")
@@ -18336,7 +18295,7 @@
 		(title "TheAmityvilleHorror")
 		(year 1977))
 
-	([ontology_Class12067] of  Book
+	([ontology_Class12062] of  Book
 
 		(author [ontology_Class10314])
 		(genre "Horror")
@@ -18346,9 +18305,9 @@
 		(title "AmericanGothicTales")
 		(year 1996))
 
-	([ontology_Class12068] of  Book
+	([ontology_Class12063] of  Book
 
-		(author [ontology_Class10623])
+		(author [ontology_Class10622])
 		(genre "Horror")
 		(pages 658)
 		(popularity medium)
@@ -18356,7 +18315,7 @@
 		(title "TickTock")
 		(year 1996))
 
-	([ontology_Class12069] of  Book
+	([ontology_Class12064] of  Book
 
 		(author [ontology_Class10546])
 		(genre "Fantasy")
@@ -18366,9 +18325,9 @@
 		(title "D'Aulaires'BookofGreekMyths")
 		(year 1962))
 
-	([ontology_Class12070] of  Book
+	([ontology_Class12065] of  Book
 
-		(author [ontology_Class10624])
+		(author [ontology_Class10623])
 		(genre "Fantasy")
 		(pages 670)
 		(popularity medium)
@@ -18376,7 +18335,7 @@
 		(title "TheThiefofAlways")
 		(year 1992))
 
-	([ontology_Class12071] of  Book
+	([ontology_Class12066] of  Book
 
 		(author [ontology_Class10218])
 		(genre "Uncategorized")
@@ -18386,7 +18345,7 @@
 		(title "ColdComfortFarm")
 		(year 1932))
 
-	([ontology_Class12072] of  Book
+	([ontology_Class12067] of  Book
 
 		(author [ontology_Class10007])
 		(genre "Classics")
@@ -18396,7 +18355,7 @@
 		(title "LittleWomen")
 		(year 1868))
 
-	([ontology_Class12073] of  Book
+	([ontology_Class12068] of  Book
 
 		(author [ontology_Class10114])
 		(genre "Fantasy")
@@ -18406,7 +18365,7 @@
 		(title "ThePhantomTollbooth")
 		(year 1961))
 
-	([ontology_Class12074] of  Book
+	([ontology_Class12069] of  Book
 
 		(author [ontology_Class10562])
 		(genre "Fantasy")
@@ -18416,7 +18375,7 @@
 		(title "ANightintheLonesomeOctober")
 		(year 1993))
 
-	([ontology_Class12075] of  Book
+	([ontology_Class12070] of  Book
 
 		(author [ontology_Class10191])
 		(genre "Classics")
@@ -18426,7 +18385,7 @@
 		(title "TheStrangeCaseofDr.JekyllandMr.Hyde")
 		(year 1886))
 
-	([ontology_Class12076] of  Book
+	([ontology_Class12071] of  Book
 
 		(author [ontology_Class10071])
 		(genre "Classics")
@@ -18436,7 +18395,7 @@
 		(title "Frankenstein")
 		(year 1818))
 
-	([ontology_Class12077] of  Book
+	([ontology_Class12072] of  Book
 
 		(author [ontology_Class10028])
 		(genre "Classics")
@@ -18446,9 +18405,9 @@
 		(title "Dracula")
 		(year 1897))
 
-	([ontology_Class12078] of  Book
+	([ontology_Class12073] of  Book
 
-		(author [ontology_Class10625])
+		(author [ontology_Class10624])
 		(genre "Romance")
 		(pages 286)
 		(popularity low)
@@ -18456,7 +18415,7 @@
 		(title "TheCaseoftheConfirmedBachelor")
 		(year 1992))
 
-	([ontology_Class12079] of  Book
+	([ontology_Class12074] of  Book
 
 		(author [ontology_Class10044])
 		(genre "Uncategorized")
@@ -18466,7 +18425,7 @@
 		(title "TheMistressofSpices")
 		(year 1997))
 
-	([ontology_Class12080] of  Book
+	([ontology_Class12075] of  Book
 
 		(author [ontology_Class10036])
 		(genre "Fantasy")
@@ -18476,9 +18435,9 @@
 		(title "TheNeverendingStory")
 		(year 1979))
 
-	([ontology_Class12081] of  Book
+	([ontology_Class12076] of  Book
 
-		(author [ontology_Class10626])
+		(author [ontology_Class10625])
 		(genre "Uncategorized")
 		(pages 582)
 		(popularity low)
@@ -18486,7 +18445,7 @@
 		(title "TheLoveLetter")
 		(year 1995))
 
-	([ontology_Class12082] of  Book
+	([ontology_Class12077] of  Book
 
 		(author [ontology_Class10055])
 		(genre "Classics")
@@ -18496,9 +18455,9 @@
 		(title "AChristmasCarol")
 		(year 1843))
 
-	([ontology_Class12083] of  Book
+	([ontology_Class12078] of  Book
 
-		(author [ontology_Class10627])
+		(author [ontology_Class10626])
 		(genre "Young")
 		(pages 672)
 		(popularity low)
@@ -18506,7 +18465,7 @@
 		(title "TheHunter")
 		(year 1994))
 
-	([ontology_Class12084] of  Book
+	([ontology_Class12079] of  Book
 
 		(author [ontology_Class10416])
 		(genre "Romance")
@@ -18516,7 +18475,7 @@
 		(title "TheSilverDevil")
 		(year 1978))
 
-	([ontology_Class12085] of  Book
+	([ontology_Class12080] of  Book
 
 		(author [ontology_Class10465])
 		(genre "Thriller")
@@ -18526,7 +18485,7 @@
 		(title "CrewelWorld")
 		(year 1999))
 
-	([ontology_Class12086] of  Book
+	([ontology_Class12081] of  Book
 
 		(author [ontology_Class10062])
 		(genre "Classics")
@@ -18536,7 +18495,7 @@
 		(title "HeartofDarkness")
 		(year 1899))
 
-	([ontology_Class12087] of  Book
+	([ontology_Class12082] of  Book
 
 		(author [ontology_Class10058])
 		(genre "Classics")
@@ -18546,7 +18505,7 @@
 		(title "TheirEyesWereWatchingGod")
 		(year 1937))
 
-	([ontology_Class12088] of  Book
+	([ontology_Class12083] of  Book
 
 		(author [ontology_Class10471])
 		(genre "Thriller")
@@ -18556,7 +18515,7 @@
 		(title "MurderonAstorPlace")
 		(year 1999))
 
-	([ontology_Class12089] of  Book
+	([ontology_Class12084] of  Book
 
 		(author [ontology_Class10481])
 		(genre "Uncategorized")
@@ -18566,7 +18525,7 @@
 		(title "Cry,theBelovedCountry")
 		(year 1948))
 
-	([ontology_Class12090] of  Book
+	([ontology_Class12085] of  Book
 
 		(author [ontology_Class10098])
 		(genre "Classics")
@@ -18576,7 +18535,7 @@
 		(title "Ivanhoe")
 		(year 1819))
 
-	([ontology_Class12091] of  Book
+	([ontology_Class12086] of  Book
 
 		(author [ontology_Class10196])
 		(genre "Classics")
@@ -18586,7 +18545,7 @@
 		(title "VanityFair")
 		(year 1848))
 
-	([ontology_Class12092] of  Book
+	([ontology_Class12087] of  Book
 
 		(author [ontology_Class10078])
 		(genre "Classics")
@@ -18596,7 +18555,7 @@
 		(title "TheMoonstone")
 		(year 1868))
 
-	([ontology_Class12093] of  Book
+	([ontology_Class12088] of  Book
 
 		(author [ontology_Class10478])
 		(genre "Thriller")
@@ -18606,7 +18565,7 @@
 		(title "AuntDimity'sDeath")
 		(year 1992))
 
-	([ontology_Class12094] of  Book
+	([ontology_Class12089] of  Book
 
 		(author [ontology_Class10059])
 		(genre "Classics")
@@ -18616,7 +18575,7 @@
 		(title "MadameBovary")
 		(year 1856))
 
-	([ontology_Class12095] of  Book
+	([ontology_Class12090] of  Book
 
 		(author [ontology_Class10139])
 		(genre "Classics")
@@ -18626,7 +18585,7 @@
 		(title "Moby-Dick,or,theWhale")
 		(year 1851))
 
-	([ontology_Class12096] of  Book
+	([ontology_Class12091] of  Book
 
 		(author [ontology_Class10105])
 		(genre "Classics")
@@ -18636,9 +18595,9 @@
 		(title "TheThreeMusketeers")
 		(year 1844))
 
-	([ontology_Class12097] of  Book
+	([ontology_Class12092] of  Book
 
-		(author [ontology_Class10628])
+		(author [ontology_Class10627])
 		(genre "Thriller")
 		(pages 486)
 		(popularity low)
@@ -18646,7 +18605,7 @@
 		(title "Studiosex")
 		(year 1999))
 
-	([ontology_Class12098] of  Book
+	([ontology_Class12093] of  Book
 
 		(author [ontology_Class10001])
 		(genre "Classics")
@@ -18656,9 +18615,9 @@
 		(title "BraveNewWorld")
 		(year 1932))
 
-	([ontology_Class12099] of  Book
+	([ontology_Class12094] of  Book
 
-		(author [ontology_Class10629])
+		(author [ontology_Class10628])
 		(genre "Young")
 		(pages 602)
 		(popularity low)
@@ -18666,9 +18625,9 @@
 		(title "HappyEndingsAreAllAlike")
 		(year 1978))
 
-	([ontology_Class12100] of  Book
+	([ontology_Class12095] of  Book
 
-		(author [ontology_Class10630])
+		(author [ontology_Class10629])
 		(genre "Thriller")
 		(pages 764)
 		(popularity low)
@@ -18676,7 +18635,7 @@
 		(title "Blackwater")
 		(year 1993))
 
-	([ontology_Class12101] of  Book
+	([ontology_Class12096] of  Book
 
 		(author [ontology_Class10180])
 		(genre "Thriller")
@@ -18686,9 +18645,9 @@
 		(title "ThePyramid:AndFourOtherKurtWallanderMysteries")
 		(year 1999))
 
-	([ontology_Class12102] of  Book
+	([ontology_Class12097] of  Book
 
-		(author [ontology_Class10631])
+		(author [ontology_Class10630])
 		(genre "Fantasy")
 		(pages 340)
 		(popularity low)
@@ -18696,9 +18655,9 @@
 		(title "NightWinds")
 		(year 1978))
 
-	([ontology_Class12103] of  Book
+	([ontology_Class12098] of  Book
 
-		(author [ontology_Class10632])
+		(author [ontology_Class10631])
 		(genre "Thriller")
 		(pages 911)
 		(popularity low)
@@ -18706,9 +18665,9 @@
 		(title "TheFamilyVault")
 		(year 1979))
 
-	([ontology_Class12104] of  Book
+	([ontology_Class12099] of  Book
 
-		(author [ontology_Class10633])
+		(author [ontology_Class10632])
 		(genre "Thriller")
 		(pages 928)
 		(popularity low)
@@ -18716,9 +18675,9 @@
 		(title "TheDeadCatBounce")
 		(year 1997))
 
-	([ontology_Class12105] of  Book
+	([ontology_Class12100] of  Book
 
-		(author [ontology_Class10634])
+		(author [ontology_Class10633])
 		(genre "Thriller")
 		(pages 923)
 		(popularity low)
@@ -18726,7 +18685,7 @@
 		(title "EdwinoftheIronShoes")
 		(year 1977))
 
-	([ontology_Class12106] of  Book
+	([ontology_Class12101] of  Book
 
 		(author [ontology_Class10133])
 		(genre "Fantasy")
@@ -18736,7 +18695,7 @@
 		(title "TheGormenghastNovels")
 		(year 1959))
 
-	([ontology_Class12107] of  Book
+	([ontology_Class12102] of  Book
 
 		(author [ontology_Class10464])
 		(genre "Thriller")
@@ -18746,9 +18705,9 @@
 		(title "MissZukasandtheLibraryMurders")
 		(year 1994))
 
-	([ontology_Class12108] of  Book
+	([ontology_Class12103] of  Book
 
-		(author [ontology_Class10635])
+		(author [ontology_Class10634])
 		(genre "Thriller")
 		(pages 1209)
 		(popularity low)
@@ -18756,9 +18715,9 @@
 		(title "TheAlpineAdvocate")
 		(year 1992))
 
-	([ontology_Class12109] of  Book
+	([ontology_Class12104] of  Book
 
-		(author [ontology_Class10636])
+		(author [ontology_Class10635])
 		(genre "Thriller")
 		(pages 1279)
 		(popularity low)
@@ -18766,9 +18725,9 @@
 		(title "TooManyCrooksSpoiltheBroth")
 		(year 1993))
 
-	([ontology_Class12110] of  Book
+	([ontology_Class12105] of  Book
 
-		(author [ontology_Class10637])
+		(author [ontology_Class10636])
 		(genre "Fantasy")
 		(pages 961)
 		(popularity low)
@@ -18776,7 +18735,7 @@
 		(title "TheElricSagaPartII")
 		(year 1979))
 
-	([ontology_Class12111] of  Book
+	([ontology_Class12106] of  Book
 
 		(author [ontology_Class10109])
 		(genre "Classics")
@@ -18786,7 +18745,7 @@
 		(title "TheRoadBack")
 		(year 1931))
 
-	([ontology_Class12112] of  Book
+	([ontology_Class12107] of  Book
 
 		(author [ontology_Class10181])
 		(genre "Thriller")
@@ -18796,7 +18755,7 @@
 		(title "WhoseBody?")
 		(year 1923))
 
-	([ontology_Class12113] of  Book
+	([ontology_Class12108] of  Book
 
 		(author [ontology_Class10469])
 		(genre "Thriller")
@@ -18806,9 +18765,9 @@
 		(title "DeathatWentwaterCourt")
 		(year 1994))
 
-	([ontology_Class12114] of  Book
+	([ontology_Class12109] of  Book
 
-		(author [ontology_Class10638])
+		(author [ontology_Class10637])
 		(genre "Fantasy")
 		(pages 409)
 		(popularity low)
@@ -18816,7 +18775,7 @@
 		(title "TheTowerofGeburah")
 		(year 1978))
 
-	([ontology_Class12115] of  Book
+	([ontology_Class12110] of  Book
 
 		(author [ontology_Class10594])
 		(genre "Uncategorized")
@@ -18826,7 +18785,7 @@
 		(title "OneofOurs")
 		(year 1922))
 
-	([ontology_Class12116] of  Book
+	([ontology_Class12111] of  Book
 
 		(author [ontology_Class10171])
 		(genre "Uncategorized")
@@ -18836,9 +18795,9 @@
 		(title "Ashenden")
 		(year 1928))
 
-	([ontology_Class12117] of  Book
+	([ontology_Class12112] of  Book
 
-		(author [ontology_Class10639])
+		(author [ontology_Class10638])
 		(genre "Uncategorized")
 		(pages 680)
 		(popularity low)
@@ -18846,9 +18805,9 @@
 		(title "TheWars")
 		(year 1977))
 
-	([ontology_Class12118] of  Book
+	([ontology_Class12113] of  Book
 
-		(author [ontology_Class10640])
+		(author [ontology_Class10639])
 		(genre "Uncategorized")
 		(pages 785)
 		(popularity low)
@@ -18856,9 +18815,9 @@
 		(title "Greenmantle")
 		(year 1916))
 
-	([ontology_Class12119] of  Book
+	([ontology_Class12114] of  Book
 
-		(author [ontology_Class10641])
+		(author [ontology_Class10640])
 		(genre "Uncategorized")
 		(pages 533)
 		(popularity medium)
@@ -18866,9 +18825,9 @@
 		(title "TheOath")
 		(year 1995))
 
-	([ontology_Class12120] of  Book
+	([ontology_Class12115] of  Book
 
-		(author [ontology_Class10642])
+		(author [ontology_Class10641])
 		(genre "Uncategorized")
 		(pages 833)
 		(popularity low)
@@ -18876,7 +18835,7 @@
 		(title "ThreeSoldiers")
 		(year 1921))
 
-	([ontology_Class12121] of  Book
+	([ontology_Class12116] of  Book
 
 		(author [ontology_Class10013])
 		(genre "Thriller")
@@ -18886,7 +18845,7 @@
 		(title "NakedinDeath")
 		(year 1995))
 
-	([ontology_Class12122] of  Book
+	([ontology_Class12117] of  Book
 
 		(author [ontology_Class10479])
 		(genre "Thriller")
@@ -18896,9 +18855,9 @@
 		(title "MurderWithPeacocks")
 		(year 1999))
 
-	([ontology_Class12123] of  Book
+	([ontology_Class12118] of  Book
 
-		(author [ontology_Class10643])
+		(author [ontology_Class10642])
 		(genre "Uncategorized")
 		(pages 925)
 		(popularity low)
@@ -18906,7 +18865,7 @@
 		(title "TheReturnoftheSoldier")
 		(year 1918))
 
-	([ontology_Class12124] of  Book
+	([ontology_Class12119] of  Book
 
 		(author [ontology_Class10462])
 		(genre "Thriller")
@@ -18916,7 +18875,7 @@
 		(title "TheCatWhoCouldReadBackwards")
 		(year 1966))
 
-	([ontology_Class12125] of  Book
+	([ontology_Class12120] of  Book
 
 		(author [ontology_Class10480])
 		(genre "Thriller")
@@ -18926,9 +18885,9 @@
 		(title "TheUnexpectedMrs.Pollifax")
 		(year 1966))
 
-	([ontology_Class12126] of  Book
+	([ontology_Class12121] of  Book
 
-		(author [ontology_Class10644])
+		(author [ontology_Class10643])
 		(genre "Uncategorized")
 		(pages 1183)
 		(popularity low)
@@ -18936,9 +18895,9 @@
 		(title "ToServeThemAllMyDays")
 		(year 1972))
 
-	([ontology_Class12127] of  Book
+	([ontology_Class12122] of  Book
 
-		(author [ontology_Class10645])
+		(author [ontology_Class10644])
 		(genre "Uncategorized")
 		(pages 1349)
 		(popularity low)
@@ -18946,7 +18905,7 @@
 		(title "TheRadetzkyMarch")
 		(year 1932))
 
-	([ontology_Class12128] of  Book
+	([ontology_Class12123] of  Book
 
 		(author [ontology_Class10533])
 		(genre "Classics")
@@ -18956,7 +18915,7 @@
 		(title "AndQuietFlowstheDon")
 		(year 1934))
 
-	([ontology_Class12129] of  Book
+	([ontology_Class12124] of  Book
 
 		(author [ontology_Class10322])
 		(genre "Uncategorized")
@@ -18966,7 +18925,7 @@
 		(title "August1914")
 		(year 1971))
 
-	([ontology_Class12130] of  Book
+	([ontology_Class12125] of  Book
 
 		(author [ontology_Class10141])
 		(genre "Uncategorized")
@@ -18976,7 +18935,7 @@
 		(title "JohnnyGotHisGun")
 		(year 1939))
 
-	([ontology_Class12131] of  Book
+	([ontology_Class12126] of  Book
 
 		(author [ontology_Class10582])
 		(genre "Historical")
@@ -18986,7 +18945,7 @@
 		(title "Birdsong")
 		(year 1993))
 
-	([ontology_Class12132] of  Book
+	([ontology_Class12127] of  Book
 
 		(author [ontology_Class10330])
 		(genre "Classics")
@@ -18996,7 +18955,7 @@
 		(title "ThePilgrim'sProgress")
 		(year 1678))
 
-	([ontology_Class12133] of  Book
+	([ontology_Class12128] of  Book
 
 		(author [ontology_Class10203])
 		(genre "Religious")
@@ -19006,9 +18965,9 @@
 		(title "RedeemingLove")
 		(year 1991))
 
-	([ontology_Class12134] of  Book
+	([ontology_Class12129] of  Book
 
-		(author [ontology_Class10646])
+		(author [ontology_Class10645])
 		(genre "Romance")
 		(pages 798)
 		(popularity low)
@@ -19016,9 +18975,9 @@
 		(title "VanityandVexation:ANovelofPrideandPrejudice")
 		(year 1991))
 
-	([ontology_Class12135] of  Book
+	([ontology_Class12130] of  Book
 
-		(author [ontology_Class10647])
+		(author [ontology_Class10646])
 		(genre "Uncategorized")
 		(pages 2172)
 		(popularity low)
@@ -19026,7 +18985,7 @@
 		(title "Darcy'sStory")
 		(year 1999))
 
-	([ontology_Class12136] of  Book
+	([ontology_Class12131] of  Book
 
 		(author [ontology_Class10192])
 		(genre "Thriller")
@@ -19036,9 +18995,9 @@
 		(title "TheBigSleep")
 		(year 1939))
 
-	([ontology_Class12137] of  Book
+	([ontology_Class12132] of  Book
 
-		(author [ontology_Class10648])
+		(author [ontology_Class10647])
 		(genre "Uncategorized")
 		(pages 384)
 		(popularity medium)
@@ -19046,7 +19005,7 @@
 		(title "GenerationX:TalesforanAcceleratedCulture")
 		(year 1991))
 
-	([ontology_Class12138] of  Book
+	([ontology_Class12133] of  Book
 
 		(author [ontology_Class10446])
 		(genre "Romance")
@@ -19056,7 +19015,7 @@
 		(title "TheProposition")
 		(year 1999))
 
-	([ontology_Class12139] of  Book
+	([ontology_Class12134] of  Book
 
 		(author [ontology_Class10574])
 		(genre "Romance")
@@ -19066,7 +19025,7 @@
 		(title "WildatHeart")
 		(year 1997))
 
-	([ontology_Class12140] of  Book
+	([ontology_Class12135] of  Book
 
 		(author [ontology_Class10309])
 		(genre "Uncategorized")
@@ -19076,7 +19035,7 @@
 		(title "TheWorldAccordingtoGarp")
 		(year 1978))
 
-	([ontology_Class12141] of  Book
+	([ontology_Class12136] of  Book
 
 		(author [ontology_Class10095])
 		(genre "Uncategorized")
@@ -19086,7 +19045,7 @@
 		(title "TheCollector")
 		(year 1963))
 
-	([ontology_Class12142] of  Book
+	([ontology_Class12137] of  Book
 
 		(author [ontology_Class10350])
 		(genre "Uncategorized")
@@ -19096,9 +19055,9 @@
 		(title "ZorbatheGreek")
 		(year 1946))
 
-	([ontology_Class12143] of  Book
+	([ontology_Class12138] of  Book
 
-		(author [ontology_Class10649])
+		(author [ontology_Class10648])
 		(genre "Romance")
 		(pages 2851)
 		(popularity low)
@@ -19106,9 +19065,9 @@
 		(title "SimpleJess")
 		(year 1996))
 
-	([ontology_Class12144] of  Book
+	([ontology_Class12139] of  Book
 
-		(author [ontology_Class10650])
+		(author [ontology_Class10649])
 		(genre "Romance")
 		(pages 774)
 		(popularity low)
@@ -19116,9 +19075,9 @@
 		(title "HisWickedWays")
 		(year 1999))
 
-	([ontology_Class12145] of  Book
+	([ontology_Class12140] of  Book
 
-		(author [ontology_Class10651])
+		(author [ontology_Class10650])
 		(genre "Classics")
 		(pages 288)
 		(popularity low)
@@ -19126,9 +19085,9 @@
 		(title "TheBlazingWorldandOtherWritings")
 		(year 1666))
 
-	([ontology_Class12146] of  Book
+	([ontology_Class12141] of  Book
 
-		(author [ontology_Class10652])
+		(author [ontology_Class10651])
 		(genre "Classics")
 		(pages 883)
 		(popularity low)
@@ -19136,9 +19095,9 @@
 		(title "Oroonoko")
 		(year 1688))
 
-	([ontology_Class12147] of  Book
+	([ontology_Class12142] of  Book
 
-		(author [ontology_Class10653])
+		(author [ontology_Class10652])
 		(genre "Historical")
 		(pages 653)
 		(popularity low)
@@ -19146,7 +19105,7 @@
 		(title "YankeeStranger")
 		(year 1944))
 
-	([ontology_Class12148] of  Book
+	([ontology_Class12143] of  Book
 
 		(author [ontology_Class10209])
 		(genre "Uncategorized")
@@ -19156,9 +19115,9 @@
 		(title "RequiemforaDream")
 		(year 1978))
 
-	([ontology_Class12149] of  Book
+	([ontology_Class12144] of  Book
 
-		(author [ontology_Class10654])
+		(author [ontology_Class10653])
 		(genre "Thriller")
 		(pages 409)
 		(popularity medium)
@@ -19166,9 +19125,9 @@
 		(title "FromPotter'sField:Scarpetta6")
 		(year 1995))
 
-	([ontology_Class12150] of  Book
+	([ontology_Class12145] of  Book
 
-		(author [ontology_Class10655])
+		(author [ontology_Class10654])
 		(genre "Thriller")
 		(pages 463)
 		(popularity low)
@@ -19176,7 +19135,7 @@
 		(title "TheVig")
 		(year 1991))
 
-	([ontology_Class12151] of  Book
+	([ontology_Class12146] of  Book
 
 		(author [ontology_Class10526])
 		(genre "Thriller")
@@ -19186,7 +19145,7 @@
 		(title "TheDeepBlueGood-by")
 		(year 1964))
 
-	([ontology_Class12152] of  Book
+	([ontology_Class12147] of  Book
 
 		(author [ontology_Class10032])
 		(genre "Fantasy")
@@ -19196,7 +19155,7 @@
 		(title "TuckEverlasting")
 		(year 1975))
 
-	([ontology_Class12153] of  Book
+	([ontology_Class12148] of  Book
 
 		(author [ontology_Class10053])
 		(genre "Classics")
@@ -19206,7 +19165,7 @@
 		(title "AClockworkOrange")
 		(year 1962))
 
-	([ontology_Class12154] of  Book
+	([ontology_Class12149] of  Book
 
 		(author [ontology_Class10521])
 		(genre "Thriller")
@@ -19216,7 +19175,7 @@
 		(title "InaDrySeason")
 		(year 1999))
 
-	([ontology_Class12155] of  Book
+	([ontology_Class12150] of  Book
 
 		(author [ontology_Class10483])
 		(genre "Uncategorized")
@@ -19226,9 +19185,9 @@
 		(title "Factotum")
 		(year 1975))
 
-	([ontology_Class12156] of  Book
+	([ontology_Class12151] of  Book
 
-		(author [ontology_Class10656])
+		(author [ontology_Class10655])
 		(genre "Thriller")
 		(pages 562)
 		(popularity low)
@@ -19236,9 +19195,9 @@
 		(title "AGameofProof")
 		(year 1992))
 
-	([ontology_Class12157] of  Book
+	([ontology_Class12152] of  Book
 
-		(author [ontology_Class10657])
+		(author [ontology_Class10656])
 		(genre "Thriller")
 		(pages 586)
 		(popularity low)
@@ -19246,9 +19205,9 @@
 		(title "Let'sHearItfortheDeafMan")
 		(year 1972))
 
-	([ontology_Class12158] of  Book
+	([ontology_Class12153] of  Book
 
-		(author [ontology_Class10658])
+		(author [ontology_Class10657])
 		(genre "Thriller")
 		(pages 675)
 		(popularity low)
@@ -19256,9 +19215,9 @@
 		(title "RiverofDarkness")
 		(year 1999))
 
-	([ontology_Class12159] of  Book
+	([ontology_Class12154] of  Book
 
-		(author [ontology_Class10659])
+		(author [ontology_Class10658])
 		(genre "Thriller")
 		(pages 1092)
 		(popularity low)
@@ -19266,9 +19225,9 @@
 		(title "Bushfire")
 		(year 1996))
 
-	([ontology_Class12160] of  Book
+	([ontology_Class12155] of  Book
 
-		(author [ontology_Class10660])
+		(author [ontology_Class10659])
 		(genre "Historical")
 		(pages 724)
 		(popularity low)
@@ -19276,7 +19235,7 @@
 		(title "Confederates")
 		(year 1979))
 
-	([ontology_Class12161] of  Book
+	([ontology_Class12156] of  Book
 
 		(author [ontology_Class10138])
 		(genre "Historical")
@@ -19286,7 +19245,7 @@
 		(title "Roots:TheSagaofanAmericanFamily")
 		(year 1976))
 
-	([ontology_Class12162] of  Book
+	([ontology_Class12157] of  Book
 
 		(author [ontology_Class10271])
 		(genre "Historical")
@@ -19296,7 +19255,7 @@
 		(title "AcrossFiveAprils")
 		(year 1964))
 
-	([ontology_Class12163] of  Book
+	([ontology_Class12158] of  Book
 
 		(author [ontology_Class10241])
 		(genre "Uncategorized")
@@ -19306,9 +19265,9 @@
 		(title "ICapturetheCastle")
 		(year 1948))
 
-	([ontology_Class12164] of  Book
+	([ontology_Class12159] of  Book
 
-		(author [ontology_Class10661])
+		(author [ontology_Class10660])
 		(genre "Historical")
 		(pages 3125)
 		(popularity low)
@@ -19316,7 +19275,7 @@
 		(title "Andersonville")
 		(year 1955))
 
-	([ontology_Class12165] of  Book
+	([ontology_Class12160] of  Book
 
 		(author [ontology_Class10157])
 		(genre "Classics")
@@ -19326,7 +19285,7 @@
 		(title "TheRedBadgeofCourage")
 		(year 1895))
 
-	([ontology_Class12166] of  Book
+	([ontology_Class12161] of  Book
 
 		(author [ontology_Class10106])
 		(genre "Historical")
@@ -19336,7 +19295,7 @@
 		(title "ColdMountain")
 		(year 1997))
 
-	([ontology_Class12167] of  Book
+	([ontology_Class12162] of  Book
 
 		(author [ontology_Class10126])
 		(genre "Historical")
@@ -19346,7 +19305,7 @@
 		(title "TheKillerAngels")
 		(year 1974))
 
-	([ontology_Class12168] of  Book
+	([ontology_Class12163] of  Book
 
 		(author [ontology_Class10398])
 		(genre "Uncategorized")
@@ -19356,7 +19315,7 @@
 		(title "She'sComeUndone")
 		(year 1992))
 
-	([ontology_Class12169] of  Book
+	([ontology_Class12164] of  Book
 
 		(author [ontology_Class10037])
 		(genre "Fantasy")
@@ -19366,7 +19325,7 @@
 		(title "TheHighKing")
 		(year 1968))
 
-	([ontology_Class12170] of  Book
+	([ontology_Class12165] of  Book
 
 		(author [ontology_Class10120])
 		(genre "Fantasy")
@@ -19376,7 +19335,7 @@
 		(title "TheSwordofShannara")
 		(year 1977))
 
-	([ontology_Class12171] of  Book
+	([ontology_Class12166] of  Book
 
 		(author [ontology_Class10291])
 		(genre "Fantasy")
@@ -19386,7 +19345,7 @@
 		(title "Wizard'sFirstRule")
 		(year 1994))
 
-	([ontology_Class12172] of  Book
+	([ontology_Class12167] of  Book
 
 		(author [ontology_Class10150])
 		(genre "Fantasy")
@@ -19396,7 +19355,7 @@
 		(title "TheLastWish")
 		(year 1993))
 
-	([ontology_Class12173] of  Book
+	([ontology_Class12168] of  Book
 
 		(author [ontology_Class10033])
 		(genre "Fantasy")
@@ -19406,7 +19365,7 @@
 		(title "TheOnceandFutureKing")
 		(year 1958))
 
-	([ontology_Class12174] of  Book
+	([ontology_Class12169] of  Book
 
 		(author [ontology_Class10518])
 		(genre "Young")
@@ -19416,7 +19375,7 @@
 		(title "RunningOutofTime")
 		(year 1995))
 
-	([ontology_Class12175] of  Book
+	([ontology_Class12170] of  Book
 
 		(author [ontology_Class10149])
 		(genre "Classics")
@@ -19426,7 +19385,7 @@
 		(title "WheretheRedFernGrows")
 		(year 1961))
 
-	([ontology_Class12176] of  Book
+	([ontology_Class12171] of  Book
 
 		(author [ontology_Class10034])
 		(genre "Uncategorized")
@@ -19436,7 +19395,7 @@
 		(title "TheBadBeginning")
 		(year 1999))
 
-	([ontology_Class12177] of  Book
+	([ontology_Class12172] of  Book
 
 		(author [ontology_Class10057])
 		(genre "Thriller")
@@ -19446,7 +19405,7 @@
 		(title "TheWestingGame")
 		(year 1978))
 
-	([ontology_Class12178] of  Book
+	([ontology_Class12173] of  Book
 
 		(author [ontology_Class10184])
 		(genre "Uncategorized")
@@ -19456,7 +19415,7 @@
 		(title "TheSecretHistory")
 		(year 1992))
 
-	([ontology_Class12179] of  Book
+	([ontology_Class12174] of  Book
 
 		(author [ontology_Class10009])
 		(genre "Classics")
@@ -19466,9 +19425,9 @@
 		(title "TheBellJar")
 		(year 1963))
 
-	([ontology_Class12180] of  Book
+	([ontology_Class12175] of  Book
 
-		(author [ontology_Class10662])
+		(author [ontology_Class10661])
 		(genre "Young")
 		(pages 829)
 		(popularity medium)
@@ -19476,7 +19435,7 @@
 		(title "BloodandChocolate")
 		(year 1997))
 
-	([ontology_Class12181] of  Book
+	([ontology_Class12176] of  Book
 
 		(author [ontology_Class10231])
 		(genre "Uncategorized")
@@ -19486,7 +19445,7 @@
 		(title "PayItForward")
 		(year 1999))
 
-	([ontology_Class12182] of  Book
+	([ontology_Class12177] of  Book
 
 		(author [ontology_Class10072])
 		(genre "Uncategorized")
@@ -19496,7 +19455,7 @@
 		(title "FlowersforAlgernon")
 		(year 1966))
 
-	([ontology_Class12183] of  Book
+	([ontology_Class12178] of  Book
 
 		(author [ontology_Class10268])
 		(genre "Young")
@@ -19506,7 +19465,7 @@
 		(title "Tangerine")
 		(year 1997))
 
-	([ontology_Class12184] of  Book
+	([ontology_Class12179] of  Book
 
 		(author [ontology_Class10410])
 		(genre "Young")
@@ -19516,9 +19475,9 @@
 		(title "WhenJeffComesHome")
 		(year 1999))
 
-	([ontology_Class12185] of  Book
+	([ontology_Class12180] of  Book
 
-		(author [ontology_Class10663])
+		(author [ontology_Class10662])
 		(genre "Uncategorized")
 		(pages 2662)
 		(popularity low)
@@ -19526,7 +19485,7 @@
 		(title "ForLoveAlone")
 		(year 1992))
 
-	([ontology_Class12186] of  Book
+	([ontology_Class12181] of  Book
 
 		(author [ontology_Class10003])
 		(genre "Uncategorized")
@@ -19536,7 +19495,7 @@
 		(title "AtlasShrugged")
 		(year 1957))
 
-	([ontology_Class12187] of  Book
+	([ontology_Class12182] of  Book
 
 		(author [ontology_Class10158])
 		(genre "Romance")
@@ -19546,7 +19505,7 @@
 		(title "SexandtheCity")
 		(year 1996))
 
-	([ontology_Class12188] of  Book
+	([ontology_Class12183] of  Book
 
 		(author [ontology_Class10199])
 		(genre "Uncategorized")
@@ -19556,7 +19515,7 @@
 		(title "LeftBehind")
 		(year 1995))
 
-	([ontology_Class12189] of  Book
+	([ontology_Class12184] of  Book
 
 		(author [ontology_Class10432])
 		(genre "Uncategorized")
@@ -19566,7 +19525,7 @@
 		(title "WhatDreamsMayCome")
 		(year 1978))
 
-	([ontology_Class12190] of  Book
+	([ontology_Class12185] of  Book
 
 		(author [ontology_Class10169])
 		(genre "Uncategorized")
@@ -19576,7 +19535,7 @@
 		(title "TheKillerInsideMe")
 		(year 1952))
 
-	([ontology_Class12191] of  Book
+	([ontology_Class12186] of  Book
 
 		(author [ontology_Class10177])
 		(genre "Horror")
@@ -19586,7 +19545,7 @@
 		(title "Jaws")
 		(year 1973))
 
-	([ontology_Class12192] of  Book
+	([ontology_Class12187] of  Book
 
 		(author [ontology_Class10119])
 		(genre "Uncategorized")
@@ -19596,7 +19555,7 @@
 		(title "MyNameIsAsherLev")
 		(year 1972))
 
-	([ontology_Class12193] of  Book
+	([ontology_Class12188] of  Book
 
 		(author [ontology_Class10535])
 		(genre "Fantasy")
@@ -19606,9 +19565,9 @@
 		(title "Mythology:TimelessTalesofGodsandHeroes")
 		(year 1942))
 
-	([ontology_Class12194] of  Book
+	([ontology_Class12189] of  Book
 
-		(author [ontology_Class10664])
+		(author [ontology_Class10663])
 		(genre "Uncategorized")
 		(pages 768)
 		(popularity low)
@@ -19616,7 +19575,7 @@
 		(title "HungerPoint")
 		(year 1997))
 
-	([ontology_Class12195] of  Book
+	([ontology_Class12190] of  Book
 
 		(author [ontology_Class10148])
 		(genre "Classics")
@@ -19626,7 +19585,7 @@
 		(title "OldYeller")
 		(year 1956))
 
-	([ontology_Class12196] of  Book
+	([ontology_Class12191] of  Book
 
 		(author [ontology_Class10204])
 		(genre "Classics")
@@ -19636,7 +19595,7 @@
 		(title "NorthandSouth")
 		(year 1855))
 
-	([ontology_Class12197] of  Book
+	([ontology_Class12192] of  Book
 
 		(author [ontology_Class10472])
 		(genre "Fantasy")
@@ -19646,7 +19605,7 @@
 		(title "TheKingofElfland'sDaughter")
 		(year 1924))
 
-	([ontology_Class12198] of  Book
+	([ontology_Class12193] of  Book
 
 		(author [ontology_Class10029])
 		(genre "Fantasy")
@@ -19656,7 +19615,7 @@
 		(title "TheLastUnicorn")
 		(year 1968))
 
-	([ontology_Class12199] of  Book
+	([ontology_Class12194] of  Book
 
 		(author [ontology_Class10216])
 		(genre "Classics")
@@ -19666,7 +19625,7 @@
 		(title "TheCompleteGrimm'sFairyTales")
 		(year 1812))
 
-	([ontology_Class12200] of  Book
+	([ontology_Class12195] of  Book
 
 		(author [ontology_Class10325])
 		(genre "Young")
@@ -19676,7 +19635,7 @@
 		(title "KissedbyanAngel/ThePowerofLove/Soulmates")
 		(year 1995))
 
-	([ontology_Class12201] of  Book
+	([ontology_Class12196] of  Book
 
 		(author [ontology_Class10108])
 		(genre "Classics")
@@ -19686,7 +19645,7 @@
 		(title "UncleTom'sCabin")
 		(year 1852))
 
-	([ontology_Class12202] of  Book
+	([ontology_Class12197] of  Book
 
 		(author [ontology_Class10221])
 		(genre "Classics")
@@ -19696,7 +19655,7 @@
 		(title "Middlemarch")
 		(year 1871))
 
-	([ontology_Class12203] of  Book
+	([ontology_Class12198] of  Book
 
 		(author [ontology_Class10130])
 		(genre "Uncategorized")
@@ -19706,7 +19665,7 @@
 		(title "FearandLoathinginLasVegas")
 		(year 1971))
 
-	([ontology_Class12204] of  Book
+	([ontology_Class12199] of  Book
 
 		(author [ontology_Class10198])
 		(genre "Uncategorized")
@@ -19716,7 +19675,7 @@
 		(title "InfiniteJest")
 		(year 1996))
 
-	([ontology_Class12205] of  Book
+	([ontology_Class12200] of  Book
 
 		(author [ontology_Class10070])
 		(genre "Classics")
@@ -19726,7 +19685,7 @@
 		(title "TheStranger")
 		(year 1942))
 
-	([ontology_Class12206] of  Book
+	([ontology_Class12201] of  Book
 
 		(author [ontology_Class10129])
 		(genre "Horror")
@@ -19736,9 +19695,9 @@
 		(title "TheExorcist")
 		(year 1971))
 
-	([ontology_Class12207] of  Book
+	([ontology_Class12202] of  Book
 
-		(author [ontology_Class10665])
+		(author [ontology_Class10664])
 		(genre "Uncategorized")
 		(pages 196)
 		(popularity low)
@@ -19746,7 +19705,7 @@
 		(title "GardenState")
 		(year 1992))
 
-	([ontology_Class12208] of  Book
+	([ontology_Class12203] of  Book
 
 		(author [ontology_Class10174])
 		(genre "Uncategorized")
@@ -19756,7 +19715,7 @@
 		(title "CasinoRoyale")
 		(year 1953))
 
-	([ontology_Class12209] of  Book
+	([ontology_Class12204] of  Book
 
 		(author [ontology_Class10195])
 		(genre "Classics")
@@ -19766,9 +19725,9 @@
 		(title "Swann'sWay")
 		(year 1913))
 
-	([ontology_Class12210] of  Book
+	([ontology_Class12205] of  Book
 
-		(author [ontology_Class10666])
+		(author [ontology_Class10665])
 		(genre "Uncategorized")
 		(pages 394)
 		(popularity medium)
@@ -19776,7 +19735,7 @@
 		(title "AWomanofSubstance")
 		(year 1979))
 
-	([ontology_Class12211] of  Book
+	([ontology_Class12206] of  Book
 
 		(author [ontology_Class10590])
 		(genre "Historical")
@@ -19786,9 +19745,9 @@
 		(title "RossPoldark")
 		(year 1945))
 
-	([ontology_Class12212] of  Book
+	([ontology_Class12207] of  Book
 
-		(author [ontology_Class10667])
+		(author [ontology_Class10666])
 		(genre "Westerns")
 		(pages 497)
 		(popularity low)
@@ -19796,7 +19755,7 @@
 		(title "Sackett'sLand")
 		(year 1974))
 
-	([ontology_Class12213] of  Book
+	([ontology_Class12208] of  Book
 
 		(author [ontology_Class10237])
 		(genre "Horror")
@@ -19806,7 +19765,7 @@
 		(title "Relic")
 		(year 1995))
 
-	([ontology_Class12214] of  Book
+	([ontology_Class12209] of  Book
 
 		(author [ontology_Class10135])
 		(genre "Classics")
@@ -19816,7 +19775,7 @@
 		(title "TheForsyteSaga")
 		(year 1921))
 
-	([ontology_Class12215] of  Book
+	([ontology_Class12210] of  Book
 
 		(author [ontology_Class10093])
 		(genre "Historical")
@@ -19826,7 +19785,7 @@
 		(title "MasterandCommander")
 		(year 1969))
 
-	([ontology_Class12216] of  Book
+	([ontology_Class12211] of  Book
 
 		(author [ontology_Class10440])
 		(genre "Romance")
@@ -19836,7 +19795,7 @@
 		(title "WiththisKiss")
 		(year 1999))
 
-	([ontology_Class12217] of  Book
+	([ontology_Class12212] of  Book
 
 		(author [ontology_Class10444])
 		(genre "Romance")
@@ -19846,7 +19805,7 @@
 		(title "BeautyandtheBeast")
 		(year 1992))
 
-	([ontology_Class12218] of  Book
+	([ontology_Class12213] of  Book
 
 		(author [ontology_Class10243])
 		(genre "Fantasy")
@@ -19856,9 +19815,9 @@
 		(title "TalesfromtheBrothersGrimmandtheSistersWeird")
 		(year 1995))
 
-	([ontology_Class12219] of  Book
+	([ontology_Class12214] of  Book
 
-		(author [ontology_Class10668])
+		(author [ontology_Class10667])
 		(genre "Young")
 		(pages 283)
 		(popularity low)
@@ -19866,9 +19825,9 @@
 		(title "TheShadowoftheBear")
 		(year 1997))
 
-	([ontology_Class12220] of  Book
+	([ontology_Class12215] of  Book
 
-		(author [ontology_Class10669])
+		(author [ontology_Class10668])
 		(genre "Fantasy")
 		(pages 560)
 		(popularity low)
@@ -19876,9 +19835,9 @@
 		(title "Medea")
 		(year 1996))
 
-	([ontology_Class12221] of  Book
+	([ontology_Class12216] of  Book
 
-		(author [ontology_Class10670])
+		(author [ontology_Class10669])
 		(genre "Fantasy")
 		(pages 685)
 		(popularity low)
@@ -19886,7 +19845,7 @@
 		(title "LadyoftheForest")
 		(year 1992))
 
-	([ontology_Class12222] of  Book
+	([ontology_Class12217] of  Book
 
 		(author [ontology_Class10584])
 		(genre "Historical")
@@ -19896,9 +19855,9 @@
 		(title "TheLightBearer")
 		(year 1994))
 
-	([ontology_Class12223] of  Book
+	([ontology_Class12218] of  Book
 
-		(author [ontology_Class10671])
+		(author [ontology_Class10670])
 		(genre "Classics")
 		(pages 1639)
 		(popularity low)
@@ -19906,7 +19865,7 @@
 		(title "She:AHistoryofAdventure")
 		(year 1886))
 
-	([ontology_Class12224] of  Book
+	([ontology_Class12219] of  Book
 
 		(author [ontology_Class10355])
 		(genre "Historical")
@@ -19916,9 +19875,9 @@
 		(title "Mara,DaughteroftheNile")
 		(year 1953))
 
-	([ontology_Class12225] of  Book
+	([ontology_Class12220] of  Book
 
-		(author [ontology_Class10672])
+		(author [ontology_Class10671])
 		(genre "Horror")
 		(pages 560)
 		(popularity low)
@@ -19926,9 +19885,9 @@
 		(title "Grimscribe:HisLivesandWorks")
 		(year 1991))
 
-	([ontology_Class12226] of  Book
+	([ontology_Class12221] of  Book
 
-		(author [ontology_Class10673])
+		(author [ontology_Class10672])
 		(genre "Horror")
 		(pages 747)
 		(popularity low)
@@ -19936,9 +19895,9 @@
 		(title "TheThreeImpostors")
 		(year 1895))
 
-	([ontology_Class12227] of  Book
+	([ontology_Class12222] of  Book
 
-		(author [ontology_Class10674])
+		(author [ontology_Class10673])
 		(genre "Romance")
 		(pages 207)
 		(popularity low)
@@ -19946,9 +19905,9 @@
 		(title "TheKnightsOfChristmas")
 		(year 1997))
 
-	([ontology_Class12228] of  Book
+	([ontology_Class12223] of  Book
 
-		(author [ontology_Class10675])
+		(author [ontology_Class10674])
 		(genre "Fantasy")
 		(pages 539)
 		(popularity low)
@@ -19956,9 +19915,9 @@
 		(title "TheLegendofDeathwalker")
 		(year 1996))
 
-	([ontology_Class12229] of  Book
+	([ontology_Class12224] of  Book
 
-		(author [ontology_Class10676])
+		(author [ontology_Class10675])
 		(genre "Fantasy")
 		(pages 562)
 		(popularity low)
@@ -19966,7 +19925,7 @@
 		(title "TheBarbedCoil")
 		(year 1997))
 
-	([ontology_Class12230] of  Book
+	([ontology_Class12225] of  Book
 
 		(author [ontology_Class10165])
 		(genre "Fantasy")
@@ -19976,7 +19935,7 @@
 		(title "Rhapsody:ChildofBlood")
 		(year 1999))
 
-	([ontology_Class12231] of  Book
+	([ontology_Class12226] of  Book
 
 		(author [ontology_Class10215])
 		(genre "Fantasy")
@@ -19986,7 +19945,7 @@
 		(title "TamLin")
 		(year 1991))
 
-	([ontology_Class12232] of  Book
+	([ontology_Class12227] of  Book
 
 		(author [ontology_Class10151])
 		(genre "Fantasy")
@@ -19996,9 +19955,9 @@
 		(title "TheOrderWar")
 		(year 1995))
 
-	([ontology_Class12233] of  Book
+	([ontology_Class12228] of  Book
 
-		(author [ontology_Class10677])
+		(author [ontology_Class10676])
 		(genre "Fantasy")
 		(pages 808)
 		(popularity low)
@@ -20006,7 +19965,7 @@
 		(title "TheCurseoftheMistwraith")
 		(year 1993))
 
-	([ontology_Class12234] of  Book
+	([ontology_Class12229] of  Book
 
 		(author [ontology_Class10166])
 		(genre "Fantasy")
@@ -20016,7 +19975,7 @@
 		(title "TheDeedofPaksenarrion")
 		(year 1992))
 
-	([ontology_Class12235] of  Book
+	([ontology_Class12230] of  Book
 
 		(author [ontology_Class10027])
 		(genre "Horror")
@@ -20026,9 +19985,9 @@
 		(title "InaGlassDarkly")
 		(year 1872))
 
-	([ontology_Class12236] of  Book
+	([ontology_Class12231] of  Book
 
-		(author [ontology_Class10678])
+		(author [ontology_Class10677])
 		(genre "Uncategorized")
 		(pages 682)
 		(popularity medium)
@@ -20036,9 +19995,9 @@
 		(title "TheShelteringSky")
 		(year 1949))
 
-	([ontology_Class12237] of  Book
+	([ontology_Class12232] of  Book
 
-		(author [ontology_Class10679])
+		(author [ontology_Class10678])
 		(genre "Uncategorized")
 		(pages 691)
 		(popularity low)
@@ -20046,9 +20005,9 @@
 		(title "Jamilia")
 		(year 1958))
 
-	([ontology_Class12238] of  Book
+	([ontology_Class12233] of  Book
 
-		(author [ontology_Class10680])
+		(author [ontology_Class10679])
 		(genre "Uncategorized")
 		(pages 271)
 		(popularity low)
@@ -20056,7 +20015,7 @@
 		(title "TheSnowGoose")
 		(year 1941))
 
-	([ontology_Class12239] of  Book
+	([ontology_Class12234] of  Book
 
 		(author [ontology_Class10214])
 		(genre "Fantasy")
@@ -20066,9 +20025,9 @@
 		(title "ThePerilousGard")
 		(year 1974))
 
-	([ontology_Class12240] of  Book
+	([ontology_Class12235] of  Book
 
-		(author [ontology_Class10681])
+		(author [ontology_Class10680])
 		(genre "Historical")
 		(pages 397)
 		(popularity low)
@@ -20076,7 +20035,7 @@
 		(title "TheOriginalSin")
 		(year 1992))
 
-	([ontology_Class12241] of  Book
+	([ontology_Class12236] of  Book
 
 		(author [ontology_Class10103])
 		(genre "Uncategorized")
@@ -20086,7 +20045,7 @@
 		(title "TheEnglishPatient")
 		(year 1992))
 
-	([ontology_Class12242] of  Book
+	([ontology_Class12237] of  Book
 
 		(author [ontology_Class10102])
 		(genre "Historical")
@@ -20096,9 +20055,9 @@
 		(title "GreenDarkness")
 		(year 1972))
 
-	([ontology_Class12243] of  Book
+	([ontology_Class12238] of  Book
 
-		(author [ontology_Class10682])
+		(author [ontology_Class10681])
 		(genre "Romance")
 		(pages 1325)
 		(popularity low)
@@ -20106,7 +20065,7 @@
 		(title "ACottagebytheSea")
 		(year 1996))
 
-	([ontology_Class12244] of  Book
+	([ontology_Class12239] of  Book
 
 		(author [ontology_Class10091])
 		(genre "Historical")
@@ -20116,7 +20075,7 @@
 		(title "Hawaii")
 		(year 1959))
 
-	([ontology_Class12245] of  Book
+	([ontology_Class12240] of  Book
 
 		(author [ontology_Class10202])
 		(genre "Classics")
@@ -20126,9 +20085,9 @@
 		(title "DoctorZhivago")
 		(year 1957))
 
-	([ontology_Class12246] of  Book
+	([ontology_Class12241] of  Book
 
-		(author [ontology_Class10683])
+		(author [ontology_Class10682])
 		(genre "Uncategorized")
 		(pages 670)
 		(popularity medium)
@@ -20136,9 +20095,9 @@
 		(title "TrueGrit")
 		(year 1968))
 
-	([ontology_Class12247] of  Book
+	([ontology_Class12242] of  Book
 
-		(author [ontology_Class10684])
+		(author [ontology_Class10683])
 		(genre "Uncategorized")
 		(pages 163)
 		(popularity low)
@@ -20146,7 +20105,7 @@
 		(title "ComedyinaMinorKey")
 		(year 1947))
 
-	([ontology_Class12248] of  Book
+	([ontology_Class12243] of  Book
 
 		(author [ontology_Class10146])
 		(genre "Uncategorized")
@@ -20156,7 +20115,7 @@
 		(title "Sounder")
 		(year 1969))
 
-	([ontology_Class12249] of  Book
+	([ontology_Class12244] of  Book
 
 		(author [ontology_Class10056])
 		(genre "Classics")
@@ -20166,9 +20125,9 @@
 		(title "InvisibleMan")
 		(year 1952))
 
-	([ontology_Class12250] of  Book
+	([ontology_Class12245] of  Book
 
-		(author [ontology_Class10685])
+		(author [ontology_Class10684])
 		(genre "Historical")
 		(pages 659)
 		(popularity low)
@@ -20176,7 +20135,7 @@
 		(title "Elyza")
 		(year 1976))
 
-	([ontology_Class12251] of  Book
+	([ontology_Class12246] of  Book
 
 		(author [ontology_Class10175])
 		(genre "Classics")
@@ -20186,7 +20145,7 @@
 		(title "MaryPoppins")
 		(year 1934))
 
-	([ontology_Class12252] of  Book
+	([ontology_Class12247] of  Book
 
 		(author [ontology_Class10492])
 		(genre "Fantasy")
@@ -20196,7 +20155,7 @@
 		(title "TheTwelveKingdoms:SeaofShadow")
 		(year 1992))
 
-	([ontology_Class12253] of  Book
+	([ontology_Class12248] of  Book
 
 		(author [ontology_Class10031])
 		(genre "Fantasy")
@@ -20206,7 +20165,7 @@
 		(title "TheAncientOne")
 		(year 1992))
 
-	([ontology_Class12254] of  Book
+	([ontology_Class12249] of  Book
 
 		(author [ontology_Class10173])
 		(genre "Uncategorized")
@@ -20216,9 +20175,9 @@
 		(title "TheBridgesofMadisonCounty")
 		(year 1992))
 
-	([ontology_Class12255] of  Book
+	([ontology_Class12250] of  Book
 
-		(author [ontology_Class10686])
+		(author [ontology_Class10685])
 		(genre "Horror")
 		(pages 310)
 		(popularity low)
@@ -20226,9 +20185,9 @@
 		(title "Goon")
 		(year 1996))
 
-	([ontology_Class12256] of  Book
+	([ontology_Class12251] of  Book
 
-		(author [ontology_Class10687])
+		(author [ontology_Class10686])
 		(genre "Horror")
 		(pages 342)
 		(popularity low)
@@ -20236,9 +20195,9 @@
 		(title "Skin")
 		(year 1993))
 
-	([ontology_Class12257] of  Book
+	([ontology_Class12252] of  Book
 
-		(author [ontology_Class10688])
+		(author [ontology_Class10687])
 		(genre "Horror")
 		(pages 379)
 		(popularity low)
@@ -20246,9 +20205,9 @@
 		(title "MasterofLies")
 		(year 1991))
 
-	([ontology_Class12258] of  Book
+	([ontology_Class12253] of  Book
 
-		(author [ontology_Class10689])
+		(author [ontology_Class10688])
 		(genre "Horror")
 		(pages 441)
 		(popularity low)
@@ -20256,9 +20215,9 @@
 		(title "Offspring:TheSequeltoOffSeason")
 		(year 1991))
 
-	([ontology_Class12259] of  Book
+	([ontology_Class12254] of  Book
 
-		(author [ontology_Class10690])
+		(author [ontology_Class10689])
 		(genre "Horror")
 		(pages 585)
 		(popularity low)
@@ -20266,18 +20225,18 @@
 		(title "Let'sGoPlayattheAdams'")
 		(year 1974))
 
-	([ontology_Class12260] of  Book
+	([ontology_Class12255] of  Book
 
-		(author [ontology_Class10691])
+		(author [ontology_Class10690])
 		(genre "Romance")
 		(pages 191)
 		(popularity low)
 		(rating 200.0)
 		(title "WickedwiththeScoundrel"))
 
-	([ontology_Class12261] of  Book
+	([ontology_Class12256] of  Book
 
-		(author [ontology_Class10692])
+		(author [ontology_Class10691])
 		(genre "Thriller")
 		(pages 290)
 		(popularity medium)
@@ -20285,25 +20244,25 @@
 		(title "AColdDayForMurder")
 		(year 1992))
 
-	([ontology_Class12262] of  Book
+	([ontology_Class12257] of  Book
 
-		(author [ontology_Class10693])
+		(author [ontology_Class10692])
 		(genre "Contemporary")
 		(pages 701)
 		(popularity low)
 		(rating 320.0)
 		(title "TellMeHowYouReallyFeel"))
 
-	([ontology_Class12263] of  Book
+	([ontology_Class12258] of  Book
 
-		(author [ontology_Class10694])
+		(author [ontology_Class10693])
 		(genre "Fantasy")
 		(pages 994)
 		(popularity low)
 		(rating 416.0)
 		(title "Titanshade"))
 
-	([ontology_Class12264] of  Book
+	([ontology_Class12259] of  Book
 
 		(author [ontology_Class10404])
 		(genre "Romance")
@@ -20312,9 +20271,9 @@
 		(rating 291.0)
 		(title "MoonlightWhiskey"))
 
-	([ontology_Class12265] of  Book
+	([ontology_Class12260] of  Book
 
-		(author [ontology_Class10695])
+		(author [ontology_Class10694])
 		(genre "Fantasy")
 		(pages 263)
 		(popularity low)
@@ -20322,9 +20281,9 @@
 		(title "SwordWoman")
 		(year 1977))
 
-	([ontology_Class12266] of  Book
+	([ontology_Class12261] of  Book
 
-		(author [ontology_Class10696])
+		(author [ontology_Class10695])
 		(genre "Fantasy")
 		(pages 383)
 		(popularity low)
@@ -20332,9 +20291,9 @@
 		(title "JirelofJoiry")
 		(year 1934))
 
-	([ontology_Class12267] of  Book
+	([ontology_Class12262] of  Book
 
-		(author [ontology_Class10697])
+		(author [ontology_Class10696])
 		(genre "Uncategorized")
 		(pages 351)
 		(popularity low)
@@ -20342,9 +20301,9 @@
 		(title "TheQuest")
 		(year 1975))
 
-	([ontology_Class12268] of  Book
+	([ontology_Class12263] of  Book
 
-		(author [ontology_Class10698])
+		(author [ontology_Class10697])
 		(genre "Young")
 		(pages 343)
 		(popularity low)
@@ -20352,9 +20311,9 @@
 		(title "BorrowedLight")
 		(year 1999))
 
-	([ontology_Class12269] of  Book
+	([ontology_Class12264] of  Book
 
-		(author [ontology_Class10699])
+		(author [ontology_Class10698])
 		(genre "Young")
 		(pages 451)
 		(popularity low)
@@ -20362,9 +20321,9 @@
 		(title "Mr.andMrs.BoJoJones")
 		(year 1967))
 
-	([ontology_Class12270] of  Book
+	([ontology_Class12265] of  Book
 
-		(author [ontology_Class10700])
+		(author [ontology_Class10699])
 		(genre "Young")
 		(pages 639)
 		(popularity low)
@@ -20372,9 +20331,9 @@
 		(title "ImaniAllMine")
 		(year 1999))
 
-	([ontology_Class12271] of  Book
+	([ontology_Class12266] of  Book
 
-		(author [ontology_Class10701])
+		(author [ontology_Class10700])
 		(genre "Young")
 		(pages 661)
 		(popularity low)
@@ -20382,7 +20341,7 @@
 		(title "DearNobody")
 		(year 1991))
 
-	([ontology_Class12272] of  Book
+	([ontology_Class12267] of  Book
 
 		(author [ontology_Class10144])
 		(genre "Uncategorized")
@@ -20392,7 +20351,7 @@
 		(title "MySideoftheMountain")
 		(year 1959))
 
-	([ontology_Class12273] of  Book
+	([ontology_Class12268] of  Book
 
 		(author [ontology_Class10273])
 		(genre "Young")
@@ -20402,9 +20361,9 @@
 		(title "FreaktheMighty")
 		(year 1993))
 
-	([ontology_Class12274] of  Book
+	([ontology_Class12269] of  Book
 
-		(author [ontology_Class10702])
+		(author [ontology_Class10701])
 		(genre "Fantasy")
 		(pages 586)
 		(popularity low)
@@ -20412,9 +20371,9 @@
 		(title "TheNightLifeoftheGods")
 		(year 1931))
 
-	([ontology_Class12275] of  Book
+	([ontology_Class12270] of  Book
 
-		(author [ontology_Class10703])
+		(author [ontology_Class10702])
 		(genre "Historical")
 		(pages 2282)
 		(popularity low)
@@ -20422,9 +20381,9 @@
 		(title "BlackShipsBeforeTroy")
 		(year 1993))
 
-	([ontology_Class12276] of  Book
+	([ontology_Class12271] of  Book
 
-		(author [ontology_Class10704])
+		(author [ontology_Class10703])
 		(genre "Fantasy")
 		(pages 397)
 		(popularity low)
@@ -20432,7 +20391,7 @@
 		(title "AMidsummerTempest")
 		(year 1974))
 
-	([ontology_Class12277] of  Book
+	([ontology_Class12272] of  Book
 
 		(author [ontology_Class10128])
 		(genre "Uncategorized")
@@ -20442,9 +20401,9 @@
 		(title "ASeveredHead")
 		(year 1961))
 
-	([ontology_Class12278] of  Book
+	([ontology_Class12273] of  Book
 
-		(author [ontology_Class10705])
+		(author [ontology_Class10704])
 		(genre "Short Stories")
 		(pages 813)
 		(popularity low)
@@ -20452,7 +20411,7 @@
 		(title "CollectedStories")
 		(year 1966))
 
-	([ontology_Class12279] of  Book
+	([ontology_Class12274] of  Book
 
 		(author [ontology_Class10408])
 		(genre "Romance")
@@ -20462,9 +20421,9 @@
 		(title "Rachel'sHoliday")
 		(year 1997))
 
-	([ontology_Class12280] of  Book
+	([ontology_Class12275] of  Book
 
-		(author [ontology_Class10706])
+		(author [ontology_Class10705])
 		(genre "Uncategorized")
 		(pages 1200)
 		(popularity low)
@@ -20472,7 +20431,7 @@
 		(title "TheGingerMan")
 		(year 1955))
 
-	([ontology_Class12281] of  Book
+	([ontology_Class12276] of  Book
 
 		(author [ontology_Class10194])
 		(genre "Classics")
@@ -20482,7 +20441,7 @@
 		(title "SonsandLovers")
 		(year 1913))
 
-	([ontology_Class12282] of  Book
+	([ontology_Class12277] of  Book
 
 		(author [ontology_Class10323])
 		(genre "Classics")
@@ -20492,9 +20451,9 @@
 		(title "ASeparatePeace")
 		(year 1959))
 
-	([ontology_Class12283] of  Book
+	([ontology_Class12278] of  Book
 
-		(author [ontology_Class10707])
+		(author [ontology_Class10706])
 		(genre "Horror")
 		(pages 1861)
 		(popularity medium)
@@ -20502,7 +20461,7 @@
 		(title "Boy'sLife")
 		(year 1991))
 
-	([ontology_Class12284] of  Book
+	([ontology_Class12279] of  Book
 
 		(author [ontology_Class10301])
 		(genre "Historical")
@@ -20512,7 +20471,7 @@
 		(title "StonesfromtheRiver")
 		(year 1994))
 
-	([ontology_Class12285] of  Book
+	([ontology_Class12280] of  Book
 
 		(author [ontology_Class10290])
 		(genre "Uncategorized")
@@ -20522,9 +20481,9 @@
 		(title "WideSargassoSea")
 		(year 1966))
 
-	([ontology_Class12286] of  Book
+	([ontology_Class12281] of  Book
 
-		(author [ontology_Class10708])
+		(author [ontology_Class10707])
 		(genre "Uncategorized")
 		(pages 587)
 		(popularity low)
@@ -20532,9 +20491,9 @@
 		(title "Wired")
 		(year 1993))
 
-	([ontology_Class12287] of  Book
+	([ontology_Class12282] of  Book
 
-		(author [ontology_Class10709])
+		(author [ontology_Class10708])
 		(genre "Uncategorized")
 		(pages 633)
 		(popularity low)
@@ -20542,9 +20501,9 @@
 		(title "TheStreetofCrocodiles")
 		(year 1933))
 
-	([ontology_Class12288] of  Book
+	([ontology_Class12283] of  Book
 
-		(author [ontology_Class10710])
+		(author [ontology_Class10709])
 		(genre "Fantasy")
 		(pages 839)
 		(popularity low)
@@ -20552,7 +20511,7 @@
 		(title "TheCircusofDr.Lao")
 		(year 1935))
 
-	([ontology_Class12289] of  Book
+	([ontology_Class12284] of  Book
 
 		(author [ontology_Class10512])
 		(genre "Fantasy")
@@ -20562,9 +20521,9 @@
 		(title "Lud-in-the-Mist")
 		(year 1926))
 
-	([ontology_Class12290] of  Book
+	([ontology_Class12285] of  Book
 
-		(author [ontology_Class10711])
+		(author [ontology_Class10710])
 		(genre "Fantasy")
 		(pages 1222)
 		(popularity low)
@@ -20572,9 +20531,9 @@
 		(title "TheWormOuroboros")
 		(year 1926))
 
-	([ontology_Class12291] of  Book
+	([ontology_Class12286] of  Book
 
-		(author [ontology_Class10712])
+		(author [ontology_Class10711])
 		(genre "Fantasy")
 		(pages 1462)
 		(popularity low)
@@ -20582,7 +20541,7 @@
 		(title "TheChroniclesofMasterLiandNumberTenOx")
 		(year 1996))
 
-	([ontology_Class12292] of  Book
+	([ontology_Class12287] of  Book
 
 		(author [ontology_Class10178])
 		(genre "Thriller")
@@ -20592,9 +20551,9 @@
 		(title "TheMermaidsSinging")
 		(year 1995))
 
-	([ontology_Class12293] of  Book
+	([ontology_Class12288] of  Book
 
-		(author [ontology_Class10713])
+		(author [ontology_Class10712])
 		(genre "Thriller")
 		(pages 929)
 		(popularity medium)
@@ -20602,9 +20561,9 @@
 		(title "LastBustoWoodstock")
 		(year 1975))
 
-	([ontology_Class12294] of  Book
+	([ontology_Class12289] of  Book
 
-		(author [ontology_Class10714])
+		(author [ontology_Class10713])
 		(genre "Uncategorized")
 		(pages 973)
 		(popularity medium)
@@ -20612,9 +20571,9 @@
 		(title "LostHorizon")
 		(year 1933))
 
-	([ontology_Class12295] of  Book
+	([ontology_Class12290] of  Book
 
-		(author [ontology_Class10715])
+		(author [ontology_Class10714])
 		(genre "Uncategorized")
 		(pages 1152)
 		(popularity low)
@@ -20622,7 +20581,7 @@
 		(title "TheChoirboys")
 		(year 1975))
 
-	([ontology_Class12296] of  Book
+	([ontology_Class12291] of  Book
 
 		(author [ontology_Class10580])
 		(genre "Young")
@@ -20632,9 +20591,9 @@
 		(title "Flambards")
 		(year 1967))
 
-	([ontology_Class12297] of  Book
+	([ontology_Class12292] of  Book
 
-		(author [ontology_Class10716])
+		(author [ontology_Class10715])
 		(genre "Fantasy")
 		(pages 787)
 		(popularity medium)
@@ -20642,7 +20601,7 @@
 		(title "TheLittleWhiteHorse")
 		(year 1946))
 
-	([ontology_Class12298] of  Book
+	([ontology_Class12293] of  Book
 
 		(author [ontology_Class10283])
 		(genre "Uncategorized")
@@ -20652,9 +20611,9 @@
 		(title "AThousandAcres")
 		(year 1991))
 
-	([ontology_Class12299] of  Book
+	([ontology_Class12294] of  Book
 
-		(author [ontology_Class10717])
+		(author [ontology_Class10716])
 		(genre "Classics")
 		(pages 3774)
 		(popularity medium)
@@ -20662,9 +20621,9 @@
 		(title "NationalVelvet")
 		(year 1935))
 
-	([ontology_Class12300] of  Book
+	([ontology_Class12295] of  Book
 
-		(author [ontology_Class10718])
+		(author [ontology_Class10717])
 		(genre "Historical")
 		(pages 1963)
 		(popularity low)
@@ -20672,9 +20631,9 @@
 		(title "EmmaHamilton")
 		(year 1978))
 
-	([ontology_Class12301] of  Book
+	([ontology_Class12296] of  Book
 
-		(author [ontology_Class10719])
+		(author [ontology_Class10718])
 		(genre "Historical")
 		(pages 828)
 		(popularity low)
@@ -20682,7 +20641,7 @@
 		(title "TheEndlessSteppe:GrowingUpinSiberia")
 		(year 1968))
 
-	([ontology_Class12302] of  Book
+	([ontology_Class12297] of  Book
 
 		(author [ontology_Class10457])
 		(genre "Uncategorized")
@@ -20692,9 +20651,9 @@
 		(title "TheYoungLions")
 		(year 1948))
 
-	([ontology_Class12303] of  Book
+	([ontology_Class12298] of  Book
 
-		(author [ontology_Class10720])
+		(author [ontology_Class10719])
 		(genre "Historical")
 		(pages 862)
 		(popularity low)
@@ -20702,7 +20661,7 @@
 		(title "LandGirls")
 		(year 1994))
 
-	([ontology_Class12304] of  Book
+	([ontology_Class12299] of  Book
 
 		(author [ontology_Class10456])
 		(genre "Uncategorized")
@@ -20712,9 +20671,9 @@
 		(title "FromHeretoEternity")
 		(year 1951))
 
-	([ontology_Class12305] of  Book
+	([ontology_Class12300] of  Book
 
-		(author [ontology_Class10721])
+		(author [ontology_Class10720])
 		(genre "Uncategorized")
 		(pages 1205)
 		(popularity medium)
@@ -20722,7 +20681,7 @@
 		(title "ItCan'tHappenHere")
 		(year 1935))
 
-	([ontology_Class12306] of  Book
+	([ontology_Class12301] of  Book
 
 		(author [ontology_Class10025])
 		(genre "Horror")
@@ -20732,7 +20691,7 @@
 		(title "AnnoDracula")
 		(year 1992))
 
-	([ontology_Class12307] of  Book
+	([ontology_Class12302] of  Book
 
 		(author [ontology_Class10118])
 		(genre "Historical")
@@ -20742,7 +20701,7 @@
 		(title "WarandRemembrance")
 		(year 1978))
 
-	([ontology_Class12308] of  Book
+	([ontology_Class12303] of  Book
 
 		(author [ontology_Class10143])
 		(genre "Uncategorized")
@@ -20752,7 +20711,7 @@
 		(title "Sophie'sChoice")
 		(year 1979))
 
-	([ontology_Class12309] of  Book
+	([ontology_Class12304] of  Book
 
 		(author [ontology_Class10532])
 		(genre "Fantasy")
@@ -20762,7 +20721,7 @@
 		(title "BloodPrice")
 		(year 1991))
 
-	([ontology_Class12310] of  Book
+	([ontology_Class12305] of  Book
 
 		(author [ontology_Class10428])
 		(genre "Classics")
@@ -20772,9 +20731,9 @@
 		(title "LeMorted'Arthur:KingArthurandtheLegendsoftheRoundTable")
 		(year 1485))
 
-	([ontology_Class12311] of  Book
+	([ontology_Class12306] of  Book
 
-		(author [ontology_Class10722])
+		(author [ontology_Class10721])
 		(genre "Classics")
 		(pages 1106)
 		(popularity low)
@@ -20782,9 +20741,9 @@
 		(title "BetsyandJoe")
 		(year 1948))
 
-	([ontology_Class12312] of  Book
+	([ontology_Class12307] of  Book
 
-		(author [ontology_Class10723])
+		(author [ontology_Class10722])
 		(genre "Classics")
 		(pages 2312)
 		(popularity medium)
@@ -20792,7 +20751,7 @@
 		(title "Pollyanna")
 		(year 1912))
 
-	([ontology_Class12313] of  Book
+	([ontology_Class12308] of  Book
 
 		(author [ontology_Class10530])
 		(genre "Uncategorized")
@@ -20802,9 +20761,9 @@
 		(title "TheSunbird")
 		(year 1972))
 
-	([ontology_Class12314] of  Book
+	([ontology_Class12309] of  Book
 
-		(author [ontology_Class10724])
+		(author [ontology_Class10723])
 		(genre "Uncategorized")
 		(pages 724)
 		(popularity medium)
@@ -20812,7 +20771,7 @@
 		(title "HendersontheRainKing")
 		(year 1959))
 
-	([ontology_Class12315] of  Book
+	([ontology_Class12310] of  Book
 
 		(author [ontology_Class10374])
 		(genre "Uncategorized")
@@ -20822,9 +20781,9 @@
 		(title "Scoop")
 		(year 1938))
 
-	([ontology_Class12316] of  Book
+	([ontology_Class12311] of  Book
 
-		(author [ontology_Class10725])
+		(author [ontology_Class10724])
 		(genre "Thriller")
 		(pages 1017)
 		(popularity low)
@@ -20832,9 +20791,9 @@
 		(title "FalseConfessions")
 		(year 1993))
 
-	([ontology_Class12317] of  Book
+	([ontology_Class12312] of  Book
 
-		(author [ontology_Class10726])
+		(author [ontology_Class10725])
 		(genre "Horror")
 		(pages 432)
 		(popularity low)
@@ -20842,9 +20801,9 @@
 		(title "100GhastlyLittleGhostStories")
 		(year 1993))
 
-	([ontology_Class12318] of  Book
+	([ontology_Class12313] of  Book
 
-		(author [ontology_Class10727])
+		(author [ontology_Class10726])
 		(genre "Horror")
 		(pages 469)
 		(popularity low)
@@ -20852,9 +20811,9 @@
 		(title "TheOxfordBookofEnglishGhostStories")
 		(year 1918))
 
-	([ontology_Class12319] of  Book
+	([ontology_Class12314] of  Book
 
-		(author [ontology_Class10728])
+		(author [ontology_Class10727])
 		(genre "Short Stories")
 		(pages 513)
 		(popularity low)
@@ -20862,7 +20821,7 @@
 		(title "SplatterpunksII:OvertheEdge")
 		(year 1993))
 
-	([ontology_Class12320] of  Book
+	([ontology_Class12315] of  Book
 
 		(author [ontology_Class10298])
 		(genre "Historical")
@@ -20872,9 +20831,9 @@
 		(title "IfIShouldDieBeforeIWake")
 		(year 1994))
 
-	([ontology_Class12321] of  Book
+	([ontology_Class12316] of  Book
 
-		(author [ontology_Class10729])
+		(author [ontology_Class10728])
 		(genre "Horror")
 		(pages 657)
 		(popularity low)
@@ -20882,9 +20841,9 @@
 		(title "HotterBlood:MoreTalesofEroticHorror")
 		(year 1991))
 
-	([ontology_Class12322] of  Book
+	([ontology_Class12317] of  Book
 
-		(author [ontology_Class10730])
+		(author [ontology_Class10729])
 		(genre "Fantasy")
 		(pages 1955)
 		(popularity medium)
@@ -20892,7 +20851,7 @@
 		(title "FireBringer")
 		(year 1999))
 
-	([ontology_Class12323] of  Book
+	([ontology_Class12318] of  Book
 
 		(author [ontology_Class10302])
 		(genre "Historical")
@@ -20902,7 +20861,7 @@
 		(title "WhenHitlerStolePinkRabbit")
 		(year 1971))
 
-	([ontology_Class12324] of  Book
+	([ontology_Class12319] of  Book
 
 		(author [ontology_Class10455])
 		(genre "Thriller")
@@ -20912,9 +20871,9 @@
 		(title "TheSatanBug")
 		(year 1962))
 
-	([ontology_Class12325] of  Book
+	([ontology_Class12320] of  Book
 
-		(author [ontology_Class10731])
+		(author [ontology_Class10730])
 		(genre "Uncategorized")
 		(pages 862)
 		(popularity low)
@@ -20922,7 +20881,7 @@
 		(title "FreddytheDetective")
 		(year 1932))
 
-	([ontology_Class12326] of  Book
+	([ontology_Class12321] of  Book
 
 		(author [ontology_Class10233])
 		(genre "Classics")
@@ -20932,7 +20891,7 @@
 		(title "Bambi")
 		(year 1923))
 
-	([ontology_Class12327] of  Book
+	([ontology_Class12322] of  Book
 
 		(author [ontology_Class10303])
 		(genre "Uncategorized")
@@ -20942,9 +20901,9 @@
 		(title "TheHomeandtheWorld")
 		(year 1916))
 
-	([ontology_Class12328] of  Book
+	([ontology_Class12323] of  Book
 
-		(author [ontology_Class10732])
+		(author [ontology_Class10731])
 		(genre "Uncategorized")
 		(pages 745)
 		(popularity low)
@@ -20952,9 +20911,9 @@
 		(title "TheRaggedTrouseredPhilanthropists")
 		(year 1914))
 
-	([ontology_Class12329] of  Book
+	([ontology_Class12324] of  Book
 
-		(author [ontology_Class10733])
+		(author [ontology_Class10732])
 		(genre "Uncategorized")
 		(pages 883)
 		(popularity low)
@@ -20962,9 +20921,9 @@
 		(title "ZuleikaDobson")
 		(year 1911))
 
-	([ontology_Class12330] of  Book
+	([ontology_Class12325] of  Book
 
-		(author [ontology_Class10734])
+		(author [ontology_Class10733])
 		(genre "Westerns")
 		(pages 1090)
 		(popularity low)
@@ -20972,9 +20931,9 @@
 		(title "RidersofthePurpleSage")
 		(year 1912))
 
-	([ontology_Class12331] of  Book
+	([ontology_Class12326] of  Book
 
-		(author [ontology_Class10735])
+		(author [ontology_Class10734])
 		(genre "Uncategorized")
 		(pages 1754)
 		(popularity medium)
@@ -20982,7 +20941,7 @@
 		(title "UnderstoodBetsy")
 		(year 1916))
 
-	([ontology_Class12332] of  Book
+	([ontology_Class12327] of  Book
 
 		(author [ontology_Class10377])
 		(genre "Uncategorized")
@@ -20992,7 +20951,7 @@
 		(title "TheMagnificentAmbersons")
 		(year 1918))
 
-	([ontology_Class12333] of  Book
+	([ontology_Class12328] of  Book
 
 		(author [ontology_Class10116])
 		(genre "Historical")
@@ -21002,9 +20961,9 @@
 		(title "RollofThunder,HearMyCry")
 		(year 1976))
 
-	([ontology_Class12334] of  Book
+	([ontology_Class12329] of  Book
 
-		(author [ontology_Class10736])
+		(author [ontology_Class10735])
 		(genre "Uncategorized")
 		(pages 494)
 		(popularity low)
@@ -21012,7 +20971,7 @@
 		(title "TheAgeofWireandString")
 		(year 1995))
 
-	([ontology_Class12335] of  Book
+	([ontology_Class12330] of  Book
 
 		(author [ontology_Class10207])
 		(genre "Uncategorized")
@@ -21022,7 +20981,7 @@
 		(title "StoryoftheEye")
 		(year 1928))
 
-	([ontology_Class12336] of  Book
+	([ontology_Class12331] of  Book
 
 		(author [ontology_Class10161])
 		(genre "Classics")
@@ -21032,7 +20991,7 @@
 		(title "TheSoundandtheFury")
 		(year 1929))
 
-	([ontology_Class12337] of  Book
+	([ontology_Class12332] of  Book
 
 		(author [ontology_Class10147])
 		(genre "Classics")
@@ -21042,7 +21001,7 @@
 		(title "TheYearling")
 		(year 1938))
 
-	([ontology_Class12338] of  Book
+	([ontology_Class12333] of  Book
 
 		(author [ontology_Class10588])
 		(genre "Fantasy")
@@ -21052,7 +21011,7 @@
 		(title "DazzlingBrightness")
 		(year 1994))
 
-	([ontology_Class12339] of  Book
+	([ontology_Class12334] of  Book
 
 		(author [ontology_Class10376])
 		(genre "Fantasy")
@@ -21062,9 +21021,9 @@
 		(title "TheOwlService")
 		(year 1967))
 
-	([ontology_Class12340] of  Book
+	([ontology_Class12335] of  Book
 
-		(author [ontology_Class10737])
+		(author [ontology_Class10736])
 		(genre "Fantasy")
 		(pages 1723)
 		(popularity low)
@@ -21072,7 +21031,7 @@
 		(title "TheWoodWife")
 		(year 1996))
 
-	([ontology_Class12341] of  Book
+	([ontology_Class12336] of  Book
 
 		(author [ontology_Class10385])
 		(genre "Adventure")
@@ -21082,9 +21041,9 @@
 		(title "CaptainBloodReturns")
 		(year 1931))
 
-	([ontology_Class12342] of  Book
+	([ontology_Class12337] of  Book
 
-		(author [ontology_Class10738])
+		(author [ontology_Class10737])
 		(genre "Adventure")
 		(pages 548)
 		(popularity low)
@@ -21092,34 +21051,34 @@
 		(title "LetigridiMompracem")
 		(year 1883))
 
-	([ontology_Class12343] of  Book
+	([ontology_Class12338] of  Book
 
-		(author [ontology_Class10739])
+		(author [ontology_Class10738])
 		(genre "Fantasy")
 		(pages 519)
 		(popularity low)
 		(rating 352.0)
 		(title "InkintheBlood"))
 
-	([ontology_Class12344] of  Book
+	([ontology_Class12339] of  Book
 
-		(author [ontology_Class10740])
+		(author [ontology_Class10739])
 		(genre "Young")
 		(pages 621)
 		(popularity low)
 		(rating 360.0)
 		(title "AllofUswithWings"))
 
-	([ontology_Class12345] of  Book
+	([ontology_Class12340] of  Book
 
-		(author [ontology_Class10741])
+		(author [ontology_Class10740])
 		(genre "Young")
 		(pages 759)
 		(popularity low)
 		(rating 320.0)
 		(title "Reconnected"))
 
-	([ontology_Class12346] of  Book
+	([ontology_Class12341] of  Book
 
 		(author [ontology_Class10142])
 		(genre "Classics")
@@ -21129,27 +21088,27 @@
 		(title "TheSwissFamilyRobinson")
 		(year 1812))
 
-	([ontology_Class12347] of  Book
+	([ontology_Class12342] of  Book
 
-		(author [ontology_Class10742])
+		(author [ontology_Class10741])
 		(genre "Young")
 		(pages 1125)
 		(popularity low)
 		(rating 240.0)
 		(title "AlltheWallsofBelfast"))
 
-	([ontology_Class12348] of  Book
+	([ontology_Class12343] of  Book
 
-		(author [ontology_Class10743])
+		(author [ontology_Class10742])
 		(genre "Historical")
 		(pages 1529)
 		(popularity low)
 		(rating 368.0)
 		(title "Spectacle"))
 
-	([ontology_Class12349] of  Book
+	([ontology_Class12344] of  Book
 
-		(author [ontology_Class10744])
+		(author [ontology_Class10743])
 		(genre "Fantasy")
 		(pages 583)
 		(popularity low)
@@ -21157,18 +21116,18 @@
 		(title "ThePurpleEmperor")
 		(year 1999))
 
-	([ontology_Class12350] of  Book
+	([ontology_Class12345] of  Book
 
-		(author [ontology_Class10745])
+		(author [ontology_Class10744])
 		(genre "Fantasy")
 		(pages 3699)
 		(popularity low)
 		(rating 336.0)
 		(title "TheseWitchesDon'tBurn"))
 
-	([ontology_Class12351] of  Book
+	([ontology_Class12346] of  Book
 
-		(author [ontology_Class10746])
+		(author [ontology_Class10745])
 		(genre "Historical")
 		(pages 280)
 		(popularity low)
@@ -21176,9 +21135,9 @@
 		(title "TheBrandedMan")
 		(year 1997))
 
-	([ontology_Class12352] of  Book
+	([ontology_Class12347] of  Book
 
-		(author [ontology_Class10747])
+		(author [ontology_Class10746])
 		(genre "Uncategorized")
 		(pages 684)
 		(popularity low)
@@ -21186,7 +21145,7 @@
 		(title "AGameofHideandSeek")
 		(year 1951))
 
-	([ontology_Class12353] of  Book
+	([ontology_Class12348] of  Book
 
 		(author [ontology_Class10304])
 		(genre "Uncategorized")
@@ -21196,9 +21155,9 @@
 		(title "TheSingaporeGrip")
 		(year 1978))
 
-	([ontology_Class12354] of  Book
+	([ontology_Class12349] of  Book
 
-		(author [ontology_Class10748])
+		(author [ontology_Class10747])
 		(genre "Uncategorized")
 		(pages 747)
 		(popularity low)
@@ -21206,7 +21165,7 @@
 		(title "TheExpendableMan")
 		(year 1963))
 
-	([ontology_Class12355] of  Book
+	([ontology_Class12350] of  Book
 
 		(author [ontology_Class10236])
 		(genre "Horror")
@@ -21216,9 +21175,9 @@
 		(title "TheOther")
 		(year 1971))
 
-	([ontology_Class12356] of  Book
+	([ontology_Class12351] of  Book
 
-		(author [ontology_Class10749])
+		(author [ontology_Class10748])
 		(genre "Uncategorized")
 		(pages 815)
 		(popularity low)
@@ -21226,9 +21185,9 @@
 		(title "TheVet'sDaughter")
 		(year 1959))
 
-	([ontology_Class12357] of  Book
+	([ontology_Class12352] of  Book
 
-		(author [ontology_Class10750])
+		(author [ontology_Class10749])
 		(genre "Uncategorized")
 		(pages 279)
 		(popularity low)
@@ -21236,9 +21195,9 @@
 		(title "TheCarpetbaggers")
 		(year 1961))
 
-	([ontology_Class12358] of  Book
+	([ontology_Class12353] of  Book
 
-		(author [ontology_Class10751])
+		(author [ontology_Class10750])
 		(genre "Uncategorized")
 		(pages 865)
 		(popularity low)
@@ -21246,7 +21205,7 @@
 		(title "JourneyintothePast")
 		(year 1976))
 
-	([ontology_Class12359] of  Book
+	([ontology_Class12354] of  Book
 
 		(author [ontology_Class10427])
 		(genre "Classics")
@@ -21256,9 +21215,9 @@
 		(title "TheDecameron")
 		(year 1353))
 
-	([ontology_Class12360] of  Book
+	([ontology_Class12355] of  Book
 
-		(author [ontology_Class10752])
+		(author [ontology_Class10751])
 		(genre "Uncategorized")
 		(pages 909)
 		(popularity low)
@@ -21266,9 +21225,9 @@
 		(title "GreatGrannyWebster")
 		(year 1977))
 
-	([ontology_Class12361] of  Book
+	([ontology_Class12356] of  Book
 
-		(author [ontology_Class10753])
+		(author [ontology_Class10752])
 		(genre "Uncategorized")
 		(pages 988)
 		(popularity low)
@@ -21276,7 +21235,7 @@
 		(title "MonsieurMondeVanishes")
 		(year 1945))
 
-	([ontology_Class12362] of  Book
+	([ontology_Class12357] of  Book
 
 		(author [ontology_Class10363])
 		(genre "Classics")
@@ -21286,9 +21245,9 @@
 		(title "ThePrivateMemoirsandConfessionsofaJustifiedSinner")
 		(year 1824))
 
-	([ontology_Class12363] of  Book
+	([ontology_Class12358] of  Book
 
-		(author [ontology_Class10754])
+		(author [ontology_Class10753])
 		(genre "Uncategorized")
 		(pages 1044)
 		(popularity low)
@@ -21296,9 +21255,9 @@
 		(title "SleeplessNights")
 		(year 1979))
 
-	([ontology_Class12364] of  Book
+	([ontology_Class12359] of  Book
 
-		(author [ontology_Class10755])
+		(author [ontology_Class10754])
 		(genre "Uncategorized")
 		(pages 1158)
 		(popularity low)
@@ -21306,9 +21265,9 @@
 		(title "BlackWingsHasMyAngel")
 		(year 1953))
 
-	([ontology_Class12365] of  Book
+	([ontology_Class12360] of  Book
 
-		(author [ontology_Class10756])
+		(author [ontology_Class10755])
 		(genre "Short Stories")
 		(pages 1216)
 		(popularity low)
@@ -21316,9 +21275,9 @@
 		(title "MemoriesoftheFuture")
 		(year 1929))
 
-	([ontology_Class12366] of  Book
+	([ontology_Class12361] of  Book
 
-		(author [ontology_Class10757])
+		(author [ontology_Class10756])
 		(genre "Uncategorized")
 		(pages 1246)
 		(popularity low)
@@ -21326,9 +21285,9 @@
 		(title "RockCrystal")
 		(year 1853))
 
-	([ontology_Class12367] of  Book
+	([ontology_Class12362] of  Book
 
-		(author [ontology_Class10758])
+		(author [ontology_Class10757])
 		(genre "Historical")
 		(pages 1328)
 		(popularity low)
@@ -21336,9 +21295,9 @@
 		(title "Augustus")
 		(year 1972))
 
-	([ontology_Class12368] of  Book
+	([ontology_Class12363] of  Book
 
-		(author [ontology_Class10759])
+		(author [ontology_Class10758])
 		(genre "Uncategorized")
 		(pages 1399)
 		(popularity low)
@@ -21346,9 +21305,9 @@
 		(title "RogueMale")
 		(year 1939))
 
-	([ontology_Class12369] of  Book
+	([ontology_Class12364] of  Book
 
-		(author [ontology_Class10760])
+		(author [ontology_Class10759])
 		(genre "Uncategorized")
 		(pages 1469)
 		(popularity low)
@@ -21356,9 +21315,9 @@
 		(title "TheSlavesofSolitude")
 		(year 1947))
 
-	([ontology_Class12370] of  Book
+	([ontology_Class12365] of  Book
 
-		(author [ontology_Class10761])
+		(author [ontology_Class10760])
 		(genre "Classics")
 		(pages 1615)
 		(popularity medium)
@@ -21366,9 +21325,9 @@
 		(title "Pinocchio")
 		(year 1883))
 
-	([ontology_Class12371] of  Book
+	([ontology_Class12366] of  Book
 
-		(author [ontology_Class10762])
+		(author [ontology_Class10761])
 		(genre "Uncategorized")
 		(pages 1804)
 		(popularity low)
@@ -21376,9 +21335,9 @@
 		(title "CassandraattheWedding")
 		(year 1962))
 
-	([ontology_Class12372] of  Book
+	([ontology_Class12367] of  Book
 
-		(author [ontology_Class10763])
+		(author [ontology_Class10762])
 		(genre "Westerns")
 		(pages 1920)
 		(popularity low)
@@ -21386,7 +21345,7 @@
 		(title "Warlock")
 		(year 1958))
 
-	([ontology_Class12373] of  Book
+	([ontology_Class12368] of  Book
 
 		(author [ontology_Class10380])
 		(genre "Uncategorized")
@@ -21396,9 +21355,9 @@
 		(title "TheEnchantedApril")
 		(year 1922))
 
-	([ontology_Class12374] of  Book
+	([ontology_Class12369] of  Book
 
-		(author [ontology_Class10764])
+		(author [ontology_Class10763])
 		(genre "Uncategorized")
 		(pages 2134)
 		(popularity low)
@@ -21406,9 +21365,9 @@
 		(title "LollyWillowes")
 		(year 1926))
 
-	([ontology_Class12375] of  Book
+	([ontology_Class12370] of  Book
 
-		(author [ontology_Class10765])
+		(author [ontology_Class10764])
 		(genre "Uncategorized")
 		(pages 2892)
 		(popularity low)
@@ -21416,7 +21375,7 @@
 		(title "TheDudAvocado")
 		(year 1958))
 
-	([ontology_Class12376] of  Book
+	([ontology_Class12371] of  Book
 
 		(author [ontology_Class10581])
 		(genre "Classics")
@@ -21426,9 +21385,9 @@
 		(title "TheGo-Between")
 		(year 1953))
 
-	([ontology_Class12377] of  Book
+	([ontology_Class12372] of  Book
 
-		(author [ontology_Class10766])
+		(author [ontology_Class10765])
 		(genre "Historical")
 		(pages 3178)
 		(popularity low)
@@ -21436,9 +21395,9 @@
 		(title "TheLongShips")
 		(year 1941))
 
-	([ontology_Class12378] of  Book
+	([ontology_Class12373] of  Book
 
-		(author [ontology_Class10767])
+		(author [ontology_Class10766])
 		(genre "Historical")
 		(pages 629)
 		(popularity medium)
@@ -21446,9 +21405,9 @@
 		(title "IntheTimeoftheButterflies")
 		(year 1994))
 
-	([ontology_Class12379] of  Book
+	([ontology_Class12374] of  Book
 
-		(author [ontology_Class10768])
+		(author [ontology_Class10767])
 		(genre "Classics")
 		(pages 839)
 		(popularity medium)
@@ -21456,9 +21415,9 @@
 		(title "TheDiaryofaNobody")
 		(year 1892))
 
-	([ontology_Class12380] of  Book
+	([ontology_Class12375] of  Book
 
-		(author [ontology_Class10769])
+		(author [ontology_Class10768])
 		(genre "Historical")
 		(pages 328)
 		(popularity low)
@@ -21466,9 +21425,9 @@
 		(title "EscapeFromWarsaw")
 		(year 1956))
 
-	([ontology_Class12381] of  Book
+	([ontology_Class12376] of  Book
 
-		(author [ontology_Class10770])
+		(author [ontology_Class10769])
 		(genre "Historical")
 		(pages 430)
 		(popularity low)
@@ -21476,9 +21435,9 @@
 		(title "EnemyBrothers")
 		(year 1944))
 
-	([ontology_Class12382] of  Book
+	([ontology_Class12377] of  Book
 
-		(author [ontology_Class10771])
+		(author [ontology_Class10770])
 		(genre "Historical")
 		(pages 1122)
 		(popularity low)
@@ -21486,7 +21445,7 @@
 		(title "TheBorrowedHouse")
 		(year 1975))
 
-	([ontology_Class12383] of  Book
+	([ontology_Class12378] of  Book
 
 		(author [ontology_Class10299])
 		(genre "Historical")
@@ -21496,7 +21455,7 @@
 		(title "TheUpstairsRoom")
 		(year 1972))
 
-	([ontology_Class12384] of  Book
+	([ontology_Class12379] of  Book
 
 		(author [ontology_Class10297])
 		(genre "Historical")
@@ -21506,7 +21465,7 @@
 		(title "SummerofMyGermanSoldier")
 		(year 1973))
 
-	([ontology_Class12385] of  Book
+	([ontology_Class12380] of  Book
 
 		(author [ontology_Class10387])
 		(genre "Religious")
@@ -21516,9 +21475,9 @@
 		(title "ThePrincess")
 		(year 1999))
 
-	([ontology_Class12386] of  Book
+	([ontology_Class12381] of  Book
 
-		(author [ontology_Class10772])
+		(author [ontology_Class10771])
 		(genre "Romance")
 		(pages 668)
 		(popularity low)
@@ -21526,7 +21485,7 @@
 		(title "TheSpanishGroom")
 		(year 1999))
 
-	([ontology_Class12387] of  Book
+	([ontology_Class12382] of  Book
 
 		(author [ontology_Class10364])
 		(genre "Classics")
@@ -21536,7 +21495,7 @@
 		(title "LadyAudley'sSecret")
 		(year 1862))
 
-	([ontology_Class12388] of  Book
+	([ontology_Class12383] of  Book
 
 		(author [ontology_Class10096])
 		(genre "Historical")
@@ -21546,9 +21505,9 @@
 		(title "ForeverAmber")
 		(year 1944))
 
-	([ontology_Class12389] of  Book
+	([ontology_Class12384] of  Book
 
-		(author [ontology_Class10773])
+		(author [ontology_Class10772])
 		(genre "Uncategorized")
 		(pages 1376)
 		(popularity low)
@@ -21556,9 +21515,9 @@
 		(title "ThePursuitofLoveLoveinaColdClimate")
 		(year 1974))
 
-	([ontology_Class12390] of  Book
+	([ontology_Class12385] of  Book
 
-		(author [ontology_Class10774])
+		(author [ontology_Class10773])
 		(genre "Uncategorized")
 		(pages 1608)
 		(popularity medium)
@@ -21566,9 +21525,9 @@
 		(title "MissPettigrewLivesforaDay")
 		(year 1938))
 
-	([ontology_Class12391] of  Book
+	([ontology_Class12386] of  Book
 
-		(author [ontology_Class10775])
+		(author [ontology_Class10774])
 		(genre "Uncategorized")
 		(pages 461)
 		(popularity low)
@@ -21576,7 +21535,7 @@
 		(title "Fail-Safe")
 		(year 1962))
 
-	([ontology_Class12392] of  Book
+	([ontology_Class12387] of  Book
 
 		(author [ontology_Class10326])
 		(genre "Uncategorized")
@@ -21586,7 +21545,7 @@
 		(title "IntotheForest")
 		(year 1996))
 
-	([ontology_Class12393] of  Book
+	([ontology_Class12388] of  Book
 
 		(author [ontology_Class10092])
 		(genre "Historical")
@@ -21596,9 +21555,9 @@
 		(title "ShadowoftheMoon")
 		(year 1957))
 
-	([ontology_Class12394] of  Book
+	([ontology_Class12389] of  Book
 
-		(author [ontology_Class10776])
+		(author [ontology_Class10775])
 		(genre "Uncategorized")
 		(pages 1154)
 		(popularity low)
@@ -21606,18 +21565,18 @@
 		(title "NectarinaSieve")
 		(year 1954))
 
-	([ontology_Class12395] of  Book
+	([ontology_Class12390] of  Book
 
-		(author [ontology_Class10777])
+		(author [ontology_Class10776])
 		(genre "Contemporary")
 		(pages 2422)
 		(popularity low)
 		(rating 217.0)
 		(title "BraveLikeLily"))
 
-	([ontology_Class12396] of  Book
+	([ontology_Class12391] of  Book
 
-		(author [ontology_Class10778])
+		(author [ontology_Class10777])
 		(genre "Uncategorized")
 		(pages 1076)
 		(popularity low)
@@ -21625,7 +21584,7 @@
 		(title "EndlessLove")
 		(year 1979))
 
-	([ontology_Class12397] of  Book
+	([ontology_Class12392] of  Book
 
 		(author [ontology_Class10362])
 		(genre "Uncategorized")
@@ -21635,7 +21594,7 @@
 		(title "Asylum")
 		(year 1996))
 
-	([ontology_Class12398] of  Book
+	([ontology_Class12393] of  Book
 
 		(author [ontology_Class10373])
 		(genre "Historical")
@@ -21645,9 +21604,9 @@
 		(title "MemoirsofHadrian")
 		(year 1951))
 
-	([ontology_Class12399] of  Book
+	([ontology_Class12394] of  Book
 
-		(author [ontology_Class10779])
+		(author [ontology_Class10778])
 		(genre "Uncategorized")
 		(pages 646)
 		(popularity low)
@@ -21655,7 +21614,7 @@
 		(title "BrokenApril")
 		(year 1978))
 
-	([ontology_Class12400] of  Book
+	([ontology_Class12395] of  Book
 
 		(author [ontology_Class10389])
 		(genre "Uncategorized")
@@ -21665,7 +21624,7 @@
 		(title "Christy")
 		(year 1967))
 
-	([ontology_Class12401] of  Book
+	([ontology_Class12396] of  Book
 
 		(author [ontology_Class10372])
 		(genre "Uncategorized")
@@ -21675,7 +21634,7 @@
 		(title "GoTellItontheMountain")
 		(year 1953))
 
-	([ontology_Class12402] of  Book
+	([ontology_Class12397] of  Book
 
 		(author [ontology_Class10589])
 		(genre "Uncategorized")
@@ -21685,7 +21644,7 @@
 		(title "TheRichAreDifferent")
 		(year 1977))
 
-	([ontology_Class12403] of  Book
+	([ontology_Class12398] of  Book
 
 		(author [ontology_Class10505])
 		(genre "Uncategorized")
@@ -21695,9 +21654,9 @@
 		(title "FallonYourKnees")
 		(year 1996))
 
-	([ontology_Class12404] of  Book
+	([ontology_Class12399] of  Book
 
-		(author [ontology_Class10780])
+		(author [ontology_Class10779])
 		(genre "Uncategorized")
 		(pages 831)
 		(popularity low)
@@ -21705,9 +21664,9 @@
 		(title "Hanna'sDaughters")
 		(year 1994))
 
-	([ontology_Class12405] of  Book
+	([ontology_Class12400] of  Book
 
-		(author [ontology_Class10781])
+		(author [ontology_Class10780])
 		(genre "Historical")
 		(pages 1114)
 		(popularity medium)
@@ -21715,9 +21674,9 @@
 		(title "CaptainsandtheKings")
 		(year 1972))
 
-	([ontology_Class12406] of  Book
+	([ontology_Class12401] of  Book
 
-		(author [ontology_Class10782])
+		(author [ontology_Class10781])
 		(genre "Romance")
 		(pages 495)
 		(popularity low)
@@ -21725,7 +21684,7 @@
 		(title "TheComingHomePlace")
 		(year 1994))
 
-	([ontology_Class12407] of  Book
+	([ontology_Class12402] of  Book
 
 		(author [ontology_Class10183])
 		(genre "Uncategorized")
@@ -21735,9 +21694,9 @@
 		(title "ThePostmanAlwaysRingsTwice")
 		(year 1934))
 
-	([ontology_Class12408] of  Book
+	([ontology_Class12403] of  Book
 
-		(author [ontology_Class10783])
+		(author [ontology_Class10782])
 		(genre "Historical")
 		(pages 1937)
 		(popularity medium)
@@ -21745,9 +21704,9 @@
 		(title "Evergreen")
 		(year 1978))
 
-	([ontology_Class12409] of  Book
+	([ontology_Class12404] of  Book
 
-		(author [ontology_Class10784])
+		(author [ontology_Class10783])
 		(genre "Romance")
 		(pages 1378)
 		(popularity low)
@@ -21755,7 +21714,7 @@
 		(title "TheUltimateBetrayal")
 		(year 1995))
 
-	([ontology_Class12410] of  Book
+	([ontology_Class12405] of  Book
 
 		(author [ontology_Class10537])
 		(genre "Uncategorized")
@@ -21765,7 +21724,7 @@
 		(title "DarkAsTheGraveWhereinMyFriendIsLaid")
 		(year 1968))
 
-	([ontology_Class12411] of  Book
+	([ontology_Class12406] of  Book
 
 		(author [ontology_Class10300])
 		(genre "Uncategorized")
@@ -21775,9 +21734,9 @@
 		(title "EveryManDiesAlone")
 		(year 1947))
 
-	([ontology_Class12412] of  Book
+	([ontology_Class12407] of  Book
 
-		(author [ontology_Class10785])
+		(author [ontology_Class10784])
 		(genre "Thriller")
 		(pages 788)
 		(popularity low)
@@ -21785,9 +21744,9 @@
 		(title "TheUndergroundMan")
 		(year 1971))
 
-	([ontology_Class12413] of  Book
+	([ontology_Class12408] of  Book
 
-		(author [ontology_Class10786])
+		(author [ontology_Class10785])
 		(genre "Thriller")
 		(pages 859)
 		(popularity low)
@@ -21795,7 +21754,7 @@
 		(title "PhantomLady")
 		(year 1942))
 
-	([ontology_Class12414] of  Book
+	([ontology_Class12409] of  Book
 
 		(author [ontology_Class10470])
 		(genre "Thriller")
@@ -21805,9 +21764,9 @@
 		(title "ADanceAtTheSlaughterhouse")
 		(year 1991))
 
-	([ontology_Class12415] of  Book
+	([ontology_Class12410] of  Book
 
-		(author [ontology_Class10787])
+		(author [ontology_Class10786])
 		(genre "Uncategorized")
 		(pages 238)
 		(popularity low)
@@ -21815,9 +21774,9 @@
 		(title "TheNortonAnthologyofShortFiction")
 		(year 1978))
 
-	([ontology_Class12416] of  Book
+	([ontology_Class12411] of  Book
 
-		(author [ontology_Class10788])
+		(author [ontology_Class10787])
 		(genre "Uncategorized")
 		(pages 2324)
 		(popularity low)
@@ -21825,9 +21784,9 @@
 		(title "Suvashun")
 		(year 1969))
 
-	([ontology_Class12417] of  Book
+	([ontology_Class12412] of  Book
 
-		(author [ontology_Class10789])
+		(author [ontology_Class10788])
 		(genre "Thriller")
 		(pages 1003)
 		(popularity low)
@@ -21835,7 +21794,7 @@
 		(title "DarkPassage")
 		(year 1946))
 
-	([ontology_Class12418] of  Book
+	([ontology_Class12413] of  Book
 
 		(author [ontology_Class10331])
 		(genre "Uncategorized")
@@ -21845,9 +21804,9 @@
 		(title "CottonComestoHarlem")
 		(year 1964))
 
-	([ontology_Class12419] of  Book
+	([ontology_Class12414] of  Book
 
-		(author [ontology_Class10790])
+		(author [ontology_Class10789])
 		(genre "Uncategorized")
 		(pages 381)
 		(popularity medium)
@@ -21855,9 +21814,9 @@
 		(title "Ahab'sWife,orTheStar-Gazer")
 		(year 1999))
 
-	([ontology_Class12420] of  Book
+	([ontology_Class12415] of  Book
 
-		(author [ontology_Class10791])
+		(author [ontology_Class10790])
 		(genre "Horror")
 		(pages 467)
 		(popularity low)
@@ -21865,9 +21824,9 @@
 		(title "AlfredHitchcock'sGhostlyGallery")
 		(year 1962))
 
-	([ontology_Class12421] of  Book
+	([ontology_Class12416] of  Book
 
-		(author [ontology_Class10792])
+		(author [ontology_Class10791])
 		(genre "Thriller")
 		(pages 1629)
 		(popularity low)
@@ -21875,9 +21834,9 @@
 		(title "TheLastGoodKiss")
 		(year 1978))
 
-	([ontology_Class12422] of  Book
+	([ontology_Class12417] of  Book
 
-		(author [ontology_Class10793])
+		(author [ontology_Class10792])
 		(genre "Thriller")
 		(pages 1763)
 		(popularity low)
@@ -21885,9 +21844,9 @@
 		(title "I,theJury")
 		(year 1947))
 
-	([ontology_Class12423] of  Book
+	([ontology_Class12418] of  Book
 
-		(author [ontology_Class10794])
+		(author [ontology_Class10793])
 		(genre "Uncategorized")
 		(pages 4048)
 		(popularity low)
@@ -21895,9 +21854,9 @@
 		(title "TheyShootHorses,Don'tThey?")
 		(year 1935))
 
-	([ontology_Class12424] of  Book
+	([ontology_Class12419] of  Book
 
-		(author [ontology_Class10795])
+		(author [ontology_Class10794])
 		(genre "Classics")
 		(pages 1419)
 		(popularity medium)
@@ -21905,9 +21864,9 @@
 		(title "HansBrinker,ortheSilverSkates")
 		(year 1865))
 
-	([ontology_Class12425] of  Book
+	([ontology_Class12420] of  Book
 
-		(author [ontology_Class10796])
+		(author [ontology_Class10795])
 		(genre "Historical")
 		(pages 1584)
 		(popularity low)
@@ -21915,7 +21874,7 @@
 		(title "IndianCaptive:TheStoryofMaryJemison")
 		(year 1941))
 
-	([ontology_Class12426] of  Book
+	([ontology_Class12421] of  Book
 
 		(author [ontology_Class10274])
 		(genre "Historical")
@@ -21925,7 +21884,7 @@
 		(title "CarryOn,Mr.Bowditch")
 		(year 1955))
 
-	([ontology_Class12427] of  Book
+	([ontology_Class12422] of  Book
 
 		(author [ontology_Class10272])
 		(genre "Historical")
@@ -21935,7 +21894,7 @@
 		(title "TheDoorintheWall")
 		(year 1949))
 
-	([ontology_Class12428] of  Book
+	([ontology_Class12423] of  Book
 
 		(author [ontology_Class10276])
 		(genre "Historical")
@@ -21945,9 +21904,9 @@
 		(title "JohnnyTremain")
 		(year 1943))
 
-	([ontology_Class12429] of  Book
+	([ontology_Class12424] of  Book
 
-		(author [ontology_Class10797])
+		(author [ontology_Class10796])
 		(genre "Uncategorized")
 		(pages 636)
 		(popularity medium)
@@ -21955,9 +21914,9 @@
 		(title "Sullivan'sIsland")
 		(year 1999))
 
-	([ontology_Class12430] of  Book
+	([ontology_Class12425] of  Book
 
-		(author [ontology_Class10798])
+		(author [ontology_Class10797])
 		(genre "Uncategorized")
 		(pages 681)
 		(popularity low)
@@ -21965,9 +21924,9 @@
 		(title "AFeastofSnakes")
 		(year 1976))
 
-	([ontology_Class12431] of  Book
+	([ontology_Class12426] of  Book
 
-		(author [ontology_Class10799])
+		(author [ontology_Class10798])
 		(genre "Short Stories")
 		(pages 711)
 		(popularity low)
@@ -21975,7 +21934,7 @@
 		(title "TheCollectedStoriesofKatherineAnnePorter")
 		(year 1965))
 
-	([ontology_Class12432] of  Book
+	([ontology_Class12427] of  Book
 
 		(author [ontology_Class10391])
 		(genre "Uncategorized")
@@ -21985,7 +21944,7 @@
 		(title "TobaccoRoad")
 		(year 1932))
 
-	([ontology_Class12433] of  Book
+	([ontology_Class12428] of  Book
 
 		(author [ontology_Class10393])
 		(genre "Uncategorized")
@@ -21995,7 +21954,7 @@
 		(title "TheMoviegoer")
 		(year 1961))
 
-	([ontology_Class12434] of  Book
+	([ontology_Class12429] of  Book
 
 		(author [ontology_Class10396])
 		(genre "Uncategorized")
@@ -22005,9 +21964,9 @@
 		(title "AlltheKing'sMen")
 		(year 1946))
 
-	([ontology_Class12435] of  Book
+	([ontology_Class12430] of  Book
 
-		(author [ontology_Class10800])
+		(author [ontology_Class10799])
 		(genre "Uncategorized")
 		(pages 259)
 		(popularity medium)
@@ -22015,7 +21974,7 @@
 		(title "TheHouroftheStar")
 		(year 1977))
 
-	([ontology_Class12436] of  Book
+	([ontology_Class12431] of  Book
 
 		(author [ontology_Class10369])
 		(genre "Historical")
@@ -22025,9 +21984,9 @@
 		(title "TheSamurai'sGarden")
 		(year 1994))
 
-	([ontology_Class12437] of  Book
+	([ontology_Class12432] of  Book
 
-		(author [ontology_Class10801])
+		(author [ontology_Class10800])
 		(genre "Fantasy")
 		(pages 392)
 		(popularity low)
@@ -22035,19 +21994,9 @@
 		(title "TheKing'sDamosel")
 		(year 1975))
 
-	([ontology_Class12438] of  Book
+	([ontology_Class12433] of  Book
 
-		(author [ontology_Class10802])
-		(genre "Religious")
-		(pages 665)
-		(popularity low)
-		(rating 0.0)
-		(title "ThePendragon")
-		(year 1979))
-
-	([ontology_Class12439] of  Book
-
-		(author [ontology_Class10803])
+		(author [ontology_Class10801])
 		(genre "Fantasy")
 		(pages 705)
 		(popularity low)
@@ -22055,9 +22004,9 @@
 		(title "TheChildQueen:TheTaleofGuinevereandKingArthur")
 		(year 1994))
 
-	([ontology_Class12440] of  Book
+	([ontology_Class12434] of  Book
 
-		(author [ontology_Class10804])
+		(author [ontology_Class10802])
 		(genre "Fantasy")
 		(pages 740)
 		(popularity low)
@@ -22065,9 +22014,9 @@
 		(title "TheForeverKing")
 		(year 1992))
 
-	([ontology_Class12441] of  Book
+	([ontology_Class12435] of  Book
 
-		(author [ontology_Class10805])
+		(author [ontology_Class10803])
 		(genre "Classics")
 		(pages 1222)
 		(popularity low)
@@ -22075,7 +22024,7 @@
 		(title "KingArthurandHisKnightsoftheRoundTable")
 		(year 1953))
 
-	([ontology_Class12442] of  Book
+	([ontology_Class12436] of  Book
 
 		(author [ontology_Class10360])
 		(genre "Classics")
@@ -22085,9 +22034,9 @@
 		(title "TheMostDangerousGame")
 		(year 1924))
 
-	([ontology_Class12443] of  Book
+	([ontology_Class12437] of  Book
 
-		(author [ontology_Class10806])
+		(author [ontology_Class10804])
 		(genre "Historical")
 		(pages 2166)
 		(popularity low)
@@ -22095,7 +22044,7 @@
 		(title "TheHistoryoftheKingsofBritain")
 		(year 1138))
 
-	([ontology_Class12444] of  Book
+	([ontology_Class12438] of  Book
 
 		(author [ontology_Class10332])
 		(genre "Uncategorized")
@@ -22105,9 +22054,9 @@
 		(title "TheBridgeofSanLuisRey")
 		(year 1927))
 
-	([ontology_Class12445] of  Book
+	([ontology_Class12439] of  Book
 
-		(author [ontology_Class10807])
+		(author [ontology_Class10805])
 		(genre "Uncategorized")
 		(pages 688)
 		(popularity medium)
@@ -22115,7 +22064,7 @@
 		(title "Silk")
 		(year 1996))
 
-	([ontology_Class12446] of  Book
+	([ontology_Class12440] of  Book
 
 		(author [ontology_Class10219])
 		(genre "Classics")
@@ -22125,7 +22074,7 @@
 		(title "ThreeMeninaBoat")
 		(year 1889))
 
-	([ontology_Class12447] of  Book
+	([ontology_Class12441] of  Book
 
 		(author [ontology_Class10258])
 		(genre "Uncategorized")
@@ -22135,9 +22084,9 @@
 		(title "It'sLikeThis,Cat")
 		(year 1963))
 
-	([ontology_Class12448] of  Book
+	([ontology_Class12442] of  Book
 
-		(author [ontology_Class10808])
+		(author [ontology_Class10806])
 		(genre "Historical")
 		(pages 1424)
 		(popularity low)
@@ -22145,9 +22094,9 @@
 		(title "TheTallWoman")
 		(year 1962))
 
-	([ontology_Class12449] of  Book
+	([ontology_Class12443] of  Book
 
-		(author [ontology_Class10809])
+		(author [ontology_Class10807])
 		(genre "Uncategorized")
 		(pages 1436)
 		(popularity low)
@@ -22155,9 +22104,9 @@
 		(title "TheUnquietEarth")
 		(year 1992))
 
-	([ontology_Class12450] of  Book
+	([ontology_Class12444] of  Book
 
-		(author [ontology_Class10810])
+		(author [ontology_Class10808])
 		(genre "Uncategorized")
 		(pages 2160)
 		(popularity medium)
@@ -22165,9 +22114,9 @@
 		(title "ADeathintheFamily")
 		(year 1957))
 
-	([ontology_Class12451] of  Book
+	([ontology_Class12445] of  Book
 
-		(author [ontology_Class10811])
+		(author [ontology_Class10809])
 		(genre "Young")
 		(pages 2574)
 		(popularity low)
@@ -22175,7 +22124,7 @@
 		(title "WheretheLiliesBloom")
 		(year 1969))
 
-	([ontology_Class12452] of  Book
+	([ontology_Class12446] of  Book
 
 		(author [ontology_Class10504])
 		(genre "Uncategorized")
@@ -22185,7 +22134,7 @@
 		(title "GapCreek")
 		(year 1999))
 
-	([ontology_Class12453] of  Book
+	([ontology_Class12447] of  Book
 
 		(author [ontology_Class10239])
 		(genre "Horror")
@@ -22195,7 +22144,7 @@
 		(title "TheOmen")
 		(year 1976))
 
-	([ontology_Class12454] of  Book
+	([ontology_Class12448] of  Book
 
 		(author [ontology_Class10081])
 		(genre "Historical")
@@ -22205,7 +22154,7 @@
 		(title "TheGameofKings")
 		(year 1961))
 
-	([ontology_Class12455] of  Book
+	([ontology_Class12449] of  Book
 
 		(author [ontology_Class10383])
 		(genre "Historical")
@@ -22215,7 +22164,7 @@
 		(title "Q,Englishedition")
 		(year 1999))
 
-	([ontology_Class12456] of  Book
+	([ontology_Class12450] of  Book
 
 		(author [ontology_Class10334])
 		(genre "Classics")
@@ -22225,9 +22174,9 @@
 		(title "QuoVadis")
 		(year 1894))
 
-	([ontology_Class12457] of  Book
+	([ontology_Class12451] of  Book
 
-		(author [ontology_Class10812])
+		(author [ontology_Class10810])
 		(genre "Romance")
 		(pages 622)
 		(popularity low)
@@ -22235,9 +22184,9 @@
 		(title "TheGroundSheWalksUpon")
 		(year 1994))
 
-	([ontology_Class12458] of  Book
+	([ontology_Class12452] of  Book
 
-		(author [ontology_Class10813])
+		(author [ontology_Class10811])
 		(genre "Romance")
 		(pages 729)
 		(popularity low)
@@ -22245,9 +22194,9 @@
 		(title "Untamed")
 		(year 1993))
 
-	([ontology_Class12459] of  Book
+	([ontology_Class12453] of  Book
 
-		(author [ontology_Class10814])
+		(author [ontology_Class10812])
 		(genre "Romance")
 		(pages 983)
 		(popularity low)
@@ -22255,9 +22204,9 @@
 		(title "TheSheik")
 		(year 1919))
 
-	([ontology_Class12460] of  Book
+	([ontology_Class12454] of  Book
 
-		(author [ontology_Class10815])
+		(author [ontology_Class10813])
 		(genre "Romance")
 		(pages 1023)
 		(popularity low)
@@ -22265,9 +22214,9 @@
 		(title "DarkFires")
 		(year 1975))
 
-	([ontology_Class12461] of  Book
+	([ontology_Class12455] of  Book
 
-		(author [ontology_Class10816])
+		(author [ontology_Class10814])
 		(genre "Romance")
 		(pages 1179)
 		(popularity low)
@@ -22275,9 +22224,9 @@
 		(title "Enslaved")
 		(year 1996))
 
-	([ontology_Class12462] of  Book
+	([ontology_Class12456] of  Book
 
-		(author [ontology_Class10817])
+		(author [ontology_Class10815])
 		(genre "Historical")
 		(pages 578)
 		(popularity low)
@@ -22285,7 +22234,7 @@
 		(title "TheKing'sWomen")
 		(year 1992))
 
-	([ontology_Class12463] of  Book
+	([ontology_Class12457] of  Book
 
 		(author [ontology_Class10572])
 		(genre "Uncategorized")
@@ -22295,9 +22244,9 @@
 		(title "ValleyoftheDolls")
 		(year 1966))
 
-	([ontology_Class12464] of  Book
+	([ontology_Class12458] of  Book
 
-		(author [ontology_Class10818])
+		(author [ontology_Class10816])
 		(genre "Historical")
 		(pages 1916)
 		(popularity low)
@@ -22305,25 +22254,15 @@
 		(title "TheGoldsmith'sWife")
 		(year 1952))
 
-	([ontology_Class12465] of  Book
+	([ontology_Class12459] of  Book
 
-		(author [ontology_Class10819])
+		(author [ontology_Class10817])
 		(genre "Thriller")
 		(pages 614)
 		(popularity low)
 		(rating 288.0)
 		(title "What'saGirlGottaDo?")
 		(year 1994))
-
-	([ontology_Class12466] of  Book
-
-		(author [ontology_Class10820])
-		(genre "Uncategorized")
-		(pages 1424)
-		(popularity low)
-		(rating 0.0)
-		(title "WinnetouI")
-		(year 1892))
 )
 
 ; ============================================================================ ;
