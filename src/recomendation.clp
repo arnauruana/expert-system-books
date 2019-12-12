@@ -84,6 +84,22 @@
 		(type SYMBOL)
 		(default NONE)
 	)
+	(slot bestseller
+		(type SYMBOL)
+		(default NONE)
+	)
+	(slot unknown
+		(type SYMBOL)
+		(default NONE)
+	)
+	(slot old
+		(type SYMBOL)
+		(default NONE)
+	)
+	(slot new
+		(type SYMBOL)
+		(default NONE)
+	)
 )
 
 ; Actual user recomendation template
@@ -228,7 +244,7 @@
 	(retract ?fact)
 )
 
-; Obtains user's data changing from MAIN to DATA
+; Obtains user's data chanfreqging from MAIN to DATA
 (defrule MAIN::get-data
 	(not (initial-fact))
 	(not (User))
@@ -300,8 +316,40 @@
 (defrule PREFS::get-freq
 	?p <- (Prefs (freq NONE))
 	=>
-	(bind ?f (question-options "  - Reading frequency" rarely occasionally normally frequently))
+	(bind ?f (question-options "  - How often do you read?" rarely occasionally normally frequently))
 	(modify ?p (freq ?f))
+)
+
+; Obtains the user's preference for best-seller books
+(defrule PREFS::get-bestseller
+	?p <- (Prefs (bestseller NONE))
+	=>
+	(bind ?bs (question-yes-no "  - Do you usually like best-seller books?"))
+	(modify ?p (bestseller ?bs))
+)
+
+; Obtains the user's preference for little knwon books
+(defrule PREFS::get-unknown
+	?p <- (Prefs (unknown NONE))
+	=>
+	(bind ?u (question-yes-no "  - Do you usually like little known books?"))
+	(modify ?p (unknown ?u))
+)
+
+; Obtains the user's preference for old books
+(defrule PREFS::get-old
+	?p <- (Prefs (old NONE))
+	=>
+	(bind ?o (question-yes-no "  - Do you usually like old books [before year 2000]?"))
+	(modify ?p (old ?o))
+)
+
+; Obtains the user's preference for new books
+(defrule PREFS::get-new
+	?p <- (Prefs (new NONE))
+	=>
+	(bind ?n (question-yes-no "  - Do you usually like new books [after year 2000]?"))
+	(modify ?p (new ?n))
 )
 
 ; ---------------------------------- RECOM ----------------------------------- ;
