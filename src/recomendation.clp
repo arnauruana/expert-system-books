@@ -22330,7 +22330,7 @@
 ; ================================= MODULES ================================== ;
 ; ============================================================================ ;
 
-; Main utility module
+; Main module
 (defmodule MAIN
 	(export ?ALL)
 )
@@ -22349,22 +22349,31 @@
 )
 
 ; User preferences module
-(defmodule PREFS
+(defmodule PREF
 	(import MAIN ?ALL)
 	(import DATA ?ALL)
 	(export ?ALL)
 )
 
-; User recomendation module
-(defmodule RECOM
+; Book-popularity preference module
+(defmodule POPU
 	(import MAIN ?ALL)
+	(import DATA ?ALL)
+	(import PREF ?ALL)
 	(export ?ALL)
 )
 
-; User genre recomendation module
-(defmodule GENRE
+; Book-antiquity preference module
+(defmodule ANTI
 	(import MAIN ?ALL)
-	(import RECOM ?ALL)
+	(import DATA ?ALL)
+	(import PREF ?ALL)
+	(export ?ALL)
+)
+
+; User recomendation module
+(defmodule RECO
+	(import MAIN ?ALL)
 	(export ?ALL)
 )
 
@@ -22424,6 +22433,10 @@
 		(type SYMBOL)
 		(default NONE)
 	)
+	(slot genre
+		(type SYMBOL)
+		(default NONE)
+	)
 )
 
 ; Actual user recomendation template
@@ -22455,7 +22468,7 @@
 (deffunction MAIN::print-welcome()
 	(println "")
 	(println "=================================================================")
-	(println "=                   BOOK RECOMENDATION SYSTEM                   =")
+	(println "=                   BOOK RECOENDATION SYSTEM                   =")
 	(println "=================================================================")
 	(println "")
 )
@@ -22496,7 +22509,7 @@
 	?answer
 )
 
-; General question with yes/no answers.
+; General question with yes/no answers
 (deffunction MAIN::question-yes-no(?question)
 	(bind ?answer (question-options ?question yes no))
 	(if (or (eq ?answer yes) (eq ?answer y))
@@ -22505,7 +22518,7 @@
 	)
 )
 
-; Funcion para hacer una pregunta con respuesta cualquiera
+; General question
 (deffunction MAIN::question-general(?question)
 	(format t "%s " ?question)
 	(bind ?answer (read))
@@ -22584,13 +22597,13 @@
 	(focus DATA)
 )
 
-; Recommends a book to the user changing from MAIN to RECOM
+; Recommends a book to the user changing from MAIN to RECO
 (defrule MAIN::recommend
 	(User)
 	(Prefs)
 	(not (Recom))
 	=>
-	(focus RECOM)
+	(focus RECO)
 )
 
 ; ----------------------------------- DATA ----------------------------------- ;
@@ -22604,7 +22617,7 @@
 	(focus USER)
 )
 
-; Obtains the user's prefereneces changing from DATA to PREFS
+; Obtains the user's prefereneces changing from DATA to PREF
 (defrule DATA::get-prefs
 	(User)
 	(not (Prefs))
@@ -22612,7 +22625,7 @@
 	(assert (Prefs))
 	(print-separator)
 	(println "Introduce the following preference information:")
-	(focus PREFS)
+	(focus PREF)
 )
 
 ; ----------------------------------- USER ----------------------------------- ;
@@ -22641,31 +22654,31 @@
 	(modify ?u (gender ?g))
 )
 
-; ---------------------------------- PREFS ----------------------------------- ;
+; ---------------------------------- PREF ----------------------------------- ;
 
 ; Obtains the user's read frequency
-(defrule PREFS::get-freq
+(defrule PREF::get-freq
 	?p <- (Prefs (freq NONE))
 	=>
 	(bind ?f (question-options "  - How often do you read?" rarely occasionally normally frequently))
 	(modify ?p (freq ?f))
 )
 
-; Obtains the user's book popularity rellevance
-(defrule PREFS::popularity
+; Obtains the user's book popularity preference
+(defrule PREF::popularity
 	?p <- (Prefs (highP NONE) (midP NONE) (lowP NONE))
 	=>
-	(bind ?r (question-yes-no "  - Do you usually care about book popularity?"))
-	(if (eq ?r FALSE)
+	(bind ?ans (question-yes-no "  - Do you usually care about book popularity?"))
+	(if (eq ?ans FALSE)
 		then
 			(modify ?p (highP TRUE) (midP TRUE) (lowP TRUE))
 		else
-			(assert (get-popularity))
+			(focus POPU)
 	)
 )
 
 ; Obtains the user's book antiquity rellevance
-(defrule PREFS::antiquity
+(defrule PREF::antiquity
 	?p <- (Prefs (oldA NONE) (midA NONE) (newA NONE))
 	=>
 	(bind ?r (question-yes-no "  - Do you usually care about book antiquity?"))
@@ -22673,13 +22686,43 @@
 		then
 			(modify ?p (oldA TRUE) (midA TRUE) (newA TRUE))
 		else
-			(assert (get-antiquity))
+			(focus ANTI)
 	)
 )
 
+; Obtains the user's preference for the genre of the book
+(defrule PREF::get-genre
+	?p <- (Prefs (genre NONE))
+	=>
+	(bind ?ans (question-yes-no "  - Would you like to choose the genre of the recommended book?"))
+	(modify ?p (genre ?ans))
+)
+
+; ----------------------------------- POPU ----------------------------------- ;
+
+; Obtains the level of book popularity demanded by the user
+(defrule POPU::get-popularity
+	?p <- (Prefs (highP NONE) (midP NONE) (lowP NONE))
+	=>
+	(bind ?ans (question-yes-no "  - Do you usually prefere to read very popular books such as bestsellers?"))
+	(if (eq ?ans TRUE)
+		then
+			(modify ?p (highP TRUE) (midP FALSE) (lowP FALSE))
+		else
+			(bind ?ans (question-yes-no "  - Would you like to read an unpopular book?"))
+			(if (eq ?ans TRUE)
+				then
+					(modify ?p (highP FALSE) (midP FALSE) (lowP TRUE))
+				else
+					(modify ?p (highP FALSE) (midP TRUE) (lowP FALSE))
+			)
+	)
+)
+
+; ----------------------------------- ANTI ----------------------------------- ;
+
 ; Obtains the user's preference for old-antiquity books
-(defrule PREFS::get-old-antiquity
-	(get-antiquity)
+(defrule ANTI::get-old-antiquity
 	?p <- (Prefs (oldA NONE))
 	=>
 	(bind ?oa (question-yes-no "  - Do you usually like books before year 1900?"))
@@ -22688,8 +22731,7 @@
 )
 
 ; Obtains the user's preference for mid-antiquity books
-(defrule PREFS::get-mid-antiquity
-	(get-antiquity)
+(defrule ANTI::get-mid-antiquity
 	?p <- (Prefs (midA NONE))
 	=>
 	(bind ?ma (question-yes-no "  - Do you usually like books between 1900 and 2000?"))
@@ -22697,8 +22739,7 @@
 )
 
 ; Obtains the user's preference for new-antiquity books
-(defrule PREFS::get-new-antiquity
-	(get-antiquity)
+(defrule ANTI::get-new-antiquity
 	?p <- (Prefs (newA NONE))
 	=>
 	(bind ?na (question-yes-no "  - Do you usually like books after year 2000?"))
@@ -22706,54 +22747,13 @@
 	(assert (get-antiquity))
 )
 
-; ---------------------------------- RECOM ----------------------------------- ;
+; ---------------------------------- RECO ----------------------------------- ;
 
 ; Creates the recomendation template for the user
-(defrule RECOM::create
+(defrule RECO::create
 	(not (Recom))
 	=>
 	(assert (Recom))
 	(print-separator)
 	(println "Answer the following questions as honestly as you can:")
-	(focus GENRE)
-)
-
-; ---------------------------------- GENRE ----------------------------------- ;
-
-(defrule GENRE::children
-	?r <- (Recom (genre NONE))
-	?u <- (User (age ?a&:(< ?a 12)))
-	=>
-	(bind ?g (question-options "  - Which one do you prefer?" young classics none))
-	(if (neq ?g none)
-		then
-			(modify ?r (genre ?g))
-		else
-			(bind ?ans (question-yes-no "  - Do you prefer fantasy?"))
-			(if (eq ?ans TRUE)
-				then
-					(modify ?r (genre fantasy))
-				else
-					(modify ?u (age 12))
-			)
-	)
-)
-
-(defrule GENRE::teenager
-	?r <- (Recom (genre NONE))
-	?u <- (User (age ?a&:(and (>= ?a 12) (<= ?a 18))))
-	=>
-	(bind ?g (question-options "  - Which one do you prefer?" young classics fantasy thrilers adventure none))
-	(if (neq ?g none)
-		then
-			(modify ?r (genre ?g))
-		else
-			(bind ?ans (question-yes-no "  - Do you prefer horror?"))
-			(if (eq ?ans TRUE)
-				then
-					(modify ?r (genre horror))
-				else
-					(modify ?u (age 20))
-			)
-	)
 )
