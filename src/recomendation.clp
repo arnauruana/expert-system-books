@@ -22390,10 +22390,6 @@
 
 ; Actual user recomendation template
 (deftemplate MAIN::Reco
-	(slot size
-		(type SYMBOL)
-		(default NONE)
-	)
 )
 
 ; ============================================================================ ;
@@ -22476,7 +22472,7 @@
 	?answer
 )
 
-; Funcion para hacer una pregunta con respuesta numerica unica
+; Question for choosing numbers in a given range
 (deffunction MAIN::question-range(?question ?rangeI ?rangeF)
 	(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
 	(bind ?answer (read))
@@ -22715,16 +22711,8 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-(defrule RECO::set-pages-occasionally
-	(Pref (freq occasionally))
-	=>
-	(println "TEST")
-)
+; TODO ;
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
-(defrule PRES::debug
-	(declare (salience -10))
-	=>
-	(println "We are on PRES module XD")
-)
+; TODO ;
