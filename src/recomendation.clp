@@ -22497,7 +22497,7 @@
     (println "")
 		(format t "      [%s]" ?curr-value)
  	)
-	(printout t ": ")
+	(printout t crlf "  > ")
 	(bind ?answer (read))
 	(if (lexemep ?answer)
 		then (bind ?answer (lowcase ?answer))
@@ -22508,7 +22508,7 @@
       (println "")
 	 		(format t "      [%s]" ?curr-value)
 	 	)
-	 	(printout t ": ")
+	 	(printout t crlf "  > ")
 		(bind ?answer (read))
 		(if (lexemep ?answer)
 			then (bind ?answer (lowcase ?answer))
@@ -22687,7 +22687,7 @@
 (defrule PREF::get-freq
 	?p <- (Pref (freq NONE))
 	=>
-	(bind ?f (question-options "  - How often do you usually read?" rarely occasionally normally frequently))
+	(bind ?f (question-options "  - How often do you usually read?" occasionally normally frequently))
 	(modify ?p (freq ?f))
 )
 
@@ -22776,10 +22776,10 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-(defrule RECO::debug
-	(declare (salience -10))
+(defrule RECO::set-pages-occasionally
+	(Pref (freq occasionally))
 	=>
-	(println "We are on RECO module XD")
+	(println "TEST")
 )
 
 ; ----------------------------------- PRES ----------------------------------- ;
