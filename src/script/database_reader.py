@@ -151,6 +151,7 @@ for title in data['book_title']:
     auxiliary_title.append(aux)
 data['book_title'] = auxiliary_title
 
+data = data[data.pages != '0']
 
 for date in data['publish_date']:
     if (not isYear(date)):
