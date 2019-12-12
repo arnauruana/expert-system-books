@@ -26,7 +26,7 @@
 )
 
 ; User information module
-(defmodule INFO
+(defmodule USER
 	(import MAIN ?ALL)
 	(import DATA ?ALL)
 	(export ?ALL)
@@ -248,13 +248,13 @@
 
 ; ----------------------------------- DATA ----------------------------------- ;
 
-; Obtains the user's personal information changing from DATA to INFO
+; Obtains the user's personal information changing from DATA to USER
 (defrule DATA::get-user
 	(not (User))
 	=>
 	(assert (User))
 	(println "Introduce the following personal information:")
-	(focus INFO)
+	(focus USER)
 )
 
 ; Obtains the user's prefereneces changing from DATA to PREFS
@@ -268,10 +268,10 @@
 	(focus PREFS)
 )
 
-; ----------------------------------- INFO ----------------------------------- ;
+; ----------------------------------- USER ----------------------------------- ;
 
 ; Obtains the user's name
-(defrule INFO::get-name
+(defrule USER::get-name
 	?u <- (User (name "NONE"))
 	=>
 	(bind ?n (question-general "  - Name:"))
@@ -279,7 +279,7 @@
 )
 
 ; Obtains the user's age
-(defrule INFO::get-age
+(defrule USER::get-age
 	?u <- (User (age -1))
 	=>
 	(bind ?a (question-range "  - Age" 0 150))
@@ -287,7 +287,7 @@
 )
 
 ; Obtains the user's gender
-(defrule INFO::get-gender
+(defrule USER::get-gender
 	?u <- (User (gender NONE))
 	=>
 	(bind ?g (question-options "  - Gender" male female))
