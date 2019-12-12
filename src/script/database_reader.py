@@ -143,8 +143,14 @@ for date in data['publish_date']:
     aux = str(date)
     aux = aux.split(" ")
     auxiliary_date.append(aux[-1])
-
 data['publish_date'] = auxiliary_date
+
+auxiliary_title = []
+for title in data['book_title']:
+    aux = ((title.replace('&', '')).replace('(', '')).replace(')', '')
+    auxiliary_title.append(aux)
+data['book_title'] = auxiliary_title
+
 
 for date in data['publish_date']:
     if (not isYear(date)):
