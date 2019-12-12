@@ -1,4 +1,4 @@
-; Thu Dec 12 09:38:43 CET 2019
+; Thu Dec 12 10:42:47 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -21,11 +21,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ontology_ProjectKB_Class20091]
-		[ontology_ProjectKB_Class20092]
-		[ontology_ProjectKB_Class20093]
-		[ontology_ProjectKB_Class20094]
-		[ontology_ProjectKB_Class20095]))
+		[ontology_ProjectKB_Class30107]
+		[ontology_ProjectKB_Class30108]
+		[ontology_ProjectKB_Class30109]
+		[ontology_ProjectKB_Class30110]
+		[ontology_ProjectKB_Class30111]))
 
 ([CLSES_TAB] of  Widget
 
@@ -67,7 +67,7 @@
 
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_474284_Class2] of  Map
+([KB_120097_Class2] of  Map
 )
 
 ([KB_591460_Class0] of  String
@@ -77,8 +77,8 @@
 
 ([KB_591460_Class1] of  Map
 
-	(entries [ontology_ProjectKB_Class20097])
-	(referenced_maps [ontology_ProjectKB_Class20096]))
+	(entries [ontology_ProjectKB_Class30113])
+	(referenced_maps [ontology_ProjectKB_Class30112]))
 
 ([KB_591460_Class100] of  String
 
@@ -218,7 +218,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class16])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
 ([ontology_ProjectKB_Class16] of  Property_List
 )
@@ -227,7 +227,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class18])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
 ([ontology_ProjectKB_Class18] of  Property_List
 )
@@ -236,51 +236,16 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class20])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
 ([ontology_ProjectKB_Class20] of  Property_List
 )
-
-([ontology_ProjectKB_Class20091] of  String
-
-	(name "Author")
-	(string_value "name"))
-
-([ontology_ProjectKB_Class20092] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([ontology_ProjectKB_Class20093] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([ontology_ProjectKB_Class20094] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([ontology_ProjectKB_Class20095] of  String
-
-	(name "Book")
-	(string_value "title"))
-
-([ontology_ProjectKB_Class20096] of  Map
-)
-
-([ontology_ProjectKB_Class20097] of  Map_Entry
-
-	(key "InstanceDisplay.yellow_stickies")
-	(key_class "java.lang.String")
-	(value "ontology_ProjectKB_Class20096")
-	(value_class "java.util.Map"))
 
 ([ontology_ProjectKB_Class21] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class22])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
 ([ontology_ProjectKB_Class22] of  Property_List
 )
@@ -326,6 +291,41 @@
 
 ([ontology_ProjectKB_Class30] of  Property_List
 )
+
+([ontology_ProjectKB_Class30107] of  String
+
+	(name "Author")
+	(string_value "name"))
+
+([ontology_ProjectKB_Class30108] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ontology_ProjectKB_Class30109] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([ontology_ProjectKB_Class30110] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([ontology_ProjectKB_Class30111] of  String
+
+	(name "Book")
+	(string_value "title"))
+
+([ontology_ProjectKB_Class30112] of  Map
+)
+
+([ontology_ProjectKB_Class30113] of  Map_Entry
+
+	(key "InstanceDisplay.yellow_stickies")
+	(key_class "java.lang.String")
+	(value "ontology_ProjectKB_Class30112")
+	(value_class "java.util.Map"))
 
 ([ontology_ProjectKB_Class31] of  Widget
 
