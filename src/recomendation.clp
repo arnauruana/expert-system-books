@@ -22400,23 +22400,27 @@
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot bestseller
+	(slot highP
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot unknown
+	(slot midP
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot old
+	(slot lowP
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot oldnew
+	(slot oldA
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot new
+	(slot midA
+		(type SYMBOL)
+		(default NONE)
+	)
+	(slot newA
 		(type SYMBOL)
 		(default NONE)
 	)
@@ -22647,62 +22651,59 @@
 	(modify ?p (freq ?f))
 )
 
-; Obtains the user's preference for best-seller books
-(defrule PREFS::get-bestseller
-	?p <- (Prefs (bestseller NONE))
+; Obtains the user's book popularity rellevance
+(defrule PREFS::popularity
+	?p <- (Prefs (highP NONE) (midP NONE) (lowP NONE))
 	=>
-	(bind ?bs (question-yes-no "  - Do you usually like best-seller books?"))
-	(modify ?p (bestseller ?bs))
-)
-
-; Obtains the user's preference for little knwon books
-(defrule PREFS::get-unknown
-	?p <- (Prefs (unknown NONE))
-	=>
-	(bind ?u (question-yes-no "  - Do you usually like little known books?"))
-	(modify ?p (unknown ?u))
+	(bind ?r (question-yes-no "  - Do you usually care about book popularity?"))
+	(if (eq ?r FALSE)
+		then
+			(modify ?p (highP TRUE) (midP TRUE) (lowP TRUE))
+		else
+			(assert (get-popularity))
+	)
 )
 
 ; Obtains the user's book antiquity rellevance
-(defrule PREFS::antiquity-rellevance
-	?p <- (Prefs (old NONE) (oldnew NONE) (new NONE))
+(defrule PREFS::antiquity
+	?p <- (Prefs (oldA NONE) (midA NONE) (newA NONE))
 	=>
 	(bind ?r (question-yes-no "  - Do you usually care about book antiquity?"))
 	(if (eq ?r FALSE)
 		then
-			(modify ?p (old TRUE) (oldnew TRUE) (new TRUE))
+			(modify ?p (oldA TRUE) (midA TRUE) (newA TRUE))
 		else
 			(assert (get-antiquity))
 	)
 )
 
-; Obtains the user's preference for old books
-(defrule PREFS::get-old
+; Obtains the user's preference for old-antiquity books
+(defrule PREFS::get-old-antiquity
 	(get-antiquity)
-	?p <- (Prefs (old NONE))
+	?p <- (Prefs (oldA NONE))
 	=>
-	(bind ?o (question-yes-no "  - Do you usually like books before year 1900?"))
-	(modify ?p (old ?o))
+	(bind ?oa (question-yes-no "  - Do you usually like books before year 1900?"))
+	(modify ?p (oldA ?oa))
 	(assert (get-antiquity))
 )
 
-; Obtains the user's preference for new books
-(defrule PREFS::get-new
+; Obtains the user's preference for mid-antiquity books
+(defrule PREFS::get-mid-antiquity
 	(get-antiquity)
-	?p <- (Prefs (new NONE))
+	?p <- (Prefs (midA NONE))
 	=>
-	(bind ?n (question-yes-no "  - Do you usually like books after year 2000?"))
-	(modify ?p (new ?n))
-	(assert (get-antiquity))
+	(bind ?ma (question-yes-no "  - Do you usually like books between 1900 and 2000?"))
+	(modify ?p (midA ?ma))
 )
 
-; Obtains the user's preference for oldnew books
-(defrule PREFS::get-oldnew
+; Obtains the user's preference for new-antiquity books
+(defrule PREFS::get-new-antiquity
 	(get-antiquity)
-	?p <- (Prefs (oldnew NONE))
+	?p <- (Prefs (newA NONE))
 	=>
-	(bind ?on (question-yes-no "  - Do you usually like books between 1900 and 2000?"))
-	(modify ?p (oldnew ?on))
+	(bind ?na (question-yes-no "  - Do you usually like books after year 2000?"))
+	(modify ?p (newA ?na))
+	(assert (get-antiquity))
 )
 
 ; ---------------------------------- RECOM ----------------------------------- ;
