@@ -1,7 +1,4 @@
-import numpy as np
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 def isEnglish(s):
     try:
@@ -118,7 +115,7 @@ data['genre_1'] = data['genre_1'].replace({'Fiction':'Uncategorized',
     'Paranormal'        : 'Horror',
     'Speculative Fiction':'Thriller',
     'Womens Fiction'    : 'Romance',
-    'Mythology'         : 'Religious'
+    'Mythology'         : 'Religious',
     'Christian Fiction' : 'Religious',
     'Biblical Fiction'  : 'Religious',
     'Christian'         : 'Religious',
@@ -161,4 +158,4 @@ for title in data['book_title']:
     if (not isEnglish(title)):
         data = data[~data.book_title.str.contains(title)]
 
-data.to_csv('../booksDB.csv')
+data.to_csv('./booksDB.csv')

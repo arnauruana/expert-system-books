@@ -1,7 +1,7 @@
 import pandas as pd
 from collections import defaultdict
 
-data = pd.read_csv('../booksDB.csv')
+data = pd.read_csv('./booksDB.csv')
 
 file = open("./instances.pins","w")
 
@@ -26,7 +26,7 @@ for index, row in data.iterrows():
         rating = str(row['author_average_rating'])
         output =  "(" + instance_name + " of  Author"
         output += " (gender " + gender + ")"
-        output += " (name " + (name.replace('\n', '')).replace(' ', '') + ")"
+        output += " (name " + '"' + (name.replace('\n', '')).replace(' ', '') + '"' + ")"
         output += " (popularity " + popularity + ")"
         output += " (rating " + rating + "))\n\n"
         file.write(output)
@@ -37,10 +37,10 @@ for index, row in data.iterrows():
     instance_iterator += 1
     output = "(" + instance_name + " of Book"
     output += " (author " + dict[row['author_name']] + ")"
-    output += " (genre " + row['genre_1'] + ")"
+    output += " (genre " + '"' + row['genre_1'] + '"' + ")"
     output += " (pages " + str(row['score']) + ")"
     output += " (popularity " + getPopularity(row['num_ratings']) + ")"
-    output += " (title " + (row['book_title'].replace('\n', '')).replace(' ', '') + ")"
+    output += " (title " + '"' + (row['book_title'].replace('\n', '')).replace(' ', '') + '"' + ")"
     output += " (year " + row['publish_date'] + ")"
     output += " (rating " + str(row['pages']) + "))\n\n"
     file.write(output)
