@@ -22687,7 +22687,7 @@
 (defrule PREF::get-freq
 	?p <- (Pref (freq NONE))
 	=>
-	(bind ?f (question-options "  - How often do you read?" rarely occasionally normally frequently))
+	(bind ?f (question-options "  - How often do you usually read?" rarely occasionally normally frequently))
 	(modify ?p (freq ?f))
 )
 
