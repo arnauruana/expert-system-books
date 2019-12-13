@@ -22352,14 +22352,14 @@
 		(type SYMBOL)
 		(default NONE)
 	)
-)
-
-; Actual user preferences template
-(deftemplate MAIN::Pref
 	(slot religious
 		(type SYMBOL)
 		(default NONE)
 	)
+)
+
+; Actual user preferences template
+(deftemplate MAIN::Pref
 	(slot freq
 		(type SYMBOL)
 		(default NONE)
@@ -22627,15 +22627,15 @@
 	(modify ?u (gender ?g))
 )
 
-; ---------------------------------- PREF ----------------------------------- ;
-
 ; Obtains whether the user is religious or not
-(defrule PREF::get-religious
-	?p <- (Pref (religious NONE))
+(defrule USER::get-religious
+	?p <- (User (religious NONE))
 	=>
 	(bind ?ans (question-yes-no "  - Are you religious?"))
 	(modify ?p (religious ?ans))
 )
+
+; ---------------------------------- PREF ----------------------------------- ;
 
 ; Obtains the user's read frequency
 (defrule PREF::get-freq
@@ -22739,12 +22739,7 @@
 
 ; ---------------------------------- GENRE ----------------------------------- ;
 
-(defrule GENRE::children
-	?book <- (object (is-a Book) (pages ?p))
-	(test (< ?p 50))
-	=>
-	(send ?book print)
-)
+; TODO ;
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
