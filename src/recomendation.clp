@@ -22316,6 +22316,13 @@
 	(export ?ALL)
 )
 
+; User genre recomendation module
+(defmodule GENRE
+	(import MAIN ?ALL)
+	(import RECO ?ALL)
+	(export ?ALL)
+)
+
 ; Result presentation module
 (defmodule PRES
 	(import MAIN ?ALL)
@@ -22390,6 +22397,10 @@
 
 ; Actual user recomendation template
 (deftemplate MAIN::Reco
+	(multislot genres
+		(type STRING)
+		(default "NONE")
+	)
 )
 
 ; ============================================================================ ;
@@ -22463,10 +22474,14 @@
 
 ; General question
 (deffunction MAIN::question-general(?question)
-	(format t "%s " ?question)
+	(format t "%s" ?question)
+	(println "")
+	(print "  > ")
 	(bind ?answer (read))
 	(while (not (lexemep ?answer)) do
-		(format t "%s " ?question)
+		(format t "%s" ?question)
+		(println "")
+		(print "  > ")
 		(bind ?answer (read))
 	)
 	?answer
@@ -22474,10 +22489,14 @@
 
 ; Question for choosing numbers in a given range
 (deffunction MAIN::question-range(?question ?rangeI ?rangeF)
-	(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
+	(format t "%s [%d-%d]" ?question ?rangeI ?rangeF)
+	(println "")
+	(print "  > ")
 	(bind ?answer (read))
 	(while (not (and (>= ?answer ?rangeI) (<= ?answer ?rangeF))) do
-		(format t "%s [%d-%d]: " ?question ?rangeI ?rangeF)
+		(format t "%s [%d-%d] " ?question ?rangeI ?rangeF)
+		(println "")
+		(print "  > ")
 		(bind ?answer (read))
 	)
 	?answer
@@ -22589,7 +22608,7 @@
 (defrule USER::get-name
 	?u <- (User (name "NONE"))
 	=>
-	(bind ?n (question-general "  - Name:"))
+	(bind ?n (question-general "  - What's your name?"))
 	(modify ?u (name ?n))
 )
 
@@ -22597,7 +22616,7 @@
 (defrule USER::get-age
 	?u <- (User (age -1))
 	=>
-	(bind ?a (question-range "  - Age" 0 150))
+	(bind ?a (question-range "  - How old are you?" 0 150))
 	(modify ?u (age ?a))
 )
 
@@ -22605,7 +22624,7 @@
 (defrule USER::get-gender
 	?u <- (User (gender NONE))
 	=>
-	(bind ?g (question-options "  - Gender" male female))
+	(bind ?g (question-options "  - Which is your gender?" male female))
 	(modify ?u (gender ?g))
 )
 
@@ -22656,7 +22675,7 @@
 (defrule PREF::get-genre
 	?p <- (Pref (genre NONE))
 	=>
-	(bind ?ans (question-yes-no "  - Would you like to choose the genre of the recommended book?"))
+	(bind ?ans (question-yes-no "  - Would you care about the genre of the book?"))
 	(modify ?p (genre ?ans))
 )
 
@@ -22711,7 +22730,18 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-; TODO ;
+(defrule RECO::predict-genres
+	(Pref (genre TRUE))
+	(Reco (genres "NONE"))
+	=>
+	(focus GENRE)
+)
+
+; ---------------------------------- GENRE ----------------------------------- ;
+
+(defrule GENRE::children
+	=>
+)
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
