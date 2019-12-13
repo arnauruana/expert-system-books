@@ -22294,7 +22294,7 @@
 	(export ?ALL)
 )
 
-; Book-popularity preference module
+; Book popularity preference module
 (defmodule POPU
 	(import MAIN ?ALL)
 	(import DATA ?ALL)
@@ -22302,7 +22302,7 @@
 	(export ?ALL)
 )
 
-; Book-antiquity preference module
+; Book antiquity preference module
 (defmodule ANTI
 	(import MAIN ?ALL)
 	(import DATA ?ALL)
@@ -22310,20 +22310,13 @@
 	(export ?ALL)
 )
 
-; User recomendation module
+; User book recomendation module
 (defmodule RECO
 	(import MAIN ?ALL)
 	(export ?ALL)
 )
 
-; User genre recomendation module
-(defmodule GENRE
-	(import MAIN ?ALL)
-	(import RECO ?ALL)
-	(export ?ALL)
-)
-
-; Result presentation module
+; Results presentation module
 (defmodule PRES
 	(import MAIN ?ALL)
 	(export ?ALL)
