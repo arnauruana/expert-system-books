@@ -135,5726 +135,5726 @@
 	([ontology_Class10000] of  Author
 
 		(gender female)
-		(name "NancyBaker")
+		(name_ "NancyBaker")
 		(popularity low)
 		(rating 3.78))
 
 	([ontology_Class10001] of  Author
 
 		(gender male)
-		(name "AldousHuxley")
+		(name_ "AldousHuxley")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10002] of  Author
 
 		(gender male)
-		(name "FranzKafka")
+		(name_ "FranzKafka")
 		(popularity high)
 		(rating 3.89))
 
 	([ontology_Class10003] of  Author
 
 		(gender female)
-		(name "AynRand")
+		(name_ "AynRand")
 		(popularity high)
 		(rating 3.75))
 
 	([ontology_Class10004] of  Author
 
 		(gender female)
-		(name "CorneliaFunke")
+		(name_ "CorneliaFunke")
 		(popularity high)
 		(rating 3.91))
 
 	([ontology_Class10005] of  Author
 
 		(gender female)
-		(name "DaphneduMaurier")
+		(name_ "DaphneduMaurier")
 		(popularity high)
 		(rating 4.13))
 
 	([ontology_Class10006] of  Author
 
 		(gender female)
-		(name "JaneAusten")
+		(name_ "JaneAusten")
 		(popularity high)
 		(rating 4.11))
 
 	([ontology_Class10007] of  Author
 
 		(gender female)
-		(name "LouisaMayAlcott")
+		(name_ "LouisaMayAlcott")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10008] of  Author
 
 		(gender female)
-		(name "BettySmith")
+		(name_ "BettySmith")
 		(popularity high)
 		(rating 4.25))
 
 	([ontology_Class10009] of  Author
 
 		(gender female)
-		(name "SylviaPlath")
+		(name_ "SylviaPlath")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10010] of  Author
 
 		(gender male)
-		(name "BernhardSchlink")
+		(name_ "BernhardSchlink")
 		(popularity high)
 		(rating 3.72))
 
 	([ontology_Class10011] of  Author
 
 		(gender male)
-		(name "J.R.R.Tolkien")
+		(name_ "J.R.R.Tolkien")
 		(popularity high)
 		(rating 4.32))
 
 	([ontology_Class10012] of  Author
 
 		(gender male)
-		(name "HelenFielding")
+		(name_ "HelenFielding")
 		(popularity high)
 		(rating 3.71))
 
 	([ontology_Class10013] of  Author
 
 		(gender male)
-		(name "J.D.Robb")
+		(name_ "J.D.Robb")
 		(popularity high)
 		(rating 4.29))
 
 	([ontology_Class10014] of  Author
 
 		(gender male)
-		(name "ArthurGolden")
+		(name_ "ArthurGolden")
 		(popularity high)
 		(rating 4.1))
 
 	([ontology_Class10015] of  Author
 
 		(gender male)
-		(name "NicholasSparks")
+		(name_ "NicholasSparks")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10016] of  Author
 
 		(gender female)
-		(name "MargaretMitchell")
+		(name_ "MargaretMitchell")
 		(popularity high)
 		(rating 4.29))
 
 	([ontology_Class10017] of  Author
 
 		(gender male)
-		(name "C.S.Lewis")
+		(name_ "C.S.Lewis")
 		(popularity high)
 		(rating 4.14))
 
 	([ontology_Class10018] of  Author
 
 		(gender female)
-		(name "GailCarsonLevine")
+		(name_ "GailCarsonLevine")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10019] of  Author
 
 		(gender male)
-		(name "TheodoreSturgeon")
+		(name_ "TheodoreSturgeon")
 		(popularity medium)
 		(rating 4.05))
 
 	([ontology_Class10020] of  Author
 
 		(gender female)
-		(name "LaurellK.Hamilton")
+		(name_ "LaurellK.Hamilton")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10021] of  Author
 
 		(gender male)
-		(name "FredSaberhagen")
+		(name_ "FredSaberhagen")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10022] of  Author
 
 		(gender female)
-		(name "TanithLee")
+		(name_ "TanithLee")
 		(popularity high)
 		(rating 3.89))
 
 	([ontology_Class10023] of  Author
 
 		(gender male)
-		(name "DanSimmons")
+		(name_ "DanSimmons")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10024] of  Author
 
 		(gender female)
-		(name "JeanneKalogridis")
+		(name_ "JeanneKalogridis")
 		(popularity medium)
 		(rating 3.84))
 
 	([ontology_Class10025] of  Author
 
 		(gender male)
-		(name "KimNewman")
+		(name_ "KimNewman")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10026] of  Author
 
 		(gender male)
-		(name "PoppyZ.Brite")
+		(name_ "PoppyZ.Brite")
 		(popularity medium)
 		(rating 3.91))
 
 	([ontology_Class10027] of  Author
 
 		(gender male)
-		(name "J.SheridanLeFanu")
+		(name_ "J.SheridanLeFanu")
 		(popularity medium)
 		(rating 3.84))
 
 	([ontology_Class10028] of  Author
 
 		(gender male)
-		(name "BramStoker")
+		(name_ "BramStoker")
 		(popularity high)
 		(rating 3.98))
 
 	([ontology_Class10029] of  Author
 
 		(gender male)
-		(name "PeterS.Beagle")
+		(name_ "PeterS.Beagle")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10030] of  Author
 
 		(gender male)
-		(name "TamoraPierce")
+		(name_ "TamoraPierce")
 		(popularity high)
 		(rating 4.23))
 
 	([ontology_Class10031] of  Author
 
 		(gender male)
-		(name "T.A.Barron")
+		(name_ "T.A.Barron")
 		(popularity medium)
 		(rating 4.05))
 
 	([ontology_Class10032] of  Author
 
 		(gender male)
-		(name "NatalieBabbitt")
+		(name_ "NatalieBabbitt")
 		(popularity high)
 		(rating 3.86))
 
 	([ontology_Class10033] of  Author
 
 		(gender male)
-		(name "T.H.White")
+		(name_ "T.H.White")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10034] of  Author
 
 		(gender male)
-		(name "LemonySnicket")
+		(name_ "LemonySnicket")
 		(popularity high)
 		(rating 3.96))
 
 	([ontology_Class10035] of  Author
 
 		(gender male)
-		(name "MeganWhalenTurner")
+		(name_ "MeganWhalenTurner")
 		(popularity high)
 		(rating 4.1))
 
 	([ontology_Class10036] of  Author
 
 		(gender male)
-		(name "MichaelEnde")
+		(name_ "MichaelEnde")
 		(popularity high)
 		(rating 4.21))
 
 	([ontology_Class10037] of  Author
 
 		(gender male)
-		(name "LloydAlexander")
+		(name_ "LloydAlexander")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10038] of  Author
 
 		(gender male)
-		(name "WilliamGoldman")
+		(name_ "WilliamGoldman")
 		(popularity high)
 		(rating 4.25))
 
 	([ontology_Class10039] of  Author
 
 		(gender female)
-		(name "KatherinePaterson")
+		(name_ "KatherinePaterson")
 		(popularity high)
 		(rating 3.95))
 
 	([ontology_Class10040] of  Author
 
 		(gender female)
-		(name "MadeleineL'Engle")
+		(name_ "MadeleineL'Engle")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10041] of  Author
 
 		(gender female)
-		(name "EllenWittlinger")
+		(name_ "EllenWittlinger")
 		(popularity medium)
 		(rating 3.68))
 
 	([ontology_Class10042] of  Author
 
 		(gender male)
-		(name "AliceHoffman")
+		(name_ "AliceHoffman")
 		(popularity high)
 		(rating 3.81))
 
 	([ontology_Class10043] of  Author
 
 		(gender female)
-		(name "AngelaCarter")
+		(name_ "AngelaCarter")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10044] of  Author
 
 		(gender female)
-		(name "ChitraBanerjeeDivakaruni")
+		(name_ "ChitraBanerjeeDivakaruni")
 		(popularity medium)
 		(rating 3.82))
 
 	([ontology_Class10045] of  Author
 
 		(gender male)
-		(name "HermannHesse")
+		(name_ "HermannHesse")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10046] of  Author
 
 		(gender male)
-		(name "JorgeAmado")
+		(name_ "JorgeAmado")
 		(popularity medium)
 		(rating 4.01))
 
 	([ontology_Class10047] of  Author
 
 		(gender male)
-		(name "JohnNichols")
+		(name_ "JohnNichols")
 		(popularity medium)
 		(rating 4.01))
 
 	([ontology_Class10048] of  Author
 
 		(gender male)
-		(name "RudolfoAnaya")
+		(name_ "RudolfoAnaya")
 		(popularity medium)
 		(rating 3.77))
 
 	([ontology_Class10049] of  Author
 
 		(gender male)
-		(name "ItaloCalvino")
+		(name_ "ItaloCalvino")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10050] of  Author
 
 		(gender male)
-		(name "JorgeLuisBorges")
+		(name_ "JorgeLuisBorges")
 		(popularity high)
 		(rating 4.32))
 
 	([ontology_Class10051] of  Author
 
 		(gender male)
-		(name "MikhailBulgakov")
+		(name_ "MikhailBulgakov")
 		(popularity high)
 		(rating 4.25))
 
 	([ontology_Class10052] of  Author
 
 		(gender male)
-		(name "SharonCreech")
+		(name_ "SharonCreech")
 		(popularity high)
 		(rating 3.95))
 
 	([ontology_Class10053] of  Author
 
 		(gender male)
-		(name "AnthonyBurgess")
+		(name_ "AnthonyBurgess")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10054] of  Author
 
 		(gender male)
-		(name "ThomasHardy")
+		(name_ "ThomasHardy")
 		(popularity high)
 		(rating 3.84))
 
 	([ontology_Class10055] of  Author
 
 		(gender male)
-		(name "CharlesDickens")
+		(name_ "CharlesDickens")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10056] of  Author
 
 		(gender male)
-		(name "RalphEllison")
+		(name_ "RalphEllison")
 		(popularity high)
 		(rating 3.86))
 
 	([ontology_Class10057] of  Author
 
 		(gender female)
-		(name "EllenRaskin")
+		(name_ "EllenRaskin")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10058] of  Author
 
 		(gender female)
-		(name "ZoraNealeHurston")
+		(name_ "ZoraNealeHurston")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10059] of  Author
 
 		(gender male)
-		(name "GustaveFlaubert")
+		(name_ "GustaveFlaubert")
 		(popularity high)
 		(rating 3.68))
 
 	([ontology_Class10060] of  Author
 
 		(gender male)
-		(name "JohnSteinbeck")
+		(name_ "JohnSteinbeck")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10061] of  Author
 
 		(gender male)
-		(name "MarkTwain")
+		(name_ "MarkTwain")
 		(popularity high)
 		(rating 3.86))
 
 	([ontology_Class10062] of  Author
 
 		(gender male)
-		(name "JosephConrad")
+		(name_ "JosephConrad")
 		(popularity high)
 		(rating 3.5))
 
 	([ontology_Class10063] of  Author
 
 		(gender male)
-		(name "DianaGabaldon")
+		(name_ "DianaGabaldon")
 		(popularity high)
 		(rating 4.27))
 
 	([ontology_Class10064] of  Author
 
 		(gender male)
-		(name "ChinuaAchebe")
+		(name_ "ChinuaAchebe")
 		(popularity high)
 		(rating 3.66))
 
 	([ontology_Class10065] of  Author
 
 		(gender male)
-		(name "KenKesey")
+		(name_ "KenKesey")
 		(popularity high)
 		(rating 4.19))
 
 	([ontology_Class10066] of  Author
 
 		(gender male)
-		(name "ErnestHemingway")
+		(name_ "ErnestHemingway")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10067] of  Author
 
 		(gender male)
-		(name "PhilipPullman")
+		(name_ "PhilipPullman")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10068] of  Author
 
 		(gender male)
-		(name "RichardAdams")
+		(name_ "RichardAdams")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10069] of  Author
 
 		(gender male)
-		(name "FyodorDostoyevsky")
+		(name_ "FyodorDostoyevsky")
 		(popularity high)
 		(rating 4.18))
 
 	([ontology_Class10070] of  Author
 
 		(gender male)
-		(name "AlbertCamus")
+		(name_ "AlbertCamus")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10071] of  Author
 
 		(gender female)
-		(name "MaryWollstonecraftShelley")
+		(name_ "MaryWollstonecraftShelley")
 		(popularity high)
 		(rating 3.78))
 
 	([ontology_Class10072] of  Author
 
 		(gender male)
-		(name "DanielKeyes")
+		(name_ "DanielKeyes")
 		(popularity high)
 		(rating 4.11))
 
 	([ontology_Class10073] of  Author
 
 		(gender male)
-		(name "GeorgeOrwell")
+		(name_ "GeorgeOrwell")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10074] of  Author
 
 		(gender male)
-		(name "J.D.Salinger")
+		(name_ "J.D.Salinger")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10075] of  Author
 
 		(gender male)
-		(name "WilliamGolding")
+		(name_ "WilliamGolding")
 		(popularity high)
 		(rating 3.66))
 
 	([ontology_Class10076] of  Author
 
 		(gender female)
-		(name "S.E.Hinton")
+		(name_ "S.E.Hinton")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10077] of  Author
 
 		(gender male)
-		(name "F.ScottFitzgerald")
+		(name_ "F.ScottFitzgerald")
 		(popularity high)
 		(rating 3.89))
 
 	([ontology_Class10078] of  Author
 
 		(gender male)
-		(name "WilkieCollins")
+		(name_ "WilkieCollins")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10079] of  Author
 
 		(gender male)
-		(name "PeterTremayne")
+		(name_ "PeterTremayne")
 		(popularity medium)
 		(rating 4.18))
 
 	([ontology_Class10080] of  Author
 
 		(gender male)
-		(name "MargaretFrazer")
+		(name_ "MargaretFrazer")
 		(popularity medium)
 		(rating 4.01))
 
 	([ontology_Class10081] of  Author
 
 		(gender female)
-		(name "DorothyDunnett")
+		(name_ "DorothyDunnett")
 		(popularity medium)
 		(rating 4.41))
 
 	([ontology_Class10082] of  Author
 
 		(gender male)
-		(name "BruceAlexander")
+		(name_ "BruceAlexander")
 		(popularity medium)
 		(rating 4.04))
 
 	([ontology_Class10083] of  Author
 
 		(gender male)
-		(name "KateRoss")
+		(name_ "KateRoss")
 		(popularity medium)
 		(rating 4.09))
 
 	([ontology_Class10084] of  Author
 
 		(gender female)
-		(name "SharonKayPenman")
+		(name_ "SharonKayPenman")
 		(popularity high)
 		(rating 4.22))
 
 	([ontology_Class10085] of  Author
 
 		(gender male)
-		(name "StevenSaylor")
+		(name_ "StevenSaylor")
 		(popularity medium)
 		(rating 3.92))
 
 	([ontology_Class10086] of  Author
 
 		(gender male)
-		(name "CharlesTodd")
+		(name_ "CharlesTodd")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10087] of  Author
 
 		(gender male)
-		(name "IainPears")
+		(name_ "IainPears")
 		(popularity medium)
 		(rating 3.83))
 
 	([ontology_Class10088] of  Author
 
 		(gender female)
-		(name "JosephineTey")
+		(name_ "JosephineTey")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10089] of  Author
 
 		(gender male)
-		(name "JudithGuest")
+		(name_ "JudithGuest")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10090] of  Author
 
 		(gender male)
-		(name "JohnUpdike")
+		(name_ "JohnUpdike")
 		(popularity high)
 		(rating 3.8))
 
 	([ontology_Class10091] of  Author
 
 		(gender male)
-		(name "JamesA.Michener")
+		(name_ "JamesA.Michener")
 		(popularity high)
 		(rating 4.13))
 
 	([ontology_Class10092] of  Author
 
 		(gender female)
-		(name "M.M.Kaye")
+		(name_ "M.M.Kaye")
 		(popularity medium)
 		(rating 4.16))
 
 	([ontology_Class10093] of  Author
 
 		(gender male)
-		(name "PatrickO'Brian")
+		(name_ "PatrickO'Brian")
 		(popularity high)
 		(rating 4.31))
 
 	([ontology_Class10094] of  Author
 
 		(gender male)
-		(name "EdwardRutherfurd")
+		(name_ "EdwardRutherfurd")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10095] of  Author
 
 		(gender male)
-		(name "JohnFowles")
+		(name_ "JohnFowles")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10096] of  Author
 
 		(gender female)
-		(name "KathleenWinsor")
+		(name_ "KathleenWinsor")
 		(popularity medium)
 		(rating 3.98))
 
 	([ontology_Class10097] of  Author
 
 		(gender male)
-		(name "JamesClavell")
+		(name_ "JamesClavell")
 		(popularity high)
 		(rating 4.29))
 
 	([ontology_Class10098] of  Author
 
 		(gender male)
-		(name "WalterScott")
+		(name_ "WalterScott")
 		(popularity high)
 		(rating 3.74))
 
 	([ontology_Class10099] of  Author
 
 		(gender male)
-		(name "IrvingStone")
+		(name_ "IrvingStone")
 		(popularity high)
 		(rating 4.09))
 
 	([ontology_Class10100] of  Author
 
 		(gender female)
-		(name "DonnaWoolfolkCross")
+		(name_ "DonnaWoolfolkCross")
 		(popularity medium)
 		(rating 4.07))
 
 	([ontology_Class10101] of  Author
 
 		(gender male)
-		(name "LeonUris")
+		(name_ "LeonUris")
 		(popularity high)
 		(rating 4.22))
 
 	([ontology_Class10102] of  Author
 
 		(gender female)
-		(name "AnyaSeton")
+		(name_ "AnyaSeton")
 		(popularity medium)
 		(rating 4.05))
 
 	([ontology_Class10103] of  Author
 
 		(gender male)
-		(name "MichaelOndaatje")
+		(name_ "MichaelOndaatje")
 		(popularity high)
 		(rating 3.8))
 
 	([ontology_Class10104] of  Author
 
 		(gender male)
-		(name "RobertGraves")
+		(name_ "RobertGraves")
 		(popularity high)
 		(rating 4.13))
 
 	([ontology_Class10105] of  Author
 
 		(gender male)
-		(name "AlexandreDumas")
+		(name_ "AlexandreDumas")
 		(popularity high)
 		(rating 4.16))
 
 	([ontology_Class10106] of  Author
 
 		(gender male)
-		(name "CharlesFrazier")
+		(name_ "CharlesFrazier")
 		(popularity high)
 		(rating 3.82))
 
 	([ontology_Class10107] of  Author
 
 		(gender female)
-		(name "AnitaDiamant")
+		(name_ "AnitaDiamant")
 		(popularity high)
 		(rating 4.09))
 
 	([ontology_Class10108] of  Author
 
 		(gender male)
-		(name "HarrietBeecherStowe")
+		(name_ "HarrietBeecherStowe")
 		(popularity high)
 		(rating 3.86))
 
 	([ontology_Class10109] of  Author
 
 		(gender male)
-		(name "ErichMariaRemarque")
+		(name_ "ErichMariaRemarque")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10110] of  Author
 
 		(gender male)
-		(name "LeoTolstoy")
+		(name_ "LeoTolstoy")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10111] of  Author
 
 		(gender male)
-		(name "VladimirNabokov")
+		(name_ "VladimirNabokov")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10112] of  Author
 
 		(gender male)
-		(name "JosephHeller")
+		(name_ "JosephHeller")
 		(popularity high)
 		(rating 3.96))
 
 	([ontology_Class10113] of  Author
 
 		(gender male)
-		(name "LewisCarroll")
+		(name_ "LewisCarroll")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10114] of  Author
 
 		(gender male)
-		(name "NortonJuster")
+		(name_ "NortonJuster")
 		(popularity high)
 		(rating 4.2))
 
 	([ontology_Class10115] of  Author
 
 		(gender male)
-		(name "PeterStraub")
+		(name_ "PeterStraub")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10116] of  Author
 
 		(gender female)
-		(name "MildredD.Taylor")
+		(name_ "MildredD.Taylor")
 		(popularity high)
 		(rating 3.85))
 
 	([ontology_Class10117] of  Author
 
 		(gender male)
-		(name "SidneySheldon")
+		(name_ "SidneySheldon")
 		(popularity high)
 		(rating 3.82))
 
 	([ontology_Class10118] of  Author
 
 		(gender male)
-		(name "HermanWouk")
+		(name_ "HermanWouk")
 		(popularity high)
 		(rating 4.28))
 
 	([ontology_Class10119] of  Author
 
 		(gender male)
-		(name "ChaimPotok")
+		(name_ "ChaimPotok")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10120] of  Author
 
 		(gender male)
-		(name "TerryBrooks")
+		(name_ "TerryBrooks")
 		(popularity high)
 		(rating 3.96))
 
 	([ontology_Class10121] of  Author
 
 		(gender male)
-		(name "WallaceStegner")
+		(name_ "WallaceStegner")
 		(popularity high)
 		(rating 4.16))
 
 	([ontology_Class10122] of  Author
 
 		(gender female)
-		(name "SusanCooper")
+		(name_ "SusanCooper")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10123] of  Author
 
 		(gender male)
-		(name "JeffreyArcher")
+		(name_ "JeffreyArcher")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10124] of  Author
 
 		(gender male)
-		(name "ThomasPynchon")
+		(name_ "ThomasPynchon")
 		(popularity high)
 		(rating 3.85))
 
 	([ontology_Class10125] of  Author
 
 		(gender male)
-		(name "FrederickForsyth")
+		(name_ "FrederickForsyth")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10126] of  Author
 
 		(gender male)
-		(name "MichaelShaara")
+		(name_ "MichaelShaara")
 		(popularity medium)
 		(rating 4.31))
 
 	([ontology_Class10127] of  Author
 
 		(gender male)
-		(name "E.L.Doctorow")
+		(name_ "E.L.Doctorow")
 		(popularity medium)
 		(rating 3.77))
 
 	([ontology_Class10128] of  Author
 
 		(gender female)
-		(name "IrisMurdoch")
+		(name_ "IrisMurdoch")
 		(popularity medium)
 		(rating 3.82))
 
 	([ontology_Class10129] of  Author
 
 		(gender male)
-		(name "WilliamPeterBlatty")
+		(name_ "WilliamPeterBlatty")
 		(popularity high)
 		(rating 4.12))
 
 	([ontology_Class10130] of  Author
 
 		(gender male)
-		(name "HunterS.Thompson")
+		(name_ "HunterS.Thompson")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10131] of  Author
 
 		(gender female)
-		(name "PatriciaA.McKillip")
+		(name_ "PatriciaA.McKillip")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10132] of  Author
 
 		(gender male)
-		(name "RandMiller")
+		(name_ "RandMiller")
 		(popularity medium)
 		(rating 4.05))
 
 	([ontology_Class10133] of  Author
 
 		(gender male)
-		(name "MervynPeake")
+		(name_ "MervynPeake")
 		(popularity high)
 		(rating 3.82))
 
 	([ontology_Class10134] of  Author
 
 		(gender male)
-		(name "RobertLudlum")
+		(name_ "RobertLudlum")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10135] of  Author
 
 		(gender male)
-		(name "JohnGalsworthy")
+		(name_ "JohnGalsworthy")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10136] of  Author
 
 		(gender male)
-		(name "ArthurConanDoyle")
+		(name_ "ArthurConanDoyle")
 		(popularity high)
 		(rating 4.2))
 
 	([ontology_Class10137] of  Author
 
 		(gender male)
-		(name "GaryPaulsen")
+		(name_ "GaryPaulsen")
 		(popularity high)
 		(rating 3.77))
 
 	([ontology_Class10138] of  Author
 
 		(gender male)
-		(name "AlexHaley")
+		(name_ "AlexHaley")
 		(popularity high)
 		(rating 4.42))
 
 	([ontology_Class10139] of  Author
 
 		(gender male)
-		(name "HermanMelville")
+		(name_ "HermanMelville")
 		(popularity high)
 		(rating 3.53))
 
 	([ontology_Class10140] of  Author
 
 		(gender female)
-		(name "AnnaSewell")
+		(name_ "AnnaSewell")
 		(popularity high)
 		(rating 3.96))
 
 	([ontology_Class10141] of  Author
 
 		(gender male)
-		(name "DaltonTrumbo")
+		(name_ "DaltonTrumbo")
 		(popularity medium)
 		(rating 4.16))
 
 	([ontology_Class10142] of  Author
 
 		(gender male)
-		(name "JohannDavidWyss")
+		(name_ "JohannDavidWyss")
 		(popularity medium)
 		(rating 3.92))
 
 	([ontology_Class10143] of  Author
 
 		(gender male)
-		(name "WilliamStyron")
+		(name_ "WilliamStyron")
 		(popularity high)
 		(rating 4.12))
 
 	([ontology_Class10144] of  Author
 
 		(gender female)
-		(name "JeanCraigheadGeorge")
+		(name_ "JeanCraigheadGeorge")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10145] of  Author
 
 		(gender female)
-		(name "CatherineAnderson")
+		(name_ "CatherineAnderson")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10146] of  Author
 
 		(gender male)
-		(name "WilliamH.Armstrong")
+		(name_ "WilliamH.Armstrong")
 		(popularity medium)
 		(rating 3.96))
 
 	([ontology_Class10147] of  Author
 
 		(gender male)
-		(name "MarjorieKinnanRawlings")
+		(name_ "MarjorieKinnanRawlings")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10148] of  Author
 
 		(gender male)
-		(name "FredGipson")
+		(name_ "FredGipson")
 		(popularity medium)
 		(rating 4.07))
 
 	([ontology_Class10149] of  Author
 
 		(gender male)
-		(name "WilsonRawls")
+		(name_ "WilsonRawls")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10150] of  Author
 
 		(gender male)
-		(name "AndrzejSapkowski")
+		(name_ "AndrzejSapkowski")
 		(popularity high)
 		(rating 4.25))
 
 	([ontology_Class10151] of  Author
 
 		(gender male)
-		(name "L.E.ModesittJr.")
+		(name_ "L.E.ModesittJr.")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10152] of  Author
 
 		(gender female)
-		(name "MercedesLackey")
+		(name_ "MercedesLackey")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10153] of  Author
 
 		(gender male)
-		(name "SherwoodSmith")
+		(name_ "SherwoodSmith")
 		(popularity medium)
 		(rating 4.01))
 
 	([ontology_Class10154] of  Author
 
 		(gender male)
-		(name "AndreDubusIII")
+		(name_ "AndreDubusIII")
 		(popularity high)
 		(rating 3.82))
 
 	([ontology_Class10155] of  Author
 
 		(gender female)
-		(name "AnnieProulx")
+		(name_ "AnnieProulx")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10156] of  Author
 
 		(gender male)
-		(name "GregoryMaguire")
+		(name_ "GregoryMaguire")
 		(popularity high)
 		(rating 3.52))
 
 	([ontology_Class10157] of  Author
 
 		(gender male)
-		(name "StephenCrane")
+		(name_ "StephenCrane")
 		(popularity high)
 		(rating 3.4))
 
 	([ontology_Class10158] of  Author
 
 		(gender male)
-		(name "CandaceBushnell")
+		(name_ "CandaceBushnell")
 		(popularity high)
 		(rating 3.34))
 
 	([ontology_Class10159] of  Author
 
 		(gender female)
-		(name "VirginiaWoolf")
+		(name_ "VirginiaWoolf")
 		(popularity high)
 		(rating 3.82))
 
 	([ontology_Class10160] of  Author
 
 		(gender male)
-		(name "JamesJoyce")
+		(name_ "JamesJoyce")
 		(popularity high)
 		(rating 3.74))
 
 	([ontology_Class10161] of  Author
 
 		(gender male)
-		(name "WilliamFaulkner")
+		(name_ "WilliamFaulkner")
 		(popularity high)
 		(rating 3.85))
 
 	([ontology_Class10162] of  Author
 
 		(gender female)
-		(name "PearlS.Buck")
+		(name_ "PearlS.Buck")
 		(popularity high)
 		(rating 3.98))
 
 	([ontology_Class10163] of  Author
 
 		(gender male)
-		(name "JackKerouac")
+		(name_ "JackKerouac")
 		(popularity high)
 		(rating 3.72))
 
 	([ontology_Class10164] of  Author
 
 		(gender male)
-		(name "GuyGavrielKay")
+		(name_ "GuyGavrielKay")
 		(popularity high)
 		(rating 4.11))
 
 	([ontology_Class10165] of  Author
 
 		(gender male)
-		(name "ElizabethHaydon")
+		(name_ "ElizabethHaydon")
 		(popularity medium)
 		(rating 4.03))
 
 	([ontology_Class10166] of  Author
 
 		(gender male)
-		(name "ElizabethMoon")
+		(name_ "ElizabethMoon")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10167] of  Author
 
 		(gender male)
-		(name "StephenR.Donaldson")
+		(name_ "StephenR.Donaldson")
 		(popularity high)
 		(rating 3.91))
 
 	([ontology_Class10168] of  Author
 
 		(gender male)
-		(name "StevenErikson")
+		(name_ "StevenErikson")
 		(popularity high)
 		(rating 4.23))
 
 	([ontology_Class10169] of  Author
 
 		(gender male)
-		(name "JimThompson")
+		(name_ "JimThompson")
 		(popularity medium)
 		(rating 3.88))
 
 	([ontology_Class10170] of  Author
 
 		(gender male)
-		(name "IrvineWelsh")
+		(name_ "IrvineWelsh")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10171] of  Author
 
 		(gender male)
-		(name "W.SomersetMaugham")
+		(name_ "W.SomersetMaugham")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10172] of  Author
 
 		(gender male)
-		(name "ChristopherPriest")
+		(name_ "ChristopherPriest")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10173] of  Author
 
 		(gender male)
-		(name "RobertJamesWaller")
+		(name_ "RobertJamesWaller")
 		(popularity medium)
 		(rating 3.57))
 
 	([ontology_Class10174] of  Author
 
 		(gender male)
-		(name "IanFleming")
+		(name_ "IanFleming")
 		(popularity high)
 		(rating 3.74))
 
 	([ontology_Class10175] of  Author
 
 		(gender female)
-		(name "P.L.Travers")
+		(name_ "P.L.Travers")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10176] of  Author
 
 		(gender male)
-		(name "JamesFenimoreCooper")
+		(name_ "JamesFenimoreCooper")
 		(popularity high)
 		(rating 3.7))
 
 	([ontology_Class10177] of  Author
 
 		(gender male)
-		(name "PeterBenchley")
+		(name_ "PeterBenchley")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10178] of  Author
 
 		(gender female)
-		(name "ValMcDermid")
+		(name_ "ValMcDermid")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10179] of  Author
 
 		(gender female)
-		(name "MaryHigginsClark")
+		(name_ "MaryHigginsClark")
 		(popularity high)
 		(rating 3.82))
 
 	([ontology_Class10180] of  Author
 
 		(gender male)
-		(name "HenningMankell")
+		(name_ "HenningMankell")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10181] of  Author
 
 		(gender female)
-		(name "DorothyL.Sayers")
+		(name_ "DorothyL.Sayers")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10182] of  Author
 
 		(gender female)
-		(name "AgathaChristie")
+		(name_ "AgathaChristie")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10183] of  Author
 
 		(gender male)
-		(name "JamesM.Cain")
+		(name_ "JamesM.Cain")
 		(popularity medium)
 		(rating 3.92))
 
 	([ontology_Class10184] of  Author
 
 		(gender female)
-		(name "DonnaTartt")
+		(name_ "DonnaTartt")
 		(popularity high)
 		(rating 3.93))
 
 	([ontology_Class10185] of  Author
 
 		(gender male)
-		(name "DavidGuterson")
+		(name_ "DavidGuterson")
 		(popularity high)
 		(rating 3.79))
 
 	([ontology_Class10186] of  Author
 
 		(gender male)
-		(name "MichaelConnelly")
+		(name_ "MichaelConnelly")
 		(popularity high)
 		(rating 4.13))
 
 	([ontology_Class10187] of  Author
 
 		(gender male)
-		(name "DashiellHammett")
+		(name_ "DashiellHammett")
 		(popularity high)
 		(rating 3.95))
 
 	([ontology_Class10188] of  Author
 
 		(gender female)
-		(name "PatriciaHighsmith")
+		(name_ "PatriciaHighsmith")
 		(popularity high)
 		(rating 3.87))
 
 	([ontology_Class10189] of  Author
 
 		(gender male)
-		(name "LeeChild")
+		(name_ "LeeChild")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10190] of  Author
 
 		(gender male)
-		(name "JohnGrisham")
+		(name_ "JohnGrisham")
 		(popularity high)
 		(rating 3.89))
 
 	([ontology_Class10191] of  Author
 
 		(gender male)
-		(name "RobertLouisStevenson")
+		(name_ "RobertLouisStevenson")
 		(popularity high)
 		(rating 3.84))
 
 	([ontology_Class10192] of  Author
 
 		(gender male)
-		(name "RaymondChandler")
+		(name_ "RaymondChandler")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10193] of  Author
 
 		(gender male)
-		(name "MarioPuzo")
+		(name_ "MarioPuzo")
 		(popularity high)
 		(rating 4.25))
 
 	([ontology_Class10194] of  Author
 
 		(gender male)
-		(name "D.H.Lawrence")
+		(name_ "D.H.Lawrence")
 		(popularity high)
 		(rating 3.59))
 
 	([ontology_Class10195] of  Author
 
 		(gender male)
-		(name "MarcelProust")
+		(name_ "MarcelProust")
 		(popularity medium)
 		(rating 4.22))
 
 	([ontology_Class10196] of  Author
 
 		(gender male)
-		(name "WilliamMakepeaceThackeray")
+		(name_ "WilliamMakepeaceThackeray")
 		(popularity high)
 		(rating 3.77))
 
 	([ontology_Class10197] of  Author
 
 		(gender male)
-		(name "WilliamS.Burroughs")
+		(name_ "WilliamS.Burroughs")
 		(popularity high)
 		(rating 3.69))
 
 	([ontology_Class10198] of  Author
 
 		(gender male)
-		(name "DavidFosterWallace")
+		(name_ "DavidFosterWallace")
 		(popularity high)
 		(rating 4.14))
 
 	([ontology_Class10199] of  Author
 
 		(gender male)
-		(name "TimLaHaye")
+		(name_ "TimLaHaye")
 		(popularity high)
 		(rating 3.95))
 
 	([ontology_Class10200] of  Author
 
 		(gender male)
-		(name "BillieLetts")
+		(name_ "BillieLetts")
 		(popularity high)
 		(rating 3.98))
 
 	([ontology_Class10201] of  Author
 
 		(gender female)
-		(name "RebeccaWells")
+		(name_ "RebeccaWells")
 		(popularity high)
 		(rating 3.79))
 
 	([ontology_Class10202] of  Author
 
 		(gender male)
-		(name "BorisPasternak")
+		(name_ "BorisPasternak")
 		(popularity medium)
 		(rating 4.03))
 
 	([ontology_Class10203] of  Author
 
 		(gender female)
-		(name "FrancineRivers")
+		(name_ "FrancineRivers")
 		(popularity high)
 		(rating 4.39))
 
 	([ontology_Class10204] of  Author
 
 		(gender female)
-		(name "ElizabethGaskell")
+		(name_ "ElizabethGaskell")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10205] of  Author
 
 		(gender male)
-		(name "JohnMarsden")
+		(name_ "JohnMarsden")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10206] of  Author
 
 		(gender male)
-		(name "GeorgeMacDonald")
+		(name_ "GeorgeMacDonald")
 		(popularity medium)
 		(rating 4.05))
 
 	([ontology_Class10207] of  Author
 
 		(gender male)
-		(name "GeorgesBataille")
+		(name_ "GeorgesBataille")
 		(popularity medium)
 		(rating 3.85))
 
 	([ontology_Class10208] of  Author
 
 		(gender male)
-		(name "DorothyAllison")
+		(name_ "DorothyAllison")
 		(popularity medium)
 		(rating 4.07))
 
 	([ontology_Class10209] of  Author
 
 		(gender male)
-		(name "HubertSelbyJr.")
+		(name_ "HubertSelbyJr.")
 		(popularity medium)
 		(rating 4.02))
 
 	([ontology_Class10210] of  Author
 
 		(gender male)
-		(name "JayAnson")
+		(name_ "JayAnson")
 		(popularity medium)
 		(rating 3.83))
 
 	([ontology_Class10211] of  Author
 
 		(gender female)
-		(name "A.M.Homes")
+		(name_ "A.M.Homes")
 		(popularity medium)
 		(rating 3.64))
 
 	([ontology_Class10212] of  Author
 
 		(gender female)
-		(name "CharlottePerkinsGilman")
+		(name_ "CharlottePerkinsGilman")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10213] of  Author
 
 		(gender male)
-		(name "HansChristianAndersen")
+		(name_ "HansChristianAndersen")
 		(popularity high)
 		(rating 4.13))
 
 	([ontology_Class10214] of  Author
 
 		(gender female)
-		(name "ElizabethMariePope")
+		(name_ "ElizabethMariePope")
 		(popularity medium)
 		(rating 4.1))
 
 	([ontology_Class10215] of  Author
 
 		(gender male)
-		(name "PamelaDean")
+		(name_ "PamelaDean")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10216] of  Author
 
 		(gender male)
-		(name "JacobGrimm")
+		(name_ "JacobGrimm")
 		(popularity high)
 		(rating 4.18))
 
 	([ontology_Class10217] of  Author
 
 		(gender male)
-		(name "KingsleyAmis")
+		(name_ "KingsleyAmis")
 		(popularity medium)
 		(rating 3.67))
 
 	([ontology_Class10218] of  Author
 
 		(gender male)
-		(name "StellaGibbons")
+		(name_ "StellaGibbons")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10219] of  Author
 
 		(gender male)
-		(name "JeromeK.Jerome")
+		(name_ "JeromeK.Jerome")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10220] of  Author
 
 		(gender male)
-		(name "ThomasMann")
+		(name_ "ThomasMann")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10221] of  Author
 
 		(gender female)
-		(name "GeorgeEliot")
+		(name_ "GeorgeEliot")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10222] of  Author
 
 		(gender female)
-		(name "AmandaQuick")
+		(name_ "AmandaQuick")
 		(popularity high)
 		(rating 3.9))
 
 	([ontology_Class10223] of  Author
 
 		(gender female)
-		(name "GeorgetteHeyer")
+		(name_ "GeorgetteHeyer")
 		(popularity high)
 		(rating 3.91))
 
 	([ontology_Class10224] of  Author
 
 		(gender female)
-		(name "KathleenE.Woodiwiss")
+		(name_ "KathleenE.Woodiwiss")
 		(popularity medium)
 		(rating 4.03))
 
 	([ontology_Class10225] of  Author
 
 		(gender female)
-		(name "LauraKinsale")
+		(name_ "LauraKinsale")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10226] of  Author
 
 		(gender male)
-		(name "IvanTurgenev")
+		(name_ "IvanTurgenev")
 		(popularity high)
 		(rating 3.91))
 
 	([ontology_Class10227] of  Author
 
 		(gender male)
-		(name "HenryJames")
+		(name_ "HenryJames")
 		(popularity high)
 		(rating 3.63))
 
 	([ontology_Class10228] of  Author
 
 		(gender male)
-		(name "NikolaiGogol")
+		(name_ "NikolaiGogol")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10229] of  Author
 
 		(gender female)
-		(name "KateChopin")
+		(name_ "KateChopin")
 		(popularity high)
 		(rating 3.71))
 
 	([ontology_Class10230] of  Author
 
 		(gender male)
-		(name "JimHarrison")
+		(name_ "JimHarrison")
 		(popularity medium)
 		(rating 3.99))
 
 	([ontology_Class10231] of  Author
 
 		(gender male)
-		(name "CatherineRyanHyde")
+		(name_ "CatherineRyanHyde")
 		(popularity high)
 		(rating 4.09))
 
 	([ontology_Class10232] of  Author
 
 		(gender male)
-		(name "RobertBloch")
+		(name_ "RobertBloch")
 		(popularity high)
 		(rating 4.1))
 
 	([ontology_Class10233] of  Author
 
 		(gender male)
-		(name "FelixSalten")
+		(name_ "FelixSalten")
 		(popularity medium)
 		(rating 4.1))
 
 	([ontology_Class10234] of  Author
 
 		(gender female)
-		(name "AnitaLoos")
+		(name_ "AnitaLoos")
 		(popularity low)
 		(rating 3.66))
 
 	([ontology_Class10235] of  Author
 
 		(gender male)
-		(name "JamesHerbert")
+		(name_ "JamesHerbert")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10236] of  Author
 
 		(gender male)
-		(name "ThomasTryon")
+		(name_ "ThomasTryon")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10237] of  Author
 
 		(gender male)
-		(name "DouglasPreston")
+		(name_ "DouglasPreston")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10238] of  Author
 
 		(gender male)
-		(name "IraLevin")
+		(name_ "IraLevin")
 		(popularity high)
 		(rating 3.93))
 
 	([ontology_Class10239] of  Author
 
 		(gender male)
-		(name "DavidSeltzer")
+		(name_ "DavidSeltzer")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10240] of  Author
 
 		(gender female)
-		(name "ShirleyJackson")
+		(name_ "ShirleyJackson")
 		(popularity high)
 		(rating 3.98))
 
 	([ontology_Class10241] of  Author
 
 		(gender female)
-		(name "DodieSmith")
+		(name_ "DodieSmith")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10242] of  Author
 
 		(gender female)
-		(name "JaneGreen")
+		(name_ "JaneGreen")
 		(popularity high)
 		(rating 3.59))
 
 	([ontology_Class10243] of  Author
 
 		(gender female)
-		(name "VivianVandeVelde")
+		(name_ "VivianVandeVelde")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10244] of  Author
 
 		(gender male)
-		(name "AlanLightman")
+		(name_ "AlanLightman")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10245] of  Author
 
 		(gender female)
-		(name "AlexandraRipley")
+		(name_ "AlexandraRipley")
 		(popularity medium)
 		(rating 3.49))
 
 	([ontology_Class10246] of  Author
 
 		(gender female)
-		(name "MaryDowningHahn")
+		(name_ "MaryDowningHahn")
 		(popularity medium)
 		(rating 4.05))
 
 	([ontology_Class10247] of  Author
 
 		(gender male)
-		(name "WilliamDiehl")
+		(name_ "WilliamDiehl")
 		(popularity medium)
 		(rating 4.01))
 
 	([ontology_Class10248] of  Author
 
 		(gender female)
-		(name "FlanneryO'Connor")
+		(name_ "FlanneryO'Connor")
 		(popularity high)
 		(rating 4.18))
 
 	([ontology_Class10249] of  Author
 
 		(gender female)
-		(name "SherrylJordan")
+		(name_ "SherrylJordan")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10250] of  Author
 
 		(gender female)
-		(name "FrannyBillingsley")
+		(name_ "FrannyBillingsley")
 		(popularity medium)
 		(rating 3.67))
 
 	([ontology_Class10251] of  Author
 
 		(gender female)
-		(name "CarolineStevermer")
+		(name_ "CarolineStevermer")
 		(popularity medium)
 		(rating 3.82))
 
 	([ontology_Class10252] of  Author
 
 		(gender male)
-		(name "Trevanian")
+		(name_ "Trevanian")
 		(popularity medium)
 		(rating 4.06))
 
 	([ontology_Class10253] of  Author
 
 		(gender male)
-		(name "GeorgeA.Romero")
+		(name_ "GeorgeA.Romero")
 		(popularity low)
 		(rating 3.77))
 
 	([ontology_Class10254] of  Author
 
 		(gender male)
-		(name "JoanW.Blos")
+		(name_ "JoanW.Blos")
 		(popularity low)
 		(rating 3.59))
 
 	([ontology_Class10255] of  Author
 
 		(gender male)
-		(name "DhanGopalMukerji")
+		(name_ "DhanGopalMukerji")
 		(popularity low)
 		(rating 3.31))
 
 	([ontology_Class10256] of  Author
 
 		(gender male)
-		(name "JosephKrumgold")
+		(name_ "JosephKrumgold")
 		(popularity low)
 		(rating 3.47))
 
 	([ontology_Class10257] of  Author
 
 		(gender male)
-		(name "ElizabethForemanLewis")
+		(name_ "ElizabethForemanLewis")
 		(popularity low)
 		(rating 3.73))
 
 	([ontology_Class10258] of  Author
 
 		(gender female)
-		(name "EmilyCheneyNeville")
+		(name_ "EmilyCheneyNeville")
 		(popularity low)
 		(rating 3.62))
 
 	([ontology_Class10259] of  Author
 
 		(gender female)
-		(name "MaiaWojciechowska")
+		(name_ "MaiaWojciechowska")
 		(popularity low)
 		(rating 3.55))
 
 	([ontology_Class10260] of  Author
 
 		(gender female)
-		(name "KateSeredy")
+		(name_ "KateSeredy")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10261] of  Author
 
 		(gender male)
-		(name "RayBradbury")
+		(name_ "RayBradbury")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10262] of  Author
 
 		(gender female)
-		(name "ElizabethGrayVining")
+		(name_ "ElizabethGrayVining")
 		(popularity low)
 		(rating 3.76))
 
 	([ontology_Class10263] of  Author
 
 		(gender male)
-		(name "EricP.Kelly")
+		(name_ "EricP.Kelly")
 		(popularity low)
 		(rating 3.76))
 
 	([ontology_Class10264] of  Author
 
 		(gender female)
-		(name "PaulaFox")
+		(name_ "PaulaFox")
 		(popularity medium)
 		(rating 3.66))
 
 	([ontology_Class10265] of  Author
 
 		(gender female)
-		(name "FrancesHodgsonBurnett")
+		(name_ "FrancesHodgsonBurnett")
 		(popularity high)
 		(rating 4.13))
 
 	([ontology_Class10266] of  Author
 
 		(gender male)
-		(name "HaroldKeith")
+		(name_ "HaroldKeith")
 		(popularity low)
 		(rating 3.91))
 
 	([ontology_Class10267] of  Author
 
 		(gender female)
-		(name "CynthiaRylant")
+		(name_ "CynthiaRylant")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10268] of  Author
 
 		(gender male)
-		(name "EdwardBloor")
+		(name_ "EdwardBloor")
 		(popularity medium)
 		(rating 3.6))
 
 	([ontology_Class10269] of  Author
 
 		(gender female)
-		(name "RachelField")
+		(name_ "RachelField")
 		(popularity medium)
 		(rating 3.85))
 
 	([ontology_Class10270] of  Author
 
 		(gender male)
-		(name "HughLofting")
+		(name_ "HughLofting")
 		(popularity medium)
 		(rating 3.98))
 
 	([ontology_Class10271] of  Author
 
 		(gender female)
-		(name "IreneHunt")
+		(name_ "IreneHunt")
 		(popularity medium)
 		(rating 3.69))
 
 	([ontology_Class10272] of  Author
 
 		(gender female)
-		(name "MargueritedeAngeli")
+		(name_ "MargueritedeAngeli")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10273] of  Author
 
 		(gender male)
-		(name "RodmanPhilbrick")
+		(name_ "RodmanPhilbrick")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10274] of  Author
 
 		(gender female)
-		(name "JeanLeeLatham")
+		(name_ "JeanLeeLatham")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10275] of  Author
 
 		(gender female)
-		(name "KarenCushman")
+		(name_ "KarenCushman")
 		(popularity medium)
 		(rating 3.71))
 
 	([ontology_Class10276] of  Author
 
 		(gender female)
-		(name "EstherForbes")
+		(name_ "EstherForbes")
 		(popularity medium)
 		(rating 3.64))
 
 	([ontology_Class10277] of  Author
 
 		(gender female)
-		(name "E.L.Konigsburg")
+		(name_ "E.L.Konigsburg")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10278] of  Author
 
 		(gender male)
-		(name "KarenHesse")
+		(name_ "KarenHesse")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10279] of  Author
 
 		(gender male)
-		(name "ChristopherPaulCurtis")
+		(name_ "ChristopherPaulCurtis")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10280] of  Author
 
 		(gender female)
-		(name "J.K.Rowling")
+		(name_ "J.K.Rowling")
 		(popularity high)
 		(rating 4.45))
 
 	([ontology_Class10281] of  Author
 
 		(gender female)
-		(name "BarbaraKingsolver")
+		(name_ "BarbaraKingsolver")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10282] of  Author
 
 		(gender female)
-		(name "JoanneHarris")
+		(name_ "JoanneHarris")
 		(popularity high)
 		(rating 3.84))
 
 	([ontology_Class10283] of  Author
 
 		(gender female)
-		(name "JaneSmiley")
+		(name_ "JaneSmiley")
 		(popularity high)
 		(rating 3.72))
 
 	([ontology_Class10284] of  Author
 
 		(gender female)
-		(name "AnaCastillo")
+		(name_ "AnaCastillo")
 		(popularity low)
 		(rating 3.82))
 
 	([ontology_Class10285] of  Author
 
 		(gender female)
-		(name "JulietMarillier")
+		(name_ "JulietMarillier")
 		(popularity high)
 		(rating 4.14))
 
 	([ontology_Class10286] of  Author
 
 		(gender male)
-		(name "RichardYates")
+		(name_ "RichardYates")
 		(popularity high)
 		(rating 3.91))
 
 	([ontology_Class10287] of  Author
 
 		(gender female)
-		(name "ToniMorrison")
+		(name_ "ToniMorrison")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10288] of  Author
 
 		(gender female)
-		(name "AmyTan")
+		(name_ "AmyTan")
 		(popularity high)
 		(rating 3.9))
 
 	([ontology_Class10289] of  Author
 
 		(gender female)
-		(name "DorisLessing")
+		(name_ "DorisLessing")
 		(popularity high)
 		(rating 3.65))
 
 	([ontology_Class10290] of  Author
 
 		(gender female)
-		(name "JeanRhys")
+		(name_ "JeanRhys")
 		(popularity medium)
 		(rating 3.64))
 
 	([ontology_Class10291] of  Author
 
 		(gender male)
-		(name "TerryGoodkind")
+		(name_ "TerryGoodkind")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10292] of  Author
 
 		(gender male)
-		(name "StephenKing")
+		(name_ "StephenKing")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10293] of  Author
 
 		(gender female)
-		(name "AnnaLeeWaldo")
+		(name_ "AnnaLeeWaldo")
 		(popularity medium)
 		(rating 4.21))
 
 	([ontology_Class10294] of  Author
 
 		(gender male)
-		(name "RobertJordan")
+		(name_ "RobertJordan")
 		(popularity high)
 		(rating 4.18))
 
 	([ontology_Class10295] of  Author
 
 		(gender female)
-		(name "AnneMichaels")
+		(name_ "AnneMichaels")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10296] of  Author
 
 		(gender female)
-		(name "ColleenMcCullough")
+		(name_ "ColleenMcCullough")
 		(popularity high)
 		(rating 4.17))
 
 	([ontology_Class10297] of  Author
 
 		(gender female)
-		(name "BetteGreene")
+		(name_ "BetteGreene")
 		(popularity medium)
 		(rating 3.66))
 
 	([ontology_Class10298] of  Author
 
 		(gender female)
-		(name "HanNolan")
+		(name_ "HanNolan")
 		(popularity medium)
 		(rating 3.91))
 
 	([ontology_Class10299] of  Author
 
 		(gender female)
-		(name "JohannaReiss")
+		(name_ "JohannaReiss")
 		(popularity medium)
 		(rating 3.85))
 
 	([ontology_Class10300] of  Author
 
 		(gender male)
-		(name "HansFallada")
+		(name_ "HansFallada")
 		(popularity medium)
 		(rating 4.16))
 
 	([ontology_Class10301] of  Author
 
 		(gender male)
-		(name "UrsulaHegi")
+		(name_ "UrsulaHegi")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10302] of  Author
 
 		(gender female)
-		(name "JudithKerr")
+		(name_ "JudithKerr")
 		(popularity medium)
 		(rating 4.12))
 
 	([ontology_Class10303] of  Author
 
 		(gender male)
-		(name "RabindranathTagore")
+		(name_ "RabindranathTagore")
 		(popularity medium)
 		(rating 4.14))
 
 	([ontology_Class10304] of  Author
 
 		(gender male)
-		(name "J.G.Farrell")
+		(name_ "J.G.Farrell")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10305] of  Author
 
 		(gender male)
-		(name "V.S.Naipaul")
+		(name_ "V.S.Naipaul")
 		(popularity medium)
 		(rating 3.7))
 
 	([ontology_Class10306] of  Author
 
 		(gender male)
-		(name "KurtVonnegut")
+		(name_ "KurtVonnegut")
 		(popularity high)
 		(rating 4.06))
 
 	([ontology_Class10307] of  Author
 
 		(gender male)
-		(name "TrumanCapote")
+		(name_ "TrumanCapote")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10308] of  Author
 
 		(gender male)
-		(name "JohnDunning")
+		(name_ "JohnDunning")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10309] of  Author
 
 		(gender male)
-		(name "JohnIrving")
+		(name_ "JohnIrving")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10310] of  Author
 
 		(gender female)
-		(name "JudithMcNaught")
+		(name_ "JudithMcNaught")
 		(popularity high)
 		(rating 4.16))
 
 	([ontology_Class10311] of  Author
 
 		(gender male)
-		(name "JanetEvanovich")
+		(name_ "JanetEvanovich")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10312] of  Author
 
 		(gender male)
-		(name "JonathanLethem")
+		(name_ "JonathanLethem")
 		(popularity high)
 		(rating 3.77))
 
 	([ontology_Class10313] of  Author
 
 		(gender male)
-		(name "ThomasHarris")
+		(name_ "ThomasHarris")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10314] of  Author
 
 		(gender female)
-		(name "JoyceCarolOates")
+		(name_ "JoyceCarolOates")
 		(popularity high)
 		(rating 3.69))
 
 	([ontology_Class10315] of  Author
 
 		(gender male)
-		(name "PatBarker")
+		(name_ "PatBarker")
 		(popularity medium)
 		(rating 3.96))
 
 	([ontology_Class10316] of  Author
 
 		(gender male)
-		(name "PhilipRoth")
+		(name_ "PhilipRoth")
 		(popularity high)
 		(rating 3.81))
 
 	([ontology_Class10317] of  Author
 
 		(gender male)
-		(name "GarthNix")
+		(name_ "GarthNix")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10318] of  Author
 
 		(gender male)
-		(name "HarukiMurakami")
+		(name_ "HarukiMurakami")
 		(popularity high)
 		(rating 3.95))
 
 	([ontology_Class10319] of  Author
 
 		(gender male)
-		(name "ChuckPalahniuk")
+		(name_ "ChuckPalahniuk")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10320] of  Author
 
 		(gender female)
-		(name "LindaHoward")
+		(name_ "LindaHoward")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10321] of  Author
 
 		(gender female)
-		(name "RobinHobb")
+		(name_ "RobinHobb")
 		(popularity high)
 		(rating 4.19))
 
 	([ontology_Class10322] of  Author
 
 		(gender male)
-		(name "AleksandrSolzhenitsyn")
+		(name_ "AleksandrSolzhenitsyn")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10323] of  Author
 
 		(gender male)
-		(name "JohnKnowles")
+		(name_ "JohnKnowles")
 		(popularity high)
 		(rating 3.57))
 
 	([ontology_Class10324] of  Author
 
 		(gender female)
-		(name "Starhawk")
+		(name_ "Starhawk")
 		(popularity medium)
 		(rating 4.12))
 
 	([ontology_Class10325] of  Author
 
 		(gender male)
-		(name "ElizabethChandler")
+		(name_ "ElizabethChandler")
 		(popularity medium)
 		(rating 4.06))
 
 	([ontology_Class10326] of  Author
 
 		(gender female)
-		(name "JeanHegland")
+		(name_ "JeanHegland")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10327] of  Author
 
 		(gender male)
-		(name "LloydC.Douglas")
+		(name_ "LloydC.Douglas")
 		(popularity medium)
 		(rating 4.17))
 
 	([ontology_Class10328] of  Author
 
 		(gender male)
-		(name "CharlesM.Sheldon")
+		(name_ "CharlesM.Sheldon")
 		(popularity medium)
 		(rating 4.16))
 
 	([ontology_Class10329] of  Author
 
 		(gender female)
-		(name "HannahHurnard")
+		(name_ "HannahHurnard")
 		(popularity medium)
 		(rating 4.3))
 
 	([ontology_Class10330] of  Author
 
 		(gender male)
-		(name "JohnBunyan")
+		(name_ "JohnBunyan")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10331] of  Author
 
 		(gender male)
-		(name "ChesterHimes")
+		(name_ "ChesterHimes")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10332] of  Author
 
 		(gender male)
-		(name "ThorntonWilder")
+		(name_ "ThorntonWilder")
 		(popularity medium)
 		(rating 3.74))
 
 	([ontology_Class10333] of  Author
 
 		(gender female)
-		(name "MaryRenault")
+		(name_ "MaryRenault")
 		(popularity medium)
 		(rating 4.06))
 
 	([ontology_Class10334] of  Author
 
 		(gender male)
-		(name "HenrykSienkiewicz")
+		(name_ "HenrykSienkiewicz")
 		(popularity medium)
 		(rating 3.83))
 
 	([ontology_Class10335] of  Author
 
 		(gender female)
-		(name "EllisPeters")
+		(name_ "EllisPeters")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10336] of  Author
 
 		(gender male)
-		(name "RobertCarter")
+		(name_ "RobertCarter")
 		(popularity low)
 		(rating 3.69))
 
 	([ontology_Class10337] of  Author
 
 		(gender male)
-		(name "CharlesBernardNordhoff")
+		(name_ "CharlesBernardNordhoff")
 		(popularity medium)
 		(rating 4.02))
 
 	([ontology_Class10338] of  Author
 
 		(gender female)
-		(name "LaurieR.King")
+		(name_ "LaurieR.King")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10339] of  Author
 
 		(gender female)
-		(name "EllenEmersonWhite")
+		(name_ "EllenEmersonWhite")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10340] of  Author
 
 		(gender male)
-		(name "EricAmbler")
+		(name_ "EricAmbler")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10341] of  Author
 
 		(gender male)
-		(name "TonyHillerman")
+		(name_ "TonyHillerman")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10342] of  Author
 
 		(gender male)
-		(name "GrahamGreene")
+		(name_ "GrahamGreene")
 		(popularity high)
 		(rating 3.89))
 
 	([ontology_Class10343] of  Author
 
 		(gender male)
-		(name "EdgarAllanPoe")
+		(name_ "EdgarAllanPoe")
 		(popularity high)
 		(rating 4.17))
 
 	([ontology_Class10344] of  Author
 
 		(gender male)
-		(name "RexStout")
+		(name_ "RexStout")
 		(popularity high)
 		(rating 4.09))
 
 	([ontology_Class10345] of  Author
 
 		(gender male)
-		(name "CalebCarr")
+		(name_ "CalebCarr")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10346] of  Author
 
 		(gender male)
-		(name "JefferyDeaver")
+		(name_ "JefferyDeaver")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10347] of  Author
 
 		(gender female)
-		(name "AnnRinaldi")
+		(name_ "AnnRinaldi")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10348] of  Author
 
 		(gender female)
-		(name "JenniferCrusie")
+		(name_ "JenniferCrusie")
 		(popularity high)
 		(rating 3.8))
 
 	([ontology_Class10349] of  Author
 
 		(gender male)
-		(name "DeborahMcClatchey")
+		(name_ "DeborahMcClatchey")
 		(popularity low)
 		(rating 4.44))
 
 	([ontology_Class10350] of  Author
 
 		(gender male)
-		(name "NikosKazantzakis")
+		(name_ "NikosKazantzakis")
 		(popularity medium)
 		(rating 4.12))
 
 	([ontology_Class10351] of  Author
 
 		(gender female)
-		(name "TracyBarrett")
+		(name_ "TracyBarrett")
 		(popularity low)
 		(rating 3.62))
 
 	([ontology_Class10352] of  Author
 
 		(gender male)
-		(name "JamesLincolnCollier")
+		(name_ "JamesLincolnCollier")
 		(popularity medium)
 		(rating 3.44))
 
 	([ontology_Class10353] of  Author
 
 		(gender female)
-		(name "EvaIbbotson")
+		(name_ "EvaIbbotson")
 		(popularity high)
 		(rating 3.93))
 
 	([ontology_Class10354] of  Author
 
 		(gender female)
-		(name "KathrynLasky")
+		(name_ "KathrynLasky")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10355] of  Author
 
 		(gender female)
-		(name "EloiseJarvisMcGraw")
+		(name_ "EloiseJarvisMcGraw")
 		(popularity medium)
 		(rating 3.99))
 
 	([ontology_Class10356] of  Author
 
 		(gender female)
-		(name "SarahShankman")
+		(name_ "SarahShankman")
 		(popularity low)
 		(rating 3.62))
 
 	([ontology_Class10357] of  Author
 
 		(gender female)
-		(name "MinetteWalters")
+		(name_ "MinetteWalters")
 		(popularity medium)
 		(rating 3.77))
 
 	([ontology_Class10358] of  Author
 
 		(gender female)
-		(name "ElizabethPeters")
+		(name_ "ElizabethPeters")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10359] of  Author
 
 		(gender female)
-		(name "VictoriaHolt")
+		(name_ "VictoriaHolt")
 		(popularity medium)
 		(rating 3.83))
 
 	([ontology_Class10360] of  Author
 
 		(gender male)
-		(name "RichardConnell")
+		(name_ "RichardConnell")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10361] of  Author
 
 		(gender male)
-		(name "JohnWilliamPolidori")
+		(name_ "JohnWilliamPolidori")
 		(popularity low)
 		(rating 3.54))
 
 	([ontology_Class10362] of  Author
 
 		(gender male)
-		(name "PatrickMcGrath")
+		(name_ "PatrickMcGrath")
 		(popularity medium)
 		(rating 3.69))
 
 	([ontology_Class10363] of  Author
 
 		(gender male)
-		(name "JamesHogg")
+		(name_ "JamesHogg")
 		(popularity low)
 		(rating 3.7))
 
 	([ontology_Class10364] of  Author
 
 		(gender female)
-		(name "MaryElizabethBraddon")
+		(name_ "MaryElizabethBraddon")
 		(popularity medium)
 		(rating 3.75))
 
 	([ontology_Class10365] of  Author
 
 		(gender male)
-		(name "M.R.James")
+		(name_ "M.R.James")
 		(popularity medium)
 		(rating 4.02))
 
 	([ontology_Class10366] of  Author
 
 		(gender male)
-		(name "FedericoMoccia")
+		(name_ "FedericoMoccia")
 		(popularity medium)
 		(rating 3.36))
 
 	([ontology_Class10367] of  Author
 
 		(gender female)
-		(name "BananaYoshimoto")
+		(name_ "BananaYoshimoto")
 		(popularity medium)
 		(rating 3.7))
 
 	([ontology_Class10368] of  Author
 
 		(gender male)
-		(name "RampoEdogawa")
+		(name_ "RampoEdogawa")
 		(popularity low)
 		(rating 3.94))
 
 	([ontology_Class10369] of  Author
 
 		(gender male)
-		(name "GailTsukiyama")
+		(name_ "GailTsukiyama")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10370] of  Author
 
 		(gender male)
-		(name "EijiYoshikawa")
+		(name_ "EijiYoshikawa")
 		(popularity medium)
 		(rating 4.36))
 
 	([ontology_Class10371] of  Author
 
 		(gender male)
-		(name "RobinSchone")
+		(name_ "RobinSchone")
 		(popularity medium)
 		(rating 3.83))
 
 	([ontology_Class10372] of  Author
 
 		(gender male)
-		(name "JamesBaldwin")
+		(name_ "JamesBaldwin")
 		(popularity high)
 		(rating 4.26))
 
 	([ontology_Class10373] of  Author
 
 		(gender female)
-		(name "MargueriteYourcenar")
+		(name_ "MargueriteYourcenar")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10374] of  Author
 
 		(gender male)
-		(name "EvelynWaugh")
+		(name_ "EvelynWaugh")
 		(popularity high)
 		(rating 3.93))
 
 	([ontology_Class10375] of  Author
 
 		(gender female)
-		(name "SharynMcCrumb")
+		(name_ "SharynMcCrumb")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10376] of  Author
 
 		(gender male)
-		(name "AlanGarner")
+		(name_ "AlanGarner")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10377] of  Author
 
 		(gender male)
-		(name "BoothTarkington")
+		(name_ "BoothTarkington")
 		(popularity medium)
 		(rating 3.75))
 
 	([ontology_Class10378] of  Author
 
 		(gender male)
-		(name "JohnMyersMyers")
+		(name_ "JohnMyersMyers")
 		(popularity low)
 		(rating 3.82))
 
 	([ontology_Class10379] of  Author
 
 		(gender male)
-		(name "KurbanSaid")
+		(name_ "KurbanSaid")
 		(popularity low)
 		(rating 3.91))
 
 	([ontology_Class10380] of  Author
 
 		(gender female)
-		(name "ElizabethvonArnim")
+		(name_ "ElizabethvonArnim")
 		(popularity medium)
 		(rating 3.91))
 
 	([ontology_Class10381] of  Author
 
 		(gender male)
-		(name "StevenBrust")
+		(name_ "StevenBrust")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10382] of  Author
 
 		(gender male)
-		(name "AustinTappanWright")
+		(name_ "AustinTappanWright")
 		(popularity low)
 		(rating 4.31))
 
 	([ontology_Class10383] of  Author
 
 		(gender male)
-		(name "LutherBlissett")
+		(name_ "LutherBlissett")
 		(popularity low)
 		(rating 4.14))
 
 	([ontology_Class10384] of  Author
 
 		(gender female)
-		(name "JoanLindsay")
+		(name_ "JoanLindsay")
 		(popularity medium)
 		(rating 3.71))
 
 	([ontology_Class10385] of  Author
 
 		(gender male)
-		(name "RafaelSabatini")
+		(name_ "RafaelSabatini")
 		(popularity medium)
 		(rating 4.08))
 
 	([ontology_Class10386] of  Author
 
 		(gender male)
-		(name "Thucydides")
+		(name_ "Thucydides")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10387] of  Author
 
 		(gender female)
-		(name "LoriWick")
+		(name_ "LoriWick")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10388] of  Author
 
 		(gender female)
-		(name "JanKaron")
+		(name_ "JanKaron")
 		(popularity high)
 		(rating 4.21))
 
 	([ontology_Class10389] of  Author
 
 		(gender female)
-		(name "CatherineMarshall")
+		(name_ "CatherineMarshall")
 		(popularity medium)
 		(rating 4.21))
 
 	([ontology_Class10390] of  Author
 
 		(gender female)
-		(name "EudoraWelty")
+		(name_ "EudoraWelty")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10391] of  Author
 
 		(gender male)
-		(name "ErskineCaldwell")
+		(name_ "ErskineCaldwell")
 		(popularity medium)
 		(rating 3.72))
 
 	([ontology_Class10392] of  Author
 
 		(gender female)
-		(name "KayeGibbons")
+		(name_ "KayeGibbons")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10393] of  Author
 
 		(gender male)
-		(name "WalkerPercy")
+		(name_ "WalkerPercy")
 		(popularity high)
 		(rating 3.87))
 
 	([ontology_Class10394] of  Author
 
 		(gender male)
-		(name "ErnestJ.Gaines")
+		(name_ "ErnestJ.Gaines")
 		(popularity medium)
 		(rating 3.99))
 
 	([ontology_Class10395] of  Author
 
 		(gender male)
-		(name "ThomasWolfe")
+		(name_ "ThomasWolfe")
 		(popularity medium)
 		(rating 3.97))
 
 	([ontology_Class10396] of  Author
 
 		(gender male)
-		(name "RobertPennWarren")
+		(name_ "RobertPennWarren")
 		(popularity medium)
 		(rating 4.08))
 
 	([ontology_Class10397] of  Author
 
 		(gender female)
-		(name "MaryStewart")
+		(name_ "MaryStewart")
 		(popularity high)
 		(rating 4.05))
 
 	([ontology_Class10398] of  Author
 
 		(gender male)
-		(name "WallyLamb")
+		(name_ "WallyLamb")
 		(popularity high)
 		(rating 3.97))
 
 	([ontology_Class10399] of  Author
 
 		(gender female)
-		(name "RobinMcKinley")
+		(name_ "RobinMcKinley")
 		(popularity high)
 		(rating 3.97))
 
 	([ontology_Class10400] of  Author
 
 		(gender male)
-		(name "KenFollett")
+		(name_ "KenFollett")
 		(popularity high)
 		(rating 4.19))
 
 	([ontology_Class10401] of  Author
 
 		(gender male)
-		(name "GeorgeR.R.Martin")
+		(name_ "GeorgeR.R.Martin")
 		(popularity high)
 		(rating 4.37))
 
 	([ontology_Class10402] of  Author
 
 		(gender female)
-		(name "AnneRice")
+		(name_ "AnneRice")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10403] of  Author
 
 		(gender female)
-		(name "BrigidLowry")
+		(name_ "BrigidLowry")
 		(popularity low)
 		(rating 3.73))
 
 	([ontology_Class10404] of  Author
 
 		(gender female)
-		(name "TriciaLynne")
+		(name_ "TriciaLynne")
 		(popularity low)
 		(rating 4.38))
 
 	([ontology_Class10405] of  Author
 
 		(gender female)
-		(name "JohannaLindsey")
+		(name_ "JohannaLindsey")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10406] of  Author
 
 		(gender female)
-		(name "DeborahSmith")
+		(name_ "DeborahSmith")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10407] of  Author
 
 		(gender female)
-		(name "JuliaQuinn")
+		(name_ "JuliaQuinn")
 		(popularity high)
 		(rating 3.98))
 
 	([ontology_Class10408] of  Author
 
 		(gender female)
-		(name "MarianKeyes")
+		(name_ "MarianKeyes")
 		(popularity high)
 		(rating 3.77))
 
 	([ontology_Class10409] of  Author
 
 		(gender male)
-		(name "SalmanRushdie")
+		(name_ "SalmanRushdie")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10410] of  Author
 
 		(gender male)
-		(name "CatherineAtkins")
+		(name_ "CatherineAtkins")
 		(popularity low)
 		(rating 3.71))
 
 	([ontology_Class10411] of  Author
 
 		(gender male)
-		(name "PaulScott")
+		(name_ "PaulScott")
 		(popularity medium)
 		(rating 4.16))
 
 	([ontology_Class10412] of  Author
 
 		(gender female)
-		(name "JacquelynMitchard")
+		(name_ "JacquelynMitchard")
 		(popularity high)
 		(rating 3.77))
 
 	([ontology_Class10413] of  Author
 
 		(gender male)
-		(name "RudyardKipling")
+		(name_ "RudyardKipling")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10414] of  Author
 
 		(gender male)
-		(name "H.P.Lovecraft")
+		(name_ "H.P.Lovecraft")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10415] of  Author
 
 		(gender male)
-		(name "E.M.Forster")
+		(name_ "E.M.Forster")
 		(popularity high)
 		(rating 3.87))
 
 	([ontology_Class10416] of  Author
 
 		(gender male)
-		(name "TeresaDenys")
+		(name_ "TeresaDenys")
 		(popularity low)
 		(rating 3.77))
 
 	([ontology_Class10417] of  Author
 
 		(gender female)
-		(name "JulieGarwood")
+		(name_ "JulieGarwood")
 		(popularity high)
 		(rating 4.11))
 
 	([ontology_Class10418] of  Author
 
 		(gender male)
-		(name "StanleyMiddleton")
+		(name_ "StanleyMiddleton")
 		(popularity low)
 		(rating 3.36))
 
 	([ontology_Class10419] of  Author
 
 		(gender male)
-		(name "DavidStorey")
+		(name_ "DavidStorey")
 		(popularity low)
 		(rating 3.48))
 
 	([ontology_Class10420] of  Author
 
 		(gender female)
-		(name "BerniceRubens")
+		(name_ "BerniceRubens")
 		(popularity low)
 		(rating 3.81))
 
 	([ontology_Class10421] of  Author
 
 		(gender male)
-		(name "JohnBerger")
+		(name_ "JohnBerger")
 		(popularity high)
 		(rating 3.79))
 
 	([ontology_Class10422] of  Author
 
 		(gender male)
-		(name "JamesKelman")
+		(name_ "JamesKelman")
 		(popularity low)
 		(rating 3.61))
 
 	([ontology_Class10423] of  Author
 
 		(gender male)
-		(name "BarryUnsworth")
+		(name_ "BarryUnsworth")
 		(popularity medium)
 		(rating 3.82))
 
 	([ontology_Class10424] of  Author
 
 		(gender female)
-		(name "BarbaraMichaels")
+		(name_ "BarbaraMichaels")
 		(popularity medium)
 		(rating 3.79))
 
 	([ontology_Class10425] of  Author
 
 		(gender female)
-		(name "LoisDuncan")
+		(name_ "LoisDuncan")
 		(popularity medium)
 		(rating 3.72))
 
 	([ontology_Class10426] of  Author
 
 		(gender male)
-		(name "RichardPeck")
+		(name_ "RichardPeck")
 		(popularity medium)
 		(rating 3.92))
 
 	([ontology_Class10427] of  Author
 
 		(gender male)
-		(name "GiovanniBoccaccio")
+		(name_ "GiovanniBoccaccio")
 		(popularity medium)
 		(rating 3.85))
 
 	([ontology_Class10428] of  Author
 
 		(gender male)
-		(name "ThomasMalory")
+		(name_ "ThomasMalory")
 		(popularity medium)
 		(rating 3.98))
 
 	([ontology_Class10429] of  Author
 
 		(gender male)
-		(name "DavidEddings")
+		(name_ "DavidEddings")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10430] of  Author
 
 		(gender male)
-		(name "FrankDeFelitta")
+		(name_ "FrankDeFelitta")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10431] of  Author
 
 		(gender female)
-		(name "EdithWharton")
+		(name_ "EdithWharton")
 		(popularity high)
 		(rating 3.77))
 
 	([ontology_Class10432] of  Author
 
 		(gender male)
-		(name "RichardMatheson")
+		(name_ "RichardMatheson")
 		(popularity high)
 		(rating 3.97))
 
 	([ontology_Class10433] of  Author
 
 		(gender male)
-		(name "VictorHugo")
+		(name_ "VictorHugo")
 		(popularity high)
 		(rating 4.12))
 
 	([ontology_Class10434] of  Author
 
 		(gender male)
-		(name "OscarWilde")
+		(name_ "OscarWilde")
 		(popularity high)
 		(rating 4.09))
 
 	([ontology_Class10435] of  Author
 
 		(gender female)
-		(name "P.D.James")
+		(name_ "P.D.James")
 		(popularity high)
 		(rating 3.72))
 
 	([ontology_Class10436] of  Author
 
 		(gender male)
-		(name "RobinCook")
+		(name_ "RobinCook")
 		(popularity high)
 		(rating 3.79))
 
 	([ontology_Class10437] of  Author
 
 		(gender male)
-		(name "TessaBailey")
+		(name_ "TessaBailey")
 		(popularity high)
 		(rating 3.98))
 
 	([ontology_Class10438] of  Author
 
 		(gender female)
-		(name "PennyReid")
+		(name_ "PennyReid")
 		(popularity high)
 		(rating 4.12))
 
 	([ontology_Class10439] of  Author
 
 		(gender female)
-		(name "HelenSmith")
+		(name_ "HelenSmith")
 		(popularity low)
 		(rating 2.97))
 
 	([ontology_Class10440] of  Author
 
 		(gender female)
-		(name "VictoriaLynne")
+		(name_ "VictoriaLynne")
 		(popularity low)
 		(rating 3.66))
 
 	([ontology_Class10441] of  Author
 
 		(gender female)
-		(name "KarenRanney")
+		(name_ "KarenRanney")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10442] of  Author
 
 		(gender female)
-		(name "TeresaMedeiros")
+		(name_ "TeresaMedeiros")
 		(popularity medium)
 		(rating 3.88))
 
 	([ontology_Class10443] of  Author
 
 		(gender female)
-		(name "MaryBalogh")
+		(name_ "MaryBalogh")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10444] of  Author
 
 		(gender female)
-		(name "HannahHowell")
+		(name_ "HannahHowell")
 		(popularity high)
 		(rating 4.13))
 
 	([ontology_Class10445] of  Author
 
 		(gender female)
-		(name "DonnaJoNapoli")
+		(name_ "DonnaJoNapoli")
 		(popularity medium)
 		(rating 3.67))
 
 	([ontology_Class10446] of  Author
 
 		(gender female)
-		(name "JudithIvory")
+		(name_ "JudithIvory")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10447] of  Author
 
 		(gender female)
-		(name "LorraineHeath")
+		(name_ "LorraineHeath")
 		(popularity high)
 		(rating 3.93))
 
 	([ontology_Class10448] of  Author
 
 		(gender male)
-		(name "RichardLaymon")
+		(name_ "RichardLaymon")
 		(popularity high)
 		(rating 3.8))
 
 	([ontology_Class10449] of  Author
 
 		(gender male)
-		(name "RichardBachman")
+		(name_ "RichardBachman")
 		(popularity high)
 		(rating 3.84))
 
 	([ontology_Class10450] of  Author
 
 		(gender female)
-		(name "KarenRobards")
+		(name_ "KarenRobards")
 		(popularity high)
 		(rating 3.85))
 
 	([ontology_Class10451] of  Author
 
 		(gender female)
-		(name "JacquieGordon")
+		(name_ "JacquieGordon")
 		(popularity low)
 		(rating 4.14))
 
 	([ontology_Class10452] of  Author
 
 		(gender male)
-		(name "ItaloSvevo")
+		(name_ "ItaloSvevo")
 		(popularity medium)
 		(rating 3.75))
 
 	([ontology_Class10453] of  Author
 
 		(gender male)
-		(name "SamuelBeckett")
+		(name_ "SamuelBeckett")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10454] of  Author
 
 		(gender male)
-		(name "WilliHeinrich")
+		(name_ "WilliHeinrich")
 		(popularity low)
 		(rating 4.1))
 
 	([ontology_Class10455] of  Author
 
 		(gender male)
-		(name "AlistairMacLean")
+		(name_ "AlistairMacLean")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10456] of  Author
 
 		(gender male)
-		(name "JamesJones")
+		(name_ "JamesJones")
 		(popularity medium)
 		(rating 4.03))
 
 	([ontology_Class10457] of  Author
 
 		(gender male)
-		(name "IrwinShaw")
+		(name_ "IrwinShaw")
 		(popularity medium)
 		(rating 4.09))
 
 	([ontology_Class10458] of  Author
 
 		(gender male)
-		(name "EdwardL.Beach")
+		(name_ "EdwardL.Beach")
 		(popularity low)
 		(rating 4.16))
 
 	([ontology_Class10459] of  Author
 
 		(gender male)
-		(name "NicholasMonsarrat")
+		(name_ "NicholasMonsarrat")
 		(popularity low)
 		(rating 4.12))
 
 	([ontology_Class10460] of  Author
 
 		(gender male)
-		(name "RobertHarris")
+		(name_ "RobertHarris")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10461] of  Author
 
 		(gender male)
-		(name "JackHiggins")
+		(name_ "JackHiggins")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10462] of  Author
 
 		(gender female)
-		(name "LilianJacksonBraun")
+		(name_ "LilianJacksonBraun")
 		(popularity high)
 		(rating 3.86))
 
 	([ontology_Class10463] of  Author
 
 		(gender female)
-		(name "SusanWittigAlbert")
+		(name_ "SusanWittigAlbert")
 		(popularity medium)
 		(rating 3.91))
 
 	([ontology_Class10464] of  Author
 
 		(gender male)
-		(name "JoDereske")
+		(name_ "JoDereske")
 		(popularity low)
 		(rating 3.82))
 
 	([ontology_Class10465] of  Author
 
 		(gender female)
-		(name "MonicaFerris")
+		(name_ "MonicaFerris")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10466] of  Author
 
 		(gender male)
-		(name "EdmundCrispin")
+		(name_ "EdmundCrispin")
 		(popularity medium)
 		(rating 3.8))
 
 	([ontology_Class10467] of  Author
 
 		(gender female)
-		(name "G.A.McKevett")
+		(name_ "G.A.McKevett")
 		(popularity medium)
 		(rating 4.01))
 
 	([ontology_Class10468] of  Author
 
 		(gender male)
-		(name "JeanneM.Dams")
+		(name_ "JeanneM.Dams")
 		(popularity low)
 		(rating 3.69))
 
 	([ontology_Class10469] of  Author
 
 		(gender female)
-		(name "CarolaDunn")
+		(name_ "CarolaDunn")
 		(popularity medium)
 		(rating 3.74))
 
 	([ontology_Class10470] of  Author
 
 		(gender male)
-		(name "LawrenceBlock")
+		(name_ "LawrenceBlock")
 		(popularity high)
 		(rating 3.87))
 
 	([ontology_Class10471] of  Author
 
 		(gender female)
-		(name "VictoriaThompson")
+		(name_ "VictoriaThompson")
 		(popularity medium)
 		(rating 4.01))
 
 	([ontology_Class10472] of  Author
 
 		(gender male)
-		(name "LordDunsany")
+		(name_ "LordDunsany")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10473] of  Author
 
 		(gender male)
-		(name "RobinPaige")
+		(name_ "RobinPaige")
 		(popularity medium)
 		(rating 3.83))
 
 	([ontology_Class10474] of  Author
 
 		(gender female)
-		(name "CarolynHaines")
+		(name_ "CarolynHaines")
 		(popularity medium)
 		(rating 3.96))
 
 	([ontology_Class10475] of  Author
 
 		(gender female)
-		(name "EarleneFowler")
+		(name_ "EarleneFowler")
 		(popularity medium)
 		(rating 3.98))
 
 	([ontology_Class10476] of  Author
 
 		(gender male)
-		(name "HarlanCoben")
+		(name_ "HarlanCoben")
 		(popularity high)
 		(rating 3.99))
 
 	([ontology_Class10477] of  Author
 
 		(gender male)
-		(name "AnneGeorge")
+		(name_ "AnneGeorge")
 		(popularity medium)
 		(rating 4.21))
 
 	([ontology_Class10478] of  Author
 
 		(gender female)
-		(name "NancyAtherton")
+		(name_ "NancyAtherton")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10479] of  Author
 
 		(gender female)
-		(name "DonnaAndrews")
+		(name_ "DonnaAndrews")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10480] of  Author
 
 		(gender female)
-		(name "DorothyGilman")
+		(name_ "DorothyGilman")
 		(popularity medium)
 		(rating 4.07))
 
 	([ontology_Class10481] of  Author
 
 		(gender male)
-		(name "AlanPaton")
+		(name_ "AlanPaton")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10482] of  Author
 
 		(gender female)
-		(name "MargaretLandon")
+		(name_ "MargaretLandon")
 		(popularity low)
 		(rating 3.76))
 
 	([ontology_Class10483] of  Author
 
 		(gender male)
-		(name "CharlesBukowski")
+		(name_ "CharlesBukowski")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10484] of  Author
 
 		(gender female)
-		(name "NahokoUehashi")
+		(name_ "NahokoUehashi")
 		(popularity low)
 		(rating 4.1))
 
 	([ontology_Class10485] of  Author
 
 		(gender male)
-		(name "Sethu")
+		(name_ "Sethu")
 		(popularity low)
 		(rating 3.61))
 
 	([ontology_Class10486] of  Author
 
 		(gender female)
-		(name "ElizabethKerner")
+		(name_ "ElizabethKerner")
 		(popularity low)
 		(rating 4.0))
 
 	([ontology_Class10487] of  Author
 
 		(gender male)
-		(name "O.ChanduMenon")
+		(name_ "O.ChanduMenon")
 		(popularity low)
 		(rating 3.81))
 
 	([ontology_Class10488] of  Author
 
 		(gender male)
-		(name "PunathilKunjabdulla")
+		(name_ "PunathilKunjabdulla")
 		(popularity low)
 		(rating 3.63))
 
 	([ontology_Class10489] of  Author
 
 		(gender female)
-		(name "LalithambikaAntharjanam")
+		(name_ "LalithambikaAntharjanam")
 		(popularity low)
 		(rating 4.05))
 
 	([ontology_Class10490] of  Author
 
 		(gender male)
-		(name "BruceCoville")
+		(name_ "BruceCoville")
 		(popularity high)
 		(rating 3.96))
 
 	([ontology_Class10491] of  Author
 
 		(gender female)
-		(name "AndreNorton")
+		(name_ "AndreNorton")
 		(popularity high)
 		(rating 3.87))
 
 	([ontology_Class10492] of  Author
 
 		(gender female)
-		(name "FuyumiOno")
+		(name_ "FuyumiOno")
 		(popularity medium)
 		(rating 4.26))
 
 	([ontology_Class10493] of  Author
 
 		(gender female)
-		(name "TananariveDue")
+		(name_ "TananariveDue")
 		(popularity medium)
 		(rating 3.96))
 
 	([ontology_Class10494] of  Author
 
 		(gender male)
-		(name "TomClancy")
+		(name_ "TomClancy")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10495] of  Author
 
 		(gender male)
-		(name "BreenaClarke")
+		(name_ "BreenaClarke")
 		(popularity medium)
 		(rating 3.48))
 
 	([ontology_Class10496] of  Author
 
 		(gender female)
-		(name "MelindaHaynes")
+		(name_ "MelindaHaynes")
 		(popularity medium)
 		(rating 3.67))
 
 	([ontology_Class10497] of  Author
 
 		(gender female)
-		(name "MaryMcGarryMorris")
+		(name_ "MaryMcGarryMorris")
 		(popularity medium)
 		(rating 3.67))
 
 	([ontology_Class10498] of  Author
 
 		(gender female)
-		(name "A.ManetteAnsay")
+		(name_ "A.ManetteAnsay")
 		(popularity medium)
 		(rating 3.39))
 
 	([ontology_Class10499] of  Author
 
 		(gender male)
-		(name "BretLott")
+		(name_ "BretLott")
 		(popularity medium)
 		(rating 3.64))
 
 	([ontology_Class10500] of  Author
 
 		(gender female)
-		(name "TawniO'Dell")
+		(name_ "TawniO'Dell")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10501] of  Author
 
 		(gender female)
-		(name "EdwidgeDanticat")
+		(name_ "EdwidgeDanticat")
 		(popularity medium)
 		(rating 3.92))
 
 	([ontology_Class10502] of  Author
 
 		(gender female)
-		(name "SueMiller")
+		(name_ "SueMiller")
 		(popularity high)
 		(rating 3.6))
 
 	([ontology_Class10503] of  Author
 
 		(gender female)
-		(name "JaneHamilton")
+		(name_ "JaneHamilton")
 		(popularity high)
 		(rating 3.77))
 
 	([ontology_Class10504] of  Author
 
 		(gender male)
-		(name "RobertMorgan")
+		(name_ "RobertMorgan")
 		(popularity medium)
 		(rating 3.73))
 
 	([ontology_Class10505] of  Author
 
 		(gender female)
-		(name "Ann-MarieMacDonald")
+		(name_ "Ann-MarieMacDonald")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10506] of  Author
 
 		(gender female)
-		(name "SuzanneBrockmann")
+		(name_ "SuzanneBrockmann")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10507] of  Author
 
 		(gender male)
-		(name "CliveCussler")
+		(name_ "CliveCussler")
 		(popularity high)
 		(rating 3.96))
 
 	([ontology_Class10508] of  Author
 
 		(gender female)
-		(name "PenelopeWilliamson")
+		(name_ "PenelopeWilliamson")
 		(popularity low)
 		(rating 3.95))
 
 	([ontology_Class10509] of  Author
 
 		(gender male)
-		(name "FritzLeiber")
+		(name_ "FritzLeiber")
 		(popularity medium)
 		(rating 3.96))
 
 	([ontology_Class10510] of  Author
 
 		(gender male)
-		(name "BobWoodward")
+		(name_ "BobWoodward")
 		(popularity high)
 		(rating 3.97))
 
 	([ontology_Class10511] of  Author
 
 		(gender male)
-		(name "SeanStewart")
+		(name_ "SeanStewart")
 		(popularity medium)
 		(rating 3.73))
 
 	([ontology_Class10512] of  Author
 
 		(gender male)
-		(name "HopeMirrlees")
+		(name_ "HopeMirrlees")
 		(popularity low)
 		(rating 3.87))
 
 	([ontology_Class10513] of  Author
 
 		(gender female)
-		(name "AnneGolon")
+		(name_ "AnneGolon")
 		(popularity medium)
 		(rating 4.17))
 
 	([ontology_Class10514] of  Author
 
 		(gender female)
-		(name "CatherineDrinkerBowen")
+		(name_ "CatherineDrinkerBowen")
 		(popularity low)
 		(rating 4.02))
 
 	([ontology_Class10515] of  Author
 
 		(gender female)
-		(name "MaggieFurey")
+		(name_ "MaggieFurey")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10516] of  Author
 
 		(gender male)
-		(name "MelanieRawn")
+		(name_ "MelanieRawn")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10517] of  Author
 
 		(gender female)
-		(name "PaulaVolsky")
+		(name_ "PaulaVolsky")
 		(popularity low)
 		(rating 3.83))
 
 	([ontology_Class10518] of  Author
 
 		(gender female)
-		(name "MargaretPetersonHaddix")
+		(name_ "MargaretPetersonHaddix")
 		(popularity high)
 		(rating 3.98))
 
 	([ontology_Class10519] of  Author
 
 		(gender male)
-		(name "EdgarRiceBurroughs")
+		(name_ "EdgarRiceBurroughs")
 		(popularity high)
 		(rating 3.83))
 
 	([ontology_Class10520] of  Author
 
 		(gender male)
-		(name "RobertCormier")
+		(name_ "RobertCormier")
 		(popularity medium)
 		(rating 3.59))
 
 	([ontology_Class10521] of  Author
 
 		(gender male)
-		(name "PeterRobinson")
+		(name_ "PeterRobinson")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10522] of  Author
 
 		(gender male)
-		(name "LauraLippman")
+		(name_ "LauraLippman")
 		(popularity high)
 		(rating 3.54))
 
 	([ontology_Class10523] of  Author
 
 		(gender male)
-		(name "GregIles")
+		(name_ "GregIles")
 		(popularity high)
 		(rating 4.1))
 
 	([ontology_Class10524] of  Author
 
 		(gender female)
-		(name "SaraParetsky")
+		(name_ "SaraParetsky")
 		(popularity high)
 		(rating 3.93))
 
 	([ontology_Class10525] of  Author
 
 		(gender male)
-		(name "CarolO'Connell")
+		(name_ "CarolO'Connell")
 		(popularity medium)
 		(rating 3.99))
 
 	([ontology_Class10526] of  Author
 
 		(gender male)
-		(name "JohnD.MacDonald")
+		(name_ "JohnD.MacDonald")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10527] of  Author
 
 		(gender male)
-		(name "RobertB.Parker")
+		(name_ "RobertB.Parker")
 		(popularity high)
 		(rating 3.93))
 
 	([ontology_Class10528] of  Author
 
 		(gender female)
-		(name "DonnaLeon")
+		(name_ "DonnaLeon")
 		(popularity high)
 		(rating 3.86))
 
 	([ontology_Class10529] of  Author
 
 		(gender male)
-		(name "GoreVidal")
+		(name_ "GoreVidal")
 		(popularity medium)
 		(rating 3.91))
 
 	([ontology_Class10530] of  Author
 
 		(gender male)
-		(name "WilburSmith")
+		(name_ "WilburSmith")
 		(popularity high)
 		(rating 4.04))
 
 	([ontology_Class10531] of  Author
 
 		(gender male)
-		(name "GeorgeMacDonaldFraser")
+		(name_ "GeorgeMacDonaldFraser")
 		(popularity medium)
 		(rating 4.14))
 
 	([ontology_Class10532] of  Author
 
 		(gender female)
-		(name "TanyaHuff")
+		(name_ "TanyaHuff")
 		(popularity high)
 		(rating 3.87))
 
 	([ontology_Class10533] of  Author
 
 		(gender male)
-		(name "MikhailSholokhov")
+		(name_ "MikhailSholokhov")
 		(popularity medium)
 		(rating 4.06))
 
 	([ontology_Class10534] of  Author
 
 		(gender male)
-		(name "IvanGoncharov")
+		(name_ "IvanGoncharov")
 		(popularity medium)
 		(rating 4.03))
 
 	([ontology_Class10535] of  Author
 
 		(gender female)
-		(name "EdithHamilton")
+		(name_ "EdithHamilton")
 		(popularity medium)
 		(rating 3.99))
 
 	([ontology_Class10536] of  Author
 
 		(gender male)
-		(name "WilliamGaddis")
+		(name_ "WilliamGaddis")
 		(popularity medium)
 		(rating 4.08))
 
 	([ontology_Class10537] of  Author
 
 		(gender male)
-		(name "MalcolmLowry")
+		(name_ "MalcolmLowry")
 		(popularity medium)
 		(rating 3.8))
 
 	([ontology_Class10538] of  Author
 
 		(gender male)
-		(name "HenryMiller")
+		(name_ "HenryMiller")
 		(popularity high)
 		(rating 3.8))
 
 	([ontology_Class10539] of  Author
 
 		(gender female)
-		(name "KatherineMansfield")
+		(name_ "KatherineMansfield")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10540] of  Author
 
 		(gender male)
-		(name "WilliamTrevor")
+		(name_ "WilliamTrevor")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10541] of  Author
 
 		(gender male)
-		(name "AlanFurst")
+		(name_ "AlanFurst")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10542] of  Author
 
 		(gender male)
-		(name "O.Henry")
+		(name_ "O.Henry")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10543] of  Author
 
 		(gender male)
-		(name "DenisJohnson")
+		(name_ "DenisJohnson")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10544] of  Author
 
 		(gender male)
-		(name "SherwoodAnderson")
+		(name_ "SherwoodAnderson")
 		(popularity medium)
 		(rating 3.84))
 
 	([ontology_Class10545] of  Author
 
 		(gender male)
-		(name "JohnCheever")
+		(name_ "JohnCheever")
 		(popularity medium)
 		(rating 3.97))
 
 	([ontology_Class10546] of  Author
 
 		(gender female)
-		(name "Ingrid'Aulaire")
+		(name_ "Ingrid'Aulaire")
 		(popularity medium)
 		(rating 4.32))
 
 	([ontology_Class10547] of  Author
 
 		(gender female)
-		(name "ZeldaFitzgerald")
+		(name_ "ZeldaFitzgerald")
 		(popularity low)
 		(rating 3.78))
 
 	([ontology_Class10548] of  Author
 
 		(gender female)
-		(name "KathleenMorgan")
+		(name_ "KathleenMorgan")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10549] of  Author
 
 		(gender male)
-		(name "JeffreyEugenides")
+		(name_ "JeffreyEugenides")
 		(popularity high)
 		(rating 3.97))
 
 	([ontology_Class10550] of  Author
 
 		(gender female)
-		(name "NoraRoberts")
+		(name_ "NoraRoberts")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10551] of  Author
 
 		(gender male)
-		(name "LangstonHughes")
+		(name_ "LangstonHughes")
 		(popularity medium)
 		(rating 4.25))
 
 	([ontology_Class10552] of  Author
 
 		(gender female)
-		(name "LauraIngallsWilder")
+		(name_ "LauraIngallsWilder")
 		(popularity high)
 		(rating 4.18))
 
 	([ontology_Class10553] of  Author
 
 		(gender female)
-		(name "MichelleSagaraWest")
+		(name_ "MichelleSagaraWest")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10554] of  Author
 
 		(gender male)
-		(name "ArthurNersesian")
+		(name_ "ArthurNersesian")
 		(popularity medium)
 		(rating 3.6))
 
 	([ontology_Class10555] of  Author
 
 		(gender male)
-		(name "DamonRunyon")
+		(name_ "DamonRunyon")
 		(popularity low)
 		(rating 4.16))
 
 	([ontology_Class10556] of  Author
 
 		(gender male)
-		(name "NathanaelWest")
+		(name_ "NathanaelWest")
 		(popularity medium)
 		(rating 3.79))
 
 	([ontology_Class10557] of  Author
 
 		(gender female)
-		(name "SusannaGregory")
+		(name_ "SusannaGregory")
 		(popularity medium)
 		(rating 3.98))
 
 	([ontology_Class10558] of  Author
 
 		(gender female)
-		(name "JoBeverley")
+		(name_ "JoBeverley")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10559] of  Author
 
 		(gender male)
-		(name "CandaceRobb")
+		(name_ "CandaceRobb")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10560] of  Author
 
 		(gender male)
-		(name "BarbaraHambly")
+		(name_ "BarbaraHambly")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10561] of  Author
 
 		(gender female)
-		(name "LauraJohRowland")
+		(name_ "LauraJohRowland")
 		(popularity medium)
 		(rating 3.84))
 
 	([ontology_Class10562] of  Author
 
 		(gender male)
-		(name "RogerZelazny")
+		(name_ "RogerZelazny")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10563] of  Author
 
 		(gender male)
-		(name "RobertLynnAsprin")
+		(name_ "RobertLynnAsprin")
 		(popularity high)
 		(rating 3.95))
 
 	([ontology_Class10564] of  Author
 
 		(gender female)
-		(name "SusanElizabethPhillips")
+		(name_ "SusanElizabethPhillips")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10565] of  Author
 
 		(gender female)
-		(name "LornaLandvik")
+		(name_ "LornaLandvik")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10566] of  Author
 
 		(gender male)
-		(name "HaroldSchechter")
+		(name_ "HaroldSchechter")
 		(popularity medium)
 		(rating 3.71))
 
 	([ontology_Class10567] of  Author
 
 		(gender female)
-		(name "MaryMcCarthy")
+		(name_ "MaryMcCarthy")
 		(popularity medium)
 		(rating 3.71))
 
 	([ontology_Class10568] of  Author
 
 		(gender female)
-		(name "GraceMetalious")
+		(name_ "GraceMetalious")
 		(popularity medium)
 		(rating 3.72))
 
 	([ontology_Class10569] of  Author
 
 		(gender male)
-		(name "OlafOlafsson")
+		(name_ "OlafOlafsson")
 		(popularity low)
 		(rating 3.52))
 
 	([ontology_Class10570] of  Author
 
 		(gender female)
-		(name "WhitneyOtto")
+		(name_ "WhitneyOtto")
 		(popularity low)
 		(rating 3.56))
 
 	([ontology_Class10571] of  Author
 
 		(gender male)
-		(name "MelvinBurgess")
+		(name_ "MelvinBurgess")
 		(popularity medium)
 		(rating 3.69))
 
 	([ontology_Class10572] of  Author
 
 		(gender male)
-		(name "JacquelineSusann")
+		(name_ "JacquelineSusann")
 		(popularity medium)
 		(rating 3.72))
 
 	([ontology_Class10573] of  Author
 
 		(gender female)
-		(name "OliviaGoldsmith")
+		(name_ "OliviaGoldsmith")
 		(popularity medium)
 		(rating 3.74))
 
 	([ontology_Class10574] of  Author
 
 		(gender female)
-		(name "PatriciaGaffney")
+		(name_ "PatriciaGaffney")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10575] of  Author
 
 		(gender male)
-		(name "OrsonScottCard")
+		(name_ "OrsonScottCard")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10576] of  Author
 
 		(gender female)
-		(name "ElizabethJaneHoward")
+		(name_ "ElizabethJaneHoward")
 		(popularity medium)
 		(rating 4.03))
 
 	([ontology_Class10577] of  Author
 
 		(gender male)
-		(name "PhillipRock")
+		(name_ "PhillipRock")
 		(popularity low)
 		(rating 3.77))
 
 	([ontology_Class10578] of  Author
 
 		(gender male)
-		(name "HenryGreen")
+		(name_ "HenryGreen")
 		(popularity low)
 		(rating 3.6))
 
 	([ontology_Class10579] of  Author
 
 		(gender male)
-		(name "AnthonyTrollope")
+		(name_ "AnthonyTrollope")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10580] of  Author
 
 		(gender male)
-		(name "K.M.Peyton")
+		(name_ "K.M.Peyton")
 		(popularity low)
 		(rating 4.01))
 
 	([ontology_Class10581] of  Author
 
 		(gender male)
-		(name "L.P.Hartley")
+		(name_ "L.P.Hartley")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10582] of  Author
 
 		(gender male)
-		(name "SebastianFaulks")
+		(name_ "SebastianFaulks")
 		(popularity high)
 		(rating 3.84))
 
 	([ontology_Class10583] of  Author
 
 		(gender male)
-		(name "SharonShinn")
+		(name_ "SharonShinn")
 		(popularity high)
 		(rating 3.91))
 
 	([ontology_Class10584] of  Author
 
 		(gender female)
-		(name "DonnaGillespie")
+		(name_ "DonnaGillespie")
 		(popularity low)
 		(rating 4.16))
 
 	([ontology_Class10585] of  Author
 
 		(gender female)
-		(name "CelesteDeBlasis")
+		(name_ "CelesteDeBlasis")
 		(popularity low)
 		(rating 4.29))
 
 	([ontology_Class10586] of  Author
 
 		(gender female)
-		(name "GwenBristow")
+		(name_ "GwenBristow")
 		(popularity medium)
 		(rating 4.06))
 
 	([ontology_Class10587] of  Author
 
 		(gender male)
-		(name "KarleenKoen")
+		(name_ "KarleenKoen")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10588] of  Author
 
 		(gender female)
-		(name "RobertaGellis")
+		(name_ "RobertaGellis")
 		(popularity medium)
 		(rating 3.98))
 
 	([ontology_Class10589] of  Author
 
 		(gender female)
-		(name "SusanHowatch")
+		(name_ "SusanHowatch")
 		(popularity medium)
 		(rating 4.07))
 
 	([ontology_Class10590] of  Author
 
 		(gender male)
-		(name "WinstonGraham")
+		(name_ "WinstonGraham")
 		(popularity medium)
 		(rating 4.2))
 
 	([ontology_Class10591] of  Author
 
 		(gender male)
-		(name "SandraGulland")
+		(name_ "SandraGulland")
 		(popularity medium)
 		(rating 4.14))
 
 	([ontology_Class10592] of  Author
 
 		(gender female)
-		(name "EdnaFerber")
+		(name_ "EdnaFerber")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10593] of  Author
 
 		(gender female)
-		(name "L.M.Montgomery")
+		(name_ "L.M.Montgomery")
 		(popularity high)
 		(rating 4.2))
 
 	([ontology_Class10594] of  Author
 
 		(gender female)
-		(name "WillaCather")
+		(name_ "WillaCather")
 		(popularity high)
 		(rating 3.82))
 
 	([ontology_Class10595] of  Author
 
 		(gender male)
-		(name "SarahDessen")
+		(name_ "SarahDessen")
 		(popularity high)
 		(rating 4.0))
 
 	([ontology_Class10596] of  Author
 
 		(gender female)
-		(name "JodiPicoult")
+		(name_ "JodiPicoult")
 		(popularity high)
 		(rating 3.97))
 
 	([ontology_Class10597] of  Author
 
 		(gender male)
-		(name "ChrisBohjalian")
+		(name_ "ChrisBohjalian")
 		(popularity high)
 		(rating 3.78))
 
 	([ontology_Class10598] of  Author
 
 		(gender female)
-		(name "AnnaQuindlen")
+		(name_ "AnnaQuindlen")
 		(popularity high)
 		(rating 4.19))
 
 	([ontology_Class10599] of  Author
 
 		(gender male)
-		(name "PatConroy")
+		(name_ "PatConroy")
 		(popularity high)
 		(rating 4.15))
 
 	([ontology_Class10600] of  Author
 
 		(gender male)
-		(name "JamesPatterson")
+		(name_ "JamesPatterson")
 		(popularity high)
 		(rating 3.97))
 
 	([ontology_Class10601] of  Author
 
 		(gender male)
-		(name "TomSavage")
+		(name_ "TomSavage")
 		(popularity low)
 		(rating 3.91))
 
 	([ontology_Class10602] of  Author
 
 		(gender female)
-		(name "MaryJoPutney")
+		(name_ "MaryJoPutney")
 		(popularity medium)
 		(rating 3.82))
 
 	([ontology_Class10603] of  Author
 
 		(gender female)
-		(name "LisaKleypas")
+		(name_ "LisaKleypas")
 		(popularity high)
 		(rating 4.03))
 
 	([ontology_Class10604] of  Author
 
 		(gender male)
-		(name "LoisLowry")
+		(name_ "LoisLowry")
 		(popularity high)
 		(rating 4.08))
 
 	([ontology_Class10605] of  Author
 
 		(gender male)
-		(name "NormanMaclean")
+		(name_ "NormanMaclean")
 		(popularity medium)
 		(rating 4.16))
 
 	([ontology_Class10606] of  Author
 
 		(gender female)
-		(name "MavisGallant")
+		(name_ "MavisGallant")
 		(popularity low)
 		(rating 3.91))
 
 	([ontology_Class10607] of  Author
 
 		(gender male)
-		(name "ElmoreLeonard")
+		(name_ "ElmoreLeonard")
 		(popularity high)
 		(rating 3.76))
 
 	([ontology_Class10608] of  Author
 
 		(gender female)
-		(name "SuzanneEnoch")
+		(name_ "SuzanneEnoch")
 		(popularity high)
 		(rating 3.91))
 
 	([ontology_Class10609] of  Author
 
 		(gender male)
-		(name "ShermanAlexie")
+		(name_ "ShermanAlexie")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10610] of  Author
 
 		(gender male)
-		(name "ForrestCarter")
+		(name_ "ForrestCarter")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10611] of  Author
 
 		(gender male)
-		(name "W.MichaelGear")
+		(name_ "W.MichaelGear")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10612] of  Author
 
 		(gender male)
-		(name "KathleenO'NealGear")
+		(name_ "KathleenO'NealGear")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10613] of  Author
 
 		(gender male)
-		(name "ScottO'Dell")
+		(name_ "ScottO'Dell")
 		(popularity high)
 		(rating 3.8))
 
 	([ontology_Class10614] of  Author
 
 		(gender male)
-		(name "OliverLaFarge")
+		(name_ "OliverLaFarge")
 		(popularity low)
 		(rating 3.75))
 
 	([ontology_Class10615] of  Author
 
 		(gender female)
-		(name "LindaHogan")
+		(name_ "LindaHogan")
 		(popularity low)
 		(rating 4.02))
 
 	([ontology_Class10616] of  Author
 
 		(gender male)
-		(name "JamesWelch")
+		(name_ "JamesWelch")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10617] of  Author
 
 		(gender female)
-		(name "VelmaWallis")
+		(name_ "VelmaWallis")
 		(popularity low)
 		(rating 3.98))
 
 	([ontology_Class10618] of  Author
 
 		(gender female)
-		(name "SusanPower")
+		(name_ "SusanPower")
 		(popularity low)
 		(rating 3.96))
 
 	([ontology_Class10619] of  Author
 
 		(gender male)
-		(name "ThomasBerger")
+		(name_ "ThomasBerger")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10620] of  Author
 
 		(gender male)
-		(name "N.ScottMomaday")
+		(name_ "N.ScottMomaday")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10621] of  Author
 
 		(gender male)
-		(name "JohnBellairs")
+		(name_ "JohnBellairs")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10622] of  Author
 
 		(gender male)
-		(name "DeanKoontz")
+		(name_ "DeanKoontz")
 		(popularity high)
 		(rating 3.92))
 
 	([ontology_Class10623] of  Author
 
 		(gender male)
-		(name "CliveBarker")
+		(name_ "CliveBarker")
 		(popularity high)
 		(rating 4.09))
 
 	([ontology_Class10624] of  Author
 
 		(gender female)
-		(name "DianaPalmer")
+		(name_ "DianaPalmer")
 		(popularity high)
 		(rating 3.96))
 
 	([ontology_Class10625] of  Author
 
 		(gender male)
-		(name "CathleenSchine")
+		(name_ "CathleenSchine")
 		(popularity medium)
 		(rating 3.26))
 
 	([ontology_Class10626] of  Author
 
 		(gender female)
-		(name "L.J.Smith")
+		(name_ "L.J.Smith")
 		(popularity high)
 		(rating 3.89))
 
 	([ontology_Class10627] of  Author
 
 		(gender female)
-		(name "LizaMarklund")
+		(name_ "LizaMarklund")
 		(popularity medium)
 		(rating 3.64))
 
 	([ontology_Class10628] of  Author
 
 		(gender female)
-		(name "SandraScoppettone")
+		(name_ "SandraScoppettone")
 		(popularity low)
 		(rating 3.76))
 
 	([ontology_Class10629] of  Author
 
 		(gender female)
-		(name "KerstinEkman")
+		(name_ "KerstinEkman")
 		(popularity low)
 		(rating 3.62))
 
 	([ontology_Class10630] of  Author
 
 		(gender male)
-		(name "KarlEdwardWagner")
+		(name_ "KarlEdwardWagner")
 		(popularity medium)
 		(rating 4.02))
 
 	([ontology_Class10631] of  Author
 
 		(gender female)
-		(name "CharlotteMacLeod")
+		(name_ "CharlotteMacLeod")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10632] of  Author
 
 		(gender female)
-		(name "SarahGraves")
+		(name_ "SarahGraves")
 		(popularity medium)
 		(rating 3.7))
 
 	([ontology_Class10633] of  Author
 
 		(gender female)
-		(name "MarciaMuller")
+		(name_ "MarciaMuller")
 		(popularity medium)
 		(rating 3.82))
 
 	([ontology_Class10634] of  Author
 
 		(gender female)
-		(name "MaryDaheim")
+		(name_ "MaryDaheim")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10635] of  Author
 
 		(gender female)
-		(name "TamarMyers")
+		(name_ "TamarMyers")
 		(popularity medium)
 		(rating 3.64))
 
 	([ontology_Class10636] of  Author
 
 		(gender male)
-		(name "MichaelMoorcock")
+		(name_ "MichaelMoorcock")
 		(popularity high)
 		(rating 3.94))
 
 	([ontology_Class10637] of  Author
 
 		(gender male)
-		(name "JohnWhite")
+		(name_ "JohnWhite")
 		(popularity low)
 		(rating 3.94))
 
 	([ontology_Class10638] of  Author
 
 		(gender male)
-		(name "TimothyFindley")
+		(name_ "TimothyFindley")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10639] of  Author
 
 		(gender male)
-		(name "JohnBuchan")
+		(name_ "JohnBuchan")
 		(popularity medium)
 		(rating 3.66))
 
 	([ontology_Class10640] of  Author
 
 		(gender male)
-		(name "FrankE.Peretti")
+		(name_ "FrankE.Peretti")
 		(popularity high)
 		(rating 4.07))
 
 	([ontology_Class10641] of  Author
 
 		(gender male)
-		(name "JohnDosPassos")
+		(name_ "JohnDosPassos")
 		(popularity medium)
 		(rating 3.88))
 
 	([ontology_Class10642] of  Author
 
 		(gender female)
-		(name "RebeccaWest")
+		(name_ "RebeccaWest")
 		(popularity medium)
 		(rating 3.88))
 
 	([ontology_Class10643] of  Author
 
 		(gender male)
-		(name "R.F.Delderfield")
+		(name_ "R.F.Delderfield")
 		(popularity medium)
 		(rating 4.15))
 
 	([ontology_Class10644] of  Author
 
 		(gender male)
-		(name "JosephRoth")
+		(name_ "JosephRoth")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10645] of  Author
 
 		(gender male)
-		(name "KateFenton")
+		(name_ "KateFenton")
 		(popularity low)
 		(rating 3.27))
 
 	([ontology_Class10646] of  Author
 
 		(gender female)
-		(name "JanetAylmer")
+		(name_ "JanetAylmer")
 		(popularity low)
 		(rating 3.4))
 
 	([ontology_Class10647] of  Author
 
 		(gender male)
-		(name "DouglasCoupland")
+		(name_ "DouglasCoupland")
 		(popularity high)
 		(rating 3.67))
 
 	([ontology_Class10648] of  Author
 
 		(gender female)
-		(name "PamelaMorsi")
+		(name_ "PamelaMorsi")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10649] of  Author
 
 		(gender female)
-		(name "SamanthaJames")
+		(name_ "SamanthaJames")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10650] of  Author
 
 		(gender female)
-		(name "MargaretCavendish")
+		(name_ "MargaretCavendish")
 		(popularity low)
 		(rating 3.24))
 
 	([ontology_Class10651] of  Author
 
 		(gender female)
-		(name "AphraBehn")
+		(name_ "AphraBehn")
 		(popularity medium)
 		(rating 3.14))
 
 	([ontology_Class10652] of  Author
 
 		(gender female)
-		(name "ElswythThane")
+		(name_ "ElswythThane")
 		(popularity low)
 		(rating 4.26))
 
 	([ontology_Class10653] of  Author
 
 		(gender female)
-		(name "PatriciaCornwell")
+		(name_ "PatriciaCornwell")
 		(popularity high)
 		(rating 3.88))
 
 	([ontology_Class10654] of  Author
 
 		(gender male)
-		(name "JohnLescroart")
+		(name_ "JohnLescroart")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10655] of  Author
 
 		(gender male)
-		(name "TimVicary")
+		(name_ "TimVicary")
 		(popularity low)
 		(rating 3.7))
 
 	([ontology_Class10656] of  Author
 
 		(gender male)
-		(name "EdMcBain")
+		(name_ "EdMcBain")
 		(popularity medium)
 		(rating 3.8))
 
 	([ontology_Class10657] of  Author
 
 		(gender male)
-		(name "RennieAirth")
+		(name_ "RennieAirth")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10658] of  Author
 
 		(gender male)
-		(name "PaulAnthony")
+		(name_ "PaulAnthony")
 		(popularity low)
 		(rating 4.41))
 
 	([ontology_Class10659] of  Author
 
 		(gender male)
-		(name "ThomasKeneally")
+		(name_ "ThomasKeneally")
 		(popularity high)
 		(rating 4.27))
 
 	([ontology_Class10660] of  Author
 
 		(gender male)
-		(name "MacKinlayKantor")
+		(name_ "MacKinlayKantor")
 		(popularity low)
 		(rating 4.06))
 
 	([ontology_Class10661] of  Author
 
 		(gender female)
-		(name "AnnetteCurtisKlause")
+		(name_ "AnnetteCurtisKlause")
 		(popularity medium)
 		(rating 3.75))
 
 	([ontology_Class10662] of  Author
 
 		(gender male)
-		(name "IvanaTrump")
+		(name_ "IvanaTrump")
 		(popularity low)
 		(rating 3.48))
 
 	([ontology_Class10663] of  Author
 
 		(gender female)
-		(name "JillianMedoff")
+		(name_ "JillianMedoff")
 		(popularity low)
 		(rating 3.5))
 
 	([ontology_Class10664] of  Author
 
 		(gender male)
-		(name "RickMoody")
+		(name_ "RickMoody")
 		(popularity medium)
 		(rating 3.61))
 
 	([ontology_Class10665] of  Author
 
 		(gender female)
-		(name "BarbaraTaylorBradford")
+		(name_ "BarbaraTaylorBradford")
 		(popularity medium)
 		(rating 3.91))
 
 	([ontology_Class10666] of  Author
 
 		(gender male)
-		(name "LouisL'Amour")
+		(name_ "LouisL'Amour")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10667] of  Author
 
 		(gender female)
-		(name "ReginaDoman")
+		(name_ "ReginaDoman")
 		(popularity low)
 		(rating 4.2))
 
 	([ontology_Class10668] of  Author
 
 		(gender female)
-		(name "ChristaWolf")
+		(name_ "ChristaWolf")
 		(popularity low)
 		(rating 3.75))
 
 	([ontology_Class10669] of  Author
 
 		(gender female)
-		(name "JenniferRoberson")
+		(name_ "JenniferRoberson")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10670] of  Author
 
 		(gender male)
-		(name "H.RiderHaggard")
+		(name_ "H.RiderHaggard")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10671] of  Author
 
 		(gender male)
-		(name "ThomasLigotti")
+		(name_ "ThomasLigotti")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10672] of  Author
 
 		(gender male)
-		(name "ArthurMachen")
+		(name_ "ArthurMachen")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10673] of  Author
 
 		(gender male)
-		(name "SuzanneBarclay")
+		(name_ "SuzanneBarclay")
 		(popularity low)
 		(rating 3.75))
 
 	([ontology_Class10674] of  Author
 
 		(gender male)
-		(name "DavidGemmell")
+		(name_ "DavidGemmell")
 		(popularity high)
 		(rating 4.22))
 
 	([ontology_Class10675] of  Author
 
 		(gender male)
-		(name "J.V.Jones")
+		(name_ "J.V.Jones")
 		(popularity medium)
 		(rating 3.91))
 
 	([ontology_Class10676] of  Author
 
 		(gender female)
-		(name "JannyWurts")
+		(name_ "JannyWurts")
 		(popularity high)
 		(rating 4.18))
 
 	([ontology_Class10677] of  Author
 
 		(gender male)
-		(name "PaulBowles")
+		(name_ "PaulBowles")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10678] of  Author
 
 		(gender male)
-		(name "ChingizAitmatov")
+		(name_ "ChingizAitmatov")
 		(popularity medium)
 		(rating 4.12))
 
 	([ontology_Class10679] of  Author
 
 		(gender male)
-		(name "PaulGallico")
+		(name_ "PaulGallico")
 		(popularity medium)
 		(rating 3.99))
 
 	([ontology_Class10680] of  Author
 
 		(gender male)
-		(name "MariusGabriel")
+		(name_ "MariusGabriel")
 		(popularity medium)
 		(rating 4.07))
 
 	([ontology_Class10681] of  Author
 
 		(gender female)
-		(name "CijiWare")
+		(name_ "CijiWare")
 		(popularity low)
 		(rating 3.7))
 
 	([ontology_Class10682] of  Author
 
 		(gender male)
-		(name "CharlesPortis")
+		(name_ "CharlesPortis")
 		(popularity medium)
 		(rating 4.08))
 
 	([ontology_Class10683] of  Author
 
 		(gender male)
-		(name "HansKeilson")
+		(name_ "HansKeilson")
 		(popularity low)
 		(rating 3.66))
 
 	([ontology_Class10684] of  Author
 
 		(gender male)
-		(name "ClareDarcy")
+		(name_ "ClareDarcy")
 		(popularity low)
 		(rating 3.71))
 
 	([ontology_Class10685] of  Author
 
 		(gender male)
-		(name "EdwardLee")
+		(name_ "EdwardLee")
 		(popularity medium)
 		(rating 3.76))
 
 	([ontology_Class10686] of  Author
 
 		(gender female)
-		(name "KatheKoja")
+		(name_ "KatheKoja")
 		(popularity medium)
 		(rating 3.72))
 
 	([ontology_Class10687] of  Author
 
 		(gender male)
-		(name "GrahamMasterton")
+		(name_ "GrahamMasterton")
 		(popularity medium)
 		(rating 3.78))
 
 	([ontology_Class10688] of  Author
 
 		(gender male)
-		(name "JackKetchum")
+		(name_ "JackKetchum")
 		(popularity medium)
 		(rating 3.84))
 
 	([ontology_Class10689] of  Author
 
 		(gender male)
-		(name "MendalW.Johnson")
+		(name_ "MendalW.Johnson")
 		(popularity low)
 		(rating 3.63))
 
 	([ontology_Class10690] of  Author
 
 		(gender male)
-		(name "ElizabethBright")
+		(name_ "ElizabethBright")
 		(popularity low)
 		(rating 4.03))
 
 	([ontology_Class10691] of  Author
 
 		(gender male)
-		(name "DanaStabenow")
+		(name_ "DanaStabenow")
 		(popularity high)
 		(rating 4.01))
 
 	([ontology_Class10692] of  Author
 
 		(gender female)
-		(name "AminahMaeSafi")
+		(name_ "AminahMaeSafi")
 		(popularity low)
 		(rating 3.72))
 
 	([ontology_Class10693] of  Author
 
 		(gender male)
-		(name "DanStout")
+		(name_ "DanStout")
 		(popularity low)
 		(rating 4.31))
 
 	([ontology_Class10694] of  Author
 
 		(gender male)
-		(name "RobertE.Howard")
+		(name_ "RobertE.Howard")
 		(popularity high)
 		(rating 4.09))
 
 	([ontology_Class10695] of  Author
 
 		(gender male)
-		(name "C.L.Moore")
+		(name_ "C.L.Moore")
 		(popularity medium)
 		(rating 4.02))
 
 	([ontology_Class10696] of  Author
 
 		(gender male)
-		(name "NelsonDeMille")
+		(name_ "NelsonDeMille")
 		(popularity high)
 		(rating 4.02))
 
 	([ontology_Class10697] of  Author
 
 		(gender female)
-		(name "AnnaFienberg")
+		(name_ "AnnaFienberg")
 		(popularity low)
 		(rating 3.89))
 
 	([ontology_Class10698] of  Author
 
 		(gender male)
-		(name "AnnHead")
+		(name_ "AnnHead")
 		(popularity low)
 		(rating 3.79))
 
 	([ontology_Class10699] of  Author
 
 		(gender female)
-		(name "ConnieRosePorter")
+		(name_ "ConnieRosePorter")
 		(popularity medium)
 		(rating 4.04))
 
 	([ontology_Class10700] of  Author
 
 		(gender female)
-		(name "BerlieDoherty")
+		(name_ "BerlieDoherty")
 		(popularity low)
 		(rating 3.7))
 
 	([ontology_Class10701] of  Author
 
 		(gender male)
-		(name "ThorneSmith")
+		(name_ "ThorneSmith")
 		(popularity low)
 		(rating 3.78))
 
 	([ontology_Class10702] of  Author
 
 		(gender female)
-		(name "RosemarySutcliff")
+		(name_ "RosemarySutcliff")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10703] of  Author
 
 		(gender male)
-		(name "PoulAnderson")
+		(name_ "PoulAnderson")
 		(popularity high)
 		(rating 3.84))
 
 	([ontology_Class10704] of  Author
 
 		(gender male)
-		(name "FrankO'Connor")
+		(name_ "FrankO'Connor")
 		(popularity low)
 		(rating 4.05))
 
 	([ontology_Class10705] of  Author
 
 		(gender male)
-		(name "J.P.Donleavy")
+		(name_ "J.P.Donleavy")
 		(popularity medium)
 		(rating 3.71))
 
 	([ontology_Class10706] of  Author
 
 		(gender male)
-		(name "RobertR.McCammon")
+		(name_ "RobertR.McCammon")
 		(popularity high)
 		(rating 4.1))
 
 	([ontology_Class10707] of  Author
 
 		(gender male)
-		(name "MarthaR.Carr")
+		(name_ "MarthaR.Carr")
 		(popularity medium)
 		(rating 4.41))
 
 	([ontology_Class10708] of  Author
 
 		(gender male)
-		(name "BrunoSchulz")
+		(name_ "BrunoSchulz")
 		(popularity medium)
 		(rating 4.14))
 
 	([ontology_Class10709] of  Author
 
 		(gender male)
-		(name "CharlesG.Finney")
+		(name_ "CharlesG.Finney")
 		(popularity low)
 		(rating 3.85))
 
 	([ontology_Class10710] of  Author
 
 		(gender male)
-		(name "E.R.Eddison")
+		(name_ "E.R.Eddison")
 		(popularity low)
 		(rating 3.7))
 
 	([ontology_Class10711] of  Author
 
 		(gender male)
-		(name "BarryHughart")
+		(name_ "BarryHughart")
 		(popularity medium)
 		(rating 4.24))
 
 	([ontology_Class10712] of  Author
 
 		(gender male)
-		(name "ColinDexter")
+		(name_ "ColinDexter")
 		(popularity medium)
 		(rating 3.99))
 
 	([ontology_Class10713] of  Author
 
 		(gender male)
-		(name "JamesHilton")
+		(name_ "JamesHilton")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10714] of  Author
 
 		(gender male)
-		(name "JosephWambaugh")
+		(name_ "JosephWambaugh")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10715] of  Author
 
 		(gender female)
-		(name "ElizabethGoudge")
+		(name_ "ElizabethGoudge")
 		(popularity medium)
 		(rating 4.12))
 
 	([ontology_Class10716] of  Author
 
 		(gender male)
-		(name "EnidBagnold")
+		(name_ "EnidBagnold")
 		(popularity medium)
 		(rating 4.09))
 
 	([ontology_Class10717] of  Author
 
 		(gender female)
-		(name "NorahLofts")
+		(name_ "NorahLofts")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10718] of  Author
 
 		(gender female)
-		(name "EstherHautzig")
+		(name_ "EstherHautzig")
 		(popularity low)
 		(rating 3.96))
 
 	([ontology_Class10719] of  Author
 
 		(gender male)
-		(name "AngelaHuth")
+		(name_ "AngelaHuth")
 		(popularity low)
 		(rating 3.63))
 
 	([ontology_Class10720] of  Author
 
 		(gender male)
-		(name "SinclairLewis")
+		(name_ "SinclairLewis")
 		(popularity medium)
 		(rating 3.75))
 
 	([ontology_Class10721] of  Author
 
 		(gender female)
-		(name "MaudHartLovelace")
+		(name_ "MaudHartLovelace")
 		(popularity medium)
 		(rating 4.18))
 
 	([ontology_Class10722] of  Author
 
 		(gender female)
-		(name "EleanorH.Porter")
+		(name_ "EleanorH.Porter")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10723] of  Author
 
 		(gender male)
-		(name "SaulBellow")
+		(name_ "SaulBellow")
 		(popularity medium)
 		(rating 3.77))
 
 	([ontology_Class10724] of  Author
 
 		(gender male)
-		(name "SteveNeilJohnson")
+		(name_ "SteveNeilJohnson")
 		(popularity low)
 		(rating 4.26))
 
 	([ontology_Class10725] of  Author
 
 		(gender male)
-		(name "StefanR.Dziemianowicz")
+		(name_ "StefanR.Dziemianowicz")
 		(popularity low)
 		(rating 3.75))
 
 	([ontology_Class10726] of  Author
 
 		(gender male)
-		(name "MichaelCox")
+		(name_ "MichaelCox")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10727] of  Author
 
 		(gender male)
-		(name "PaulM.Sammon")
+		(name_ "PaulM.Sammon")
 		(popularity low)
 		(rating 4.1))
 
 	([ontology_Class10728] of  Author
 
 		(gender male)
-		(name "JeffGelb")
+		(name_ "JeffGelb")
 		(popularity low)
 		(rating 3.76))
 
 	([ontology_Class10729] of  Author
 
 		(gender male)
-		(name "DavidClement-Davies")
+		(name_ "DavidClement-Davies")
 		(popularity medium)
 		(rating 4.14))
 
 	([ontology_Class10730] of  Author
 
 		(gender male)
-		(name "WalterR.Brooks")
+		(name_ "WalterR.Brooks")
 		(popularity low)
 		(rating 4.16))
 
 	([ontology_Class10731] of  Author
 
 		(gender male)
-		(name "RobertTressell")
+		(name_ "RobertTressell")
 		(popularity low)
 		(rating 3.97))
 
 	([ontology_Class10732] of  Author
 
 		(gender male)
-		(name "MaxBeerbohm")
+		(name_ "MaxBeerbohm")
 		(popularity low)
 		(rating 3.67))
 
 	([ontology_Class10733] of  Author
 
 		(gender male)
-		(name "ZaneGrey")
+		(name_ "ZaneGrey")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10734] of  Author
 
 		(gender female)
-		(name "DorothyCanfieldFisher")
+		(name_ "DorothyCanfieldFisher")
 		(popularity medium)
 		(rating 4.11))
 
 	([ontology_Class10735] of  Author
 
 		(gender male)
-		(name "BenMarcus")
+		(name_ "BenMarcus")
 		(popularity medium)
 		(rating 4.07))
 
 	([ontology_Class10736] of  Author
 
 		(gender female)
-		(name "TerriWindling")
+		(name_ "TerriWindling")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10737] of  Author
 
 		(gender male)
-		(name "EmilioSalgari")
+		(name_ "EmilioSalgari")
 		(popularity medium)
 		(rating 3.85))
 
 	([ontology_Class10738] of  Author
 
 		(gender female)
-		(name "KimSmejkal")
+		(name_ "KimSmejkal")
 		(popularity low)
 		(rating 4.86))
 
 	([ontology_Class10739] of  Author
 
 		(gender female)
-		(name "MichelleRuizKeil")
+		(name_ "MichelleRuizKeil")
 		(popularity low)
 		(rating 4.78))
 
 	([ontology_Class10740] of  Author
 
 		(gender female)
-		(name "CatherineTinker")
+		(name_ "CatherineTinker")
 		(popularity low)
 		(rating 4.54))
 
 	([ontology_Class10741] of  Author
 
 		(gender female)
-		(name "SarahCarlson")
+		(name_ "SarahCarlson")
 		(popularity low)
 		(rating 4.63))
 
 	([ontology_Class10742] of  Author
 
 		(gender female)
-		(name "JodieLynnZdrok")
+		(name_ "JodieLynnZdrok")
 		(popularity low)
 		(rating 3.99))
 
 	([ontology_Class10743] of  Author
 
 		(gender male)
-		(name "HerbieBrennan")
+		(name_ "HerbieBrennan")
 		(popularity medium)
 		(rating 3.74))
 
 	([ontology_Class10744] of  Author
 
 		(gender female)
-		(name "IsabelSterling")
+		(name_ "IsabelSterling")
 		(popularity low)
 		(rating 4.34))
 
 	([ontology_Class10745] of  Author
 
 		(gender female)
-		(name "CatherineCookson")
+		(name_ "CatherineCookson")
 		(popularity medium)
 		(rating 3.94))
 
 	([ontology_Class10746] of  Author
 
 		(gender female)
-		(name "ElizabethTaylor")
+		(name_ "ElizabethTaylor")
 		(popularity low)
 		(rating 3.9))
 
 	([ontology_Class10747] of  Author
 
 		(gender female)
-		(name "DorothyB.Hughes")
+		(name_ "DorothyB.Hughes")
 		(popularity low)
 		(rating 3.99))
 
 	([ontology_Class10748] of  Author
 
 		(gender female)
-		(name "BarbaraComyns")
+		(name_ "BarbaraComyns")
 		(popularity low)
 		(rating 3.91))
 
 	([ontology_Class10749] of  Author
 
 		(gender male)
-		(name "HaroldRobbins")
+		(name_ "HaroldRobbins")
 		(popularity medium)
 		(rating 3.69))
 
 	([ontology_Class10750] of  Author
 
 		(gender male)
-		(name "StefanZweig")
+		(name_ "StefanZweig")
 		(popularity high)
 		(rating 4.17))
 
 	([ontology_Class10751] of  Author
 
 		(gender male)
-		(name "CarolineBlackwood")
+		(name_ "CarolineBlackwood")
 		(popularity low)
 		(rating 3.63))
 
 	([ontology_Class10752] of  Author
 
 		(gender male)
-		(name "GeorgesSimenon")
+		(name_ "GeorgesSimenon")
 		(popularity medium)
 		(rating 3.72))
 
 	([ontology_Class10753] of  Author
 
 		(gender female)
-		(name "ElizabethHardwick")
+		(name_ "ElizabethHardwick")
 		(popularity low)
 		(rating 3.86))
 
 	([ontology_Class10754] of  Author
 
 		(gender male)
-		(name "ElliottChaze")
+		(name_ "ElliottChaze")
 		(popularity low)
 		(rating 4.15))
 
 	([ontology_Class10755] of  Author
 
 		(gender male)
-		(name "SigizmundKrzhizhanovsky")
+		(name_ "SigizmundKrzhizhanovsky")
 		(popularity low)
 		(rating 3.9))
 
 	([ontology_Class10756] of  Author
 
 		(gender male)
-		(name "AdalbertStifter")
+		(name_ "AdalbertStifter")
 		(popularity low)
 		(rating 3.76))
 
 	([ontology_Class10757] of  Author
 
 		(gender male)
-		(name "JohnWilliams")
+		(name_ "JohnWilliams")
 		(popularity medium)
 		(rating 4.26))
 
 	([ontology_Class10758] of  Author
 
 		(gender male)
-		(name "GeoffreyHousehold")
+		(name_ "GeoffreyHousehold")
 		(popularity low)
 		(rating 3.96))
 
 	([ontology_Class10759] of  Author
 
 		(gender male)
-		(name "PatrickHamilton")
+		(name_ "PatrickHamilton")
 		(popularity low)
 		(rating 4.12))
 
 	([ontology_Class10760] of  Author
 
 		(gender male)
-		(name "CarloCollodi")
+		(name_ "CarloCollodi")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10761] of  Author
 
 		(gender female)
-		(name "DorothyBaker")
+		(name_ "DorothyBaker")
 		(popularity low)
 		(rating 3.92))
 
 	([ontology_Class10762] of  Author
 
 		(gender male)
-		(name "OakleyHall")
+		(name_ "OakleyHall")
 		(popularity low)
 		(rating 4.11))
 
 	([ontology_Class10763] of  Author
 
 		(gender male)
-		(name "SylviaTownsendWarner")
+		(name_ "SylviaTownsendWarner")
 		(popularity medium)
 		(rating 3.88))
 
 	([ontology_Class10764] of  Author
 
 		(gender female)
-		(name "ElaineDundy")
+		(name_ "ElaineDundy")
 		(popularity low)
 		(rating 3.61))
 
 	([ontology_Class10765] of  Author
 
 		(gender male)
-		(name "FransG.Bengtsson")
+		(name_ "FransG.Bengtsson")
 		(popularity low)
 		(rating 4.25))
 
 	([ontology_Class10766] of  Author
 
 		(gender female)
-		(name "JuliaAlvarez")
+		(name_ "JuliaAlvarez")
 		(popularity medium)
 		(rating 3.92))
 
 	([ontology_Class10767] of  Author
 
 		(gender male)
-		(name "GeorgeGrossmith")
+		(name_ "GeorgeGrossmith")
 		(popularity medium)
 		(rating 3.72))
 
 	([ontology_Class10768] of  Author
 
 		(gender male)
-		(name "IanSerraillier")
+		(name_ "IanSerraillier")
 		(popularity low)
 		(rating 3.98))
 
 	([ontology_Class10769] of  Author
 
 		(gender female)
-		(name "ConstanceSavery")
+		(name_ "ConstanceSavery")
 		(popularity low)
 		(rating 4.04))
 
 	([ontology_Class10770] of  Author
 
 		(gender female)
-		(name "HildavanStockum")
+		(name_ "HildavanStockum")
 		(popularity low)
 		(rating 4.16))
 
 	([ontology_Class10771] of  Author
 
 		(gender female)
-		(name "LynneGraham")
+		(name_ "LynneGraham")
 		(popularity medium)
 		(rating 3.61))
 
 	([ontology_Class10772] of  Author
 
 		(gender female)
-		(name "NancyMitford")
+		(name_ "NancyMitford")
 		(popularity medium)
 		(rating 3.87))
 
 	([ontology_Class10773] of  Author
 
 		(gender female)
-		(name "WinifredWatson")
+		(name_ "WinifredWatson")
 		(popularity medium)
 		(rating 3.97))
 
 	([ontology_Class10774] of  Author
 
 		(gender male)
-		(name "EugeneBurdick")
+		(name_ "EugeneBurdick")
 		(popularity low)
 		(rating 4.09))
 
 	([ontology_Class10775] of  Author
 
 		(gender female)
-		(name "KamalaMarkandaya")
+		(name_ "KamalaMarkandaya")
 		(popularity low)
 		(rating 3.63))
 
 	([ontology_Class10776] of  Author
 
 		(gender male)
-		(name "RichardDenney")
+		(name_ "RichardDenney")
 		(popularity low)
 		(rating 3.7))
 
 	([ontology_Class10777] of  Author
 
 		(gender male)
-		(name "ScottSpencer")
+		(name_ "ScottSpencer")
 		(popularity medium)
 		(rating 3.31))
 
 	([ontology_Class10778] of  Author
 
 		(gender male)
-		(name "IsmailKadare")
+		(name_ "IsmailKadare")
 		(popularity medium)
 		(rating 3.82))
 
 	([ontology_Class10779] of  Author
 
 		(gender female)
-		(name "MarianneFredriksson")
+		(name_ "MarianneFredriksson")
 		(popularity medium)
 		(rating 3.66))
 
 	([ontology_Class10780] of  Author
 
 		(gender female)
-		(name "TaylorCaldwell")
+		(name_ "TaylorCaldwell")
 		(popularity medium)
 		(rating 4.12))
 
 	([ontology_Class10781] of  Author
 
 		(gender male)
-		(name "MarySpencer")
+		(name_ "MarySpencer")
 		(popularity low)
 		(rating 3.53))
 
 	([ontology_Class10782] of  Author
 
 		(gender female)
-		(name "BelvaPlain")
+		(name_ "BelvaPlain")
 		(popularity medium)
 		(rating 3.9))
 
 	([ontology_Class10783] of  Author
 
 		(gender male)
-		(name "MichelleReid")
+		(name_ "MichelleReid")
 		(popularity medium)
 		(rating 3.64))
 
 	([ontology_Class10784] of  Author
 
 		(gender male)
-		(name "RossMacdonald")
+		(name_ "RossMacdonald")
 		(popularity medium)
 		(rating 3.98))
 
 	([ontology_Class10785] of  Author
 
 		(gender male)
-		(name "CornellWoolrich")
+		(name_ "CornellWoolrich")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10786] of  Author
 
 		(gender male)
-		(name "RichardBausch")
+		(name_ "RichardBausch")
 		(popularity low)
 		(rating 3.87))
 
 	([ontology_Class10787] of  Author
 
 		(gender female)
-		(name "SiminDaneshvar")
+		(name_ "SiminDaneshvar")
 		(popularity medium)
 		(rating 3.75))
 
 	([ontology_Class10788] of  Author
 
 		(gender male)
-		(name "DavidGoodis")
+		(name_ "DavidGoodis")
 		(popularity low)
 		(rating 3.94))
 
 	([ontology_Class10789] of  Author
 
 		(gender female)
-		(name "SenaJeterNaslund")
+		(name_ "SenaJeterNaslund")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10790] of  Author
 
 		(gender male)
-		(name "AlfredHitchcock")
+		(name_ "AlfredHitchcock")
 		(popularity medium)
 		(rating 3.96))
 
 	([ontology_Class10791] of  Author
 
 		(gender male)
-		(name "JamesCrumley")
+		(name_ "JamesCrumley")
 		(popularity medium)
 		(rating 3.96))
 
 	([ontology_Class10792] of  Author
 
 		(gender male)
-		(name "MickeySpillane")
+		(name_ "MickeySpillane")
 		(popularity medium)
 		(rating 3.68))
 
 	([ontology_Class10793] of  Author
 
 		(gender male)
-		(name "HoraceMcCoy")
+		(name_ "HoraceMcCoy")
 		(popularity low)
 		(rating 3.89))
 
 	([ontology_Class10794] of  Author
 
 		(gender female)
-		(name "MaryMapesDodge")
+		(name_ "MaryMapesDodge")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10795] of  Author
 
 		(gender female)
-		(name "LoisLenski")
+		(name_ "LoisLenski")
 		(popularity medium)
 		(rating 4.04))
 
 	([ontology_Class10796] of  Author
 
 		(gender female)
-		(name "DorotheaBentonFrank")
+		(name_ "DorotheaBentonFrank")
 		(popularity high)
 		(rating 3.81))
 
 	([ontology_Class10797] of  Author
 
 		(gender male)
-		(name "HarryCrews")
+		(name_ "HarryCrews")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10798] of  Author
 
 		(gender female)
-		(name "KatherineAnnePorter")
+		(name_ "KatherineAnnePorter")
 		(popularity medium)
 		(rating 3.93))
 
 	([ontology_Class10799] of  Author
 
 		(gender female)
-		(name "ClariceLispector")
+		(name_ "ClariceLispector")
 		(popularity medium)
 		(rating 4.06))
 
 	([ontology_Class10800] of  Author
 
 		(gender female)
-		(name "VeraChapman")
+		(name_ "VeraChapman")
 		(popularity low)
 		(rating 3.59))
 
 	([ontology_Class10801] of  Author
 
 		(gender female)
-		(name "NancyMcKenzie")
+		(name_ "NancyMcKenzie")
 		(popularity low)
 		(rating 3.96))
 
 	([ontology_Class10802] of  Author
 
 		(gender female)
-		(name "MollyCochran")
+		(name_ "MollyCochran")
 		(popularity low)
 		(rating 3.86))
 
 	([ontology_Class10803] of  Author
 
 		(gender male)
-		(name "RogerLancelynGreen")
+		(name_ "RogerLancelynGreen")
 		(popularity medium)
 		(rating 4.0))
 
 	([ontology_Class10804] of  Author
 
 		(gender male)
-		(name "GeoffreyofMonmouth")
+		(name_ "GeoffreyofMonmouth")
 		(popularity low)
 		(rating 3.73))
 
 	([ontology_Class10805] of  Author
 
 		(gender male)
-		(name "AlessandroBaricco")
+		(name_ "AlessandroBaricco")
 		(popularity medium)
 		(rating 3.88))
 
 	([ontology_Class10806] of  Author
 
 		(gender male)
-		(name "WilmaDykeman")
+		(name_ "WilmaDykeman")
 		(popularity low)
 		(rating 4.09))
 
 	([ontology_Class10807] of  Author
 
 		(gender male)
-		(name "DeniseGiardina")
+		(name_ "DeniseGiardina")
 		(popularity low)
 		(rating 4.0))
 
 	([ontology_Class10808] of  Author
 
 		(gender male)
-		(name "JamesAgee")
+		(name_ "JamesAgee")
 		(popularity medium)
 		(rating 3.95))
 
 	([ontology_Class10809] of  Author
 
 		(gender female)
-		(name "VeraCleaver")
+		(name_ "VeraCleaver")
 		(popularity low)
 		(rating 3.77))
 
 	([ontology_Class10810] of  Author
 
 		(gender female)
-		(name "MeaganMcKinney")
+		(name_ "MeaganMcKinney")
 		(popularity low)
 		(rating 3.75))
 
 	([ontology_Class10811] of  Author
 
 		(gender female)
-		(name "ElizabethLowell")
+		(name_ "ElizabethLowell")
 		(popularity high)
 		(rating 3.86))
 
 	([ontology_Class10812] of  Author
 
 		(gender female)
-		(name "E.M.Hull")
+		(name_ "E.M.Hull")
 		(popularity low)
 		(rating 3.43))
 
 	([ontology_Class10813] of  Author
 
 		(gender female)
-		(name "RosemaryRogers")
+		(name_ "RosemaryRogers")
 		(popularity medium)
 		(rating 3.81))
 
 	([ontology_Class10814] of  Author
 
 		(gender female)
-		(name "VirginiaHenley")
+		(name_ "VirginiaHenley")
 		(popularity medium)
 		(rating 3.89))
 
 	([ontology_Class10815] of  Author
 
 		(gender male)
-		(name "DinahLampitt")
+		(name_ "DinahLampitt")
 		(popularity low)
 		(rating 3.99))
 
 	([ontology_Class10816] of  Author
 
 		(gender female)
-		(name "JeanPlaidy")
+		(name_ "JeanPlaidy")
 		(popularity medium)
 		(rating 3.86))
 
 	([ontology_Class10817] of  Author
 
 		(gender female)
-		(name "SparkleHayter")
+		(name_ "SparkleHayter")
 		(popularity low)
 		(rating 3.58))
 
@@ -22740,7 +22740,10 @@
 ; ---------------------------------- GENRE ----------------------------------- ;
 
 (defrule GENRE::children
+	?book <- (object (is-a Book) (pages ?p))
+	(test (< ?p 50))
 	=>
+	(send ?book print)
 )
 
 ; ----------------------------------- PRES ----------------------------------- ;
