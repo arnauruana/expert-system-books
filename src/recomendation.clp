@@ -5560,12 +5560,12 @@
 
 (defrule RECO::init
 	?reco <- (Reco (books $?booksR))
-	(test (= (length$ $?booksR) 0))
+	(test (= (length$ ?booksR) 0))
 	=>
 	(bind $?books (find-all-instances ((?inst Book)) TRUE))
-	(loop-for-count (?i 1 (length$ $?books)) do
+	(loop-for-count (?i 1 (length$ ?books)) do
+		(bind ?book (nth$ ?i ?books))
 		(bind ?bookR (make-instance (gensym) of BookR))
-		(bind ?book (nth$ ?i $?books))
 		(send ?bookR put-book ?book)
 		(send ?bookR put-score (send ?book get-rating))
 		(send ?bookR put-reasons "NONE")
