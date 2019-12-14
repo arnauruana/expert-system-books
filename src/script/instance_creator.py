@@ -42,7 +42,7 @@ for index, row in data.iterrows():
     output += " (popularity " + getPopularity(row['num_ratings']) + ")"
     output += " (title " + '"' + (row['book_title'].replace('\n', '')).replace(' ', '') + '"' + ")"
     output += " (year " + row['publish_date'] + ")"
-    output += " (rating " + str(row['pages']) + "))\n\n"
+    output += " (rating " + str(row['book_average_rating']) + "))\n\n"
     file.write(output)
 
 
