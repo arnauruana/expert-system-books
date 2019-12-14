@@ -129,7 +129,8 @@
 	(is-a Book)
 	(role concrete)
 	(single-slot score
-		(type INTEGER))
+		(type INTEGER)
+	)
 	(multislot reasons
 		(type STRING)
   )
@@ -22761,22 +22762,31 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-(defrule RECO::test
-	?reco <- (Reco (books $?books))
-	(test (< (length$ ?books) 4))
-	?book <- (object (is-a Book) (pages ?pages))
-	(test (< ?pages 150))
+(defrule RECO::init
+	?reco <- (Reco (books $?booksR))
+	(test (= (length$ $?booksR) 0))
 	=>
-	(modify ?reco (books (insert$ $?books 1 ?book)))
+	(bind $?books (find-all-instances ((?inst Book)) TRUE))
+	(loop-for-count (?i 1 (length$ $?books)) do
+		(bind ?bookR (make-instance (gensym) of BookR))
+		(bind ?book (nth$ ?i $?books))
+		(send ?bookR put-title (send ?book get-title))
+		(send ?bookR put-author (send ?book get-author))
+		(send ?bookR put-genre (send ?book get-genre))
+		(send ?bookR put-year (send ?book get-year))
+		(send ?bookR put-pages (send ?book get-pages))
+		(send ?bookR put-popularity (send ?book get-popularity))
+		(send ?bookR put-rating (send ?book get-rating))
+		(send ?bookR put-score (send ?book get-rating))
+		(send ?bookR put-reasons "TEST REASON")
+	)
 )
-
-(defrule RECO::)
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
 (defrule PRES::present-recomendations
-  (Pres)
-  (Pres (books $?list))
+  (not (tested))
+  (Reco (books $?list))
 	=>
 	(print-presentation)
   (loop-for-count (?i 1 3) do
