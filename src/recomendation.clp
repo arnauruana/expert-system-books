@@ -5567,12 +5567,44 @@
 		(bind ?bookR (make-instance (gensym) of BookR))
 		(send ?bookR put-book ?book)
 		(send ?bookR put-score (send ?book get-rating))
-		(send ?bookR put-reasons "NONE")
+		(send ?bookR put-reasons (create$ ))
 	)
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(modify ?reco (books $?booksR))
 )
 
+(defrule RECO::frequency
+	?reco <- (Reco (books $?booksR))
+	(test (> (length$ ?booksR) 0))
+	?pref <- (Pref (freq ?freq))
+	=>
+	(switch ?freq
+		(case rarely then
+			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) 150)))
+			(loop-for-count (?i 1 (length$ ?booksR)) do
+				(bind ?bookR (nth$ ?i ?booksR))
+				(send ?bookR put-score (+ (send ?bookR get-score) 10))
+				(send ?bookR put-reasons "Because of RARELY")
+			)
+		)
+		(case sometimes then
+			(bind $?booksR (find-all-instances ((?inst BookR)) (and (> (send ?inst:book get-pages) 150) (<= (send ?inst:book get-pages) 400))))
+			(loop-for-count (?i 1 (length$ ?booksR)) do
+				(bind ?bookR (nth$ ?i ?booksR))
+				(send ?bookR put-score (+ (send ?bookR get-score) 10))
+				(send ?bookR put-reasons "Because of SOMETIMES")
+			)
+		)
+		(case usually then
+			(bind $?booksR (find-all-instances ((?inst BookR)) (> (send ?inst:book get-pages) 400)))
+			(loop-for-count (?i 1 (length$ ?booksR)) do
+				(bind ?bookR (nth$ ?i ?booksR))
+				(send ?bookR put-score (+ (send ?bookR get-score) 10))
+				(send ?bookR put-reasons "Because of USUALLY")
+			)
+		)
+	)
+)
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
