@@ -26,7 +26,7 @@ for index, row in data.iterrows():
         rating = str(row['author_average_rating'])
         output =  "(" + instance_name + " of  Author"
         output += " (gender " + gender + ")"
-        output += " (name " + '"' + (name.replace('\n', '')).replace(' ', '') + '"' + ")"
+        output += " (name_ " + '"' + (name.replace('\n', '')).replace(' ', '') + '"' + ")"
         output += " (popularity " + popularity + ")"
         output += " (rating " + rating + "))\n\n"
         file.write(output)
