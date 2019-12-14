@@ -22400,16 +22400,19 @@
 	)
 )
 
-; ; Book instance template with associated score template
-; (deftemplate MAIN::Book_
-; 	(slot book
-; 		(type INSTANCE)
-; 	)
-; 	(slot score
-; 		(type INTEGER)
-; 		(default 0)
-; 	)
-; )
+; Book instance with associated score template
+(deftemplate MAIN::BookR
+	(slot book
+		(type INSTANCE)
+	)
+	(slot score
+		(type INTEGER)
+		(default 0)
+	)
+	(multislot reasons
+		(type STRING)
+	)
+)
 
 ; Recomendated books template
 (deftemplate MAIN::Reco
@@ -22763,13 +22766,12 @@
 ; ---------------------------------- RECO ------------------------------------ ;
 
 (defrule RECO::test
-	(not (tested))
-	?reco <- (Reco)
+	?reco <- (Reco (books $?books))
+	(test (< (length$ ?books) 4))
 	?book <- (object (is-a Book) (pages ?pages))
 	(test (< ?pages 150))
 	=>
-	(modify ?reco (books ?book))
-	(assert (tested))
+	(modify ?reco (books (insert$ $?books 1 ?book)))
 )
 
 ; ----------------------------------- PRES ----------------------------------- ;
