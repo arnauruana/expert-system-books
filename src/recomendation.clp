@@ -22780,15 +22780,15 @@
 ; ----------------------------------- PRES ----------------------------------- ;
 
 (defrule PRES::present-recomendations
+  (not (tested))
+  (Reco (books $?list))
 	=>
 	(print-presentation)
-  (bind ?i 1)
-  (while (<= ?i (length$ (send ?plat get-ingredients)))
-    do
-    (bind ?ingredient (nth$ ?i (send ?plat get-ingredients)))
-    (printout t (send ?ingredient get-nom) crlf)
-    (bind ?i (+ ?i 1))
+  (loop-for-count (?i 1 3) do
+    (bind ?book (nth$ ?i $?list))
+    (printout t ?book crlf)
   )
+	(assert (tested))
 )
 
 (defrule PRES::test
