@@ -110,10 +110,9 @@
 		(type INTEGER)
 	;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(multislot author
+	(single-slot author
 		(type INSTANCE)
 	;+		(allowed-classes Author)
-		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(single-slot genre
 		(type STRING)
@@ -5601,7 +5600,10 @@
 	=>
 	(print-presentation)
   (loop-for-count (?i 1 3) do
-    (bind ?book (nth$ ?i $?list))
-    (printout t ?book crlf)
+    (bind ?recom (nth$ ?i $?list))
+    (printout t (send (send ?recom get-book) get-title) crlf)
+    (printout t (send (send (send ?recom get-book) get-author) get-name_) crlf)
+    (printout t (send ?recom get-reasons) crlf)
+    (println "")
   )
 )
