@@ -22444,7 +22444,7 @@
 	(println "")
 )
 
-; Prints the welcome header
+; Prints the presentation header
 (deffunction PRES::print-presentation()
 	(println "")
 	(println "==================================================================")
@@ -22769,6 +22769,14 @@
 	(println "")
 )
 
+(defrule RECO::test
+	?reco <- (Reco)
+	?book <- (object (is-a Book) (pages ?pages))
+	(test (< ?pages 100))
+	=>
+	(modify ?reco (books ?book))
+)
+
 ; ----------------------------------- PRES ----------------------------------- ;
 
 (defrule PRES::present-recomendations
@@ -22781,4 +22789,12 @@
     (printout t (send ?ingredient get-nom) crlf)
     (bind ?i (+ ?i 1))
   )
+)
+
+(defrule PRES::test
+	(not (tested))
+	?reco <- (Reco)
+	=>
+	(print-presentation)
+	(assert (tested))
 )
