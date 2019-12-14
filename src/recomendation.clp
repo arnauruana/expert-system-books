@@ -22438,8 +22438,17 @@
 ; Prints the welcome header
 (deffunction MAIN::print-welcome()
 	(println "")
+	(println "===================================================================")
+	(println "=                    BOOK RECOMENDATION SYSTEM                    =")
+	(println "===================================================================")
+	(println "")
+)
+
+; Prints the welcome header
+(deffunction PRES::print-presentation()
+	(println "")
 	(println "==================================================================")
-	(println "=                    BOOK RECOENDATION SYSTEM                    =")
+	(println "=                  THIS ARE YOUR RECOMENDATIONS                  =")
 	(println "==================================================================")
 	(println "")
 )
@@ -22760,6 +22769,14 @@
 	(println "")
 )
 
+(defrule RECO::test
+	?reco <- (Reco)
+	?book <- (object (is-a Book) (pages ?pages))
+	(test (< ?pages 100))
+	=>
+	(modify ?reco (books ?book))
+)
+
 ; ----------------------------------- PRES ----------------------------------- ;
 
 (defrule PRES::debug
@@ -22767,4 +22784,12 @@
 	(println "")
 	(println "---- PRES MODULE ----")
 	(println "")
+)
+
+(defrule PRES::test
+	(not (tested))
+	?reco <- (Reco)
+	=>
+	(print-separator)
+	(assert (tested))
 )
