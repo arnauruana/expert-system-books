@@ -22691,19 +22691,19 @@
 
 ; Obtains the level of book popularity demanded by the user
 (defrule POPU::get-popularity
-	?p <- (Pref (highP NONE) (midP NONE) (lowP NONE))
+	?pref <- (Pref (highP NONE) (midP NONE) (lowP NONE))
 	=>
 	(bind ?ans (question-yes-no "  - Do you usually prefere to read very popular books such as bestsellers?"))
 	(if (eq ?ans TRUE)
 		then
-			(modify ?p (highP TRUE) (midP FALSE) (lowP FALSE))
+			(modify ?pref (highP TRUE) (midP FALSE) (lowP FALSE))
 		else
 			(bind ?ans (question-yes-no "  - Would you like to read an unpopular book?"))
 			(if (eq ?ans TRUE)
 				then
-					(modify ?p (highP FALSE) (midP FALSE) (lowP TRUE))
+					(modify ?pref (highP FALSE) (midP FALSE) (lowP TRUE))
 				else
-					(modify ?p (highP FALSE) (midP TRUE) (lowP FALSE))
+					(modify ?pref (highP FALSE) (midP TRUE) (lowP FALSE))
 			)
 	)
 )
