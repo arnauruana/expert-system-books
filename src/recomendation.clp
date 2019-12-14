@@ -22320,7 +22320,7 @@
 	(export ?ALL)
 )
 
-; User book recomendation module
+; User book recommendation module
 (defmodule RECO
 	(import MAIN ?ALL)
 	(export ?ALL)
@@ -22444,7 +22444,7 @@
 (deffunction MAIN::print-welcome()
 	(println "")
 	(println "===================================================================")
-	(println "=                    BOOK RECOMENDATION SYSTEM                    =")
+	(println "=                    BOOK RECOMMENDATION SYSTEM                   =")
 	(println "===================================================================")
 	(println "")
 )
@@ -22453,7 +22453,7 @@
 (deffunction PRES::print-presentation()
 	(println "")
 	(println "==================================================================")
-	(println "=                  THIS ARE YOUR RECOMENDATIONS                  =")
+	(println "=                  THIS ARE YOUR RECOMMENDATIONS                 =")
 	(println "==================================================================")
 	(println "")
 )
@@ -22794,14 +22794,12 @@
   (assert (Pres))
 )
 
-(defrule PRES::present-recomendations
-  (not (tested))
-  (Reco (books $?list))
+(defrule PRES::present-recommendations
+  (Pres (recommended $?list))
 	=>
 	(print-presentation)
   (loop-for-count (?i 1 3) do
     (bind ?book (nth$ ?i $?list))
     (printout t ?book crlf)
   )
-	(assert (tested))
 )
