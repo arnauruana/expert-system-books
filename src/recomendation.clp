@@ -22438,8 +22438,17 @@
 ; Prints the welcome header
 (deffunction MAIN::print-welcome()
 	(println "")
+	(println "===================================================================")
+	(println "=                    BOOK RECOMENDATION SYSTEM                    =")
+	(println "===================================================================")
+	(println "")
+)
+
+; Prints the welcome header
+(deffunction PRES::print-presentation()
+	(println "")
 	(println "==================================================================")
-	(println "=                    BOOK RECOENDATION SYSTEM                    =")
+	(println "=                  THIS ARE YOUR RECOMENDATIONS                  =")
 	(println "==================================================================")
 	(println "")
 )
