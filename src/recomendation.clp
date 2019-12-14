@@ -22400,16 +22400,16 @@
 	)
 )
 
-; Book instance template with associated score template
-(deftemplate MAIN::Book_
-	(slot book
-		(type INSTANCE)
-	)
-	(slot score
-		(type INTEGER)
-		(default 0)
-	)
-)
+; ; Book instance template with associated score template
+; (deftemplate MAIN::Book_
+; 	(slot book
+; 		(type INSTANCE)
+; 	)
+; 	(slot score
+; 		(type INTEGER)
+; 		(default 0)
+; 	)
+; )
 
 ; Recomendated books template
 (deftemplate MAIN::Reco
@@ -22569,7 +22569,7 @@
 ; ----------------------------------- MAIN ----------------------------------- ;
 
 ; Starts the execution of the program while printing a welcome messsage
-(defrule MAIN::initial
+(defrule MAIN::start
 	?fact <- (initial-fact)
 	=>
 	(print-welcome)
@@ -22762,29 +22762,17 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-(defrule RECO::debug
-	=>
-	(println "")
-	(println "---- RECO MODULE ----")
-	(println "")
-)
-
 (defrule RECO::test
+	(not (tested))
 	?reco <- (Reco)
 	?book <- (object (is-a Book) (pages ?pages))
-	(test (< ?pages 100))
+	(test (< ?pages 150))
 	=>
 	(modify ?reco (books ?book))
+	(assert (tested))
 )
 
 ; ----------------------------------- PRES ----------------------------------- ;
-
-(defrule PRES::debug
-	=>
-	(println "")
-	(println "---- PRES MODULE ----")
-	(println "")
-)
 
 (defrule PRES::test
 	(not (tested))
