@@ -22400,14 +22400,6 @@
 	)
 )
 
-; Actual user recomendation template
-(deftemplate MAIN::Reco
-	(multislot genres
-		(type STRING)
-		(default "NONE")
-	)
-)
-
 ; ============================================================================ ;
 ; ================================ FUNCTIONS ================================= ;
 ; ============================================================================ ;
@@ -22736,19 +22728,14 @@
 
 ; Treats the exception where the user has introduced "NO" to all the questions
 (defrule ANTI::treat-exception
-	?pref <- (Pref (oldA FALSE) (midA FALSE) (newA FALSE))
+	?pref <- (Pref (oldA FALSE) (midA FALSE) (newA FALSE)) ; Contradiction
 	=>
 	(modify ?pref (oldA TRUE) (midA TRUE) (newA TRUE))
 )
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-(defrule RECO::predict-genres
-	(Pref (genre TRUE))
-	(Reco (genres "NONE"))
-	=>
-	(focus GENRE)
-)
+; TODO ;
 
 ; ---------------------------------- GENRE ----------------------------------- ;
 
