@@ -5501,13 +5501,6 @@
 	(modify ?pref (newA ?newA))
 )
 
-; Treats the exception where the user has introduced "NO" to all the questions
-; (defrule ANTI::treat-exception
-; 	?pref <- (Pref (oldA FALSE) (midA FALSE) (newA FALSE)) ; Contradiction
-; 	=>
-; 	(modify ?pref (oldA TRUE) (midA TRUE) (newA TRUE))
-; )
-
 ; ---------------------------------- RECO ------------------------------------ ;
 
 (defrule RECO::init
