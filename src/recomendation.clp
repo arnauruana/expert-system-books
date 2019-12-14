@@ -5645,7 +5645,7 @@
     (printout t (send (send (send ?recom get-book) get-author) get-name_) crlf)
     (loop-for-count (?i 1 (length$ (send ?recom get-reasons))) do
       (bind ?reason (nth$ ?i (send ?recom get-reasons)))
-      (printout t reason crlf)
+      (printout t ?reason crlf)
     )
     (println "")
   )
