@@ -5568,10 +5568,6 @@
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
 		(bind ?year (send (send ?bookR get-book) get-year))
-<<<<<<< HEAD
-=======
-		(printout t ?year crlf)
->>>>>>> b1dc39c22af98dc766a8f7e41e98e8c7c5288912
 		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) 20))
 			(send ?bookR put-reasons "Because of OLD-ANTI")
