@@ -22331,7 +22331,7 @@
 ; Global variables representing the minimum and maximum age allowed
 (defglobal USER
 	?*MIN_AGE* = 0
-	?*MAX_AGE* = 100
+	?*MAX_AGE* = 120
 )
 
 ; ============================================================================ ;
@@ -22397,6 +22397,24 @@
 	(slot genre
 		(type SYMBOL)
 		(default NONE)
+	)
+)
+
+; Book instance template with associated score template
+(deftemplate MAIN::Book_
+	(slot book
+		(type INSTANCE)
+	)
+	(slot score
+		(type INTEGER)
+		(default 0)
+	)
+)
+
+; Recomendated books template
+(deftemplate MAIN::Reco
+	(multislot books
+		(type INSTANCE)
 	)
 )
 
@@ -22735,12 +22753,18 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-; TODO ;
-
-; ---------------------------------- GENRE ----------------------------------- ;
-
-; TODO ;
+(defrule RECO::debug
+	=>
+	(println "")
+	(println "---- RECO MODULE ----")
+	(println "")
+)
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
-; TODO ;
+(defrule PRES::debug
+	=>
+	(println "")
+	(println "---- PRES MODULE ----")
+	(println "")
+)
