@@ -22760,6 +22760,14 @@
 	(println "")
 )
 
+(defrule RECO::test
+	?reco <- (Reco)
+	?book <- (object (is-a Book) (pages ?pages))
+	(test (< ?pages 100))
+	=>
+	(modify ?reco (books ?book))
+)
+
 ; ----------------------------------- PRES ----------------------------------- ;
 
 (defrule PRES::debug
@@ -22767,4 +22775,12 @@
 	(println "")
 	(println "---- PRES MODULE ----")
 	(println "")
+)
+
+(defrule PRES::test
+	(not (tested))
+	?reco <- (Reco)
+	=>
+	(print-presentation)
+	(assert (tested))
 )
