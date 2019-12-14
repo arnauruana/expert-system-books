@@ -22326,7 +22326,13 @@
 ; ================================= GLOBALS ================================== ;
 ; ============================================================================ ;
 
-; ¿TODO?
+; ----------------------------------- USER ----------------------------------- ;
+
+; Global variables representing the minimum and maximum age allowed
+(defglobal USER
+	?*MIN_AGE* = 0
+	?*MAX_AGE* = 100
+)
 
 ; ============================================================================ ;
 ; ================================= MESSAGES ================================= ;
@@ -22617,7 +22623,7 @@
 (defrule USER::get-age
 	?user <- (User (age -1))
 	=>
-	(bind ?age (question-range "  - How old are you?" 0 150))
+	(bind ?age (question-range "  - How old are you?" ?*MIN_AGE* ?*MAX_AGE*))
 	(modify ?user (age ?age))
 )
 
