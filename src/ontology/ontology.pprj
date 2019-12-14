@@ -1,4 +1,4 @@
-; Thu Dec 12 19:44:37 CET 2019
+; Sat Dec 14 16:05:35 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -169,7 +169,7 @@
 	(name "classes_file_name")
 	(string_value "ontology.pont"))
 
-([KB_620635_Class2] of  Map
+([KB_854804_Class2] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -182,8 +182,8 @@
 
 ([ontology_ProjectKB_Class10077] of  String
 
-	(name "Author")
-	(string_value "name"))
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
 
 ([ontology_ProjectKB_Class10078] of  Property_List
 )
@@ -248,18 +248,18 @@
 
 ([ontology_ProjectKB_Class20078] of  String
 
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
+	(name "Author")
+	(string_value "name"))
 
 ([ontology_ProjectKB_Class20079] of  String
 
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
 
 ([ontology_ProjectKB_Class20080] of  String
 
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
 
 ([ontology_ProjectKB_Class20081] of  String
 
@@ -655,8 +655,8 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")
