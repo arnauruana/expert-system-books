@@ -10,7 +10,7 @@ def isEnglish(s):
 
 def isYear(y):
     aux = str(y)
-    return len(aux) == 4
+    return len(aux) == 4 and aux.isdigit()
 
 data = pd.read_csv('./good_reads_final.csv')
 
