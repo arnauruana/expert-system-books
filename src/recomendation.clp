@@ -22786,6 +22786,8 @@
 		(send ?bookR put-score (send ?book get-rating))
 		(send ?bookR put-reasons "TEST REASON")
 	)
+	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
+	(modify ?reco (books $?booksR))
 )
 
 
