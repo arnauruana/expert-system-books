@@ -5578,7 +5578,31 @@
 		)
 		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI	")
+			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI")
+		)
+	)
+)
+
+(defrule RECO::popularity
+	(Reco (books $?booksR))
+	(test (> (length$ ?booksR) 0))
+	(Pref (highP ?high) (midP ?mid) (lowP ?low))
+	=>
+	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
+	(loop-for-count (?i 1 (length$ ?booksR)) do
+		(bind ?bookR (nth$ ?i ?booksR))
+		(bind ?popu (send (send ?bookR get-book) get-popularity))
+		(if (and (eq ?high TRUE) (eq ?popu high)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(slot-insert$ ?bookR reasons 1 "Because of HIGH-POPU")
+		)
+		(if (and (eq ?mid TRUE) (eq ?popu medium)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(slot-insert$ ?bookR reasons 1 "Because of MID-POPU")
+		)
+		(if (and (eq ?low TRUE) (eq ?popu low)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(slot-insert$ ?bookR reasons 1 "Because of LOW-POPU")
 		)
 	)
 )
