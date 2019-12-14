@@ -22321,7 +22321,7 @@
 	(export ?ALL)
 )
 
-; User book recomendation module
+; User book recommendation module
 (defmodule RECO
 	(import MAIN ?ALL)
 	(export ?ALL)
@@ -22418,6 +22418,12 @@
 	)
 )
 
+(deftemplate MAIN::Pres
+  (multislot recommended
+    (type INSTANCE)
+  )
+)
+
 ; ============================================================================ ;
 ; ================================ FUNCTIONS ================================= ;
 ; ============================================================================ ;
@@ -22439,7 +22445,7 @@
 (deffunction MAIN::print-welcome()
 	(println "")
 	(println "===================================================================")
-	(println "=                    BOOK RECOMENDATION SYSTEM                    =")
+	(println "=                    BOOK RECOMMENDATION SYSTEM                   =")
 	(println "===================================================================")
 	(println "")
 )
@@ -22448,7 +22454,7 @@
 (deffunction PRES::print-presentation()
 	(println "")
 	(println "==================================================================")
-	(println "=                  THIS ARE YOUR RECOMENDATIONS                  =")
+	(println "=                  THIS ARE YOUR RECOMMENDATIONS                 =")
 	(println "==================================================================")
 	(println "")
 )
@@ -22782,16 +22788,30 @@
 	)
 )
 
+
 ; ----------------------------------- PRES ----------------------------------- ;
 
-(defrule PRES::present-recomendations
-  (not (tested))
+(defrule PRES::create-pres
+  (not (Pres))
   (Reco (books $?list))
+  =>
+  (bind ?max-book (nth$ 1 ?list))
+  (loop-for-count (?i 2 (length$ ?list)) do
+    (bind ?aux-book (nth$ ?i ?list))
+    (if (> (send ?aux-book get-score) (send ?max-book get-score))
+      then (bind ?max-book (nth$ ?i ?list))
+    )
+  )
+  (printout t ?max-book crlf)
+  (assert (Pres))
+)
+
+(defrule PRES::present-recommendations
+  (Pres (recommended $?list))
 	=>
 	(print-presentation)
   (loop-for-count (?i 1 3) do
     (bind ?book (nth$ ?i $?list))
     (printout t ?book crlf)
   )
-	(assert (tested))
 )
