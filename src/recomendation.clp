@@ -5537,7 +5537,7 @@
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) 20))
-				(send ?bookR put-reasons "Because of RARELY")
+				(slot-insert$ ?bookR reasons 1 "Because of RARELY")
 			)
 		)
 		(case sometimes then
@@ -5545,7 +5545,7 @@
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) 20))
-				(send ?bookR put-reasons "Because of SOMETIMES")
+				(slot-insert$ ?bookR reasons 1 "Because of SOMETIMES")
 			)
 		)
 		(case usually then
@@ -5553,7 +5553,7 @@
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) 20))
-				(send ?bookR put-reasons "Because of USUALLY")
+				(slot-insert$ ?bookR reasons 1 "Because of USUALLY")
 			)
 		)
 	)
@@ -5570,15 +5570,15 @@
 		(bind ?year (send (send ?bookR get-book) get-year))
 		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(send ?bookR put-reasons "Because of OLD-ANTI")
+			(slot-insert$ ?bookR reasons 1 "Because of OLD-ANTI")
 		)
 		(if (and (and (>= ?year ?*OLD*) (< ?year ?*NEW*)) (eq ?mid TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(send ?bookR put-reasons "Because of MID-ANTI")
+			(slot-insert$ ?bookR reasons 1 "Because of MID-ANTI")
 		)
 		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(send ?bookR put-reasons "Because of NEW-ANTI")
+			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI	")
 		)
 	)
 )
