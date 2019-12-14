@@ -125,6 +125,16 @@
 		(create-accessor read-write))
 )
 
+(defclass BookR
+	(is-a Book)
+	(role concrete)
+	(single-slot score
+		(type INTEGER))
+	(multislot reasons
+		(type STRING)
+  )
+)
+
 ; ============================================================================ ;
 ; ================================ INSTANCES ================================= ;
 ; ============================================================================ ;
@@ -22400,20 +22410,6 @@
 	)
 )
 
-; Book instance with associated score template
-(deftemplate MAIN::BookR
-	(slot book
-		(type INSTANCE)
-	)
-	(slot score
-		(type INTEGER)
-		(default 0)
-	)
-	(multislot reasons
-		(type STRING)
-	)
-)
-
 ; Recomendated books template
 (deftemplate MAIN::Reco
 	(multislot books
@@ -22774,24 +22770,18 @@
 	(modify ?reco (books (insert$ $?books 1 ?book)))
 )
 
+(defrule RECO::)
+
 ; ----------------------------------- PRES ----------------------------------- ;
 
 (defrule PRES::present-recomendations
-  (not (tested))
-  (Reco (books $?list))
+  (Pres)
+  (Pres (books $?list))
 	=>
 	(print-presentation)
   (loop-for-count (?i 1 3) do
     (bind ?book (nth$ ?i $?list))
     (printout t ?book crlf)
   )
-	(assert (tested))
-)
-
-(defrule PRES::test
-	(not (tested))
-	?reco <- (Reco)
-	=>
-	(print-presentation)
 	(assert (tested))
 )
