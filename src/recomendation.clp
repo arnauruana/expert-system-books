@@ -5502,11 +5502,11 @@
 )
 
 ; Treats the exception where the user has introduced "NO" to all the questions
-(defrule ANTI::treat-exception
-	?pref <- (Pref (oldA FALSE) (midA FALSE) (newA FALSE)) ; Contradiction
-	=>
-	(modify ?pref (oldA TRUE) (midA TRUE) (newA TRUE))
-)
+; (defrule ANTI::treat-exception
+; 	?pref <- (Pref (oldA FALSE) (midA FALSE) (newA FALSE)) ; Contradiction
+; 	=>
+; 	(modify ?pref (oldA TRUE) (midA TRUE) (newA TRUE))
+; )
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
@@ -5603,6 +5603,24 @@
 		(if (and (eq ?low TRUE) (eq ?popu low)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) 20))
 			(slot-insert$ ?bookR reasons 1 "Because of LOW-POPU")
+		)
+	)
+)
+
+(defrule RECO::religion
+	(Reco (books $?booksR))
+	(test (> (length$ ?booksR) 0))
+	(User (religious ?reli))
+	=>
+	(bind $?booksR (find-all-instances ((?inst BookR)) (eq (send ?inst:book get-genre) "Religious")))
+	(loop-for-count (?i 1 (length$ ?booksR)) do
+		(bind ?bookR (nth$ ?i ?booksR))
+		(if (eq ?reli TRUE)
+			then
+				(send ?bookR put-score (+ (send ?bookR get-score) 100))
+				(slot-insert$ ?bookR reasons 1 "Because of RELIGIOUS")
+			else
+				(send ?bookR put-score (+ (send ?bookR get-score) -100))
 		)
 	)
 )
