@@ -5138,7 +5138,7 @@
 
 ; Global variables representing book sizes depending on its pages
 (defglobal RECO
-	?*LIT* = 300
+	?*LIT* = 200
 	?*BIG* = 2000
 )
 
@@ -5574,7 +5574,7 @@
 		(bind ?book (nth$ ?i ?books))
 		(bind ?bookR (make-instance (gensym) of BookR))
 		(send ?bookR put-book ?book)
-		(send ?bookR put-score (send ?book get-rating))
+		(send ?bookR put-score (+ (send ?book get-rating) (send (send ?book get-author) get-rating)))
 		(send ?bookR put-reasons (create$ ))
 	)
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
