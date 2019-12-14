@@ -22431,7 +22431,7 @@
 ; Prints a separator line
 (deffunction MAIN::print-separator()
 	(println "")
-	(println "-----------------------------------------------------------------")
+	(println "------------------------------------------------------------------")
 	(println "")
 )
 
@@ -22560,7 +22560,7 @@
 	(focus DATA)
 )
 
-; Recommends a book to the user changing from MAIN to RECO
+; Calculates the recommended books to the user changing from MAIN to RECO
 (defrule MAIN::recommend
 	(User)
 	(Pref)
@@ -22607,34 +22607,34 @@
 
 ; Obtains the user's name
 (defrule USER::get-name
-	?u <- (User (name "NONE"))
+	?user <- (User (name "NONE"))
 	=>
-	(bind ?n (question-general "  - What's your name?"))
-	(modify ?u (name ?n))
+	(bind ?name (question-general "  - What's your name?"))
+	(modify ?user (name ?name))
 )
 
 ; Obtains the user's age
 (defrule USER::get-age
-	?u <- (User (age -1))
+	?user <- (User (age -1))
 	=>
-	(bind ?a (question-range "  - How old are you?" 0 150))
-	(modify ?u (age ?a))
+	(bind ?age (question-range "  - How old are you?" 0 150))
+	(modify ?user (age ?age))
 )
 
 ; Obtains the user's gender
 (defrule USER::get-gender
-	?u <- (User (gender NONE))
+	?user <- (User (gender NONE))
 	=>
-	(bind ?g (question-options "  - Which is your gender?" male female))
-	(modify ?u (gender ?g))
+	(bind ?gender (question-options "  - Which is your gender?" male female))
+	(modify ?user (gender ?gender))
 )
 
 ; Obtains whether the user is religious or not
 (defrule USER::get-religious
-	?p <- (User (religious NONE))
+	?user <- (User (religious NONE))
 	=>
-	(bind ?ans (question-yes-no "  - Are you religious?"))
-	(modify ?p (religious ?ans))
+	(bind ?religious (question-yes-no "  - Are you religious?"))
+	(modify ?user (religious ?religious))
 )
 
 ; ---------------------------------- PREF ----------------------------------- ;
