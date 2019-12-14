@@ -22647,20 +22647,20 @@
 
 ; Obtains the user's read frequency
 (defrule PREF::get-freq
-	?p <- (Pref (freq NONE))
+	?pref <- (Pref (freq NONE))
 	=>
-	(bind ?f (question-options "  - How often do you usually read?" occasionally normally frequently))
-	(modify ?p (freq ?f))
+	(bind ?freq (question-options "  - How often do you usually read?" rarely sometimes usually))
+	(modify ?pref (freq ?freq))
 )
 
-; Obtains the user's book popularity preference
+; Obtains the user's book popularity rellevance
 (defrule PREF::popularity
-	?p <- (Pref (highP NONE) (midP NONE) (lowP NONE))
+	?pref <- (Pref (highP NONE) (midP NONE) (lowP NONE))
 	=>
 	(bind ?ans (question-yes-no "  - Do you usually care about book popularity?"))
 	(if (eq ?ans FALSE)
 		then
-			(modify ?p (highP TRUE) (midP TRUE) (lowP TRUE))
+			(modify ?pref (highP TRUE) (midP TRUE) (lowP TRUE))
 		else
 			(focus POPU)
 	)
@@ -22668,23 +22668,23 @@
 
 ; Obtains the user's book antiquity rellevance
 (defrule PREF::antiquity
-	?p <- (Pref (oldA NONE) (midA NONE) (newA NONE))
+	?pref <- (Pref (oldA NONE) (midA NONE) (newA NONE))
 	=>
-	(bind ?r (question-yes-no "  - Do you usually care about book antiquity?"))
-	(if (eq ?r FALSE)
+	(bind ?ans (question-yes-no "  - Do you usually care about book antiquity?"))
+	(if (eq ?ans FALSE)
 		then
-			(modify ?p (oldA TRUE) (midA TRUE) (newA TRUE))
+			(modify ?pref (oldA TRUE) (midA TRUE) (newA TRUE))
 		else
 			(focus ANTI)
 	)
 )
 
-; Obtains the user's preference for the genre of the book
+; Obtains the user's book genre rellevance
 (defrule PREF::get-genre
-	?p <- (Pref (genre NONE))
+	?pref <- (Pref (genre NONE))
 	=>
-	(bind ?ans (question-yes-no "  - Would you care about the genre of the book?"))
-	(modify ?p (genre ?ans))
+	(bind ?ans (question-yes-no "  - Do you usually care about the genre of the book?"))
+	(modify ?pref (genre ?ans))
 )
 
 ; ----------------------------------- POPU ----------------------------------- ;
