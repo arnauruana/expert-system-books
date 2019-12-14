@@ -22771,9 +22771,14 @@
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
-(defrule PRES::debug
+(defrule PRES::present-recomendations
 	=>
-	(println "")
-	(println "---- PRES MODULE ----")
-	(println "")
+	(print-presentation)
+  (bind ?i 1)
+  (while (<= ?i (length$ (send ?plat get-ingredients)))
+    do
+    (bind ?ingredient (nth$ ?i (send ?plat get-ingredients)))
+    (printout t (send ?ingredient get-nom) crlf)
+    (bind ?i (+ ?i 1))
+  )
 )
