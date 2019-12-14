@@ -22417,6 +22417,12 @@
 	)
 )
 
+(deftemplate MAIN::Pres
+  (multislot recommended
+    (type INSTANCE)
+  )
+)
+
 ; ============================================================================ ;
 ; ================================ FUNCTIONS ================================= ;
 ; ============================================================================ ;
@@ -22770,13 +22776,27 @@
 	(modify ?reco (books (insert$ $?books 1 ?book)))
 )
 
-(defrule RECO::)
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
+(defrule PRES::create-pres
+  (not (Pres))
+  (Reco (books $?list))
+  =>
+  (bind ?max-book (nth$ 1 ?list))
+  (loop-for-count (?i 2 (length$ ?list)) do
+    (bind ?aux-book (nth$ ?i ?list))
+    (if (> (send ?aux-book get-score) (send ?max-book get-score))
+      then (bind ?max-book (nth$ ?i ?list))
+    )
+  )
+  (printout t ?max-book crlf)
+  (assert (Pres))
+)
+
 (defrule PRES::present-recomendations
-  (Pres)
-  (Pres (books $?list))
+  (not (tested))
+  (Reco (books $?list))
 	=>
 	(print-presentation)
   (loop-for-count (?i 1 3) do
