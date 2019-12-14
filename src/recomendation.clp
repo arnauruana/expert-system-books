@@ -22422,9 +22422,9 @@
 ; Prints the welcome header
 (deffunction MAIN::print-welcome()
 	(println "")
-	(println "=================================================================")
-	(println "=                   BOOK RECOENDATION SYSTEM                   =")
-	(println "=================================================================")
+	(println "==================================================================")
+	(println "=                    BOOK RECOENDATION SYSTEM                    =")
+	(println "==================================================================")
 	(println "")
 )
 
@@ -22543,7 +22543,7 @@
 
 ; ----------------------------------- MAIN ----------------------------------- ;
 
-; Starts the execution printing a welcome messsage
+; Starts the execution of the program while printing a welcome messsage
 (defrule MAIN::initial
 	?fact <- (initial-fact)
 	=>
