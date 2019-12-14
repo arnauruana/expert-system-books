@@ -22795,17 +22795,21 @@
 
 (defrule PRES::create-pres
   (not (Pres))
-  (Reco (books $?list))
+  ?reco <- (Reco (books $?list))
   =>
-  (bind ?max-book (nth$ 1 ?list))
-  (loop-for-count (?i 2 (length$ ?list)) do
-    (bind ?aux-book (nth$ ?i ?list))
-    (if (> (send ?aux-book get-score) (send ?max-book get-score))
-      then (bind ?max-book (nth$ ?i ?list))
+  (bind $?aux-list (create$ ))
+  (loop-for-count (?ii 1 3) do
+    (bind ?max-book (nth$ 1 ?list))
+    (loop-for-count (?i 2 (length$ ?list)) do
+      (bind ?aux-book (nth$ ?i ?list))
+      (if (> (send ?aux-book get-score) (send ?max-book get-score))
+        then (bind ?max-book (nth$ ?i ?list))
+      )
     )
+    (bind ?aux-list (insert$ ?aux-list (+ (length$ ?aux-list) 1) ?max-book))
+    (bind $?list (delete-member$ ?list ?max-book))
   )
-  (printout t ?max-book crlf)
-  (assert (Pres))
+  (assert (Pres (recommended $?aux-list)))
 )
 
 (defrule PRES::present-recommendations
