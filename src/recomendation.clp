@@ -22444,7 +22444,7 @@
 	(println "")
 )
 
-; Prints the welcome header
+; Prints the presentation header
 (deffunction PRES::print-presentation()
 	(println "")
 	(println "==================================================================")
@@ -22790,10 +22790,6 @@
 	(not (tested))
 	?reco <- (Reco)
 	=>
-<<<<<<< HEAD
-	(print-separator)
-=======
 	(print-presentation)
->>>>>>> ad70de4ff536d775ac52b8c2df2cee15c215fb4d
 	(assert (tested))
 )
