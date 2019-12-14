@@ -5134,6 +5134,14 @@
 	?*MAX_AGE* = 120
 )
 
+; ----------------------------------- RECO ----------------------------------- ;
+
+; Global variables representing book sizes depending on its pages
+(defglobal RECO
+	?*LIT* = 300
+	?*BIG* = 2000
+)
+
 ; ============================================================================ ;
 ; ================================= MESSAGES ================================= ;
 ; ============================================================================ ;
@@ -5580,26 +5588,26 @@
 	=>
 	(switch ?freq
 		(case rarely then
-			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) 150)))
+			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) ?*LIT*)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 10))
+				(send ?bookR put-score (+ (send ?bookR get-score) 20))
 				(send ?bookR put-reasons "Because of RARELY")
 			)
 		)
 		(case sometimes then
-			(bind $?booksR (find-all-instances ((?inst BookR)) (and (> (send ?inst:book get-pages) 150) (<= (send ?inst:book get-pages) 400))))
+			(bind $?booksR (find-all-instances ((?inst BookR)) (and (> (send ?inst:book get-pages) ?*LIT*) (<= (send ?inst:book get-pages) ?*BIG*))))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 10))
+				(send ?bookR put-score (+ (send ?bookR get-score) 20))
 				(send ?bookR put-reasons "Because of SOMETIMES")
 			)
 		)
 		(case usually then
-			(bind $?booksR (find-all-instances ((?inst BookR)) (> (send ?inst:book get-pages) 400)))
+			(bind $?booksR (find-all-instances ((?inst BookR)) (> (send ?inst:book get-pages) ?*BIG*)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 10))
+				(send ?bookR put-score (+ (send ?bookR get-score) 20))
 				(send ?bookR put-reasons "Because of USUALLY")
 			)
 		)
