@@ -22774,6 +22774,21 @@
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
+<<<<<<< HEAD
+=======
+(defrule PRES::present-recomendations
+	=>
+	(print-presentation)
+  (bind ?i 1)
+  (while (<= ?i (length$ (send ?plat get-ingredients)))
+    do
+    (bind ?ingredient (nth$ ?i (send ?plat get-ingredients)))
+    (printout t (send ?ingredient get-nom) crlf)
+    (bind ?i (+ ?i 1))
+  )
+)
+
+>>>>>>> c4ceb2763b324c4f79817bfe1d9a3b75165771f0
 (defrule PRES::test
 	(not (tested))
 	?reco <- (Reco)
