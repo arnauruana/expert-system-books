@@ -22712,28 +22712,33 @@
 
 ; Obtains the user's preference for old-antiquity books
 (defrule ANTI::get-old-antiquity
-	?p <- (Pref (oldA NONE))
+	?pref <- (Pref (oldA NONE))
 	=>
-	(bind ?oa (question-yes-no "  - Do you usually like books before year 1900?"))
-	(modify ?p (oldA ?oa))
-	(assert (get-antiquity))
+	(bind ?oldA (question-yes-no "  - Do you usually like books before year 1900?"))
+	(modify ?pref (oldA ?oldA))
 )
 
 ; Obtains the user's preference for mid-antiquity books
 (defrule ANTI::get-mid-antiquity
-	?p <- (Pref (midA NONE))
+	?pref <- (Pref (midA NONE))
 	=>
-	(bind ?ma (question-yes-no "  - Do you usually like books between 1900 and 2000?"))
-	(modify ?p (midA ?ma))
+	(bind ?midA (question-yes-no "  - Do you usually like books between 1900 and 2000?"))
+	(modify ?pref (midA ?midA))
 )
 
 ; Obtains the user's preference for new-antiquity books
 (defrule ANTI::get-new-antiquity
-	?p <- (Pref (newA NONE))
+	?pref <- (Pref (newA NONE))
 	=>
-	(bind ?na (question-yes-no "  - Do you usually like books after year 2000?"))
-	(modify ?p (newA ?na))
-	(assert (get-antiquity))
+	(bind ?newA (question-yes-no "  - Do you usually like books after year 2000?"))
+	(modify ?pref (newA ?newA))
+)
+
+; Treats the exception where the user has introduced "NO" to all the questions
+(defrule ANTI::treat-exception
+	?pref <- (Pref (oldA FALSE) (midA FALSE) (newA FALSE))
+	=>
+	(modify ?pref (oldA TRUE) (midA TRUE) (newA TRUE))
 )
 
 ; ---------------------------------- RECO ------------------------------------ ;
