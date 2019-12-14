@@ -22501,6 +22501,8 @@
 	?answer
 )
 
+; ---------------------------------------------------------------------------- ;
+
 ; Funcion para hacer pregunta con indice de respuestas posibles
 (deffunction MAIN::question-index(?question $?possible-values)
 	(bind ?line (format nil "%s" ?question))
