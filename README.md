@@ -1,4 +1,4 @@
-# Knowledge Based Systems
+# Expert Systems
 
 Second practice of IA-FIB
 
