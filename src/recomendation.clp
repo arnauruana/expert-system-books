@@ -5096,7 +5096,7 @@
 
 	?*MSG-RELI* = "Because of RELIGIOUS"
 
-	?*MSG-GENR* = "Because of GENRE-CHOOSED
+	?*MSG-GENR* = "Because of GENRE-CHOOSED"
 )
 
 ; ============================================================================ ;
