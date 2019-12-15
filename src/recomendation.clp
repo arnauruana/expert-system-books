@@ -5038,8 +5038,6 @@
                 )
 )
 
-
-
 ; ----------------------------------- RECO ----------------------------------- ;
 
 ; Global variables representing book sizes depending on its pages
@@ -5505,7 +5503,8 @@
 	?pref <- (Pref (genres $?genres))
 	(test (= (length$ ?genres) 0))
 	=>
-	(println "TEST")
+	(bind $?genres (question-multi "Choose:"?*GENRES*))
+	(modify ?pref (genres $?genres))
 )
 
 ; ----------------------------------- POPU ----------------------------------- ;
