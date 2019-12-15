@@ -5612,18 +5612,18 @@
 	?pref <- (Pref (freq ?freq))
 	=>
   (if (<= ?age ?*CHILD*) then
-    (bind ?pages-rarely 60)
-    (bind ?pages-sometimes 140)
-    (bind ?pages-usually 180)
+    (bind ?pages-rarely 150)
+    (bind ?pages-sometimes 220)
+    (bind ?pages-usually 260)
   )
-  (if (> ?age ?*CHILD*) (<= ?age ?*YOUNG*) then
-    (bind ?pages-rarely 170)
+  (if (and (> ?age ?*CHILD*) (<= ?age ?*YOUNG*)) then
+    (bind ?pages-rarely 260)
     (bind ?pages-sometimes 370)
     (bind ?pages-usually 600)
   )
   (if (> ?age ?*ADULT*) then
-    (bind ?pages-rarely 300)
-    (bind ?pages-sometimes 1000)
+    (bind ?pages-rarely 600)
+    (bind ?pages-sometimes 2000)
     (bind ?pages-usually 9999999)
   )
 	(switch ?freq
