@@ -2,70 +2,7 @@
 ; ================================= ONTOLOGY ================================= ;
 ; ============================================================================ ;
 
-; Default class genereted by Protege (ontology/ontology.pont)
-(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
-	(is-a USER)
-	(role abstract)
-	(single-slot title
-		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot year
-		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot pages
-		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot books
-		(type INSTANCE)
-	;+		(allowed-classes Book)
-		(create-accessor read-write))
-	(single-slot frequency
-		(type SYMBOL)
-		(allowed-values rarely occasionaly normaly frequently)
-	;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot age
-		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot rating
-		(type FLOAT)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot genre
-		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot author
-		(type INSTANCE)
-	;+		(allowed-classes Author)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot gender
-		(type SYMBOL)
-		(allowed-values male female)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot popularity
-		(type SYMBOL)
-		(allowed-values low medium high)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot available_time
-		(type SYMBOL)
-		(allowed-values little medium much)
-	;+		(cardinality 0 1)
-		(create-accessor read-write))
-)
-
-; Author class declaration crated with Protege (ontology/ontology.pont)
+; Author class declaration created with Protege (ontology/ontology.pont)
 (defclass Author
 	(is-a USER)
 	(role concrete)
@@ -124,6 +61,7 @@
 		(create-accessor read-write))
 )
 
+; Book class declaration whit the score and its reasons to choose it
 (defclass BookR
 	(is-a USER)
 	(role concrete)
@@ -5068,27 +5006,46 @@
 
 ; Global variables representing the minimum and maximum age allowed
 (defglobal USER
-	?*MIN_AGE* = 0
 	?*MAX_AGE* = 120
+	?*MIN_AGE* = 0
 )
 
 ; ----------------------------------- RECO ----------------------------------- ;
 
 ; Global variables representing book sizes depending on its pages
 (defglobal RECO
-	?*LIT* = 200
 	?*BIG* = 1000
+	?*LIT* = 200
 )
 
+; Global variables representing delimitation of antiquity years
 (defglobal RECO
+	?*NEW* = 2000
 	?*OLD* = 1900
-	?*NEW* = 1900
 )
 
+; Global variables representing the score given in each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
+	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 30
+)
+
+(defglobal RECO
+	?*MSG-ANTI-NEW* = "Because of ANTI-NEW"
+	?*MSG-ANTI-MID* = "Because of ANTI-MID"
+	?*MSG-ANTI-OLD* = "Because of ANTI-OLD"
+
+	?*MSG-FREQ-RAR* = "Because of FREQ-RAR"
+	?*MSG-FREQ-SOM* = "Because of FREQ-SOM"
+	?*MSG-FREQ-USU* = "Because of FREQ-USU"
+
+	?*MSG-POPU-LOW* = "Because of POPU-LOW"
+	?*MSG-POPU-MED* = "Because of POPU-MED"
+	?*MSG-POPU-HIG* = "Because of POPU-HIG"
+
+	?*MSG-RELI* = "Because of RELI"
 )
 
 ; ============================================================================ ;
@@ -5151,7 +5108,7 @@
 	)
 )
 
-; Recomendated books template
+; Recommended books template
 (deftemplate MAIN::Reco
 	(multislot books
 		(type INSTANCE)
@@ -5527,49 +5484,25 @@
 			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) ?*LIT*)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 20))
-				(slot-insert$ ?bookR reasons 1 "Because of RARELY")
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
+				(slot-insert$ ?bookR reasons 1 ?*MSG-FREQ-RAR*)
 			)
 		)
 		(case sometimes then
 			(bind $?booksR (find-all-instances ((?inst BookR)) (and (> (send ?inst:book get-pages) ?*LIT*) (<= (send ?inst:book get-pages) ?*BIG*))))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 20))
-				(slot-insert$ ?bookR reasons 1 "Because of SOMETIMES")
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
+				(slot-insert$ ?bookR reasons 1 ?*MSG-FREQ-SOM*)
 			)
 		)
 		(case usually then
 			(bind $?booksR (find-all-instances ((?inst BookR)) (> (send ?inst:book get-pages) ?*BIG*)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 20))
-				(slot-insert$ ?bookR reasons 1 "Because of USUALLY")
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
+				(slot-insert$ ?bookR reasons 1 ?*MSG-FREQ-USU*)
 			)
-		)
-	)
-)
-
-(defrule RECO::antiquity
-	(Reco (books $?booksR))
-	(test (> (length$ ?booksR) 0))
-	(Pref (oldA ?old) (midA ?mid) (newA ?new))
-	=>
-	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
-	(loop-for-count (?i 1 (length$ ?booksR)) do
-		(bind ?bookR (nth$ ?i ?booksR))
-		(bind ?year (send (send ?bookR get-book) get-year))
-		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(slot-insert$ ?bookR reasons 1 "Because of OLD-ANTI")
-		)
-		(if (and (and (>= ?year ?*OLD*) (< ?year ?*NEW*)) (eq ?mid TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(slot-insert$ ?bookR reasons 1 "Because of MID-ANTI")
-		)
-		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI")
 		)
 	)
 )
@@ -5584,16 +5517,40 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(bind ?popu (send (send ?bookR get-book) get-popularity))
 		(if (and (eq ?high TRUE) (eq ?popu high)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(slot-insert$ ?bookR reasons 1 "Because of HIGH-POPU")
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
+			(slot-insert$ ?bookR reasons 1 ?*MSG-POPU-HIG*)
 		)
 		(if (and (eq ?mid TRUE) (eq ?popu medium)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(slot-insert$ ?bookR reasons 1 "Because of MID-POPU")
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
+			(slot-insert$ ?bookR reasons 1 ?*MSG-POPU-MED*)
 		)
 		(if (and (eq ?low TRUE) (eq ?popu low)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
-			(slot-insert$ ?bookR reasons 1 "Because of LOW-POPU")
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
+			(slot-insert$ ?bookR reasons 1 ?*MSG-POPU-LOW*)
+		)
+	)
+)
+
+(defrule RECO::antiquity
+	(Reco (books $?booksR))
+	(test (> (length$ ?booksR) 0))
+	(Pref (oldA ?old) (midA ?mid) (newA ?new))
+	=>
+	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
+	(loop-for-count (?i 1 (length$ ?booksR)) do
+		(bind ?bookR (nth$ ?i ?booksR))
+		(bind ?year (send (send ?bookR get-book) get-year))
+		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
+			(slot-insert$ ?bookR reasons 1 ?*MSG-ANTI-OLD*)
+		)
+		(if (and (and (>= ?year ?*OLD*) (< ?year ?*NEW*)) (eq ?mid TRUE)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
+			(slot-insert$ ?bookR reasons 1 ?*MSG-ANTI-MID*)
+		)
+		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
+			(slot-insert$ ?bookR reasons 1 ?*MSG-ANTI-NEW*)
 		)
 	)
 )
@@ -5608,8 +5565,8 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(if (eq ?reli TRUE)
 			then
-				(send ?bookR put-score (+ (send ?bookR get-score) 30))
-				(slot-insert$ ?bookR reasons 1 "Because of RELIGIOUS")
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-RELI*))
+				(slot-insert$ ?bookR reasons 1 ?*MSG-RELI*)
 			else
 				(send ?bookR put-score (+ (send ?bookR get-score) -100))
 		)
@@ -5637,38 +5594,14 @@
   (assert (Pres (recommended $?aux-list)))
 )
 
-; ; WARNING
-; (defrule PRES::create-pres-random
-;   (not (Pres))
-;   ?reco <- (Reco (books $?list))
-;   =>
-;   (bind $?aux-list (create$ ))
-;   (loop-for-count (?ii 1 3) do
-;     (bind ?max-book (nth$ 1 ?list))
-;     (loop-for-count (?i 2 (length$ ?list)) do
-;       (bind ?aux-book (nth$ ?i ?list))
-;       (if (> (send ?aux-book get-score) (send ?max-book get-score))
-;         then (bind ?max-book (nth$ ?i ?list))
-;       )
-;     )
-; 		(bind ?max-score (send ?max-book get-score))
-; 		(printout t "SCORE --> " ?max-score crlf)
-; 		(bind $?max-books (find-all-instances ((?inst BookR)) (eq ?inst:score ?max-score)))
-; 		(bind ?ith (+ (mod (random) (length$ ?max-books)) 1))
-;     (bind ?aux-list (insert$ ?aux-list (+ (length$ ?aux-list) 1) (nth$ ?ith ?max-books)))
-;     (bind $?list (delete-member$ ?list (nth$ ?ith ?max-books)))
-;   )
-;   (assert (Pres (recommended $?aux-list)))
-; )
-
 (defrule PRES::present-recommendations
-  (Pres (recommended $?list))
-  (User (name ?name))
+	(Pres (recommended $?list))
+	(User (name ?name))
 	=>
 	(print-presentation)
   (print "Hi ")
   (print ?name)
-  (println ", this are the books we choosed for you:")
+  (println ", these are the books we have chosen for you:")
   (println "")
   (loop-for-count (?i 1 3) do
     (bind ?recom (nth$ ?i $?list))
@@ -5676,12 +5609,14 @@
     (printout t (send (send ?recom get-book) get-title) crlf)
     (print "Author:  ")
     (printout t (send (send (send ?recom get-book) get-author) get-name_) crlf)
-    (println "We choosed this book for this reasons:")
+    (println "Reasons:")
     (loop-for-count (?i 1 (length$ (send ?recom get-reasons))) do
-      (print "         ")
+      (print "    ") (print ?i) (print " -> ")
       (bind ?reason (nth$ ?i (send ?recom get-reasons)))
       (printout t ?reason crlf)
     )
     (println "")
   )
+	(println "We hope you enjoy them.")
+	(println "")
 )
