@@ -5599,11 +5599,27 @@
 (defrule RECO::frequency
 	?reco <- (Reco (books $?booksR))
 	(test (> (length$ ?booksR) 0))
+  (User (age ?age))
 	?pref <- (Pref (freq ?freq))
 	=>
+  (if (<= ?age ?*CHILD*) then
+    (bind ?pages-rarely 60)
+    (bind ?pages-sometimes 140)
+    (bind ?pages-usually 180)
+  )
+  (if (> ?age ?*CHILD*) (<= ?age ?*YOUNG*) then
+    (bind ?pages-rarely 170)
+    (bind ?pages-sometimes 370)
+    (bind ?pages-usually 600)
+  )
+  (if (> ?age ?*ADULT*) then
+    (bind ?pages-rarely 300)
+    (bind ?pages-sometimes 1000)
+    (bind ?pages-usually 9999999)
+  )
 	(switch ?freq
 		(case rarely then
-			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) ?*LIT*)))
+			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) ?pages-rarely)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
@@ -5611,7 +5627,7 @@
 			)
 		)
 		(case sometimes then
-			(bind $?booksR (find-all-instances ((?inst BookR)) (and (> (send ?inst:book get-pages) ?*LIT*) (<= (send ?inst:book get-pages) ?*BIG*))))
+			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) ?pages-sometimes)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
@@ -5619,7 +5635,7 @@
 			)
 		)
 		(case usually then
-			(bind $?booksR (find-all-instances ((?inst BookR)) (> (send ?inst:book get-pages) ?*BIG*)))
+			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) ?pages-usually)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
