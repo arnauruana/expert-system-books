@@ -5730,6 +5730,8 @@
     (printout t (send (send ?recom get-book) get-title) crlf)
     (print "Author -> ")
     (printout t (send (send (send ?recom get-book) get-author) get-name_) crlf)
+    (print "Genre  -> ")
+    (printout t (send (send ?recom get-book) get-genre) crlf)
     (println "Reasons:")
     (loop-for-count (?i 1 (length$ (send ?recom get-reasons))) do
       (print "       -> ")
