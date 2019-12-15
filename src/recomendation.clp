@@ -4986,6 +4986,7 @@
 	(export ?ALL)
 )
 
+; Book genre preference module
 (defmodule GENR
 	(import MAIN ?ALL)
 	(import DATA ?ALL)
@@ -5189,18 +5190,16 @@
 ; Prints the welcome header
 (deffunction MAIN::print-welcome()
 	(println "")
-	(println "===================================================================")
-	(println "=                    BOOK RECOMMENDATION SYSTEM                   =")
-	(println "===================================================================")
+	(println "==================================================================")
+	(println "=                   BOOK RECOMMENDATION SYSTEM                   =")
+	(println "==================================================================")
 	(println "")
 )
 
 ; Prints the presentation header
 (deffunction PRES::print-presentation()
 	(println "")
-	(println "==================================================================")
-	(println "=                  THIS ARE YOUR RECOMMENDATIONS                 =")
-	(println "==================================================================")
+	(println "========================= RECOMENDATIONS =========================")
 	(println "")
 )
 
@@ -5208,6 +5207,13 @@
 (deffunction MAIN::print-separator()
 	(println "")
 	(println "------------------------------------------------------------------")
+	(println "")
+)
+
+; Prints the end program line
+(deffunction MAIN::print-end()
+	(println "")
+	(println "==================================================================")
 	(println "")
 )
 
@@ -5363,6 +5369,7 @@
 	=>
 	(assert (Reco))
 	(print-separator)
+	(println "Thanks for your answers.")
 	(println "We are processing your recommendations, please wait...")
 	(focus RECO)
 )
@@ -5703,9 +5710,8 @@
 	(User (name ?name))
 	=>
 	(print-presentation)
-  (print "Hi ")
   (print ?name)
-  (println ", these are the books we have chosen for you:")
+  (println ", these are the books we have chosen for you, we hope you enjoy them:")
   (println "")
   (loop-for-count (?i 1 3) do
     (bind ?recom (nth$ ?i $?list))
@@ -5721,6 +5727,5 @@
     )
     (println "")
   )
-	(println "We hope you enjoy them.")
-	(println "")
+	(print-end)
 )
