@@ -5032,6 +5032,22 @@
 	?*SCORE-RELI* = 30
 )
 
+(defglobal RECO
+	?*MSG-ANTI-NEW* = "Because of ANTI-NEW"
+	?*MSG-ANTI-MID* = "Because of ANTI-MID"
+	?*MSG-ANTI-OLD* = "Because of ANTI-OLD"
+
+	?*MSG-FREQ-RAR* = "Because of FREQ-RAR"
+	?*MSG-FREQ-SOM* = "Because of FREQ-SOM"
+	?*MSG-FREQ-USU* = "Because of FREQ-USU"
+
+	?*MSG-POPU-LOW* = "Because of POPU-LOW"
+	?*MSG-POPU-MED* = "Because of POPU-MED"
+	?*MSG-POPU-HIG* = "Because of POPU-HIG"
+
+	?*MSG-RELI* = "Because of RELI"
+)
+
 ; ============================================================================ ;
 ; ================================ TEMPLATES ================================= ;
 ; ============================================================================ ;
@@ -5469,7 +5485,7 @@
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
-				(slot-insert$ ?bookR reasons 1 "Because of RARELY")
+				(slot-insert$ ?bookR reasons 1 ?*MSG-FREQ-RAR*)
 			)
 		)
 		(case sometimes then
@@ -5477,7 +5493,7 @@
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
-				(slot-insert$ ?bookR reasons 1 "Because of SOMETIMES")
+				(slot-insert$ ?bookR reasons 1 ?*MSG-FREQ-SOM*)
 			)
 		)
 		(case usually then
@@ -5485,7 +5501,7 @@
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
-				(slot-insert$ ?bookR reasons 1 "Because of USUALLY")
+				(slot-insert$ ?bookR reasons 1 ?*MSG-FREQ-USU*)
 			)
 		)
 	)
@@ -5502,15 +5518,15 @@
 		(bind ?popu (send (send ?bookR get-book) get-popularity))
 		(if (and (eq ?high TRUE) (eq ?popu high)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
-			(slot-insert$ ?bookR reasons 1 "Because of HIGH-POPU")
+			(slot-insert$ ?bookR reasons 1 ?*MSG-POPU-HIG*)
 		)
 		(if (and (eq ?mid TRUE) (eq ?popu medium)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
-			(slot-insert$ ?bookR reasons 1 "Because of MID-POPU")
+			(slot-insert$ ?bookR reasons 1 ?*MSG-POPU-MED*)
 		)
 		(if (and (eq ?low TRUE) (eq ?popu low)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
-			(slot-insert$ ?bookR reasons 1 "Because of LOW-POPU")
+			(slot-insert$ ?bookR reasons 1 ?*MSG-POPU-LOW*)
 		)
 	)
 )
@@ -5526,15 +5542,15 @@
 		(bind ?year (send (send ?bookR get-book) get-year))
 		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
-			(slot-insert$ ?bookR reasons 1 "Because of OLD-ANTI")
+			(slot-insert$ ?bookR reasons 1 ?*MSG-ANTI-OLD*)
 		)
 		(if (and (and (>= ?year ?*OLD*) (< ?year ?*NEW*)) (eq ?mid TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
-			(slot-insert$ ?bookR reasons 1 "Because of MID-ANTI")
+			(slot-insert$ ?bookR reasons 1 ?*MSG-ANTI-MID*)
 		)
 		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
-			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI")
+			(slot-insert$ ?bookR reasons 1 ?*MSG-ANTI-NEW*)
 		)
 	)
 )
@@ -5550,7 +5566,7 @@
 		(if (eq ?reli TRUE)
 			then
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-RELI*))
-				(slot-insert$ ?bookR reasons 1 "Because of RELIGIOUS")
+				(slot-insert$ ?bookR reasons 1 ?*MSG-RELI*)
 			else
 				(send ?bookR put-score (+ (send ?bookR get-score) -100))
 		)
