@@ -4362,8 +4362,6 @@
 
 	([ontology_Class12108] of Book (author [ontology_Class10330]) (genre "Classics") (pages 3391) (popularity medium) (title "ThePilgrim'sProgress") (year 1678) (rating 3.99))
 
-	([ontology_Class12109] of Book (author [ontology_Class10203]) (genre "Religious") (pages 1828) (popularity high) (title "RedeemingLove") (year 1991) (rating 4.49))
-
 	([ontology_Class12110] of Book (author [ontology_Class10641]) (genre "Romance") (pages 798) (popularity low) (title "VanityandVexation:ANovelofPrideandPrejudice") (year 1991) (rating 3.21))
 
 	([ontology_Class12111] of Book (author [ontology_Class10642]) (genre "Uncategorized") (pages 2172) (popularity low) (title "Darcy'sStory") (year 1999) (rating 3.41))
@@ -5087,11 +5085,11 @@
 	?*NEW* = 1900
 )
 
-; ============================================================================ ;
-; ================================= MESSAGES ================================= ;
-; ============================================================================ ;
-
-; ¿TODO?
+(defglobal RECO
+	?*SCORE-ANTI* = 20
+	?*SCORE-POPU* = 20
+	?*SCORE-RELI* = 30
+)
 
 ; ============================================================================ ;
 ; ================================ TEMPLATES ================================= ;
@@ -5639,30 +5637,29 @@
   (assert (Pres (recommended $?aux-list)))
 )
 
-; ------------------ WARNING
-(defrule PRES::create-pres-random
-  (not (Pres))
-  ?reco <- (Reco (books $?list))
-  =>
-  (bind $?aux-list (create$ ))
-  (loop-for-count (?ii 1 3) do
-    (bind ?max-book (nth$ 1 ?list))
-    (loop-for-count (?i 2 (length$ ?list)) do
-      (bind ?aux-book (nth$ ?i ?list))
-      (if (> (send ?aux-book get-score) (send ?max-book get-score))
-        then (bind ?max-book (nth$ ?i ?list))
-      )
-    )
-		(bind ?max-score (send ?max-book get-score))
-		(printout t "SCORE --> " ?max-score crlf)
-		(bind $?max-books (find-all-instances ((?inst BookR)) (eq ?inst:score ?max-score)))
-		(bind ?ith (+ (mod (random) (length$ ?max-books)) 1))
-    (bind ?aux-list (insert$ ?aux-list (+ (length$ ?aux-list) 1) (nth$ ?ith ?max-books)))
-    (bind $?list (delete-member$ ?list (nth$ ?ith ?max-books)))
-  )
-  (assert (Pres (recommended $?aux-list)))
-)
-; ------------------
+; ; WARNING
+; (defrule PRES::create-pres-random
+;   (not (Pres))
+;   ?reco <- (Reco (books $?list))
+;   =>
+;   (bind $?aux-list (create$ ))
+;   (loop-for-count (?ii 1 3) do
+;     (bind ?max-book (nth$ 1 ?list))
+;     (loop-for-count (?i 2 (length$ ?list)) do
+;       (bind ?aux-book (nth$ ?i ?list))
+;       (if (> (send ?aux-book get-score) (send ?max-book get-score))
+;         then (bind ?max-book (nth$ ?i ?list))
+;       )
+;     )
+; 		(bind ?max-score (send ?max-book get-score))
+; 		(printout t "SCORE --> " ?max-score crlf)
+; 		(bind $?max-books (find-all-instances ((?inst BookR)) (eq ?inst:score ?max-score)))
+; 		(bind ?ith (+ (mod (random) (length$ ?max-books)) 1))
+;     (bind ?aux-list (insert$ ?aux-list (+ (length$ ?aux-list) 1) (nth$ ?ith ?max-books)))
+;     (bind $?list (delete-member$ ?list (nth$ ?ith ?max-books)))
+;   )
+;   (assert (Pres (recommended $?aux-list)))
+; )
 
 (defrule PRES::present-recommendations
   (Pres (recommended $?list))
