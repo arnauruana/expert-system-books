@@ -5663,13 +5663,22 @@
 
 (defrule PRES::present-recommendations
   (Pres (recommended $?list))
+  (User (name ?name))
 	=>
 	(print-presentation)
+  (print "Hi ")
+  (print ?name)
+  (println ", this are the books we choosed for you:")
+  (println "")
   (loop-for-count (?i 1 3) do
     (bind ?recom (nth$ ?i $?list))
+    (print "Title:   ")
     (printout t (send (send ?recom get-book) get-title) crlf)
+    (print "Author:  ")
     (printout t (send (send (send ?recom get-book) get-author) get-name_) crlf)
+    (println "We choosed this book for this reasons:")
     (loop-for-count (?i 1 (length$ (send ?recom get-reasons))) do
+      (print "         ")
       (bind ?reason (nth$ ?i (send ?recom get-reasons)))
       (printout t ?reason crlf)
     )
