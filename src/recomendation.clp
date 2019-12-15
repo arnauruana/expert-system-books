@@ -5499,6 +5499,7 @@
 
 ; ----------------------------------- GENR ----------------------------------- ;
 
+; Obtains the genres that user doesn't care to read
 (defrule GENR::get-genres
 	?pref <- (Pref (genres $?genres))
 	(test (= (length$ ?genres) 0))
