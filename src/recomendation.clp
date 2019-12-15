@@ -5510,7 +5510,7 @@
 		(bind ?delete (nth$ (nth$ ?i ?deletes) ?*GENRES*))
 		(bind $?genres (delete-member$ ?genres ?delete))
 	)
-	(modify ?pref (genres $?genres))
+	(modify ?pref (genres $?genres "Uncategorized"))
 )
 
 ; ----------------------------------- POPU ----------------------------------- ;
