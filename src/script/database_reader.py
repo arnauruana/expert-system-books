@@ -102,17 +102,18 @@ auxiliary_genre = []
 for index, row in data.iterrows():
     genre_1 = row['genre_1']
     genre_2 = row['genre_2']
-    if (genre_1 == 'Fiction'):
+    if (genre_1 == 'Fiction' or genre_1 == 'Novels' or genre_1 == 'Young Adult' or genre_1 == 'Adult Fiction'):
         genre_1 = genre_2
     auxiliary_genre.append(genre_1)
 data['genre_1'] = auxiliary_genre
 
-data['genre_1'] = data['genre_1'].replace({'Fiction':'Uncategorized',
-    'See top shelves...': 'Uncategorized',
+data['genre_1'] = data['genre_1'].replace({
+    'See top shelves…': 'Uncategorized',
     'Literary Fiction'  : 'Uncategorized',
     'Fan Fiction'       : 'Uncategorized',
     'Novels'            : 'Uncategorized',
     'Novella'           : 'Uncategorized',
+    'American'          : 'Uncategorized',
     'Adult Fiction'     : 'Adult',
     'Young Adult'       : 'Young',
     'New Adult'         : 'Young',
@@ -135,6 +136,7 @@ data['genre_1'] = data['genre_1'].replace({'Fiction':'Uncategorized',
     'Biblical Fiction'  : 'Religious',
     'Christian'         : 'Religious',
     'Realistic Fiction' : 'Realistic',
+    'Apocalyptic'       : 'Adventure',
     'History'           : 'Historical',
     })
 
@@ -182,4 +184,4 @@ for title in data['book_title']:
     if (not isEnglish(title)):
         data = data[~data.book_title.str.contains(title)]
 
-data.to_csv('./booksDB2.csv')
+data.to_csv('./booksDB.csv')
