@@ -5006,25 +5006,27 @@
 
 ; Global variables representing the minimum and maximum age allowed
 (defglobal USER
-	?*MIN_AGE* = 0
 	?*MAX_AGE* = 120
+	?*MIN_AGE* = 0
 )
 
 ; ----------------------------------- RECO ----------------------------------- ;
 
 ; Global variables representing book sizes depending on its pages
 (defglobal RECO
-	?*LIT* = 200
 	?*BIG* = 1000
+	?*LIT* = 200
 )
 
 (defglobal RECO
+	?*NEW* = 2000
 	?*OLD* = 1900
-	?*NEW* = 1900
 )
 
+; Global variables representing the score given in each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
+	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 30
 )
@@ -5465,7 +5467,7 @@
 			(bind $?booksR (find-all-instances ((?inst BookR)) (<= (send ?inst:book get-pages) ?*LIT*)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 20))
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
 				(slot-insert$ ?bookR reasons 1 "Because of RARELY")
 			)
 		)
@@ -5473,7 +5475,7 @@
 			(bind $?booksR (find-all-instances ((?inst BookR)) (and (> (send ?inst:book get-pages) ?*LIT*) (<= (send ?inst:book get-pages) ?*BIG*))))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 20))
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
 				(slot-insert$ ?bookR reasons 1 "Because of SOMETIMES")
 			)
 		)
@@ -5481,7 +5483,7 @@
 			(bind $?booksR (find-all-instances ((?inst BookR)) (> (send ?inst:book get-pages) ?*BIG*)))
 			(loop-for-count (?i 1 (length$ ?booksR)) do
 				(bind ?bookR (nth$ ?i ?booksR))
-				(send ?bookR put-score (+ (send ?bookR get-score) 20))
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-FREQ*))
 				(slot-insert$ ?bookR reasons 1 "Because of USUALLY")
 			)
 		)
@@ -5498,15 +5500,15 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(bind ?year (send (send ?bookR get-book) get-year))
 		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
 			(slot-insert$ ?bookR reasons 1 "Because of OLD-ANTI")
 		)
 		(if (and (and (>= ?year ?*OLD*) (< ?year ?*NEW*)) (eq ?mid TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
 			(slot-insert$ ?bookR reasons 1 "Because of MID-ANTI")
 		)
 		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
 			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI")
 		)
 	)
@@ -5522,15 +5524,15 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(bind ?popu (send (send ?bookR get-book) get-popularity))
 		(if (and (eq ?high TRUE) (eq ?popu high)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
 			(slot-insert$ ?bookR reasons 1 "Because of HIGH-POPU")
 		)
 		(if (and (eq ?mid TRUE) (eq ?popu medium)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
 			(slot-insert$ ?bookR reasons 1 "Because of MID-POPU")
 		)
 		(if (and (eq ?low TRUE) (eq ?popu low)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) 20))
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
 			(slot-insert$ ?bookR reasons 1 "Because of LOW-POPU")
 		)
 	)
@@ -5546,7 +5548,7 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(if (eq ?reli TRUE)
 			then
-				(send ?bookR put-score (+ (send ?bookR get-score) 30))
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-RELI*))
 				(slot-insert$ ?bookR reasons 1 "Because of RELIGIOUS")
 			else
 				(send ?bookR put-score (+ (send ?bookR get-score) -100))
