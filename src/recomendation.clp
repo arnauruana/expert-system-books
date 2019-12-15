@@ -5478,7 +5478,7 @@
 	(bind ?ans (question-yes-no "  - Do you usually care about book popularity?"))
 	(if (eq ?ans FALSE)
 		then
-			(modify ?pref (highP TRUE) (midP TRUE) (lowP TRUE))
+			(modify ?pref (highP FALSE) (midP FALSE) (lowP FALSE))
 		else
 			(focus POPU)
 	)
@@ -5491,7 +5491,7 @@
 	(bind ?ans (question-yes-no "  - Do you usually care about book antiquity?"))
 	(if (eq ?ans FALSE)
 		then
-			(modify ?pref (oldA TRUE) (midA TRUE) (newA TRUE))
+			(modify ?pref (oldA FALSE) (midA FALSE) (newA FALSE))
 		else
 			(focus ANTI)
 	)
@@ -5567,6 +5567,7 @@
 	=>
 	(bind $?books (find-all-instances ((?inst Book)) TRUE))
 	(loop-for-count (?i 1 (length$ ?books)) do
+    (println "Estarà el bug a initialize? En breus ho descobrirem...")
 		(bind ?book (nth$ ?i ?books))
 		(bind ?bookR (make-instance (gensym) of BookR))
 		(send ?bookR put-book ?book)
@@ -5617,6 +5618,7 @@
 	=>
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
+    (println "Estarà el bug a popularity? En breus ho descobrirem...")
 		(bind ?bookR (nth$ ?i ?booksR))
 		(bind ?popu (send (send ?bookR get-book) get-popularity))
 		(if (and (eq ?high TRUE) (eq ?popu high)) then
@@ -5641,6 +5643,7 @@
 	=>
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
+    (println "Estarà el bug a antiquity? En breus ho descobrirem...")
 		(bind ?bookR (nth$ ?i ?booksR))
 		(bind ?year (send (send ?bookR get-book) get-year))
 		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
