@@ -68,6 +68,10 @@
 	(single-slot book
 		(type INSTANCE)
 	)
+	(single-slot refused-genre
+		(type SYMBOL)
+		(default FALSE)
+	)
 	(single-slot score
 		(type INTEGER)
 	)
@@ -5077,7 +5081,7 @@
 	?*SCORE-GENR* = 40
 	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
-	?*SCORE-RELI* = 30
+	?*SCORE-RELI* = 20
 )
 
 ; Gloval variables representing the reason messages given to the user
@@ -5095,8 +5099,7 @@
 	?*MSG-POPU-HIG* = "Because of POPU-HIG"
 
 	?*MSG-RELI* = "Because of RELIGIOUS"
-
-	?*MSG-GENR* = "Because of GENRE-CHOOSED"
+	?*MSG-GENR* = "Because of GENRE-NOT-REFUSED"
 )
 
 ; ============================================================================ ;
@@ -5394,11 +5397,11 @@
 	?reco <- (Reco)
 	?pres <- (Pres)
 	=>
-	(delete-all-instances)
-	(retract ?user)
-	(retract ?pref)
-	(retract ?reco)
-	(retract ?pres)
+	; (delete-all-instances)
+	; (retract ?user)
+	; (retract ?pref)
+	; (retract ?reco)
+	; (retract ?pres)
 	(assert (last-fact))
 )
 
@@ -5592,8 +5595,25 @@
 	(test (> (length$ ?booksR) 0))
 	?pref <- (Pref (genres $?genres))
 	=>
-
-
+	(bind $?refused ?*GENRES*)
+	(loop-for-count (?i 1 (length$ ?genres))
+		(bind ?refuse (nth$ ?i ?genres))
+		(bind $?refused (delete-member$ ?refused ?refuse))
+	)
+	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
+	(loop-for-count (?i 1 (length$ ?booksR))
+		(bind ?bookR (nth$ ?i ?booksR))
+		(loop-for-count (?j 1 (length$ ?refused))
+			(bind ?refuse (nth$ ?i ?refused))
+			(if (= (str-compare (send (send ?bookR get-book) get-genre) ?refuse) 0) then
+				(send ?bookR put-score (- (send ?bookR get-score) ?*SCORE-GENR*))
+				(send ?bookR put-refused-genre TRUE)
+			)
+		)
+		(if (eq (send ?bookR get-refused-genre) FALSE) then
+			(slot-insert$ ?bookR reasons 1 ?*MSG-GENR*)
+		)
+	)
 )
 
 (defrule RECO::frequency
@@ -5690,7 +5710,7 @@
 				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-RELI*))
 				(slot-insert$ ?bookR reasons 1 ?*MSG-RELI*)
 			else
-				(send ?bookR put-score (+ (send ?bookR get-score) -100))
+				(send ?bookR put-score (- (send ?bookR get-score) 100))
 		)
 	)
 )
