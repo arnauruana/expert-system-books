@@ -5020,22 +5020,22 @@
 ; Global variables representing all the book genres
 (defglobal MAIN
 	?*GENRES* = (create$
-                  "Fiction"
-                  "Religious"
-                  "Romance"
-                  "Adult"
-                  "Short Stories"
-                  "Westerns"
-                  "Classics"
-                  "Fantasy"
-                  "Horror"
-                  "Realistic"
-                  "Thriller"
-                  "Adventure"
-                  "Historical"
-                  "Contemporary"
-                  "Young"
-                )
+    "Fiction"
+    "Religious"
+    "Romance"
+    "Adult"
+    "Short Stories"
+    "Westerns"
+    "Classics"
+    "Fantasy"
+    "Horror"
+    "Realistic"
+    "Thriller"
+    "Adventure"
+    "Historical"
+    "Contemporary"
+    "Young"
+  )
 )
 
 ; ----------------------------------- RECO ----------------------------------- ;
@@ -5312,7 +5312,7 @@
 	(bind ?line (format nil "%s" ?question))
 	(printout t ?line crlf)
 	(progn$ (?var ?possible-values)
-		(bind ?line (format nil "  %d. %s" ?var-index ?var))
+		(bind ?line (format nil "    %d -> %s" ?var-index ?var))
 		(printout t ?line crlf)
 	)
 	(format t "%s" "Put the numbers separated by spaces: ")
@@ -5503,11 +5503,11 @@
 	?pref <- (Pref (genres $?genres))
 	(test (= (length$ ?genres) 0))
 	=>
-	(bind $?deletes (question-multi "  - Which of the following genres do you want to discard? "?*GENRES*))
-	(bind $genres (create$ ?*GENRES*))
+	(bind $?deletes (question-multi "  - Which of the following genres do you want to discard?" ?*GENRES*))
+	(bind $?genres (create$ ?*GENRES*))
 	(loop-for-count (?i 1 (length$ ?deletes)) do
-		(bind ?delete (nth$ ?i ?deletes))
-		(bind $genres (delete-member$ ?genres ?delete))
+		(bind ?delete (nth$ (nth$ ?i ?deletes) ?*GENRES*))
+		(bind $?genres (delete-member$ ?genres ?delete))
 	)
 	(modify ?pref (genres $?genres))
 )
