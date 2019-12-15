@@ -5045,7 +5045,7 @@
 	?*MSG-POPU-MED* = "Because of POPU-MED"
 	?*MSG-POPU-HIG* = "Because of POPU-HIG"
 
-	?*MSG-RELI* = "Because of RELI"
+	?*MSG-RELI* = "Because of RELIGIOUS"
 )
 
 ; ============================================================================ ;
@@ -5115,6 +5115,7 @@
 	)
 )
 
+; Presentation template for recommended books
 (deftemplate MAIN::Pres
   (multislot recommended
     (type INSTANCE)
@@ -5161,6 +5162,20 @@
 	(println "")
 	(println "------------------------------------------------------------------")
 	(println "")
+)
+
+(deffunction MAIN::delete-instances(?type)
+	(bind $?instances (find-all-instances ((?inst ?type)) TRUE))
+	(loop-for-count (?i 1 (length$ ?instances)) do
+		(bind ?instance (nth$ ?i ?instances))
+		(send ?instance delete)
+	)
+)
+
+(deffunction MAIN::delete-all-instances()
+	(delete-instances Author)
+	(delete-instances Book)
+	(delete-instances BookR)
 )
 
 ; General question with a set of allowed answers
@@ -5275,6 +5290,7 @@
 (defrule MAIN::start
 	?fact <- (initial-fact)
 	=>
+	(delete-instances INITIAL-OBJECT)
 	(print-welcome)
 	(retract ?fact)
 )
@@ -5284,19 +5300,22 @@
 	(not (initial-fact))
 	(not (User))
 	(not (Pref))
+	(not (last-fact))
 	=>
 	(focus DATA)
 )
 
 ; Calculates the recommended books to the user changing from MAIN to RECO
 (defrule MAIN::recommend
-	(User)
+	(User (name ?name))
 	(Pref)
 	(not (Reco))
+	(not (last-fact))
 	=>
 	(assert (Reco))
 	(print-separator)
-	(println "We are processing your recommendations, please wait.")
+	(print ?name)
+	(println ", we are processing your recommendations, please wait...")
 	(focus RECO)
 )
 
@@ -5305,8 +5324,24 @@
 	(User)
 	(Pref)
 	(Reco)
+	(not (Pres))
+	(not (last-fact))
 	=>
 	(focus PRES)
+)
+
+(defrule MAIN::finish
+	?user <- (User)
+	?pref <- (Pref)
+	?reco <- (Reco)
+	?pres <- (Pres)
+	=>
+	(delete-all-instances)
+	(retract ?user)
+	(retract ?pref)
+	(retract ?reco)
+	(retract ?pres)
+	(assert (last-fact))
 )
 
 ; ----------------------------------- DATA ----------------------------------- ;
