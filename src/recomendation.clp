@@ -5504,7 +5504,12 @@
 	?pref <- (Pref (genres $?genres))
 	(test (= (length$ ?genres) 0))
 	=>
-	(bind $?genres (question-multi "Choose:"?*GENRES*))
+	(bind $?deletes (question-multi "  - Which of the following genres do you want to discard? "?*GENRES*))
+	(bind $genres (create$ ?*GENRES*))
+	(loop-for-count (?i 1 (length$ ?deletes)) do
+		(bind ?delete (nth$ ?i ?deletes))
+		(bind $genres (delete-member$ ?genres ?delete))
+	)
 	(modify ?pref (genres $?genres))
 )
 
