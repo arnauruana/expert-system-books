@@ -5020,26 +5020,24 @@
 ; Global variables representing all the book genres
 (defglobal MAIN
 	?*GENRES* = (create$
-                  "Fiction"
-                  "Religious"
-                  "Romance"
-                  "Adult"
-                  "Short Stories"
-                  "Westerns"
-                  "Classics"
-                  "Fantasy"
-                  "Uncategorized"
-                  "Horror"
-                  "Realistic"
-                  "Thriller"
-                  "Adventure"
-                  "Historical"
-                  "Contemporary"
-                  "Young"
-                )
+    "Fiction"
+    "Religious"
+    "Romance"
+    "Adult"
+    "Short Stories"
+    "Westerns"
+    "Classics"
+    "Fantasy"
+    "Uncategorized"
+    "Horror"
+    "Realistic"
+    "Thriller"
+    "Adventure"
+    "Historical"
+    "Contemporary"
+    "Young"
+  )
 )
-
-
 
 ; ----------------------------------- RECO ----------------------------------- ;
 
@@ -5506,7 +5504,8 @@
 	?pref <- (Pref (genres $?genres))
 	(test (= (length$ ?genres) 0))
 	=>
-	(println "TEST")
+	(bind $?genres (question-multi "Choose:"?*GENRES*))
+	(modify ?pref (genres $?genres))
 )
 
 ; ----------------------------------- POPU ----------------------------------- ;
