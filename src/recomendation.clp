@@ -5047,8 +5047,8 @@
 
 ; Global variables representing book sizes depending on its pages
 (defglobal RECO
-	?*LIT* = 200
-	?*BIG* = 1000
+	?*SMALL* = 200
+	?*BIG*   = 1000
 )
 
 ; Global variables representing delimitation of antiquity years
@@ -5065,19 +5065,10 @@
 	?*SENIOR*   = ?*MAX_AGE*
 )
 
-; Global variables representing the limit of age for each category
-(defglobal RECO
-	?*CHILDREN* = 12
-	?*TEENAGER* = 16
-	?*YOUNG*    = 25
-	?*ADULT*    = 65
-	?*SENIOR*   = ?*MAX_AGE*
-)
-
 ; Global variables representing the score given for each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
-	?*SCORE-GENR* = 40
+	?*SCORE-GENR* = 1000
 	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 20
@@ -5593,7 +5584,6 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(loop-for-count (?j 1 (length$ ?refused))
 			(bind ?refuse (nth$ ?i ?refused))
-			(printout t ?refuse crlf) ; DEBUG
 			(if (= (str-compare (send (send ?bookR get-book) get-genre) ?refuse) 0) then
 				(send ?bookR put-score (- (send ?bookR get-score) ?*SCORE-GENR*))
 				(send ?bookR put-refused-genre TRUE)
