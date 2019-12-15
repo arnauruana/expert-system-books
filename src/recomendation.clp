@@ -5366,8 +5366,7 @@
 	=>
 	(assert (Reco))
 	(print-separator)
-	(print ?name)
-	(println ", we are processing your recommendations, please wait...")
+	(println "We are processing your recommendations, please wait...")
 	(focus RECO)
 )
 
@@ -5504,8 +5503,10 @@
 ; ----------------------------------- GENR ----------------------------------- ;
 
 (defrule GENR::get-genres
+	?pref <- (Pref (genres $?genres))
+	(test (= (length$ ?genres) 0))
 	=>
-	(println ">>> GENR <<<")
+	(println "TEST")
 )
 
 ; ----------------------------------- POPU ----------------------------------- ;
