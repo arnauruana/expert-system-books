@@ -31,19 +31,22 @@ for index, row in data.iterrows():
         output += " (rating " + rating + "))\n\n"
         file.write(output)
 
+set = set()
 for index, row in data.iterrows():
     title = row['book_title']
-    instance_name = "[ontology_Class" + str(instance_iterator) + "]"
-    instance_iterator += 1
-    output = "(" + instance_name + " of Book"
-    output += " (author " + dict[row['author_name']] + ")"
-    output += " (genre " + '"' + row['genre_1'] + '"' + ")"
-    output += " (pages " + str(row['score']) + ")"
-    output += " (popularity " + getPopularity(row['num_ratings']) + ")"
-    output += " (title " + '"' + (row['book_title'].replace('\n', '')).replace(' ', '') + '"' + ")"
-    output += " (year " + str(row['publish_date']) + ")"
-    output += " (rating " + str(row['book_average_rating']) + "))\n\n"
-    file.write(output)
+    if (not title in set):
+        instance_name = "[ontology_Class" + str(instance_iterator) + "]"
+        set.add(title)
+        instance_iterator += 1
+        output = "(" + instance_name + " of Book"
+        output += " (author " + dict[row['author_name']] + ")"
+        output += " (genre " + '"' + row['genre_1'] + '"' + ")"
+        output += " (pages " + str(row['score']) + ")"
+        output += " (popularity " + getPopularity(row['num_ratings']) + ")"
+        output += " (title " + '"' + (row['book_title'].replace('\n', '')).replace(' ', '') + '"' + ")"
+        output += " (year " + str(row['publish_date']) + ")"
+        output += " (rating " + str(row['book_average_rating']) + "))\n\n"
+        file.write(output)
 
 
 file.close()
