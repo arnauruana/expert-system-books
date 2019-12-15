@@ -5018,6 +5018,7 @@
 	?*LIT* = 200
 )
 
+; Global variables representing delimitation of antiquity years
 (defglobal RECO
 	?*NEW* = 2000
 	?*OLD* = 1900
@@ -5091,7 +5092,7 @@
 	)
 )
 
-; Recomendated books template
+; Recommended books template
 (deftemplate MAIN::Reco
 	(multislot books
 		(type INSTANCE)
@@ -5490,30 +5491,6 @@
 	)
 )
 
-(defrule RECO::antiquity
-	(Reco (books $?booksR))
-	(test (> (length$ ?booksR) 0))
-	(Pref (oldA ?old) (midA ?mid) (newA ?new))
-	=>
-	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
-	(loop-for-count (?i 1 (length$ ?booksR)) do
-		(bind ?bookR (nth$ ?i ?booksR))
-		(bind ?year (send (send ?bookR get-book) get-year))
-		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
-			(slot-insert$ ?bookR reasons 1 "Because of OLD-ANTI")
-		)
-		(if (and (and (>= ?year ?*OLD*) (< ?year ?*NEW*)) (eq ?mid TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
-			(slot-insert$ ?bookR reasons 1 "Because of MID-ANTI")
-		)
-		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
-			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
-			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI")
-		)
-	)
-)
-
 (defrule RECO::popularity
 	(Reco (books $?booksR))
 	(test (> (length$ ?booksR) 0))
@@ -5534,6 +5511,30 @@
 		(if (and (eq ?low TRUE) (eq ?popu low)) then
 			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-POPU*))
 			(slot-insert$ ?bookR reasons 1 "Because of LOW-POPU")
+		)
+	)
+)
+
+(defrule RECO::antiquity
+	(Reco (books $?booksR))
+	(test (> (length$ ?booksR) 0))
+	(Pref (oldA ?old) (midA ?mid) (newA ?new))
+	=>
+	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
+	(loop-for-count (?i 1 (length$ ?booksR)) do
+		(bind ?bookR (nth$ ?i ?booksR))
+		(bind ?year (send (send ?bookR get-book) get-year))
+		(if (and (< ?year ?*OLD*) (eq ?old TRUE)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
+			(slot-insert$ ?bookR reasons 1 "Because of OLD-ANTI")
+		)
+		(if (and (and (>= ?year ?*OLD*) (< ?year ?*NEW*)) (eq ?mid TRUE)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
+			(slot-insert$ ?bookR reasons 1 "Because of MID-ANTI")
+		)
+		(if (and (>= ?year ?*NEW*) (eq ?new TRUE)) then
+			(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-ANTI*))
+			(slot-insert$ ?bookR reasons 1 "Because of NEW-ANTI")
 		)
 	)
 )
