@@ -5005,33 +5005,44 @@
 ; ----------------------------------- USER ----------------------------------- ;
 
 ; Global variables representing the minimum and maximum age allowed
-(defglobal USER
-	?*MAX_AGE* = 120
+(defglobal MAIN
 	?*MIN_AGE* = 0
+	?*MAX_AGE* = 120
 )
 
 ; ----------------------------------- RECO ----------------------------------- ;
 
 ; Global variables representing book sizes depending on its pages
 (defglobal RECO
-	?*BIG* = 1000
 	?*LIT* = 200
+	?*BIG* = 1000
 )
 
 ; Global variables representing delimitation of antiquity years
 (defglobal RECO
-	?*NEW* = 2000
 	?*OLD* = 1900
+	?*NEW* = 2000
 )
 
-; Global variables representing the score given in each case
+; Global variables representing the limit of age for each category
+(defglobal RECO
+	?*CHILDREN* = 12
+	?*TEENAGER* = 16
+	?*YOUNG*    = 25
+	?*ADULT*    = 65
+	?*SENIOR*   = ?*MAX_AGE*
+)
+
+; Global variables representing the score given for each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
+	?*SCORE-GENR* = 30
 	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 30
 )
 
+; Gloval variables representing the reason messages given to the user
 (defglobal RECO
 	?*MSG-ANTI-NEW* = "Because of ANTI-NEW"
 	?*MSG-ANTI-MID* = "Because of ANTI-MID"
@@ -5244,8 +5255,6 @@
 	?answer
 )
 
-; ---------------------------------------------------------------------------- ;
-
 ; Funcion para hacer pregunta con indice de respuestas posibles
 (deffunction MAIN::question-index(?question $?possible-values)
 	(bind ?line (format nil "%s" ?question))
@@ -5330,6 +5339,7 @@
 	(focus PRES)
 )
 
+; Finishes the execution of the program
 (defrule MAIN::finish
 	?user <- (User)
 	?pref <- (Pref)
