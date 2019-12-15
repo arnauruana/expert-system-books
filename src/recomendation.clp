@@ -5009,13 +5009,37 @@
 ; ================================= GLOBALS ================================== ;
 ; ============================================================================ ;
 
-; ----------------------------------- USER ----------------------------------- ;
+; ----------------------------------- MAIN ----------------------------------- ;
 
 ; Global variables representing the minimum and maximum age allowed
 (defglobal MAIN
 	?*MIN_AGE* = 0
 	?*MAX_AGE* = 120
 )
+
+; Global variables representing all the book genres
+(defglobal MAIN
+	?*GENRES* = (create$
+                  "Fiction"
+                  "Religious"
+                  "Romance"
+                  "Adult"
+                  "Short Stories"
+                  "Westerns"
+                  "Classics"
+                  "Fantasy"
+                  "Uncategorized"
+                  "Horror"
+                  "Realistic"
+                  "Thriller"
+                  "Adventure"
+                  "Historical"
+                  "Contemporary"
+                  "Young"
+                )
+)
+
+
 
 ; ----------------------------------- RECO ----------------------------------- ;
 
