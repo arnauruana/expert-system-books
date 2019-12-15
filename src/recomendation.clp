@@ -5022,7 +5022,6 @@
 (defglobal RECO
 	?*OLD* = 1900
 	?*NEW* = 2000
-<<<<<<< HEAD
 )
 
 ; Global variables representing the limit of age for each category
@@ -5034,9 +5033,6 @@
 	?*SENIOR*   = ?*MAX_AGE*
 )
 
-=======
-)
-
 ; Global variables representing the limit of age for each category
 (defglobal RECO
 	?*CHILDREN* = 12
@@ -5046,7 +5042,6 @@
 	?*SENIOR*   = ?*MAX_AGE*
 )
 
->>>>>>> 1d68a912648d645a1f5db07ea2d723d71afa5e92
 ; Global variables representing the score given for each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
