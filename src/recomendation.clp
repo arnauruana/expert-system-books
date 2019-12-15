@@ -5059,9 +5059,8 @@
 
 ; Global variables representing the limit of age for each category
 (defglobal RECO
-	?*CHILDREN* = 12
-	?*TEENAGER* = 16
-	?*YOUNG*    = 25
+	?*CHILD*    = 14
+	?*YOUNG*    = 21
 	?*ADULT*    = 65
 	?*SENIOR*   = ?*MAX_AGE*
 )
@@ -5306,18 +5305,6 @@
 	?answer
 )
 
-; Funcion para hacer pregunta con indice de respuestas posibles
-(deffunction DATA::question-index(?question $?possible-values)
-	(bind ?line (format nil "%s" ?question))
-	(printout t ?line crlf)
-	(progn$ (?var ?possible-values)
-		(bind ?line (format nil "  %d. %s" ?var-index ?var))
-		(printout t ?line crlf)
-	)
-	(bind ?answer (question-range "Choose and option:" 1 (length$ ?possible-values)))
-	?answer
-)
-
 ; Funcion para hacer una pregunta multi-respuesta con indices
 (deffunction DATA::question-multi(?question $?possible-values)
 	(bind ?line (format nil "%s" ?question))
@@ -5375,6 +5362,7 @@
 	(assert (Reco))
 	(print-separator)
 	(println "Thanks for your answers.")
+	(println "")
 	(println "We are processing your recommendations, please wait...")
 	(focus RECO)
 )
@@ -5397,11 +5385,11 @@
 	?reco <- (Reco)
 	?pres <- (Pres)
 	=>
-	; (delete-all-instances)
-	; (retract ?user)
-	; (retract ?pref)
-	; (retract ?reco)
-	; (retract ?pres)
+	(delete-all-instances)
+	(retract ?user)
+	(retract ?pref)
+	(retract ?reco)
+	(retract ?pres)
 	(assert (last-fact))
 )
 
@@ -5605,6 +5593,7 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(loop-for-count (?j 1 (length$ ?refused))
 			(bind ?refuse (nth$ ?i ?refused))
+			(printout t ?refuse crlf) ; DEBUG
 			(if (= (str-compare (send (send ?bookR get-book) get-genre) ?refuse) 0) then
 				(send ?bookR put-score (- (send ?bookR get-score) ?*SCORE-GENR*))
 				(send ?bookR put-refused-genre TRUE)
@@ -5742,7 +5731,7 @@
 	=>
 	(print-presentation)
   (print ?name)
-  (println ", these are the books we have chosen for you, we hope you enjoy them:")
+  (println ", these are the books we have chosen for you:")
   (println "")
   (loop-for-count (?i 1 3) do
     (bind ?recom (nth$ ?i $?list))
@@ -5760,5 +5749,6 @@
     )
     (println "")
   )
+	(println "We hope you enjoy them")
 	(print-end)
 )
