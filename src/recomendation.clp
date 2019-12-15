@@ -5709,13 +5709,13 @@
   (println "")
   (loop-for-count (?i 1 3) do
     (bind ?recom (nth$ ?i $?list))
-    (print "Title:   ")
+    (print "Title  -> ")
     (printout t (send (send ?recom get-book) get-title) crlf)
-    (print "Author:  ")
+    (print "Author -> ")
     (printout t (send (send (send ?recom get-book) get-author) get-name_) crlf)
     (println "Reasons:")
     (loop-for-count (?i 1 (length$ (send ?recom get-reasons))) do
-      (print "      -> ")
+      (print "       -> ")
       (bind ?reason (nth$ ?i (send ?recom get-reasons)))
       (printout t ?reason crlf)
     )
