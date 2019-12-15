@@ -5074,7 +5074,7 @@
 ; Global variables representing the score given for each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
-	?*SCORE-GENR* = 30
+	?*SCORE-GENR* = 40
 	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 30
@@ -5095,6 +5095,8 @@
 	?*MSG-POPU-HIG* = "Because of POPU-HIG"
 
 	?*MSG-RELI* = "Because of RELIGIOUS"
+
+	?*MSG-GENR* = "Because of GENRE-CHOOSED
 )
 
 ; ============================================================================ ;
@@ -5583,6 +5585,15 @@
 	)
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(modify ?reco (books $?booksR))
+)
+
+(defrule RECO::genre
+	?reco <- (Reco (books $?booksR))
+	(test (> (length$ ?booksR) 0))
+	?pref <- (Pref (genres $?genres))
+	=>
+
+
 )
 
 (defrule RECO::frequency
