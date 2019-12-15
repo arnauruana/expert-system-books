@@ -5341,7 +5341,7 @@
 	=>
 	(assert (Reco))
 	(print-separator)
-	(println "We are processing your recommendation...")
+	(println "We are processing your recommendations, please wait.")
 	(focus RECO)
 )
 
@@ -5503,7 +5503,7 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
-(defrule RECO::init
+(defrule RECO::initialize
 	?reco <- (Reco (books $?booksR))
 	(test (= (length$ ?booksR) 0))
 	=>
@@ -5610,7 +5610,7 @@
 		(bind ?bookR (nth$ ?i ?booksR))
 		(if (eq ?reli TRUE)
 			then
-				(send ?bookR put-score (+ (send ?bookR get-score) 100))
+				(send ?bookR put-score (+ (send ?bookR get-score) 30))
 				(slot-insert$ ?bookR reasons 1 "Because of RELIGIOUS")
 			else
 				(send ?bookR put-score (+ (send ?bookR get-score) -100))
@@ -5638,6 +5638,31 @@
   )
   (assert (Pres (recommended $?aux-list)))
 )
+
+; ------------------ WARNING
+(defrule PRES::create-pres-random
+  (not (Pres))
+  ?reco <- (Reco (books $?list))
+  =>
+  (bind $?aux-list (create$ ))
+  (loop-for-count (?ii 1 3) do
+    (bind ?max-book (nth$ 1 ?list))
+    (loop-for-count (?i 2 (length$ ?list)) do
+      (bind ?aux-book (nth$ ?i ?list))
+      (if (> (send ?aux-book get-score) (send ?max-book get-score))
+        then (bind ?max-book (nth$ ?i ?list))
+      )
+    )
+		(bind ?max-score (send ?max-book get-score))
+		(printout t "SCORE --> " ?max-score crlf)
+		(bind $?max-books (find-all-instances ((?inst BookR)) (eq ?inst:score ?max-score)))
+		(bind ?ith (+ (mod (random) (length$ ?max-books)) 1))
+    (bind ?aux-list (insert$ ?aux-list (+ (length$ ?aux-list) 1) (nth$ ?ith ?max-books)))
+    (bind $?list (delete-member$ ?list (nth$ ?ith ?max-books)))
+  )
+  (assert (Pres (recommended $?aux-list)))
+)
+; ------------------
 
 (defrule PRES::present-recommendations
   (Pres (recommended $?list))
