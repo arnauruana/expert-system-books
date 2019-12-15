@@ -5020,23 +5020,22 @@
 ; Global variables representing all the book genres
 (defglobal MAIN
 	?*GENRES* = (create$
-    "Fiction"
-    "Religious"
-    "Romance"
-    "Adult"
-    "Short Stories"
-    "Westerns"
-    "Classics"
-    "Fantasy"
-    "Uncategorized"
-    "Horror"
-    "Realistic"
-    "Thriller"
-    "Adventure"
-    "Historical"
-    "Contemporary"
-    "Young"
-  )
+                  "Fiction"
+                  "Religious"
+                  "Romance"
+                  "Adult"
+                  "Short Stories"
+                  "Westerns"
+                  "Classics"
+                  "Fantasy"
+                  "Horror"
+                  "Realistic"
+                  "Thriller"
+                  "Adventure"
+                  "Historical"
+                  "Contemporary"
+                  "Young"
+                )
 )
 
 ; ----------------------------------- RECO ----------------------------------- ;
@@ -5715,7 +5714,7 @@
     (printout t (send (send (send ?recom get-book) get-author) get-name_) crlf)
     (println "Reasons:")
     (loop-for-count (?i 1 (length$ (send ?recom get-reasons))) do
-      (print "    ") (print ?i) (print " -> ")
+      (print "      ") (print " -> ")
       (bind ?reason (nth$ ?i (send ?recom get-reasons)))
       (printout t ?reason crlf)
     )
