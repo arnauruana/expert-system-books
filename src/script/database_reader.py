@@ -98,33 +98,45 @@ for rm in remove_genres:
     data = data[~data.genre_1.str.contains(rm)]
     data = data[~data.genre_2.str.contains(rm)]
 
+auxiliary_genre = []
+for index, row in data.iterrows():
+    genre_1 = row['genre_1']
+    genre_2 = row['genre_2']
+    if (genre_1 == 'Fiction'):
+        genre_1 = genre_2
+    auxiliary_genre.append(genre_1)
+data['genre_1'] = auxiliary_genre
+
 data['genre_1'] = data['genre_1'].replace({'Fiction':'Uncategorized',
+    'See top shelves...': 'Uncategorized',
     'Literary Fiction'  : 'Uncategorized',
     'Fan Fiction'       : 'Uncategorized',
     'Novels'            : 'Uncategorized',
     'Novella'           : 'Uncategorized',
-    'Young Adult'       : 'Young',
-    'Dark'              : 'Horror',
-    'Category Romance'  : 'Romance',
     'Adult Fiction'     : 'Adult',
+    'Young Adult'       : 'Young',
+    'New Adult'         : 'Young',
+    'Gothic'            : 'Horror',
+    'Dark'              : 'Horror',
+    'Paranormal'        : 'Horror',
+    'Death'             : 'Horror',
     'Suspense'          : 'Thriller',
     'Spy Thriller'      : 'Thriller',
     'Mystery'           : 'Thriller',
-    'Death'             : 'Horror',
-    'New Adult'         : 'Young',
-    'Paranormal'        : 'Horror',
     'Speculative Fiction':'Thriller',
+    'Category Romance'  : 'Romance',
+    'Love'              : 'Romance',
     'Womens Fiction'    : 'Romance',
+    'Dark Fantasy'      : 'Fantasy',
+    'Fairy Tales'       : 'Fantasy',
+    'Magical Realism'   : 'Fantasy',
     'Mythology'         : 'Religious',
     'Christian Fiction' : 'Religious',
     'Biblical Fiction'  : 'Religious',
     'Christian'         : 'Religious',
     'Realistic Fiction' : 'Realistic',
     'History'           : 'Historical',
-    'Dark Fantasy'      : 'Fantasy',
-    'Fairy Tales'       : 'Fantasy',
-    'Magical Realism'   : 'Fantasy',
-    'Love'              : 'Romance'})
+    })
 
 drop_list = ['author_genres',
     'birthplace',
@@ -137,6 +149,10 @@ drop_list = ['author_genres',
     'num_reviews']
 
 data = data.drop(drop_list, axis = 1)
+
+data = data[~data.author_name.str.contains("Punathil Kunjabdulla")]
+data = data[~data.author_name.str.contains("Lalithambika Antharjanam")]
+data = data[~data.author_name.str.contains("Sethu")]
 
 auxiliary_date = []
 for date in data['publish_date']:
@@ -153,6 +169,7 @@ data['book_title'] = auxiliary_title
 
 data = data[data.pages != '0']
 
+
 for date in data['publish_date']:
     if (not isYear(date)):
         data = data[~data.publish_date.str.contains(date)]
@@ -165,4 +182,4 @@ for title in data['book_title']:
     if (not isEnglish(title)):
         data = data[~data.book_title.str.contains(title)]
 
-data.to_csv('./booksDB.csv')
+data.to_csv('./booksDB2.csv')
