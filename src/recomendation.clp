@@ -2,70 +2,7 @@
 ; ================================= ONTOLOGY ================================= ;
 ; ============================================================================ ;
 
-; Default class genereted by Protege (ontology/ontology.pont)
-(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
-	(is-a USER)
-	(role abstract)
-	(single-slot title
-		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot year
-		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot pages
-		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot books
-		(type INSTANCE)
-	;+		(allowed-classes Book)
-		(create-accessor read-write))
-	(single-slot frequency
-		(type SYMBOL)
-		(allowed-values rarely occasionaly normaly frequently)
-	;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot age
-		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot rating
-		(type FLOAT)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot name_
-		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot genre
-		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(multislot author
-		(type INSTANCE)
-	;+		(allowed-classes Author)
-		(cardinality 1 ?VARIABLE)
-		(create-accessor read-write))
-	(single-slot gender
-		(type SYMBOL)
-		(allowed-values male female)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot popularity
-		(type SYMBOL)
-		(allowed-values low medium high)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot available_time
-		(type SYMBOL)
-		(allowed-values little medium much)
-	;+		(cardinality 0 1)
-		(create-accessor read-write))
-)
-
-; Author class declaration crated with Protege (ontology/ontology.pont)
+; Author class declaration created with Protege (ontology/ontology.pont)
 (defclass Author
 	(is-a USER)
 	(role concrete)
@@ -124,6 +61,7 @@
 		(create-accessor read-write))
 )
 
+; Book class declaration whit the score and its reasons to choose it
 (defclass BookR
 	(is-a USER)
 	(role concrete)
@@ -5636,30 +5574,6 @@
   )
   (assert (Pres (recommended $?aux-list)))
 )
-
-; ; WARNING
-; (defrule PRES::create-pres-random
-;   (not (Pres))
-;   ?reco <- (Reco (books $?list))
-;   =>
-;   (bind $?aux-list (create$ ))
-;   (loop-for-count (?ii 1 3) do
-;     (bind ?max-book (nth$ 1 ?list))
-;     (loop-for-count (?i 2 (length$ ?list)) do
-;       (bind ?aux-book (nth$ ?i ?list))
-;       (if (> (send ?aux-book get-score) (send ?max-book get-score))
-;         then (bind ?max-book (nth$ ?i ?list))
-;       )
-;     )
-; 		(bind ?max-score (send ?max-book get-score))
-; 		(printout t "SCORE --> " ?max-score crlf)
-; 		(bind $?max-books (find-all-instances ((?inst BookR)) (eq ?inst:score ?max-score)))
-; 		(bind ?ith (+ (mod (random) (length$ ?max-books)) 1))
-;     (bind ?aux-list (insert$ ?aux-list (+ (length$ ?aux-list) 1) (nth$ ?ith ?max-books)))
-;     (bind $?list (delete-member$ ?list (nth$ ?ith ?max-books)))
-;   )
-;   (assert (Pres (recommended $?aux-list)))
-; )
 
 (defrule PRES::present-recommendations
   (Pres (recommended $?list))
