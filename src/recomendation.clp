@@ -4986,6 +4986,13 @@
 	(export ?ALL)
 )
 
+(defmodule GENR
+	(import MAIN ?ALL)
+	(import DATA ?ALL)
+	(import PREF ?ALL)
+	(export ?ALL)
+)
+
 ; User book recommendation module
 (defmodule RECO
 	(import MAIN ?ALL)
@@ -5122,9 +5129,8 @@
 		(type SYMBOL)
 		(default NONE)
 	)
-	(slot genre
-		(type SYMBOL)
-		(default NONE)
+	(multislot genres
+		(type STRING)
 	)
 )
 
@@ -5184,6 +5190,7 @@
 	(println "")
 )
 
+; Deletes all the instances that match the specified type
 (deffunction MAIN::delete-instances(?type)
 	(bind $?instances (find-all-instances ((?inst ?type)) TRUE))
 	(loop-for-count (?i 1 (length$ ?instances)) do
@@ -5192,14 +5199,17 @@
 	)
 )
 
+; Deletes all instances
 (deffunction MAIN::delete-all-instances()
 	(delete-instances Author)
 	(delete-instances Book)
 	(delete-instances BookR)
 )
 
+; ----------------------------------- DATA ----------------------------------- ;
+
 ; General question with a set of allowed answers
-(deffunction MAIN::question-options(?question $?allowed-values)
+(deffunction DATA::question-options(?question $?allowed-values)
 	(format t "%s " ?question)
 	(progn$ (?curr-value $?allowed-values)
     (println "")
@@ -5226,7 +5236,7 @@
 )
 
 ; General question with yes/no answers
-(deffunction MAIN::question-yes-no(?question)
+(deffunction DATA::question-yes-no(?question)
 	(bind ?answer (question-options ?question yes no))
 	(if (or (eq ?answer yes) (eq ?answer y))
 		then TRUE
@@ -5235,7 +5245,7 @@
 )
 
 ; General question
-(deffunction MAIN::question-general(?question)
+(deffunction DATA::question-general(?question)
 	(format t "%s" ?question)
 	(println "")
 	(print "  > ")
@@ -5250,7 +5260,7 @@
 )
 
 ; Question for choosing numbers in a given range
-(deffunction MAIN::question-range(?question ?rangeI ?rangeF)
+(deffunction DATA::question-range(?question ?rangeI ?rangeF)
 	(format t "%s [%d-%d]" ?question ?rangeI ?rangeF)
 	(println "")
 	(print "  > ")
@@ -5265,7 +5275,7 @@
 )
 
 ; Funcion para hacer pregunta con indice de respuestas posibles
-(deffunction MAIN::question-index(?question $?possible-values)
+(deffunction DATA::question-index(?question $?possible-values)
 	(bind ?line (format nil "%s" ?question))
 	(printout t ?line crlf)
 	(progn$ (?var ?possible-values)
@@ -5277,7 +5287,7 @@
 )
 
 ; Funcion para hacer una pregunta multi-respuesta con indices
-(deffunction MAIN::question-multi(?question $?possible-values)
+(deffunction DATA::question-multi(?question $?possible-values)
 	(bind ?line (format nil "%s" ?question))
 	(printout t ?line crlf)
 	(progn$ (?var ?possible-values)
@@ -5324,7 +5334,7 @@
 )
 
 ; Calculates the recommended books to the user changing from MAIN to RECO
-(defrule MAIN::recommend
+(defrule MAIN::calculation
 	(User (name ?name))
 	(Pref)
 	(not (Reco))
@@ -5421,6 +5431,18 @@
 
 ; ---------------------------------- PREF ----------------------------------- ;
 
+; Obtains the user's book genre rellevance
+(defrule PREF::genres
+	?pref <- (Pref (genres $?genres))
+	(test (= (length$ ?genres) 0))
+	=>
+	(bind ?ans (question-yes-no "  - Do you usually care about the genre of the book?"))
+	(if (eq ?ans TRUE)
+		then (focus GENR)
+		else (modify ?pref (genres $?*GENRES*))
+	)
+)
+
 ; Obtains the user's read frequency
 (defrule PREF::get-freq
 	?pref <- (Pref (freq NONE))
@@ -5455,12 +5477,11 @@
 	)
 )
 
-; Obtains the user's book genre rellevance
-(defrule PREF::get-genre
-	?pref <- (Pref (genre NONE))
+; ----------------------------------- GENR ----------------------------------- ;
+
+(defrule GENR::get-genres
 	=>
-	(bind ?ans (question-yes-no "  - Do you usually care about the genre of the book?"))
-	(modify ?pref (genre ?ans))
+	(println ">>> GENR <<<")
 )
 
 ; ----------------------------------- POPU ----------------------------------- ;
