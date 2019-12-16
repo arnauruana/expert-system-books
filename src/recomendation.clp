@@ -5067,7 +5067,7 @@
 ; Global variables representing the score given for each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
-	?*SCORE-GENR* = 1000
+	?*SCORE-GENR* = 40
 	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 20
@@ -5075,20 +5075,21 @@
 
 ; Gloval variables representing the reason messages given to the user
 (defglobal RECO
-	?*MSG-ANTI-NEW* = "Because of ANTI-NEW"
-	?*MSG-ANTI-MID* = "Because of ANTI-MID"
-	?*MSG-ANTI-OLD* = "Because of ANTI-OLD"
 
-	?*MSG-FREQ-RAR* = "Because of FREQ-RAR"
-	?*MSG-FREQ-SOM* = "Because of FREQ-SOM"
-	?*MSG-FREQ-USU* = "Because of FREQ-USU"
+	?*MSG-ANTI-NEW* = "You usually like to read new books."
+	?*MSG-ANTI-MID* = "You usually like to read mid-aniquity books."
+	?*MSG-ANTI-OLD* = "You usually like to read old books."
 
-	?*MSG-POPU-LOW* = "Because of POPU-LOW"
-	?*MSG-POPU-MED* = "Because of POPU-MED"
-	?*MSG-POPU-HIG* = "Because of POPU-HIG"
+	?*MSG-FREQ-RAR* = "You rarely read books."
+	?*MSG-FREQ-SOM* = "You read books sometimes."
+	?*MSG-FREQ-USU* = "You usually read books."
 
-	?*MSG-RELI* = "Because of RELIGIOUS"
-	?*MSG-GENR* = "Because of GENRE-NOT-REFUSED"
+	?*MSG-POPU-LOW* = "You usually like to discover unpopular books."
+	?*MSG-POPU-MED* = "You neither like to read unpopular books nor bestsellers."
+	?*MSG-POPU-HIG* = "You usually like to read bestsellers."
+
+	?*MSG-RELI* 		= "You are religious."
+	?*MSG-GENR* 		= "You usually like this genre."
 )
 
 ; ============================================================================ ;
@@ -5170,18 +5171,18 @@
 
 ; ----------------------------------- MAIN ----------------------------------- ;
 
-; Prints a message
+; Print a message
 (deffunction MAIN::print(?msg)
 	(printout t ?msg)
 )
 
-; Prints a message followed by a line break
+; Print a message followed by a line break
 (deffunction MAIN::println(?msg)
 	(print ?msg)
 	(printout t crlf)
 )
 
-; Prints the welcome header
+; Print the welcome header
 (deffunction MAIN::print-welcome()
 	(println "")
 	(println "==================================================================")
@@ -5190,28 +5191,28 @@
 	(println "")
 )
 
-; Prints the presentation header
+; Print the presentation header
 (deffunction PRES::print-presentation()
 	(println "")
 	(println "======================== RECOMMENDATIONS =========================")
 	(println "")
 )
 
-; Prints a separator line
+; Print a separator line
 (deffunction MAIN::print-separator()
 	(println "")
 	(println "------------------------------------------------------------------")
 	(println "")
 )
 
-; Prints the end program line
+; Print the end program line
 (deffunction MAIN::print-end()
 	(println "")
 	(println "==================================================================")
 	(println "")
 )
 
-; Deletes all the instances that match the specified type
+; Delete all instances that match the specified type
 (deffunction MAIN::delete-instances(?type)
 	(bind $?instances (find-all-instances ((?inst ?type)) TRUE))
 	(loop-for-count (?i 1 (length$ ?instances)) do
@@ -5220,7 +5221,7 @@
 	)
 )
 
-; Deletes all instances
+; Delete all instances
 (deffunction MAIN::delete-all-instances()
 	(delete-instances Author)
 	(delete-instances Book)
@@ -5265,7 +5266,7 @@
 	)
 )
 
-; General question
+; General answer question
 (deffunction DATA::question-general(?question)
 	(format t "%s" ?question)
 	(println "")
@@ -5494,7 +5495,7 @@
 	?pref <- (Pref (genres $?genres))
 	(test (= (length$ ?genres) 0))
 	=>
-	(bind $?deletes (question-multi "  - Which of the following genres do you want to discard?" ?*GENRES*))
+	(bind $?deletes (question-multi "  - Which of the following genres do you usually don't like?" ?*GENRES*))
 	(bind $?genres (create$ ?*GENRES*))
 	(loop-for-count (?i 1 (length$ ?deletes)) do
 		(bind ?delete (nth$ (nth$ ?i ?deletes) ?*GENRES*))
