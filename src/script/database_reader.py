@@ -108,7 +108,8 @@ for index, row in data.iterrows():
 data['genre_1'] = auxiliary_genre
 
 data['genre_1'] = data['genre_1'].replace({
-    'See top shelves…': 'Uncategorized',
+    'Fiction'           : 'Uncategorized',
+    'See top shelves…'  : 'Uncategorized',
     'Literary Fiction'  : 'Uncategorized',
     'Fan Fiction'       : 'Uncategorized',
     'Novels'            : 'Uncategorized',

@@ -1,4 +1,4 @@
-; Sat Dec 14 16:05:35 CET 2019
+; Mon Dec 16 10:19:33 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -66,6 +66,9 @@
 ([INSTANCES_TAB] of  Widget
 
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_291191_Class2] of  Map
+)
 
 ([KB_591460_Class0] of  String
 
@@ -169,9 +172,6 @@
 	(name "classes_file_name")
 	(string_value "ontology.pont"))
 
-([KB_854804_Class2] of  Map
-)
-
 ([LAYOUT_PROPERTIES] of  Property_List
 
 	(name "layout properties")
@@ -182,8 +182,8 @@
 
 ([ontology_ProjectKB_Class10077] of  String
 
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
+	(name "Author")
+	(string_value "name"))
 
 ([ontology_ProjectKB_Class10078] of  Property_List
 )
@@ -223,7 +223,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class16])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
 ([ontology_ProjectKB_Class16] of  Property_List
 )
@@ -232,7 +232,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class18])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
 ([ontology_ProjectKB_Class18] of  Property_List
 )
@@ -241,25 +241,25 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class20])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
 ([ontology_ProjectKB_Class20] of  Property_List
 )
 
 ([ontology_ProjectKB_Class20078] of  String
 
-	(name "Author")
-	(string_value "name"))
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
 
 ([ontology_ProjectKB_Class20079] of  String
 
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
 
 ([ontology_ProjectKB_Class20080] of  String
 
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
 
 ([ontology_ProjectKB_Class20081] of  String
 
@@ -280,7 +280,7 @@
 
 	(is_hidden TRUE)
 	(property_list [ontology_ProjectKB_Class22])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
 ([ontology_ProjectKB_Class22] of  Property_List
 )
@@ -655,8 +655,8 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_FACET_FORM_WIDGET]
 		[STANDARD_SLOT_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")

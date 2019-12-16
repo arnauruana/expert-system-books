@@ -5025,7 +5025,6 @@
 ; Global variables representing all the book genres
 (defglobal MAIN
 	?*GENRES* = (create$
-    "Fiction"
     "Religious"
     "Romance"
     "Adult"
