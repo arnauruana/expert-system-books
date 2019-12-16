@@ -3812,7 +3812,7 @@
 	?*MSG-GENR* 		= "You usually like this genre."
 )
 
-; Global variables representing all the book genres
+; Global variables representing all the book genres predefined depending on age
 (defglobal RECO
 	?*GENRES-CHILD* = (create$
 		"Adventure"
@@ -4311,6 +4311,7 @@
 
 ; ---------------------------------- RECO ------------------------------------ ;
 
+; Initialize Reco template with BookR instances referencing Book classes
 (defrule RECO::initialize
 	?reco <- (Reco (books $?booksR))
 	(test (= (length$ ?booksR) 0))
@@ -4327,6 +4328,63 @@
 	(modify ?reco (books $?booksR))
 )
 
+; Filter books according to user's age
+(defrule RECO::age
+  (Reco (books $?booksR))
+  (test (> (length$ ?booksR) 0))
+  (User (age ?age))
+  =>
+	(println "  - filtering books ccording to your age...")
+  (bind $?genres-age-list (create$ ))
+  (if (<= ?age ?*CHILD*) then
+    (bind $?genres-age-list ?*GENRES-CHILD*)
+    (bind ?message ?*MSG-GENDER-CHILD*)
+  )
+  (if (and (> ?age ?*CHILD*) (<= ?age ?*YOUNG*)) then
+    (bind $?genres-age-list ?*GENRES-YOUNG*)
+    (bind ?message ?*MSG-GENDER-YOUNG*)
+  )
+  (if (and (> ?age ?*YOUNG*) (<= ?age ?*ADULT*)) then
+    (bind $?genres-age-list ?*GENRES-ADULT*)
+    (bind ?message ?*MSG-GENDER-ADULT*)
+  )
+  (if (> ?age ?*ADULT*) then
+    (bind $?genres-age-list ?*GENRES-SENIOR*)
+    (bind ?message ?*MSG-GENDER-SENIOR*)
+  )
+  (loop-for-count (?i 1 (length$ ?booksR)) do
+    (bind ?bookR (nth$ ?i ?booksR))
+    (loop-for-count (?j 1 (length$ ?genres-age-list)) do
+      (bind ?genre (nth$ ?j ?genres-age-list))
+      (if (= (str-compare (send (send ?bookR get-book) get-genre) ?genre) 0) then
+        (send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-AGEG*))
+        (slot-insert$ ?bookR reasons 1 ?message)
+      )
+    )
+  )
+)
+
+; Filter books by religion
+(defrule RECO::religion
+	(Reco (books $?booksR))
+	(test (> (length$ ?booksR) 0))
+	(User (religious ?reli))
+	=>
+	(println "  - filtering books by religion...")
+	(bind $?booksR (find-all-instances ((?inst BookR)) (eq (send ?inst:book get-genre) "Religious")))
+	(loop-for-count (?i 1 (length$ ?booksR)) do
+		(bind ?bookR (nth$ ?i ?booksR))
+		(if (eq ?reli TRUE)
+			then
+				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-RELI*))
+				(slot-insert$ ?bookR reasons 1 ?*MSG-RELI*)
+			else
+				(send ?bookR put-score (- (send ?bookR get-score) 100))
+		)
+	)
+)
+
+; Filter books by genre
 (defrule RECO::genre
 	?reco <- (Reco (books $?booksR))
 	(test (> (length$ ?booksR) 0))
@@ -4354,6 +4412,7 @@
 	)
 )
 
+; Filter books by read frequency
 (defrule RECO::frequency
 	?reco <- (Reco (books $?booksR))
 	(test (> (length$ ?booksR) 0))
@@ -4404,6 +4463,7 @@
 	)
 )
 
+; Filter books by popularity
 (defrule RECO::popularity
 	(Reco (books $?booksR))
 	(test (> (length$ ?booksR) 0))
@@ -4429,6 +4489,7 @@
 	)
 )
 
+; Filter books by antiquity
 (defrule RECO::antiquity
 	(Reco (books $?booksR))
 	(test (> (length$ ?booksR) 0))
@@ -4454,62 +4515,9 @@
 	)
 )
 
-(defrule RECO::religion
-	(Reco (books $?booksR))
-	(test (> (length$ ?booksR) 0))
-	(User (religious ?reli))
-	=>
-	(println "  - filtering books by religion...")
-	(bind $?booksR (find-all-instances ((?inst BookR)) (eq (send ?inst:book get-genre) "Religious")))
-	(loop-for-count (?i 1 (length$ ?booksR)) do
-		(bind ?bookR (nth$ ?i ?booksR))
-		(if (eq ?reli TRUE)
-			then
-				(send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-RELI*))
-				(slot-insert$ ?bookR reasons 1 ?*MSG-RELI*)
-			else
-				(send ?bookR put-score (- (send ?bookR get-score) 100))
-		)
-	)
-)
-
-(defrule RECO::age
-  (Reco (books $?booksR))
-  (test (> (length$ ?booksR) 0))
-  (User (age ?age))
-  =>
-	(println "  - filtering books by your age...")
-  (bind $?genres-age-list (create$ ))
-  (if (<= ?age ?*CHILD*) then
-    (bind $?genres-age-list ?*GENRES-CHILD*)
-    (bind ?message ?*MSG-GENDER-CHILD*)
-  )
-  (if (and (> ?age ?*CHILD*) (<= ?age ?*YOUNG*)) then
-    (bind $?genres-age-list ?*GENRES-YOUNG*)
-    (bind ?message ?*MSG-GENDER-YOUNG*)
-  )
-  (if (and (> ?age ?*YOUNG*) (<= ?age ?*ADULT*)) then
-    (bind $?genres-age-list ?*GENRES-ADULT*)
-    (bind ?message ?*MSG-GENDER-ADULT*)
-  )
-  (if (> ?age ?*ADULT*) then
-    (bind $?genres-age-list ?*GENRES-SENIOR*)
-    (bind ?message ?*MSG-GENDER-SENIOR*)
-  )
-  (loop-for-count (?i 1 (length$ ?booksR)) do
-    (bind ?bookR (nth$ ?i ?booksR))
-    (loop-for-count (?j 1 (length$ ?genres-age-list)) do
-      (bind ?genre (nth$ ?j ?genres-age-list))
-      (if (= (str-compare (send (send ?bookR get-book) get-genre) ?genre) 0) then
-        (send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-AGEG*))
-        (slot-insert$ ?bookR reasons 1 ?message)
-      )
-    )
-  )
-)
-
 ; ----------------------------------- PRES ----------------------------------- ;
 
+; Initialize Pres template with the three max-scored books
 (defrule PRES::initialize
   (not (Pres))
   ?reco <- (Reco (books $?list))
@@ -4529,6 +4537,7 @@
   (assert (Pres (recommended $?aux-list)))
 )
 
+; Show recommendation results
 (defrule PRES::recommend
 	(Pres (recommended $?list))
 	(User (name ?name))
