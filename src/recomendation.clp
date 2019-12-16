@@ -9,21 +9,21 @@
 	(single-slot gender
 		(type SYMBOL)
 		(allowed-values male female)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot popularity
 		(type SYMBOL)
 		(allowed-values low medium high)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot rating
 		(type FLOAT)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot name_
 		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 )
 
 ; Book class declaration created with Protege (ontology/ontology.pont)
@@ -33,32 +33,33 @@
 	(single-slot popularity
 		(type SYMBOL)
 		(allowed-values low medium high)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot title
 		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot rating
 		(type FLOAT)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot year
 		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot author
 		(type INSTANCE)
-	;+		(allowed-classes Author)
-		(create-accessor read-write))
+		(allowed-classe Author)
+		(create-accessor read-write)
+	)
 	(single-slot genre
 		(type STRING)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 	(single-slot pages
 		(type INTEGER)
-	;+		(cardinality 1 1)
-		(create-accessor read-write))
+		(create-accessor read-write)
+	)
 )
 
 ; Book class declaration whit the score and its reasons to choose it
@@ -3769,7 +3770,6 @@
 	?*CHILD*    = 14
 	?*YOUNG*    = 21
 	?*ADULT*    = 65
-	?*SENIOR*   = ?*MAX-AGE*
 )
 
 ; Global variables representing the score given for each case
