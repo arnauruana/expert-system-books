@@ -49,7 +49,7 @@
 	)
 	(single-slot author
 		(type INSTANCE)
-		(allowed-classe Author)
+		(allowed-classes Author)
 		(create-accessor read-write)
 	)
 	(single-slot genre
@@ -3779,6 +3779,7 @@
 	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 20
+  ?*SCORE-AGEG* = 10
 )
 
 ; Gloval variables representing the reason messages given to the user
@@ -3796,8 +3797,46 @@
 	?*MSG-POPU-MED* = "You neither like to read unpopular books nor bestsellers."
 	?*MSG-POPU-HIG* = "You usually like to read bestsellers."
 
+  ?*MSG-GENDER-CHILD*   = "Usually children like this gender"
+  ?*MSG-GENDER-YOUNG*   = "Usually young people like this gender"
+  ?*MSG-GENDER-ADULT*   = "Usually adults like this gender"
+  ?*MSG-GENDER-SENIOR*  = "Usually seniors like this gender"
+
 	?*MSG-RELI* 		= "You are religious."
 	?*MSG-GENR* 		= "You usually like this genre."
+)
+
+; Global variables representing all the book genres
+(defglobal RECO
+	?*GENRES-CHILD* = (create$
+		"Adventure"
+		"Fantasy"
+		"Short Stories"
+  )
+	?*GENRES-YOUNG* = (create$
+		"Adventure"
+		"Contemporary"
+		"Fantasy"
+		"Romance"
+    "Young"
+  )
+	?*GENRES-ADULT* = (create$
+		"Adult"
+		"Contemporary"
+		"Historical"
+		"Horror"
+		"Realistic"
+    "Romance"
+    "Thriller"
+  )
+	?*GENRES-SENIOR* = (create$
+		"Classics"
+		"Historical"
+		"Realistic"
+    "Religious"
+		"Thriller"
+    "Westerns"
+  )
 )
 
 ; ============================================================================ ;
@@ -4421,6 +4460,40 @@
 				(send ?bookR put-score (- (send ?bookR get-score) 100))
 		)
 	)
+)
+
+(defrule RECO::age
+  (Reco (books $?booksR))
+  (test (> (length$ ?booksR) 0))
+  (User (age ?age))
+  =>
+  (bind $?genres-age-list (create$ ))
+  (if (<= ?age ?*CHILD*) then
+    (bind $?genres-age-list ?*GENRES-CHILD*)
+    (bind ?message ?*MSG-GENDER-CHILD*)
+  )
+  (if (and (> ?age ?*CHILD*) (<= ?age ?*YOUNG*)) then
+    (bind $?genres-age-list ?*GENRES-YOUNG*)
+    (bind ?message ?*MSG-GENDER-YOUNG*)
+  )
+  (if (and (> ?age ?*YOUNG*) (<= ?age ?*ADULT*)) then
+    (bind $?genres-age-list ?*GENRES-ADULT*)
+    (bind ?message ?*MSG-GENDER-ADULT*)
+  )
+  (if (> ?age ?*ADULT*) then
+    (bind $?genres-age-list ?*GENRES-SENIOR*)
+    (bind ?message ?*MSG-GENDER-SENIOR*)
+  )
+  (loop-for-count (?i 1 (length$ ?booksR)) do
+    (bind ?bookR (nth$ ?i ?booksR))
+    (loop-for-count (?j 1 (length$ ?genres-age-list)) do
+      (bind ?genre (nth$ ?j ?genres-age-list))
+      (if (= (str-compare (send (send ?bookR get-book) get-genre) ?genre) 0) then
+        (send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-AGEG*))
+        (slot-insert$ ?bookR reasons 1 ?message)
+      )
+    )
+  )
 )
 
 ; ----------------------------------- PRES ----------------------------------- ;
