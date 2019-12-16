@@ -5193,7 +5193,7 @@
 ; Prints the presentation header
 (deffunction PRES::print-presentation()
 	(println "")
-	(println "========================= RECOMENDATIONS =========================")
+	(println "======================== RECOMMENDATIONS =========================")
 	(println "")
 )
 
@@ -5754,6 +5754,6 @@
     )
     (println "")
   )
-	(println "We hope you enjoy them")
+	(println "We hope you enjoy them!")
 	(print-end)
 )
