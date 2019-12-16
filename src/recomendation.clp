@@ -68,16 +68,22 @@
 	(role concrete)
 	(single-slot book
 		(type INSTANCE)
+		(allowed-classes Book)
+		(create-accessor read-write)
 	)
 	(single-slot refused-genre
 		(type SYMBOL)
+		(allowed-values TRUE FALSE)
 		(default FALSE)
+		(create-accessor read-write)
 	)
 	(single-slot score
 		(type INTEGER)
+		(create-accessor read-write)
 	)
 	(multislot reasons
 		(type STRING)
+		(create-accessor read-write)
   )
 )
 
@@ -4472,6 +4478,7 @@
   (test (> (length$ ?booksR) 0))
   (User (age ?age))
   =>
+	(println "  - filtering books by your age...")
   (bind $?genres-age-list (create$ ))
   (if (<= ?age ?*CHILD*) then
     (bind $?genres-age-list ?*GENRES-CHILD*)
@@ -4503,7 +4510,7 @@
 
 ; ----------------------------------- PRES ----------------------------------- ;
 
-(defrule PRES::create-pres
+(defrule PRES::initialize
   (not (Pres))
   ?reco <- (Reco (books $?list))
   =>
@@ -4522,7 +4529,7 @@
   (assert (Pres (recommended $?aux-list)))
 )
 
-(defrule PRES::present-recommendations
+(defrule PRES::recommend
 	(Pres (recommended $?list))
 	(User (name ?name))
 	=>
