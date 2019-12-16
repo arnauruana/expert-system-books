@@ -149,7 +149,8 @@ drop_list = ['author_genres',
     'book_fullurl',
     'book_id',
     'genre_2',
-    'num_reviews']
+    'num_reviews',
+    'score']
 
 data = data.drop(drop_list, axis = 1)
 

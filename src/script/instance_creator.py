@@ -41,7 +41,7 @@ for index, row in data.iterrows():
         output = "(" + instance_name + " of Book"
         output += " (author " + dict[row['author_name']] + ")"
         output += " (genre " + '"' + row['genre_1'] + '"' + ")"
-        output += " (pages " + str(row['score']) + ")"
+        output += " (pages " + str(row['pages']) + ")"
         output += " (popularity " + getPopularity(row['num_ratings']) + ")"
         output += " (title " + '"' + (row['book_title'].replace('\n', '')).replace(' ', '') + '"' + ")"
         output += " (year " + str(row['publish_date']) + ")"
