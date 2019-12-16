@@ -5018,27 +5018,27 @@
 
 ; Global variables representing the minimum and maximum age allowed
 (defglobal MAIN
-	?*MIN_AGE* = 0
-	?*MAX_AGE* = 120
+	?*MIN-AGE* = 0
+	?*MAX-AGE* = 120
 )
 
 ; Global variables representing all the book genres
 (defglobal MAIN
 	?*GENRES* = (create$
+		"Adult"
+		"Adventure"
+		"Classics"
+		"Contemporary"
+		"Fantasy"
+		"Historical"
+		"Horror"
+		"Realistic"
     "Religious"
-    "Romance"
-    "Adult"
+		"Romance"
     "Short Stories"
-    "Westerns"
-    "Classics"
-    "Fantasy"
-    "Horror"
-    "Realistic"
-    "Thriller"
-    "Adventure"
-    "Historical"
-    "Contemporary"
+		"Thriller"
     "Young"
+		"Westerns"
   )
 )
 
@@ -5061,7 +5061,7 @@
 	?*CHILD*    = 14
 	?*YOUNG*    = 21
 	?*ADULT*    = 65
-	?*SENIOR*   = ?*MAX_AGE*
+	?*SENIOR*   = ?*MAX-AGE*
 )
 
 ; Global variables representing the score given for each case
@@ -5419,7 +5419,7 @@
 (defrule USER::get-age
 	?user <- (User (age -1))
 	=>
-	(bind ?age (question-range "  - How old are you?" ?*MIN_AGE* ?*MAX_AGE*))
+	(bind ?age (question-range "  - How old are you?" ?*MIN-AGE* ?*MAX-AGE*))
 	(modify ?user (age ?age))
 )
 
