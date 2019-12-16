@@ -28,7 +28,7 @@ for index, row in data.iterrows():
         output += " (gender " + gender + ")"
         output += " (name_ " + '"' + name.replace('\n', '') + '"' + ")"
         output += " (popularity " + popularity + ")"
-        output += " (rating " + rating + "))\n\n"
+        output += " (rating " + rating + "))\n"
         file.write(output)
 
 set = set()
