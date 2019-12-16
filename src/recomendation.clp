@@ -3900,7 +3900,8 @@
 )
 
 ; Print the presentation header
-(deffunction PRES::print-presentation()
+(deffunction MAIN::print-presentation()
+  (println "")
 	(println "")
 	(println "======================== RECOMMENDATIONS =========================")
 	(println "")
@@ -4037,7 +4038,7 @@
 
 ; ----------------------------------- MAIN ----------------------------------- ;
 
-; Starts the execution of the program while printing a welcome messsage
+; Start the program
 (defrule MAIN::start
 	?fact <- (initial-fact)
 	=>
@@ -4046,7 +4047,7 @@
 	(retract ?fact)
 )
 
-; Obtains user's data changing from MAIN to DATA
+; Obtain user's data changing
 (defrule MAIN::data
 	(not (initial-fact))
 	(not (User))
@@ -4056,8 +4057,8 @@
 	(focus DATA)
 )
 
-; Calculates the recommended books to the user changing from MAIN to RECO
-(defrule MAIN::calculation
+; Compute user's recommended books
+(defrule MAIN::computation
 	(User (name ?name))
 	(Pref)
 	(not (Reco))
@@ -4065,8 +4066,6 @@
 	=>
 	(assert (Reco))
 	(print-separator)
-	(println "Thanks for your answers.")
-	(println "")
 	(println "We are processing your recommendations, please wait...")
 	(focus RECO)
 )
@@ -4079,6 +4078,7 @@
 	(not (Pres))
 	(not (last-fact))
 	=>
+	(print-presentation)
 	(focus PRES)
 )
 
@@ -4453,7 +4453,6 @@
 	(Pres (recommended $?list))
 	(User (name ?name))
 	=>
-	(print-presentation)
   (print ?name)
   (println ", these are the books we have chosen for you:")
   (println "")
