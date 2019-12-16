@@ -13864,28 +13864,28 @@
 
 ; Gloval variables representing the reason messages given to the user
 (defglobal RECO
-	?*MSG-ANTI-NEW* 			= "You usually like to read new books."
-	?*MSG-ANTI-MID* 			= "You usually like to read mid-aniquity books."
-	?*MSG-ANTI-OLD* 			= "You usually like to read old books."
+	?*MSG-ANTI-NEW* 		= "You usually like to read new books."
+	?*MSG-ANTI-MID* 		= "You usually like to read mid-aniquity books."
+	?*MSG-ANTI-OLD* 		= "You usually like to read old books."
 
-	?*MSG-FREQ-RAR* 			= "You rarely read books."
-	?*MSG-FREQ-SOM* 			= "You read books sometimes."
-	?*MSG-FREQ-USU* 			= "You usually read books."
+	?*MSG-FREQ-RAR* 		= "You rarely read books."
+	?*MSG-FREQ-SOM* 		= "You read books sometimes."
+	?*MSG-FREQ-USU* 		= "You usually read books."
 
-	?*MSG-POPU-LOW* 			= "You like to discover unpopular books."
-	?*MSG-POPU-MED* 			= "You neither like to read unpopular books nor bestsellers."
-	?*MSG-POPU-HIG* 			= "You usually like to read bestsellers."
+	?*MSG-POPU-LOW* 		= "You like to discover unpopular books."
+	?*MSG-POPU-MED* 		= "You neither like to read unpopular books nor bestsellers."
+	?*MSG-POPU-HIG* 		= "You usually like to read bestsellers."
 
-  ?*MSG-GENDER-CHILD*   = "Usually children like this gender"
-  ?*MSG-GENDER-YOUNG*   = "Usually young people like this gender"
-  ?*MSG-GENDER-ADULT*   = "Usually adults like this gender"
-  ?*MSG-GENDER-SENIOR*  = "Usually seniors like this gender"
+  ?*MSG-GENRE-CHILD*  = "Usually children like this genre."
+  ?*MSG-GENRE-YOUNG*  = "Usually young people like this genre."
+  ?*MSG-GENRE-ADULT*  = "Usually adults like this genre."
+  ?*MSG-GENRE-SENIOR* = "Usually seniors like this genre."
 
-  ?*MSG-GENDER-MALE*    = "Usually men like this gender"
-  ?*MSG-GENDER-FMLE*    = "Usually women like this gender"
+  ?*MSG-GENDER-MALE*  = "Usually men like this genre."
+  ?*MSG-GENDER-FMLE*  = "Usually women like this genre."
 
-	?*MSG-RELI* 					= "You are religious."
-	?*MSG-GENR* 					= "You haven't refused this genre."
+	?*MSG-RELI* 				= "You are religious."
+	?*MSG-GENR* 				= "You haven't refused this genre."
 )
 
 ; Global variables representing all the book genres predefined depending on age
@@ -14448,23 +14448,23 @@
   (test (> (length$ ?booksR) 0))
   (User (age ?age))
   =>
-	(println "  - filtering books ccording to your age...")
+	(println "  - filtering books according to your age...")
   (bind $?genres-age-list (create$ ))
   (if (<= ?age ?*CHILD*) then
     (bind $?genres-age-list ?*GENRES-CHILD*)
-    (bind ?message ?*MSG-GENDER-CHILD*)
+    (bind ?message ?*MSG-GENRE-CHILD*)
   )
   (if (and (> ?age ?*CHILD*) (<= ?age ?*YOUNG*)) then
     (bind $?genres-age-list ?*GENRES-YOUNG*)
-    (bind ?message ?*MSG-GENDER-YOUNG*)
+    (bind ?message ?*MSG-GENRE-YOUNG*)
   )
   (if (and (> ?age ?*YOUNG*) (<= ?age ?*ADULT*)) then
     (bind $?genres-age-list ?*GENRES-ADULT*)
-    (bind ?message ?*MSG-GENDER-ADULT*)
+    (bind ?message ?*MSG-GENRE-ADULT*)
   )
   (if (> ?age ?*ADULT*) then
     (bind $?genres-age-list ?*GENRES-SENIOR*)
-    (bind ?message ?*MSG-GENDER-SENIOR*)
+    (bind ?message ?*MSG-GENRE-SENIOR*)
   )
   (loop-for-count (?i 1 (length$ ?booksR)) do
     (bind ?bookR (nth$ ?i ?booksR))
@@ -14484,7 +14484,7 @@
   (test (> (length$ ?booksR) 0))
   (User (gender ?gender))
   =>
-	(println "  - filtering books ccording to your genre...")
+	(println "  - filtering books according to your genre...")
   (bind $?genres-gender-list (create$ ))
   (if (= (str-compare ?gender "male") 0)
     then
