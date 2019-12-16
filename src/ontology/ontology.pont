@@ -1,4 +1,3 @@
-
 (defclass Author
 	(is-a USER)
 	(role concrete)

@@ -13846,18 +13846,18 @@
 
 ; Global variables representing the limit of age for each category
 (defglobal RECO
-	?*CHILD*    = 14
-	?*YOUNG*    = 21
-	?*ADULT*    = 65
+	?*CHILD* = 14
+	?*YOUNG* = 21
+	?*ADULT* = 65
 )
 
 ; Global variables representing the score given for each case
 (defglobal RECO
 	?*SCORE-ANTI* = 20
-	?*SCORE-GENR* = 40
+	?*SCORE-GENR* = 50
 	?*SCORE-FREQ* = 30
 	?*SCORE-POPU* = 20
-	?*SCORE-RELI* = 20
+	?*SCORE-RELI* = 15
   ?*SCORE-AGEG* = 10
   ?*SCORE-GNDR* = 5
 )
