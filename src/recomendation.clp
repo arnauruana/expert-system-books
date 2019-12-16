@@ -4083,9 +4083,19 @@
 
 ; ----------------------------------- MAIN ----------------------------------- ;
 
+(defrule MAIN::exception
+	(initial-fact)
+	(not (object (is-a Book)))
+	=>
+	(println "")
+	(println "Please, load instances before running using 'reset' command.")
+	(println "")
+)
+
 ; Start the program
 (defrule MAIN::start
 	?fact <- (initial-fact)
+	(object (is-a Book))
 	=>
 	(delete-instances INITIAL-OBJECT)
 	(print-welcome)
