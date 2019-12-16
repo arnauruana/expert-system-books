@@ -13838,12 +13838,6 @@
 
 ; ----------------------------------- RECO ----------------------------------- ;
 
-; Global variables representing book sizes depending on its pages
-(defglobal RECO
-	?*SMALL* = 200
-	?*BIG*   = 1000
-)
-
 ; Global variables representing delimitation of antiquity years
 (defglobal RECO
 	?*OLD* = 1900
