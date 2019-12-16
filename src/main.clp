@@ -13870,18 +13870,17 @@
 
 ; Gloval variables representing the reason messages given to the user
 (defglobal RECO
+	?*MSG-ANTI-NEW* 			= "You usually like to read new books."
+	?*MSG-ANTI-MID* 			= "You usually like to read mid-aniquity books."
+	?*MSG-ANTI-OLD* 			= "You usually like to read old books."
 
-	?*MSG-ANTI-NEW* = "You usually like to read new books."
-	?*MSG-ANTI-MID* = "You usually like to read mid-aniquity books."
-	?*MSG-ANTI-OLD* = "You usually like to read old books."
+	?*MSG-FREQ-RAR* 			= "You rarely read books."
+	?*MSG-FREQ-SOM* 			= "You read books sometimes."
+	?*MSG-FREQ-USU* 			= "You usually read books."
 
-	?*MSG-FREQ-RAR* = "You rarely read books."
-	?*MSG-FREQ-SOM* = "You read books sometimes."
-	?*MSG-FREQ-USU* = "You usually read books."
-
-	?*MSG-POPU-LOW* = "You usually like to discover unpopular books."
-	?*MSG-POPU-MED* = "You neither like to read unpopular books nor bestsellers."
-	?*MSG-POPU-HIG* = "You usually like to read bestsellers."
+	?*MSG-POPU-LOW* 			= "You like to discover unpopular books."
+	?*MSG-POPU-MED* 			= "You neither like to read unpopular books nor bestsellers."
+	?*MSG-POPU-HIG* 			= "You usually like to read bestsellers."
 
   ?*MSG-GENDER-CHILD*   = "Usually children like this gender"
   ?*MSG-GENDER-YOUNG*   = "Usually young people like this gender"
@@ -13891,8 +13890,8 @@
   ?*MSG-GENDER-MALE*    = "Usually men like this gender"
   ?*MSG-GENDER-FMLE*    = "Usually women like this gender"
 
-	?*MSG-RELI* 		= "You are religious."
-	?*MSG-GENR* 		= "You usually like this genre."
+	?*MSG-RELI* 					= "You are religious."
+	?*MSG-GENR* 					= "You haven't refused this genre."
 )
 
 ; Global variables representing all the book genres predefined depending on age
@@ -13942,6 +13941,7 @@
   )
 )
 
+; Global variables representing the maximum pages for each case
 (defglobal RECO
   ?*FREQ-CHILD-RARELY*    = 150
   ?*FREQ-CHILD-SOMETIMES* = 200
