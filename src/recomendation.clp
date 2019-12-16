@@ -62,7 +62,7 @@
 	)
 )
 
-; Book class declaration whit the score and its reasons to choose it
+; Auxiliary Book class declaration with a book, its score and its reasons to choose it
 (defclass BookR
 	(is-a USER)
 	(role concrete)
@@ -3786,6 +3786,7 @@
 	?*SCORE-POPU* = 20
 	?*SCORE-RELI* = 20
   ?*SCORE-AGEG* = 10
+  ?*SCORE-GNDR* = 5
 )
 
 ; Gloval variables representing the reason messages given to the user
@@ -3807,6 +3808,9 @@
   ?*MSG-GENDER-YOUNG*   = "Usually young people like this gender"
   ?*MSG-GENDER-ADULT*   = "Usually adults like this gender"
   ?*MSG-GENDER-SENIOR*  = "Usually seniors like this gender"
+
+  ?*MSG-GENDER-MALE*    = "Usually men like this gender"
+  ?*MSG-GENDER-FMLE*    = "Usually women like this gender"
 
 	?*MSG-RELI* 		= "You are religious."
 	?*MSG-GENR* 		= "You usually like this genre."
@@ -3842,6 +3846,20 @@
     "Religious"
 		"Thriller"
     "Westerns"
+  )
+
+  ?*GENRES-MALE*  = (create$
+    "Adventure"
+    "Horror"
+    "Thriller"
+    "Westerns"
+  )
+
+  ?*GENRES-FMLE* = (create$
+    "Classics"
+    "Historical"
+    "Contemporary"
+    "Romance"
   )
 )
 
@@ -4344,7 +4362,7 @@
   (test (> (length$ ?booksR) 0))
   (User (age ?age))
   =>
-	(println "  - filtering books ccording to your age...")
+	; (println "  - filtering books ccording to your age...")
   (bind $?genres-age-list (create$ ))
   (if (<= ?age ?*CHILD*) then
     (bind $?genres-age-list ?*GENRES-CHILD*)
@@ -4374,13 +4392,41 @@
   )
 )
 
+; Filter books according to user's gender
+(defrule RECO::gender
+  (Reco (books $?booksR))
+  (test (> (length$ ?booksR) 0))
+  (User (gender ?gender))
+  =>
+	; (println "  - filtering books ccording to your genre...")
+  (bind $?genres-gender-list (create$ ))
+  (if (= (str-compare ?gender "male") 0)
+    then
+      (bind $?genres-gender-list ?*GENRES-MALE*)
+      (bind ?message ?*MSG-GENDER-MALE*)
+    else
+      (bind $?genres-gender-list ?*GENRES-FMLE*)
+      (bind ?message ?*MSG-GENDER-FMLE*)
+  )
+  (loop-for-count (?i 1 (length$ ?booksR)) do
+    (bind ?bookR (nth$ ?i ?booksR))
+    (loop-for-count (?j 1 (length$ ?genres-gender-list)) do
+      (bind ?gender (nth$ ?j ?genres-gender-list))
+      (if (= (str-compare (send (send ?bookR get-book) get-genre) ?gender) 0) then
+        (send ?bookR put-score (+ (send ?bookR get-score) ?*SCORE-GNDR*))
+        (slot-insert$ ?bookR reasons 1 ?message)
+      )
+    )
+  )
+)
+
 ; Filter books by religion
 (defrule RECO::religion
 	(Reco (books $?booksR))
 	(test (> (length$ ?booksR) 0))
 	(User (religious ?reli))
 	=>
-	(println "  - filtering books by religion...")
+	; (println "  - filtering books by religion...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) (eq (send ?inst:book get-genre) "Religious")))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4400,7 +4446,7 @@
 	(test (> (length$ ?booksR) 0))
 	?pref <- (Pref (genres $?genres))
 	=>
-	(println "  - filtering books by genre...")
+	; (println "  - filtering books by genre...")
 	(bind $?refused ?*GENRES*)
 	(loop-for-count (?i 1 (length$ ?genres))
 		(bind ?refuse (nth$ ?i ?genres))
@@ -4429,7 +4475,7 @@
   (User (age ?age))
 	?pref <- (Pref (freq ?freq))
 	=>
-	(println "  - filtering books by frequency...")
+	; (println "  - filtering books by frequency...")
   (if (<= ?age ?*CHILD*) then
     (bind ?pages-rarely 150)
     (bind ?pages-sometimes 220)
@@ -4479,7 +4525,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (highP ?high) (midP ?mid) (lowP ?low))
 	=>
-	(println "  - filtering books by popularity...")
+	; (println "  - filtering books by popularity...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4505,7 +4551,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (oldA ?old) (midA ?mid) (newA ?new))
 	=>
-	(println "  - filtering books by antiquity...")
+	; (println "  - filtering books by antiquity...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
