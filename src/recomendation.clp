@@ -4009,7 +4009,12 @@
 	(bind ?line (format nil "%s" ?question))
 	(printout t ?line crlf)
 	(progn$ (?var ?possible-values)
-		(bind ?line (format nil "      %d -> %s" ?var-index ?var))
+		(if (< ?var-index 10)
+			then
+				(bind ?line (format nil "      %d  -> %s" ?var-index ?var))
+			else
+				(bind ?line (format nil "      %d -> %s" ?var-index ?var))
+		)
 		(printout t ?line crlf)
 	)
 	(format t "  > %s" "Introduce the numbers separated by spaces: ")
