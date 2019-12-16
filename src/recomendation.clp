@@ -2291,7 +2291,7 @@
 
   ([ontology_Class11098] of Book (author [ontology_Class10288]) (genre "Historical") (pages 416) (popularity medium) (title "TheKitchenGod'sWife") (year 1991) (rating 4.0))
 
-  ([ontology_Class11099] of Book (author [ontology_Class10043]) (genre "Short Stories") (pages 128) (popularity medium) (title "TheBloodyChamberandOtherStories") (year 1979) (rating 4.0))
+  ([ontology_Class11099] of Book (author [ontology_Class10043]) (genre "Short Stories") (pages 128) (popularity medium) (title "The Bloody Chamber and Other Stories") (year 1979) (rating 4.0))
 
   ([ontology_Class11100] of Book (author [ontology_Class10289]) (genre "Classics") (pages 640) (popularity medium) (title "TheGoldenNotebook") (year 1962) (rating 3.76))
 
@@ -4114,13 +4114,15 @@
 
 ; ----------------------------------- MAIN ----------------------------------- ;
 
-(defrule MAIN::exception
+; Load instances in case they are not loaded yet
+(defrule MAIN::load
 	(initial-fact)
 	(not (object (is-a Book)))
 	=>
+	(println "CLIPS> (reset)")
 	(println "")
-	(println "Please, load instances before running using 'reset' command.")
-	(println "")
+	(println "We are loading instances...")
+	(reset)
 )
 
 ; Start the program
@@ -4164,7 +4166,6 @@
 	(not (Pres))
 	(not (last-fact))
 	=>
-	(print-presentation)
 	(focus PRES)
 )
 
@@ -4611,6 +4612,7 @@
 	(Pres (recommended $?list))
 	(User (name ?name))
 	=>
+	(print-presentation)
   (print ?name)
   (println ", these are the books we have chosen for you:")
   (println "")
