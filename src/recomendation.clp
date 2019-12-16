@@ -4375,7 +4375,7 @@
   (test (> (length$ ?booksR) 0))
   (User (age ?age))
   =>
-	; (println "  - filtering books ccording to your age...")
+	(println "  - filtering books ccording to your age...")
   (bind $?genres-age-list (create$ ))
   (if (<= ?age ?*CHILD*) then
     (bind $?genres-age-list ?*GENRES-CHILD*)
@@ -4411,7 +4411,7 @@
   (test (> (length$ ?booksR) 0))
   (User (gender ?gender))
   =>
-	; (println "  - filtering books ccording to your genre...")
+	(println "  - filtering books ccording to your genre...")
   (bind $?genres-gender-list (create$ ))
   (if (= (str-compare ?gender "male") 0)
     then
@@ -4439,7 +4439,7 @@
 	(test (> (length$ ?booksR) 0))
 	(User (religious ?reli))
 	=>
-	; (println "  - filtering books by religion...")
+	(println "  - filtering books by religion...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) (eq (send ?inst:book get-genre) "Religious")))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4459,7 +4459,7 @@
 	(test (> (length$ ?booksR) 0))
 	?pref <- (Pref (genres $?genres))
 	=>
-	; (println "  - filtering books by genre...")
+	(println "  - filtering books by genre...")
 	(bind $?refused ?*GENRES*)
 	(loop-for-count (?i 1 (length$ ?genres))
 		(bind ?refuse (nth$ ?i ?genres))
@@ -4488,7 +4488,7 @@
   (User (age ?age))
 	?pref <- (Pref (freq ?freq))
 	=>
-	; (println "  - filtering books by frequency...")
+	(println "  - filtering books by frequency...")
   (if (<= ?age ?*CHILD*) then
     (bind ?pages-rarely ?*FREQ-CHILD-RARELY*)
     (bind ?pages-sometimes ?*FREQ-CHILD-SOMETIMES*)
@@ -4538,7 +4538,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (highP ?high) (midP ?mid) (lowP ?low))
 	=>
-	; (println "  - filtering books by popularity...")
+	(println "  - filtering books by popularity...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4564,7 +4564,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (oldA ?old) (midA ?mid) (newA ?new))
 	=>
-	; (println "  - filtering books by antiquity...")
+	(println "  - filtering books by antiquity...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
