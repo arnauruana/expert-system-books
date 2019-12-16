@@ -3651,8 +3651,6 @@
   ([ontology_Class11781] of Book (author [ontology_Class10799]) (genre "Historical") (pages 272) (popularity low) (title "TheGoldsmith'sWife") (year 1952) (rating 3.86))
 
   ([ontology_Class11782] of Book (author [ontology_Class10800]) (genre "Thriller") (pages 288) (popularity low) (title "What'saGirlGottaDo?") (year 1994) (rating 3.66))
-
-
 )
 
 ; ============================================================================ ;
@@ -4293,7 +4291,7 @@
 	(loop-for-count (?i 1 (length$ ?booksR))
 		(bind ?bookR (nth$ ?i ?booksR))
 		(loop-for-count (?j 1 (length$ ?refused))
-			(bind ?refuse (nth$ ?i ?refused))
+			(bind ?refuse (nth$ ?j ?refused))
 			(if (= (str-compare (send (send ?bookR get-book) get-genre) ?refuse) 0) then
 				(send ?bookR put-score (- (send ?bookR get-score) ?*SCORE-GENR*))
 				(send ?bookR put-refused-genre TRUE)
