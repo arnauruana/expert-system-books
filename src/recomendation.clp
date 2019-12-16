@@ -49,7 +49,7 @@
 	)
 	(single-slot author
 		(type INSTANCE)
-		(allowed-classe Author)
+		(allowed-classes Author)
 		(create-accessor read-write)
 	)
 	(single-slot genre
@@ -4287,6 +4287,7 @@
 	(test (> (length$ ?booksR) 0))
 	?pref <- (Pref (genres $?genres))
 	=>
+	(println ">>>>GENRE<<<<") ; DEBUG
 	(bind $?refused ?*GENRES*)
 	(loop-for-count (?i 1 (length$ ?genres))
 		(bind ?refuse (nth$ ?i ?genres))
@@ -4314,6 +4315,7 @@
   (User (age ?age))
 	?pref <- (Pref (freq ?freq))
 	=>
+	(println ">>>>FREQUENCY<<<<") ; DEBUG
   (if (<= ?age ?*CHILD*) then
     (bind ?pages-rarely 150)
     (bind ?pages-sometimes 220)
@@ -4362,6 +4364,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (highP ?high) (midP ?mid) (lowP ?low))
 	=>
+	(println ">>>>PUPULARITY<<<<") ; DEBUG
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4386,6 +4389,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (oldA ?old) (midA ?mid) (newA ?new))
 	=>
+	(println ">>>>ANTIQUITY<<<<") ; DEBUG
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4410,6 +4414,7 @@
 	(test (> (length$ ?booksR) 0))
 	(User (religious ?reli))
 	=>
+	(println ">>>>RELIGION<<<<") ; DEBUG
 	(bind $?booksR (find-all-instances ((?inst BookR)) (eq (send ?inst:book get-genre) "Religious")))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
