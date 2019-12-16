@@ -3863,6 +3863,19 @@
   )
 )
 
+(defglobal RECO
+  ?*FREQ-CHILD-RARELY*    = 150
+  ?*FREQ-CHILD-SOMETIMES* = 200
+  ?*FREQ-CHILD-USUALLY*   = 250
+  ?*FREQ-YOUNG-RARELY*    = 200
+  ?*FREQ-YOUNG-SOMETIMES* = 300
+  ?*FREQ-YOUNG-USUALLY*   = 400
+  ?*FREQ-ADULT-RARELY*    = 500
+  ?*FREQ-ADULT-SOMETIMES* = 1500
+  ?*FREQ-ADULT-USUALLY*   = 6577
+
+)
+
 ; ============================================================================ ;
 ; ================================ TEMPLATES ================================= ;
 ; ============================================================================ ;
@@ -4477,19 +4490,19 @@
 	=>
 	; (println "  - filtering books by frequency...")
   (if (<= ?age ?*CHILD*) then
-    (bind ?pages-rarely 150)
-    (bind ?pages-sometimes 220)
-    (bind ?pages-usually 260)
+    (bind ?pages-rarely ?*FREQ-CHILD-RARELY*)
+    (bind ?pages-sometimes ?*FREQ-CHILD-SOMETIMES*)
+    (bind ?pages-usually ?*FREQ-CHILD-USUALLY*)
   )
   (if (and (> ?age ?*CHILD*) (<= ?age ?*YOUNG*)) then
-    (bind ?pages-rarely 260)
-    (bind ?pages-sometimes 370)
-    (bind ?pages-usually 600)
+    (bind ?pages-rarely ?*FREQ-YOUNG-RARELY*)
+    (bind ?pages-sometimes ?*FREQ-YOUNG-SOMETIMES*)
+    (bind ?pages-usually ?*FREQ-YOUNG-USUALLY*)
   )
   (if (> ?age ?*YOUNG*) then
-    (bind ?pages-rarely 600)
-    (bind ?pages-sometimes 2000)
-    (bind ?pages-usually 9999)
+    (bind ?pages-rarely ?*FREQ-ADULT-RARELY*)
+    (bind ?pages-sometimes ?*FREQ-ADULT-SOMETIMES*)
+    (bind ?pages-usually ?*FREQ-ADULT-USUALLY*)
   )
 	(switch ?freq
 		(case rarely then
