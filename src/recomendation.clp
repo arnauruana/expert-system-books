@@ -4287,7 +4287,7 @@
 	(test (> (length$ ?booksR) 0))
 	?pref <- (Pref (genres $?genres))
 	=>
-	(println ">>>>GENRE<<<<") ; DEBUG
+	(println "  - filtering books by genre...")
 	(bind $?refused ?*GENRES*)
 	(loop-for-count (?i 1 (length$ ?genres))
 		(bind ?refuse (nth$ ?i ?genres))
@@ -4315,7 +4315,7 @@
   (User (age ?age))
 	?pref <- (Pref (freq ?freq))
 	=>
-	(println ">>>>FREQUENCY<<<<") ; DEBUG
+	(println "  - filtering books by frequency...")
   (if (<= ?age ?*CHILD*) then
     (bind ?pages-rarely 150)
     (bind ?pages-sometimes 220)
@@ -4364,7 +4364,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (highP ?high) (midP ?mid) (lowP ?low))
 	=>
-	(println ">>>>PUPULARITY<<<<") ; DEBUG
+	(println "  - filtering books by popularity...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4389,7 +4389,7 @@
 	(test (> (length$ ?booksR) 0))
 	(Pref (oldA ?old) (midA ?mid) (newA ?new))
 	=>
-	(println ">>>>ANTIQUITY<<<<") ; DEBUG
+	(println "  - filtering books by antiquity...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) TRUE))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
@@ -4414,7 +4414,7 @@
 	(test (> (length$ ?booksR) 0))
 	(User (religious ?reli))
 	=>
-	(println ">>>>RELIGION<<<<") ; DEBUG
+	(println "  - filtering books by religion...")
 	(bind $?booksR (find-all-instances ((?inst BookR)) (eq (send ?inst:book get-genre) "Religious")))
 	(loop-for-count (?i 1 (length$ ?booksR)) do
 		(bind ?bookR (nth$ ?i ?booksR))
