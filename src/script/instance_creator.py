@@ -26,7 +26,7 @@ for index, row in data.iterrows():
         rating = str(row['author_average_rating'])
         output =  "(" + instance_name + " of  Author"
         output += " (gender " + gender + ")"
-        output += " (name_ " + '"' + (name.replace('\n', '')).replace(' ', '') + '"' + ")"
+        output += " (name_ " + '"' + name.replace('\n', '') + '"' + ")"
         output += " (popularity " + popularity + ")"
         output += " (rating " + rating + "))\n\n"
         file.write(output)
@@ -43,9 +43,9 @@ for index, row in data.iterrows():
         output += " (genre " + '"' + row['genre_1'] + '"' + ")"
         output += " (pages " + str(row['pages']) + ")"
         output += " (popularity " + getPopularity(row['num_ratings']) + ")"
-        output += " (title " + '"' + (row['book_title'].replace('\n', '')).replace(' ', '') + '"' + ")"
+        output += " (title " + '"' + (row['book_title'].replace('\n', '')).replace('      ', '') + '"' + ")"
         output += " (year " + str(row['publish_date']) + ")"
-        output += " (rating " + str(row['book_average_rating']) + "))\n\n"
+        output += " (rating " + str(row['book_average_rating']) + "))\n"
         file.write(output)
 
 
