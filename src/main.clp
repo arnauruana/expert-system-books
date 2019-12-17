@@ -14369,9 +14369,11 @@
 	=>
 	(bind $?deletes (question-multi "  - Which of the following genres do you usually don't like?" ?*GENRES*))
 	(bind $?genres (create$ ?*GENRES*))
-	(loop-for-count (?i 1 (length$ ?deletes)) do
-		(bind ?delete (nth$ (nth$ ?i ?deletes) ?*GENRES*))
-		(bind $?genres (delete-member$ ?genres ?delete))
+	(if (neq $?deletes FALSE) then
+		(loop-for-count (?i 1 (length$ ?deletes)) do
+			(bind ?delete (nth$ (nth$ ?i ?deletes) ?*GENRES*))
+			(bind $?genres (delete-member$ ?genres ?delete))
+		)
 	)
 	(modify ?pref (genres $?genres "Uncategorized"))
 )
